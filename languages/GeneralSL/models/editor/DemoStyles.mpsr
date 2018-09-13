@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styleClass" index="V601i" />
+      </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <child id="1186403803051" name="query" index="VblUZ" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="1225456267680" name="jetbrains.mps.lang.editor.structure.RGBColor" flags="ng" index="1iSF2X">
+        <property id="1225456424731" name="value" index="1iTho6" />
+      </concept>
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
+        <child id="1219418656006" name="styleItem" index="3F10Kt" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="V5hpn" id="2ojITFEGNJt">
+    <property role="TrG5h" value="DemoStyles" />
+    <node concept="14StLt" id="2ojITFEGNJw" role="V601i">
+      <property role="TrG5h" value="tfOriginalProduction" />
+      <node concept="VechU" id="2ojITFEGNJz" role="3F10Kt">
+        <node concept="1iSF2X" id="2ojITFEGNJ_" role="VblUZ">
+          <property role="1iTho6" value="FF0000" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="2ojITFEH_Cr" role="V601i">
+      <property role="TrG5h" value="tfInformationalProduction" />
+      <node concept="VechU" id="2ojITFEH_Cs" role="3F10Kt">
+        <node concept="1iSF2X" id="2ojITFEH_Ct" role="VblUZ">
+          <property role="1iTho6" value="009900" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfv7qp" role="V601i">
+      <property role="TrG5h" value="tfDocumentalProduction" />
+      <node concept="VechU" id="m5XqSfv7qq" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfv7qr" role="VblUZ">
+          <property role="1iTho6" value="0066FF" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfv7qL" role="V601i">
+      <property role="TrG5h" value="tfCoordinationActFact" />
+      <node concept="VechU" id="m5XqSfv7qM" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfv7qN" role="VblUZ">
+          <property role="1iTho6" value="0099CC" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="2ojITFEH_C9" role="V601i">
+      <property role="TrG5h" value="tfProductionActFact" />
+      <node concept="VechU" id="2ojITFEH_Cf" role="3F10Kt">
+        <node concept="1iSF2X" id="2ojITFEH_Cg" role="VblUZ">
+          <property role="1iTho6" value="CC0066" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfv7rf" role="V601i">
+      <property role="TrG5h" value="tfActor" />
+      <node concept="VechU" id="m5XqSfv7rg" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfv7rh" role="VblUZ">
+          <property role="1iTho6" value="CCCC33" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfvYK0" role="V601i">
+      <property role="TrG5h" value="tbOriginalProduction" />
+      <node concept="30gYXW" id="m5XqSfvYKQ" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfvYKS" role="VblUZ">
+          <property role="1iTho6" value="FF0000" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfvYK3" role="V601i">
+      <property role="TrG5h" value="tbInformationalProduction" />
+      <node concept="30gYXW" id="m5XqSfvYKV" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfvYKX" role="VblUZ">
+          <property role="1iTho6" value="009900" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfvYK6" role="V601i">
+      <property role="TrG5h" value="tbDocumentalProduction" />
+      <node concept="30gYXW" id="m5XqSfvYL0" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfvYL2" role="VblUZ">
+          <property role="1iTho6" value="0066FF" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfvYK9" role="V601i">
+      <property role="TrG5h" value="tbCoordinationActFact" />
+      <node concept="30gYXW" id="m5XqSfvYL5" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfvYL7" role="VblUZ">
+          <property role="1iTho6" value="0099CC" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfvYKc" role="V601i">
+      <property role="TrG5h" value="tbProductionActFact" />
+      <node concept="30gYXW" id="m5XqSfvYLg" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfvYLi" role="VblUZ">
+          <property role="1iTho6" value="CC0066" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="m5XqSfvYKf" role="V601i">
+      <property role="TrG5h" value="tbActor" />
+      <node concept="30gYXW" id="m5XqSfvYLl" role="3F10Kt">
+        <node concept="1iSF2X" id="m5XqSfvYLn" role="VblUZ">
+          <property role="1iTho6" value="CCCC33" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

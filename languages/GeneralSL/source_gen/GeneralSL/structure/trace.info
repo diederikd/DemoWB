@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,36,0" name="GeneralSL.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,30,0" name="GeneralSL.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,64,0" name="GeneralSL.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034489002">
+    <file name="lowercaseString_PropertySupport.java">
+      <node id="2743742872034489002" at="8,44,9,28" concept="6" />
+      <node id="2743742872034489002" at="10,24,11,21" concept="2" />
+      <node id="2743742872034489002" at="12,12,13,24" concept="2" />
+      <node id="2743742872034489002" at="14,5,15,42" concept="7" />
+      <node id="2743742872034489002" at="12,10,14,5" concept="0" />
+      <node id="2743742872034489002" at="9,28,14,5" concept="4" />
+      <node id="2743742872034489002" at="8,0,17,0" concept="5" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="2743742872034489002" at="10,24,11,21" />
+      <scope id="2743742872034489002" at="12,12,13,24" />
+      <scope id="2743742872034489002" at="8,44,15,42">
+        <var name="testValue" id="2743742872034489002" />
+      </scope>
+      <scope id="2743742872034489002" at="8,0,17,0">
+        <var name="value" id="2743742872034489002" />
+      </scope>
+      <unit id="2743742872034489002" at="7,0,18,0" name="GeneralSL.structure.lowercaseString_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034489003">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2743742872034489003" at="12,0,13,0" concept="3" trace="props_ILowerCaseNamedConcept" />
+      <node id="2743742872034489003" at="21,51,22,76" concept="6" />
+      <node id="2743742872034489003" at="22,76,23,54" concept="2" />
+      <node id="2743742872034489003" at="24,9,25,44" concept="7" />
+      <node id="2743742872034489003" at="20,56,24,9" concept="4" />
+      <scope id="2743742872034489003" at="21,51,23,54">
+        <var name="cpb" id="2743742872034489003" />
+      </scope>
+      <scope id="2743742872034489003" at="20,56,25,44" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2743742872034489003" at="12,0,13,0" concept="8" trace="ILowerCaseNamedConcept" />
+      <node id="2743742872034489003" at="16,116,17,61" concept="2" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2743742872034489003" at="15,0,16,0" concept="3" trace="myConceptILowerCaseNamedConcept" />
+      <node id="2743742872034489003" at="32,56,33,47" concept="7" />
+      <node id="2743742872034489003" at="45,80,46,166" concept="6" />
+      <node id="2743742872034489003" at="46,166,47,19" concept="2" />
+      <node id="2743742872034489003" at="47,19,48,76" concept="2" />
+      <node id="2743742872034489003" at="48,76,49,96" concept="2" />
+      <node id="2743742872034489003" at="49,96,50,17" concept="2" />
+      <node id="2743742872034489004" at="50,17,51,63" concept="2" />
+      <node id="2743742872034489003" at="51,63,52,22" concept="7" />
+      <node id="2743742872034489003" at="45,0,54,0" concept="9" trace="createDescriptorForILowerCaseNamedConcept#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2743742872034489003" at="32,56,33,47" />
+      <scope id="2743742872034489003" at="45,80,52,22">
+        <var name="b" id="2743742872034489003" />
+      </scope>
+      <scope id="2743742872034489003" at="45,0,54,0" />
+    </file>
+  </root>
+  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034535482">
+    <file name="uppercaseString_PropertySupport.java">
+      <node id="2743742872034535482" at="8,44,9,28" concept="6" />
+      <node id="2743742872034535482" at="10,24,11,21" concept="2" />
+      <node id="2743742872034535482" at="12,12,13,24" concept="2" />
+      <node id="2743742872034535482" at="14,5,15,42" concept="7" />
+      <node id="2743742872034535482" at="12,10,14,5" concept="0" />
+      <node id="2743742872034535482" at="9,28,14,5" concept="4" />
+      <node id="2743742872034535482" at="8,0,17,0" concept="5" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="2743742872034535482" at="10,24,11,21" />
+      <scope id="2743742872034535482" at="12,12,13,24" />
+      <scope id="2743742872034535482" at="8,44,15,42">
+        <var name="testValue" id="2743742872034535482" />
+      </scope>
+      <scope id="2743742872034535482" at="8,0,17,0">
+        <var name="value" id="2743742872034535482" />
+      </scope>
+      <unit id="2743742872034535482" at="7,0,18,0" name="GeneralSL.structure.uppercaseString_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034536271">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2743742872034536271" at="13,0,14,0" concept="3" trace="props_IUpperCaseNamedConcept" />
+      <node id="2743742872034536271" at="27,51,28,76" concept="6" />
+      <node id="2743742872034536271" at="28,76,29,54" concept="2" />
+      <node id="2743742872034536271" at="30,9,31,44" concept="7" />
+      <node id="2743742872034536271" at="26,56,30,9" concept="4" />
+      <scope id="2743742872034536271" at="27,51,29,54">
+        <var name="cpb" id="2743742872034536271" />
+      </scope>
+      <scope id="2743742872034536271" at="26,56,31,44" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2743742872034536271" at="13,0,14,0" concept="8" trace="IUpperCaseNamedConcept" />
+      <node id="2743742872034536271" at="17,61,18,61" concept="2" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2743742872034536271" at="16,0,17,0" concept="3" trace="myConceptIUpperCaseNamedConcept" />
+      <node id="2743742872034536271" at="34,56,35,47" concept="7" />
+      <node id="2743742872034536271" at="54,80,55,166" concept="6" />
+      <node id="2743742872034536271" at="55,166,56,19" concept="2" />
+      <node id="2743742872034536271" at="56,19,57,76" concept="2" />
+      <node id="2743742872034536271" at="57,76,58,96" concept="2" />
+      <node id="2743742872034536271" at="58,96,59,17" concept="2" />
+      <node id="2743742872034536272" at="59,17,60,63" concept="2" />
+      <node id="2743742872034536271" at="60,63,61,22" concept="7" />
+      <node id="2743742872034536271" at="54,0,63,0" concept="9" trace="createDescriptorForIUpperCaseNamedConcept#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2743742872034536271" at="34,56,35,47" />
+      <scope id="2743742872034536271" at="54,80,61,22">
+        <var name="b" id="2743742872034536271" />
+      </scope>
+      <scope id="2743742872034536271" at="54,0,63,0" />
+    </file>
+  </root>
+  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/397994270025465421">
+    <file name="TypeOfWorld.java">
+      <node id="397994270025465421" at="13,0,14,0" concept="3" trace="myName" />
+      <node id="397994270025465421" at="14,27,15,18" concept="7" />
+      <node id="397994270025465421" at="17,0,18,0" concept="3" trace="myValue" />
+      <node id="397994270025465421" at="18,50,19,18" concept="2" />
+      <node id="397994270025465421" at="19,18,20,20" concept="2" />
+      <node id="397994270025465421" at="22,28,23,19" concept="7" />
+      <node id="397994270025465421" at="25,36,26,19" concept="7" />
+      <node id="397994270025465421" at="28,50,29,82" concept="6" />
+      <node id="397994270025465422" at="29,82,30,69" concept="2" />
+      <node id="397994270025465423" at="30,69,31,67" concept="2" />
+      <node id="397994270025465421" at="31,67,32,16" concept="7" />
+      <node id="397994270025465421" at="34,42,35,16" concept="7" />
+      <node id="397994270025465421" at="38,24,39,38" concept="7" />
+      <node id="397994270025465422" at="41,68,42,38" concept="7" />
+      <node id="397994270025465423" at="44,66,45,36" concept="7" />
+      <node id="397994270025465421" at="46,5,47,36" concept="7" />
+      <node id="397994270025465421" at="14,0,17,0" concept="5" trace="getName#()Ljava/lang/String;" />
+      <node id="397994270025465421" at="22,0,25,0" concept="5" trace="getValue#()Ljava/lang/String;" />
+      <node id="397994270025465421" at="25,0,28,0" concept="5" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="397994270025465421" at="34,0,37,0" concept="9" trace="getDefault#()LGeneralSL/structure/TypeOfWorld;" />
+      <node id="397994270025465421" at="37,54,40,5" concept="4" />
+      <node id="397994270025465422" at="40,5,43,5" concept="4" />
+      <node id="397994270025465423" at="43,5,46,5" concept="4" />
+      <node id="397994270025465421" at="18,0,22,0" concept="1" trace="TypeOfWorld#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="397994270025465421" at="28,0,34,0" concept="9" trace="getConstants#()Ljava/util/List;" />
+      <node id="397994270025465421" at="37,0,49,0" concept="9" trace="parseValue#(Ljava/lang/String;)LGeneralSL/structure/TypeOfWorld;" />
+      <scope id="397994270025465421" at="14,27,15,18" />
+      <scope id="397994270025465421" at="22,28,23,19" />
+      <scope id="397994270025465421" at="25,36,26,19" />
+      <scope id="397994270025465421" at="34,42,35,16" />
+      <scope id="397994270025465421" at="38,24,39,38" />
+      <scope id="397994270025465422" at="41,68,42,38" />
+      <scope id="397994270025465423" at="44,66,45,36" />
+      <scope id="397994270025465421" at="18,50,20,20" />
+      <scope id="397994270025465421" at="14,0,17,0" />
+      <scope id="397994270025465421" at="22,0,25,0" />
+      <scope id="397994270025465421" at="25,0,28,0" />
+      <scope id="397994270025465421" at="34,0,37,0" />
+      <scope id="397994270025465421" at="18,0,22,0">
+        <var name="name" id="397994270025465421" />
+        <var name="value" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="28,50,32,16">
+        <var name="list" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="28,0,34,0" />
+      <scope id="397994270025465421" at="37,54,47,36" />
+      <scope id="397994270025465421" at="37,0,49,0">
+        <var name="value" id="397994270025465421" />
+      </scope>
+      <unit id="397994270025465421" at="9,0,50,0" name="GeneralSL.structure.TypeOfWorld" />
+    </file>
+    <file name="TypeOfWorld_PropertySupport.java">
+      <node id="397994270025465421" at="11,24,12,18" concept="7" />
+      <node id="397994270025465421" at="13,5,14,99" concept="6" />
+      <node id="397994270025465421" at="15,33,16,46" concept="6" />
+      <node id="397994270025465421" at="17,45,18,20" concept="7" />
+      <node id="397994270025465421" at="20,5,21,17" concept="7" />
+      <node id="397994270025465421" at="24,24,25,18" concept="7" />
+      <node id="397994270025465421" at="26,5,27,99" concept="6" />
+      <node id="397994270025465421" at="28,33,29,46" concept="6" />
+      <node id="397994270025465421" at="30,45,31,43" concept="7" />
+      <node id="397994270025465421" at="33,5,34,16" concept="7" />
+      <node id="397994270025465421" at="36,49,37,57" concept="6" />
+      <node id="397994270025465421" at="38,27,39,32" concept="7" />
+      <node id="397994270025465421" at="40,5,41,39" concept="7" />
+      <node id="397994270025465421" at="10,44,13,5" concept="4" />
+      <node id="397994270025465421" at="16,46,19,7" concept="4" />
+      <node id="397994270025465421" at="23,47,26,5" concept="4" />
+      <node id="397994270025465421" at="29,46,32,7" concept="4" />
+      <node id="397994270025465421" at="37,57,40,5" concept="4" />
+      <node id="397994270025465421" at="14,99,20,5" concept="10" />
+      <node id="397994270025465421" at="27,99,33,5" concept="10" />
+      <node id="397994270025465421" at="36,0,43,0" concept="5" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="397994270025465421" at="10,0,23,0" concept="5" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="397994270025465421" at="23,0,36,0" concept="5" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="397994270025465421" at="11,24,12,18" />
+      <scope id="397994270025465421" at="17,45,18,20" />
+      <scope id="397994270025465421" at="24,24,25,18" />
+      <scope id="397994270025465421" at="30,45,31,43" />
+      <scope id="397994270025465421" at="38,27,39,32" />
+      <scope id="397994270025465421" at="15,33,19,7">
+        <var name="constant" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="28,33,32,7">
+        <var name="constant" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="36,49,41,39">
+        <var name="constant" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="36,0,43,0">
+        <var name="value" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="10,44,21,17">
+        <var name="constants" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="23,47,34,16">
+        <var name="constants" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="10,0,23,0">
+        <var name="value" id="397994270025465421" />
+      </scope>
+      <scope id="397994270025465421" at="23,0,36,0">
+        <var name="value" id="397994270025465421" />
+      </scope>
+      <unit id="397994270025465421" at="9,0,44,0" name="GeneralSL.structure.TypeOfWorld_PropertySupport" />
+    </file>
+  </root>
+</debug-info>
+

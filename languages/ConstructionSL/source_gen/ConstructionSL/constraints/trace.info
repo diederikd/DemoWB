@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,31,0" name="ConstructionSL.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:91942102-78b6-422e-a6c2-1f8f10cca885(ConstructionSL.constraints)/2743742872034691622">
+    <file name="ActorRole_Constraints.java">
+      <node id="2743742872034691622" at="9,34,10,142" concept="1" />
+      <node id="2743742872034691622" at="9,0,12,0" concept="0" trace="ActorRole_Constraints#()V" />
+      <scope id="2743742872034691622" at="9,34,10,142" />
+      <scope id="2743742872034691622" at="9,0,12,0" />
+      <unit id="2743742872034691622" at="8,0,14,0" name="ConstructionSL.constraints.ActorRole_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:91942102-78b6-422e-a6c2-1f8f10cca885(ConstructionSL.constraints)/2743742872034846599">
+    <file name="TransactionKind_Constraints.java">
+      <node id="2743742872034846599" at="9,40,10,148" concept="1" />
+      <node id="2743742872034846599" at="9,0,12,0" concept="0" trace="TransactionKind_Constraints#()V" />
+      <scope id="2743742872034846599" at="9,40,10,148" />
+      <scope id="2743742872034846599" at="9,0,12,0" />
+      <unit id="2743742872034846599" at="8,0,14,0" name="ConstructionSL.constraints.TransactionKind_Constraints" />
+    </file>
+  </root>
+</debug-info>
+
