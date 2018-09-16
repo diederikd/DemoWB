@@ -9,15 +9,17 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ActorRole = 0;
-  public static final int AggregateTransactionKind = 1;
-  public static final int CompositeActorRole = 2;
-  public static final int ScopeOfInterest = 3;
-  public static final int TransactionKind = 4;
-  public static final int test = 5;
+  public static final int Actor = 0;
+  public static final int ActorRole = 1;
+  public static final int AggregateTransactionKind = 2;
+  public static final int CompositeActorRole = 3;
+  public static final int ScopeOfInterest = 4;
+  public static final int TransactionKind = 5;
+  public static final int test = 6;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd87481a388534c7cL, 0x9cb5096d805e832cL);
+    builder.put(0x585f5ae0f8b9236L, Actor);
     builder.put(0x2613bb9aeaa032a9L, ActorRole);
     builder.put(0x2613bb9aeaa18f0cL, AggregateTransactionKind);
     builder.put(0x2613bb9aeaa18f08L, CompositeActorRole);

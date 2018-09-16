@@ -12,6 +12,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
@@ -27,6 +30,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -50,6 +55,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -62,10 +70,7 @@
   <node concept="1TIwiD" id="2ojITFEC3aD">
     <property role="EcuMT" value="2743742872034489001" />
     <property role="TrG5h" value="ActorRole" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2ojITFEC3aI" role="PzmwI">
-      <ref role="PrY4T" to="d13l:2ojITFEC3aF" resolve="ILowerCaseNamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="Actor" />
     <node concept="1TJgyi" id="2ojITFECeUR" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034537143" />
       <property role="TrG5h" value="id" />
@@ -104,20 +109,20 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="initiator" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
     </node>
     <node concept="1TJgyj" id="2ojITFECoWs" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034578204" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="executor" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
     </node>
     <node concept="1TJgyj" id="2ojITFEDlQO" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034827700" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="usesFacts" />
-      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
     </node>
     <node concept="1TJgyj" id="2ojITFEDDWj" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034909971" />
@@ -129,14 +134,11 @@
   <node concept="1TIwiD" id="2ojITFECoW8">
     <property role="EcuMT" value="2743742872034578184" />
     <property role="TrG5h" value="CompositeActorRole" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="Actor" />
     <node concept="1TJgyi" id="2ojITFECoWa" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578186" />
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" node="2ojITFECoW9" resolve="compositeActorRoleId" />
-    </node>
-    <node concept="PrWs8" id="2ojITFECoWo" role="PzmwI">
-      <ref role="PrY4T" to="d13l:2ojITFEC3aF" resolve="ILowerCaseNamedConcept" />
     </node>
   </node>
   <node concept="Az7Fb" id="2ojITFECoW9">
@@ -198,69 +200,17 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="AxPO7" id="m5XqSfxGpH">
-    <property role="TrG5h" value="GeneralStepKind" />
-    <property role="PDuV0" value="true" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="m5XqSfxGpI" role="M5hS2">
-      <property role="1uS6qo" value="request" />
-      <property role="1uS6qv" value="rq" />
+  <node concept="1TIwiD" id="m5XqSfyT8Q">
+    <property role="EcuMT" value="397994270026076726" />
+    <property role="TrG5h" value="Actor" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="t5JxF" id="m5XqSfyT8R" role="lGtFl">
+      <property role="t5JxN" value="This concept is for syntax purposes onlu" />
     </node>
-    <node concept="M4N5e" id="m5XqSfxGpJ" role="M5hS2">
-      <property role="1uS6qo" value="promiss" />
-      <property role="1uS6qv" value="pm" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGpM" role="M5hS2">
-      <property role="1uS6qo" value="state" />
-      <property role="1uS6qv" value="st" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGpQ" role="M5hS2">
-      <property role="1uS6qo" value="accept" />
-      <property role="1uS6qv" value="ac" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGpV" role="M5hS2">
-      <property role="1uS6qo" value="decline" />
-      <property role="1uS6qv" value="dc" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGq1" role="M5hS2">
-      <property role="1uS6qo" value="quit" />
-      <property role="1uS6qv" value="qt" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGq8" role="M5hS2">
-      <property role="1uS6qo" value="reject" />
-      <property role="1uS6qv" value="rj" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGqg" role="M5hS2">
-      <property role="1uS6qo" value="stop" />
-      <property role="1uS6qv" value="sp" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="m5XqSfxGqU">
-    <property role="TrG5h" value="RevokePatternStepKind" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="m5XqSfxGrJ" role="M5hS2">
-      <property role="1uS6qo" value="revoke request" />
-      <property role="1uS6qv" value="rv-rq" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGrK" role="M5hS2">
-      <property role="1uS6qo" value="revoke promiss" />
-      <property role="1uS6qv" value="rv-pm" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGrL" role="M5hS2">
-      <property role="1uS6qo" value="revoke state" />
-      <property role="1uS6qv" value="rv-st" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGrM" role="M5hS2">
-      <property role="1uS6qo" value="revoke accept" />
-      <property role="1uS6qv" value="rv-ac" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGqz" role="M5hS2">
-      <property role="1uS6qo" value="allow" />
-      <property role="1uS6qv" value="al" />
-    </node>
-    <node concept="M4N5e" id="m5XqSfxGqI" role="M5hS2">
-      <property role="1uS6qo" value="refuse" />
-      <property role="1uS6qv" value="rf" />
+    <node concept="PrWs8" id="m5XqSf_iyp" role="PzmwI">
+      <ref role="PrY4T" to="d13l:2ojITFEC3aF" resolve="ILowerCaseNamedConcept" />
     </node>
   </node>
 </model>

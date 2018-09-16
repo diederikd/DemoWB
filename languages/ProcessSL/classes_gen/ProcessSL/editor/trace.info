@@ -2,7 +2,12 @@
 <debug-info version="2">
   <root>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="7,0,12,0" name="ProcessSL.editor.EditorAspectDescriptorImpl" />
+      <unit at="15,0,32,0" name="ProcessSL.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="TransactionKindStepKind_SubstituteMenu.java">
+      <unit at="47,0,65,0" name="ProcessSL.editor.TransactionKindStepKind_SubstituteMenu$SMP_ReferenceScope_l4yttv_a" />
+      <unit at="65,0,86,0" name="ProcessSL.editor.TransactionKindStepKind_SubstituteMenu$SMP_Subconcepts_l4yttv_b" />
+      <unit at="24,0,87,0" name="ProcessSL.editor.TransactionKindStepKind_SubstituteMenu" />
     </file>
   </root>
 </debug-info>

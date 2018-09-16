@@ -5792,5 +5792,232 @@
       </node>
     </node>
   </node>
+  <node concept="W$Crc" id="m5XqSfxGsp">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="3" />
+    <property role="TrG5h" value="Update References: GeneralStepKind-&gt;GeneralStepKind" />
+    <node concept="1w76tK" id="m5XqSfxGsq" role="1w76sc">
+      <node concept="1w76tN" id="m5XqSfxGsr" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="m5XqSfxGss" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="m5XqSfxGst" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsv" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrT" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762413" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="GeneralStepKind" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsu" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762413" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="GeneralStepKind" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsx" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrU" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762414" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15811" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsw" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762414" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15811" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsz" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrV" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762415" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15812" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsy" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762415" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15812" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGs_" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrW" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762418" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15839" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGs$" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762418" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15839" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsB" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrX" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762422" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15835" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsA" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762422" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15835" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsD" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrY" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762427" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15832" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsC" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762427" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15832" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsF" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGrZ" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762433" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15666" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsE" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762433" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15666" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsH" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs0" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762440" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15657" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsG" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762440" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15657" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsJ" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs1" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762448" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15681" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsI" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762448" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15681" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsL" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs2" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762490" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="RevokePatternStepKind" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsK" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762490" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="RevokePatternStepKind" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsN" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs3" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762543" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15684" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsM" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762543" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15684" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsP" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs4" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762544" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15713" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsO" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762544" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15713" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsR" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs5" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762545" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15714" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsQ" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762545" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15714" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsT" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs6" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762546" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15711" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsS" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762546" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15711" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsV" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs7" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762467" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15632" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsU" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762467" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15632" />
+      </node>
+    </node>
+    <node concept="7amoh" id="m5XqSfxGsX" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="m5XqSfxGs8" role="hSBgu">
+        <property role="2pBcoG" value="397994270025762478" />
+        <property role="2pBcow" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15619" />
+      </node>
+      <node concept="2pBcaW" id="m5XqSfxGsW" role="hSBgs">
+        <property role="2pBcoG" value="397994270025762478" />
+        <property role="2pBcow" value="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
+        <property role="2pBc3U" value="EnumerationMemberDeclaration@15619" />
+      </node>
+    </node>
+  </node>
 </model>
 

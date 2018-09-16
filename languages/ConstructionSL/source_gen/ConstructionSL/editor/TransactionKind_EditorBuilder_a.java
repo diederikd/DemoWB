@@ -21,7 +21,7 @@ import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyOrNode;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
-import GeneralSL.editor.DemoStyles_StyleSheet.tfProductionActFactStyleClass;
+import GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass;
 import GeneralSL.editor.DemoStyles_StyleSheet.tfOriginalProductionStyleClass;
 import GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
@@ -79,6 +79,7 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
     editorCell.addEditorCell(createRefCell_0());
     editorCell.addEditorCell(createConstant_8());
     editorCell.addEditorCell(createRefCell_1());
+    editorCell.addEditorCell(createConstant_9());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -114,7 +115,7 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
       editorCell.setCellId("property_type");
       Style style = new StyleImpl();
       if (_StyleParameter_QueryFunction_a39g8t_a0d0()) {
-        new tfProductionActFactStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+        new tfDocumentalProductionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       }
       if (_StyleParameter_QueryFunction_a39g8t_a1d0()) {
         new tfOriginalProductionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -154,6 +155,7 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
     editorCell.setCellId("Collection_a39g8t_e0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createConstant_4());
@@ -229,7 +231,7 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     if (_StyleParameter_QueryFunction_a39g8t_a1f4a()) {
-      new tfProductionActFactStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      new tfDocumentalProductionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     }
     if (_StyleParameter_QueryFunction_a39g8t_a2f4a()) {
       new tfOriginalProductionStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
@@ -498,5 +500,14 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
         getCellFactory().popCellContext();
       }
     }
+  }
+  private EditorCell createConstant_9() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_a39g8t_j0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }

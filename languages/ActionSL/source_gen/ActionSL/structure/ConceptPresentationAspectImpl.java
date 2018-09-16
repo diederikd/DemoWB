@@ -9,19 +9,19 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Act;
+  private ConceptPresentation props_ActionRule;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Act:
-        if (props_Act == null) {
+      case LanguageConceptSwitch.ActionRule:
+        if (props_ActionRule == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Act = cpb.create();
+          props_ActionRule = cpb.create();
         }
-        return props_Act;
+        return props_ActionRule;
     }
     return null;
   }

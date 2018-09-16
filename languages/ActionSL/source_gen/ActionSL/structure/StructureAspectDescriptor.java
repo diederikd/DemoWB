@@ -12,7 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptAct = createDescriptorForAct();
+  /*package*/ final ConceptDescriptor myConceptActionRule = createDescriptorForActionRule();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -21,15 +21,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAct);
+    return Arrays.asList(myConceptActionRule);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Act:
-        return myConceptAct;
+      case LanguageConceptSwitch.ActionRule:
+        return myConceptActionRule;
       default:
         return null;
     }
@@ -39,13 +39,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForAct() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "Act", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x585f5ae0f823b54L);
+  private static ConceptDescriptor createDescriptorForActionRule() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "ActionRule", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x585f5ae0f823b54L);
     b.class_(false, true, false);
     b.parent(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/397994270025464660");
     b.version(2);
     b.prop("type", 0x585f5ae0f847f15L, "397994270025613077");
+    b.associate("appliesTo", 0x585f5ae0f86c85eL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("397994270025762910").done();
     return b.create();
   }
 }

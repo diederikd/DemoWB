@@ -4,7 +4,6 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/ActionSL/ActionSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/runtime/DemoWB.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/sandbox/DemowB.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/FactSL/FactSL.mpl" folder="" />

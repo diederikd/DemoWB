@@ -56,7 +56,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="roles" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="Actor" />
     </node>
     <node concept="1TJgyj" id="2ojITFEC3aM" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034489010" />

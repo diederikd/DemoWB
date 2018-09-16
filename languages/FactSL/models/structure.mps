@@ -6,8 +6,8 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -66,6 +66,11 @@
       <property role="IQ2nx" value="2743742872034984100" />
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" node="2ojITFEDDV0" resolve="factKindId" />
+    </node>
+    <node concept="1TJgyi" id="m5XqSfx7Wl" role="1TKVEl">
+      <property role="IQ2nx" value="397994270025613077" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="d13l:m5XqSfwzTd" resolve="TypeOfWorld" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2_">
