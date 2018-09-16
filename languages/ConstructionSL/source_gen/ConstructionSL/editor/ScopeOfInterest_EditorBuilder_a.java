@@ -131,7 +131,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "roles");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "internal roles");
     editorCell.setCellId("Constant_gxvikr_a3a");
     editorCell.setDefaultText("");
     return editorCell;

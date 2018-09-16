@@ -578,7 +578,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="m5XqSfCXPO" role="3EZMnx">
-          <property role="3F0ifm" value="roles" />
+          <property role="3F0ifm" value="internal roles" />
         </node>
         <node concept="3F0ifn" id="m5XqSfCXPP" role="3EZMnx">
           <property role="3F0ifm" value=":" />

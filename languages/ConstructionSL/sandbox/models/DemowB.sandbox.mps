@@ -125,11 +125,6 @@
         <property role="3cGzig" value="CA1" />
         <property role="3cGS$Q" value="librarian" />
       </node>
-      <node concept="3cGS$N" id="m5XqSfyT8J" role="3cGxOm">
-        <property role="3cGS$Q" value="membership executor" />
-        <property role="3cGPkH" value="A1" />
-        <ref role="3cHilv" node="m5XqSfztJt" />
-      </node>
       <node concept="3cGziv" id="m5XqSfyT8L" role="3cGS$C">
         <property role="3cGS$Q" value="starting membership" />
         <ref role="3cGzi6" node="m5XqSfztJt" />
@@ -154,6 +149,11 @@
         <property role="3cGS$Q" value="end loan" />
         <ref role="3cGzi0" node="m5XqSfztJE" />
         <ref role="3cGzi6" node="m5XqSfztJt" />
+      </node>
+      <node concept="3cGS$N" id="m5XqSfyT8J" role="3cGxOm">
+        <property role="3cGS$Q" value="membership executor" />
+        <property role="3cGPkH" value="A1" />
+        <ref role="3cHilv" node="m5XqSfztJt" />
       </node>
     </node>
   </node>

@@ -4,6 +4,7 @@
     <classNode dependClassName="ConstructionSL.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="ConstructionSL.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="ConstructionSL.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="ConstructionSL.intentions.IntentionsDescriptor" />
     <classNode dependClassName="ConstructionSL.migration.MigrationDescriptor" />
     <classNode dependClassName="ConstructionSL.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="ConstructionSL.structure.StructureAspectDescriptor" />
@@ -15,6 +16,7 @@
     <classNode dependClassName="jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
