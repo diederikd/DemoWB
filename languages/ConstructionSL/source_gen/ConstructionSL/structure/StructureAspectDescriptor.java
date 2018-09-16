@@ -99,6 +99,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034909889");
     b.version(2);
+    b.aggregate("roles", 0x2613bb9aeaa1a68cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).ordered(true).multiple(true).origin("2743742872034584204").done();
+    b.aggregate("transactions", 0x2613bb9aeaa032b2L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(true).ordered(true).multiple(true).origin("2743742872034489010").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTransactionKind() {

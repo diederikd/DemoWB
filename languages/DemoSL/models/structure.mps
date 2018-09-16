@@ -51,19 +51,19 @@
     <property role="34LRSv" value="OCD" />
     <property role="3GE5qa" value="Construction Model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="m5XqSfCXQE" role="1TKVEi">
+      <property role="IQ2ns" value="397994270027668906" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scopeOfInterest" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFEDDV1" resolve="ScopeOfInterest" />
+    </node>
     <node concept="1TJgyj" id="2ojITFECqqc" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034584204" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="roles" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="Actor" />
-    </node>
-    <node concept="1TJgyj" id="2ojITFEC3aM" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034489010" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="transactions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
     </node>
     <node concept="PrWs8" id="2ojITFECuH2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

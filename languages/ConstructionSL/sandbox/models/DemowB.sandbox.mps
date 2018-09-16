@@ -31,6 +31,10 @@
         <property id="2743742872034537143" name="id" index="3cGPkH" />
         <reference id="2743742872034909893" name="isHiddenIn" index="3cHilv" />
       </concept>
+      <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
+        <child id="2743742872034584204" name="roles" index="3cGxOm" />
+        <child id="2743742872034489010" name="transactions" index="3cGS$C" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -55,8 +59,8 @@
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F">
-        <child id="2743742872034584204" name="roles" index="3cGxOm" />
-        <child id="2743742872034489010" name="transactions" index="3cGS$C" />
+        <child id="397994270027668906" name="scopeOfInterest" index="a9yw4" />
+        <child id="2743742872034584204" name="roles" index="3cGxOn" />
       </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.ObjectFactDiagram" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
@@ -65,20 +69,23 @@
   </registry>
   <node concept="3cGS$F" id="2ojITFECdwC">
     <property role="TrG5h" value="organisation construction diagram" />
-    <node concept="3cGziv" id="2ojITFECvwk" role="3cGS$C">
-      <property role="3cGzis" value="T1" />
-      <property role="3cGS$Q" value="voldoen aan aangifteplicht" />
-      <property role="3cHIpr" value="informational" />
-      <ref role="3cGzi0" node="2ojITFECrSk" />
-      <ref role="3cGzi6" node="2ojITFECrSm" />
-    </node>
-    <node concept="3cGS$N" id="2ojITFECrSk" role="3cGxOm">
+    <node concept="3cGS$N" id="2ojITFECrSk" role="3cGxOn">
       <property role="3cGPkH" value="A1" />
       <property role="3cGS$Q" value="belastingplichtige" />
     </node>
-    <node concept="3cGS$N" id="2ojITFECrSm" role="3cGxOm">
+    <node concept="3cGS$N" id="2ojITFECrSm" role="3cGxOn">
       <property role="3cGPkH" value="A2" />
       <property role="3cGS$Q" value="inspecteur" />
+    </node>
+    <node concept="3cHilr" id="m5XqSfEebs" role="a9yw4">
+      <property role="TrG5h" value="Belastingdienst" />
+      <node concept="3cGziv" id="2ojITFECvwk" role="3cGS$C">
+        <property role="3cGzis" value="T1" />
+        <property role="3cGS$Q" value="voldoen aan aangifteplicht" />
+        <property role="3cHIpr" value="informational" />
+        <ref role="3cGzi6" node="2ojITFECrSm" />
+        <ref role="3cGzi0" node="2ojITFECrSk" />
+      </node>
     </node>
   </node>
   <node concept="3cHilB" id="2ojITFEE2qd">
@@ -104,47 +111,50 @@
   </node>
   <node concept="3cGS$F" id="m5XqSfyT8I">
     <property role="TrG5h" value="OCD Library" />
-    <node concept="3cGzii" id="m5XqSfztJt" role="3cGxOm">
-      <property role="3cGzig" value="CA1" />
-      <property role="3cGS$Q" value="librarian" />
-    </node>
-    <node concept="3cGS$N" id="m5XqSfyT8J" role="3cGxOm">
-      <property role="3cGS$Q" value="membership executor" />
-      <property role="3cGPkH" value="A1" />
-      <ref role="3cHilv" node="m5XqSfztJt" />
-    </node>
-    <node concept="3cGS$N" id="m5XqSfyT8N" role="3cGxOm">
+    <node concept="3cGS$N" id="m5XqSfyT8N" role="3cGxOn">
       <property role="3cGS$Q" value="applicant" />
       <property role="3cGPkH" value="A2" />
     </node>
-    <node concept="3cGS$N" id="m5XqSfztJE" role="3cGxOm">
+    <node concept="3cGS$N" id="m5XqSfztJE" role="3cGxOn">
       <property role="3cGS$Q" value="member" />
       <property role="3cGPkH" value="A3" />
     </node>
-    <node concept="3cGziv" id="m5XqSfyT8L" role="3cGS$C">
-      <property role="3cGS$Q" value="starting membership" />
-      <ref role="3cGzi0" node="m5XqSfyT8N" />
-      <ref role="3cGzi6" node="m5XqSfztJt" />
-    </node>
-    <node concept="3cGziv" id="m5XqSf$4P3" role="3cGS$C">
-      <property role="3cGS$Q" value="paying membership fee" />
-      <ref role="3cGzi0" node="m5XqSfyT8N" />
-      <ref role="3cGzi6" node="m5XqSfztJt" />
-    </node>
-    <node concept="3cGziv" id="m5XqSfztJy" role="3cGS$C">
-      <property role="3cGS$Q" value="ending membership" />
-      <ref role="3cGzi0" node="m5XqSfztJE" />
-      <ref role="3cGzi6" node="m5XqSfztJt" />
-    </node>
-    <node concept="3cGziv" id="m5XqSfAuOF" role="3cGS$C">
-      <property role="3cGS$Q" value="start loan" />
-      <ref role="3cGzi0" node="m5XqSfztJE" />
-      <ref role="3cGzi6" node="m5XqSfztJt" />
-    </node>
-    <node concept="3cGziv" id="m5XqSfAuOK" role="3cGS$C">
-      <property role="3cGS$Q" value="end loan" />
-      <ref role="3cGzi0" node="m5XqSfztJE" />
-      <ref role="3cGzi6" node="m5XqSfztJt" />
+    <node concept="3cHilr" id="m5XqSfEebh" role="a9yw4">
+      <property role="TrG5h" value="Library" />
+      <node concept="3cGzii" id="m5XqSfztJt" role="3cGxOm">
+        <property role="3cGzig" value="CA1" />
+        <property role="3cGS$Q" value="librarian" />
+      </node>
+      <node concept="3cGS$N" id="m5XqSfyT8J" role="3cGxOm">
+        <property role="3cGS$Q" value="membership executor" />
+        <property role="3cGPkH" value="A1" />
+        <ref role="3cHilv" node="m5XqSfztJt" />
+      </node>
+      <node concept="3cGziv" id="m5XqSfyT8L" role="3cGS$C">
+        <property role="3cGS$Q" value="starting membership" />
+        <ref role="3cGzi6" node="m5XqSfztJt" />
+        <ref role="3cGzi0" node="m5XqSfyT8N" />
+      </node>
+      <node concept="3cGziv" id="m5XqSf$4P3" role="3cGS$C">
+        <property role="3cGS$Q" value="paying membership fee" />
+        <ref role="3cGzi6" node="m5XqSfztJt" />
+        <ref role="3cGzi0" node="m5XqSfyT8N" />
+      </node>
+      <node concept="3cGziv" id="m5XqSfztJy" role="3cGS$C">
+        <property role="3cGS$Q" value="ending membership" />
+        <ref role="3cGzi0" node="m5XqSfztJE" />
+        <ref role="3cGzi6" node="m5XqSfztJt" />
+      </node>
+      <node concept="3cGziv" id="m5XqSfAuOF" role="3cGS$C">
+        <property role="3cGS$Q" value="start loan" />
+        <ref role="3cGzi6" node="m5XqSfztJt" />
+        <ref role="3cGzi0" node="m5XqSfztJE" />
+      </node>
+      <node concept="3cGziv" id="m5XqSfAuOK" role="3cGS$C">
+        <property role="3cGS$Q" value="end loan" />
+        <ref role="3cGzi0" node="m5XqSfztJE" />
+        <ref role="3cGzi6" node="m5XqSfztJt" />
+      </node>
     </node>
   </node>
 </model>
