@@ -100,6 +100,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     editorCell.addEditorCell(createReadOnlyModelAccessor_1());
     editorCell.addEditorCell(createRefCell_5());
     editorCell.addEditorCell(createConstant_16());
+    editorCell.addEditorCell(createConstant_17());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -1012,6 +1013,15 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
   private EditorCell createConstant_16() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ".");
     editorCell.setCellId("Constant_hl2jjy_gb0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_17() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_hl2jjy_hb0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

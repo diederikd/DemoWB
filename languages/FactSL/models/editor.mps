@@ -18,6 +18,7 @@
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -593,6 +594,12 @@
       <node concept="3F0ifn" id="2ojITFEFCkb" role="3EZMnx">
         <property role="3F0ifm" value="." />
       </node>
+      <node concept="3F0ifn" id="1VmqrBbHGat" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="1VmqrBbHGzZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1VmqrBb$arD">
@@ -606,7 +613,6 @@
         <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1VmqrBb$arJ" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
         <node concept="3mYdg7" id="1VmqrBb$arK" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
@@ -651,7 +657,6 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1VmqrBb$arZ" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1VmqrBb$as0" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>

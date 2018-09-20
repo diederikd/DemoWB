@@ -22,6 +22,7 @@
         <property id="2743742872034578186" name="id" index="3cGzig" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
+        <property id="2743742872034578182" name="id" index="3cGzis" />
         <reference id="2743742872034578202" name="initiator" index="3cGzi0" />
         <reference id="2743742872034578204" name="executor" index="3cGzi6" />
         <reference id="2222079712856355772" name="hasProduct" index="3lGtC5" />
@@ -58,10 +59,6 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
-      <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F">
-        <child id="397994270027668906" name="scopeOfInterest" index="a9yw4" />
-        <child id="2743742872034584204" name="roles" index="3cGxOn" />
-      </concept>
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
@@ -72,54 +69,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="3cGS$F" id="m5XqSfyT8I">
-    <property role="TrG5h" value="Organisation Construction Library" />
-    <node concept="3cGS$N" id="m5XqSfyT8N" role="3cGxOn">
-      <property role="3cGS$Q" value="applicant" />
-      <property role="3cGPkH" value="A2" />
-    </node>
-    <node concept="3cGS$N" id="m5XqSfztJE" role="3cGxOn">
-      <property role="3cGS$Q" value="member" />
-      <property role="3cGPkH" value="A3" />
-    </node>
-    <node concept="3cHilr" id="m5XqSfEebh" role="a9yw4">
-      <property role="TrG5h" value="Library" />
-      <node concept="3cGzii" id="m5XqSfztJt" role="3cGxOm">
-        <property role="3cGzig" value="CA1" />
-        <property role="3cGS$Q" value="librarian" />
-      </node>
-      <node concept="3cGziv" id="m5XqSfyT8L" role="3cGS$C">
-        <property role="3cGS$Q" value="starting membership" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-        <ref role="3cGzi0" node="m5XqSfyT8N" />
-      </node>
-      <node concept="3cGziv" id="m5XqSf$4P3" role="3cGS$C">
-        <property role="3cGS$Q" value="paying membership fee" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-        <ref role="3cGzi0" node="m5XqSfyT8N" />
-      </node>
-      <node concept="3cGziv" id="m5XqSfztJy" role="3cGS$C">
-        <property role="3cGS$Q" value="ending membership" />
-        <ref role="3cGzi0" node="m5XqSfztJE" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-      </node>
-      <node concept="3cGziv" id="m5XqSfAuOF" role="3cGS$C">
-        <property role="3cGS$Q" value="start loan" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-        <ref role="3cGzi0" node="m5XqSfztJE" />
-      </node>
-      <node concept="3cGziv" id="m5XqSfAuOK" role="3cGS$C">
-        <property role="3cGS$Q" value="end loan" />
-        <ref role="3cGzi0" node="m5XqSfztJE" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-      </node>
-      <node concept="3cGS$N" id="m5XqSfyT8J" role="3cGxOm">
-        <property role="3cGS$Q" value="membership executor" />
-        <property role="3cGPkH" value="A1" />
-        <ref role="3cHilv" node="m5XqSfztJt" />
-      </node>
-    </node>
-  </node>
   <node concept="3cHilB" id="1VmqrBbkqs2">
     <property role="TrG5h" value="Object Fact Diagram Library" />
     <node concept="3cH7GX" id="1VmqrBbkqs5" role="3cH7GF">
@@ -165,9 +114,6 @@
       <ref role="3cH7GK" node="1VmqrBbkqsb" />
     </node>
   </node>
-  <node concept="3cHiir" id="1VmqrBbryHk">
-    <property role="TrG5h" value="Transaction Product Table Library" />
-  </node>
   <node concept="3llzxe" id="1VmqrBbwQiI">
     <property role="TrG5h" value="Construction Model Library" />
     <node concept="3cGS$N" id="1VmqrBbwQiY" role="3llzIU">
@@ -182,32 +128,37 @@
       <property role="TrG5h" value="Library" />
       <node concept="3cGziv" id="1VmqrBbwQiO" role="3cGS$C">
         <property role="3cGS$Q" value="starting membership" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-        <ref role="3cGzi0" node="m5XqSfyT8N" />
+        <property role="3cGzis" value="T1" />
         <ref role="3lGtC5" node="1VmqrBbC534" />
+        <ref role="3cGzi0" node="1VmqrBbwQiY" />
+        <ref role="3cGzi6" node="1VmqrBbwQiK" />
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiP" role="3cGS$C">
         <property role="3cGS$Q" value="paying membership fee" />
-        <ref role="3cGzi0" node="m5XqSfyT8N" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
+        <property role="3cGzis" value="T2" />
+        <ref role="3cGzi0" node="1VmqrBbwQiK" />
+        <ref role="3cGzi6" node="1VmqrBbwQiY" />
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiQ" role="3cGS$C">
         <property role="3cGS$Q" value="ending membership" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
-        <ref role="3cGzi0" node="m5XqSfztJE" />
+        <property role="3cGzis" value="T3" />
         <ref role="3lGtC5" node="1VmqrBbkqsb" />
+        <ref role="3cGzi0" node="1VmqrBbwQiZ" />
+        <ref role="3cGzi6" node="1VmqrBbwQiK" />
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiR" role="3cGS$C">
         <property role="3cGS$Q" value="start loan" />
-        <ref role="3cGzi0" node="m5XqSfztJE" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
+        <property role="3cGzis" value="T4" />
         <ref role="3lGtC5" node="1VmqrBbn48o" resolve="loan of Book" />
+        <ref role="3cGzi0" node="1VmqrBbwQiZ" />
+        <ref role="3cGzi6" node="1VmqrBbwQiK" />
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiS" role="3cGS$C">
         <property role="3cGS$Q" value="end loan" />
-        <ref role="3cGzi0" node="m5XqSfztJE" />
-        <ref role="3cGzi6" node="m5XqSfztJt" />
+        <property role="3cGzis" value="T5" />
         <ref role="3lGtC5" node="1VmqrBbn48o" resolve="loan of Book" />
+        <ref role="3cGzi0" node="1VmqrBbwQiK" />
+        <ref role="3cGzi6" node="1VmqrBbwQiZ" />
       </node>
       <node concept="3cGzii" id="1VmqrBbwQiK" role="3cGxOm">
         <property role="3cGzig" value="CA1" />
@@ -219,6 +170,9 @@
         <ref role="3cHilv" node="1VmqrBbwQiK" />
       </node>
     </node>
+  </node>
+  <node concept="3cHiir" id="1VmqrBbE_WL">
+    <property role="TrG5h" value="Transaction Product Table" />
   </node>
 </model>
 

@@ -191,7 +191,7 @@ import jetbrains.mps.util.Computable;
       }
     }
     private Object executeQuery(final SNode node, final EditorContext editorContext) {
-      return SLinkOperations.collectMany(SLinkOperations.collect(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, "DemoSL.structure.OrganisationConstructionDiagram")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x585f5ae0fa3ddaaL, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions"));
+      return SLinkOperations.collectMany(SLinkOperations.collect(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions"));
     }
     @Override
     public Iterable<? extends SNode> getNodesForList(final SNode node) {

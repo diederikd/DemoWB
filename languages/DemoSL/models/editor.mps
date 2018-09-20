@@ -202,16 +202,16 @@
                       <node concept="I4A8Y" id="1VmqrBbq_ig" role="2OqNvi" />
                     </node>
                     <node concept="2SmgA7" id="1VmqrBbuoNA" role="2OqNvi">
-                      <node concept="chp4Y" id="1VmqrBbuoYv" role="1dBWTz">
-                        <ref role="cht4Q" to="ar0b:2ojITFEC3aL" resolve="OrganisationConstructionDiagram" />
+                      <node concept="chp4Y" id="1VmqrBbGb4W" role="1dBWTz">
+                        <ref role="cht4Q" to="ar0b:1VmqrBbw57R" resolve="ConstructionModel" />
                       </node>
                     </node>
                   </node>
-                  <node concept="13MTOL" id="1VmqrBburjq" role="2OqNvi">
-                    <ref role="13MTZf" to="ar0b:m5XqSfCXQE" resolve="scopeOfInterest" />
+                  <node concept="13MTOL" id="1VmqrBbGhYz" role="2OqNvi">
+                    <ref role="13MTZf" to="ar0b:1VmqrBbw582" resolve="scopeOfInterest" />
                   </node>
                 </node>
-                <node concept="13MTOL" id="1VmqrBbuud7" role="2OqNvi">
+                <node concept="13MTOL" id="1VmqrBbGimo" role="2OqNvi">
                   <ref role="13MTZf" to="pgdh:2ojITFEC3aM" resolve="transactions" />
                 </node>
               </node>
@@ -308,7 +308,6 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1VmqrBbC53q" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
         <node concept="3mYdg7" id="1VmqrBbC53r" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
@@ -348,7 +347,6 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1VmqrBbC53D" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="1VmqrBbC53E" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
