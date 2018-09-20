@@ -12,6 +12,6 @@ public class factKindId_PropertySupport extends PropertySupport {
     } else {
       testValue = value;
     }
-    return testValue.matches("F[0-9]+");
+    return testValue.matches("(F|P)[0-9]+");
   }
 }

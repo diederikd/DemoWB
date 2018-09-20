@@ -6,8 +6,8 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" />
+    <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -123,6 +123,12 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="usesFacts" />
       <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+    </node>
+    <node concept="1TJgyj" id="1VmqrBbpVeW" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712856355772" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="hasProduct" />
+      <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
     </node>
     <node concept="1TJgyj" id="2ojITFEDDWj" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034909971" />

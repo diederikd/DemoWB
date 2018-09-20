@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.sandbox)">
+<model ref="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)">
   <persistence version="9" />
   <languages>
     <use id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL" version="1" />
@@ -22,8 +22,6 @@
         <property id="2743742872034578186" name="id" index="3cGzig" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
-        <property id="2743742872034578182" name="id" index="3cGzis" />
-        <property id="2743742872034827713" name="type" index="3cHIpr" />
         <reference id="2743742872034578202" name="initiator" index="3cGzi0" />
         <reference id="2743742872034578204" name="executor" index="3cGzi6" />
       </concept>
@@ -47,6 +45,7 @@
       </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
+        <property id="397994270025613077" name="type" index="a0oEV" />
         <property id="2743742872034984100" name="id" index="3cH7GY" />
       </concept>
       <concept id="2743742872035015482" name="FactSL.structure.IPropertyType" flags="ng" index="3cIS2w">
@@ -62,53 +61,12 @@
         <child id="397994270027668906" name="scopeOfInterest" index="a9yw4" />
         <child id="2743742872034584204" name="roles" index="3cGxOn" />
       </concept>
+      <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
       <concept id="2743742872034909949" name="DemoSL.structure.ObjectFactDiagram" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
       </concept>
     </language>
   </registry>
-  <node concept="3cGS$F" id="2ojITFECdwC">
-    <property role="TrG5h" value="organisation construction diagram" />
-    <node concept="3cGS$N" id="2ojITFECrSk" role="3cGxOn">
-      <property role="3cGPkH" value="A1" />
-      <property role="3cGS$Q" value="belastingplichtige" />
-    </node>
-    <node concept="3cGS$N" id="2ojITFECrSm" role="3cGxOn">
-      <property role="3cGPkH" value="A2" />
-      <property role="3cGS$Q" value="inspecteur" />
-    </node>
-    <node concept="3cHilr" id="m5XqSfEebs" role="a9yw4">
-      <property role="TrG5h" value="Belastingdienst" />
-      <node concept="3cGziv" id="2ojITFECvwk" role="3cGS$C">
-        <property role="3cGzis" value="T1" />
-        <property role="3cGS$Q" value="voldoen aan aangifteplicht" />
-        <property role="3cHIpr" value="informational" />
-        <ref role="3cGzi6" node="2ojITFECrSm" />
-        <ref role="3cGzi0" node="2ojITFECrSk" />
-      </node>
-    </node>
-  </node>
-  <node concept="3cHilB" id="2ojITFEE2qd">
-    <property role="TrG5h" value="object fact diagram" />
-    <node concept="3cH7GX" id="2ojITFEFmbd" role="3cH7GF">
-      <property role="3cH7GY" value="F1" />
-      <property role="3cGP3a" value="PERSON" />
-    </node>
-    <node concept="3cH7GX" id="2ojITFEFmbn" role="3cH7GF">
-      <property role="3cH7GY" value="F2" />
-      <property role="3cGP3a" value="RENTAL" />
-    </node>
-    <node concept="3cH7GN" id="2ojITFEFmbv" role="3cH7GF">
-      <property role="TrG5h" value="renter" />
-      <property role="3cIS2x" value="0" />
-      <property role="3cIS2B" value="N" />
-      <property role="3cIS3q" value="1" />
-      <property role="3cIS3u" value="1" />
-      <property role="3cH7GY" value="F3" />
-      <ref role="3cH7GK" node="2ojITFEFmbn" />
-      <ref role="3cH7GL" node="2ojITFEFmbd" />
-    </node>
-  </node>
   <node concept="3cGS$F" id="m5XqSfyT8I">
     <property role="TrG5h" value="OCD Library" />
     <node concept="3cGS$N" id="m5XqSfyT8N" role="3cGxOn">
@@ -156,6 +114,33 @@
         <ref role="3cHilv" node="m5XqSfztJt" />
       </node>
     </node>
+  </node>
+  <node concept="3cHilB" id="1VmqrBbkqs2">
+    <property role="TrG5h" value="Object Fact Diagram Library" />
+    <node concept="3cH7GX" id="1VmqrBbkqs5" role="3cH7GF">
+      <property role="3cH7GY" value="P1" />
+      <property role="a0oEV" value="production" />
+      <property role="3cGP3a" value="LOAN" />
+    </node>
+    <node concept="3cH7GX" id="1VmqrBbkqsb" role="3cH7GF">
+      <property role="3cH7GY" value="F1" />
+      <property role="a0oEV" value="production" />
+      <property role="3cGP3a" value="BOOK" />
+    </node>
+    <node concept="3cH7GN" id="1VmqrBbn48o" role="3cH7GF">
+      <property role="3cH7GY" value="P2" />
+      <property role="a0oEV" value="production" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <property role="3cIS3q" value="0" />
+      <property role="3cIS3u" value="N" />
+      <property role="TrG5h" value="loan of Book" />
+      <ref role="3cH7GL" node="1VmqrBbkqs5" />
+      <ref role="3cH7GK" node="1VmqrBbkqsb" />
+    </node>
+  </node>
+  <node concept="3cHiir" id="1VmqrBbryHk">
+    <property role="TrG5h" value="TPT Library" />
   </node>
 </model>
 

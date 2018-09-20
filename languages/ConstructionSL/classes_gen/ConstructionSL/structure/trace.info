@@ -19,7 +19,7 @@
       <unit at="10,0,40,0" name="ConstructionSL.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,129,0" name="ConstructionSL.structure.StructureAspectDescriptor" />
+      <unit at="14,0,130,0" name="ConstructionSL.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034489000">
@@ -128,14 +128,15 @@
       <node id="2743742872034578202" at="113,63,114,172" concept="2" />
       <node id="2743742872034578204" at="114,172,115,171" concept="2" />
       <node id="2743742872034827700" at="115,171,116,171" concept="2" />
-      <node id="2743742872034909971" at="116,171,117,171" concept="2" />
-      <node id="2743742872034578181" at="117,171,118,22" concept="7" />
-      <node id="2743742872034578181" at="106,0,120,0" concept="9" trace="createDescriptorForTransactionKind#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2222079712856355772" at="116,171,117,173" concept="2" />
+      <node id="2743742872034909971" at="117,173,118,171" concept="2" />
+      <node id="2743742872034578181" at="118,171,119,22" concept="7" />
+      <node id="2743742872034578181" at="106,0,121,0" concept="9" trace="createDescriptorForTransactionKind#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2743742872034578181" at="47,49,48,40" />
-      <scope id="2743742872034578181" at="106,73,118,22">
+      <scope id="2743742872034578181" at="106,73,119,22">
         <var name="b" id="2743742872034578181" />
       </scope>
-      <scope id="2743742872034578181" at="106,0,120,0" />
+      <scope id="2743742872034578181" at="106,0,121,0" />
     </file>
   </root>
   <root nodeRef="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034578184">
@@ -268,18 +269,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="2743742872034605078" at="21,0,22,0" concept="3" trace="myConcepttest" />
       <node id="2743742872034605078" at="49,38,50,29" concept="7" />
-      <node id="2743742872034605078" at="120,62,121,153" concept="6" />
-      <node id="2743742872034605078" at="121,153,122,34" concept="2" />
-      <node id="2743742872034605078" at="122,34,123,71" concept="2" />
-      <node id="2743742872034605078" at="123,71,124,101" concept="2" />
-      <node id="2743742872034605078" at="124,101,125,17" concept="2" />
-      <node id="2743742872034605078" at="125,17,126,22" concept="7" />
-      <node id="2743742872034605078" at="120,0,128,0" concept="9" trace="createDescriptorFortest#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2743742872034605078" at="121,62,122,153" concept="6" />
+      <node id="2743742872034605078" at="122,153,123,34" concept="2" />
+      <node id="2743742872034605078" at="123,34,124,71" concept="2" />
+      <node id="2743742872034605078" at="124,71,125,101" concept="2" />
+      <node id="2743742872034605078" at="125,101,126,17" concept="2" />
+      <node id="2743742872034605078" at="126,17,127,22" concept="7" />
+      <node id="2743742872034605078" at="121,0,129,0" concept="9" trace="createDescriptorFortest#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2743742872034605078" at="49,38,50,29" />
-      <scope id="2743742872034605078" at="120,62,126,22">
+      <scope id="2743742872034605078" at="121,62,127,22">
         <var name="b" id="2743742872034605078" />
       </scope>
-      <scope id="2743742872034605078" at="120,0,128,0" />
+      <scope id="2743742872034605078" at="121,0,129,0" />
     </file>
   </root>
   <root nodeRef="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034827704">

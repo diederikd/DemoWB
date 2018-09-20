@@ -53,7 +53,7 @@
   </registry>
   <node concept="Az7Fb" id="2ojITFEDDV0">
     <property role="TrG5h" value="factKindId" />
-    <property role="FLfZY" value="F[0-9]+" />
+    <property role="FLfZY" value="(F|P)[0-9]+" />
   </node>
   <node concept="1TIwiD" id="2ojITFEDDWf">
     <property role="EcuMT" value="2743742872034909967" />
@@ -122,13 +122,19 @@
   <node concept="1TIwiD" id="2ojITFEDW2I">
     <property role="EcuMT" value="2743742872034984110" />
     <property role="TrG5h" value="AttributeType" />
-    <ref role="1TJDcQ" node="2ojITFEDW2D" resolve="PropertyType" />
+    <ref role="1TJDcQ" node="2ojITFEDDWf" resolve="FactType" />
     <node concept="1TJgyj" id="2ojITFEDW2J" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034984111" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="arange" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2K" resolve="ValueType" />
+    </node>
+    <node concept="PrWs8" id="1VmqrBbn48e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1VmqrBbn489" role="PzmwI">
+      <ref role="PrY4T" node="2ojITFEE3GU" resolve="IPropertyType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2K">
