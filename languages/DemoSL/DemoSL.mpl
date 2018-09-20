@@ -48,6 +48,7 @@
   <dependencies>
     <dependency reexport="false">d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)</dependency>
     <dependency reexport="false">6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)</dependency>
+    <dependency reexport="false">aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:120e1c9d-4e27-4478-b2af-b2c3bd3850b0:com.mbeddr.mpsutil.editor.querylist" version="0" />

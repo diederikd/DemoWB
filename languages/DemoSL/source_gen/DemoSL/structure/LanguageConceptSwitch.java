@@ -11,18 +11,22 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int ActionRuleSpecifications = 0;
   public static final int BankContentsTable = 1;
-  public static final int DerivedFactSpecifications = 2;
-  public static final int ObjectFactDiagram = 3;
-  public static final int OrganisationConstructionDiagram = 4;
-  public static final int TransactionProductTable = 5;
-  public static final int WorkInstructionSpecifications = 6;
+  public static final int ConstructionModel = 2;
+  public static final int DerivedFactSpecifications = 3;
+  public static final int FactModel = 4;
+  public static final int ObjectFactDiagram = 5;
+  public static final int OrganisationConstructionDiagram = 6;
+  public static final int TransactionProductTable = 7;
+  public static final int WorkInstructionSpecifications = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL);
     builder.put(0x2613bb9aeaa69efcL, ActionRuleSpecifications);
     builder.put(0x2613bb9aeaa69f02L, BankContentsTable);
+    builder.put(0x1ed669b9cb8051f7L, ConstructionModel);
     builder.put(0x2613bb9aeaa69f03L, DerivedFactSpecifications);
-    builder.put(0x2613bb9aeaa69efdL, ObjectFactDiagram);
+    builder.put(0x2613bb9aeaa69efdL, FactModel);
+    builder.put(0x1ed669b9cba05100L, ObjectFactDiagram);
     builder.put(0x2613bb9aeaa032b1L, OrganisationConstructionDiagram);
     builder.put(0x2613bb9aeaa69f01L, TransactionProductTable);
     builder.put(0x2613bb9aeaa69f00L, WorkInstructionSpecifications);

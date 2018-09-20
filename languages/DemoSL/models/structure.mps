@@ -83,7 +83,7 @@
   </node>
   <node concept="1TIwiD" id="2ojITFEDDVX">
     <property role="EcuMT" value="2743742872034909949" />
-    <property role="TrG5h" value="ObjectFactDiagram" />
+    <property role="TrG5h" value="FactModel" />
     <property role="R4oN_" value="Object Fact Diagram" />
     <property role="34LRSv" value="OFD" />
     <property role="3GE5qa" value="Fact Model" />
@@ -147,6 +147,36 @@
     <node concept="PrWs8" id="2ojITFEE2IV" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1VmqrBbw57R">
+    <property role="EcuMT" value="2222079712857969143" />
+    <property role="3GE5qa" value="Construction Model" />
+    <property role="TrG5h" value="ConstructionModel" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1VmqrBbw582" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712857969154" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scopeOfInterest" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFEDDV1" resolve="ScopeOfInterest" />
+    </node>
+    <node concept="1TJgyj" id="1VmqrBbw583" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712857969155" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="roles" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="Actor" />
+    </node>
+    <node concept="PrWs8" id="1VmqrBbw58K" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1VmqrBbC540">
+    <property role="EcuMT" value="2222079712860066048" />
+    <property role="3GE5qa" value="Fact Model" />
+    <property role="TrG5h" value="ObjectFactDiagram" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

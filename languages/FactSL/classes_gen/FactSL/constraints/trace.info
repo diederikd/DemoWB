@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,20,0" name="FactSL.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,29,0" name="FactSL.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:206eeecd-c7ae-4a0b-a890-fa50e2e10ffc(FactSL.constraints)/2222079712859089970">
+    <file name="EntityType_Constraints.java">
+      <node id="2222079712859089970" at="17,35,18,135" concept="5" />
+      <node id="2222079712859089970" at="22,84,23,119" concept="3" />
+      <node id="2222079712859089971" at="26,37,27,20" concept="4" />
+      <node id="2222079712859089971" at="30,42,31,37" concept="3" />
+      <node id="2222079712859091071" at="31,37,32,175" concept="4" />
+      <node id="2222079712859089971" at="35,37,36,20" concept="4" />
+      <node id="2222079712859089971" at="39,62,40,37" concept="3" />
+      <node id="2222079712859102601" at="40,37,41,210" concept="1" />
+      <node id="2222079712859089970" at="43,7,44,22" concept="4" />
+      <node id="2222079712859089970" at="17,0,20,0" concept="0" trace="EntityType_Constraints#()V" />
+      <node id="2222079712859089971" at="25,0,29,0" concept="2" trace="hasOwnGetter#()Z" />
+      <node id="2222079712859089971" at="34,0,38,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="2222079712859089971" at="29,0,34,0" concept="2" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="2222079712859089971" at="38,0,43,0" concept="2" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="2222079712859089971" at="23,119,43,7" concept="1" />
+      <node id="2222079712859089970" at="21,0,46,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="2222079712859089970" at="17,35,18,135" />
+      <scope id="2222079712859089971" at="26,37,27,20" />
+      <scope id="2222079712859089971" at="35,37,36,20" />
+      <scope id="2222079712859089971" at="30,42,32,175">
+        <var name="propertyName" id="2222079712859089971" />
+      </scope>
+      <scope id="2222079712859089971" at="39,62,41,210">
+        <var name="propertyName" id="2222079712859089971" />
+      </scope>
+      <scope id="2222079712859089970" at="17,0,20,0" />
+      <scope id="2222079712859089971" at="25,0,29,0" />
+      <scope id="2222079712859089971" at="34,0,38,0" />
+      <scope id="2222079712859089971" at="29,0,34,0">
+        <var name="node" id="2222079712859089971" />
+      </scope>
+      <scope id="2222079712859089971" at="38,0,43,0">
+        <var name="node" id="2222079712859089971" />
+        <var name="propertyValue" id="2222079712859089971" />
+      </scope>
+      <scope id="2222079712859089970" at="22,84,44,22">
+        <var name="properties" id="2222079712859089970" />
+      </scope>
+      <scope id="2222079712859089970" at="21,0,46,0" />
+      <unit id="2222079712859089971" at="24,137,43,5" name="FactSL.constraints.EntityType_Constraints$1" />
+      <unit id="2222079712859089970" at="16,0,47,0" name="FactSL.constraints.EntityType_Constraints" />
     </file>
   </root>
 </debug-info>

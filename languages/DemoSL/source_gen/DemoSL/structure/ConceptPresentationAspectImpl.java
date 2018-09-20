@@ -11,7 +11,9 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ActionRuleSpecifications;
   private ConceptPresentation props_BankContentsTable;
+  private ConceptPresentation props_ConstructionModel;
   private ConceptPresentation props_DerivedFactSpecifications;
+  private ConceptPresentation props_FactModel;
   private ConceptPresentation props_ObjectFactDiagram;
   private ConceptPresentation props_OrganisationConstructionDiagram;
   private ConceptPresentation props_TransactionProductTable;
@@ -38,6 +40,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BankContentsTable = cpb.create();
         }
         return props_BankContentsTable;
+      case LanguageConceptSwitch.ConstructionModel:
+        if (props_ConstructionModel == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_ConstructionModel = cpb.create();
+        }
+        return props_ConstructionModel;
       case LanguageConceptSwitch.DerivedFactSpecifications:
         if (props_DerivedFactSpecifications == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -46,11 +55,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DerivedFactSpecifications = cpb.create();
         }
         return props_DerivedFactSpecifications;
-      case LanguageConceptSwitch.ObjectFactDiagram:
-        if (props_ObjectFactDiagram == null) {
+      case LanguageConceptSwitch.FactModel:
+        if (props_FactModel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Object Fact Diagram");
           cpb.presentationByName();
+          props_FactModel = cpb.create();
+        }
+        return props_FactModel;
+      case LanguageConceptSwitch.ObjectFactDiagram:
+        if (props_ObjectFactDiagram == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ObjectFactDiagram");
           props_ObjectFactDiagram = cpb.create();
         }
         return props_ObjectFactDiagram;
