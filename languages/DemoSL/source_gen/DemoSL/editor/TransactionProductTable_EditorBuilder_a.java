@@ -82,7 +82,7 @@ import jetbrains.mps.util.Computable;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "transaction product table");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Transaction product table");
     editorCell.setCellId("Constant_4z9nnr_a0");
     editorCell.setDefaultText("");
     return editorCell;
