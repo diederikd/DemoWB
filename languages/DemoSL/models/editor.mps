@@ -169,7 +169,7 @@
     <node concept="3EZMnI" id="1VmqrBbuz1z" role="2wV5jI">
       <node concept="l2Vlx" id="1VmqrBbuz1$" role="2iSdaV" />
       <node concept="3F0ifn" id="1VmqrBbuz1_" role="3EZMnx">
-        <property role="3F0ifm" value="transaction product table" />
+        <property role="3F0ifm" value="Transaction product table" />
       </node>
       <node concept="3F0A7n" id="1VmqrBbuz1A" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
