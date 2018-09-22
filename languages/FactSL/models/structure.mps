@@ -72,6 +72,18 @@
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" to="d13l:m5XqSfwzTd" resolve="TypeOfWorld" />
     </node>
+    <node concept="1TJgyj" id="1VmqrBbKvpr" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712862271067" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="startEvent" />
+      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
+    </node>
+    <node concept="1TJgyj" id="1VmqrBbKvpt" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712862271069" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="endEvent" />
+      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2_">
     <property role="EcuMT" value="2743742872034984101" />

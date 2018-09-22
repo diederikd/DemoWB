@@ -172,6 +172,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.prop("id", 0x2613bb9aeaa7c0a4L, "2743742872034984100");
     b.prop("type", 0x585f5ae0f847f15L, "397994270025613077");
+    b.aggregate("startEvent", 0x1ed669b9cbc1f65bL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).ordered(true).multiple(false).origin("2222079712862271067").done();
+    b.aggregate("endEvent", 0x1ed669b9cbc1f65dL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).ordered(true).multiple(false).origin("2222079712862271069").done();
     b.alias("FactKind");
     return b.create();
   }
