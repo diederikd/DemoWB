@@ -75,41 +75,71 @@
       <property role="3cH7GY" value="P1" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="LOAN" />
+      <node concept="3cH7GZ" id="1VmqrBbSqZv" role="3l5TZy">
+        <property role="TrG5h" value="borrow a Copy" />
+        <property role="3cH7GY" value="P10" />
+        <property role="a0oEV" value="production" />
+      </node>
+      <node concept="3cH7GZ" id="1VmqrBbSqZx" role="3l5TZ$">
+        <property role="TrG5h" value="return a Copy" />
+        <property role="3cH7GY" value="P11" />
+        <property role="a0oEV" value="production" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbL$XC" role="3cH7GF">
-      <property role="3cH7GY" value="F3" />
+      <property role="3cH7GY" value="P2" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="COPY" />
+      <node concept="3cH7GZ" id="1VmqrBbT30n" role="3l5TZy">
+        <property role="TrG5h" value="buy a new copy" />
+        <property role="3cH7GY" value="P12" />
+        <property role="a0oEV" value="production" />
+      </node>
+      <node concept="3cH7GZ" id="1VmqrBbT30p" role="3l5TZ$">
+        <property role="TrG5h" value="dispose a copy" />
+        <property role="3cH7GY" value="P13" />
+        <property role="a0oEV" value="production" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbkqsb" role="3cH7GF">
-      <property role="3cH7GY" value="F1" />
+      <property role="3cH7GY" value="P3" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="BOOK" />
     </node>
     <node concept="3cH7GX" id="1VmqrBb_kPt" role="3cH7GF">
-      <property role="3cH7GY" value="F1" />
+      <property role="3cH7GY" value="P4" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="PERSON" />
+      <node concept="3cH7GZ" id="1VmqrBbT30r" role="3l5TZy">
+        <property role="TrG5h" value="Person is born" />
+        <property role="3cH7GY" value="P14" />
+        <property role="a0oEV" value="production" />
+      </node>
+      <node concept="3cH7GZ" id="1VmqrBbT30t" role="3l5TZ$">
+        <property role="TrG5h" value="Person is deceased" />
+        <property role="3cH7GY" value="P15" />
+        <property role="a0oEV" value="production" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbC534" role="3cH7GF">
-      <property role="3cH7GY" value="F3" />
+      <property role="3cH7GY" value="P5" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="MEMBERSHIP" />
       <node concept="3cH7GZ" id="1VmqrBbL6jb" role="3l5TZy">
         <property role="TrG5h" value="membership started" />
         <property role="a0oEV" value="production" />
-        <property role="3cH7GY" value="P9" />
+        <property role="3cH7GY" value="P16" />
       </node>
       <node concept="3cH7GZ" id="1VmqrBbL$Xs" role="3l5TZ$">
         <property role="TrG5h" value="membership ended" />
-        <property role="3cH7GY" value="P10" />
+        <property role="3cH7GY" value="P17" />
         <property role="a0oEV" value="production" />
       </node>
     </node>
     <node concept="3cH7GN" id="1VmqrBbC52Q" role="3cH7GF">
       <property role="a0oEV" value="production" />
-      <property role="3cH7GY" value="P2" />
-      <property role="3cIS2x" value="1" />
+      <property role="3cH7GY" value="P6" />
+      <property role="3cIS2x" value="0" />
       <property role="3cIS2B" value="1" />
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
@@ -118,7 +148,7 @@
       <ref role="3cH7GK" node="1VmqrBbC534" resolve="MEMBERSHIP" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbn48o" role="3cH7GF">
-      <property role="3cH7GY" value="P2" />
+      <property role="3cH7GY" value="P7" />
       <property role="a0oEV" value="production" />
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
@@ -134,7 +164,7 @@
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
       <property role="TrG5h" value="copy of the Loan" />
-      <property role="3cH7GY" value="P3" />
+      <property role="3cH7GY" value="P8" />
       <property role="a0oEV" value="production" />
       <ref role="3cH7GL" node="1VmqrBbL$XC" resolve="COPY" />
       <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
@@ -146,7 +176,7 @@
       <property role="3cIS2B" value="N" />
       <property role="TrG5h" value="membership of Loan" />
       <property role="a0oEV" value="production" />
-      <property role="3cH7GY" value="P6" />
+      <property role="3cH7GY" value="P9" />
       <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
       <ref role="3cH7GL" node="1VmqrBbC534" resolve="MEMBERSHIP" />
     </node>
@@ -186,16 +216,16 @@
       <node concept="3cGziv" id="1VmqrBbwQiR" role="3cGS$C">
         <property role="3cGS$Q" value="start loan" />
         <property role="3cGzis" value="T4" />
-        <ref role="3lGtC5" node="1VmqrBbn48o" resolve="copy of Book" />
         <ref role="3cGzi0" node="1VmqrBbwQiZ" />
         <ref role="3cGzi6" node="1VmqrBbwQiK" />
+        <ref role="3lGtC5" node="1VmqrBbSqZv" resolve="borrow a Copy" />
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiS" role="3cGS$C">
         <property role="3cGS$Q" value="end loan" />
         <property role="3cGzis" value="T5" />
-        <ref role="3lGtC5" node="1VmqrBbn48o" resolve="copy of Book" />
         <ref role="3cGzi0" node="1VmqrBbwQiK" />
         <ref role="3cGzi6" node="1VmqrBbwQiZ" />
+        <ref role="3lGtC5" node="1VmqrBbSqZx" resolve="return a Copy" />
       </node>
       <node concept="3cGzii" id="1VmqrBbwQiK" role="3cGxOm">
         <property role="3cGzig" value="CA1" />

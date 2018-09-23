@@ -128,7 +128,7 @@
       <property role="IQ2ns" value="2222079712856355772" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="hasProduct" />
-      <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
+      <ref role="20lvS9" to="ajas:2ojITFEDW2_" resolve="EventType" />
     </node>
     <node concept="1TJgyj" id="2ojITFEDDWj" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034909971" />
