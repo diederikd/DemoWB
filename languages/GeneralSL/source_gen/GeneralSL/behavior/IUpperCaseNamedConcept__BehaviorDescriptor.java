@@ -42,58 +42,58 @@ public final class IUpperCaseNamedConcept__BehaviorDescriptor extends BaseBHDesc
   /*package*/ static String getFqName_id2ojITFEFpQY(@NotNull SNode __thisNode__) {
     SModel model = SNodeOperations.getModel(__thisNode__);
     if (model == null) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
 
     String longName = SModelOperations.getModelName(model);
     if (longName == null || longName.equals("")) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
-    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
   }
   /*package*/ static String getDescriptionText_id69Qfsw3IqwE(@NotNull SNode __thisNode__, SNode reference) {
     ISmartReferent__BehaviorDescriptor.getDescriptionText_id69Qfsw3IqwE.invoke0(__thisNode__, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x62763dc803b97bd8L, "jetbrains.mps.lang.core.structure.ISmartReferent"), reference);
     SModel model = SNodeOperations.getModel(__thisNode__);
     if (model == null) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
 
     String longName = SModelOperations.getModelName(model);
     if (longName == null || longName.equals("")) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
     if (model == SNodeOperations.getModel(reference)) {
       return longName;
     }
-    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
   }
   /*package*/ static String getPresentation_id69Qfsw3IoJg(@NotNull SNode __thisNode__, SNode reference) {
     ISmartReferent__BehaviorDescriptor.getPresentation_id69Qfsw3IoJg.invoke0(__thisNode__, MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x62763dc803b97bd8L, "jetbrains.mps.lang.core.structure.ISmartReferent"), reference);
     SModel model = SNodeOperations.getModel(__thisNode__);
     if (model == null) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
 
     String longName = SModelOperations.getModelName(model);
     if (longName == null || longName.equals("")) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
     if (model == SNodeOperations.getModel(reference)) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
-    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
   }
   /*package*/ static String getFullName_id2ojITFEFpTK(@NotNull SNode __thisNode__) {
     SModel model = SNodeOperations.getModel(__thisNode__);
     if (model == null) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
 
     String longName = SModelOperations.getModelName(model);
     if (longName == null || longName.equals("")) {
-      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+      return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
     }
-    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+    return longName + '.' + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
   }
 
   /*package*/ IUpperCaseNamedConcept__BehaviorDescriptor() {

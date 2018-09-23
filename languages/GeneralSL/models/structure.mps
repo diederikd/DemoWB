@@ -66,7 +66,7 @@
     <property role="3GE5qa" value="General" />
     <node concept="1TJgyi" id="2ojITFECeHg" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034536272" />
-      <property role="TrG5h" value="name" />
+      <property role="TrG5h" value="uName" />
       <ref role="AX2Wp" node="2ojITFECewU" resolve="uppercaseString" />
     </node>
     <node concept="PrWs8" id="2ojITFEF2zJ" role="PrDN$">

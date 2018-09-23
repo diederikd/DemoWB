@@ -10,9 +10,6 @@
   <imports />
   <registry>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
-      <concept id="2743742872034536271" name="GeneralSL.structure.IUpperCaseNamedConcept" flags="ng" index="3cGP3l">
-        <property id="2743742872034536272" name="name" index="3cGP3a" />
-      </concept>
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
         <property id="2743742872034489004" name="name" index="3cGS$Q" />
       </concept>
@@ -77,27 +74,27 @@
     <node concept="3cH7GX" id="1VmqrBbkqs5" role="3cH7GF">
       <property role="3cH7GY" value="P1" />
       <property role="a0oEV" value="production" />
-      <property role="3cGP3a" value="LOAN" />
+      <property role="TrG5h" value="LOAN" />
     </node>
     <node concept="3cH7GX" id="1VmqrBbL$XC" role="3cH7GF">
-      <property role="3cGP3a" value="COPY" />
       <property role="3cH7GY" value="F3" />
       <property role="a0oEV" value="production" />
+      <property role="TrG5h" value="COPY" />
     </node>
     <node concept="3cH7GX" id="1VmqrBbkqsb" role="3cH7GF">
       <property role="3cH7GY" value="F1" />
       <property role="a0oEV" value="production" />
-      <property role="3cGP3a" value="BOOK" />
+      <property role="TrG5h" value="BOOK" />
     </node>
     <node concept="3cH7GX" id="1VmqrBb_kPt" role="3cH7GF">
-      <property role="3cGP3a" value="PERSON" />
       <property role="3cH7GY" value="F1" />
       <property role="a0oEV" value="production" />
+      <property role="TrG5h" value="PERSON" />
     </node>
     <node concept="3cH7GX" id="1VmqrBbC534" role="3cH7GF">
-      <property role="3cGP3a" value="MEMBERSHIP" />
       <property role="3cH7GY" value="F3" />
       <property role="a0oEV" value="production" />
+      <property role="TrG5h" value="MEMBERSHIP" />
       <node concept="3cH7GZ" id="1VmqrBbL6jb" role="3l5TZy">
         <property role="TrG5h" value="membership started" />
         <property role="a0oEV" value="production" />
@@ -117,8 +114,8 @@
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
       <property role="TrG5h" value="MEMBER" />
-      <ref role="3cH7GK" node="1VmqrBbC534" />
-      <ref role="3cH7GL" node="1VmqrBb_kPt" />
+      <ref role="3cH7GL" node="1VmqrBb_kPt" resolve="PERSON" />
+      <ref role="3cH7GK" node="1VmqrBbC534" resolve="MEMBERSHIP" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbn48o" role="3cH7GF">
       <property role="3cH7GY" value="P2" />
@@ -128,18 +125,30 @@
       <property role="3cIS3q" value="0" />
       <property role="3cIS3u" value="N" />
       <property role="TrG5h" value="copy of Book" />
-      <ref role="3cH7GK" node="1VmqrBbkqsb" />
-      <ref role="3cH7GL" node="1VmqrBbL$XC" />
+      <ref role="3cH7GK" node="1VmqrBbkqsb" resolve="BOOK" />
+      <ref role="3cH7GL" node="1VmqrBbL$XC" resolve="COPY" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbL$XY" role="3cH7GF">
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2x" value="0" />
+      <property role="3cIS2B" value="N" />
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
       <property role="TrG5h" value="copy of the Loan" />
       <property role="3cH7GY" value="P3" />
-      <ref role="3cH7GL" node="1VmqrBbL$XC" />
-      <ref role="3cH7GK" node="1VmqrBbkqs5" />
+      <property role="a0oEV" value="production" />
+      <ref role="3cH7GL" node="1VmqrBbL$XC" resolve="COPY" />
+      <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
+    </node>
+    <node concept="3cH7GN" id="1VmqrBbN0Cy" role="3cH7GF">
+      <property role="3cIS3q" value="1" />
+      <property role="3cIS3u" value="1" />
+      <property role="3cIS2x" value="0" />
+      <property role="3cIS2B" value="N" />
+      <property role="TrG5h" value="membership of Loan" />
+      <property role="a0oEV" value="production" />
+      <property role="3cH7GY" value="P6" />
+      <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
+      <ref role="3cH7GL" node="1VmqrBbC534" resolve="MEMBERSHIP" />
     </node>
   </node>
   <node concept="3llzxe" id="1VmqrBbwQiI">

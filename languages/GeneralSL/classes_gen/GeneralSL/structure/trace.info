@@ -120,8 +120,8 @@
       <node id="2743742872034536271" at="56,19,57,76" concept="2" />
       <node id="2743742872034536271" at="57,76,58,96" concept="2" />
       <node id="2743742872034536271" at="58,96,59,17" concept="2" />
-      <node id="2743742872034536272" at="59,17,60,63" concept="2" />
-      <node id="2743742872034536271" at="60,63,61,22" concept="7" />
+      <node id="2743742872034536272" at="59,17,60,64" concept="2" />
+      <node id="2743742872034536271" at="60,64,61,22" concept="7" />
       <node id="2743742872034536271" at="54,0,63,0" concept="9" trace="createDescriptorForIUpperCaseNamedConcept#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2743742872034536271" at="34,56,35,47" />
       <scope id="2743742872034536271" at="54,80,61,22">

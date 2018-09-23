@@ -33,7 +33,7 @@ public final class EntityType__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String getName_id1VmqrBbAdFp(@NotNull SNode __thisNode__) {
-    return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "name"));
+    return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa0eb4fL, 0x2613bb9aeaa0eb50L, "uName"));
   }
 
   /*package*/ EntityType__BehaviorDescriptor() {

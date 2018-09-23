@@ -84,6 +84,9 @@
       <property role="20kJfa" value="endEvent" />
       <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
     </node>
+    <node concept="PrWs8" id="1VmqrBbN0CJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2_">
     <property role="EcuMT" value="2743742872034984101" />
@@ -99,8 +102,8 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="2ojITFEDDWf" resolve="FactType" />
-    <node concept="PrWs8" id="2ojITFEFlzE" role="PzmwI">
-      <ref role="PrY4T" to="d13l:2ojITFECeHf" resolve="IUpperCaseNamedConcept" />
+    <node concept="PrWs8" id="1VmqrBbOJ$h" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2B">
@@ -123,9 +126,6 @@
       <property role="20kJfa" value="prange" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
-    </node>
-    <node concept="PrWs8" id="2ojITFEE2qg" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="2ojITFEE3Hc" role="PzmwI">
       <ref role="PrY4T" node="2ojITFEE3GU" resolve="IPropertyType" />

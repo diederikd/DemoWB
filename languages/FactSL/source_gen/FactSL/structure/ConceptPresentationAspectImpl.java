@@ -59,14 +59,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BaseEntityType:
         if (props_BaseEntityType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("BaseEntityType");
+          cpb.presentationByName();
           props_BaseEntityType = cpb.create();
         }
         return props_BaseEntityType;
       case LanguageConceptSwitch.ConstructedEntityType:
         if (props_ConstructedEntityType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ConstructedEntityType");
+          cpb.presentationByName();
           props_ConstructedEntityType = cpb.create();
         }
         return props_ConstructedEntityType;

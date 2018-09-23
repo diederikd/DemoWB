@@ -8,7 +8,6 @@
   <imports>
     <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -140,7 +139,7 @@
         <ref role="1NtTu8" to="ajas:2ojITFEDW2E" resolve="domain" />
         <node concept="1sVBvm" id="2ojITFEFrvx" role="1sWHZn">
           <node concept="3F0A7n" id="2ojITFEFrvz" role="2wV5jI">
-            <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -166,7 +165,7 @@
         <ref role="1NtTu8" to="ajas:2ojITFEDW2F" resolve="prange" />
         <node concept="1sVBvm" id="2ojITFEFrvq" role="1sWHZn">
           <node concept="3F0A7n" id="2ojITFEFrvs" role="2wV5jI">
-            <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -196,7 +195,7 @@
         <node concept="1sVBvm" id="1VmqrBbnNhV" role="1sWHZn">
           <node concept="3F0A7n" id="1VmqrBbnNhW" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -377,7 +376,7 @@
         <node concept="1sVBvm" id="1VmqrBbnNj9" role="1sWHZn">
           <node concept="3F0A7n" id="1VmqrBbnNja" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -401,7 +400,7 @@
         <node concept="1sVBvm" id="2ojITFEFBR7" role="1sWHZn">
           <node concept="3F0A7n" id="2ojITFEFBRG" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -588,7 +587,7 @@
         <node concept="1sVBvm" id="2ojITFEFC6L" role="1sWHZn">
           <node concept="3F0A7n" id="2ojITFEFC91" role="2wV5jI">
             <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
@@ -611,7 +610,7 @@
         <property role="3F0ifm" value="base entity type" />
       </node>
       <node concept="3F0A7n" id="1VmqrBbBSaH" role="3EZMnx">
-        <ref role="1NtTu8" to="d13l:2ojITFECeHg" resolve="name" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1VmqrBb$arJ" role="3EZMnx">
         <node concept="3mYdg7" id="1VmqrBb$arK" role="3F10Kt">
