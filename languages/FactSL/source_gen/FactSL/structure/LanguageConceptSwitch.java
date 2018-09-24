@@ -16,19 +16,20 @@ public final class LanguageConceptSwitch {
   public static final int ConstructedEntityType = 4;
   public static final int Duration = 5;
   public static final int EntityType = 6;
-  public static final int EventType = 7;
-  public static final int FactType = 8;
-  public static final int IPropertyType = 9;
-  public static final int Length = 10;
-  public static final int Mass = 11;
-  public static final int Number = 12;
-  public static final int PropertyType = 13;
-  public static final int Temperature = 14;
-  public static final int Time = 15;
-  public static final int TruthValue = 16;
-  public static final int ValueType = 17;
-  public static final int Velocity = 18;
-  public static final int Volume = 19;
+  public static final int EventLaw = 7;
+  public static final int EventType = 8;
+  public static final int FactType = 9;
+  public static final int IPropertyType = 10;
+  public static final int Length = 11;
+  public static final int Mass = 12;
+  public static final int Number = 13;
+  public static final int PropertyType = 14;
+  public static final int Temperature = 15;
+  public static final int Time = 16;
+  public static final int TruthValue = 17;
+  public static final int ValueType = 18;
+  public static final int Velocity = 19;
+  public static final int Volume = 20;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x6836a913df904e79L, 0x9a37cb334bb02ea5L);
@@ -39,6 +40,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2613bb9aeaa7c0a8L, ConstructedEntityType);
     builder.put(0x2613bb9aeaa83b2eL, Duration);
     builder.put(0x2613bb9aeaa7c0a6L, EntityType);
+    builder.put(0x1ed669b9cbf11cebL, EventLaw);
     builder.put(0x2613bb9aeaa7c0a5L, EventType);
     builder.put(0x2613bb9aeaa69f0fL, FactType);
     builder.put(0x2613bb9aeaa83b3aL, IPropertyType);

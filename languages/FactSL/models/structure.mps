@@ -11,8 +11,17 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
         <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
@@ -257,6 +266,43 @@
   <node concept="Az7Fb" id="2ojITFEE4jr">
     <property role="TrG5h" value="cardinality" />
     <property role="FLfZY" value="[0-9]+|N" />
+  </node>
+  <node concept="AxPO7" id="1VmqrBbWhNA">
+    <property role="TrG5h" value="eventLawType" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="1VmqrBbWhNC" />
+    <node concept="M4N5e" id="1VmqrBbWhNB" role="M5hS2">
+      <property role="1uS6qo" value="precludes" />
+      <property role="1uS6qv" value="precludes" />
+    </node>
+    <node concept="M4N5e" id="1VmqrBbWhNC" role="M5hS2">
+      <property role="1uS6qo" value="precedes" />
+      <property role="1uS6qv" value="precedes" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1VmqrBbWhNF">
+    <property role="EcuMT" value="2222079712865361131" />
+    <property role="TrG5h" value="EventLaw" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1VmqrBbWhNG" role="1TKVEl">
+      <property role="IQ2nx" value="2222079712865361132" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="1VmqrBbWhNA" resolve="eventLawType" />
+    </node>
+    <node concept="1TJgyj" id="1VmqrBbWhNI" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712865361134" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="eventTypeA" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
+    </node>
+    <node concept="1TJgyj" id="1VmqrBbWhNK" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712865361136" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="eventTypeB" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
+    </node>
   </node>
 </model>
 

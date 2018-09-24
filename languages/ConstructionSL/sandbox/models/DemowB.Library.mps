@@ -57,11 +57,17 @@
         <property id="2743742872035015492" name="maxCardRange" index="3cIS3u" />
         <reference id="2743742872034984106" name="domain" index="3cH7GK" />
       </concept>
+      <concept id="2222079712865361131" name="FactSL.structure.EventLaw" flags="ng" index="3l9Rli">
+        <property id="2222079712865361132" name="type" index="3l9Rll" />
+        <reference id="2222079712865361136" name="eventTypeB" index="3l9Rl9" />
+        <reference id="2222079712865361134" name="eventTypeA" index="3l9Rln" />
+      </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
+        <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
       </concept>
       <concept id="2222079712857969143" name="DemoSL.structure.ConstructionModel" flags="ng" index="3llzxe">
         <child id="2222079712857969155" name="roles" index="3llzIU" />
@@ -71,6 +77,21 @@
   </registry>
   <node concept="3cHilB" id="1VmqrBbkqs2">
     <property role="TrG5h" value="Object Fact Diagram Library" />
+    <node concept="3l9Rli" id="1VmqrBbYGfH" role="3l9RgF">
+      <property role="3l9Rll" value="precedes" />
+      <ref role="3l9Rln" node="1VmqrBbT30r" resolve="Person is born" />
+      <ref role="3l9Rl9" node="1VmqrBbT30t" resolve="Person is deceased" />
+    </node>
+    <node concept="3l9Rli" id="1VmqrBbZgOQ" role="3l9RgF">
+      <property role="3l9Rll" value="precedes" />
+      <ref role="3l9Rln" node="1VmqrBbSqZv" resolve="borrow a Copy" />
+      <ref role="3l9Rl9" node="1VmqrBbSqZx" resolve="return a Copy" />
+    </node>
+    <node concept="3l9Rli" id="1VmqrBbZgPD" role="3l9RgF">
+      <property role="3l9Rll" value="precedes" />
+      <ref role="3l9Rln" node="1VmqrBbT30n" resolve="buy a new Copy" />
+      <ref role="3l9Rl9" node="1VmqrBbT30p" resolve="dispose a Copy" />
+    </node>
     <node concept="3cH7GX" id="1VmqrBbkqs5" role="3cH7GF">
       <property role="3cH7GY" value="P1" />
       <property role="a0oEV" value="production" />
@@ -91,12 +112,12 @@
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="COPY" />
       <node concept="3cH7GZ" id="1VmqrBbT30n" role="3l5TZy">
-        <property role="TrG5h" value="buy a new copy" />
+        <property role="TrG5h" value="buy a new Copy" />
         <property role="3cH7GY" value="P12" />
         <property role="a0oEV" value="production" />
       </node>
       <node concept="3cH7GZ" id="1VmqrBbT30p" role="3l5TZ$">
-        <property role="TrG5h" value="dispose a copy" />
+        <property role="TrG5h" value="dispose a Copy" />
         <property role="3cH7GY" value="P13" />
         <property role="a0oEV" value="production" />
       </node>
@@ -136,6 +157,21 @@
         <property role="a0oEV" value="production" />
       </node>
     </node>
+    <node concept="3cH7GX" id="1VmqrBbWhLf" role="3cH7GF">
+      <property role="TrG5h" value="MEMBERSHIP FEE" />
+      <property role="3cH7GY" value="P19" />
+      <property role="a0oEV" value="production" />
+      <node concept="3cH7GZ" id="1VmqrBbWhLz" role="3l5TZ$">
+        <property role="TrG5h" value="membership fee has been paid" />
+        <property role="3cH7GY" value="P18" />
+        <property role="a0oEV" value="production" />
+      </node>
+      <node concept="3cH7GZ" id="1VmqrBbWhL_" role="3l5TZy">
+        <property role="TrG5h" value="invoice is created" />
+        <property role="3cH7GY" value="P20" />
+        <property role="a0oEV" value="production" />
+      </node>
+    </node>
     <node concept="3cH7GN" id="1VmqrBbC52Q" role="3cH7GF">
       <property role="a0oEV" value="production" />
       <property role="3cH7GY" value="P6" />
@@ -150,15 +186,15 @@
     <node concept="3cH7GN" id="1VmqrBbn48o" role="3cH7GF">
       <property role="3cH7GY" value="P7" />
       <property role="a0oEV" value="production" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
-      <property role="3cIS3q" value="0" />
-      <property role="3cIS3u" value="N" />
+      <property role="3cIS2x" value="0" />
+      <property role="3cIS2B" value="N" />
+      <property role="3cIS3q" value="1" />
+      <property role="3cIS3u" value="1" />
       <property role="TrG5h" value="copy of Book" />
-      <ref role="3cH7GK" node="1VmqrBbkqsb" resolve="BOOK" />
-      <ref role="3cH7GL" node="1VmqrBbL$XC" resolve="COPY" />
+      <ref role="3cH7GK" node="1VmqrBbL$XC" resolve="COPY" />
+      <ref role="3cH7GL" node="1VmqrBbkqsb" resolve="BOOK" />
     </node>
-    <node concept="3cH7GN" id="1VmqrBbL$XY" role="3cH7GF">
+    <node concept="3cH7GN" id="1VmqrBbWhMh" role="3cH7GF">
       <property role="3cIS2x" value="0" />
       <property role="3cIS2B" value="N" />
       <property role="3cIS3q" value="1" />

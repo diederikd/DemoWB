@@ -9,6 +9,7 @@
     <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="wtx7" ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -28,6 +29,9 @@
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
@@ -741,6 +745,32 @@
       </node>
       <node concept="3F0ifn" id="1VmqrBbLlOY" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1VmqrBbWhNV">
+    <ref role="1XX52x" to="ajas:1VmqrBbWhNF" resolve="EventLaw" />
+    <node concept="3EZMnI" id="1VmqrBbWhNX" role="2wV5jI">
+      <node concept="l2Vlx" id="1VmqrBbWhNY" role="2iSdaV" />
+      <node concept="1iCGBv" id="1VmqrBbWhO1" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:1VmqrBbWhNI" resolve="eventTypeA" />
+        <node concept="1sVBvm" id="1VmqrBbWhO4" role="1sWHZn">
+          <node concept="3F0A7n" id="1VmqrBbWhO6" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="1VmqrBbWhOl" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:1VmqrBbWhNG" resolve="type" />
+        <ref role="1k5W1q" to="wtx7:1VmqrBbYZyS" resolve="Bold" />
+      </node>
+      <node concept="1iCGBv" id="1VmqrBbWhO8" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:1VmqrBbWhNK" resolve="eventTypeB" />
+        <node concept="1sVBvm" id="1VmqrBbWhOb" role="1sWHZn">
+          <node concept="3F0A7n" id="1VmqrBbWhOd" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

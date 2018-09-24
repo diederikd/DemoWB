@@ -96,6 +96,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
     </node>
+    <node concept="1TJgyj" id="1VmqrBbWhQi" role="1TKVEi">
+      <property role="IQ2ns" value="2222079712865361298" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="eventLaws" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ajas:1VmqrBbWhNF" resolve="EventLaw" />
+    </node>
     <node concept="PrWs8" id="2ojITFEE2IT" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

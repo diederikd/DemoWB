@@ -53,7 +53,7 @@
       <node concept="3cGziv" id="2ojITFECvwk" role="3cGS$C">
         <property role="3cGzis" value="T1" />
         <property role="3cGS$Q" value="voldoen aan aangifteplicht" />
-        <property role="3cHIpr" value="informational" />
+        <property role="3cHIpr" value="original" />
         <ref role="3cGzi6" node="2ojITFECrSm" />
         <ref role="3cGzi0" node="2ojITFECrSk" />
       </node>

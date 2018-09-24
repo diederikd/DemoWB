@@ -19,6 +19,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConstructedEntityType = createDescriptorForConstructedEntityType();
   /*package*/ final ConceptDescriptor myConceptDuration = createDescriptorForDuration();
   /*package*/ final ConceptDescriptor myConceptEntityType = createDescriptorForEntityType();
+  /*package*/ final ConceptDescriptor myConceptEventLaw = createDescriptorForEventLaw();
   /*package*/ final ConceptDescriptor myConceptEventType = createDescriptorForEventType();
   /*package*/ final ConceptDescriptor myConceptFactType = createDescriptorForFactType();
   /*package*/ final ConceptDescriptor myConceptIPropertyType = createDescriptorForIPropertyType();
@@ -40,7 +41,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEventType, myConceptFactType, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptTemperature, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
+    return Arrays.asList(myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptTemperature, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
   }
 
   @Override
@@ -61,6 +62,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDuration;
       case LanguageConceptSwitch.EntityType:
         return myConceptEntityType;
+      case LanguageConceptSwitch.EventLaw:
+        return myConceptEventLaw;
       case LanguageConceptSwitch.EventType:
         return myConceptEventType;
       case LanguageConceptSwitch.FactType:
@@ -154,6 +157,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984102");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEventLaw() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "EventLaw", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x1ed669b9cbf11cebL);
+    b.class_(false, false, false);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2222079712865361131");
+    b.version(2);
+    b.prop("type", 0x1ed669b9cbf11cecL, "2222079712865361132");
+    b.associate("eventTypeA", 0x1ed669b9cbf11ceeL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(false).origin("2222079712865361134").done();
+    b.associate("eventTypeB", 0x1ed669b9cbf11cf0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(false).origin("2222079712865361136").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEventType() {
