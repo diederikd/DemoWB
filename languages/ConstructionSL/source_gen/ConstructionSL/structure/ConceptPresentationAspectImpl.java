@@ -11,10 +11,12 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Actor;
   private ConceptPresentation props_ActorRole;
+  private ConceptPresentation props_ActorRoleReference;
   private ConceptPresentation props_AggregateTransactionKind;
   private ConceptPresentation props_CompositeActorRole;
   private ConceptPresentation props_ScopeOfInterest;
   private ConceptPresentation props_TransactionKind;
+  private ConceptPresentation props_TransactionKindReference;
   private ConceptPresentation props_test;
 
   @Override
@@ -35,6 +37,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ActorRole = cpb.create();
         }
         return props_ActorRole;
+      case LanguageConceptSwitch.ActorRoleReference:
+        if (props_ActorRoleReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e4eL, 0x2e078028fd531e4fL, "actorRole", "", "");
+          props_ActorRoleReference = cpb.create();
+        }
+        return props_ActorRoleReference;
       case LanguageConceptSwitch.AggregateTransactionKind:
         if (props_AggregateTransactionKind == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -63,6 +72,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TransactionKind = cpb.create();
         }
         return props_TransactionKind;
+      case LanguageConceptSwitch.TransactionKindReference:
+        if (props_TransactionKindReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind", "", "");
+          props_TransactionKindReference = cpb.create();
+        }
+        return props_TransactionKindReference;
       case LanguageConceptSwitch.test:
         if (props_test == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

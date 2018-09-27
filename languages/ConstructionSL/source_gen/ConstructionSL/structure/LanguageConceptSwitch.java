@@ -11,20 +11,24 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Actor = 0;
   public static final int ActorRole = 1;
-  public static final int AggregateTransactionKind = 2;
-  public static final int CompositeActorRole = 3;
-  public static final int ScopeOfInterest = 4;
-  public static final int TransactionKind = 5;
-  public static final int test = 6;
+  public static final int ActorRoleReference = 2;
+  public static final int AggregateTransactionKind = 3;
+  public static final int CompositeActorRole = 4;
+  public static final int ScopeOfInterest = 5;
+  public static final int TransactionKind = 6;
+  public static final int TransactionKindReference = 7;
+  public static final int test = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd87481a388534c7cL, 0x9cb5096d805e832cL);
     builder.put(0x585f5ae0f8b9236L, Actor);
     builder.put(0x2613bb9aeaa032a9L, ActorRole);
+    builder.put(0x2e078028fd531e4eL, ActorRoleReference);
     builder.put(0x2613bb9aeaa18f0cL, AggregateTransactionKind);
     builder.put(0x2613bb9aeaa18f08L, CompositeActorRole);
     builder.put(0x2613bb9aeaa69ec1L, ScopeOfInterest);
     builder.put(0x2613bb9aeaa18f05L, TransactionKind);
+    builder.put(0x2e078028fd531e54L, TransactionKindReference);
     builder.put(0x2613bb9aeaa1f816L, test);
     myIndex = builder.seal();
   }

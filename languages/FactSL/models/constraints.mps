@@ -95,5 +95,8 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1VmqrBbZ$jy">
+    <ref role="1M2myG" to="ajas:2ojITFEDW2_" resolve="EventType" />
+  </node>
 </model>
 

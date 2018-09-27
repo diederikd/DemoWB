@@ -16,6 +16,8 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -30,6 +32,12 @@ public final class EventType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_id1VmqrBbAdFp);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
+    {
+      final SNode baseEntityType = SNodeOperations.getParent(__thisNode__);
+      if (SNodeOperations.isInstanceOf(baseEntityType, MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a7L, "FactSL.structure.BaseEntityType"))) {
+        SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L, 0x1ed669b9cbfe44e0L, "concerns"), baseEntityType);
+      }
+    }
   }
 
   /*package*/ static String getName_id1VmqrBbAdFp(@NotNull SNode __thisNode__) {

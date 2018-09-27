@@ -14,6 +14,7 @@
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
         <property id="1212087449254" name="noValueText" index="Q2FuW" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
       <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
@@ -86,9 +87,10 @@
   <node concept="AxPO7" id="m5XqSfwzTd">
     <property role="3GE5qa" value="General" />
     <property role="TrG5h" value="TypeOfWorld" />
-    <property role="PDuV0" value="true" />
+    <property role="PDuV0" value="false" />
     <property role="Q2FuW" value="production | coordination" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <ref role="Qgau1" node="m5XqSfwzTf" />
     <node concept="M4N5e" id="m5XqSfwzTe" role="M5hS2">
       <property role="1uS6qo" value="coordination" />
       <property role="1uS6qv" value="coordination" />

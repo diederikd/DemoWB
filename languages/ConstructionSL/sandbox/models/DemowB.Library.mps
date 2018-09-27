@@ -26,7 +26,6 @@
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="id" index="3cGPkH" />
-        <reference id="2743742872034909893" name="isHiddenIn" index="3cHilv" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="roles" index="3cGxOm" />
@@ -43,7 +42,9 @@
         <reference id="2743742872034984107" name="prange" index="3cH7GL" />
       </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
-      <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ" />
+      <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ">
+        <reference id="2222079712866223328" name="concerns" index="3la2Pp" />
+      </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
         <property id="397994270025613077" name="type" index="a0oEV" />
         <property id="2743742872034984100" name="id" index="3cH7GY" />
@@ -115,11 +116,13 @@
         <property role="TrG5h" value="buy a new Copy" />
         <property role="3cH7GY" value="P12" />
         <property role="a0oEV" value="production" />
+        <ref role="3la2Pp" node="1VmqrBbL$XC" resolve="COPY" />
       </node>
       <node concept="3cH7GZ" id="1VmqrBbT30p" role="3l5TZ$">
         <property role="TrG5h" value="dispose a Copy" />
         <property role="3cH7GY" value="P13" />
         <property role="a0oEV" value="production" />
+        <ref role="3la2Pp" node="1VmqrBbL$XC" resolve="COPY" />
       </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbkqsb" role="3cH7GF">
@@ -270,7 +273,6 @@
       <node concept="3cGS$N" id="1VmqrBbwQiL" role="3cGxOm">
         <property role="3cGS$Q" value="membership executor" />
         <property role="3cGPkH" value="A1" />
-        <ref role="3cHilv" node="1VmqrBbwQiK" />
       </node>
     </node>
   </node>

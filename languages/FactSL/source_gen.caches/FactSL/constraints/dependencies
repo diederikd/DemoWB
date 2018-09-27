@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="FactSL.constraints.ConstraintsAspectDescriptor" file="ConstraintsAspectDescriptor.java">
     <classNode dependClassName="FactSL.constraints.EntityType_Constraints" />
+    <classNode dependClassName="FactSL.constraints.EventType_Constraints" />
     <classNode dependClassName="FactSL.constraints.FactType_Constraints" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -13,6 +14,10 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BaseConstraintsAspectDescriptor" />
   </dependency>
   <dependency className="FactSL.constraints.EntityType_Constraints" file="EntityType_Constraints.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="FactSL.constraints.EventType_Constraints" file="EventType_Constraints.java">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>

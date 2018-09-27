@@ -32,7 +32,7 @@ public enum eventLawType {
     return list;
   }
   public static eventLawType getDefault() {
-    return eventLawType.precludes;
+    return eventLawType.precedes;
   }
   public static eventLawType parseValue(String value) {
     if (value == null) {

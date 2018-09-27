@@ -76,12 +76,6 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" node="2ojITFEC3aC" resolve="actorRoleId" />
     </node>
-    <node concept="1TJgyj" id="2ojITFEDDV5" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034909893" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="isHiddenIn" />
-      <ref role="20lvS9" node="2ojITFECoW8" resolve="CompositeActorRole" />
-    </node>
   </node>
   <node concept="Az7Fb" id="2ojITFECoW4">
     <property role="TrG5h" value="transactionKindId" />
@@ -145,6 +139,13 @@
       <property role="IQ2nx" value="2743742872034578186" />
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" node="2ojITFECoW9" resolve="compositeActorRoleId" />
+    </node>
+    <node concept="1TJgyj" id="2S7w2zXkLTq" role="1TKVEi">
+      <property role="IQ2ns" value="3316760564118789722" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actorRoles" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2S7w2zXkLTe" resolve="ActorRoleReference" />
     </node>
   </node>
   <node concept="Az7Fb" id="2ojITFECoW9">
@@ -231,6 +232,28 @@
     </node>
     <node concept="PrWs8" id="m5XqSf_iyp" role="PzmwI">
       <ref role="PrY4T" to="d13l:2ojITFEC3aF" resolve="ILowerCaseNamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2S7w2zXkLTe">
+    <property role="EcuMT" value="3316760564118789710" />
+    <property role="TrG5h" value="ActorRoleReference" />
+    <node concept="1TJgyj" id="2S7w2zXkLTf" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="3316760564118789711" />
+      <property role="20kJfa" value="actorRole" />
+      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2S7w2zXkLTk">
+    <property role="EcuMT" value="3316760564118789716" />
+    <property role="TrG5h" value="TransactionKindReference" />
+    <node concept="1TJgyj" id="2S7w2zXkLTl" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="3316760564118789717" />
+      <property role="20kJfa" value="transactionKind" />
+      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
     </node>
   </node>
 </model>
