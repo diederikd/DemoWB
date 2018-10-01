@@ -4,6 +4,7 @@
     <classNode dependClassName="ProcessSL.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="ProcessSL.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="ProcessSL.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="ProcessSL.intentions.IntentionsDescriptor" />
     <classNode dependClassName="ProcessSL.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="ProcessSL.structure.StructureAspectDescriptor" />
     <classNode dependClassName="ProcessSL.typesystem.TypesystemDescriptor" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />

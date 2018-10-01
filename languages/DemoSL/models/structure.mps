@@ -9,6 +9,7 @@
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
     <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -184,6 +185,27 @@
     <property role="3GE5qa" value="Fact Model" />
     <property role="TrG5h" value="ObjectFactDiagram" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2S7w2zXwFQw">
+    <property role="EcuMT" value="3316760564121910688" />
+    <property role="TrG5h" value="ProcesModel" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2S7w2zXwFQx" role="1TKVEi">
+      <property role="IQ2ns" value="3316760564121910689" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tranactionKindStepKind" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+    </node>
+    <node concept="1TJgyj" id="2S7w2zXwFQz" role="1TKVEi">
+      <property role="IQ2ns" value="3316760564121910691" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="links" />
+      <ref role="20lvS9" to="it18:m5XqSfxGx1" resolve="Link" />
+    </node>
+    <node concept="PrWs8" id="2S7w2zXwFQA" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

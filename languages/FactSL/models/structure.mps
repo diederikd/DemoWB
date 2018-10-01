@@ -153,15 +153,15 @@
     <node concept="PrWs8" id="1VmqrBbn48e" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="2ojITFEDW2J" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034984111" />
-      <property role="20lmBu" value="reference" />
+    <node concept="PrWs8" id="1VmqrBbn489" role="PzmwI">
+      <ref role="PrY4T" node="2ojITFEE3GU" resolve="IPropertyType" />
+    </node>
+    <node concept="1TJgyj" id="2S7w2zXwive" role="1TKVEi">
+      <property role="IQ2ns" value="3316760564121806798" />
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arange" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2K" resolve="ValueType" />
-    </node>
-    <node concept="PrWs8" id="1VmqrBbn489" role="PzmwI">
-      <ref role="PrY4T" node="2ojITFEE3GU" resolve="IPropertyType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2K">

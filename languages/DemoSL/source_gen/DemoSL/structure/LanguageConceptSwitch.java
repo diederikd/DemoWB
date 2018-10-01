@@ -16,8 +16,9 @@ public final class LanguageConceptSwitch {
   public static final int FactModel = 4;
   public static final int ObjectFactDiagram = 5;
   public static final int OrganisationConstructionDiagram = 6;
-  public static final int TransactionProductTable = 7;
-  public static final int WorkInstructionSpecifications = 8;
+  public static final int ProcesModel = 7;
+  public static final int TransactionProductTable = 8;
+  public static final int WorkInstructionSpecifications = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL);
@@ -28,6 +29,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2613bb9aeaa69efdL, FactModel);
     builder.put(0x1ed669b9cba05100L, ObjectFactDiagram);
     builder.put(0x2613bb9aeaa032b1L, OrganisationConstructionDiagram);
+    builder.put(0x2e078028fd82bda0L, ProcesModel);
     builder.put(0x2613bb9aeaa69f01L, TransactionProductTable);
     builder.put(0x2613bb9aeaa69f00L, WorkInstructionSpecifications);
     myIndex = builder.seal();

@@ -41,6 +41,9 @@
       <concept id="2743742872034984105" name="FactSL.structure.PropertyType" flags="ng" index="3cH7GN">
         <reference id="2743742872034984107" name="prange" index="3cH7GL" />
       </concept>
+      <concept id="2743742872034984110" name="FactSL.structure.AttributeType" flags="ng" index="3cH7GO">
+        <child id="3316760564121806798" name="arange" index="3jxEvA" />
+      </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ">
         <reference id="2222079712866223328" name="concerns" index="3la2Pp" />
@@ -58,6 +61,7 @@
         <property id="2743742872035015492" name="maxCardRange" index="3cIS3u" />
         <reference id="2743742872034984106" name="domain" index="3cH7GK" />
       </concept>
+      <concept id="2743742872035015473" name="FactSL.structure.Amount" flags="ng" index="3cIS2F" />
       <concept id="2222079712865361131" name="FactSL.structure.EventLaw" flags="ng" index="3l9Rli">
         <property id="2222079712865361132" name="type" index="3l9Rll" />
         <reference id="2222079712865361136" name="eventTypeB" index="3l9Rl9" />
@@ -202,11 +206,11 @@
       <property role="3cIS2B" value="N" />
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="TrG5h" value="copy of the Loan" />
+      <property role="TrG5h" value="book of the Loan" />
       <property role="3cH7GY" value="P8" />
       <property role="a0oEV" value="production" />
-      <ref role="3cH7GL" node="1VmqrBbL$XC" resolve="COPY" />
       <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
+      <ref role="3cH7GL" node="1VmqrBbkqsb" resolve="BOOK" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbN0Cy" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -219,10 +223,30 @@
       <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
       <ref role="3cH7GL" node="1VmqrBbC534" resolve="MEMBERSHIP" />
     </node>
+    <node concept="3cH7GO" id="2S7w2zXwiuO" role="3cH7GF">
+      <property role="3cIS3q" value="1" />
+      <property role="3cIS3u" value="1" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <property role="TrG5h" value="penalty of the LOAN" />
+      <property role="3cH7GY" value="P28" />
+      <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
+      <node concept="3cIS2F" id="2S7w2zXwCp_" role="3jxEvA" />
+    </node>
     <node concept="3cH7GZ" id="2S7w2zXv4BS" role="3cH7GF">
       <property role="TrG5h" value="is paid" />
       <property role="3cH7GY" value="P25" />
       <ref role="3la2Pp" node="1VmqrBbWhLf" resolve="MEMBERSHIP FEE" />
+    </node>
+    <node concept="3cH7GZ" id="2S7w2zXwisr" role="3cH7GF">
+      <property role="TrG5h" value="book of LOAN is issues" />
+      <property role="3cH7GY" value="P26" />
+      <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
+    </node>
+    <node concept="3cH7GZ" id="2S7w2zXwita" role="3cH7GF">
+      <property role="TrG5h" value="book of LOAN is returned" />
+      <property role="3cH7GY" value="P27" />
+      <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
     </node>
   </node>
   <node concept="3llzxe" id="1VmqrBbwQiI">
@@ -274,13 +298,14 @@
         <property role="3cGzis" value="T7" />
         <ref role="3cGzi0" node="2S7w2zXuJeB" resolve="borrower" />
         <ref role="3cGzi6" node="2S7w2zXuJef" resolve="book issuer" />
+        <ref role="3lGtC5" node="2S7w2zXwisr" resolve="book of LOAN is issues" />
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiS" role="3cGS$C">
         <property role="3cGS$Q" value="book returning" />
         <property role="3cGzis" value="T8" />
-        <ref role="3lGtC5" node="1VmqrBbSqZx" resolve="return a Copy" />
         <ref role="3cGzi0" node="2S7w2zXuJef" resolve="book issuer" />
         <ref role="3cGzi6" node="2S7w2zXuJeB" resolve="borrower" />
+        <ref role="3lGtC5" node="2S7w2zXwita" resolve="book of LOAN is returned" />
       </node>
       <node concept="3cGziv" id="2S7w2zXuJeN" role="3cGS$C">
         <property role="3cGS$Q" value="penalty paying" />

@@ -24,6 +24,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 2:
         return Collections.<ConceptEditor>singletonList(new OrganisationConstructionDiagram_Editor());
       case 3:
+        return Collections.<ConceptEditor>singletonList(new ProcesModel_Editor());
+      case 4:
         return Collections.<ConceptEditor>singletonList(new TransactionProductTable_Editor());
       default:
     }
@@ -32,5 +34,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69f01L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69f01L)).seal();
 }
