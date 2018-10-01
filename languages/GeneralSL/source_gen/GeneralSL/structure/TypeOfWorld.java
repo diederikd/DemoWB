@@ -32,7 +32,7 @@ public enum TypeOfWorld {
     return list;
   }
   public static TypeOfWorld getDefault() {
-    return null;
+    return TypeOfWorld.production;
   }
   public static TypeOfWorld parseValue(String value) {
     if (value == null) {

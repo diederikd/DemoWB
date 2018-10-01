@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActorRoleReference = createDescriptorForActorRoleReference();
   /*package*/ final ConceptDescriptor myConceptAggregateTransactionKind = createDescriptorForAggregateTransactionKind();
   /*package*/ final ConceptDescriptor myConceptCompositeActorRole = createDescriptorForCompositeActorRole();
+  /*package*/ final ConceptDescriptor myConceptCompositeActorRoleReference = createDescriptorForCompositeActorRoleReference();
   /*package*/ final ConceptDescriptor myConceptScopeOfInterest = createDescriptorForScopeOfInterest();
   /*package*/ final ConceptDescriptor myConceptTransactionKind = createDescriptorForTransactionKind();
   /*package*/ final ConceptDescriptor myConceptTransactionKindReference = createDescriptorForTransactionKindReference();
@@ -29,7 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActor, myConceptActorRole, myConceptActorRoleReference, myConceptAggregateTransactionKind, myConceptCompositeActorRole, myConceptScopeOfInterest, myConceptTransactionKind, myConceptTransactionKindReference, myConcepttest);
+    return Arrays.asList(myConceptActor, myConceptActorRole, myConceptActorRoleReference, myConceptAggregateTransactionKind, myConceptCompositeActorRole, myConceptCompositeActorRoleReference, myConceptScopeOfInterest, myConceptTransactionKind, myConceptTransactionKindReference, myConcepttest);
   }
 
   @Override
@@ -46,6 +47,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptAggregateTransactionKind;
       case LanguageConceptSwitch.CompositeActorRole:
         return myConceptCompositeActorRole;
+      case LanguageConceptSwitch.CompositeActorRoleReference:
+        return myConceptCompositeActorRoleReference;
       case LanguageConceptSwitch.ScopeOfInterest:
         return myConceptScopeOfInterest;
       case LanguageConceptSwitch.TransactionKind:
@@ -66,7 +69,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForActor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "Actor", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
     b.class_(false, true, false);
-    b.parent(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/397994270026076726");
     b.version(2);
     return b.create();
@@ -78,6 +81,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034489001");
     b.version(2);
     b.prop("id", 0x2613bb9aeaa0eeb7L, "2743742872034537143");
+    b.aggregate("isActorRoleIn", 0x2e078028fd61c14cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd647073L).optional(true).ordered(true).multiple(true).origin("3316760564119748940").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForActorRoleReference() {
@@ -104,7 +108,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034578184");
     b.version(2);
     b.prop("id", 0x2613bb9aeaa18f0aL, "2743742872034578186");
-    b.aggregate("actorRoles", 0x2e078028fd531e5aL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e4eL).optional(true).ordered(true).multiple(true).origin("3316760564118789722").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCompositeActorRoleReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "CompositeActorRoleReference", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd647073L);
+    b.class_(false, false, false);
+    b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/3316760564119924851");
+    b.version(2);
+    b.associate("compositeActorRole", 0x2e078028fd647074L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f08L).optional(false).origin("3316760564119924852").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForScopeOfInterest() {

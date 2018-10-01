@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ActorRoleReference;
   private ConceptPresentation props_AggregateTransactionKind;
   private ConceptPresentation props_CompositeActorRole;
+  private ConceptPresentation props_CompositeActorRoleReference;
   private ConceptPresentation props_ScopeOfInterest;
   private ConceptPresentation props_TransactionKind;
   private ConceptPresentation props_TransactionKindReference;
@@ -33,7 +34,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ActorRole:
         if (props_ActorRole == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ActorRole");
+          cpb.presentationByName();
           props_ActorRole = cpb.create();
         }
         return props_ActorRole;
@@ -54,10 +55,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.CompositeActorRole:
         if (props_CompositeActorRole == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("CompositeActorRole");
+          cpb.presentationByName();
           props_CompositeActorRole = cpb.create();
         }
         return props_CompositeActorRole;
+      case LanguageConceptSwitch.CompositeActorRoleReference:
+        if (props_CompositeActorRoleReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd647073L, 0x2e078028fd647074L, "compositeActorRole", "", "");
+          props_CompositeActorRoleReference = cpb.create();
+        }
+        return props_CompositeActorRoleReference;
       case LanguageConceptSwitch.ScopeOfInterest:
         if (props_ScopeOfInterest == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

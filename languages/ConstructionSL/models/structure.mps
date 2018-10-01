@@ -71,6 +71,13 @@
     <property role="EcuMT" value="2743742872034489001" />
     <property role="TrG5h" value="ActorRole" />
     <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="Actor" />
+    <node concept="1TJgyj" id="2S7w2zXos5c" role="1TKVEi">
+      <property role="IQ2ns" value="3316760564119748940" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="isActorRoleIn" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2S7w2zXp71N" resolve="CompositeActorRoleReference" />
+    </node>
     <node concept="1TJgyi" id="2ojITFECeUR" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034537143" />
       <property role="TrG5h" value="id" />
@@ -139,13 +146,6 @@
       <property role="IQ2nx" value="2743742872034578186" />
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" node="2ojITFECoW9" resolve="compositeActorRoleId" />
-    </node>
-    <node concept="1TJgyj" id="2S7w2zXkLTq" role="1TKVEi">
-      <property role="IQ2ns" value="3316760564118789722" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="actorRoles" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2S7w2zXkLTe" resolve="ActorRoleReference" />
     </node>
   </node>
   <node concept="Az7Fb" id="2ojITFECoW9">
@@ -230,8 +230,8 @@
     <node concept="t5JxF" id="m5XqSfyT8R" role="lGtFl">
       <property role="t5JxN" value="This concept is for syntax purposes onlu" />
     </node>
-    <node concept="PrWs8" id="m5XqSf_iyp" role="PzmwI">
-      <ref role="PrY4T" to="d13l:2ojITFEC3aF" resolve="ILowerCaseNamedConcept" />
+    <node concept="PrWs8" id="2S7w2zXpMOh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2S7w2zXkLTe">
@@ -254,6 +254,17 @@
       <property role="IQ2ns" value="3316760564118789717" />
       <property role="20kJfa" value="transactionKind" />
       <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2S7w2zXp71N">
+    <property role="EcuMT" value="3316760564119924851" />
+    <property role="TrG5h" value="CompositeActorRoleReference" />
+    <node concept="1TJgyj" id="2S7w2zXp71O" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="3316760564119924852" />
+      <property role="20kJfa" value="compositeActorRole" />
+      <ref role="20lvS9" node="2ojITFECoW8" resolve="CompositeActorRole" />
     </node>
   </node>
 </model>
