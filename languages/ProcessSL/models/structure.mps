@@ -57,7 +57,7 @@
     </language>
   </registry>
   <node concept="AxPO7" id="m5XqSfxGpH">
-    <property role="TrG5h" value="GeneralStepKind" />
+    <property role="TrG5h" value="generalStepKind" />
     <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="m5XqSfxGpI" role="M5hS2">
@@ -67,6 +67,10 @@
     <node concept="M4N5e" id="m5XqSfxGpJ" role="M5hS2">
       <property role="1uS6qo" value="promiss" />
       <property role="1uS6qv" value="pm" />
+    </node>
+    <node concept="M4N5e" id="2S7w2zXAHOK" role="M5hS2">
+      <property role="1uS6qv" value="ex" />
+      <property role="1uS6qo" value="execute" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGpM" role="M5hS2">
       <property role="1uS6qo" value="state" />
@@ -135,7 +139,7 @@
     <node concept="1TJgyi" id="m5XqSfxGvA" role="1TKVEl">
       <property role="IQ2nx" value="397994270025762790" />
       <property role="TrG5h" value="stepKind" />
-      <ref role="AX2Wp" node="m5XqSfxGpH" resolve="GeneralStepKind" />
+      <ref role="AX2Wp" node="m5XqSfxGpH" resolve="generalStepKind" />
     </node>
     <node concept="1TJgyi" id="m5XqSfxGvF" role="1TKVEl">
       <property role="IQ2nx" value="397994270025762795" />

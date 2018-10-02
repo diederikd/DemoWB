@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" implicit="true" />
-    <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -72,6 +72,9 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -83,9 +86,24 @@
     <ref role="1XX52x" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
     <node concept="3EZMnI" id="2S7w2zXwCpM" role="2wV5jI">
       <node concept="l2Vlx" id="2S7w2zXwCpN" role="2iSdaV" />
+      <node concept="3F0ifn" id="2S7w2zXwCpO" role="3EZMnx">
+        <property role="3F0ifm" value="transaction kind step kind name" />
+      </node>
+      <node concept="3F0ifn" id="2S7w2zXwFyS" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="2S7w2zXwCpP" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="2S7w2zXwFe9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="2S7w2zXwCpQ" role="3EZMnx">
         <property role="3F0ifm" value="transaction kind" />
         <node concept="pVoyu" id="2S7w2zXwETt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2S7w2zXAJb2" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -150,10 +168,12 @@
             <node concept="pkWqt" id="2S7w2zXwCs8" role="3e4ffs">
               <node concept="3clFbS" id="2S7w2zXwCsa" role="2VODD2">
                 <node concept="3cpWs6" id="2S7w2zXyQ1w" role="3cqZAp">
-                  <node concept="2OqwBi" id="2S7w2zXyQxt" role="3cqZAk">
-                    <node concept="pncrf" id="2S7w2zXyQ8W" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="2S7w2zXyQUq" role="2OqNvi">
-                      <ref role="3TsBF5" to="it18:m5XqSfxGvF" resolve="revoke" />
+                  <node concept="3fqX7Q" id="2S7w2zX$hs5" role="3cqZAk">
+                    <node concept="2OqwBi" id="2S7w2zX$hs7" role="3fr31v">
+                      <node concept="pncrf" id="2S7w2zX$hs8" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="2S7w2zX$hs9" role="2OqNvi">
+                        <ref role="3TsBF5" to="it18:m5XqSfxGvF" resolve="revoke" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -182,18 +202,6 @@
             </node>
           </node>
           <node concept="l2Vlx" id="2S7w2zXwCry" role="2iSdaV" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2S7w2zXwCpO" role="3EZMnx">
-        <property role="3F0ifm" value="transaction kind step kind name" />
-      </node>
-      <node concept="3F0ifn" id="2S7w2zXwFyS" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F0A7n" id="2S7w2zXwCpP" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <node concept="ljvvj" id="2S7w2zXwFe9" role="3F10Kt">
-          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="3F0ifn" id="2S7w2zXwCqi" role="3EZMnx">

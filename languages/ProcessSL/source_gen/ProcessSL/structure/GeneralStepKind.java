@@ -6,9 +6,10 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
-public enum GeneralStepKind {
+public enum generalStepKind {
   request("request", "rq"),
   promiss("promiss", "pm"),
+  execute("execute", "ex"),
   state("state", "st"),
   accept("accept", "ac"),
   decline("decline", "dc"),
@@ -21,7 +22,7 @@ public enum GeneralStepKind {
     return myName;
   }
   private final String myValue;
-  private GeneralStepKind(String name, String value) {
+  private generalStepKind(String name, String value) {
     myName = name;
     myValue = value;
   }
@@ -31,49 +32,53 @@ public enum GeneralStepKind {
   public String getValueAsString() {
     return myValue;
   }
-  public static List<GeneralStepKind> getConstants() {
-    List<GeneralStepKind> list = ListSequence.fromList(new LinkedList<GeneralStepKind>());
-    ListSequence.fromList(list).addElement(GeneralStepKind.request);
-    ListSequence.fromList(list).addElement(GeneralStepKind.promiss);
-    ListSequence.fromList(list).addElement(GeneralStepKind.state);
-    ListSequence.fromList(list).addElement(GeneralStepKind.accept);
-    ListSequence.fromList(list).addElement(GeneralStepKind.decline);
-    ListSequence.fromList(list).addElement(GeneralStepKind.quit);
-    ListSequence.fromList(list).addElement(GeneralStepKind.reject);
-    ListSequence.fromList(list).addElement(GeneralStepKind.stop);
+  public static List<generalStepKind> getConstants() {
+    List<generalStepKind> list = ListSequence.fromList(new LinkedList<generalStepKind>());
+    ListSequence.fromList(list).addElement(generalStepKind.request);
+    ListSequence.fromList(list).addElement(generalStepKind.promiss);
+    ListSequence.fromList(list).addElement(generalStepKind.execute);
+    ListSequence.fromList(list).addElement(generalStepKind.state);
+    ListSequence.fromList(list).addElement(generalStepKind.accept);
+    ListSequence.fromList(list).addElement(generalStepKind.decline);
+    ListSequence.fromList(list).addElement(generalStepKind.quit);
+    ListSequence.fromList(list).addElement(generalStepKind.reject);
+    ListSequence.fromList(list).addElement(generalStepKind.stop);
     return list;
   }
-  public static GeneralStepKind getDefault() {
+  public static generalStepKind getDefault() {
     return null;
   }
-  public static GeneralStepKind parseValue(String value) {
+  public static generalStepKind parseValue(String value) {
     if (value == null) {
-      return GeneralStepKind.getDefault();
+      return generalStepKind.getDefault();
     }
-    if (value.equals(GeneralStepKind.request.getValueAsString())) {
-      return GeneralStepKind.request;
+    if (value.equals(generalStepKind.request.getValueAsString())) {
+      return generalStepKind.request;
     }
-    if (value.equals(GeneralStepKind.promiss.getValueAsString())) {
-      return GeneralStepKind.promiss;
+    if (value.equals(generalStepKind.promiss.getValueAsString())) {
+      return generalStepKind.promiss;
     }
-    if (value.equals(GeneralStepKind.state.getValueAsString())) {
-      return GeneralStepKind.state;
+    if (value.equals(generalStepKind.execute.getValueAsString())) {
+      return generalStepKind.execute;
     }
-    if (value.equals(GeneralStepKind.accept.getValueAsString())) {
-      return GeneralStepKind.accept;
+    if (value.equals(generalStepKind.state.getValueAsString())) {
+      return generalStepKind.state;
     }
-    if (value.equals(GeneralStepKind.decline.getValueAsString())) {
-      return GeneralStepKind.decline;
+    if (value.equals(generalStepKind.accept.getValueAsString())) {
+      return generalStepKind.accept;
     }
-    if (value.equals(GeneralStepKind.quit.getValueAsString())) {
-      return GeneralStepKind.quit;
+    if (value.equals(generalStepKind.decline.getValueAsString())) {
+      return generalStepKind.decline;
     }
-    if (value.equals(GeneralStepKind.reject.getValueAsString())) {
-      return GeneralStepKind.reject;
+    if (value.equals(generalStepKind.quit.getValueAsString())) {
+      return generalStepKind.quit;
     }
-    if (value.equals(GeneralStepKind.stop.getValueAsString())) {
-      return GeneralStepKind.stop;
+    if (value.equals(generalStepKind.reject.getValueAsString())) {
+      return generalStepKind.reject;
     }
-    return GeneralStepKind.getDefault();
+    if (value.equals(generalStepKind.stop.getValueAsString())) {
+      return generalStepKind.stop;
+    }
+    return generalStepKind.getDefault();
   }
 }

@@ -11,6 +11,7 @@
     <language slang="l:61f0ccba-8ded-47ee-b024-8f1c223c70ef:DemoSL" version="0" />
     <language slang="l:6836a913-df90-4e79-9a37-cb334bb02ea5:FactSL" version="0" />
     <language slang="l:aa59ea5e-1883-437f-95c0-4dc082aa848c:GeneralSL" version="0" />
+    <language slang="l:a2c2ae09-7c36-4fba-9b64-5e0450cb1363:ProcessSL" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>

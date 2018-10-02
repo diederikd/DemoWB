@@ -6,9 +6,16 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
     <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
+    <use id="a2c2ae09-7c36-4fba-9b64-5e0450cb1363" name="ProcessSL" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="a2c2ae09-7c36-4fba-9b64-5e0450cb1363" name="ProcessSL">
+      <concept id="397994270025762622" name="ProcessSL.structure.TransactionKindStepKind" flags="ng" index="a0Nag">
+        <property id="397994270025762790" name="stepKind" index="a0N98" />
+        <reference id="397994270025762623" name="transactionKind" index="a0Nah" />
+      </concept>
+    </language>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
         <property id="2743742872034489004" name="name" index="3cGS$Q" />
@@ -73,6 +80,9 @@
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
         <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
+      </concept>
+      <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
+        <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
       </concept>
       <concept id="2222079712857969143" name="DemoSL.structure.ConstructionModel" flags="ng" index="3llzxe">
         <child id="2222079712857969155" name="roles" index="3llzIU" />
@@ -341,6 +351,24 @@
   </node>
   <node concept="3cHiir" id="1VmqrBbE_WL">
     <property role="TrG5h" value="Transaction Product Table" />
+  </node>
+  <node concept="3jxjQ8" id="2S7w2zX$hdp">
+    <property role="TrG5h" value="Proces Model Library" />
+    <node concept="a0Nag" id="2S7w2zX$hdq" role="3jxjQ9">
+      <property role="TrG5h" value="apply for membership" />
+      <property role="a0N98" value="rq" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXAHOD" role="3jxjQ9">
+      <property role="TrG5h" value="receive application" />
+      <property role="a0N98" value="pm" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXAHOG" role="3jxjQ9">
+      <property role="TrG5h" value="process application" />
+      <property role="a0N98" value="ex" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
   </node>
 </model>
 

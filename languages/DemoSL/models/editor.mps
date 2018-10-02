@@ -394,6 +394,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2S7w2zXwFQK">
+    <property role="3GE5qa" value="Proces Model" />
     <ref role="1XX52x" to="ar0b:2S7w2zXwFQw" resolve="ProcesModel" />
     <node concept="3EZMnI" id="2S7w2zXwFQM" role="2wV5jI">
       <node concept="l2Vlx" id="2S7w2zXwFQN" role="2iSdaV" />
@@ -404,11 +405,16 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="2S7w2zXwFQQ" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
         <node concept="3mYdg7" id="2S7w2zXwFQR" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>
         <node concept="ljvvj" id="2S7w2zXwFQS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2S7w2zX$hdU" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="2S7w2zX$hep" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -418,7 +424,7 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="3F0ifn" id="2S7w2zXwFQW" role="3EZMnx">
-          <property role="3F0ifm" value="tranaction kind step kind" />
+          <property role="3F0ifm" value="tranaction kind step kinds" />
         </node>
         <node concept="3F0ifn" id="2S7w2zXwFQX" role="3EZMnx">
           <property role="3F0ifm" value=":" />
@@ -468,9 +474,11 @@
             <property role="VOm3f" value="true" />
           </node>
         </node>
+        <node concept="pVoyu" id="2S7w2zX$her" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0ifn" id="2S7w2zXwFRe" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
         <node concept="3mYdg7" id="2S7w2zXwFRf" role="3F10Kt">
           <property role="1413C4" value="body-brace" />
         </node>

@@ -189,6 +189,8 @@
   <node concept="1TIwiD" id="2S7w2zXwFQw">
     <property role="EcuMT" value="3316760564121910688" />
     <property role="TrG5h" value="ProcesModel" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Proces Model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2S7w2zXwFQx" role="1TKVEi">
       <property role="IQ2ns" value="3316760564121910689" />
