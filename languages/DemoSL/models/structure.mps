@@ -208,6 +208,13 @@
     <node concept="PrWs8" id="2S7w2zXwFQA" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="2S7w2zXBZ_D" role="1TKVEi">
+      <property role="IQ2ns" value="3316760564123826537" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="transactionKind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+    </node>
   </node>
 </model>
 

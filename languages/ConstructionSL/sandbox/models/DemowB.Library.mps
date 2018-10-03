@@ -82,6 +82,7 @@
         <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
       </concept>
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
+        <reference id="3316760564123826537" name="transactionKind" index="3jA7_1" />
         <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
       </concept>
       <concept id="2222079712857969143" name="DemoSL.structure.ConstructionModel" flags="ng" index="3llzxe">
@@ -354,6 +355,7 @@
   </node>
   <node concept="3jxjQ8" id="2S7w2zX$hdp">
     <property role="TrG5h" value="Proces Model Library" />
+    <ref role="3jA7_1" node="1VmqrBbwQiO" />
     <node concept="a0Nag" id="2S7w2zX$hdq" role="3jxjQ9">
       <property role="TrG5h" value="apply for membership" />
       <property role="a0N98" value="rq" />
@@ -367,6 +369,36 @@
     <node concept="a0Nag" id="2S7w2zXAHOG" role="3jxjQ9">
       <property role="TrG5h" value="process application" />
       <property role="a0N98" value="ex" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXBXTA" role="3jxjQ9">
+      <property role="a0N98" value="st" />
+      <property role="TrG5h" value="confirm membership" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXBXTF" role="3jxjQ9">
+      <property role="TrG5h" value="accept confirmation" />
+      <property role="a0N98" value="st" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXDuSt" role="3jxjQ9">
+      <property role="TrG5h" value="reject confirmation" />
+      <property role="a0N98" value="rj" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXDuS$" role="3jxjQ9">
+      <property role="TrG5h" value="stop application" />
+      <property role="a0N98" value="sp" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXDuSG" role="3jxjQ9">
+      <property role="a0N98" value="dc" />
+      <property role="TrG5h" value="decline application" />
+      <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXDuSP" role="3jxjQ9">
+      <property role="a0N98" value="qt" />
+      <property role="TrG5h" value="quit application" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
     </node>
   </node>
