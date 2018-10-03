@@ -15,6 +15,11 @@
         <property id="397994270025762790" name="stepKind" index="a0N98" />
         <reference id="397994270025762623" name="transactionKind" index="a0Nah" />
       </concept>
+      <concept id="397994270025762881" name="ProcessSL.structure.Link" flags="ng" index="a0NRJ">
+        <property id="3316760564124570557" name="type" index="3jFdel" />
+        <reference id="397994270025762887" name="transactionKindStepKindFrom" index="a0NRD" />
+        <reference id="397994270025762882" name="transactionKindStepKindTo" index="a0NRG" />
+      </concept>
     </language>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
@@ -84,6 +89,7 @@
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
         <reference id="3316760564123826537" name="transactionKind" index="3jA7_1" />
         <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
+        <child id="3316760564121910691" name="links" index="3jxjQb" />
       </concept>
       <concept id="2222079712857969143" name="DemoSL.structure.ConstructionModel" flags="ng" index="3llzxe">
         <child id="2222079712857969155" name="roles" index="3llzIU" />
@@ -355,7 +361,57 @@
   </node>
   <node concept="3jxjQ8" id="2S7w2zX$hdp">
     <property role="TrG5h" value="Proces Model Library" />
-    <ref role="3jA7_1" node="1VmqrBbwQiO" />
+    <ref role="3jA7_1" node="2S7w2zXuJeG" />
+    <node concept="a0NRJ" id="2S7w2zXEPeV" role="3jxjQb">
+      <property role="3jFdel" value="response" />
+      <ref role="a0NRG" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <ref role="a0NRD" node="2S7w2zX$hdq" resolve="apply for membership" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGLsQ" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zX$hdq" resolve="apply for membership" />
+      <ref role="a0NRG" node="2S7w2zXDuSG" resolve="decline application" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT6B" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXDuSG" resolve="decline application" />
+      <ref role="a0NRG" node="2S7w2zX$hdq" resolve="apply for membership" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT6F" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXDuSG" resolve="decline application" />
+      <ref role="a0NRG" node="2S7w2zXDuSP" resolve="quit application" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT6K" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <ref role="a0NRG" node="2S7w2zXAHOG" resolve="process application" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT6Q" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXAHOG" resolve="process application" />
+      <ref role="a0NRG" node="2S7w2zXBXTA" resolve="confirm membership" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT6X" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <ref role="a0NRG" node="2S7w2zXBXTF" resolve="accept confirmation" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT75" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <ref role="a0NRG" node="2S7w2zXDuSt" resolve="reject confirmation" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT7e" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXDuSt" resolve="reject confirmation" />
+      <ref role="a0NRG" node="2S7w2zXBXTA" resolve="confirm membership" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXGT7o" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXDuSt" resolve="reject confirmation" />
+      <ref role="a0NRG" node="2S7w2zXDuS$" resolve="stop application" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXHINv" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <ref role="a0NRG" node="2S7w2zXHINF" resolve="request fee paying" />
+    </node>
+    <node concept="a0NRJ" id="2S7w2zXHIO2" role="3jxjQb">
+      <property role="3jFdel" value="wait" />
+      <ref role="a0NRD" node="2S7w2zXHINQ" resolve="accept fee paying" />
+      <ref role="a0NRG" node="2S7w2zXAHOG" resolve="process application" />
+    </node>
     <node concept="a0Nag" id="2S7w2zX$hdq" role="3jxjQ9">
       <property role="TrG5h" value="apply for membership" />
       <property role="a0N98" value="rq" />
@@ -400,6 +456,16 @@
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit application" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXHINF" role="3jxjQ9">
+      <property role="TrG5h" value="request fee paying" />
+      <property role="a0N98" value="rq" />
+      <ref role="a0Nah" node="1VmqrBbwQiP" />
+    </node>
+    <node concept="a0Nag" id="2S7w2zXHINQ" role="3jxjQ9">
+      <property role="a0N98" value="ac" />
+      <property role="TrG5h" value="accept fee paying" />
+      <ref role="a0Nah" node="1VmqrBbwQiP" />
     </node>
   </node>
 </model>

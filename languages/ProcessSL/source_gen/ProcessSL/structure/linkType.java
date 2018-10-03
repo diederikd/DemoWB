@@ -32,7 +32,7 @@ public enum linkType {
     return list;
   }
   public static linkType getDefault() {
-    return null;
+    return linkType.response;
   }
   public static linkType parseValue(String value) {
     if (value == null) {

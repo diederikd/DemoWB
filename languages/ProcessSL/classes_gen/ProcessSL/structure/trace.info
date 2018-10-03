@@ -18,7 +18,7 @@
       <unit at="10,0,30,0" name="ProcessSL.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,67,0" name="ProcessSL.structure.StructureAspectDescriptor" />
+      <unit at="14,0,68,0" name="ProcessSL.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)/397994270025762413">
@@ -305,22 +305,22 @@
     <file name="StructureAspectDescriptor.java">
       <node id="397994270025762622" at="16,0,17,0" concept="2" trace="myConceptTransactionKindStepKind" />
       <node id="397994270025762622" at="34,57,35,48" concept="6" />
-      <node id="397994270025762622" at="54,81,55,166" concept="5" />
-      <node id="397994270025762622" at="55,166,56,34" concept="1" />
-      <node id="397994270025762622" at="56,34,57,71" concept="1" />
-      <node id="397994270025762622" at="57,71,58,95" concept="1" />
-      <node id="397994270025762622" at="58,95,59,17" concept="1" />
-      <node id="397994270025762790" at="59,17,60,65" concept="1" />
-      <node id="397994270025762795" at="60,65,61,63" concept="1" />
-      <node id="397994270025762792" at="61,63,62,67" concept="1" />
-      <node id="397994270025762623" at="62,67,63,177" concept="1" />
-      <node id="397994270025762622" at="63,177,64,22" concept="6" />
-      <node id="397994270025762622" at="54,0,66,0" concept="8" trace="createDescriptorForTransactionKindStepKind#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="397994270025762622" at="55,81,56,166" concept="5" />
+      <node id="397994270025762622" at="56,166,57,34" concept="1" />
+      <node id="397994270025762622" at="57,34,58,71" concept="1" />
+      <node id="397994270025762622" at="58,71,59,95" concept="1" />
+      <node id="397994270025762622" at="59,95,60,17" concept="1" />
+      <node id="397994270025762790" at="60,17,61,65" concept="1" />
+      <node id="397994270025762795" at="61,65,62,63" concept="1" />
+      <node id="397994270025762792" at="62,63,63,67" concept="1" />
+      <node id="397994270025762623" at="63,67,64,177" concept="1" />
+      <node id="397994270025762622" at="64,177,65,22" concept="6" />
+      <node id="397994270025762622" at="55,0,67,0" concept="8" trace="createDescriptorForTransactionKindStepKind#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="397994270025762622" at="34,57,35,48" />
-      <scope id="397994270025762622" at="54,81,64,22">
+      <scope id="397994270025762622" at="55,81,65,22">
         <var name="b" id="397994270025762622" />
       </scope>
-      <scope id="397994270025762622" at="54,0,66,0" />
+      <scope id="397994270025762622" at="55,0,67,0" />
     </file>
   </root>
   <root nodeRef="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)/397994270025762881">
@@ -347,15 +347,16 @@
       <node id="397994270025762881" at="46,147,47,34" concept="1" />
       <node id="397994270025762881" at="47,34,48,95" concept="1" />
       <node id="397994270025762881" at="48,95,49,17" concept="1" />
-      <node id="397994270025762887" at="49,17,50,188" concept="1" />
-      <node id="397994270025762882" at="50,188,51,186" concept="1" />
-      <node id="397994270025762881" at="51,186,52,22" concept="6" />
-      <node id="397994270025762881" at="45,0,54,0" concept="8" trace="createDescriptorForLink#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="3316760564124570557" at="49,17,50,63" concept="1" />
+      <node id="397994270025762887" at="50,63,51,188" concept="1" />
+      <node id="397994270025762882" at="51,188,52,186" concept="1" />
+      <node id="397994270025762881" at="52,186,53,22" concept="6" />
+      <node id="397994270025762881" at="45,0,55,0" concept="8" trace="createDescriptorForLink#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="397994270025762881" at="32,38,33,29" />
-      <scope id="397994270025762881" at="45,62,52,22">
+      <scope id="397994270025762881" at="45,62,53,22">
         <var name="b" id="397994270025762881" />
       </scope>
-      <scope id="397994270025762881" at="45,0,54,0" />
+      <scope id="397994270025762881" at="45,0,55,0" />
     </file>
   </root>
   <root nodeRef="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)/397994270025762895">
@@ -371,7 +372,7 @@
       <node id="397994270025762896" at="29,76,30,62" concept="1" />
       <node id="397994270025762897" at="30,62,31,58" concept="1" />
       <node id="397994270025762895" at="31,58,32,16" concept="6" />
-      <node id="397994270025762895" at="34,39,35,16" concept="6" />
+      <node id="397994270025762895" at="34,39,35,29" concept="6" />
       <node id="397994270025762895" at="38,24,39,35" concept="6" />
       <node id="397994270025762896" at="41,61,42,31" concept="6" />
       <node id="397994270025762897" at="44,57,45,27" concept="6" />
@@ -389,7 +390,7 @@
       <scope id="397994270025762895" at="14,27,15,18" />
       <scope id="397994270025762895" at="22,28,23,19" />
       <scope id="397994270025762895" at="25,36,26,19" />
-      <scope id="397994270025762895" at="34,39,35,16" />
+      <scope id="397994270025762895" at="34,39,35,29" />
       <scope id="397994270025762895" at="38,24,39,35" />
       <scope id="397994270025762896" at="41,61,42,31" />
       <scope id="397994270025762897" at="44,57,45,27" />
