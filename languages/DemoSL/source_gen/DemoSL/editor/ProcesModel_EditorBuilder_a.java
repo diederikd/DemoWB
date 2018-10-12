@@ -189,7 +189,7 @@ import jetbrains.mps.smodel.action.NodeFactoryManager;
     }
   }
   private EditorCell createConstant_5() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "view");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "filter steps & links from");
     editorCell.setCellId("Constant_vlyntf_h0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);

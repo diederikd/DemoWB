@@ -51,8 +51,12 @@
     <dependency reexport="false">aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)</dependency>
     <dependency reexport="false">61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)</dependency>
     <dependency reexport="false">6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)</dependency>
+    <dependency reexport="false">a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:120e1c9d-4e27-4478-b2af-b2c3bd3850b0:com.mbeddr.mpsutil.editor.querylist" version="0" />
+    <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="6" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -89,6 +93,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" version="0" />

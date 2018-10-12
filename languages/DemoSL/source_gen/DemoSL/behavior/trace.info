@@ -1,8 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="11,0,22,0" name="DemoSL.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,32,0" name="DemoSL.behavior.BehaviorAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:297ba07d-585d-425a-b80f-7b0c8d53e99c(DemoSL.behavior)/3316760564125595245">
+    <file name="ProcesModel__BehaviorDescriptor.java">
+      <node id="3316760564125595245" at="29,0,30,0" concept="6" trace="CONCEPT" />
+      <node id="3316760564125595245" at="30,0,31,0" concept="6" trace="REGISTRY" />
+      <node id="3316760564125595245" at="32,0,33,0" concept="6" trace="AddStandardTransactionPattern_id2S7w2zXIJpS" />
+      <node id="3316760564125595245" at="33,0,34,0" concept="6" trace="AddTransactionStepKind_id2S7w2zXJd0A" />
+      <node id="3316760564125595245" at="35,0,36,0" concept="6" trace="BH_METHODS" />
+      <node id="3316760564125721225" at="40,123,41,282" concept="1" />
+      <node id="3316760564125716524" at="41,282,42,282" concept="1" />
+      <node id="3316760564125721275" at="42,282,43,282" concept="1" />
+      <node id="3316760564125722836" at="43,282,44,282" concept="1" />
+      <node id="3316760564125721351" at="44,282,45,283" concept="1" />
+      <node id="3316760564125721445" at="45,283,46,282" concept="1" />
+      <node id="3316760564125722562" at="46,282,47,282" concept="1" />
+      <node id="3316760564125721557" at="47,282,48,282" concept="1" />
+      <node id="3316760564125723386" at="48,282,49,282" concept="1" />
+      <node id="3316760564125716470" at="51,154,52,209" concept="4" />
+      <node id="3316760564125716476" at="52,209,53,210" concept="1" />
+      <node id="3316760564125716483" at="53,210,54,189" concept="1" />
+      <node id="3316760564125716490" at="54,189,55,360" concept="1" />
+      <node id="3316760564125773238" at="55,360,56,254" concept="1" />
+      <node id="3316760564125595245" at="59,49,60,20" concept="8" />
+      <node id="3316760564125595245" at="64,114,65,21" concept="1" />
+      <node id="3316760564125595245" at="69,114,70,49" concept="4" />
+      <node id="3316760564125595245" at="71,26,72,56" concept="10" />
+      <node id="3316760564125595245" at="75,13,76,81" concept="1" />
+      <node id="3316760564125595245" at="76,81,77,20" concept="5" />
+      <node id="3316760564125595245" at="78,13,79,122" concept="1" />
+      <node id="3316760564125595245" at="79,122,80,20" concept="5" />
+      <node id="3316760564125595245" at="81,14,82,58" concept="10" />
+      <node id="3316760564125595245" at="87,128,88,49" concept="4" />
+      <node id="3316760564125595245" at="89,26,90,56" concept="10" />
+      <node id="3316760564125595245" at="93,14,94,58" concept="10" />
+      <node id="3316760564125595245" at="100,48,101,22" concept="5" />
+      <node id="3316760564125595245" at="106,40,107,19" concept="5" />
+      <node id="3316760564125595245" at="37,0,39,0" concept="7" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3316760564125595245" at="59,0,62,0" concept="0" trace="ProcesModel__BehaviorDescriptor#()V" />
+      <node id="3316760564125595245" at="70,49,73,5" concept="2" />
+      <node id="3316760564125595245" at="88,49,91,5" concept="2" />
+      <node id="3316760564125595245" at="63,0,67,0" concept="3" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="3316760564125595245" at="91,5,95,5" concept="9" />
+      <node id="3316760564125595245" at="98,0,103,0" concept="3" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="3316760564125595245" at="104,0,109,0" concept="3" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3316760564125595245" at="51,0,58,0" concept="7" trace="AddTransactionStepKind_id2S7w2zXJd0A#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="3316760564125595245" at="73,5,83,5" concept="9" />
+      <node id="3316760564125595245" at="40,0,51,0" concept="7" trace="AddStandardTransactionPattern_id2S7w2zXIJpS#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3316760564125595245" at="86,0,97,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="3316760564125595245" at="68,0,85,0" concept="3" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="3316760564125595245" at="37,63,37,63" />
+      <scope id="3316760564125595245" at="59,49,60,20" />
+      <scope id="3316760564125595245" at="64,114,65,21" />
+      <scope id="3316760564125595245" at="71,26,72,56" />
+      <scope id="3316760564125595245" at="81,14,82,58" />
+      <scope id="3316760564125595245" at="89,26,90,56" />
+      <scope id="3316760564125595245" at="93,14,94,58" />
+      <scope id="3316760564125595245" at="100,48,101,22" />
+      <scope id="3316760564125595245" at="106,40,107,19" />
+      <scope id="3316760564125595245" at="37,0,39,0">
+        <var name="__thisNode__" id="3316760564125595245" />
+      </scope>
+      <scope id="3316760564125595245" at="75,13,77,20" />
+      <scope id="3316760564125595245" at="78,13,80,20" />
+      <scope id="3316760564125595245" at="59,0,62,0" />
+      <scope id="3316760564125595245" at="63,0,67,0">
+        <var name="constructor" id="3316760564125595245" />
+        <var name="node" id="3316760564125595245" />
+        <var name="parameters" id="3316760564125595245" />
+      </scope>
+      <scope id="3316760564125716469" at="51,154,56,254">
+        <var name="transactionKindStepKind" id="3316760564125716471" />
+      </scope>
+      <scope id="3316760564125595245" at="98,0,103,0" />
+      <scope id="3316760564125595245" at="104,0,109,0" />
+      <scope id="3316760564125595245" at="51,0,58,0">
+        <var name="__thisNode__" id="3316760564125595245" />
+        <var name="stepKind" id="3316760564125962864" />
+        <var name="stepKindType" id="3316760564125716510" />
+        <var name="transactionKind" id="3316760564125716508" />
+      </scope>
+      <scope id="3316760564125595245" at="87,128,95,5">
+        <var name="methodIndex" id="3316760564125595245" />
+      </scope>
+      <scope id="3316760564125595259" at="40,123,49,282" />
+      <scope id="3316760564125595245" at="40,0,51,0">
+        <var name="__thisNode__" id="3316760564125595245" />
+        <var name="transactionKind" id="3316760564125595372" />
+      </scope>
+      <scope id="3316760564125595245" at="86,0,97,0">
+        <var name="concept" id="3316760564125595245" />
+        <var name="method" id="3316760564125595245" />
+        <var name="parameters" id="3316760564125595245" />
+      </scope>
+      <scope id="3316760564125595245" at="69,114,83,5">
+        <var name="methodIndex" id="3316760564125595245" />
+      </scope>
+      <scope id="3316760564125595245" at="68,0,85,0">
+        <var name="method" id="3316760564125595245" />
+        <var name="node" id="3316760564125595245" />
+        <var name="parameters" id="3316760564125595245" />
+      </scope>
+      <unit id="3316760564125595245" at="28,0,110,0" name="DemoSL.behavior.ProcesModel__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

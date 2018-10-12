@@ -7,6 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import java.util.Arrays;
 import java.util.Collections;
 import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
@@ -19,7 +20,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Link_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Link_Editor(), new Link_PSD_Editor()});
       case 1:
         return Collections.<ConceptEditor>singletonList(new TransactionKindStepKind_Editor());
       default:

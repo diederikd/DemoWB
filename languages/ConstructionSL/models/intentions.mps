@@ -145,8 +145,8 @@
               <node concept="2OqwBi" id="m5XqSfHqyu" role="3clFbG">
                 <node concept="2OqwBi" id="m5XqSfHokE" role="2Oq$k0">
                   <node concept="1PxgMI" id="m5XqSfHoaM" role="2Oq$k0">
-                    <node concept="chp4Y" id="m5XqSfHobX" role="3oSUPX">
-                      <ref role="cht4Q" to="ar0b:2ojITFEC3aL" resolve="OrganisationConstructionDiagram" />
+                    <node concept="chp4Y" id="6cLLlCpB4_Q" role="3oSUPX">
+                      <ref role="cht4Q" to="ar0b:1VmqrBbw57R" resolve="ConstructionModel" />
                     </node>
                     <node concept="2OqwBi" id="m5XqSfHnfB" role="1m5AlR">
                       <node concept="Jnkvi" id="m5XqSfIfMD" role="2Oq$k0">
@@ -155,8 +155,8 @@
                       <node concept="1mfA1w" id="m5XqSfHnpU" role="2OqNvi" />
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="m5XqSfHouS" role="2OqNvi">
-                    <ref role="3TtcxE" to="ar0b:2ojITFECqqc" resolve="roles" />
+                  <node concept="3Tsc0h" id="6cLLlCpB4Ui" role="2OqNvi">
+                    <ref role="3TtcxE" to="ar0b:1VmqrBbw583" resolve="roles" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="m5XqSfHtDc" role="2OqNvi">
@@ -172,7 +172,7 @@
           </node>
         </node>
         <node concept="Jncv_" id="m5XqSfHFL2" role="3cqZAp">
-          <ref role="JncvD" to="ar0b:2ojITFEC3aL" resolve="OrganisationConstructionDiagram" />
+          <ref role="JncvD" to="ar0b:1VmqrBbw57R" resolve="ConstructionModel" />
           <node concept="2OqwBi" id="m5XqSfHFL3" role="JncvB">
             <node concept="2Sf5sV" id="m5XqSfHFL4" role="2Oq$k0" />
             <node concept="1mfA1w" id="m5XqSfHFL5" role="2OqNvi" />
@@ -182,10 +182,10 @@
               <node concept="2OqwBi" id="m5XqSfHFL8" role="3clFbG">
                 <node concept="2OqwBi" id="m5XqSfHFL9" role="2Oq$k0">
                   <node concept="Jnkvi" id="m5XqSfHFLa" role="2Oq$k0">
-                    <ref role="1M0zk5" node="m5XqSfHFLr" resolve="organisationConstructionDiagram" />
+                    <ref role="1M0zk5" node="m5XqSfHFLr" resolve="constructionModel" />
                   </node>
-                  <node concept="3Tsc0h" id="m5XqSfIa$z" role="2OqNvi">
-                    <ref role="3TtcxE" to="ar0b:2ojITFECqqc" resolve="roles" />
+                  <node concept="3Tsc0h" id="6cLLlCpBaqc" role="2OqNvi">
+                    <ref role="3TtcxE" to="ar0b:1VmqrBbw583" resolve="roles" />
                   </node>
                 </node>
                 <node concept="3dhRuq" id="m5XqSfHFLc" role="2OqNvi">
@@ -198,13 +198,13 @@
                 <node concept="2OqwBi" id="m5XqSfHFLg" role="2Oq$k0">
                   <node concept="2OqwBi" id="m5XqSfIdKY" role="2Oq$k0">
                     <node concept="Jnkvi" id="m5XqSfIaRK" role="2Oq$k0">
-                      <ref role="1M0zk5" node="m5XqSfHFLr" resolve="organisationConstructionDiagram" />
+                      <ref role="1M0zk5" node="m5XqSfHFLr" resolve="constructionModel" />
                     </node>
-                    <node concept="3TrEf2" id="m5XqSfIf4U" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ar0b:m5XqSfCXQE" resolve="scopeOfInterest" />
+                    <node concept="3TrEf2" id="6cLLlCpBaIJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="ar0b:1VmqrBbw582" resolve="scopeOfInterest" />
                     </node>
                   </node>
-                  <node concept="3Tsc0h" id="m5XqSfIfuC" role="2OqNvi">
+                  <node concept="3Tsc0h" id="6cLLlCpBb7L" role="2OqNvi">
                     <ref role="3TtcxE" to="pgdh:2ojITFECqqc" resolve="roles" />
                   </node>
                 </node>
@@ -216,7 +216,7 @@
             <node concept="3cpWs6" id="m5XqSfI4Aa" role="3cqZAp" />
           </node>
           <node concept="JncvC" id="m5XqSfHFLr" role="JncvA">
-            <property role="TrG5h" value="organisationConstructionDiagram" />
+            <property role="TrG5h" value="constructionModel" />
             <node concept="2jxLKc" id="m5XqSfHFLs" role="1tU5fm" />
           </node>
         </node>

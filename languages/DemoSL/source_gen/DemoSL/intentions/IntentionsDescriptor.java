@@ -11,6 +11,9 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import java.util.Arrays;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class IntentionsDescriptor extends AbstractIntentionAspectDescriptor {
   private static final IntentionFactory[] EMPTY_ARRAY = new IntentionFactory[0];
@@ -27,6 +30,16 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
 
     IntentionFactory[] intentions = EMPTY_ARRAY;
     SAbstractConcept cncpt = concept;
+    switch (conceptIndex.index(cncpt)) {
+      case 0:
+        if (true) {
+          // Concept: ProcesModel 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AddStanderdTransactionPattern_Intention();
+        }
+        break;
+      default:
+    }
     myCached.put(concept, intentions);
     return Arrays.asList(intentions);
   }
@@ -34,7 +47,9 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[0];
+    IntentionFactory[] rv = new IntentionFactory[1];
+    rv[0] = new AddStanderdTransactionPattern_Intention();
     return Arrays.asList(rv);
   }
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L)).seal();
 }

@@ -31,17 +31,30 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
-import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.smodel.action.NodeFactoryManager;
-import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
-import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
-import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
-import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
-import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import de.itemis.mps.editor.diagram.runtime.jgraph.BaseDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.EditorUtil;
+import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import de.itemis.mps.editor.diagram.runtime.DiagramContext;
+import de.itemis.mps.editor.diagram.runtime.ContextVariables;
+import de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor;
+import java.util.List;
+import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
+import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
+import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
+import de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter;
+import de.cau.cs.kieler.kiml.options.Direction;
+import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 
 /*package*/ class OrganisationConstructionDiagram_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -70,8 +83,6 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createConstant_3());
-    editorCell.addEditorCell(createRefNode_0());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -114,159 +125,88 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ovf9ya_c0");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createConstant_2());
-    editorCell.addEditorCell(createRefNodeList_0());
-    return editorCell;
-  }
-  private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "external roles");
-    editorCell.setCellId("Constant_ovf9ya_a2a");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createConstant_2() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
-    editorCell.setCellId("Constant_ovf9ya_b2a");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new OrganisationConstructionDiagram_EditorBuilder_a.rolesListHandler_ovf9ya_c2a(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_roles");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
-    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setSRole(handler.getElementSRole());
-    return editorCell;
-  }
-  private static class rolesListHandler_ovf9ya_c2a extends RefNodeListHandler {
-    @NotNull
-    private SNode myNode;
-
-    public rolesListHandler_ovf9ya_c2a(SNode ownerNode, EditorContext context) {
-      super(context, false);
-      myNode = ownerNode;
-    }
-
-    @NotNull
-    public SNode getNode() {
-      return myNode;
-    }
-    public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x2613bb9aeaa1a68cL, "roles");
-    }
-    public SAbstractConcept getChildSConcept() {
-      return MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L, "ConstructionSL.structure.Actor");
-    }
-    public SNode createNodeToInsert(EditorContext editorContext) {
-      return NodeFactoryManager.createNode(MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L, "ConstructionSL.structure.Actor"), null, getNode(), getNode().getModel());
-    }
-    public EditorCell createNodeCell(SNode elementNode) {
-      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
-      installElementCellActions(elementNode, elementCell, false);
-      return elementCell;
-    }
-    public EditorCell createEmptyCell() {
+    try {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(rolesListHandler_ovf9ya_c2a.this.getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x2613bb9aeaa1a68cL, "roles")));
-      try {
-        EditorCell emptyCell = null;
-        emptyCell = super.createEmptyCell();
-        installElementCellActions(null, emptyCell, true);
-        setCellContext(emptyCell);
-        return emptyCell;
-      } finally {
-        getCellFactory().popCellContext();
-      }
+      getCellFactory().addCellContextHints(new String[]{"GeneralSL.editor.DemoHints.OCD"});
+      editorCell.addEditorCell(createDiagram_1());
+      setInnerCellsContext(editorCell);
+    } finally {
+      getCellFactory().popCellContext();
     }
-    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
-      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
-        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
-        if (elementNode != null) {
-          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
-          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-        }
-        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
-        }
-      }
-    }
-  }
-  private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_ovf9ya_d0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.MATCHING_LABEL, "body-brace");
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new OrganisationConstructionDiagram_EditorBuilder_a.scopeOfInterestSingleRoleHandler_ovf9ya_e0(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x585f5ae0fa3ddaaL, "scopeOfInterest"), getEditorContext());
-    return provider.createCell();
+  private EditorCell createDiagram_0(final EditorContext editorContext, final SNode node) {
+    final Wrappers._T<BaseDiagramECell> editorCell = new Wrappers._T<BaseDiagramECell>(null);
+
+    EditorUtil.noCaching(editorContext, new Runnable() {
+      public void run() {
+        DiagramCreationContext.createDiagram(new _FunctionTypes._void_P0_E0() {
+          public void invoke() {
+            DiagramContext.withContext(node, new _FunctionTypes._return_P0_E0<BaseDiagramECell>() {
+              public BaseDiagramECell invoke() {
+                return editorCell.value;
+              }
+            }, new Runnable() {
+              public void run() {
+                ContextVariables.withValue("thisNode", node, new Runnable() {
+                  public void run() {
+                    final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                    IDiagramAccessor accessor = new AbstractDiagramAccessor(node) {
+                      public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
+                        final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collect(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions"))).toListSequence();
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        return elements;
+                      }
+                      @Override
+                      public List<IConnectionType> getConnectionTypes() {
+                        List<IConnectionType> connectionTypes = new ArrayList<IConnectionType>();
+                        return connectionTypes;
+                      }
+                    };
+
+                    DiagramModel model = DiagramModel.getModel(editorContext, node, "7147711074381116964", accessor);
+                    model.setLayouter(new LayeredLayouter(Direction.DOWN));
+
+                    IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider();
+                    model.setPaletteEntryProvider(paletteEntryProvider);
+
+                    if (DiagramCreationContext.isSubdiagram()) {
+                      editorCell.value = new SubDiagramECell(editorContext, node, model);
+                    } else {
+                      editorCell.value = new RootDiagramECell(editorContext, node, model);
+                    }
+                    editorCell.value.setCellId("Diagram_ovf9ya_a2a");
+                    Style style = new StyleImpl();
+                    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+                    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+                    editorCell.value.getStyle().putAll(style);
+                    if (editorCell.value.getContextGraph() != null) {
+                      Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
+                      if (defaultParent instanceof RootDCell) {
+                        ((RootDCell) defaultParent).resetButtonConfig();
+                      }
+                    }
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
+    });
+
+    return editorCell.value;
   }
-  private static class scopeOfInterestSingleRoleHandler_ovf9ya_e0 extends SingleRoleCellProvider {
-    @NotNull
-    private SNode myNode;
-
-    public scopeOfInterestSingleRoleHandler_ovf9ya_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
-      super(containmentLink, context);
-      myNode = ownerNode;
-    }
-
-    @Override
-    @NotNull
-    public SNode getNode() {
-      return myNode;
-    }
-
-    protected EditorCell createChildCell(SNode child) {
-      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
-      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x585f5ae0fa3ddaaL, "scopeOfInterest"), child));
-      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x585f5ae0fa3ddaaL, "scopeOfInterest"), child));
-      installCellInfo(child, editorCell, false);
-      return editorCell;
-    }
-
-
-
-    private void installCellInfo(SNode child, EditorCell editorCell, boolean isEmpty) {
-      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
-        editorCell.setSubstituteInfo((isEmpty ? new SEmptyContainmentSubstituteInfo(editorCell) : new SChildSubstituteInfo(editorCell)));
-      }
-      if (editorCell.getSRole() == null) {
-        editorCell.setSRole(MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x585f5ae0fa3ddaaL, "scopeOfInterest"));
-      }
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
-      editorCell.getStyle().putAll(style);
-    }
-    @Override
-    protected EditorCell createEmptyCell() {
-      getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa032b1L, 0x585f5ae0fa3ddaaL, "scopeOfInterest")));
-      try {
-        EditorCell editorCell = super.createEmptyCell();
-        editorCell.setCellId("empty_scopeOfInterest");
-        installCellInfo(null, editorCell, true);
-        setCellContext(editorCell);
-        return editorCell;
-      } finally {
-        getCellFactory().popCellContext();
-      }
-    }
-    protected String getNoTargetText() {
-      return "<no scopeOfInterest>";
-    }
+  private EditorCell createDiagram_1() {
+    return createDiagram_0(getEditorContext(), myNode);
   }
 }

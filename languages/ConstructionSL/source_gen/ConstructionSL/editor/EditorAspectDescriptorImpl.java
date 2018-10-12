@@ -32,7 +32,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 5:
         return Arrays.asList(new ConceptEditor[]{new TransactionKind_CM_Editor(), new TransactionKind_Editor(), new TransactionKind_OCD_Editor(), new TransactionKind_TPT_Editor()});
       case 6:
-        return Collections.<ConceptEditor>singletonList(new TransactionKindReference_Editor());
+        return Arrays.asList(new ConceptEditor[]{new TransactionKindReference_Editor(), new TransactionKindReference_PSD_Editor()});
       default:
     }
     return Collections.<ConceptEditor>emptyList();

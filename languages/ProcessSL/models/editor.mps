@@ -3,16 +3,23 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="wtx7" ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)" />
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
+      </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
+      </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
@@ -305,6 +312,69 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2S7w2zXO9XZ">
+    <ref role="1XX52x" to="it18:m5XqSfxGx1" resolve="Link" />
+    <node concept="3EZMnI" id="2S7w2zXO9Y0" role="2wV5jI">
+      <node concept="l2Vlx" id="2S7w2zXO9Y1" role="2iSdaV" />
+      <node concept="3F0ifn" id="2S7w2zXO9Y2" role="3EZMnx">
+        <property role="3F0ifm" value="link type" />
+      </node>
+      <node concept="3F0ifn" id="2S7w2zXO9Y3" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="2S7w2zXO9Y4" role="3EZMnx">
+        <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="type" />
+      </node>
+      <node concept="3F0ifn" id="2S7w2zXO9Y5" role="3EZMnx">
+        <property role="3F0ifm" value="from C-fact" />
+        <node concept="pVoyu" id="2S7w2zXO9YJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2S7w2zXO9Y6" role="3EZMnx">
+        <node concept="2iRkQZ" id="2S7w2zXO9Y7" role="2iSdaV" />
+        <node concept="3EZMnI" id="2S7w2zXO9Y8" role="3EZMnx">
+          <node concept="l2Vlx" id="2S7w2zXO9Y9" role="2iSdaV" />
+          <node concept="1iCGBv" id="2S7w2zXO9Yg" role="3EZMnx">
+            <property role="1$x2rV" value="&lt;&lt;transaction step kind&gt;&gt;" />
+            <ref role="1NtTu8" to="it18:m5XqSfxGx7" resolve="transactionKindStepKindFrom" />
+            <node concept="1sVBvm" id="2S7w2zXO9Yh" role="1sWHZn">
+              <node concept="3F0A7n" id="2S7w2zXO9Yi" role="2wV5jI">
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="ljvvj" id="2S7w2zXO9Yj" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2S7w2zXO9Yk" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+      </node>
+      <node concept="3EZMnI" id="2S7w2zXO9Yl" role="3EZMnx">
+        <node concept="2iRkQZ" id="2S7w2zXO9Ym" role="2iSdaV" />
+        <node concept="3EZMnI" id="2S7w2zXO9Yn" role="3EZMnx">
+          <node concept="l2Vlx" id="2S7w2zXO9Yo" role="2iSdaV" />
+          <node concept="1iCGBv" id="2S7w2zXO9Yv" role="3EZMnx">
+            <property role="1$x2rV" value="&lt;transaction step kind&gt;" />
+            <ref role="1NtTu8" to="it18:m5XqSfxGx2" resolve="transactionKindStepKindTo" />
+            <node concept="1sVBvm" id="2S7w2zXO9Yw" role="1sWHZn">
+              <node concept="3F0A7n" id="2S7w2zXO9Yx" role="2wV5jI">
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="ljvvj" id="2S7w2zXO9Yy" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2aJ2om" id="2S7w2zXO9Yz" role="CpUAK">
+      <ref role="2$4xQ3" to="wtx7:2S7w2zXL7rF" resolve="PSD" />
     </node>
   </node>
 </model>

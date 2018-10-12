@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="GeneralSL.editor.ArrowHead" file="ArrowHead.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
   <dependency className="GeneralSL.editor.DemoStyles_StyleSheet" file="DemoStyles_StyleSheet.java">
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.lang.Deprecated" />
@@ -20,6 +30,31 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorHint" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider" />
+  </dependency>
+  <dependency className="GeneralSL.editor.Transaction" file="Transaction.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime" />
+    <classNode dependClassName="org.apache.log4j.Level" />
+    <classNode dependClassName="org.apache.log4j.LogManager" />
+    <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
+  <dependency className="GeneralSL.editor.TransactionKind" file="TransactionKind.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.Shape" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
   </dependency>
 </dependenciesRoot>
 
