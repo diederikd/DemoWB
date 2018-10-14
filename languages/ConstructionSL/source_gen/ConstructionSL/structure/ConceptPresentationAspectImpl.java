@@ -15,6 +15,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AggregateTransactionKind;
   private ConceptPresentation props_CompositeActorRole;
   private ConceptPresentation props_CompositeActorRoleReference;
+  private ConceptPresentation props_Executor;
+  private ConceptPresentation props_Initiator;
   private ConceptPresentation props_ScopeOfInterest;
   private ConceptPresentation props_TransactionKind;
   private ConceptPresentation props_TransactionKindReference;
@@ -66,6 +68,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CompositeActorRoleReference = cpb.create();
         }
         return props_CompositeActorRoleReference;
+      case LanguageConceptSwitch.Executor:
+        if (props_Executor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Executor");
+          props_Executor = cpb.create();
+        }
+        return props_Executor;
+      case LanguageConceptSwitch.Initiator:
+        if (props_Initiator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Initiator");
+          props_Initiator = cpb.create();
+        }
+        return props_Initiator;
       case LanguageConceptSwitch.ScopeOfInterest:
         if (props_ScopeOfInterest == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

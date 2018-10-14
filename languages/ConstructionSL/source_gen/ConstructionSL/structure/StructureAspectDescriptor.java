@@ -18,6 +18,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAggregateTransactionKind = createDescriptorForAggregateTransactionKind();
   /*package*/ final ConceptDescriptor myConceptCompositeActorRole = createDescriptorForCompositeActorRole();
   /*package*/ final ConceptDescriptor myConceptCompositeActorRoleReference = createDescriptorForCompositeActorRoleReference();
+  /*package*/ final ConceptDescriptor myConceptExecutor = createDescriptorForExecutor();
+  /*package*/ final ConceptDescriptor myConceptInitiator = createDescriptorForInitiator();
   /*package*/ final ConceptDescriptor myConceptScopeOfInterest = createDescriptorForScopeOfInterest();
   /*package*/ final ConceptDescriptor myConceptTransactionKind = createDescriptorForTransactionKind();
   /*package*/ final ConceptDescriptor myConceptTransactionKindReference = createDescriptorForTransactionKindReference();
@@ -30,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActor, myConceptActorRole, myConceptActorRoleReference, myConceptAggregateTransactionKind, myConceptCompositeActorRole, myConceptCompositeActorRoleReference, myConceptScopeOfInterest, myConceptTransactionKind, myConceptTransactionKindReference, myConcepttest);
+    return Arrays.asList(myConceptActor, myConceptActorRole, myConceptActorRoleReference, myConceptAggregateTransactionKind, myConceptCompositeActorRole, myConceptCompositeActorRoleReference, myConceptExecutor, myConceptInitiator, myConceptScopeOfInterest, myConceptTransactionKind, myConceptTransactionKindReference, myConcepttest);
   }
 
   @Override
@@ -49,6 +51,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptCompositeActorRole;
       case LanguageConceptSwitch.CompositeActorRoleReference:
         return myConceptCompositeActorRoleReference;
+      case LanguageConceptSwitch.Executor:
+        return myConceptExecutor;
+      case LanguageConceptSwitch.Initiator:
+        return myConceptInitiator;
       case LanguageConceptSwitch.ScopeOfInterest:
         return myConceptScopeOfInterest;
       case LanguageConceptSwitch.TransactionKind:
@@ -118,6 +124,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("compositeActorRole", 0x2e078028fd647074L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f08L).optional(false).origin("3316760564119924852").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForExecutor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "Executor", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL);
+    b.class_(false, false, false);
+    b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506429");
+    b.version(2);
+    b.associate("actor", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("7147711074394506474").done();
+    b.associate("transactionKind", 0x6331c55a1a6904ebL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(true).origin("7147711074394506475").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInitiator() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "Initiator", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L);
+    b.class_(false, false, false);
+    b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506310");
+    b.version(2);
+    b.associate("actor", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("7147711074394506357").done();
+    b.associate("transactionKind", 0x6331c55a1a690473L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(true).origin("7147711074394506355").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForScopeOfInterest() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "ScopeOfInterest", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L);
     b.class_(false, false, false);
@@ -141,6 +165,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("usesFacts", 0x2613bb9aeaa55db4L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("2743742872034827700").done();
     b.associate("hasProduct", 0x1ed669b9cb67b3bcL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).origin("2222079712856355772").done();
     b.associate("isPartOf", 0x2613bb9aeaa69f13L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f0cL).optional(true).origin("2743742872034909971").done();
+    b.aggregate("initiatorConcept", 0x6331c55a1a69117cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L).optional(true).ordered(true).multiple(false).origin("7147711074394509692").done();
+    b.aggregate("executorConcept", 0x6331c55a1a69118fL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL).optional(true).ordered(true).multiple(false).origin("7147711074394509711").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTransactionKindReference() {

@@ -159,7 +159,14 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                         final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
                         for (SNode e : Sequence.fromIterable(new Object() {
                           public Iterable<SNode> query() {
-                            return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collect(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions"))).toListSequence();
+                            return SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "roles"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SLinkOperations.collect(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest"));
                           }
                         }.query())) {
                           elements.addAll(accessorFactory.fromSNode(e, false));
@@ -174,7 +181,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                     };
 
                     DiagramModel model = DiagramModel.getModel(editorContext, node, "7147711074381116964", accessor);
-                    model.setLayouter(new LayeredLayouter(Direction.DOWN));
+                    model.setLayouter(new LayeredLayouter(Direction.RIGHT));
 
                     IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider();
                     model.setPaletteEntryProvider(paletteEntryProvider);

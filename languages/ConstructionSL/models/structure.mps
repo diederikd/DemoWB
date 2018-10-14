@@ -92,6 +92,18 @@
     <property role="EcuMT" value="2743742872034578181" />
     <property role="TrG5h" value="TransactionKind" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6cLLlCqqh5W" role="1TKVEi">
+      <property role="IQ2ns" value="7147711074394509692" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="initiatorConcept" />
+      <ref role="20lvS9" node="6cLLlCqqgh6" resolve="Initiator" />
+    </node>
+    <node concept="1TJgyj" id="6cLLlCqqh6f" role="1TKVEi">
+      <property role="IQ2ns" value="7147711074394509711" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="executorConcept" />
+      <ref role="20lvS9" node="6cLLlCqqgiX" resolve="Executor" />
+    </node>
     <node concept="1TJgyi" id="2ojITFECoW6" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578182" />
       <property role="TrG5h" value="id" />
@@ -265,6 +277,44 @@
       <property role="IQ2ns" value="3316760564119924852" />
       <property role="20kJfa" value="compositeActorRole" />
       <ref role="20lvS9" node="2ojITFECoW8" resolve="CompositeActorRole" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6cLLlCqqgh6">
+    <property role="EcuMT" value="7147711074394506310" />
+    <property role="TrG5h" value="Initiator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6cLLlCqqghP" role="1TKVEi">
+      <property role="IQ2ns" value="7147711074394506357" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+    </node>
+    <node concept="1TJgyj" id="6cLLlCqqghN" role="1TKVEi">
+      <property role="IQ2ns" value="7147711074394506355" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="transactionKind" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6cLLlCqqgiX">
+    <property role="EcuMT" value="7147711074394506429" />
+    <property role="TrG5h" value="Executor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6cLLlCqqgjE" role="1TKVEi">
+      <property role="IQ2ns" value="7147711074394506474" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actor" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+    </node>
+    <node concept="1TJgyj" id="6cLLlCqqgjF" role="1TKVEi">
+      <property role="IQ2ns" value="7147711074394506475" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="transactionKind" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
     </node>
   </node>
 </model>
