@@ -60,12 +60,6 @@
     <node concept="PrWs8" id="2ojITFECuH2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="6cLLlCpBIkS" role="1TKVEi">
-      <property role="IQ2ns" value="7147711074381260088" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="constructionModel" />
-      <ref role="20lvS9" node="1VmqrBbw57R" resolve="ConstructionModel" />
-    </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDDVW">
     <property role="EcuMT" value="2743742872034909948" />

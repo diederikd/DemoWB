@@ -36,10 +36,8 @@ import de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.EndpointUtil;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference;
 import org.jetbrains.annotations.Nullable;
+import GeneralSL.editor.Executor;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
-import java.util.Collections;
-import de.itemis.mps.editor.diagram.runtime.model.GeneratedConnectionType;
-import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpoint;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
 import de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter;
 import de.cau.cs.kieler.kiml.options.Direction;
@@ -170,7 +168,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                                 }
                                 @Override
                                 public IConnectionEndpointReference readTo() {
-                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690473L, "transactionKind"))), "initiator");
+                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690473L, "transactionKind")));
                                 }
                                 @Override
                                 public IShape getStartShape() {
@@ -212,7 +210,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                               editorCell.setCellId("transformedGraphElement_d0a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
 
-                              final IShape startShape = null;
+                              final IShape startShape = new Executor();
                               final IShape endShape = null;
                               AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(EndpointUtil.createAccessorKeyForSNode(((SNode) _variablesContext.getValue("parameterObject")))) {
                                 @Override
@@ -221,7 +219,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                                 }
                                 @Override
                                 public IConnectionEndpointReference readTo() {
-                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904ebL, "transactionKind"))), "executor");
+                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904ebL, "transactionKind")));
                                 }
                                 @Override
                                 public IShape getStartShape() {
@@ -252,43 +250,6 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                       @Override
                       public List<IConnectionType> getConnectionTypes() {
                         List<IConnectionType> connectionTypes = new ArrayList<IConnectionType>();
-                        connectionTypes.addAll(Collections.singletonList(new GeneratedConnectionType() {
-                          public String getName() {
-                            return "initiator";
-                          }
-                          @Override
-                          public void create(final IConnectionEndpoint from, final IConnectionEndpoint to) {
-                            final SNode fromNode = SNodeOperations.cast(from.getSNode(), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L, "ConstructionSL.structure.Actor"));
-                            final SNode toNode = SNodeOperations.cast(to.getSNode(), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, "ConstructionSL.structure.TransactionKind"));
-                            final String fromPort = from.getPortName();
-                            final String toPort = to.getPortName();
-
-                            if (toPort.equals("initiator")) {
-                              SLinkOperations.setTarget(toNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f1aL, "initiator"), fromNode);
-                            }
-                            if (toPort.equals("executor")) {
-                              SLinkOperations.setTarget(toNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f1cL, "executor"), fromNode);
-                            }
-                          }
-                          @Override
-                          public boolean isValidStart(IConnectionEndpoint from) {
-                            final SNode fromNode = SNodeOperations.as(from.getSNode(), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L, "ConstructionSL.structure.Actor"));
-                            if (fromNode == null) {
-                              return false;
-                            }
-                            final String fromPort = from.getPortName();
-                            return true;
-                          }
-                          @Override
-                          public boolean isValidEnd(IConnectionEndpoint to) {
-                            final SNode toNode = SNodeOperations.as(to.getSNode(), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, "ConstructionSL.structure.TransactionKind"));
-                            if (toNode == null) {
-                              return false;
-                            }
-                            final String toPort = to.getPortName();
-                            return true;
-                          }
-                        }));
                         return connectionTypes;
                       }
                     };

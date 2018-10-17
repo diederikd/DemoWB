@@ -75,6 +75,7 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
       editorCell.addEditorCell(createCollection_1());
       editorCell.addEditorCell(createConstant_3());
       editorCell.addEditorCell(createRefNode_0());
+      editorCell.addEditorCell(createConstant_4());
       setInnerCellsContext(editorCell);
     } finally {
       getCellFactory().popCellContext();
@@ -275,5 +276,14 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
     protected String getNoTargetText() {
       return "<no scopeOfInterest>";
     }
+  }
+  private EditorCell createConstant_4() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_diattm_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
   }
 }

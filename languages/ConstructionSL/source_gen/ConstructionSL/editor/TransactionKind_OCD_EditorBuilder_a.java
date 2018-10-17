@@ -49,7 +49,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class TransactionKind_OCD_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -78,17 +77,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       public void run() {
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
-        {
-          Port port = new Port("initiator");
-          port.setTooltipCell(new TransactionKind_OCD_EditorBuilder_a.Inline_Builder_xek190_a0a(editorContext, node).createCell());
-          ports.add(port);
-        }
-        {
-          Port port = new Port("executor");
-          port.setRelativeX(1);
-          port.setTooltipCell(new TransactionKind_OCD_EditorBuilder_a.Inline_Builder_xek190_a1a(editorContext, node).createCell());
-          ports.add(port);
-        }
 
         EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
@@ -222,58 +210,6 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       return editorCell;
     } finally {
       getCellFactory().popCellContext();
-    }
-  }
-  /*package*/ static class Inline_Builder_xek190_a0a extends AbstractEditorBuilder {
-    @NotNull
-    private SNode myNode;
-
-    /*package*/ Inline_Builder_xek190_a0a(@NotNull EditorContext context, @NotNull SNode node) {
-      super(context);
-      myNode = node;
-    }
-
-    /*package*/ EditorCell createCell() {
-      return createConstant_0();
-    }
-
-    @NotNull
-    @Override
-    public SNode getNode() {
-      return myNode;
-    }
-
-    private EditorCell createConstant_0() {
-      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "initiator");
-      editorCell.setCellId("Constant_xek190_a0a0");
-      editorCell.setDefaultText("");
-      return editorCell;
-    }
-  }
-  /*package*/ static class Inline_Builder_xek190_a1a extends AbstractEditorBuilder {
-    @NotNull
-    private SNode myNode;
-
-    /*package*/ Inline_Builder_xek190_a1a(@NotNull EditorContext context, @NotNull SNode node) {
-      super(context);
-      myNode = node;
-    }
-
-    /*package*/ EditorCell createCell() {
-      return createConstant_1();
-    }
-
-    @NotNull
-    @Override
-    public SNode getNode() {
-      return myNode;
-    }
-
-    private EditorCell createConstant_1() {
-      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "executor");
-      editorCell.setCellId("Constant_xek190_a0b0");
-      editorCell.setDefaultText("");
-      return editorCell;
     }
   }
 }

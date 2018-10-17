@@ -40,11 +40,11 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 
-/*package*/ class Actor_OCD_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class ActorRole_OCD_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Actor_OCD_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public ActorRole_OCD_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -67,37 +67,6 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       public void run() {
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
-        {
-          Port port = new Port("t1");
-          port.setRelativeY(0.25);
-          ports.add(port);
-        }
-        {
-          Port port = new Port("t2");
-          ports.add(port);
-        }
-        {
-          Port port = new Port("t3");
-          port.setRelativeY(0.75);
-          ports.add(port);
-        }
-        {
-          Port port = new Port("t4");
-          port.setRelativeX(1);
-          port.setRelativeY(0.25);
-          ports.add(port);
-        }
-        {
-          Port port = new Port("t5");
-          port.setRelativeX(1);
-          ports.add(port);
-        }
-        {
-          Port port = new Port("t6");
-          port.setRelativeX(1);
-          port.setRelativeY(0.75);
-          ports.add(port);
-        }
 
         EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
@@ -128,16 +97,12 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 
 
 
-          @Override
-          public boolean allowScaling() {
-            return false;
-          }
 
 
         };
 
         editorCell.value = new EditorCell_DiagramElement(editorContext, node, accessor);
-        editorCell.value.setCellId("DiagramNode_ctoc37_a");
+        editorCell.value.setCellId("DiagramNode_cznx3c_a");
         editorCell.value.setBig(true);
         setCellContext(editorCell.value);
 
@@ -152,7 +117,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   }
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_ctoc37_a0");
+    editorCell.setCellId("Collection_cznx3c_a0");
     editorCell.addEditorCell(createProperty_0());
     return editorCell;
   }

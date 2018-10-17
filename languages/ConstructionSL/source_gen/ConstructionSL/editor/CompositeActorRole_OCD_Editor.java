@@ -10,7 +10,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Actor_OCD_Editor extends DefaultNodeEditor {
+public class CompositeActorRole_OCD_Editor extends DefaultNodeEditor {
   private Collection<String> myContextHints = Arrays.asList(new String[]{"GeneralSL.editor.DemoHints.OCD"});
   @Override
   @NotNull
@@ -18,6 +18,6 @@ public class Actor_OCD_Editor extends DefaultNodeEditor {
     return myContextHints;
   }
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new Actor_OCD_EditorBuilder_a(editorContext, node).createCell();
+    return new CompositeActorRole_OCD_EditorBuilder_a(editorContext, node).createCell();
   }
 }
