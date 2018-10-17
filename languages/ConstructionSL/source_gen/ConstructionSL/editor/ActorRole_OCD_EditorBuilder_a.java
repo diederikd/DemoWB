@@ -21,6 +21,7 @@ import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
@@ -118,7 +119,14 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
     editorCell.setCellId("Collection_cznx3c_a0");
+    editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
+    return editorCell;
+  }
+  private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "A");
+    editorCell.setCellId("Constant_cznx3c_a0a");
+    editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createProperty_0() {

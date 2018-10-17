@@ -19,31 +19,44 @@ import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import de.itemis.mps.editor.diagram.runtime.model.AbstractBoxAccessor;
-import de.itemis.mps.editor.diagram.runtime.model.EndpointUtil;
-import org.jetbrains.annotations.Nullable;
-import java.util.Collections;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyOrNode;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
+import de.itemis.mps.editor.diagram.runtime.jgraph.BaseDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.EditorUtil;
+import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import de.itemis.mps.editor.diagram.runtime.DiagramContext;
+import de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
+import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
+import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 
 /*package*/ class CompositeActorRole_OCD_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -97,61 +110,6 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 
           public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
             final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
-            for (final SNode parameterObject : new Object() {
-              public Iterable<SNode> query() {
-                List<SNode> actorRoles = new ArrayList<SNode>();
-                {
-                  final SNode constructionModel = SNodeOperations.getParent(node);
-                  if (SNodeOperations.isInstanceOf(constructionModel, MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel"))) {
-                    actorRoles = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(constructionModel, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "roles")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, "ConstructionSL.structure.ActorRole"))).toListSequence();
-                  }
-                }
-                {
-                  final SNode scopeOfInterest = SNodeOperations.getParent(node);
-                  if (SNodeOperations.isInstanceOf(scopeOfInterest, MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, "ConstructionSL.structure.ScopeOfInterest"))) {
-                    actorRoles = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(scopeOfInterest, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, "ConstructionSL.structure.ActorRole"))).toListSequence();
-                  }
-                }
-                return actorRoles;
-              }
-            }.query()) {
-              ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
-                public void run() {
-                  final ContextVariables _variablesContext = ContextVariables.getCurrent();
-                  final EditorCell editorCell = new CompositeActorRole_OCD_EditorBuilder_a.Inline_Builder_odjge3_a0a(editorContext, parameterObject).createCell();
-
-                  final List<Port> ports = new ArrayList<Port>();
-
-                  final IShape shape = new ActorRole();
-
-                  AbstractBoxAccessor accessor = new AbstractBoxAccessor(EndpointUtil.createAccessorKeyForSNode(((SNode) _variablesContext.getValue("parameterObject")))) {
-                    @Nullable
-                    public SNode getSNode() {
-                      return parameterObject;
-                    }
-                    public void delete() {
-                    }
-                    @NotNull
-                    @Override
-                    public List<EditorCell> getContentCells() {
-                      return Collections.singletonList(editorCell);
-                    }
-                    @NotNull
-                    @Override
-                    public List<Port> getPorts() {
-                      return ports;
-                    }
-                    @Override
-                    public IShape getShape() {
-                      return shape;
-                    }
-                  };
-                  accessor.setRootCell(editorCell);
-
-                  elements.add(accessor);
-                }
-              });
-            }
             return elements;
           }
 
@@ -176,9 +134,10 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
     return createDiagramNode_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_0() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_odjge3_a0");
     editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createDiagram_1());
     return editorCell;
   }
   private EditorCell createProperty_0() {
@@ -191,6 +150,9 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       editorCell.setCellId("property_name");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));
@@ -208,57 +170,91 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       getCellFactory().popCellContext();
     }
   }
-  /*package*/ static class Inline_Builder_odjge3_a0a extends AbstractEditorBuilder {
-    @NotNull
-    private SNode myNode;
+  private EditorCell createDiagram_0(final EditorContext editorContext, final SNode node) {
+    final Wrappers._T<BaseDiagramECell> editorCell = new Wrappers._T<BaseDiagramECell>(null);
 
-    /*package*/ Inline_Builder_odjge3_a0a(@NotNull EditorContext context, @NotNull SNode node) {
-      super(context);
-      myNode = node;
-    }
+    EditorUtil.noCaching(editorContext, new Runnable() {
+      public void run() {
+        DiagramCreationContext.createDiagram(new _FunctionTypes._void_P0_E0() {
+          public void invoke() {
+            DiagramContext.withContext(node, new _FunctionTypes._return_P0_E0<BaseDiagramECell>() {
+              public BaseDiagramECell invoke() {
+                return editorCell.value;
+              }
+            }, new Runnable() {
+              public void run() {
+                ContextVariables.withValue("thisNode", node, new Runnable() {
+                  public void run() {
+                    final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                    IDiagramAccessor accessor = new AbstractDiagramAccessor(node) {
+                      public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
+                        final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            List<SNode> actorRoles = new ArrayList<SNode>();
+                            {
+                              final SNode constructionModel = SNodeOperations.getParent(node);
+                              if (SNodeOperations.isInstanceOf(constructionModel, MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel"))) {
+                                actorRoles = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(constructionModel, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "roles")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, "ConstructionSL.structure.ActorRole"))).where(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleIn")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd647073L, 0x2e078028fd647074L, "compositeActorRole"))).contains(node);
+                                  }
+                                }).toListSequence();
+                              }
+                            }
+                            {
+                              final SNode scopeOfInterest = SNodeOperations.getParent(node);
+                              if (SNodeOperations.isInstanceOf(scopeOfInterest, MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, "ConstructionSL.structure.ScopeOfInterest"))) {
+                                actorRoles = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(scopeOfInterest, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, "ConstructionSL.structure.ActorRole"))).where(new IWhereFilter<SNode>() {
+                                  public boolean accept(SNode it) {
+                                    return Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleIn")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd647073L, 0x2e078028fd647074L, "compositeActorRole"))).contains(node);
+                                  }
+                                }).toListSequence();
+                              }
+                            }
+                            return actorRoles;
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        return elements;
+                      }
+                      @Override
+                      public List<IConnectionType> getConnectionTypes() {
+                        List<IConnectionType> connectionTypes = new ArrayList<IConnectionType>();
+                        return connectionTypes;
+                      }
+                    };
 
-    /*package*/ EditorCell createCell() {
-      return createCollection_1();
-    }
+                    DiagramModel model = DiagramModel.getModel(editorContext, node, "888799663698997520", accessor);
 
-    @NotNull
-    @Override
-    public SNode getNode() {
-      return myNode;
-    }
+                    IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider();
+                    model.setPaletteEntryProvider(paletteEntryProvider);
 
-    private EditorCell createCollection_1() {
-      EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-      editorCell.setCellId("Collection_odjge3_a0a0");
-      editorCell.addEditorCell(createProperty_1());
-      return editorCell;
-    }
-    private EditorCell createProperty_1() {
-      getCellFactory().pushCellContext();
-      try {
-        final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-        getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-        editorCell.setDefaultText("<no name>");
-        editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
-        editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-        editorCell.setCellId("property_name1");
-        editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
-        setCellContext(editorCell);
-        Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));
-        Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
+                    if (DiagramCreationContext.isSubdiagram()) {
+                      editorCell.value = new SubDiagramECell(editorContext, node, model);
+                    } else {
+                      editorCell.value = new RootDiagramECell(editorContext, node, model);
+                    }
+                    editorCell.value.setCellId("Diagram_odjge3_b0a");
+                    if (editorCell.value.getContextGraph() != null) {
+                      Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
+                      if (defaultParent instanceof RootDCell) {
+                        ((RootDCell) defaultParent).resetButtonConfig();
+                      }
+                    }
+                  }
+                });
+              }
+            });
           }
         });
-        if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
-          EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
-          return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
-        } else
-        return editorCell;
-      } finally {
-        getCellFactory().popCellContext();
       }
-    }
+    });
+
+    return editorCell.value;
+  }
+  private EditorCell createDiagram_1() {
+    return createDiagram_0(getEditorContext(), myNode);
   }
 }

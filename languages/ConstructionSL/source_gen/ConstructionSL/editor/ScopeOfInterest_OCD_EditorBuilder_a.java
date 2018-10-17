@@ -29,7 +29,9 @@ import de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor;
@@ -144,8 +146,23 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                         for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions")))) {
                           elements.addAll(accessorFactory.fromSNode(e));
                         }
-                        for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles")))) {
-                          elements.addAll(accessorFactory.fromSNode(e));
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, "ConstructionSL.structure.ActorRole"))).where(new IWhereFilter<SNode>() {
+                              public boolean accept(SNode it) {
+                                return ListSequence.fromList(SLinkOperations.getChildren(it, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleIn"))).isEmpty();
+                              }
+                            });
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SNodeOperations.ofConcept(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f08L, "ConstructionSL.structure.CompositeActorRole"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
                         }
                         for (final SNode parameterObject : new Object() {
                           public Iterable<SNode> query() {
@@ -156,7 +173,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             public void run() {
                               final ContextVariables _variablesContext = ContextVariables.getCurrent();
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
-                              editorCell.setCellId("transformedGraphElement_c0a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+                              editorCell.setCellId("transformedGraphElement_d0a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
 
                               final IShape startShape = null;
@@ -207,7 +224,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             public void run() {
                               final ContextVariables _variablesContext = ContextVariables.getCurrent();
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
-                              editorCell.setCellId("transformedGraphElement_d0a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+                              editorCell.setCellId("transformedGraphElement_e0a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
 
                               final IShape startShape = new Executor();
