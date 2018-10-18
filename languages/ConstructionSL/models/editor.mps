@@ -2446,9 +2446,6 @@
         <ref role="2xQOue" to="wtx7:6cLLlCqasXm" resolve="ActorRole" />
       </node>
       <node concept="3EZMnI" id="6cLLlCqatRs" role="1ytjkN">
-        <node concept="3F0ifn" id="LlDDn7eZZS" role="3EZMnx">
-          <property role="3F0ifm" value="A" />
-        </node>
         <node concept="3F0A7n" id="6cLLlCqatRt" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>

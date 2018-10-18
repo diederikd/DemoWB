@@ -26,10 +26,14 @@
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="id" index="3cGPkH" />
+        <child id="3316760564119748940" name="isActorRoleIn" index="3jp$5$" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="roles" index="3cGxOm" />
         <child id="2743742872034489010" name="transactions" index="3cGS$C" />
+      </concept>
+      <concept id="3316760564119924851" name="ConstructionSL.structure.CompositeActorRoleReference" flags="ng" index="3joZ1r">
+        <reference id="3316760564119924852" name="compositeActorRole" index="3joZ1s" />
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
         <reference id="7147711074394506355" name="transactionKind" index="1Tmc4D" />
@@ -92,6 +96,9 @@
     <node concept="3cGS$N" id="23QvOXySG7O" role="3llzIU">
       <property role="TrG5h" value="external actor" />
       <property role="3cGPkH" value="A3" />
+      <node concept="3joZ1r" id="LlDDn7j8m8" role="3jp$5$">
+        <ref role="3joZ1s" node="LlDDn7gr7U" resolve="CA test" />
+      </node>
     </node>
     <node concept="3cGzii" id="LlDDn7gr7U" role="3llzIU">
       <property role="TrG5h" value="CA test" />
@@ -100,10 +107,10 @@
         <node concept="37mRIm" id="LlDDn7hyt2" role="37mRID">
           <property role="37mO49" value="2375225832422687220" />
           <node concept="gqqVs" id="LlDDn7hyt0" role="37mO4d">
-            <property role="gqqTZ" value="12.000100135803223" />
+            <property role="gqqTZ" value="12.0" />
             <property role="gqqTW" value="12.0" />
             <property role="gqqTX" value="134.0" />
-            <property role="gqqTy" value="23.0" />
+            <property role="gqqTy" value="103.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
           </node>
         </node>
@@ -189,7 +196,7 @@
                   <property role="2Vclpz" value="6.5" />
                 </node>
                 <node concept="2VclrF" id="23QvOXySG89" role="3wpmZP">
-                  <property role="2Vclpx" value="50.99989986419678" />
+                  <property role="2Vclpx" value="46.49989986419678" />
                   <property role="2Vclpz" value="35.0" />
                 </node>
               </node>
@@ -202,7 +209,7 @@
                   <property role="2Vclpz" value="9.207024574894092" />
                 </node>
                 <node concept="2VclrF" id="23QvOXySG8d" role="3wpmZP">
-                  <property role="2Vclpx" value="-7.514818761564651" />
+                  <property role="2Vclpx" value="-16.51481876156465" />
                   <property role="2Vclpz" value="35.0" />
                 </node>
               </node>
@@ -287,7 +294,7 @@
                   <property role="2Vclpz" value="6.5" />
                 </node>
                 <node concept="2VclrF" id="23QvOXyXeER" role="3wpmZP">
-                  <property role="2Vclpx" value="50.99989986419678" />
+                  <property role="2Vclpx" value="46.49989986419678" />
                   <property role="2Vclpz" value="115.0" />
                 </node>
               </node>
@@ -300,7 +307,7 @@
                   <property role="2Vclpz" value="9.507407931366188" />
                 </node>
                 <node concept="2VclrF" id="23QvOXyXeEV" role="3wpmZP">
-                  <property role="2Vclpx" value="-7.514818761564651" />
+                  <property role="2Vclpx" value="-16.51481876156465" />
                   <property role="2Vclpz" value="115.0" />
                 </node>
               </node>
@@ -395,10 +402,10 @@
       <node concept="37mRIm" id="LlDDn7gr8T" role="37mRID">
         <property role="37mO49" value="888799663698850298" />
         <node concept="gqqVs" id="LlDDn7gr8R" role="37mO4d">
-          <property role="gqqTZ" value="12.0" />
-          <property role="gqqTW" value="183.0" />
-          <property role="gqqTX" value="150.0" />
-          <property role="gqqTy" value="73.0" />
+          <property role="gqqTZ" value="7.0" />
+          <property role="gqqTW" value="12.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="159.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
