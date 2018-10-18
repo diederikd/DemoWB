@@ -428,42 +428,42 @@
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/7147711074380895551">
     <file name="ScopeOfInterest.java">
-      <node id="7147711074380895551" at="20,34,21,27" concept="7" />
-      <node id="7147711074380895560" at="27,95,28,42" concept="6" />
-      <node id="7464726264123686466" at="28,42,29,37" concept="6" />
-      <node id="7464726264123686472" at="29,37,30,39" concept="6" />
-      <node id="7464726264123686478" at="30,39,31,29" concept="6" />
-      <node id="7464726264123686484" at="31,29,32,29" concept="6" />
-      <node id="7147711074389091112" at="32,29,33,0" concept="8" />
-      <node id="7147711074385347819" at="33,0,34,23" concept="2" />
-      <node id="7147711074381037559" at="34,23,35,31" concept="2" />
-      <node id="7147711074381008818" at="35,31,36,40" concept="2" />
-      <node id="7147711074389108350" at="36,40,37,32" concept="2" />
-      <node id="7147711074389109954" at="37,32,38,23" concept="2" />
-      <node id="7147711074381036129" at="38,23,39,0" concept="8" />
-      <node id="7147711074380895639" at="39,0,40,22" concept="2" />
-      <node id="7147711074380895647" at="40,22,41,25" concept="2" />
-      <node id="7147711074380895655" at="41,25,42,25" concept="2" />
-      <node id="7147711074380895551" at="15,0,17,0" concept="1" trace="ScopeOfInterest#()V" />
-      <node id="7147711074380895551" at="18,0,23,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
-      <node id="7147711074380895551" at="26,0,44,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
-      <scope id="7147711074380895551" at="15,28,15,28" />
-      <scope id="7147711074380895551" at="20,34,21,27" />
-      <scope id="7147711074380895551" at="15,0,17,0" />
-      <scope id="7147711074380895551" at="18,0,23,0" />
-      <scope id="7147711074380895551" at="27,95,42,25">
+      <node id="7147711074380895551" at="21,34,22,27" concept="7" />
+      <node id="7147711074380895560" at="28,95,29,42" concept="6" />
+      <node id="7464726264123686466" at="29,42,30,37" concept="6" />
+      <node id="7464726264123686472" at="30,37,31,39" concept="6" />
+      <node id="7464726264123686478" at="31,39,32,29" concept="6" />
+      <node id="7464726264123686484" at="32,29,33,29" concept="6" />
+      <node id="7147711074389091112" at="33,29,34,0" concept="8" />
+      <node id="7147711074385347819" at="34,0,35,23" concept="2" />
+      <node id="7147711074381037559" at="35,23,36,31" concept="2" />
+      <node id="7147711074381008818" at="36,31,37,40" concept="2" />
+      <node id="7147711074389108350" at="37,40,38,32" concept="2" />
+      <node id="7147711074389109954" at="38,32,39,23" concept="2" />
+      <node id="7147711074381036129" at="39,23,40,0" concept="8" />
+      <node id="7147711074380895639" at="40,0,41,22" concept="2" />
+      <node id="888799663699816020" at="41,22,42,43" concept="2" />
+      <node id="7147711074380895655" at="42,43,43,25" concept="2" />
+      <node id="7147711074380895551" at="16,0,18,0" concept="1" trace="ScopeOfInterest#()V" />
+      <node id="7147711074380895551" at="19,0,24,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
+      <node id="7147711074380895551" at="27,0,45,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <scope id="7147711074380895551" at="16,28,16,28" />
+      <scope id="7147711074380895551" at="21,34,22,27" />
+      <scope id="7147711074380895551" at="16,0,18,0" />
+      <scope id="7147711074380895551" at="19,0,24,0" />
+      <scope id="7147711074380895551" at="28,95,43,25">
         <var name="height" id="7464726264123686473" />
         <var name="shape" id="7147711074380895561" />
         <var name="width" id="7464726264123686467" />
         <var name="x" id="7464726264123686479" />
         <var name="y" id="7464726264123686485" />
       </scope>
-      <scope id="7147711074380895551" at="26,0,44,0">
+      <scope id="7147711074380895551" at="27,0,45,0">
         <var name="bounds" id="7147711074380895551" />
         <var name="graphics" id="7147711074380895551" />
         <var name="style" id="7147711074380895551" />
       </scope>
-      <unit id="7147711074380895551" at="12,0,46,0" name="GeneralSL.editor.ScopeOfInterest" />
+      <unit id="7147711074380895551" at="13,0,47,0" name="GeneralSL.editor.ScopeOfInterest" />
     </file>
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/7147711074388102534">

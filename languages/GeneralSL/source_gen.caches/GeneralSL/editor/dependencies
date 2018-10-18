@@ -58,6 +58,7 @@
   </dependency>
   <dependency className="GeneralSL.editor.ScopeOfInterest" file="ScopeOfInterest.java">
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.BasicStroke" />
     <classNode dependClassName="java.awt.Graphics2D" />
     <classNode dependClassName="java.awt.geom.GeneralPath" />
     <classNode dependClassName="java.awt.geom.Rectangle2D" />

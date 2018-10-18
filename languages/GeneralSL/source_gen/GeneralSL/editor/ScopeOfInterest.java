@@ -8,6 +8,7 @@ import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
 import java.awt.geom.GeneralPath;
+import java.awt.BasicStroke;
 
 public class ScopeOfInterest extends AbstractShape {
 
@@ -38,7 +39,7 @@ public class ScopeOfInterest extends AbstractShape {
     shape.lineTo(x, y);
 
     shape.closePath();
-    graphics.fill(shape);
+    graphics.setStroke(new BasicStroke(5));
     graphics.draw(shape);
   }
 
