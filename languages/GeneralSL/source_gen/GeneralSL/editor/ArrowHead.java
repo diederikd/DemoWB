@@ -12,13 +12,13 @@ import java.awt.geom.GeneralPath;
 public class ArrowHead extends AbstractShape {
 
   private double relativeHeight;
-  private boolean filled;
   private double relativeWidth;
+  private boolean filled;
 
-  public ArrowHead(double relativeHeight, boolean filled, double relativeWidth) {
+  public ArrowHead(double relativeHeight, double relativeWidth, boolean filled) {
     this.relativeHeight = relativeHeight;
-    this.filled = filled;
     this.relativeWidth = relativeWidth;
+    this.filled = filled;
   }
 
   @Nullable

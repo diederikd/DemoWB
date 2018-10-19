@@ -36,7 +36,7 @@
     </language>
   </registry>
   <node concept="3cHilB" id="2ojITFEE2qd">
-    <property role="TrG5h" value="Object Fact Diagram RAC" />
+    <property role="TrG5h" value="Fact model RAC" />
     <node concept="3cH7GX" id="2ojITFEFmbd" role="3cH7GF">
       <property role="3cH7GY" value="P1" />
       <property role="a0oEV" value="production" />

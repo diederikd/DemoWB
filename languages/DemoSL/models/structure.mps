@@ -77,9 +77,9 @@
     <property role="EcuMT" value="2743742872034909949" />
     <property role="TrG5h" value="FactModel" />
     <property role="R4oN_" value="Object Fact Diagram" />
-    <property role="34LRSv" value="OFD" />
     <property role="3GE5qa" value="Fact Model" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Fact model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2ojITFEDW2L" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034984113" />
@@ -152,6 +152,7 @@
     <property role="3GE5qa" value="Construction Model" />
     <property role="TrG5h" value="ConstructionModel" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Construction model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1VmqrBbw582" role="1TKVEi">
       <property role="IQ2ns" value="2222079712857969154" />
@@ -175,7 +176,12 @@
     <property role="EcuMT" value="2222079712860066048" />
     <property role="3GE5qa" value="Fact Model" />
     <property role="TrG5h" value="ObjectFactDiagram" />
+    <property role="34LRSv" value="OFD" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="LlDDn7li89" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2S7w2zXwFQw">
     <property role="EcuMT" value="3316760564121910688" />

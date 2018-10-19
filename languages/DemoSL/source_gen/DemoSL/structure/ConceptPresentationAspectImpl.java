@@ -68,7 +68,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ObjectFactDiagram:
         if (props_ObjectFactDiagram == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ObjectFactDiagram");
+          cpb.presentationByName();
           props_ObjectFactDiagram = cpb.create();
         }
         return props_ObjectFactDiagram;
