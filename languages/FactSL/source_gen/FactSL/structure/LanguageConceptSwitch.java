@@ -25,11 +25,12 @@ public final class LanguageConceptSwitch {
   public static final int Number = 13;
   public static final int PropertyType = 14;
   public static final int Temperature = 15;
-  public static final int Time = 16;
-  public static final int TruthValue = 17;
-  public static final int ValueType = 18;
-  public static final int Velocity = 19;
-  public static final int Volume = 20;
+  public static final int Text = 16;
+  public static final int Time = 17;
+  public static final int TruthValue = 18;
+  public static final int ValueType = 19;
+  public static final int Velocity = 20;
+  public static final int Volume = 21;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x6836a913df904e79L, 0x9a37cb334bb02ea5L);
@@ -49,6 +50,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2613bb9aeaa83b38L, Number);
     builder.put(0x2613bb9aeaa7c0a9L, PropertyType);
     builder.put(0x2613bb9aeaa83b37L, Temperature);
+    builder.put(0x67229b7ee400a50L, Text);
     builder.put(0x2613bb9aeaa83b2fL, Time);
     builder.put(0x2613bb9aeaa83b39L, TruthValue);
     builder.put(0x2613bb9aeaa7c0b0L, ValueType);

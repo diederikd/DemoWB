@@ -12,6 +12,7 @@
   </dependency>
   <dependency className="GeneralSL.editor.ArrowHead" file="ArrowHead.java">
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Graphics2D" />
     <classNode dependClassName="java.awt.geom.GeneralPath" />
     <classNode dependClassName="java.awt.geom.Rectangle2D" />

@@ -28,6 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNumber = createDescriptorForNumber();
   /*package*/ final ConceptDescriptor myConceptPropertyType = createDescriptorForPropertyType();
   /*package*/ final ConceptDescriptor myConceptTemperature = createDescriptorForTemperature();
+  /*package*/ final ConceptDescriptor myConceptText = createDescriptorForText();
   /*package*/ final ConceptDescriptor myConceptTime = createDescriptorForTime();
   /*package*/ final ConceptDescriptor myConceptTruthValue = createDescriptorForTruthValue();
   /*package*/ final ConceptDescriptor myConceptValueType = createDescriptorForValueType();
@@ -41,7 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptTemperature, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
+    return Arrays.asList(myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
   }
 
   @Override
@@ -80,6 +81,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPropertyType;
       case LanguageConceptSwitch.Temperature:
         return myConceptTemperature;
+      case LanguageConceptSwitch.Text:
+        return myConceptText;
       case LanguageConceptSwitch.Time:
         return myConceptTime;
       case LanguageConceptSwitch.TruthValue:
@@ -105,6 +108,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015473");
     b.version(2);
+    b.alias("amount");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForArea() {
@@ -113,6 +117,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015476");
     b.version(2);
+    b.alias("area");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAttributeType() {
@@ -148,6 +153,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015470");
     b.version(2);
+    b.alias("duration");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEntityType() {
@@ -210,6 +216,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015475");
     b.version(2);
+    b.alias("length");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMass() {
@@ -218,6 +225,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015474");
     b.version(2);
+    b.alias("mass");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNumber() {
@@ -226,6 +234,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015480");
     b.version(2);
+    b.alias("number");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPropertyType() {
@@ -244,6 +253,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015479");
     b.version(2);
+    b.alias("temperature");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "Text", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee400a50L);
+    b.class_(false, false, false);
+    b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/464479581525510736");
+    b.version(2);
+    b.alias("text");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTime() {
@@ -252,6 +271,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015471");
     b.version(2);
+    b.alias("time");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTruthValue() {
@@ -260,6 +280,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015481");
     b.version(2);
+    b.alias("truthvalue");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForValueType() {
@@ -275,6 +296,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015478");
     b.version(2);
+    b.alias("velocity");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVolume() {
@@ -283,6 +305,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015477");
     b.version(2);
+    b.alias("volume");
     return b.create();
   }
 }

@@ -127,9 +127,28 @@
         </node>
       </node>
     </node>
-    <node concept="14StLt" id="1VmqrBbYZyS" role="V601i">
+    <node concept="14StLt" id="pMarvI3Von" role="V601i">
       <property role="TrG5h" value="Bold" />
-      <node concept="Vb9p2" id="1VmqrBbYZzx" role="3F10Kt">
+      <node concept="Vb9p2" id="pMarvI3Voo" role="3F10Kt">
+        <property role="Vbekb" value="BOLD" />
+      </node>
+    </node>
+    <node concept="14StLt" id="pMarvI3WvW" role="V601i">
+      <property role="TrG5h" value="Darkred" />
+      <node concept="VechU" id="pMarvI3WvX" role="3F10Kt">
+        <node concept="1iSF2X" id="pMarvI3WvY" role="VblUZ">
+          <property role="1iTho6" value="8B0000" />
+        </node>
+      </node>
+    </node>
+    <node concept="14StLt" id="1VmqrBbYZyS" role="V601i">
+      <property role="TrG5h" value="DarkredBold" />
+      <node concept="VechU" id="pMarvI3VqP" role="3F10Kt">
+        <node concept="1iSF2X" id="pMarvI3VqT" role="VblUZ">
+          <property role="1iTho6" value="8B0000" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="pMarvI3WyK" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
       </node>
     </node>

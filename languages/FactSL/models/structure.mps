@@ -176,66 +176,77 @@
     <property role="EcuMT" value="2743742872035015470" />
     <property role="TrG5h" value="Duration" />
     <property role="3GE5qa" value="Value Types" />
+    <property role="34LRSv" value="duration" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GJ">
     <property role="EcuMT" value="2743742872035015471" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Time" />
+    <property role="34LRSv" value="time" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GL">
     <property role="EcuMT" value="2743742872035015473" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Amount" />
+    <property role="34LRSv" value="amount" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GM">
     <property role="EcuMT" value="2743742872035015474" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Mass" />
+    <property role="34LRSv" value="mass" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GN">
     <property role="EcuMT" value="2743742872035015475" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Length" />
+    <property role="34LRSv" value="length" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GO">
     <property role="EcuMT" value="2743742872035015476" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Area" />
+    <property role="34LRSv" value="area" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GP">
     <property role="EcuMT" value="2743742872035015477" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Volume" />
+    <property role="34LRSv" value="volume" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GQ">
     <property role="EcuMT" value="2743742872035015478" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Velocity" />
+    <property role="34LRSv" value="velocity" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GR">
     <property role="EcuMT" value="2743742872035015479" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Temperature" />
+    <property role="34LRSv" value="temperature" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GS">
     <property role="EcuMT" value="2743742872035015480" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="Number" />
+    <property role="34LRSv" value="number" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="1TIwiD" id="2ojITFEE3GT">
     <property role="EcuMT" value="2743742872035015481" />
     <property role="3GE5qa" value="Value Types" />
     <property role="TrG5h" value="TruthValue" />
+    <property role="34LRSv" value="truthvalue" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
   <node concept="PlHQZ" id="2ojITFEE3GU">
@@ -309,6 +320,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="pMarvIg0Dg">
+    <property role="EcuMT" value="464479581525510736" />
+    <property role="3GE5qa" value="Value Types" />
+    <property role="TrG5h" value="Text" />
+    <property role="34LRSv" value="text" />
+    <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
   </node>
 </model>
 

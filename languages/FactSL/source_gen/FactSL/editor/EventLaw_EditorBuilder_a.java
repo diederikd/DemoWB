@@ -35,7 +35,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
-import GeneralSL.editor.DemoStyles_StyleSheet.BoldStyleClass;
+import GeneralSL.editor.DemoStyles_StyleSheet.DarkredBoldStyleClass;
 
 /*package*/ class EventLaw_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -162,7 +162,7 @@ import GeneralSL.editor.DemoStyles_StyleSheet.BoldStyleClass;
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       editorCell.setCellId("property_type");
       Style style = new StyleImpl();
-      new BoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      new DarkredBoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);

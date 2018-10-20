@@ -25,6 +25,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Number;
   private ConceptPresentation props_PropertyType;
   private ConceptPresentation props_Temperature;
+  private ConceptPresentation props_Text;
   private ConceptPresentation props_Time;
   private ConceptPresentation props_TruthValue;
   private ConceptPresentation props_ValueType;
@@ -39,14 +40,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Amount:
         if (props_Amount == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Amount");
+          cpb.rawPresentation("amount");
           props_Amount = cpb.create();
         }
         return props_Amount;
       case LanguageConceptSwitch.Area:
         if (props_Area == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Area");
+          cpb.rawPresentation("area");
           props_Area = cpb.create();
         }
         return props_Area;
@@ -74,7 +75,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Duration:
         if (props_Duration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Duration");
+          cpb.rawPresentation("duration");
           props_Duration = cpb.create();
         }
         return props_Duration;
@@ -113,21 +114,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Length:
         if (props_Length == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Length");
+          cpb.rawPresentation("length");
           props_Length = cpb.create();
         }
         return props_Length;
       case LanguageConceptSwitch.Mass:
         if (props_Mass == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Mass");
+          cpb.rawPresentation("mass");
           props_Mass = cpb.create();
         }
         return props_Mass;
       case LanguageConceptSwitch.Number:
         if (props_Number == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Number");
+          cpb.rawPresentation("number");
           props_Number = cpb.create();
         }
         return props_Number;
@@ -141,21 +142,28 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Temperature:
         if (props_Temperature == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Temperature");
+          cpb.rawPresentation("temperature");
           props_Temperature = cpb.create();
         }
         return props_Temperature;
+      case LanguageConceptSwitch.Text:
+        if (props_Text == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("text");
+          props_Text = cpb.create();
+        }
+        return props_Text;
       case LanguageConceptSwitch.Time:
         if (props_Time == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Time");
+          cpb.rawPresentation("time");
           props_Time = cpb.create();
         }
         return props_Time;
       case LanguageConceptSwitch.TruthValue:
         if (props_TruthValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TruthValue");
+          cpb.rawPresentation("truthvalue");
           props_TruthValue = cpb.create();
         }
         return props_TruthValue;
@@ -168,14 +176,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Velocity:
         if (props_Velocity == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Velocity");
+          cpb.rawPresentation("velocity");
           props_Velocity = cpb.create();
         }
         return props_Velocity;
       case LanguageConceptSwitch.Volume:
         if (props_Volume == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Volume");
+          cpb.rawPresentation("volume");
           props_Volume = cpb.create();
         }
         return props_Volume;
