@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="FactSL.Language" file="Language.java">
+    <classNode dependClassName="FactSL.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="FactSL.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="FactSL.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="FactSL.editor.EditorAspectDescriptorImpl" />
@@ -12,6 +13,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />

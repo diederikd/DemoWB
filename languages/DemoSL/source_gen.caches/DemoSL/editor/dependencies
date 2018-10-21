@@ -131,6 +131,8 @@
   </dependency>
   <dependency className="DemoSL.editor.ObjectFactDiagram_EditorBuilder_a" file="ObjectFactDiagram_EditorBuilder_a.java">
     <classNode dependClassName="GeneralSL.editor.ArrowHead" />
+    <classNode dependClassName="GeneralSL.editor.ArrowHeadPlus" />
+    <classNode dependClassName="de.cau.cs.kieler.kiml.options.Direction" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramContext" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramUtil" />
@@ -140,6 +142,7 @@
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider" />

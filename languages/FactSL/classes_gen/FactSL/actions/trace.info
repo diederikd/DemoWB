@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="13,0,32,0" name="FactSL.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:990651a3-22e5-4a35-83c6-71c14a7fc2a5(FactSL.actions)/464479581526720607">
+    <file name="NewGeneralisation.java">
+      <node id="464479581526720689" at="14,91,15,347" concept="0" />
+      <node id="464479581526720608" at="14,0,17,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="464479581526720608" at="14,91,15,347" />
+      <scope id="464479581526720608" at="14,0,17,0">
+        <var name="enclosingNode" id="464479581526720608" />
+        <var name="model" id="464479581526720608" />
+        <var name="newNode" id="464479581526720608" />
+        <var name="sampleNode" id="464479581526720608" />
+      </scope>
+      <unit id="464479581526720608" at="13,0,18,0" name="FactSL.actions.NewGeneralisation$NodeFactory_464479581526720608" />
+      <unit id="464479581526720607" at="12,0,19,0" name="FactSL.actions.NewGeneralisation" />
+    </file>
+  </root>
+  <root nodeRef="r:990651a3-22e5-4a35-83c6-71c14a7fc2a5(FactSL.actions)/464479581526895723">
+    <file name="NewSpecialisation.java">
+      <node id="464479581526896159" at="14,91,15,347" concept="0" />
+      <node id="464479581526895724" at="14,0,17,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="464479581526895724" at="14,91,15,347" />
+      <scope id="464479581526895724" at="14,0,17,0">
+        <var name="enclosingNode" id="464479581526895724" />
+        <var name="model" id="464479581526895724" />
+        <var name="newNode" id="464479581526895724" />
+        <var name="sampleNode" id="464479581526895724" />
+      </scope>
+      <unit id="464479581526895724" at="13,0,18,0" name="FactSL.actions.NewSpecialisation$NodeFactory_464479581526895724" />
+      <unit id="464479581526895723" at="12,0,19,0" name="FactSL.actions.NewSpecialisation" />
+    </file>
+  </root>
+  <root nodeRef="r:990651a3-22e5-4a35-83c6-71c14a7fc2a5(FactSL.actions)/464479581526896629">
+    <file name="NewAggregation.java">
+      <node id="464479581526896633" at="14,91,15,347" concept="0" />
+      <node id="464479581526896630" at="14,0,17,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="464479581526896630" at="14,91,15,347" />
+      <scope id="464479581526896630" at="14,0,17,0">
+        <var name="enclosingNode" id="464479581526896630" />
+        <var name="model" id="464479581526896630" />
+        <var name="newNode" id="464479581526896630" />
+        <var name="sampleNode" id="464479581526896630" />
+      </scope>
+      <unit id="464479581526896630" at="13,0,18,0" name="FactSL.actions.NewAggregation$NodeFactory_464479581526896630" />
+      <unit id="464479581526896629" at="12,0,19,0" name="FactSL.actions.NewAggregation" />
+    </file>
+  </root>
+</debug-info>
+

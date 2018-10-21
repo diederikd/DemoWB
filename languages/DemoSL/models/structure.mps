@@ -88,6 +88,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
     </node>
+    <node concept="1TJgyj" id="pMarvIgXYk" role="1TKVEi">
+      <property role="IQ2ns" value="464479581525761940" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ajas:pMarvIgXVw" resolve="EntityTypeSet" />
+    </node>
     <node concept="1TJgyj" id="1VmqrBbWhQi" role="1TKVEi">
       <property role="IQ2ns" value="2222079712865361298" />
       <property role="20lmBu" value="aggregation" />

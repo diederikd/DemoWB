@@ -12,6 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAggregation = createDescriptorForAggregation();
   /*package*/ final ConceptDescriptor myConceptAmount = createDescriptorForAmount();
   /*package*/ final ConceptDescriptor myConceptArea = createDescriptorForArea();
   /*package*/ final ConceptDescriptor myConceptAttributeType = createDescriptorForAttributeType();
@@ -19,14 +20,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConstructedEntityType = createDescriptorForConstructedEntityType();
   /*package*/ final ConceptDescriptor myConceptDuration = createDescriptorForDuration();
   /*package*/ final ConceptDescriptor myConceptEntityType = createDescriptorForEntityType();
+  /*package*/ final ConceptDescriptor myConceptEntityTypeSet = createDescriptorForEntityTypeSet();
   /*package*/ final ConceptDescriptor myConceptEventLaw = createDescriptorForEventLaw();
   /*package*/ final ConceptDescriptor myConceptEventType = createDescriptorForEventType();
   /*package*/ final ConceptDescriptor myConceptFactType = createDescriptorForFactType();
+  /*package*/ final ConceptDescriptor myConceptGeneralisation = createDescriptorForGeneralisation();
   /*package*/ final ConceptDescriptor myConceptIPropertyType = createDescriptorForIPropertyType();
   /*package*/ final ConceptDescriptor myConceptLength = createDescriptorForLength();
   /*package*/ final ConceptDescriptor myConceptMass = createDescriptorForMass();
   /*package*/ final ConceptDescriptor myConceptNumber = createDescriptorForNumber();
   /*package*/ final ConceptDescriptor myConceptPropertyType = createDescriptorForPropertyType();
+  /*package*/ final ConceptDescriptor myConceptSpecialisation = createDescriptorForSpecialisation();
   /*package*/ final ConceptDescriptor myConceptTemperature = createDescriptorForTemperature();
   /*package*/ final ConceptDescriptor myConceptText = createDescriptorForText();
   /*package*/ final ConceptDescriptor myConceptTime = createDescriptorForTime();
@@ -42,13 +46,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
+    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptGeneralisation, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Aggregation:
+        return myConceptAggregation;
       case LanguageConceptSwitch.Amount:
         return myConceptAmount;
       case LanguageConceptSwitch.Area:
@@ -63,12 +69,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDuration;
       case LanguageConceptSwitch.EntityType:
         return myConceptEntityType;
+      case LanguageConceptSwitch.EntityTypeSet:
+        return myConceptEntityTypeSet;
       case LanguageConceptSwitch.EventLaw:
         return myConceptEventLaw;
       case LanguageConceptSwitch.EventType:
         return myConceptEventType;
       case LanguageConceptSwitch.FactType:
         return myConceptFactType;
+      case LanguageConceptSwitch.Generalisation:
+        return myConceptGeneralisation;
       case LanguageConceptSwitch.IPropertyType:
         return myConceptIPropertyType;
       case LanguageConceptSwitch.Length:
@@ -79,6 +89,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNumber;
       case LanguageConceptSwitch.PropertyType:
         return myConceptPropertyType;
+      case LanguageConceptSwitch.Specialisation:
+        return myConceptSpecialisation;
       case LanguageConceptSwitch.Temperature:
         return myConceptTemperature;
       case LanguageConceptSwitch.Text:
@@ -102,6 +114,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAggregation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "Aggregation", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4cb112L);
+    b.class_(false, false, false);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/464479581526339858");
+    b.version(2);
+    b.associate("entityType", 0x67229b7ee4cb113L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a8L).optional(false).origin("464479581526339859").done();
+    b.associate("set", 0x67229b7ee4cb114L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L).optional(false).origin("464479581526339860").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAmount() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "Amount", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b31L);
     b.class_(false, false, false);
@@ -145,6 +166,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.EntityType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984104");
     b.version(2);
+    b.aggregate("generalisation", 0x67229b7ee4cb10fL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4c9080L).optional(true).ordered(true).multiple(false).origin("464479581526339855").done();
+    b.aggregate("aggregation", 0x67229b7ee4cbd7aL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4cb112L).optional(true).ordered(true).multiple(false).origin("464479581526343034").done();
+    b.aggregate("specialisation", 0x67229b7ee5806e0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee552bdfL).optional(true).ordered(true).multiple(false).origin("464479581527082720").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDuration() {
@@ -162,6 +186,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.FactType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984102");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForEntityTypeSet() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "EntityTypeSet", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/464479581525761760");
     b.version(2);
     return b.create();
   }
@@ -196,6 +228,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("startEvent", 0x1ed669b9cbc1f65bL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).ordered(true).multiple(false).origin("2222079712862271067").done();
     b.aggregate("endEvent", 0x1ed669b9cbc1f65dL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).ordered(true).multiple(false).origin("2222079712862271069").done();
     b.alias("FactKind");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGeneralisation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "Generalisation", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4c9080L);
+    b.class_(false, false, false);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/464479581526331520");
+    b.version(2);
+    b.associate("entityType", 0x67229b7ee4c90adL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a8L).optional(false).origin("464479581526331565").done();
+    b.associate("set", 0x67229b7ee4c90b0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L).optional(false).origin("464479581526331568").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIPropertyType() {
@@ -245,6 +286,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984105");
     b.version(2);
     b.associate("prange", 0x2613bb9aeaa7c0abL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("2743742872034984107").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSpecialisation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "Specialisation", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee552bdfL);
+    b.class_(false, false, false);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/464479581526895583");
+    b.version(2);
+    b.associate("entityType", 0x67229b7ee552be0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("464479581526895584").done();
+    b.associate("set", 0x67229b7ee552be1L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L).optional(false).origin("464479581526895585").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTemperature() {

@@ -130,6 +130,24 @@
     <property role="EcuMT" value="2743742872034984104" />
     <property role="TrG5h" value="ConstructedEntityType" />
     <ref role="1TJDcQ" node="2ojITFEDW2A" resolve="EntityType" />
+    <node concept="1TJgyj" id="pMarvIjb4f" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526339855" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="generalisation" />
+      <ref role="20lvS9" node="pMarvIj920" resolve="Generalisation" />
+    </node>
+    <node concept="1TJgyj" id="pMarvIjbPU" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526343034" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="aggregation" />
+      <ref role="20lvS9" node="pMarvIjb4i" resolve="Aggregation" />
+    </node>
+    <node concept="1TJgyj" id="pMarvIm0rw" role="1TKVEi">
+      <property role="IQ2ns" value="464479581527082720" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="specialisation" />
+      <ref role="20lvS9" node="pMarvIliJv" resolve="Specialisation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2D">
     <property role="EcuMT" value="2743742872034984105" />
@@ -327,6 +345,71 @@
     <property role="TrG5h" value="Text" />
     <property role="34LRSv" value="text" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
+  </node>
+  <node concept="1TIwiD" id="pMarvIgXVw">
+    <property role="EcuMT" value="464479581525761760" />
+    <property role="TrG5h" value="EntityTypeSet" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="pMarvIhhIv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="pMarvIj920">
+    <property role="EcuMT" value="464479581526331520" />
+    <property role="TrG5h" value="Generalisation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="pMarvIj92H" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526331565" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entityType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2C" resolve="ConstructedEntityType" />
+    </node>
+    <node concept="1TJgyj" id="pMarvIj92K" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526331568" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="set" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="pMarvIgXVw" resolve="EntityTypeSet" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="pMarvIjb4i">
+    <property role="EcuMT" value="464479581526339858" />
+    <property role="TrG5h" value="Aggregation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="pMarvIjb4j" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526339859" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entityType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2C" resolve="ConstructedEntityType" />
+    </node>
+    <node concept="1TJgyj" id="pMarvIjb4k" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526339860" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="set" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="pMarvIgXVw" resolve="EntityTypeSet" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="pMarvIliJv">
+    <property role="EcuMT" value="464479581526895583" />
+    <property role="TrG5h" value="Specialisation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="pMarvIliJw" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526895584" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="entityType" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
+    </node>
+    <node concept="1TJgyj" id="pMarvIliJx" role="1TKVEi">
+      <property role="IQ2ns" value="464479581526895585" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="set" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="pMarvIgXVw" resolve="EntityTypeSet" />
+    </node>
   </node>
 </model>
 

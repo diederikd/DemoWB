@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Aggregation;
   private ConceptPresentation props_Amount;
   private ConceptPresentation props_Area;
   private ConceptPresentation props_AttributeType;
@@ -16,14 +17,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ConstructedEntityType;
   private ConceptPresentation props_Duration;
   private ConceptPresentation props_EntityType;
+  private ConceptPresentation props_EntityTypeSet;
   private ConceptPresentation props_EventLaw;
   private ConceptPresentation props_EventType;
   private ConceptPresentation props_FactType;
+  private ConceptPresentation props_Generalisation;
   private ConceptPresentation props_IPropertyType;
   private ConceptPresentation props_Length;
   private ConceptPresentation props_Mass;
   private ConceptPresentation props_Number;
   private ConceptPresentation props_PropertyType;
+  private ConceptPresentation props_Specialisation;
   private ConceptPresentation props_Temperature;
   private ConceptPresentation props_Text;
   private ConceptPresentation props_Time;
@@ -37,6 +41,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Aggregation:
+        if (props_Aggregation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Aggregation");
+          props_Aggregation = cpb.create();
+        }
+        return props_Aggregation;
       case LanguageConceptSwitch.Amount:
         if (props_Amount == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -85,6 +96,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EntityType = cpb.create();
         }
         return props_EntityType;
+      case LanguageConceptSwitch.EntityTypeSet:
+        if (props_EntityTypeSet == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_EntityTypeSet = cpb.create();
+        }
+        return props_EntityTypeSet;
       case LanguageConceptSwitch.EventLaw:
         if (props_EventLaw == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -105,6 +123,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FactType = cpb.create();
         }
         return props_FactType;
+      case LanguageConceptSwitch.Generalisation:
+        if (props_Generalisation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Generalisation");
+          props_Generalisation = cpb.create();
+        }
+        return props_Generalisation;
       case LanguageConceptSwitch.IPropertyType:
         if (props_IPropertyType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -139,6 +164,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PropertyType = cpb.create();
         }
         return props_PropertyType;
+      case LanguageConceptSwitch.Specialisation:
+        if (props_Specialisation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Specialisation");
+          props_Specialisation = cpb.create();
+        }
+        return props_Specialisation;
       case LanguageConceptSwitch.Temperature:
         if (props_Temperature == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

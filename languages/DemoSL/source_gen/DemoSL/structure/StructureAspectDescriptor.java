@@ -114,6 +114,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/2743742872034909949");
     b.version(2);
     b.aggregate("facts", 0x2613bb9aeaa7c0b1L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL).optional(true).ordered(true).multiple(true).origin("2743742872034984113").done();
+    b.aggregate("sets", 0x67229b7ee43df94L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L).optional(true).ordered(true).multiple(true).origin("464479581525761940").done();
     b.aggregate("eventLaws", 0x1ed669b9cbf11d92L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x1ed669b9cbf11cebL).optional(true).ordered(true).multiple(true).origin("2222079712865361298").done();
     b.alias("Fact model");
     return b.create();
