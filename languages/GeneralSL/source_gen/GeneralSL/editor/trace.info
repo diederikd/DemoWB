@@ -530,75 +530,77 @@
     </file>
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/464479581525669860">
-    <file name="ArrowHeadStar.java">
+    <file name="ArrowAggregation.java">
       <node id="464479581525669861" at="15,0,16,0" concept="3" trace="relativeHeight" />
       <node id="464479581525669863" at="16,0,17,0" concept="3" trace="relativeWidth" />
-      <node id="464479581525669865" at="17,0,18,0" concept="3" trace="filled" />
-      <node id="464479581525669867" at="18,0,19,0" concept="3" trace="color" />
-      <node id="464479581525669861" at="20,98,21,41" concept="2" />
-      <node id="464479581525669863" at="21,41,22,39" concept="2" />
-      <node id="464479581525669865" at="22,39,23,25" concept="2" />
-      <node id="464479581525669867" at="23,25,24,23" concept="2" />
-      <node id="464479581525669860" at="29,34,30,27" concept="7" />
-      <node id="464479581525669871" at="36,95,37,42" concept="6" />
-      <node id="464479581525669876" at="37,42,38,34" concept="2" />
-      <node id="464479581525669881" at="38,34,39,0" concept="8" />
-      <node id="464479581525669882" at="39,0,40,37" concept="6" />
-      <node id="464479581525669888" at="40,37,41,39" concept="6" />
-      <node id="464479581525669894" at="41,39,42,33" concept="6" />
-      <node id="464479581525669900" at="42,33,43,47" concept="6" />
-      <node id="464479581525669908" at="43,47,44,29" concept="6" />
-      <node id="464479581525669914" at="44,29,45,27" concept="6" />
-      <node id="464479581525669920" at="45,27,46,36" concept="6" />
-      <node id="464479581525669928" at="46,36,47,60" concept="2" />
-      <node id="464479581525669938" at="47,60,48,30" concept="2" />
-      <node id="464479581525669944" at="48,30,49,60" concept="2" />
-      <node id="464479581525669954" at="49,60,50,0" concept="8" />
-      <node id="464479581525669957" at="51,22,52,24" concept="2" />
-      <node id="464479581525669964" at="54,22,55,27" concept="2" />
-      <node id="464479581525669972" at="56,12,57,27" concept="2" />
-      <node id="464479581525669970" at="56,10,58,5" concept="0" />
-      <node id="464479581525669955" at="50,0,53,5" concept="4" />
-      <node id="464479581525669860" at="27,0,32,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
-      <node id="464479581525669962" at="53,5,58,5" concept="4" />
-      <node id="464479581525669860" at="20,0,26,0" concept="1" trace="ArrowHeadStar#(DDZLjava/awt/Color;)V" />
-      <node id="464479581525669860" at="35,0,60,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
-      <scope id="464479581525669860" at="29,34,30,27" />
-      <scope id="464479581525669956" at="51,22,52,24" />
-      <scope id="464479581525669963" at="54,22,55,27" />
-      <scope id="464479581525669971" at="56,12,57,27" />
-      <scope id="464479581525669860" at="20,98,24,23" />
-      <scope id="464479581525669860" at="27,0,32,0" />
-      <scope id="464479581525669860" at="20,0,26,0">
+      <node id="464479581525669867" at="17,0,18,0" concept="3" trace="color" />
+      <node id="464479581525669861" at="19,85,20,41" concept="2" />
+      <node id="464479581525669863" at="20,41,21,39" concept="2" />
+      <node id="464479581525669867" at="21,39,22,23" concept="2" />
+      <node id="464479581525669860" at="27,34,28,27" concept="7" />
+      <node id="464479581529121781" at="34,95,35,42" concept="6" />
+      <node id="464479581529121786" at="35,42,36,34" concept="2" />
+      <node id="464479581529121791" at="36,34,37,0" concept="8" />
+      <node id="464479581529121792" at="37,0,38,37" concept="6" />
+      <node id="464479581529121798" at="38,37,39,39" concept="6" />
+      <node id="464479581529121804" at="39,39,40,33" concept="6" />
+      <node id="464479581529121810" at="40,33,41,47" concept="6" />
+      <node id="464479581529121818" at="41,47,42,29" concept="6" />
+      <node id="464479581529121824" at="42,29,43,27" concept="6" />
+      <node id="464479581529121830" at="43,27,44,36" concept="6" />
+      <node id="464479581529121838" at="44,36,45,26" concept="6" />
+      <node id="464479581529121846" at="45,26,46,60" concept="2" />
+      <node id="464479581529121856" at="46,60,47,30" concept="2" />
+      <node id="464479581529121862" at="47,30,48,60" concept="2" />
+      <node id="464479581529121872" at="48,60,49,22" concept="2" />
+      <node id="464479581529121876" at="49,22,50,34" concept="2" />
+      <node id="464479581529121884" at="50,34,51,38" concept="2" />
+      <node id="464479581529121894" at="51,38,52,50" concept="2" />
+      <node id="464479581529121910" at="52,50,53,50" concept="2" />
+      <node id="464479581529129153" at="53,50,54,0" concept="8" />
+      <node id="464479581529131291" at="54,0,55,42" concept="2" />
+      <node id="464479581529131299" at="55,42,56,46" concept="2" />
+      <node id="464479581529129456" at="56,46,57,0" concept="8" />
+      <node id="464479581530872854" at="57,0,58,46" concept="2" />
+      <node id="464479581530872866" at="58,46,59,42" concept="2" />
+      <node id="464479581530870863" at="59,42,60,0" concept="8" />
+      <node id="464479581529121926" at="60,0,61,25" concept="2" />
+      <node id="464479581525669860" at="19,0,24,0" concept="1" trace="ArrowAggregation#(DDLjava/awt/Color;)V" />
+      <node id="464479581525669860" at="25,0,30,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
+      <node id="464479581525669860" at="33,0,63,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <scope id="464479581525669860" at="27,34,28,27" />
+      <scope id="464479581525669860" at="19,85,22,23" />
+      <scope id="464479581525669860" at="19,0,24,0">
         <var name="color" id="464479581525669867" />
-        <var name="filled" id="464479581525669865" />
         <var name="relativeHeight" id="464479581525669861" />
         <var name="relativeWidth" id="464479581525669863" />
       </scope>
-      <scope id="464479581525669860" at="36,95,58,5">
-        <var name="centerY" id="464479581525669921" />
-        <var name="height" id="464479581525669889" />
-        <var name="shape" id="464479581525669872" />
-        <var name="width" id="464479581525669883" />
-        <var name="x" id="464479581525669901" />
-        <var name="x2" id="464479581525669895" />
-        <var name="y" id="464479581525669909" />
-        <var name="y2" id="464479581525669915" />
+      <scope id="464479581525669860" at="25,0,30,0" />
+      <scope id="464479581525669860" at="34,95,61,25">
+        <var name="centerY" id="464479581529121831" />
+        <var name="height" id="464479581529121799" />
+        <var name="r" id="464479581529121839" />
+        <var name="shape" id="464479581529121782" />
+        <var name="width" id="464479581529121793" />
+        <var name="x" id="464479581529121811" />
+        <var name="x2" id="464479581529121805" />
+        <var name="y" id="464479581529121819" />
+        <var name="y2" id="464479581529121825" />
       </scope>
-      <scope id="464479581525669860" at="35,0,60,0">
+      <scope id="464479581525669860" at="33,0,63,0">
         <var name="bounds" id="464479581525669860" />
         <var name="graphics" id="464479581525669860" />
         <var name="style" id="464479581525669860" />
       </scope>
-      <unit id="464479581525669860" at="13,0,62,0" name="GeneralSL.editor.ArrowHeadStar" />
+      <unit id="464479581525669860" at="13,0,65,0" name="GeneralSL.editor.ArrowAggregation" />
     </file>
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/464479581525671522">
-    <file name="ArrowHeadPlus.java">
+    <file name="ArrowGeneralisation.java">
       <node id="464479581525671523" at="15,0,16,0" concept="3" trace="relativeHeight" />
       <node id="464479581525671525" at="16,0,17,0" concept="3" trace="relativeWidth" />
       <node id="464479581525671529" at="17,0,18,0" concept="3" trace="color" />
-      <node id="464479581525671523" at="19,82,20,41" concept="2" />
+      <node id="464479581525671523" at="19,88,20,41" concept="2" />
       <node id="464479581525671525" at="20,41,21,39" concept="2" />
       <node id="464479581525671529" at="21,39,22,23" concept="2" />
       <node id="464479581525671522" at="27,34,28,27" concept="7" />
@@ -612,29 +614,31 @@
       <node id="464479581525671570" at="41,47,42,29" concept="6" />
       <node id="464479581525671576" at="42,29,43,27" concept="6" />
       <node id="464479581525671582" at="43,27,44,36" concept="6" />
-      <node id="464479581525671590" at="44,36,45,60" concept="2" />
-      <node id="464479581525671600" at="45,60,46,30" concept="2" />
-      <node id="464479581525671606" at="46,30,47,60" concept="2" />
-      <node id="464479581525671619" at="47,60,48,22" concept="2" />
-      <node id="464479581525680973" at="48,22,49,34" concept="2" />
-      <node id="464479581525698377" at="49,34,50,35" concept="2" />
-      <node id="464479581525717500" at="50,35,51,38" concept="2" />
-      <node id="464479581525738522" at="51,38,52,38" concept="2" />
-      <node id="464479581525671634" at="52,38,53,25" concept="2" />
-      <node id="464479581525671522" at="19,0,24,0" concept="1" trace="ArrowHeadPlus#(DDLjava/awt/Color;)V" />
+      <node id="464479581528933159" at="44,36,45,26" concept="6" />
+      <node id="464479581525671590" at="45,26,46,60" concept="2" />
+      <node id="464479581525671600" at="46,60,47,30" concept="2" />
+      <node id="464479581525671606" at="47,30,48,60" concept="2" />
+      <node id="464479581525671619" at="48,60,49,22" concept="2" />
+      <node id="464479581525680973" at="49,22,50,34" concept="2" />
+      <node id="464479581525698377" at="50,34,51,38" concept="2" />
+      <node id="464479581525717500" at="51,38,52,50" concept="2" />
+      <node id="464479581525738522" at="52,50,53,50" concept="2" />
+      <node id="464479581525671634" at="53,50,54,25" concept="2" />
+      <node id="464479581525671522" at="19,0,24,0" concept="1" trace="ArrowGeneralisation#(DDLjava/awt/Color;)V" />
       <node id="464479581525671522" at="25,0,30,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
-      <node id="464479581525671522" at="33,0,55,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <node id="464479581525671522" at="33,0,56,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
       <scope id="464479581525671522" at="27,34,28,27" />
-      <scope id="464479581525671522" at="19,82,22,23" />
+      <scope id="464479581525671522" at="19,88,22,23" />
       <scope id="464479581525671522" at="19,0,24,0">
         <var name="color" id="464479581525671529" />
         <var name="relativeHeight" id="464479581525671523" />
         <var name="relativeWidth" id="464479581525671525" />
       </scope>
       <scope id="464479581525671522" at="25,0,30,0" />
-      <scope id="464479581525671522" at="34,95,53,25">
+      <scope id="464479581525671522" at="34,95,54,25">
         <var name="centerY" id="464479581525671583" />
         <var name="height" id="464479581525671551" />
+        <var name="r" id="464479581528933162" />
         <var name="shape" id="464479581525671534" />
         <var name="width" id="464479581525671545" />
         <var name="x" id="464479581525671563" />
@@ -642,12 +646,12 @@
         <var name="y" id="464479581525671571" />
         <var name="y2" id="464479581525671577" />
       </scope>
-      <scope id="464479581525671522" at="33,0,55,0">
+      <scope id="464479581525671522" at="33,0,56,0">
         <var name="bounds" id="464479581525671522" />
         <var name="graphics" id="464479581525671522" />
         <var name="style" id="464479581525671522" />
       </scope>
-      <unit id="464479581525671522" at="13,0,57,0" name="GeneralSL.editor.ArrowHeadPlus" />
+      <unit id="464479581525671522" at="13,0,58,0" name="GeneralSL.editor.ArrowGeneralisation" />
     </file>
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/7147711074380895551">

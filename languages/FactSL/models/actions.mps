@@ -68,13 +68,13 @@
             <node concept="2OqwBi" id="pMarvIkC$Q" role="3clFbG">
               <node concept="2OqwBi" id="pMarvIkCa1" role="2Oq$k0">
                 <node concept="1r4Lsj" id="pMarvIkC2K" role="2Oq$k0" />
-                <node concept="3TrEf2" id="pMarvIkCh6" role="2OqNvi">
+                <node concept="3TrEf2" id="pMarvIwxvL" role="2OqNvi">
                   <ref role="3Tt5mk" to="ajas:pMarvIj92H" resolve="entityType" />
                 </node>
               </node>
               <node concept="2oxUTD" id="pMarvIkCOo" role="2OqNvi">
                 <node concept="1PxgMI" id="pMarvIkDf0" role="2oxUTC">
-                  <node concept="chp4Y" id="pMarvIkDiO" role="3oSUPX">
+                  <node concept="chp4Y" id="pMarvIwxdZ" role="3oSUPX">
                     <ref role="cht4Q" to="ajas:2ojITFEDW2C" resolve="ConstructedEntityType" />
                   </node>
                   <node concept="1r4N1M" id="pMarvIkCVX" role="1m5AlR" />
@@ -97,7 +97,7 @@
               <node concept="2OqwBi" id="pMarvIliSx" role="2Oq$k0">
                 <node concept="1r4Lsj" id="pMarvIliSy" role="2Oq$k0" />
                 <node concept="3TrEf2" id="pMarvIliSz" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ajas:pMarvIliJw" resolve="entityType" />
+                  <ref role="3Tt5mk" to="ajas:pMarvIliJw" resolve="constructuredentityType" />
                 </node>
               </node>
               <node concept="2oxUTD" id="pMarvIliS$" role="2OqNvi">
@@ -117,20 +117,20 @@
   <node concept="37WguZ" id="pMarvIliZP">
     <property role="TrG5h" value="NewAggregation" />
     <node concept="37WvkG" id="pMarvIliZQ" role="37WGs$">
-      <ref role="37XkoT" to="ajas:pMarvIliJv" resolve="Specialisation" />
+      <ref role="37XkoT" to="ajas:pMarvIjb4i" resolve="Aggregation" />
       <node concept="37Y9Zx" id="pMarvIliZR" role="37ZfLb">
         <node concept="3clFbS" id="pMarvIliZS" role="2VODD2">
           <node concept="3clFbF" id="pMarvIliZT" role="3cqZAp">
             <node concept="2OqwBi" id="pMarvIliZU" role="3clFbG">
               <node concept="2OqwBi" id="pMarvIliZV" role="2Oq$k0">
                 <node concept="1r4Lsj" id="pMarvIliZW" role="2Oq$k0" />
-                <node concept="3TrEf2" id="pMarvIliZX" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ajas:pMarvIliJw" resolve="entityType" />
+                <node concept="3TrEf2" id="pMarvIwx08" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ajas:pMarvIjb4j" resolve="entityType" />
                 </node>
               </node>
               <node concept="2oxUTD" id="pMarvIliZY" role="2OqNvi">
                 <node concept="1PxgMI" id="pMarvIliZZ" role="2oxUTC">
-                  <node concept="chp4Y" id="pMarvIlj00" role="3oSUPX">
+                  <node concept="chp4Y" id="pMarvIwx6z" role="3oSUPX">
                     <ref role="cht4Q" to="ajas:2ojITFEDW2C" resolve="ConstructedEntityType" />
                   </node>
                   <node concept="1r4N1M" id="pMarvIlj01" role="1m5AlR" />

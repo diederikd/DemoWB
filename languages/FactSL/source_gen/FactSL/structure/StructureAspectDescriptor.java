@@ -166,9 +166,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.EntityType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984104");
     b.version(2);
-    b.aggregate("generalisation", 0x67229b7ee4cb10fL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4c9080L).optional(true).ordered(true).multiple(false).origin("464479581526339855").done();
-    b.aggregate("aggregation", 0x67229b7ee4cbd7aL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4cb112L).optional(true).ordered(true).multiple(false).origin("464479581526343034").done();
-    b.aggregate("specialisation", 0x67229b7ee5806e0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee552bdfL).optional(true).ordered(true).multiple(false).origin("464479581527082720").done();
+    b.aggregate("generalisation", 0x67229b7ee4cb10fL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4c9080L).optional(true).ordered(true).multiple(true).origin("464479581526339855").done();
+    b.aggregate("aggregation", 0x67229b7ee4cbd7aL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4cb112L).optional(true).ordered(true).multiple(true).origin("464479581526343034").done();
+    b.aggregate("specialisation", 0x67229b7ee5806e0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee552bdfL).optional(true).ordered(true).multiple(true).origin("464479581527082720").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDuration() {
@@ -293,8 +293,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/464479581526895583");
     b.version(2);
-    b.associate("entityType", 0x67229b7ee552be0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("464479581526895584").done();
-    b.associate("set", 0x67229b7ee552be1L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L).optional(false).origin("464479581526895585").done();
+    b.associate("constructuredentityType", 0x67229b7ee552be0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a8L).optional(false).origin("464479581526895584").done();
+    b.associate("entityType", 0x67229b7ee552be1L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("464479581526895585").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTemperature() {

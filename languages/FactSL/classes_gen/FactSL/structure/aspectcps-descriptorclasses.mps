@@ -5137,7 +5137,7 @@
                 <node concept="liA8E" id="sF" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="multiple" />
                   <node concept="3clFbT" id="sV" role="37wK5m">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -5204,7 +5204,7 @@
                 <node concept="liA8E" id="t3" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="multiple" />
                   <node concept="3clFbT" id="tj" role="37wK5m">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -5271,7 +5271,7 @@
                 <node concept="liA8E" id="tr" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.multiple(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="multiple" />
                   <node concept="3clFbT" id="tF" role="37wK5m">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -7463,7 +7463,7 @@
                     <node concept="liA8E" id="Ec" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.associate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AssociationLinkBuilder" resolve="associate" />
                       <node concept="Xl_RD" id="Ed" role="37wK5m">
-                        <property role="Xl_RC" value="entityType" />
+                        <property role="Xl_RC" value="constructuredentityType" />
                       </node>
                       <node concept="1adDum" id="Ee" role="37wK5m">
                         <property role="1adDun" value="0x67229b7ee552be0L" />
@@ -7479,7 +7479,7 @@
                       <property role="1adDun" value="0x9a37cb334bb02ea5L" />
                     </node>
                     <node concept="1adDum" id="Eh" role="37wK5m">
-                      <property role="1adDun" value="0x2613bb9aeaa7c0a6L" />
+                      <property role="1adDun" value="0x2613bb9aeaa7c0a8L" />
                     </node>
                   </node>
                 </node>
@@ -7514,7 +7514,7 @@
                     <node concept="liA8E" id="Eu" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.associate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AssociationLinkBuilder" resolve="associate" />
                       <node concept="Xl_RD" id="Ev" role="37wK5m">
-                        <property role="Xl_RC" value="set" />
+                        <property role="Xl_RC" value="entityType" />
                       </node>
                       <node concept="1adDum" id="Ew" role="37wK5m">
                         <property role="1adDun" value="0x67229b7ee552be1L" />
@@ -7530,7 +7530,7 @@
                       <property role="1adDun" value="0x9a37cb334bb02ea5L" />
                     </node>
                     <node concept="1adDum" id="Ez" role="37wK5m">
-                      <property role="1adDun" value="0x67229b7ee43dee0L" />
+                      <property role="1adDun" value="0x2613bb9aeaa7c0a6L" />
                     </node>
                   </node>
                 </node>

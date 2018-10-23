@@ -10,13 +10,13 @@ import java.awt.geom.Rectangle2D;
 import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
 import java.awt.geom.GeneralPath;
 
-public class ArrowHeadPlus extends AbstractShape {
+public class ArrowGeneralisation extends AbstractShape {
 
   private double relativeHeight;
   private double relativeWidth;
   private Color color;
 
-  public ArrowHeadPlus(double relativeHeight, double relativeWidth, Color color) {
+  public ArrowGeneralisation(double relativeHeight, double relativeWidth, Color color) {
     this.relativeHeight = relativeHeight;
     this.relativeWidth = relativeWidth;
     this.color = color;
@@ -42,14 +42,15 @@ public class ArrowHeadPlus extends AbstractShape {
     double y = bounds.getY();
     double y2 = y + height;
     double centerY = y + height / 2;
+    double r = x2 - x - 5;
     shape.moveTo(x, centerY - height * this.relativeHeight);
     shape.lineTo(x2, centerY);
     shape.lineTo(x, centerY + height * this.relativeHeight);
     shape.closePath();
-    shape.moveTo(x2 - 2, centerY);
-    shape.lineTo(x2 - 12, centerY);
-    shape.moveTo(x2 - 7, centerY - 5);
-    shape.lineTo(x2 - 7, centerY + 5);
+    shape.moveTo(x2 - 4, centerY);
+    shape.lineTo(x2 - 4 - r, centerY);
+    shape.moveTo(x2 - 4 - r / 2, centerY - r / 2);
+    shape.lineTo(x2 - 4 - r / 2, centerY + r / 2);
     graphics.draw(shape);
   }
 

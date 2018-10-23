@@ -10,17 +10,15 @@ import java.awt.geom.Rectangle2D;
 import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
 import java.awt.geom.GeneralPath;
 
-public class ArrowHeadStar extends AbstractShape {
+public class ArrowAggregation extends AbstractShape {
 
   private double relativeHeight;
   private double relativeWidth;
-  private boolean filled;
   private Color color;
 
-  public ArrowHeadStar(double relativeHeight, double relativeWidth, boolean filled, Color color) {
+  public ArrowAggregation(double relativeHeight, double relativeWidth, Color color) {
     this.relativeHeight = relativeHeight;
     this.relativeWidth = relativeWidth;
-    this.filled = filled;
     this.color = color;
   }
 
@@ -44,18 +42,23 @@ public class ArrowHeadStar extends AbstractShape {
     double y = bounds.getY();
     double y2 = y + height;
     double centerY = y + height / 2;
+    double r = x2 - x - 5;
     shape.moveTo(x, centerY - height * this.relativeHeight);
     shape.lineTo(x2, centerY);
     shape.lineTo(x, centerY + height * this.relativeHeight);
+    shape.closePath();
+    shape.moveTo(x2 - 4, centerY);
+    shape.lineTo(x2 - 4 - r, centerY);
+    shape.moveTo(x2 - 4 - r / 2, centerY - r / 2);
+    shape.lineTo(x2 - 4 - r / 2, centerY + r / 2);
 
-    if (this.filled) {
-      shape.closePath();
-    }
-    if (this.filled) {
-      graphics.fill(shape);
-    } else {
-      graphics.draw(shape);
-    }
+    shape.moveTo(x2 - 4, centerY - r / 2);
+    shape.lineTo(x2 - 4 - r, centerY + r / 2);
+
+    shape.moveTo(x2 - 4 - r, centerY - r / 2);
+    shape.lineTo(x2 - 4, centerY + r / 2);
+
+    graphics.draw(shape);
   }
 
 }

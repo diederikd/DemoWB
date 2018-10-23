@@ -130,8 +130,9 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="DemoSL.editor.ObjectFactDiagram_EditorBuilder_a" file="ObjectFactDiagram_EditorBuilder_a.java">
+    <classNode dependClassName="GeneralSL.editor.ArrowAggregation" />
+    <classNode dependClassName="GeneralSL.editor.ArrowGeneralisation" />
     <classNode dependClassName="GeneralSL.editor.ArrowHead" />
-    <classNode dependClassName="GeneralSL.editor.ArrowHeadPlus" />
     <classNode dependClassName="de.cau.cs.kieler.kiml.options.Direction" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramContext" />
@@ -155,6 +156,7 @@
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShape" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.styles.editor.LineStyle" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />

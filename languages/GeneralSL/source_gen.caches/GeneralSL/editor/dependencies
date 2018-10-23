@@ -10,29 +10,29 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
   </dependency>
+  <dependency className="GeneralSL.editor.ArrowAggregation" file="ArrowAggregation.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
+  <dependency className="GeneralSL.editor.ArrowGeneralisation" file="ArrowGeneralisation.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
   <dependency className="GeneralSL.editor.ArrowHead" file="ArrowHead.java">
-    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
-    <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Graphics2D" />
-    <classNode dependClassName="java.awt.geom.GeneralPath" />
-    <classNode dependClassName="java.awt.geom.Rectangle2D" />
-    <classNode dependClassName="java.lang.Double" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
-  </dependency>
-  <dependency className="GeneralSL.editor.ArrowHeadPlus" file="ArrowHeadPlus.java">
-    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
-    <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Graphics2D" />
-    <classNode dependClassName="java.awt.geom.GeneralPath" />
-    <classNode dependClassName="java.awt.geom.Rectangle2D" />
-    <classNode dependClassName="java.lang.Double" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
-    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
-  </dependency>
-  <dependency className="GeneralSL.editor.ArrowHeadStar" file="ArrowHeadStar.java">
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
     <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.awt.Graphics2D" />

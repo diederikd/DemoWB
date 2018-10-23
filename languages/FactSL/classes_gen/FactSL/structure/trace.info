@@ -355,10 +355,10 @@
       <node id="2743742872034984104" at="165,34,166,107" concept="2" />
       <node id="2743742872034984104" at="166,107,167,93" concept="2" />
       <node id="2743742872034984104" at="167,93,168,17" concept="2" />
-      <node id="464479581526339855" at="168,17,169,204" concept="2" />
-      <node id="464479581526343034" at="169,204,170,201" concept="2" />
-      <node id="464479581527082720" at="170,201,171,204" concept="2" />
-      <node id="2743742872034984104" at="171,204,172,22" concept="7" />
+      <node id="464479581526339855" at="168,17,169,203" concept="2" />
+      <node id="464479581526343034" at="169,203,170,200" concept="2" />
+      <node id="464479581527082720" at="170,200,171,203" concept="2" />
+      <node id="2743742872034984104" at="171,203,172,22" concept="7" />
       <node id="2743742872034984104" at="163,0,174,0" concept="9" trace="createDescriptorForConstructedEntityType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2743742872034984104" at="66,55,67,46" />
       <scope id="2743742872034984104" at="163,79,172,22">
@@ -1077,9 +1077,9 @@
       <node id="464479581526895583" at="292,154,293,34" concept="2" />
       <node id="464479581526895583" at="293,34,294,92" concept="2" />
       <node id="464479581526895583" at="294,92,295,17" concept="2" />
-      <node id="464479581526895584" at="295,17,296,172" concept="2" />
-      <node id="464479581526895585" at="296,172,297,164" concept="2" />
-      <node id="464479581526895583" at="297,164,298,22" concept="7" />
+      <node id="464479581526895584" at="295,17,296,185" concept="2" />
+      <node id="464479581526895585" at="296,185,297,172" concept="2" />
+      <node id="464479581526895583" at="297,172,298,22" concept="7" />
       <node id="464479581526895583" at="291,0,300,0" concept="9" trace="createDescriptorForSpecialisation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="464479581526895583" at="92,48,93,39" />
       <scope id="464479581526895583" at="291,72,298,22">
