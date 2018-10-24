@@ -11,6 +11,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import java.awt.Color;
 import jetbrains.mps.nodeEditor.MPSFonts;
+import jetbrains.mps.nodeEditor.MPSColors;
 
 public class DemoStyles_StyleSheet {
   /**
@@ -142,6 +143,16 @@ public class DemoStyles_StyleSheet {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new DemoStyles_StyleSheet.BoldStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Black(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new DemoStyles_StyleSheet.BlackStyleClass(editorContext, node).apply(style, editorCell);
   }
   /**
    * 
@@ -304,6 +315,17 @@ public class DemoStyles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    }
+
+  }
+  public static class BlackStyleClass extends AbstractStyleClass {
+    public BlackStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
     }
 
   }

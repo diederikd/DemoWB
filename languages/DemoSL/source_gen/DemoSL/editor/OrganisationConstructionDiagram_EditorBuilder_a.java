@@ -56,6 +56,15 @@ import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
+import com.mbeddr.mpsutil.editor.querylist.runtime.QueryListContext;
+import com.mbeddr.mpsutil.editor.querylist.runtime.EditorCell_QueryList;
+import com.mbeddr.mpsutil.editor.querylist.runtime.QueryListHandler;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
+import org.jetbrains.mps.openapi.language.SConceptFeature;
+import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
+import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
+import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
+import jetbrains.mps.util.Computable;
 
 /*package*/ class OrganisationConstructionDiagram_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -84,6 +93,9 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createCollection_1());
+    editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createCollection_2());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -227,5 +239,146 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
   }
   private EditorCell createDiagram_1() {
     return createDiagram_0(getEditorContext(), myNode);
+  }
+  private EditorCell createConstant_1() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_ovf9ya_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_ovf9ya_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_2() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_ovf9ya_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    try {
+      getCellFactory().pushCellContext();
+      getCellFactory().addCellContextHints(new String[]{"GeneralSL.editor.DemoHints.idAndName"});
+      editorCell.addEditorCell(createQueryList_1());
+      setInnerCellsContext(editorCell);
+    } finally {
+      getCellFactory().popCellContext();
+    }
+    return editorCell;
+  }
+  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+
+    return QueryListContext.computeWithContext(new QueryListContext(node), new _FunctionTypes._return_P0_E0<EditorCell_QueryList>() {
+      public EditorCell_QueryList invoke() {
+        QueryListHandler handler = new OrganisationConstructionDiagram_EditorBuilder_a.QueryListHandler_ovf9ya_a5a(editorContext, node);
+
+        EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
+        editorCell.setCellId("QueryList_ovf9ya_a5a");
+        Style style = new StyleImpl();
+        style.set(StyleAttributes.READ_ONLY, true);
+        style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+        editorCell.getStyle().putAll(style);
+        editorCell.setGridLayout(true);
+        return editorCell;
+      }
+    });
+
+  }
+  private EditorCell createQueryList_1() {
+    return createQueryList_0(getEditorContext(), myNode);
+  }
+  private static class QueryListHandler_ovf9ya_a5a extends QueryListHandler {
+    private SNode myNode;
+    public QueryListHandler_ovf9ya_a5a(EditorContext context, SNode ownerNode) {
+      super(context, ownerNode);
+      myNode = ownerNode;
+    }
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+    public String getElementRole() {
+      return null;
+    }
+    public SConceptFeature getElementSRole() {
+      return null;
+    }
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = super.createNodeCell(elementNode);
+      this.installElementCellActions(getNode(), elementNode, elementCell, getEditorContext());
+      return elementCell;
+    }
+    @Override
+    public EditorCell createEmptyCell() {
+      EditorCell emptyCell = null;
+      emptyCell = super.createEmptyCell();
+      this.installElementCellActions(getNode(), null, emptyCell, getEditorContext());
+      return postProcessEmptyCell(emptyCell);
+    }
+    public void installElementCellActions(SNode listOwner, SNode elementNode, EditorCell elementCell, EditorContext editorContext) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode));
+
+
+        }
+        if (elementCell.getSubstituteInfo() == null) {
+          elementCell.setSubstituteInfo(getSubstituteInfo(elementNode));
+        }
+      }
+    }
+    private Object executeQuery(final SNode node, final EditorContext editorContext) {
+      return SLinkOperations.collectMany(SLinkOperations.collect(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions"));
+    }
+    @Override
+    public Iterable<? extends SNode> getNodesForList(final SNode node) {
+      Object queryResult = executeQuery(node, getEditorContext());
+      if (queryResult instanceof Iterable) {
+        return (Iterable<? extends SNode>) queryResult;
+      } else {
+        return Sequence.<SNode>singleton((SNode) queryResult);
+      }
+    }
+    @Override
+    public SubstituteInfo getSubstituteInfo(final SNode node, final SNode childNode, final SubstituteInfoFactory factory, final EditorContext editorContext) {
+      return factory.forChild(childNode);
+    }
+    @Override
+    public void insertNewNode(final SNode node, final SNode anchorNode, final boolean insertBefore) {
+    }
+    @Override
+    public void deleteNode(final SNode node, final SNode nodeToDelete) {
+    }
+    @Override
+    protected EditorCell createNodeCellNotNull(final EditorContext context, @NotNull final SNode node) {
+      EditorCell cell;
+      cell = createCellDuplicatesSafe(new _FunctionTypes._return_P0_E0<EditorCell>() {
+        public EditorCell invoke() {
+          return context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
+            public EditorCell compute() {
+              return context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node);
+            }
+          }, node, "querylist464479581531023505");
+        }
+      });
+      return cell;
+    }
+
+    private jetbrains.mps.openapi.editor.cells.EditorCell_Collection wrapWithCollection(EditorCell cell) {
+      jetbrains.mps.openapi.editor.cells.EditorCell_Collection collection = EditorCell_Collection.createIndent2(getEditorContext(), getNode());
+      collection.addEditorCell(cell);
+      return collection;
+    }
+
   }
 }

@@ -8,6 +8,7 @@
         <child id="1186402402630" name="styleClass" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
@@ -131,6 +132,12 @@
       <property role="TrG5h" value="Bold" />
       <node concept="Vb9p2" id="pMarvI3Voo" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
+      </node>
+    </node>
+    <node concept="14StLt" id="pMarvIFrHl" role="V601i">
+      <property role="TrG5h" value="Black" />
+      <node concept="VechU" id="pMarvIFyzG" role="3F10Kt">
+        <property role="Vb096" value="black" />
       </node>
     </node>
     <node concept="14StLt" id="pMarvI3WvW" role="V601i">

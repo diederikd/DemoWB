@@ -13,9 +13,9 @@
     <import index="wtx7" ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)" />
     <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" implicit="true" />
     <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" implicit="true" />
@@ -404,6 +404,70 @@
         <node concept="2w$q5c" id="6cLLlCpDBN4" role="2whIAn">
           <node concept="2aJ2om" id="6cLLlCpDBN5" role="2w$qW5">
             <ref role="2$4xQ3" to="wtx7:1VmqrBbw4vA" resolve="OCD" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="pMarvIF$O7" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+      </node>
+      <node concept="3F0ifn" id="pMarvIF_Ac" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="pVoyu" id="pMarvIF_Zg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="pMarvIF_Zj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="pMarvIAOm6" role="3EZMnx">
+        <node concept="VPM3Z" id="pMarvIAOm8" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="s8t4o" id="pMarvI_2yh" role="3EZMnx">
+          <property role="28Zw97" value="true" />
+          <ref role="28F8cf" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+          <node concept="xShMh" id="pMarvI_2yj" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="s8sZD" id="pMarvI_2yk" role="sbcd9">
+            <node concept="3clFbS" id="pMarvI_2yl" role="2VODD2">
+              <node concept="3clFbF" id="pMarvI_2ym" role="3cqZAp">
+                <node concept="2OqwBi" id="pMarvI_9Gz" role="3clFbG">
+                  <node concept="2OqwBi" id="pMarvI_58u" role="2Oq$k0">
+                    <node concept="2OqwBi" id="pMarvI_39f" role="2Oq$k0">
+                      <node concept="2OqwBi" id="pMarvI_39g" role="2Oq$k0">
+                        <node concept="pncrf" id="pMarvI_bFB" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="pMarvI_39i" role="2OqNvi" />
+                      </node>
+                      <node concept="2SmgA7" id="pMarvI_39j" role="2OqNvi">
+                        <node concept="chp4Y" id="pMarvI_39k" role="1dBWTz">
+                          <ref role="cht4Q" to="ar0b:1VmqrBbw57R" resolve="ConstructionModel" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="13MTOL" id="pMarvI_7op" role="2OqNvi">
+                      <ref role="13MTZf" to="ar0b:1VmqrBbw582" resolve="scopeOfInterest" />
+                    </node>
+                  </node>
+                  <node concept="13MTOL" id="pMarvI_avr" role="2OqNvi">
+                    <ref role="13MTZf" to="pgdh:2ojITFEC3aM" resolve="transactions" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2EHx9g" id="pMarvIAyLr" role="2czzBy" />
+          <node concept="pVoyu" id="pMarvIAOYf" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="pMarvIAOmb" role="2iSdaV" />
+        <node concept="lj46D" id="pMarvIAOTa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2w$q5c" id="pMarvIDT6U" role="2whIAn">
+          <node concept="2aJ2om" id="pMarvIDT6V" role="2w$qW5">
+            <ref role="2$4xQ3" to="wtx7:pMarvIAP38" resolve="idAndName" />
           </node>
         </node>
       </node>

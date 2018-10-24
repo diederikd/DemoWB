@@ -30,7 +30,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 4:
         return Arrays.asList(new ConceptEditor[]{new ScopeOfInterest_Editor(), new ScopeOfInterest_OCD_Editor()});
       case 5:
-        return Arrays.asList(new ConceptEditor[]{new TransactionKind_CM_Editor(), new TransactionKind_Editor(), new TransactionKind_OCD_Editor(), new TransactionKind_TPT_Editor()});
+        return Arrays.asList(new ConceptEditor[]{new TransactionKind_CM_Editor(), new TransactionKind_Editor(), new TransactionKind_OCD_Editor(), new TransactionKind_TPT_Editor(), new TransactionKind_idAndName_Editor()});
       case 6:
         return Arrays.asList(new ConceptEditor[]{new TransactionKindReference_Editor(), new TransactionKindReference_PSD_Editor()});
       default:
