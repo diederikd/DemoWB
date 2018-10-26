@@ -33,8 +33,6 @@
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="id" index="3cGzis" />
-        <reference id="2743742872034578202" name="initiator" index="3cGzi0" />
-        <reference id="2743742872034578204" name="executor" index="3cGzi6" />
         <reference id="2222079712856355772" name="hasProduct" index="3lGtC5" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
@@ -50,12 +48,10 @@
         <reference id="3316760564118789717" name="transactionKind" index="3jl9TX" />
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
-        <reference id="7147711074394506355" name="transactionKind" index="1Tmc4D" />
         <reference id="7147711074394506357" name="actor" index="1Tmc4J" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actor" index="1Tmc6K" />
-        <reference id="7147711074394506475" name="transactionKind" index="1Tmc6L" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -362,14 +358,10 @@
         <property role="3cGS$Q" value="membership starting" />
         <property role="3cGzis" value="T1" />
         <ref role="3lGtC5" node="1VmqrBbL6jb" resolve="membership is started" />
-        <ref role="3cGzi0" node="2S7w2zXuJd1" resolve="(aspirant) member" />
-        <ref role="3cGzi6" node="2S7w2zXuJdh" resolve="membership starter" />
         <node concept="1Tmc4s" id="6cLLlCqx8oj" role="1TmdgA">
-          <ref role="1Tmc4D" node="1VmqrBbwQiO" />
           <ref role="1Tmc4J" node="2S7w2zXuJd1" resolve="(aspirant) member" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8on" role="1Tmdjl">
-          <ref role="1Tmc6L" node="1VmqrBbwQiO" />
           <ref role="1Tmc6K" node="2S7w2zXuJdh" resolve="membership starter" />
         </node>
       </node>
@@ -377,14 +369,10 @@
         <property role="3cGS$Q" value="fee paying" />
         <property role="3cGzis" value="T2" />
         <ref role="3lGtC5" node="1VmqrBbWhLz" resolve="membership fee is paid" />
-        <ref role="3cGzi0" node="2S7w2zXuJdh" resolve="membership starter" />
-        <ref role="3cGzi6" node="2S7w2zXuJd1" resolve="(aspirant) member" />
         <node concept="1Tmc4s" id="6cLLlCqx8op" role="1TmdgA">
-          <ref role="1Tmc4D" node="1VmqrBbwQiP" />
           <ref role="1Tmc4J" node="2S7w2zXuJdh" resolve="membership starter" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8or" role="1Tmdjl">
-          <ref role="1Tmc6L" node="1VmqrBbwQiP" />
           <ref role="1Tmc6K" node="2S7w2zXuJd1" resolve="(aspirant) member" />
         </node>
       </node>
@@ -392,14 +380,10 @@
         <property role="3cGS$Q" value="ending membership" />
         <property role="3cGzis" value="T3" />
         <ref role="3lGtC5" node="1VmqrBbL$Xs" resolve="membership is ended" />
-        <ref role="3cGzi0" node="2S7w2zXuJda" resolve="member" />
-        <ref role="3cGzi6" node="2S7w2zXuJdD" resolve="membership ender" />
         <node concept="1Tmc4s" id="6cLLlCqx8ot" role="1TmdgA">
-          <ref role="1Tmc4D" node="1VmqrBbwQiQ" />
           <ref role="1Tmc4J" node="2S7w2zXuJda" resolve="member" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8ov" role="1Tmdjl">
-          <ref role="1Tmc6L" node="1VmqrBbwQiQ" />
           <ref role="1Tmc6K" node="2S7w2zXuJdD" resolve="membership ender" />
         </node>
       </node>
@@ -407,14 +391,10 @@
         <property role="3cGS$Q" value="loan concluding" />
         <property role="3cGzis" value="T6" />
         <ref role="3lGtC5" node="1VmqrBbSqZv" resolve="loan is concluded" />
-        <ref role="3cGzi0" node="2S7w2zXuJeB" resolve="borrower" />
-        <ref role="3cGzi6" node="2S7w2zXuJe1" resolve="loan concluder" />
         <node concept="1Tmc4s" id="6cLLlCqx8ox" role="1TmdgA">
-          <ref role="1Tmc4D" node="1VmqrBbwQiR" />
           <ref role="1Tmc4J" node="2S7w2zXuJeB" resolve="borrower" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oz" role="1Tmdjl">
-          <ref role="1Tmc6L" node="1VmqrBbwQiR" />
           <ref role="1Tmc6K" node="2S7w2zXuJe1" resolve="loan concluder" />
         </node>
       </node>
@@ -422,14 +402,10 @@
         <property role="3cGS$Q" value="book issuing" />
         <property role="3cGzis" value="T7" />
         <ref role="3lGtC5" node="2S7w2zXwisr" resolve="book of LOAN is issued" />
-        <ref role="3cGzi0" node="2S7w2zXuJeB" resolve="borrower" />
-        <ref role="3cGzi6" node="2S7w2zXuJef" resolve="book issuer" />
         <node concept="1Tmc4s" id="6cLLlCqx8o_" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zXuJeG" />
           <ref role="1Tmc4J" node="2S7w2zXuJeB" resolve="borrower" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oB" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zXuJeG" />
           <ref role="1Tmc6K" node="2S7w2zXuJef" resolve="book issuer" />
         </node>
       </node>
@@ -437,56 +413,40 @@
         <property role="3cGS$Q" value="book returning" />
         <property role="3cGzis" value="T8" />
         <ref role="3lGtC5" node="2S7w2zXwita" resolve="book of LOAN is returned" />
-        <ref role="3cGzi0" node="2S7w2zXuJef" resolve="book issuer" />
-        <ref role="3cGzi6" node="2S7w2zXuJeB" resolve="borrower" />
         <node concept="1Tmc4s" id="6cLLlCqx8oD" role="1TmdgA">
-          <ref role="1Tmc4D" node="1VmqrBbwQiS" />
           <ref role="1Tmc4J" node="2S7w2zXuJef" resolve="book issuer" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oF" role="1Tmdjl">
-          <ref role="1Tmc6L" node="1VmqrBbwQiS" />
           <ref role="1Tmc6K" node="2S7w2zXuJeB" resolve="borrower" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXuJeN" role="3cGS$C">
         <property role="3cGS$Q" value="penalty paying" />
         <property role="3cGzis" value="T9" />
-        <ref role="3cGzi0" node="2S7w2zXuJef" resolve="book issuer" />
-        <ref role="3cGzi6" node="2S7w2zXuJeB" resolve="borrower" />
         <node concept="1Tmc4s" id="6cLLlCqx8oH" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zXuJeN" />
           <ref role="1Tmc4J" node="2S7w2zXuJef" resolve="book issuer" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oJ" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zXuJeN" />
           <ref role="1Tmc6K" node="2S7w2zXuJeB" resolve="borrower" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXTlqB" role="3cGS$C">
         <property role="3cGS$Q" value="fee paying control" />
         <property role="3cGzis" value="T10" />
-        <ref role="3cGzi0" node="2S7w2zXuJdm" resolve="fee payimg controller" />
-        <ref role="3cGzi6" node="2S7w2zXuJdm" resolve="fee payimg controller" />
         <node concept="1Tmc4s" id="6cLLlCqx8oL" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zXTlqB" />
           <ref role="1Tmc4J" node="2S7w2zXuJdm" resolve="fee payimg controller" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oN" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zXTlqB" />
           <ref role="1Tmc6K" node="2S7w2zXuJdm" resolve="fee payimg controller" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zY02Tc" role="3cGS$C">
         <property role="3cGS$Q" value="membership control" />
         <property role="3cGzis" value="T11" />
-        <ref role="3cGzi0" node="2S7w2zXuJdP" resolve="membership controller" />
-        <ref role="3cGzi6" node="2S7w2zXuJdP" resolve="membership controller" />
         <node concept="1Tmc4s" id="6cLLlCqx8oP" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zY02Tc" />
           <ref role="1Tmc4J" node="2S7w2zXuJdP" resolve="membership controller" />
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oR" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zY02Tc" />
           <ref role="1Tmc6K" node="2S7w2zXuJdP" resolve="membership controller" />
         </node>
       </node>

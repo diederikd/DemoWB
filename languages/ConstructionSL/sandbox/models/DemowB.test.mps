@@ -20,8 +20,6 @@
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="id" index="3cGzis" />
-        <reference id="2743742872034578202" name="initiator" index="3cGzi0" />
-        <reference id="2743742872034578204" name="executor" index="3cGzi6" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
@@ -37,12 +35,10 @@
         <reference id="3316760564119924852" name="compositeActorRole" index="3joZ1s" />
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
-        <reference id="7147711074394506355" name="transactionKind" index="1Tmc4D" />
         <reference id="7147711074394506357" name="actor" index="1Tmc4J" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actor" index="1Tmc6K" />
-        <reference id="7147711074394506475" name="transactionKind" index="1Tmc6L" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -136,28 +132,20 @@
       <node concept="3cGziv" id="23QvOXySG7s" role="3cGS$C">
         <property role="3cGS$Q" value="test" />
         <property role="3cGzis" value="T1" />
-        <ref role="3cGzi6" node="23QvOXySG7E" resolve="actor 2" />
-        <ref role="3cGzi0" node="23QvOXySG7O" resolve="external actor" />
         <node concept="1Tmc4s" id="23QvOXySG7t" role="1TmdgA">
-          <ref role="1Tmc4D" node="23QvOXySG7s" />
           <ref role="1Tmc4J" node="23QvOXySG7O" resolve="external actor" />
         </node>
         <node concept="1Tmc7B" id="23QvOXySG7u" role="1Tmdjl">
-          <ref role="1Tmc6L" node="23QvOXySG7s" />
           <ref role="1Tmc6K" node="23QvOXySG7E" resolve="actor 2" />
         </node>
       </node>
       <node concept="3cGziv" id="23QvOXyXeEB" role="3cGS$C">
         <property role="3cGS$Q" value="testen" />
         <property role="3cGzis" value="T2" />
-        <ref role="3cGzi0" node="23QvOXySG7O" resolve="external actor" />
-        <ref role="3cGzi6" node="23QvOXySG7o" resolve="actor 1" />
         <node concept="1Tmc4s" id="23QvOXyXeEC" role="1TmdgA">
-          <ref role="1Tmc4D" node="23QvOXyXeEB" />
           <ref role="1Tmc4J" node="23QvOXySG7O" resolve="external actor" />
         </node>
         <node concept="1Tmc7B" id="23QvOXyXeED" role="1Tmdjl">
-          <ref role="1Tmc6L" node="23QvOXyXeEB" />
           <ref role="1Tmc6K" node="23QvOXySG7o" resolve="actor 1" />
         </node>
       </node>

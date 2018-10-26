@@ -49,8 +49,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
-import de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter;
-import de.cau.cs.kieler.kiml.options.Direction;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
@@ -202,10 +200,13 @@ import jetbrains.mps.util.Computable;
                         List<IConnectionType> connectionTypes = new ArrayList<IConnectionType>();
                         return connectionTypes;
                       }
+                      @Override
+                      public boolean autoRouteEdges() {
+                        return false;
+                      }
                     };
 
                     DiagramModel model = DiagramModel.getModel(editorContext, node, "7147711074381116964", accessor);
-                    model.setLayouter(new LayeredLayouter(Direction.RIGHT));
 
                     IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider();
                     model.setPaletteEntryProvider(paletteEntryProvider);
@@ -223,7 +224,17 @@ import jetbrains.mps.util.Computable;
                     if (editorCell.value.getContextGraph() != null) {
                       Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
                       if (defaultParent instanceof RootDCell) {
-                        ((RootDCell) defaultParent).resetButtonConfig();
+                        {
+                          Style styleDiagram = new StyleImpl();
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__layout-diagram-button"), true);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__relayout-all-edges-button"), true);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__maximize-diagram-button"), true);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__reset-view-button"), true);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__zoom-in-button"), true);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__zoom-out-button"), true);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__fit-size-all-diagram-button"), true);
+                          ((RootDCell) defaultParent).updateButtonConfig(styleDiagram);
+                        }
                       }
                     }
                   }

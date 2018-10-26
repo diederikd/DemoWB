@@ -21,8 +21,6 @@
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="id" index="3cGzis" />
-        <reference id="2743742872034578202" name="initiator" index="3cGzi0" />
-        <reference id="2743742872034578204" name="executor" index="3cGzi6" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
@@ -38,12 +36,10 @@
         <reference id="3316760564119924852" name="compositeActorRole" index="3joZ1s" />
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
-        <reference id="7147711074394506355" name="transactionKind" index="1Tmc4D" />
         <reference id="7147711074394506357" name="actor" index="1Tmc4J" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actor" index="1Tmc6K" />
-        <reference id="7147711074394506475" name="transactionKind" index="1Tmc6L" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -108,42 +104,30 @@
       <node concept="3cGziv" id="2S7w2zXkLSP" role="3cGS$C">
         <property role="3cGS$Q" value="verzoeken om uitgenodigd te worden voor het doen van aangifte" />
         <property role="3cGzis" value="T1" />
-        <ref role="3cGzi0" node="2S7w2zXsjcs" resolve="belastingplichtige" />
-        <ref role="3cGzi6" node="2S7w2zXtFdy" resolve="uitnodigingsverzoeker verwerker" />
         <node concept="1Tmc4s" id="23QvOXyNEqd" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zXkLSP" />
           <ref role="1Tmc4J" node="2S7w2zXsjcs" resolve="belastingplichtige" />
         </node>
         <node concept="1Tmc7B" id="23QvOXyNEqg" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zXkLSP" />
           <ref role="1Tmc6K" node="2S7w2zXtFdy" resolve="uitnodigingsverzoeker verwerker" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXkLSB" role="3cGS$C">
         <property role="3cGS$Q" value="uitnodigen tot het doen van aangifte" />
         <property role="3cGzis" value="T2" />
-        <ref role="3cGzi0" node="2S7w2zXsZ4H" resolve="uitnodiger" />
-        <ref role="3cGzi6" node="2S7w2zXsjcs" resolve="belastingplichtige" />
         <node concept="1Tmc4s" id="23QvOXyNEqj" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zXkLSB" />
           <ref role="1Tmc4J" node="2S7w2zXsZ4H" resolve="uitnodiger" />
         </node>
         <node concept="1Tmc7B" id="23QvOXyNEqm" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zXkLSB" />
           <ref role="1Tmc6K" node="2S7w2zXsjcs" resolve="belastingplichtige" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXkjxy" role="3cGS$C">
         <property role="3cGzis" value="T3" />
         <property role="3cGS$Q" value="aangifte doen" />
-        <ref role="3cGzi0" node="2S7w2zXsjcs" resolve="belastingplichtige" />
-        <ref role="3cGzi6" node="2S7w2zXtFdf" resolve="aangifteverwerker" />
         <node concept="1Tmc4s" id="23QvOXyNEqp" role="1TmdgA">
-          <ref role="1Tmc4D" node="2S7w2zXkjxy" />
           <ref role="1Tmc4J" node="2S7w2zXsjcs" resolve="belastingplichtige" />
         </node>
         <node concept="1Tmc7B" id="23QvOXyNEqs" role="1Tmdjl">
-          <ref role="1Tmc6L" node="2S7w2zXkjxy" />
           <ref role="1Tmc6K" node="2S7w2zXtFdf" resolve="aangifteverwerker" />
         </node>
       </node>

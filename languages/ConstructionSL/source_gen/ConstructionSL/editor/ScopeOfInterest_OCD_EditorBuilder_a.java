@@ -48,6 +48,9 @@ import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 /*package*/ class ScopeOfInterest_OCD_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -185,7 +188,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                                 }
                                 @Override
                                 public IConnectionEndpointReference readTo() {
-                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690473L, "transactionKind")));
+                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SNodeOperations.getParent(((SNode) _variablesContext.getValue("parameterObject"))));
                                 }
                                 @Override
                                 public IShape getStartShape() {
@@ -236,7 +239,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                                 }
                                 @Override
                                 public IConnectionEndpointReference readTo() {
-                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904ebL, "transactionKind")));
+                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SNodeOperations.getParent(((SNode) _variablesContext.getValue("parameterObject"))));
                                 }
                                 @Override
                                 public IShape getStartShape() {
@@ -286,7 +289,17 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                     if (editorCell.value.getContextGraph() != null) {
                       Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
                       if (defaultParent instanceof RootDCell) {
-                        ((RootDCell) defaultParent).resetButtonConfig();
+                        {
+                          Style styleDiagram = new StyleImpl();
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__layout-diagram-button"), false);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__relayout-all-edges-button"), false);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__maximize-diagram-button"), false);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__reset-view-button"), false);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__zoom-in-button"), false);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__zoom-out-button"), false);
+                          styleDiagram.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.diagram.styles", "__fit-size-all-diagram-button"), false);
+                          ((RootDCell) defaultParent).updateButtonConfig(styleDiagram);
+                        }
                       }
                     }
                   }

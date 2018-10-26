@@ -129,8 +129,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506429");
     b.version(2);
-    b.associate("actor", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("7147711074394506474").done();
-    b.associate("transactionKind", 0x6331c55a1a6904ebL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(true).origin("7147711074394506475").done();
+    b.associate("actor", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506474").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInitiator() {
@@ -138,8 +137,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506310");
     b.version(2);
-    b.associate("actor", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("7147711074394506357").done();
-    b.associate("transactionKind", 0x6331c55a1a690473L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(true).origin("7147711074394506355").done();
+    b.associate("actor", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506357").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForScopeOfInterest() {
@@ -160,12 +158,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.prop("id", 0x2613bb9aeaa18f06L, "2743742872034578182");
     b.prop("type", 0x2613bb9aeaa55dc1L, "2743742872034827713");
-    b.associate("initiator", 0x2613bb9aeaa18f1aL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("2743742872034578202").done();
-    b.associate("executor", 0x2613bb9aeaa18f1cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("2743742872034578204").done();
     b.associate("usesFacts", 0x2613bb9aeaa55db4L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("2743742872034827700").done();
     b.associate("hasProduct", 0x1ed669b9cb67b3bcL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).origin("2222079712856355772").done();
     b.associate("isPartOf", 0x2613bb9aeaa69f13L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f0cL).optional(true).origin("2743742872034909971").done();
-    b.aggregate("initiatorConcept", 0x6331c55a1a69117cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L).optional(true).ordered(true).multiple(false).origin("7147711074394509692").done();
+    b.aggregate("initiatorConcept", 0x6331c55a1a69117cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L).optional(true).ordered(true).multiple(true).origin("7147711074394509692").done();
     b.aggregate("executorConcept", 0x6331c55a1a69118fL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL).optional(true).ordered(true).multiple(false).origin("7147711074394509711").done();
     return b.create();
   }

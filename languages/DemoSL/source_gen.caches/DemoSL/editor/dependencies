@@ -213,7 +213,6 @@
     <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.QueryListContext" />
     <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.QueryListHandler" />
     <classNode dependClassName="com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory" />
-    <classNode dependClassName="de.cau.cs.kieler.kiml.options.Direction" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramContext" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.EditorUtil" />
@@ -222,7 +221,6 @@
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell" />
-    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.DiagramModel" />
@@ -231,6 +229,7 @@
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider" />
+    <classNode dependClassName="java.lang.Boolean" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />

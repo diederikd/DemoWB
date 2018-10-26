@@ -165,7 +165,9 @@
       </concept>
       <concept id="6554619382999975769" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_OuterNode" flags="ng" index="23r2z0" />
       <concept id="1110129820007229393" name="de.itemis.mps.editor.diagram.structure.CellModel_Diagram" flags="ng" index="27vDVx">
+        <property id="4787596715132191458" name="disableEdgeRouting" index="3ZefsU" />
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
+        <child id="6910723851735171798" name="buttonConfig" index="3sAl1G" />
       </concept>
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
         <child id="2044706694575458564" name="labelCell" index="3kqczz" />
@@ -189,6 +191,15 @@
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
       <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
+      <concept id="6910723851735106293" name="de.itemis.mps.editor.diagram.structure.DiagramButtonConfig" flags="ng" index="3sA_1f">
+        <property id="6910723851735128113" name="hasResetViewButton" index="3sAwEb" />
+        <property id="6910723851735128106" name="hasRelayoutAllEdgesButton" index="3sAwEg" />
+        <property id="6910723851735128104" name="hasLayoutDiagramButton" index="3sAwEi" />
+        <property id="6910723851735128109" name="hasMaximizeDiagramButton" index="3sAwEn" />
+        <property id="6910723851735134393" name="hasFitSizeAllDiagramButton" index="3sAy83" />
+        <property id="6910723851735134386" name="hasZoomOutButton" index="3sAy88" />
+        <property id="6910723851735134380" name="hasZoomInButton" index="3sAy8m" />
+      </concept>
       <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
         <property id="6987730699889504313" name="value" index="3DY1wP" />
       </concept>
@@ -284,6 +295,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="27vDVx" id="6cLLlCpBbo$" role="3EZMnx">
+          <property role="3ZefsU" value="true" />
           <node concept="2ZMM4L" id="LlDDn7e$mV" role="aCds2">
             <node concept="3clFbS" id="LlDDn7e$mX" role="2VODD2">
               <node concept="3clFbF" id="LlDDn7e$vW" role="3cqZAp">
@@ -395,7 +407,15 @@
           <node concept="pVoyu" id="6cLLlCpBnNT" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
-          <node concept="39fpm" id="6cLLlCqAJoL" role="35U2g" />
+          <node concept="3sA_1f" id="pMarvIUCOo" role="3sAl1G">
+            <property role="3sAwEi" value="true" />
+            <property role="3sAwEg" value="true" />
+            <property role="3sAy83" value="true" />
+            <property role="3sAwEb" value="true" />
+            <property role="3sAwEn" value="true" />
+            <property role="3sAy8m" value="true" />
+            <property role="3sAy88" value="true" />
+          </node>
         </node>
         <node concept="l2Vlx" id="6cLLlCpDATI" role="2iSdaV" />
         <node concept="lj46D" id="6cLLlCpDB$E" role="3F10Kt">

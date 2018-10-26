@@ -96,6 +96,7 @@
       <property role="IQ2ns" value="7147711074394509692" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="initiatorConcept" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6cLLlCqqgh6" resolve="Initiator" />
     </node>
     <node concept="1TJgyj" id="6cLLlCqqh6f" role="1TKVEi">
@@ -116,20 +117,6 @@
     </node>
     <node concept="PrWs8" id="2ojITFECoWk" role="PzmwI">
       <ref role="PrY4T" to="d13l:2ojITFEC3aF" resolve="ILowerCaseNamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="2ojITFECoWq" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034578202" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="initiator" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
-    </node>
-    <node concept="1TJgyj" id="2ojITFECoWs" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034578204" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="executor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
     </node>
     <node concept="1TJgyj" id="2ojITFEDlQO" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034827700" />
@@ -287,15 +274,8 @@
       <property role="IQ2ns" value="7147711074394506357" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actor" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
-    </node>
-    <node concept="1TJgyj" id="6cLLlCqqghN" role="1TKVEi">
-      <property role="IQ2ns" value="7147711074394506355" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="transactionKind" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cLLlCqqgiX">
@@ -306,15 +286,8 @@
       <property role="IQ2ns" value="7147711074394506474" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actor" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
-    </node>
-    <node concept="1TJgyj" id="6cLLlCqqgjF" role="1TKVEi">
-      <property role="IQ2ns" value="7147711074394506475" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="transactionKind" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
     </node>
   </node>
 </model>
