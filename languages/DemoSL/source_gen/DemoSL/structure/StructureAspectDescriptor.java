@@ -94,7 +94,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/2222079712857969143");
     b.version(2);
     b.aggregate("scopeOfInterest", 0x1ed669b9cb805202L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L).optional(false).ordered(true).multiple(false).origin("2222079712857969154").done();
-    b.aggregate("roles", 0x1ed669b9cb805203L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).ordered(true).multiple(true).origin("2222079712857969155").done();
+    b.aggregate("actorRoles", 0x1ed669b9cb805203L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).ordered(true).multiple(true).origin("2222079712857969155").done();
     b.alias("Construction model");
     return b.create();
   }

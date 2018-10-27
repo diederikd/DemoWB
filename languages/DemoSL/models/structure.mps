@@ -171,9 +171,9 @@
     <node concept="1TJgyj" id="1VmqrBbw583" role="1TKVEi">
       <property role="IQ2ns" value="2222079712857969155" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="roles" />
+      <property role="20kJfa" value="actorRoles" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="Actor" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
     <node concept="PrWs8" id="1VmqrBbw58K" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

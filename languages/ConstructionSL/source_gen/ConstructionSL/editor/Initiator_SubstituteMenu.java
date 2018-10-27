@@ -47,7 +47,7 @@ public class Initiator_SubstituteMenu extends SubstituteMenuBase {
   public class SMP_ReferenceScope_iu1f8_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_iu1f8_a() {
-      super(MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, "ConstructionSL.structure.Initiator"), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690475L, "actor"));
+      super(MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, "ConstructionSL.structure.Initiator"), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690475L, "actorRole"));
     }
     @NotNull
     @Override

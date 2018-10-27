@@ -47,7 +47,7 @@ public class Executor_SubstituteMenu extends SubstituteMenuBase {
   public class SMP_ReferenceScope_1wsmiq_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_1wsmiq_a() {
-      super(MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, "ConstructionSL.structure.Executor"), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904eaL, "actor"));
+      super(MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, "ConstructionSL.structure.Executor"), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904eaL, "actorRole"));
     }
     @NotNull
     @Override

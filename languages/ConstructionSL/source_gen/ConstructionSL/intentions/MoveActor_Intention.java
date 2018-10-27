@@ -59,16 +59,16 @@ public final class MoveActor_Intention extends AbstractIntentionDescriptor imple
       {
         final SNode scopeOfInterest = SNodeOperations.getParent(node);
         if (SNodeOperations.isInstanceOf(scopeOfInterest, MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, "ConstructionSL.structure.ScopeOfInterest"))) {
-          ListSequence.fromList(SLinkOperations.getChildren(scopeOfInterest, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles"))).removeElement(node);
-          ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(scopeOfInterest), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "roles"))).addElement(node);
+          ListSequence.fromList(SLinkOperations.getChildren(scopeOfInterest, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "actorRoles"))).removeElement(node);
+          ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(scopeOfInterest), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "actorRoles"))).addElement(node);
           return;
         }
       }
       {
         final SNode constructionModel = SNodeOperations.getParent(node);
         if (SNodeOperations.isInstanceOf(constructionModel, MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, "DemoSL.structure.ConstructionModel"))) {
-          ListSequence.fromList(SLinkOperations.getChildren(constructionModel, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "roles"))).removeElement(node);
-          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(constructionModel, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "roles"))).addElement(node);
+          ListSequence.fromList(SLinkOperations.getChildren(constructionModel, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805203L, "actorRoles"))).removeElement(node);
+          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(constructionModel, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1ed669b9cb8051f7L, 0x1ed669b9cb805202L, "scopeOfInterest")), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa1a68cL, "actorRoles"))).addElement(node);
           return;
         }
       }

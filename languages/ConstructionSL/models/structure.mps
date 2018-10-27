@@ -70,7 +70,7 @@
   <node concept="1TIwiD" id="2ojITFEC3aD">
     <property role="EcuMT" value="2743742872034489001" />
     <property role="TrG5h" value="ActorRole" />
-    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="Actor" />
+    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     <node concept="1TJgyj" id="2S7w2zXos5c" role="1TKVEi">
       <property role="IQ2ns" value="3316760564119748940" />
       <property role="20lmBu" value="aggregation" />
@@ -122,7 +122,7 @@
       <property role="IQ2ns" value="2743742872034827700" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="usesFacts" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
     <node concept="1TJgyj" id="1VmqrBbpVeW" role="1TKVEi">
       <property role="IQ2ns" value="2222079712856355772" />
@@ -140,7 +140,7 @@
   <node concept="1TIwiD" id="2ojITFECoW8">
     <property role="EcuMT" value="2743742872034578184" />
     <property role="TrG5h" value="CompositeActorRole" />
-    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="Actor" />
+    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     <node concept="1TJgyi" id="2ojITFECoWa" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578186" />
       <property role="TrG5h" value="id" />
@@ -205,9 +205,9 @@
     <node concept="1TJgyj" id="2ojITFECqqc" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034584204" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="roles" />
+      <property role="20kJfa" value="actorRoles" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
     <node concept="1TJgyj" id="2ojITFEC3aM" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034489010" />
@@ -222,7 +222,7 @@
   </node>
   <node concept="1TIwiD" id="m5XqSfyT8Q">
     <property role="EcuMT" value="397994270026076726" />
-    <property role="TrG5h" value="Actor" />
+    <property role="TrG5h" value="AbstractActorRole" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -273,9 +273,9 @@
     <node concept="1TJgyj" id="6cLLlCqqghP" role="1TKVEi">
       <property role="IQ2ns" value="7147711074394506357" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="actor" />
+      <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cLLlCqqgiX">
@@ -285,9 +285,9 @@
     <node concept="1TJgyj" id="6cLLlCqqgjE" role="1TKVEi">
       <property role="IQ2ns" value="7147711074394506474" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="actor" />
+      <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="Actor" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
   </node>
 </model>

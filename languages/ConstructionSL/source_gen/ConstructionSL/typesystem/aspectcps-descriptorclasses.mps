@@ -694,7 +694,7 @@
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="3g" role="2OqNvi">
-                                <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actor" />
+                                <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actorRole" />
                                 <node concept="cd27G" id="3k" role="lGtFl">
                                   <node concept="3u3nmq" id="3l" role="cd27D">
                                     <property role="3u3nmv" value="464479581538459667" />
@@ -754,7 +754,7 @@
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="3x" role="2OqNvi">
-                                <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actor" />
+                                <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actorRole" />
                                 <node concept="cd27G" id="3F" role="lGtFl">
                                   <node concept="3u3nmq" id="3G" role="cd27D">
                                     <property role="3u3nmv" value="464479581538204397" />
@@ -777,7 +777,7 @@
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="3J" role="2OqNvi">
-                                <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actor" />
+                                <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actorRole" />
                                 <node concept="cd27G" id="3N" role="lGtFl">
                                   <node concept="3u3nmq" id="3O" role="cd27D">
                                     <property role="3u3nmv" value="464479581538210196" />

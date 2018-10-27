@@ -7,7 +7,10 @@ import org.jetbrains.annotations.Nullable;
 import java.awt.Shape;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.GeneralPath;
+import java.awt.image.BufferedImage;
 import java.awt.Graphics2D;
+import java.awt.Font;
+import java.awt.font.GlyphVector;
 import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
 
 public class TransactionKind extends AbstractShape {
@@ -44,12 +47,31 @@ public class TransactionKind extends AbstractShape {
     shape.lineTo(x + r, y);
     shape.lineTo(x, y + r);
     shape.closePath();
+
+    // TODO how to print the name of the transaction 
+    BufferedImage img = new BufferedImage(100, 100, BufferedImage.TYPE_INT_ARGB);
+    Graphics2D g2 = img.createGraphics();
+    Font font = new Font("Arial", Font.PLAIN, 10);
+    String s = "TEST";
+    Shape shp;
+    try {
+      GlyphVector vect = font.createGlyphVector(g2.getFontRenderContext(), s);
+      shp = vect.getOutline(0xf, (float) -vect.getVisualBounds().getY());
+    } finally {
+      g2.dispose();
+    }
+    // TODO how to print the name of the transaction 
+
     return shape;
   }
 
 
   @Override
   protected void draw(final Graphics2D graphics, final Rectangle2D bounds, IShapeStyle style) {
+    // TODO how to print the name of the transaction 
+    float width = (float) bounds.getWidth();
+    float height = (float) bounds.getHeight();
+    graphics.drawString("TEXT", width - 10, height - 10);
   }
 
 }

@@ -12,7 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptActor = createDescriptorForActor();
+  /*package*/ final ConceptDescriptor myConceptAbstractActorRole = createDescriptorForAbstractActorRole();
   /*package*/ final ConceptDescriptor myConceptActorRole = createDescriptorForActorRole();
   /*package*/ final ConceptDescriptor myConceptActorRoleReference = createDescriptorForActorRoleReference();
   /*package*/ final ConceptDescriptor myConceptAggregateTransactionKind = createDescriptorForAggregateTransactionKind();
@@ -32,15 +32,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActor, myConceptActorRole, myConceptActorRoleReference, myConceptAggregateTransactionKind, myConceptCompositeActorRole, myConceptCompositeActorRoleReference, myConceptExecutor, myConceptInitiator, myConceptScopeOfInterest, myConceptTransactionKind, myConceptTransactionKindReference, myConcepttest);
+    return Arrays.asList(myConceptAbstractActorRole, myConceptActorRole, myConceptActorRoleReference, myConceptAggregateTransactionKind, myConceptCompositeActorRole, myConceptCompositeActorRoleReference, myConceptExecutor, myConceptInitiator, myConceptScopeOfInterest, myConceptTransactionKind, myConceptTransactionKindReference, myConcepttest);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Actor:
-        return myConceptActor;
+      case LanguageConceptSwitch.AbstractActorRole:
+        return myConceptAbstractActorRole;
       case LanguageConceptSwitch.ActorRole:
         return myConceptActorRole;
       case LanguageConceptSwitch.ActorRoleReference:
@@ -72,8 +72,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForActor() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "Actor", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
+  private static ConceptDescriptor createDescriptorForAbstractActorRole() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "AbstractActorRole", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
     b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/397994270026076726");
@@ -83,7 +83,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForActorRole() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "ActorRole", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L);
     b.class_(false, false, false);
-    b.super_("ConstructionSL.structure.Actor", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
+    b.super_("ConstructionSL.structure.AbstractActorRole", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034489001");
     b.version(2);
     b.prop("id", 0x2613bb9aeaa0eeb7L, "2743742872034537143");
@@ -110,7 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForCompositeActorRole() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ConstructionSL", "CompositeActorRole", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f08L);
     b.class_(false, false, false);
-    b.super_("ConstructionSL.structure.Actor", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
+    b.super_("ConstructionSL.structure.AbstractActorRole", 0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034578184");
     b.version(2);
     b.prop("id", 0x2613bb9aeaa18f0aL, "2743742872034578186");
@@ -129,7 +129,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506429");
     b.version(2);
-    b.associate("actor", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506474").done();
+    b.associate("actorRole", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506474").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInitiator() {
@@ -137,7 +137,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506310");
     b.version(2);
-    b.associate("actor", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506357").done();
+    b.associate("actorRole", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506357").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForScopeOfInterest() {
@@ -146,7 +146,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034909889");
     b.version(2);
-    b.aggregate("roles", 0x2613bb9aeaa1a68cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).ordered(true).multiple(true).origin("2743742872034584204").done();
+    b.aggregate("actorRoles", 0x2613bb9aeaa1a68cL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).ordered(true).multiple(true).origin("2743742872034584204").done();
     b.aggregate("transactions", 0x2613bb9aeaa032b2L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(true).ordered(true).multiple(true).origin("2743742872034489010").done();
     return b.create();
   }
