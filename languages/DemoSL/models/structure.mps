@@ -195,6 +195,7 @@
     <property role="TrG5h" value="ProcesModel" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="Proces Model" />
+    <property role="34LRSv" value="Proces model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2S7w2zXHkUW" role="1TKVEl">
       <property role="IQ2nx" value="3316760564125224636" />
@@ -231,6 +232,7 @@
     <property role="3GE5qa" value="Proces Model" />
     <property role="TrG5h" value="ProcesStructureDiagram" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="PSD" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2S7w2zXL7ry" role="1TKVEi">
       <property role="IQ2ns" value="3316760564126217954" />

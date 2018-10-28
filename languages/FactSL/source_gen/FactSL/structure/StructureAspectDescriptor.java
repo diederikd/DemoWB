@@ -18,6 +18,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAttributeType = createDescriptorForAttributeType();
   /*package*/ final ConceptDescriptor myConceptBaseEntityType = createDescriptorForBaseEntityType();
   /*package*/ final ConceptDescriptor myConceptConstructedEntityType = createDescriptorForConstructedEntityType();
+  /*package*/ final ConceptDescriptor myConceptDate = createDescriptorForDate();
   /*package*/ final ConceptDescriptor myConceptDuration = createDescriptorForDuration();
   /*package*/ final ConceptDescriptor myConceptEntityType = createDescriptorForEntityType();
   /*package*/ final ConceptDescriptor myConceptEntityTypeSet = createDescriptorForEntityTypeSet();
@@ -46,7 +47,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptGeneralisation, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
+    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDate, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptGeneralisation, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
   }
 
   @Override
@@ -65,6 +66,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptBaseEntityType;
       case LanguageConceptSwitch.ConstructedEntityType:
         return myConceptConstructedEntityType;
+      case LanguageConceptSwitch.Date:
+        return myConceptDate;
       case LanguageConceptSwitch.Duration:
         return myConceptDuration;
       case LanguageConceptSwitch.EntityType:
@@ -169,6 +172,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("generalisation", 0x67229b7ee4cb10fL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4c9080L).optional(true).ordered(true).multiple(true).origin("464479581526339855").done();
     b.aggregate("aggregation", 0x67229b7ee4cbd7aL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee4cb112L).optional(true).ordered(true).multiple(true).origin("464479581526343034").done();
     b.aggregate("specialisation", 0x67229b7ee5806e0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee552bdfL).optional(true).ordered(true).multiple(true).origin("464479581527082720").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDate() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "Date", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0xb9e87a20643abc5L);
+    b.class_(false, false, false);
+    b.super_("FactSL.structure.ValueType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/837255710697040837");
+    b.version(2);
+    b.alias("date");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDuration() {

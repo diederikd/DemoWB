@@ -414,5 +414,12 @@
       <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="IuxU86gUJ5">
+    <property role="EcuMT" value="837255710697040837" />
+    <property role="3GE5qa" value="Value Types" />
+    <property role="TrG5h" value="Date" />
+    <property role="34LRSv" value="date" />
+    <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
+  </node>
 </model>
 
