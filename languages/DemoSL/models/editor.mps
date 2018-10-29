@@ -515,6 +515,18 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="1VmqrBbFxls" role="3EZMnx">
+        <property role="3F0ifm" value="Transaction kind" />
+      </node>
+      <node concept="3F0ifn" id="IuxU86jrV4" role="3EZMnx">
+        <property role="3F0ifm" value="--&gt;" />
+      </node>
+      <node concept="3F0ifn" id="IuxU86jsNc" role="3EZMnx">
+        <property role="3F0ifm" value="Product" />
+        <node concept="ljvvj" id="IuxU86juzB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="s8t4o" id="1VmqrBbq$w8" role="3EZMnx">
         <property role="28Zw97" value="true" />
         <ref role="28F8cf" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />

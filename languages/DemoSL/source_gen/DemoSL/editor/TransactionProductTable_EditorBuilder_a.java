@@ -74,6 +74,9 @@ import jetbrains.mps.util.Computable;
       editorCell.addEditorCell(createConstant_0());
       editorCell.addEditorCell(createProperty_0());
       editorCell.addEditorCell(createConstant_1());
+      editorCell.addEditorCell(createConstant_2());
+      editorCell.addEditorCell(createConstant_3());
+      editorCell.addEditorCell(createConstant_4());
       editorCell.addEditorCell(createQueryList_1());
       setInnerCellsContext(editorCell);
     } finally {
@@ -125,14 +128,35 @@ import jetbrains.mps.util.Computable;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Transaction kind");
+    editorCell.setCellId("Constant_4z9nnr_d0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_3() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "-->");
+    editorCell.setCellId("Constant_4z9nnr_e0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_4() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Product");
+    editorCell.setCellId("Constant_4z9nnr_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
   private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
 
     return QueryListContext.computeWithContext(new QueryListContext(node), new _FunctionTypes._return_P0_E0<EditorCell_QueryList>() {
       public EditorCell_QueryList invoke() {
-        QueryListHandler handler = new TransactionProductTable_EditorBuilder_a.QueryListHandler_4z9nnr_d0(editorContext, node);
+        QueryListHandler handler = new TransactionProductTable_EditorBuilder_a.QueryListHandler_4z9nnr_g0(editorContext, node);
 
         EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
-        editorCell.setCellId("QueryList_4z9nnr_d0");
+        editorCell.setCellId("QueryList_4z9nnr_g0");
         Style style = new StyleImpl();
         style.set(StyleAttributes.READ_ONLY, true);
         style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -147,9 +171,9 @@ import jetbrains.mps.util.Computable;
   private EditorCell createQueryList_1() {
     return createQueryList_0(getEditorContext(), myNode);
   }
-  private static class QueryListHandler_4z9nnr_d0 extends QueryListHandler {
+  private static class QueryListHandler_4z9nnr_g0 extends QueryListHandler {
     private SNode myNode;
-    public QueryListHandler_4z9nnr_d0(EditorContext context, SNode ownerNode) {
+    public QueryListHandler_4z9nnr_g0(EditorContext context, SNode ownerNode) {
       super(context, ownerNode);
       myNode = ownerNode;
     }

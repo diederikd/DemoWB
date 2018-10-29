@@ -840,21 +840,6 @@
     </node>
     <node concept="3EZMnI" id="1VmqrBbFxlq" role="2wV5jI">
       <node concept="l2Vlx" id="1VmqrBbFxlr" role="2iSdaV" />
-      <node concept="3F0ifn" id="1VmqrBbFxls" role="3EZMnx">
-        <property role="3F0ifm" value="Transaction kind" />
-      </node>
-      <node concept="3F0ifn" id="1VmqrBbFxma" role="3EZMnx">
-        <property role="3F0ifm" value="id" />
-        <node concept="pVoyu" id="1VmqrBbGsDt" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1VmqrBbFxmb" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-        <node concept="11L4FC" id="1VmqrBbFxmc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="1VmqrBbFxmd" role="3EZMnx">
         <node concept="VPM3Z" id="1VmqrBbFxme" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -1021,23 +1006,11 @@
         </node>
         <node concept="2iRfu4" id="1VmqrBbGskX" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="1VmqrBbFxm5" role="3EZMnx">
-        <property role="3F0ifm" value="name" />
-      </node>
-      <node concept="3F0ifn" id="1VmqrBbFxm6" role="3EZMnx">
-        <property role="3F0ifm" value=":" />
-        <node concept="11L4FC" id="1VmqrBbFxm7" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="3F0A7n" id="1VmqrBbFxm8" role="3EZMnx">
         <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1VmqrBbGrUD" role="3EZMnx">
         <property role="3F0ifm" value="--&gt;" />
-      </node>
-      <node concept="3F0ifn" id="1VmqrBbFxnr" role="3EZMnx">
-        <property role="3F0ifm" value="product" />
       </node>
       <node concept="1iCGBv" id="1VmqrBbFxns" role="3EZMnx">
         <ref role="1NtTu8" to="pgdh:1VmqrBbpVeW" resolve="hasProduct" />
