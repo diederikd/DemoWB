@@ -834,6 +834,93 @@
       <unit id="7147711074390363990" at="12,0,46,0" name="GeneralSL.editor.ActorRole" />
     </file>
   </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710698121825">
+    <file name="TransactionKindPSD.java">
+      <node id="837255710698121825" at="24,34,25,27" concept="7" />
+      <node id="837255710698121828" at="29,51,30,42" concept="6" />
+      <node id="837255710698121833" at="30,42,31,37" concept="6" />
+      <node id="837255710698121839" at="31,37,32,39" concept="6" />
+      <node id="837255710698121845" at="32,39,33,41" concept="6" />
+      <node id="837255710698121855" at="33,41,34,42" concept="6" />
+      <node id="837255710698121874" at="34,42,35,18" concept="6" />
+      <node id="837255710698129290" at="35,18,36,18" concept="6" />
+      <node id="837255710698121878" at="36,18,37,32" concept="6" />
+      <node id="837255710698121882" at="37,32,38,0" concept="9" />
+      <node id="837255710698121898" at="38,0,39,0" concept="9" />
+      <node id="837255710698121899" at="39,0,40,27" concept="2" />
+      <node id="837255710698794789" at="40,27,41,31" concept="2" />
+      <node id="837255710698121907" at="41,31,42,84" concept="2" />
+      <node id="837255710698121931" at="42,84,43,84" concept="2" />
+      <node id="837255710698141988" at="43,84,44,31" concept="2" />
+      <node id="837255710698121955" at="44,31,45,84" concept="2" />
+      <node id="837255710698121979" at="45,84,46,84" concept="2" />
+      <node id="837255710698204068" at="46,84,47,27" concept="2" />
+      <node id="837255710698201111" at="47,27,48,0" concept="9" />
+      <node id="837255710698122004" at="48,0,49,27" concept="2" />
+      <node id="837255710698122012" at="49,27,50,27" concept="2" />
+      <node id="837255710698122020" at="50,27,51,27" concept="2" />
+      <node id="837255710698122028" at="51,27,52,27" concept="2" />
+      <node id="837255710698122036" at="52,27,53,22" concept="2" />
+      <node id="837255710698122040" at="53,22,54,0" concept="9" />
+      <node id="837255710698122041" at="54,0,55,53" concept="8" />
+      <node id="837255710698122043" at="55,53,56,81" concept="6" />
+      <node id="837255710698122051" at="56,81,57,41" concept="6" />
+      <node id="837255710698122057" at="57,41,58,50" concept="6" />
+      <node id="837255710698122065" at="58,50,59,22" concept="6" />
+      <node id="837255710698122069" at="59,22,60,14" concept="6" />
+      <node id="837255710698122074" at="61,9,62,78" concept="6" />
+      <node id="837255710698122084" at="62,78,63,73" concept="2" />
+      <node id="837255710698122100" at="64,15,65,19" concept="2" />
+      <node id="837255710698122104" at="66,5,67,53" concept="8" />
+      <node id="837255710698122106" at="67,53,68,0" concept="9" />
+      <node id="837255710698122107" at="68,0,69,17" concept="7" />
+      <node id="837255710698122111" at="74,95,75,53" concept="8" />
+      <node id="837255710698122113" at="75,53,76,44" concept="6" />
+      <node id="837255710698122121" at="76,44,77,46" concept="6" />
+      <node id="837255710698122129" at="77,46,78,57" concept="2" />
+      <node id="837255710698121825" at="19,0,21,0" concept="1" trace="TransactionKindPSD#()V" />
+      <node id="837255710698121825" at="22,0,27,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
+      <node id="837255710698122072" at="60,14,66,5" concept="12" />
+      <node id="837255710698121825" at="73,0,80,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <node id="837255710698121825" at="28,0,71,0" concept="5" trace="getShape#(Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;" />
+      <scope id="837255710698121825" at="19,31,19,31" />
+      <scope id="837255710698121825" at="24,34,25,27" />
+      <scope id="837255710698122099" at="64,15,65,19" />
+      <scope id="837255710698121825" at="19,0,21,0" />
+      <scope id="837255710698122073" at="61,9,63,73">
+        <var name="vect" id="837255710698122075" />
+      </scope>
+      <scope id="837255710698121825" at="74,95,78,57">
+        <var name="height" id="837255710698122122" />
+        <var name="width" id="837255710698122114" />
+      </scope>
+      <scope id="837255710698121825" at="22,0,27,0" />
+      <scope id="837255710698121825" at="73,0,80,0">
+        <var name="bounds" id="837255710698121825" />
+        <var name="graphics" id="837255710698121825" />
+        <var name="style" id="837255710698121825" />
+      </scope>
+      <scope id="837255710698121825" at="29,51,69,17">
+        <var name="font" id="837255710698122058" />
+        <var name="g2" id="837255710698122052" />
+        <var name="height" id="837255710698121840" />
+        <var name="img" id="837255710698122044" />
+        <var name="kappa" id="837255710698121879" />
+        <var name="r" id="837255710698121875" />
+        <var name="s" id="837255710698122066" />
+        <var name="shape" id="837255710698121829" />
+        <var name="shp" id="837255710698122070" />
+        <var name="w" id="837255710698129293" />
+        <var name="width" id="837255710698121834" />
+        <var name="x" id="837255710698121846" />
+        <var name="y" id="837255710698121856" />
+      </scope>
+      <scope id="837255710698121825" at="28,0,71,0">
+        <var name="bounds" id="837255710698121825" />
+      </scope>
+      <unit id="837255710698121825" at="16,0,82,0" name="GeneralSL.editor.TransactionKindPSD" />
+    </file>
+  </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/8701802403633621049">
     <file name="ArrowHead.java">
       <node id="8701802403633659021" at="15,0,16,0" concept="3" trace="relativeHeight" />

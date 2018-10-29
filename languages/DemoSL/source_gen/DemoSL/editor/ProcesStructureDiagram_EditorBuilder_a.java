@@ -40,6 +40,27 @@ import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import de.itemis.mps.editor.diagram.runtime.jgraph.BaseDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.EditorUtil;
+import de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import de.itemis.mps.editor.diagram.runtime.DiagramContext;
+import de.itemis.mps.editor.diagram.runtime.ContextVariables;
+import de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor;
+import java.util.List;
+import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
+import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
+import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
+import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
+import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 
 /*package*/ class ProcesStructureDiagram_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -69,6 +90,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createRefNodeList_0());
+    editorCell.addEditorCell(createCollection_1());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -190,5 +212,87 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
         getCellFactory().popCellContext();
       }
     }
+  }
+  private EditorCell createCollection_1() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_v93ikk_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    try {
+      getCellFactory().pushCellContext();
+      getCellFactory().addCellContextHints(new String[]{"GeneralSL.editor.DemoHints.PSD"});
+      editorCell.addEditorCell(createDiagram_1());
+      setInnerCellsContext(editorCell);
+    } finally {
+      getCellFactory().popCellContext();
+    }
+    return editorCell;
+  }
+  private EditorCell createDiagram_0(final EditorContext editorContext, final SNode node) {
+    final Wrappers._T<BaseDiagramECell> editorCell = new Wrappers._T<BaseDiagramECell>(null);
+
+    EditorUtil.noCaching(editorContext, new Runnable() {
+      public void run() {
+        DiagramCreationContext.createDiagram(new _FunctionTypes._void_P0_E0() {
+          public void invoke() {
+            DiagramContext.withContext(node, new _FunctionTypes._return_P0_E0<BaseDiagramECell>() {
+              public BaseDiagramECell invoke() {
+                return editorCell.value;
+              }
+            }, new Runnable() {
+              public void run() {
+                ContextVariables.withValue("thisNode", node, new Runnable() {
+                  public void run() {
+                    final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                    IDiagramAccessor accessor = new AbstractDiagramAccessor(node) {
+                      public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
+                        final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SLinkOperations.collect(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        return elements;
+                      }
+                      @Override
+                      public List<IConnectionType> getConnectionTypes() {
+                        List<IConnectionType> connectionTypes = new ArrayList<IConnectionType>();
+                        return connectionTypes;
+                      }
+                    };
+
+                    DiagramModel model = DiagramModel.getModel(editorContext, node, "837255710698234719", accessor);
+
+                    IPaletteEntryProvider paletteEntryProvider = new CompositePaletteEntryProvider();
+                    model.setPaletteEntryProvider(paletteEntryProvider);
+
+                    if (DiagramCreationContext.isSubdiagram()) {
+                      editorCell.value = new SubDiagramECell(editorContext, node, model);
+                    } else {
+                      editorCell.value = new RootDiagramECell(editorContext, node, model);
+                    }
+                    editorCell.value.setCellId("Diagram_v93ikk_a4a");
+                    if (editorCell.value.getContextGraph() != null) {
+                      Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
+                      if (defaultParent instanceof RootDCell) {
+                        ((RootDCell) defaultParent).resetButtonConfig();
+                      }
+                    }
+                  }
+                });
+              }
+            });
+          }
+        });
+      }
+    });
+
+    return editorCell.value;
+  }
+  private EditorCell createDiagram_1() {
+    return createDiagram_0(getEditorContext(), myNode);
   }
 }
