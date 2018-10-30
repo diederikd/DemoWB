@@ -921,6 +921,76 @@
       <unit id="837255710698121825" at="16,0,82,0" name="GeneralSL.editor.TransactionKindPSD" />
     </file>
   </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710699393246">
+    <file name="PortPFact.java">
+      <node id="5642467428246420664" at="18,51,19,101" concept="7" />
+      <node id="837255710699393246" at="13,0,15,0" concept="1" trace="PortPFact#()V" />
+      <node id="837255710699393246" at="17,0,21,0" concept="5" trace="getShape#(Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;" />
+      <scope id="837255710699393246" at="13,22,13,22" />
+      <scope id="837255710699393246" at="18,51,19,101" />
+      <scope id="837255710699393246" at="13,0,15,0" />
+      <scope id="837255710699393246" at="17,0,21,0">
+        <var name="bounds" id="837255710699393246" />
+      </scope>
+      <unit id="837255710699393246" at="10,0,25,0" name="GeneralSL.editor.PortPFact" />
+    </file>
+  </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710699399985">
+    <file name="PortPAct.java">
+      <node id="837255710702337478" at="21,95,22,24" concept="6" />
+      <node id="837255710701905338" at="22,24,23,35" concept="2" />
+      <node id="837255710701902378" at="23,35,24,126" concept="6" />
+      <node id="837255710702303615" at="24,126,25,28" concept="2" />
+      <node id="837255710702312381" at="25,28,26,155" concept="6" />
+      <node id="837255710702278708" at="26,155,27,40" concept="2" />
+      <node id="837255710701905343" at="27,40,28,29" concept="2" />
+      <node id="837255710701905348" at="28,29,29,29" concept="2" />
+      <node id="837255710702265814" at="29,29,30,0" concept="9" />
+      <node id="837255710699399985" at="14,0,16,0" concept="1" trace="PortPAct#()V" />
+      <node id="837255710699399985" at="20,0,32,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <scope id="837255710699399985" at="14,21,14,21" />
+      <scope id="837255710699399985" at="14,0,16,0" />
+      <scope id="837255710699399985" at="21,95,30,0">
+        <var name="lt" id="837255710702337481" />
+        <var name="reDouble" id="837255710701902379" />
+        <var name="reDouble2" id="837255710702312382" />
+      </scope>
+      <scope id="837255710699399985" at="20,0,32,0">
+        <var name="bounds" id="837255710699399985" />
+        <var name="graphics" id="837255710699399985" />
+        <var name="style" id="837255710699399985" />
+      </scope>
+      <unit id="837255710699399985" at="11,0,34,0" name="GeneralSL.editor.PortPAct" />
+    </file>
+  </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710701899267">
+    <file name="PortCAct.java">
+      <node id="837255710701899270" at="17,51,18,103" concept="7" />
+      <node id="837255710701899267" at="12,0,14,0" concept="1" trace="PortCAct#()V" />
+      <node id="837255710701899267" at="16,0,20,0" concept="5" trace="getShape#(Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;" />
+      <scope id="837255710701899267" at="12,21,12,21" />
+      <scope id="837255710701899267" at="17,51,18,103" />
+      <scope id="837255710701899267" at="12,0,14,0" />
+      <scope id="837255710701899267" at="16,0,20,0">
+        <var name="bounds" id="837255710701899267" />
+      </scope>
+      <unit id="837255710701899267" at="9,0,24,0" name="GeneralSL.editor.PortCAct" />
+    </file>
+  </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710701899285">
+    <file name="PortCFact.java">
+      <node id="837255710701899288" at="18,51,19,101" concept="7" />
+      <node id="837255710701899285" at="13,0,15,0" concept="1" trace="PortCFact#()V" />
+      <node id="837255710701899285" at="17,0,21,0" concept="5" trace="getShape#(Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;" />
+      <scope id="837255710701899285" at="13,22,13,22" />
+      <scope id="837255710701899285" at="18,51,19,101" />
+      <scope id="837255710701899285" at="13,0,15,0" />
+      <scope id="837255710701899285" at="17,0,21,0">
+        <var name="bounds" id="837255710701899285" />
+      </scope>
+      <unit id="837255710701899285" at="10,0,25,0" name="GeneralSL.editor.PortCFact" />
+    </file>
+  </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/8701802403633621049">
     <file name="ArrowHead.java">
       <node id="8701802403633659021" at="15,0,16,0" concept="3" trace="relativeHeight" />

@@ -13,6 +13,8 @@ import de.itemis.mps.editor.diagram.runtime.ContextVariables;
 import java.util.List;
 import de.itemis.mps.editor.diagram.runtime.model.Port;
 import java.util.ArrayList;
+import GeneralSL.editor.PortPFact;
+import GeneralSL.editor.PortPAct;
 import de.itemis.mps.editor.diagram.runtime.shape.IShape;
 import GeneralSL.editor.TransactionKindPSD;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
@@ -77,6 +79,41 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       public void run() {
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
+        {
+          Port port = new Port("re");
+          port.setRelativeX(-1.5);
+          port.setRelativeY(1);
+          port.setShape(new PortPFact());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("pm");
+          port.setRelativeX(-0.5);
+          port.setRelativeY(1);
+          port.setShape(new PortPFact());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("ex");
+          port.setRelativeX(0.5);
+          port.setRelativeY(1);
+          port.setShape(new PortPAct());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("st");
+          port.setRelativeX(1.5);
+          port.setRelativeY(1);
+          port.setShape(new PortPFact());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("ac");
+          port.setRelativeX(2.5);
+          port.setRelativeY(1);
+          port.setShape(new PortPFact());
+          ports.add(port);
+        }
 
         EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
