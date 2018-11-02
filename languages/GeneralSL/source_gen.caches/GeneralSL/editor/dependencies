@@ -110,7 +110,9 @@
     <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
   </dependency>
   <dependency className="GeneralSL.editor.PortPFact" file="PortPFact.java">
-    <classNode dependClassName="java.awt.Shape" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics2D" />
     <classNode dependClassName="java.awt.geom.Ellipse2D" />
     <classNode dependClassName="java.awt.geom.Rectangle2D" />
     <classNode dependClassName="java.lang.Override" />

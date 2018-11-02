@@ -86,6 +86,7 @@
         <reference id="464479581526895585" name="entityType" index="3C9K9m" />
         <reference id="464479581526895584" name="constructuredentityType" index="3C9K9n" />
       </concept>
+      <concept id="464479581525510736" name="FactSL.structure.Text" flags="ng" index="3CcyfB" />
     </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
       <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
@@ -2156,6 +2157,26 @@
         <ref role="3C9K9n" node="IuxU86frzh" resolve="Werkgever" />
         <ref role="3C9K9m" node="IuxU86fryo" resolve="Persoon" />
       </node>
+    </node>
+    <node concept="3cH7GO" id="IuxU86FIMv" role="3cH7GF">
+      <property role="3cIS3q" value="1" />
+      <property role="3cIS3u" value="1" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <property role="3cH7GY" value="P40" />
+      <property role="TrG5h" value="Naam" />
+      <ref role="3cH7GK" node="IuxU86frzh" resolve="Werkgever" />
+      <node concept="3CcyfB" id="IuxU86FIOB" role="3jxEvA" />
+    </node>
+    <node concept="3cH7GO" id="IuxU86FIQO" role="3cH7GF">
+      <property role="3cIS3q" value="1" />
+      <property role="3cIS3u" value="1" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <property role="3cH7GY" value="P41" />
+      <property role="TrG5h" value="Naam" />
+      <ref role="3cH7GK" node="IuxU86fr$j" resolve="Werknemer" />
+      <node concept="3CcyfB" id="IuxU86FIT2" role="3jxEvA" />
     </node>
     <node concept="3cH7GM" id="IuxU86fr$j" role="3cH7GF">
       <property role="TrG5h" value="Werknemer" />

@@ -990,6 +990,8 @@
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfOriginalProductionStyleClass" />
+    <classNode dependClassName="GeneralSL.editor.PortCAct" />
+    <classNode dependClassName="GeneralSL.editor.PortCFact" />
     <classNode dependClassName="GeneralSL.editor.PortPAct" />
     <classNode dependClassName="GeneralSL.editor.PortPFact" />
     <classNode dependClassName="GeneralSL.editor.TransactionKindPSD" />

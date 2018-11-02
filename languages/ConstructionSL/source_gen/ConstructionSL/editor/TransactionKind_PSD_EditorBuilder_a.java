@@ -13,8 +13,10 @@ import de.itemis.mps.editor.diagram.runtime.ContextVariables;
 import java.util.List;
 import de.itemis.mps.editor.diagram.runtime.model.Port;
 import java.util.ArrayList;
-import GeneralSL.editor.PortPFact;
+import GeneralSL.editor.PortCFact;
 import GeneralSL.editor.PortPAct;
+import GeneralSL.editor.PortCAct;
+import GeneralSL.editor.PortPFact;
 import de.itemis.mps.editor.diagram.runtime.shape.IShape;
 import GeneralSL.editor.TransactionKindPSD;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
@@ -83,14 +85,14 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
           Port port = new Port("re");
           port.setRelativeX(-1.5);
           port.setRelativeY(1);
-          port.setShape(new PortPFact());
+          port.setShape(new PortCFact());
           ports.add(port);
         }
         {
           Port port = new Port("pm");
           port.setRelativeX(-0.5);
           port.setRelativeY(1);
-          port.setShape(new PortPFact());
+          port.setShape(new PortCFact());
           ports.add(port);
         }
         {
@@ -104,14 +106,49 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
           Port port = new Port("st");
           port.setRelativeX(1.5);
           port.setRelativeY(1);
-          port.setShape(new PortPFact());
+          port.setShape(new PortCFact());
           ports.add(port);
         }
         {
           Port port = new Port("ac");
           port.setRelativeX(2.5);
           port.setRelativeY(1);
+          port.setShape(new PortCFact());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("re");
+          port.setRelativeX(-1.5);
+          port.setRelativeY(0);
+          port.setShape(new PortCFact());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("pm");
+          port.setRelativeX(-0.5);
+          port.setRelativeY(0);
+          port.setShape(new PortCAct());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("ex");
+          port.setRelativeX(0.5);
+          port.setRelativeY(0);
           port.setShape(new PortPFact());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("st");
+          port.setRelativeX(1.5);
+          port.setRelativeY(0);
+          port.setShape(new PortCAct());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("ac");
+          port.setRelativeX(2.5);
+          port.setRelativeY(0);
+          port.setShape(new PortCFact());
           ports.add(port);
         }
 

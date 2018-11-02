@@ -923,16 +923,29 @@
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710699393246">
     <file name="PortPFact.java">
-      <node id="5642467428246420664" at="18,51,19,101" concept="7" />
-      <node id="837255710699393246" at="13,0,15,0" concept="1" trace="PortPFact#()V" />
-      <node id="837255710699393246" at="17,0,21,0" concept="5" trace="getShape#(Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;" />
-      <scope id="837255710699393246" at="13,22,13,22" />
-      <scope id="837255710699393246" at="18,51,19,101" />
-      <scope id="837255710699393246" at="13,0,15,0" />
-      <scope id="837255710699393246" at="17,0,21,0">
-        <var name="bounds" id="837255710699393246" />
+      <node id="837255710703132610" at="22,95,23,24" concept="6" />
+      <node id="837255710703132614" at="23,24,24,35" concept="2" />
+      <node id="837255710703132619" at="24,35,25,122" concept="6" />
+      <node id="837255710703132636" at="25,122,26,28" concept="2" />
+      <node id="837255710703137145" at="26,28,27,151" concept="6" />
+      <node id="837255710703132670" at="27,151,28,40" concept="2" />
+      <node id="837255710703132675" at="28,40,29,29" concept="2" />
+      <node id="837255710703132680" at="29,29,30,29" concept="2" />
+      <node id="837255710699393246" at="15,0,17,0" concept="1" trace="PortPFact#()V" />
+      <node id="837255710699393246" at="21,0,32,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <scope id="837255710699393246" at="15,22,15,22" />
+      <scope id="837255710699393246" at="15,0,17,0" />
+      <scope id="837255710699393246" at="22,95,30,29">
+        <var name="lt" id="837255710703132611" />
+        <var name="reDouble" id="837255710703132620" />
+        <var name="reDouble2" id="837255710703137146" />
       </scope>
-      <unit id="837255710699393246" at="10,0,25,0" name="GeneralSL.editor.PortPFact" />
+      <scope id="837255710699393246" at="21,0,32,0">
+        <var name="bounds" id="837255710699393246" />
+        <var name="graphics" id="837255710699393246" />
+        <var name="style" id="837255710699393246" />
+      </scope>
+      <unit id="837255710699393246" at="12,0,34,0" name="GeneralSL.editor.PortPFact" />
     </file>
   </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710699399985">
