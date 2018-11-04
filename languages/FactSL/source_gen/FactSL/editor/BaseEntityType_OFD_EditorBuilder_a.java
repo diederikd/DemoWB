@@ -15,6 +15,7 @@ import de.itemis.mps.editor.diagram.runtime.ContextVariables;
 import java.util.List;
 import de.itemis.mps.editor.diagram.runtime.model.Port;
 import java.util.ArrayList;
+import GeneralSL.editor.NoShape;
 import de.itemis.mps.editor.diagram.runtime.shape.IShape;
 import GeneralSL.editor.Entity;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
@@ -92,6 +93,27 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
       public void run() {
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
+        {
+          Port port = new Port("startevent");
+          port.setRelativeX(1);
+          port.setRelativeY(0.25);
+          port.setShape(new NoShape());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("otherevent");
+          port.setRelativeX(1);
+          port.setRelativeY(0.5);
+          port.setShape(new NoShape());
+          ports.add(port);
+        }
+        {
+          Port port = new Port("endevent");
+          port.setRelativeX(1);
+          port.setRelativeY(0.75);
+          port.setShape(new NoShape());
+          ports.add(port);
+        }
 
         EditorCell contentCell = createCollection_1();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();

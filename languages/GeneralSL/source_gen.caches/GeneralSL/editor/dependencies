@@ -77,6 +77,20 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
   </dependency>
+  <dependency className="GeneralSL.editor.EventKind" file="EventKind.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.BasicStroke" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Font" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.geom.GeneralPath" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
   <dependency className="GeneralSL.editor.Executor" file="Executor.java">
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
     <classNode dependClassName="java.awt.Color" />
@@ -86,6 +100,9 @@
     <classNode dependClassName="java.lang.Double" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
+  </dependency>
+  <dependency className="GeneralSL.editor.NoShape" file="NoShape.java">
     <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
   </dependency>
   <dependency className="GeneralSL.editor.PortCAct" file="PortCAct.java">

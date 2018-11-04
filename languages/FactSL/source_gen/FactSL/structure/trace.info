@@ -252,8 +252,8 @@
       <node id="2743742872034984101" at="225,105,226,71" concept="2" />
       <node id="2743742872034984101" at="226,71,227,93" concept="2" />
       <node id="2743742872034984101" at="227,93,228,17" concept="2" />
-      <node id="2222079712866223328" at="228,17,229,171" concept="2" />
-      <node id="2743742872034984101" at="229,171,230,22" concept="7" />
+      <node id="2222079712866223328" at="228,17,229,172" concept="2" />
+      <node id="2743742872034984101" at="229,172,230,22" concept="7" />
       <node id="2743742872034984101" at="222,0,232,0" concept="9" trace="createDescriptorForEventType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2743742872034984101" at="79,43,80,34" />
       <scope id="2743742872034984101" at="222,67,230,22">

@@ -143,6 +143,7 @@
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AccessorKey" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.DiagramModel" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EndpointUtil" />

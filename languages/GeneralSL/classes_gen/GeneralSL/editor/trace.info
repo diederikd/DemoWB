@@ -1004,6 +1004,71 @@
       <unit id="837255710701899285" at="10,0,25,0" name="GeneralSL.editor.PortCFact" />
     </file>
   </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710704245460">
+    <file name="EventKind.java">
+      <node id="837255710705466603" at="17,0,18,0" concept="3" trace="name" />
+      <node id="837255710705466603" at="19,33,20,21" concept="2" />
+      <node id="837255710704245460" at="25,34,26,27" concept="7" />
+      <node id="837255710704245463" at="32,95,33,42" concept="6" />
+      <node id="837255710704245468" at="33,42,34,37" concept="6" />
+      <node id="837255710704245474" at="34,37,35,39" concept="6" />
+      <node id="837255710704245480" at="35,39,36,41" concept="6" />
+      <node id="837255710704245490" at="36,41,37,42" concept="6" />
+      <node id="837255710704245509" at="37,42,38,18" concept="6" />
+      <node id="837255710704245513" at="38,18,39,32" concept="6" />
+      <node id="837255710704245517" at="39,32,40,0" concept="9" />
+      <node id="837255710704245638" at="40,0,41,0" concept="9" />
+      <node id="837255710704245639" at="41,0,42,27" concept="2" />
+      <node id="837255710704867766" at="42,27,43,43" concept="2" />
+      <node id="837255710704867773" at="43,43,44,44" concept="2" />
+      <node id="837255710704245647" at="44,44,45,27" concept="2" />
+      <node id="837255710704245655" at="45,27,46,27" concept="2" />
+      <node id="837255710704245663" at="46,27,47,27" concept="2" />
+      <node id="837255710704245671" at="47,27,48,22" concept="2" />
+      <node id="837255710704867782" at="48,22,49,25" concept="2" />
+      <node id="837255710704867787" at="49,25,50,48" concept="2" />
+      <node id="837255710704867796" at="50,48,51,25" concept="2" />
+      <node id="837255710704245675" at="51,25,52,0" concept="9" />
+      <node id="837255710704245676" at="52,0,53,47" concept="8" />
+      <node id="837255710704911449" at="53,47,54,44" concept="2" />
+      <node id="837255710705758613" at="54,44,55,35" concept="2" />
+      <node id="837255710705778020" at="55,35,56,60" concept="2" />
+      <node id="837255710705657365" at="56,60,57,103" concept="2" />
+      <node id="837255710704245739" at="57,103,58,53" concept="8" />
+      <node id="837255710704245460" at="19,0,22,0" concept="1" trace="EventKind#(Ljava/lang/String;)V" />
+      <node id="837255710704245460" at="23,0,28,0" concept="5" trace="getDefaultSize#()Ljava/lang/Double;" />
+      <node id="837255710704245460" at="31,0,60,0" concept="5" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <scope id="837255710704245460" at="19,33,20,21" />
+      <scope id="837255710704245460" at="25,34,26,27" />
+      <scope id="837255710704245460" at="19,0,22,0">
+        <var name="name" id="837255710705466603" />
+      </scope>
+      <scope id="837255710704245460" at="23,0,28,0" />
+      <scope id="837255710704245460" at="32,95,58,53">
+        <var name="height" id="837255710704245475" />
+        <var name="kappa" id="837255710704245514" />
+        <var name="r" id="837255710704245510" />
+        <var name="shape" id="837255710704245464" />
+        <var name="width" id="837255710704245469" />
+        <var name="x" id="837255710704245481" />
+        <var name="y" id="837255710704245491" />
+      </scope>
+      <scope id="837255710704245460" at="31,0,60,0">
+        <var name="bounds" id="837255710704245460" />
+        <var name="graphics" id="837255710704245460" />
+        <var name="style" id="837255710704245460" />
+      </scope>
+      <unit id="837255710704245460" at="15,0,62,0" name="GeneralSL.editor.EventKind" />
+    </file>
+  </root>
+  <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/837255710707625959">
+    <file name="NoShape.java">
+      <node id="837255710707625959" at="10,0,12,0" concept="1" trace="NoShape#()V" />
+      <scope id="837255710707625959" at="10,20,10,20" />
+      <scope id="837255710707625959" at="10,0,12,0" />
+      <unit id="837255710707625959" at="7,0,18,0" name="GeneralSL.editor.NoShape" />
+    </file>
+  </root>
   <root nodeRef="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/8701802403633621049">
     <file name="ArrowHead.java">
       <node id="8701802403633659021" at="15,0,16,0" concept="3" trace="relativeHeight" />

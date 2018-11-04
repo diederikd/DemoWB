@@ -58,6 +58,7 @@ import GeneralSL.editor.ArrowGeneralisation;
 import GeneralSL.editor.ArrowHead;
 import de.itemis.mps.editor.diagram.styles.editor.LineStyle;
 import de.itemis.mps.editor.diagram.runtime.DiagramUtil;
+import de.itemis.mps.editor.diagram.runtime.model.AccessorKey;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
 import de.itemis.mps.editor.diagram.runtime.layout.LayeredLayouter;
@@ -187,6 +188,27 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                         }.query())) {
                           elements.addAll(accessorFactory.fromSNode(e, false));
                         }
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L, "FactSL.structure.EventType"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SNodeOperations.ofConcept(SLinkOperations.collect(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x1ed669b9cbc1f65bL, "startEvent")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L, "FactSL.structure.EventType"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SNodeOperations.ofConcept(SLinkOperations.collect(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x1ed669b9cbc1f65dL, "endEvent")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L, "FactSL.structure.EventType"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
+                        }
                         for (final SNode parameterObject : new Object() {
                           public Iterable<SNode> query() {
                             return SLinkOperations.collectMany(SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a8L, "FactSL.structure.ConstructedEntityType")), MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a8L, 0x67229b7ee4cbd7aL, "aggregation"));
@@ -196,7 +218,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             public void run() {
                               final ContextVariables _variablesContext = ContextVariables.getCurrent();
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
-                              editorCell.setCellId("transformedGraphElement_d3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+                              editorCell.setCellId("transformedGraphElement_g3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
 
                               final IShape startShape = null;
@@ -246,7 +268,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             public void run() {
                               final ContextVariables _variablesContext = ContextVariables.getCurrent();
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
-                              editorCell.setCellId("transformedGraphElement_e3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+                              editorCell.setCellId("transformedGraphElement_h3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
 
                               final IShape startShape = null;
@@ -296,7 +318,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             public void run() {
                               final ContextVariables _variablesContext = ContextVariables.getCurrent();
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
-                              editorCell.setCellId("transformedGraphElement_f3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+                              editorCell.setCellId("transformedGraphElement_i3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
 
                               final IShape startShape = null;
@@ -329,7 +351,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                               };
                               accessor.setRootCell(editorCell);
                               Style style = new StyleImpl();
-                              style.set(StyleAttributes.getInstance().<LineStyle>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-style"), _StyleParameter_QueryFunction_t6yvoi_a0f3a());
+                              style.set(StyleAttributes.getInstance().<LineStyle>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-style"), _StyleParameter_QueryFunction_t6yvoi_a0i3a());
                               style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), StyleRegistry.getInstance().getSimpleColor(new Color(9109504)));
                               accessor.setStyle(style);
 
@@ -347,11 +369,11 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             public void run() {
                               final ContextVariables _variablesContext = ContextVariables.getCurrent();
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
-                              editorCell.setCellId("transformedGraphElement_g3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+                              editorCell.setCellId("transformedGraphElement_j3a" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
-                              final EditorCell labelCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a6d0(editorContext, parameterObject).createCell());
-                              final EditorCell startRoleCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a0g3a(editorContext, parameterObject).createCell());
-                              final EditorCell endRoleCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a0g3a_0(editorContext, parameterObject).createCell());
+                              final EditorCell labelCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a9d0(editorContext, parameterObject).createCell());
+                              final EditorCell startRoleCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a0j3a(editorContext, parameterObject).createCell());
+                              final EditorCell endRoleCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a0j3a_0(editorContext, parameterObject).createCell());
                               if (labelCell != null) {
                                 editorCell.addEditorCell(labelCell);
                               }
@@ -420,6 +442,180 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                             }
                           });
                         }
+                        for (final SNode parameterObject : new Object() {
+                          public Iterable<SNode> query() {
+                            return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, "FactSL.structure.FactType"))).where(new IWhereFilter<SNode>() {
+                              public boolean accept(SNode it) {
+                                return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x1ed669b9cbc1f65bL, "startEvent")) != null);
+                              }
+                            });
+                          }
+                        }.query()) {
+                          ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
+                            public void run() {
+                              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                              final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
+                              editorCell.setCellId("transformedGraphElement_k3a" + "." + "start" + ((SNode) _variablesContext.getValue("parameterObject")));
+
+                              final EditorCell labelCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a01d0(editorContext, parameterObject).createCell());
+                              if (labelCell != null) {
+                                editorCell.addEditorCell(labelCell);
+                              }
+
+                              final IShape startShape = null;
+                              final IShape endShape = null;
+                              AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(new AccessorKey("start" + ((SNode) _variablesContext.getValue("parameterObject")))) {
+                                @Override
+                                public IConnectionEndpointReference readFrom() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(((SNode) _variablesContext.getValue("parameterObject"))), "startevent");
+                                }
+                                @Override
+                                public IConnectionEndpointReference readTo() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x1ed669b9cbc1f65bL, "startEvent"))), "left");
+                                }
+                                @Override
+                                public IShape getStartShape() {
+                                  return startShape;
+                                }
+                                @Override
+                                public IShape getEndShape() {
+                                  return endShape;
+                                }
+                                @Override
+                                public EditorCell getLabelCell() {
+                                  return labelCell;
+                                }
+                                @Override
+                                public void delete() {
+                                }
+                                @Nullable
+                                public SNode getSNode() {
+                                  return parameterObject;
+                                }
+
+                              };
+                              accessor.setRootCell(editorCell);
+                              Style style = new StyleImpl();
+                              style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), StyleRegistry.getInstance().getSimpleColor(new Color(9109504)));
+                              accessor.setStyle(style);
+
+
+                              elements.add(accessor);
+                            }
+                          });
+                        }
+                        for (final SNode parameterObject : new Object() {
+                          public Iterable<SNode> query() {
+                            return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, "FactSL.structure.FactType"))).where(new IWhereFilter<SNode>() {
+                              public boolean accept(SNode it) {
+                                return (SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x1ed669b9cbc1f65dL, "endEvent")) != null);
+                              }
+                            });
+                          }
+                        }.query()) {
+                          ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
+                            public void run() {
+                              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                              final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
+                              editorCell.setCellId("transformedGraphElement_l3a" + "." + "end" + ((SNode) _variablesContext.getValue("parameterObject")));
+
+                              final EditorCell labelCell = DiagramUtil.getCellIfNotEmpty(new ObjectFactDiagram_EditorBuilder_a.Inline_Builder_t6yvoi_a11d0(editorContext, parameterObject).createCell());
+                              if (labelCell != null) {
+                                editorCell.addEditorCell(labelCell);
+                              }
+
+                              final IShape startShape = null;
+                              final IShape endShape = null;
+                              AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(new AccessorKey("end" + ((SNode) _variablesContext.getValue("parameterObject")))) {
+                                @Override
+                                public IConnectionEndpointReference readFrom() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(((SNode) _variablesContext.getValue("parameterObject"))), "endevent");
+                                }
+                                @Override
+                                public IConnectionEndpointReference readTo() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getContainmentLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x1ed669b9cbc1f65dL, "endEvent"))), "left");
+                                }
+                                @Override
+                                public IShape getStartShape() {
+                                  return startShape;
+                                }
+                                @Override
+                                public IShape getEndShape() {
+                                  return endShape;
+                                }
+                                @Override
+                                public EditorCell getLabelCell() {
+                                  return labelCell;
+                                }
+                                @Override
+                                public void delete() {
+                                }
+                                @Nullable
+                                public SNode getSNode() {
+                                  return parameterObject;
+                                }
+
+                              };
+                              accessor.setRootCell(editorCell);
+                              Style style = new StyleImpl();
+                              style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), StyleRegistry.getInstance().getSimpleColor(new Color(9109504)));
+                              accessor.setStyle(style);
+
+
+                              elements.add(accessor);
+                            }
+                          });
+                        }
+                        for (final SNode parameterObject : new Object() {
+                          public Iterable<SNode> query() {
+                            return SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L, "FactSL.structure.EventType"));
+                          }
+                        }.query()) {
+                          ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
+                            public void run() {
+                              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                              final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
+                              editorCell.setCellId("transformedGraphElement_m3a" + "." + "end" + ((SNode) _variablesContext.getValue("parameterObject")));
+
+
+                              final IShape startShape = null;
+                              final IShape endShape = null;
+                              AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(new AccessorKey("end" + ((SNode) _variablesContext.getValue("parameterObject")))) {
+                                @Override
+                                public IConnectionEndpointReference readFrom() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L, 0x1ed669b9cbfe44e0L, "concerns"))), "otherevent");
+                                }
+                                @Override
+                                public IConnectionEndpointReference readTo() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(((SNode) _variablesContext.getValue("parameterObject"))), "left");
+                                }
+                                @Override
+                                public IShape getStartShape() {
+                                  return startShape;
+                                }
+                                @Override
+                                public IShape getEndShape() {
+                                  return endShape;
+                                }
+                                @Override
+                                public void delete() {
+                                }
+                                @Nullable
+                                public SNode getSNode() {
+                                  return parameterObject;
+                                }
+
+                              };
+                              accessor.setRootCell(editorCell);
+                              Style style = new StyleImpl();
+                              style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), StyleRegistry.getInstance().getSimpleColor(new Color(9109504)));
+                              accessor.setStyle(style);
+
+
+                              elements.add(accessor);
+                            }
+                          });
+                        }
                         return elements;
                       }
                       @Override
@@ -461,14 +657,14 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
   private EditorCell createDiagram_1() {
     return createDiagram_0(getEditorContext(), myNode);
   }
-  private LineStyle _StyleParameter_QueryFunction_t6yvoi_a0f3a() {
+  private LineStyle _StyleParameter_QueryFunction_t6yvoi_a0i3a() {
     return LineStyle.DASHED;
   }
-  /*package*/ static class Inline_Builder_t6yvoi_a0g3a extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder_t6yvoi_a0j3a extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
 
-    /*package*/ Inline_Builder_t6yvoi_a0g3a(@NotNull EditorContext context, @NotNull SNode node) {
+    /*package*/ Inline_Builder_t6yvoi_a0j3a(@NotNull EditorContext context, @NotNull SNode node) {
       super(context);
       myNode = node;
     }
@@ -485,9 +681,11 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 
     private EditorCell createCollection_1() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-      editorCell.setCellId("Collection_t6yvoi_a0a6d0");
+      editorCell.setCellId("Collection_t6yvoi_a0a9d0");
       Style style = new StyleImpl();
       style.set(StyleAttributes.SELECTABLE, false);
+      style.set(StyleAttributes.FONT_FAMILY, "Helvetica");
+      style.set(StyleAttributes.FONT_SIZE, 14);
       editorCell.getStyle().putAll(style);
       editorCell.addEditorCell(createProperty_1());
       editorCell.addEditorCell(createConstant_2());
@@ -523,7 +721,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     }
     private EditorCell createConstant_2() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "..");
-      editorCell.setCellId("Constant_t6yvoi_b0a0g3a");
+      editorCell.setCellId("Constant_t6yvoi_b0a0j3a");
       Style style = new StyleImpl();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -559,11 +757,11 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
       }
     }
   }
-  /*package*/ static class Inline_Builder_t6yvoi_a0g3a_0 extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder_t6yvoi_a0j3a_0 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
 
-    /*package*/ Inline_Builder_t6yvoi_a0g3a_0(@NotNull EditorContext context, @NotNull SNode node) {
+    /*package*/ Inline_Builder_t6yvoi_a0j3a_0(@NotNull EditorContext context, @NotNull SNode node) {
       super(context);
       myNode = node;
     }
@@ -580,9 +778,11 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
 
     private EditorCell createCollection_2() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-      editorCell.setCellId("Collection_t6yvoi_a0a6d0_0");
+      editorCell.setCellId("Collection_t6yvoi_a0a9d0_0");
       Style style = new StyleImpl();
       style.set(StyleAttributes.SELECTABLE, false);
+      style.set(StyleAttributes.FONT_FAMILY, "Helvetica");
+      style.set(StyleAttributes.FONT_SIZE, 14);
       editorCell.getStyle().putAll(style);
       editorCell.addEditorCell(createProperty_3());
       editorCell.addEditorCell(createConstant_3());
@@ -619,7 +819,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     }
     private EditorCell createConstant_3() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "..");
-      editorCell.setCellId("Constant_t6yvoi_b0a0g3a_0");
+      editorCell.setCellId("Constant_t6yvoi_b0a0j3a_0");
       Style style = new StyleImpl();
       style.set(StyleAttributes.PUNCTUATION_LEFT, true);
       style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
@@ -656,16 +856,16 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     }
     private EditorCell createConstant_4() {
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "    ");
-      editorCell.setCellId("Constant_t6yvoi_d0a0g3a");
+      editorCell.setCellId("Constant_t6yvoi_d0a0j3a");
       editorCell.setDefaultText("");
       return editorCell;
     }
   }
-  /*package*/ static class Inline_Builder_t6yvoi_a6d0 extends AbstractEditorBuilder {
+  /*package*/ static class Inline_Builder_t6yvoi_a9d0 extends AbstractEditorBuilder {
     @NotNull
     private SNode myNode;
 
-    /*package*/ Inline_Builder_t6yvoi_a6d0(@NotNull EditorContext context, @NotNull SNode node) {
+    /*package*/ Inline_Builder_t6yvoi_a9d0(@NotNull EditorContext context, @NotNull SNode node) {
       super(context);
       myNode = node;
     }
@@ -690,6 +890,10 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
         editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
         editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         editorCell.setCellId("property_name1");
+        Style style = new StyleImpl();
+        style.set(StyleAttributes.FONT_FAMILY, "Helvetica");
+        style.set(StyleAttributes.FONT_SIZE, 11);
+        editorCell.getStyle().putAll(style);
         editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
         setCellContext(editorCell);
         Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));
@@ -706,6 +910,66 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
       } finally {
         getCellFactory().popCellContext();
       }
+    }
+  }
+  /*package*/ static class Inline_Builder_t6yvoi_a01d0 extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_t6yvoi_a01d0(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createConstant_5();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createConstant_5() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "start");
+      editorCell.setCellId("Constant_t6yvoi_a0k3a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.FONT_FAMILY, "Helvetica");
+      style.set(StyleAttributes.FONT_SIZE, 11);
+      editorCell.getStyle().putAll(style);
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
+  }
+  /*package*/ static class Inline_Builder_t6yvoi_a11d0 extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_t6yvoi_a11d0(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createConstant_6();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createConstant_6() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "end");
+      editorCell.setCellId("Constant_t6yvoi_a0l3a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.FONT_FAMILY, "Helvetica");
+      style.set(StyleAttributes.FONT_SIZE, 11);
+      editorCell.getStyle().putAll(style);
+      editorCell.setDefaultText("");
+      return editorCell;
     }
   }
 }
