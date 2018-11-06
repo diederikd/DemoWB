@@ -50,6 +50,8 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
 import jetbrains.mps.nodeEditor.selection.NodeRangeSelection;
 import jetbrains.mps.smodel.action.NodeFactoryManager;
 
@@ -404,6 +406,24 @@ import jetbrains.mps.smodel.action.NodeFactoryManager;
       }
       return SLinkOperations.getTarget(childNode, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(childNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd9ff969L, "transactionKind"));
     }
+    @Override
+    protected void createInnerCells() {
+      try {
+        getCellFactory().pushCellContext();
+        getCellFactory().addCellContextHints(Sequence.fromIterable(getEditorHints0()).toGenericArray(String.class));
+        getCellFactory().removeCellContextHints();
+        super.createInnerCells();
+        setInnerCellsContext();
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+    private Iterable<String> getEditorHints0() {
+      if (SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fdb54ebcL, "filter"))) {
+        return ListSequence.fromListAndArray(new ArrayList<String>(), "GeneralSL.editor.DemoHints.PSD");
+      }
+      return ListSequence.fromList(new ArrayList<String>());
+    }
   }
   public static class RangeSelectionFilter_vlyntf_c11a extends NodeRangeSelection.RangeSelectionFilter {
 
@@ -522,6 +542,24 @@ import jetbrains.mps.smodel.action.NodeFactoryManager;
         return true;
       }
       return false;
+    }
+    @Override
+    protected void createInnerCells() {
+      try {
+        getCellFactory().pushCellContext();
+        getCellFactory().addCellContextHints(Sequence.fromIterable(getEditorHints1()).toGenericArray(String.class));
+        getCellFactory().removeCellContextHints();
+        super.createInnerCells();
+        setInnerCellsContext();
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+    private Iterable<String> getEditorHints1() {
+      if (SPropertyOperations.getBoolean(myNode, MetaAdapterFactory.getProperty(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fdb54ebcL, "filter"))) {
+        return ListSequence.fromListAndArray(new ArrayList<String>(), "GeneralSL.editor.DemoHints.PSD");
+      }
+      return ListSequence.fromList(new ArrayList<String>());
     }
   }
   public static class RangeSelectionFilter_vlyntf_g11a extends NodeRangeSelection.RangeSelectionFilter {

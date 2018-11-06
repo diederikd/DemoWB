@@ -7,6 +7,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum generalStepKind {
+  initial("initial", "in"),
   request("request", "rq"),
   promiss("promiss", "pm"),
   execute("execute", "ex"),
@@ -34,6 +35,7 @@ public enum generalStepKind {
   }
   public static List<generalStepKind> getConstants() {
     List<generalStepKind> list = ListSequence.fromList(new LinkedList<generalStepKind>());
+    ListSequence.fromList(list).addElement(generalStepKind.initial);
     ListSequence.fromList(list).addElement(generalStepKind.request);
     ListSequence.fromList(list).addElement(generalStepKind.promiss);
     ListSequence.fromList(list).addElement(generalStepKind.execute);
@@ -51,6 +53,9 @@ public enum generalStepKind {
   public static generalStepKind parseValue(String value) {
     if (value == null) {
       return generalStepKind.getDefault();
+    }
+    if (value.equals(generalStepKind.initial.getValueAsString())) {
+      return generalStepKind.initial;
     }
     if (value.equals(generalStepKind.request.getValueAsString())) {
       return generalStepKind.request;

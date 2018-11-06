@@ -60,6 +60,10 @@
     <property role="TrG5h" value="generalStepKind" />
     <property role="PDuV0" value="true" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="2Ze6BQptBPr" role="M5hS2">
+      <property role="1uS6qo" value="initial" />
+      <property role="1uS6qv" value="in" />
+    </node>
     <node concept="M4N5e" id="m5XqSfxGpI" role="M5hS2">
       <property role="1uS6qo" value="request" />
       <property role="1uS6qv" value="rq" />
@@ -193,6 +197,10 @@
     <node concept="M4N5e" id="m5XqSfxGxh" role="M5hS2">
       <property role="1uS6qo" value="wait" />
       <property role="1uS6qv" value="wait" />
+    </node>
+    <node concept="M4N5e" id="2Ze6BQpx5lr" role="M5hS2">
+      <property role="1uS6qo" value="reversion" />
+      <property role="1uS6qv" value="reversion" />
     </node>
   </node>
 </model>

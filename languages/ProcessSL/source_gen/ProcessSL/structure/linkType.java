@@ -8,7 +8,8 @@ import java.util.LinkedList;
 
 public enum linkType {
   response("response", "response"),
-  wait("wait", "wait");
+  wait("wait", "wait"),
+  reversion("reversion", "reversion");
 
   private final String myName;
   public String getName() {
@@ -29,6 +30,7 @@ public enum linkType {
     List<linkType> list = ListSequence.fromList(new LinkedList<linkType>());
     ListSequence.fromList(list).addElement(linkType.response);
     ListSequence.fromList(list).addElement(linkType.wait);
+    ListSequence.fromList(list).addElement(linkType.reversion);
     return list;
   }
   public static linkType getDefault() {
@@ -43,6 +45,9 @@ public enum linkType {
     }
     if (value.equals(linkType.wait.getValueAsString())) {
       return linkType.wait;
+    }
+    if (value.equals(linkType.reversion.getValueAsString())) {
+      return linkType.reversion;
     }
     return linkType.getDefault();
   }
