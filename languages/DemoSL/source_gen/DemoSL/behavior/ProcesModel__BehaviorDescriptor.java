@@ -16,11 +16,11 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -39,6 +39,8 @@ public final class ProcesModel__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(AddStandardTransactionPattern_id2S7w2zXIJpS, AddStrandardTransactionStepKinds_id2Ze6BQpqpsF, AddStandardTransactionPatternLinks_id2Ze6BQppa$O, AddTransactionStepKind_id2S7w2zXJd0A, AddLink_id2Ze6BQppchK);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fdb54ebcL, "filter"), "" + (false));
+    SPropertyOperations.set(__thisNode__, MetaAdapterFactory.getProperty(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2fce1a7d999edf64L, "ingnoreLinks"), "" + (false));
   }
 
   /*package*/ static void AddStandardTransactionPattern_id2S7w2zXIJpS(@NotNull SNode __thisNode__, SNode transactionKind) {

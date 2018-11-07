@@ -4698,6 +4698,18 @@
       <ref role="a0NRD" node="2Ze6BQpzueB" resolve="quit automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuev" resolve="initial automatisch aanpassing overeenkomstig het verzoek" />
     </node>
+    <node concept="a0NRJ" id="2Ze6BQpEiWi" role="3jxjQb">
+      <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
+      <ref role="a0NRG" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
+    </node>
+    <node concept="a0NRJ" id="2Ze6BQpEj1e" role="3jxjQb">
+      <ref role="a0NRD" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
+      <ref role="a0NRG" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="a0NRJ" id="2Ze6BQpEj6d" role="3jxjQb">
+      <ref role="a0NRD" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
+      <ref role="a0NRG" node="2Ze6BQpzudv" resolve="execute vaststellen van de spreiding van de uren " />
+    </node>
   </node>
 </model>
 

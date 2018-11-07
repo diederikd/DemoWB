@@ -93,6 +93,7 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createRefCell_1());
+    editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createQueryList_3());
     return editorCell;
   }
@@ -478,14 +479,23 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
       }
     }
   }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_2x95dk_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
   private EditorCell createQueryList_2(final EditorContext editorContext, final SNode node) {
 
     return QueryListContext.computeWithContext(new QueryListContext(node), new _FunctionTypes._return_P0_E0<EditorCell_QueryList>() {
       public EditorCell_QueryList invoke() {
-        QueryListHandler handler = new TransactionKindReference_PSD_EditorBuilder_a.QueryListHandler_2x95dk_f0(editorContext, node);
+        QueryListHandler handler = new TransactionKindReference_PSD_EditorBuilder_a.QueryListHandler_2x95dk_g0(editorContext, node);
 
         EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
-        editorCell.setCellId("QueryList_2x95dk_f0");
+        editorCell.setCellId("QueryList_2x95dk_g0");
         Style style = new StyleImpl();
         style.set(StyleAttributes.READ_ONLY, true);
         style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
@@ -501,9 +511,9 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
   private EditorCell createQueryList_3() {
     return createQueryList_2(getEditorContext(), myNode);
   }
-  private static class QueryListHandler_2x95dk_f0 extends QueryListHandler {
+  private static class QueryListHandler_2x95dk_g0 extends QueryListHandler {
     private SNode myNode;
-    public QueryListHandler_2x95dk_f0(EditorContext context, SNode ownerNode) {
+    public QueryListHandler_2x95dk_g0(EditorContext context, SNode ownerNode) {
       super(context, ownerNode);
       myNode = ownerNode;
     }
@@ -554,6 +564,11 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
       links = ListSequence.fromList(links).union(Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
           return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind")) && SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getNextSibling(myNode), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, "ConstructionSL.structure.TransactionKindReference")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind"));
+        }
+      })).toListSequence();
+      links = ListSequence.fromList(links).union(Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind")) && Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, "DemoSL.structure.ProcesStructureDiagram")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds")), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind"))).contains(SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind"))) && SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) != SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind"));
         }
       })).toListSequence();
       return links;

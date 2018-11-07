@@ -89,6 +89,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_1());
+    editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createRefNodeList_0());
     editorCell.addEditorCell(createCollection_1());
     return editorCell;
@@ -136,8 +137,17 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_v93ikk_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new ProcesStructureDiagram_EditorBuilder_a.transactionKindsListHandler_v93ikk_d0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new ProcesStructureDiagram_EditorBuilder_a.transactionKindsListHandler_v93ikk_e0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_transactionKinds");
     Style style = new StyleImpl();
@@ -148,11 +158,11 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class transactionKindsListHandler_v93ikk_d0 extends RefNodeListHandler {
+  private static class transactionKindsListHandler_v93ikk_e0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public transactionKindsListHandler_v93ikk_d0(SNode ownerNode, EditorContext context) {
+    public transactionKindsListHandler_v93ikk_e0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -177,7 +187,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(transactionKindsListHandler_v93ikk_d0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(transactionKindsListHandler_v93ikk_e0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -215,7 +225,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-    editorCell.setCellId("Collection_v93ikk_e0");
+    editorCell.setCellId("Collection_v93ikk_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -274,7 +284,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                     } else {
                       editorCell.value = new RootDiagramECell(editorContext, node, model);
                     }
-                    editorCell.value.setCellId("Diagram_v93ikk_a4a");
+                    editorCell.value.setCellId("Diagram_v93ikk_a5a");
                     if (editorCell.value.getContextGraph() != null) {
                       Object defaultParent = editorCell.value.getContextGraph().getDefaultParent();
                       if (defaultParent instanceof RootDCell) {

@@ -20,7 +20,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Arrays.asList(new ConceptEditor[]{new Link_Editor(), new Link_PSD_Editor()});
+        return Arrays.asList(new ConceptEditor[]{new Link_Editor(), new Link_PM_Editor(), new Link_PSD_Editor()});
       case 1:
         return Arrays.asList(new ConceptEditor[]{new TransactionKindStepKind_Editor(), new TransactionKindStepKind_PSD_Editor()});
       default:
