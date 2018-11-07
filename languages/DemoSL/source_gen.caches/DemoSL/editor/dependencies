@@ -348,6 +348,8 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="DemoSL.editor.ProcesStructureDiagram_EditorBuilder_a" file="ProcesStructureDiagram_EditorBuilder_a.java">
+    <classNode dependClassName="GeneralSL.editor.ArrowHead" />
+    <classNode dependClassName="GeneralSL.editor.PortCFact" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.DiagramContext" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.EditorUtil" />
@@ -356,20 +358,28 @@
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractBoxAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.DiagramModel" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EndpointUtil" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionType" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.Port" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShape" />
+    <classNode dependClassName="java.awt.Color" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.Objects" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
@@ -378,11 +388,13 @@
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
@@ -407,6 +419,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />

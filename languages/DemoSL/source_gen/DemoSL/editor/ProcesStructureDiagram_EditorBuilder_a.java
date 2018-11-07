@@ -54,6 +54,19 @@ import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import de.itemis.mps.editor.diagram.runtime.model.Port;
+import de.itemis.mps.editor.diagram.runtime.shape.IShape;
+import GeneralSL.editor.PortCFact;
+import de.itemis.mps.editor.diagram.runtime.model.AbstractBoxAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.EndpointUtil;
+import org.jetbrains.annotations.Nullable;
+import java.util.Collections;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import GeneralSL.editor.ArrowHead;
+import java.awt.Color;
+import de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor;
+import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
@@ -265,6 +278,95 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                         }.query())) {
                           elements.addAll(accessorFactory.fromSNode(e, false));
                         }
+                        for (final SNode parameterObject : ListSequence.fromListAndArray(new ArrayList<SNode>(), new Object() {
+                          public SNode query() {
+                            return ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds"))).first();
+                          }
+                        }.query())) {
+                          ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
+                            public void run() {
+                              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                              final EditorCell editorCell = new ProcesStructureDiagram_EditorBuilder_a.Inline_Builder_v93ikk_a1a5a(editorContext, parameterObject).createCell();
+
+                              final List<Port> ports = new ArrayList<Port>();
+
+                              final IShape shape = new PortCFact();
+
+                              AbstractBoxAccessor accessor = new AbstractBoxAccessor(EndpointUtil.createAccessorKeyForSNode(((SNode) _variablesContext.getValue("parameterObject")))) {
+                                @Nullable
+                                public SNode getSNode() {
+                                  return parameterObject;
+                                }
+                                public void delete() {
+                                }
+                                @NotNull
+                                @Override
+                                public List<EditorCell> getContentCells() {
+                                  return Collections.singletonList(editorCell);
+                                }
+                                @NotNull
+                                @Override
+                                public List<Port> getPorts() {
+                                  return ports;
+                                }
+                                @Override
+                                public IShape getShape() {
+                                  return shape;
+                                }
+                              };
+                              accessor.setRootCell(editorCell);
+
+                              elements.add(accessor);
+                            }
+                          });
+                        }
+                        for (final SNode parameterObject : ListSequence.fromListAndArray(new ArrayList<SNode>(), new Object() {
+                          public SNode query() {
+                            return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
+                          }
+                        }.query())) {
+                          ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
+                            public void run() {
+                              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                              final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
+                              editorCell.setCellId("transformedGraphElement_c0f0" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+
+
+                              final IShape startShape = null;
+                              final IShape endShape = new ArrowHead(0.5, 0.5, true, new Color(120, 0, 0));
+                              AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(EndpointUtil.createAccessorKeyForSNode(((SNode) _variablesContext.getValue("parameterObject")))) {
+                                @Override
+                                public IConnectionEndpointReference readFrom() {
+                                  return EndpointUtil.createEndpointReferenceForNodeSafe(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds"))).first());
+                                }
+                                @Override
+                                public IConnectionEndpointReference readTo() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds"))).first(), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind"))), "re");
+                                }
+                                @Override
+                                public IShape getStartShape() {
+                                  return startShape;
+                                }
+                                @Override
+                                public IShape getEndShape() {
+                                  return endShape;
+                                }
+                                @Override
+                                public void delete() {
+                                }
+                                @Nullable
+                                public SNode getSNode() {
+                                  return parameterObject;
+                                }
+
+                              };
+                              accessor.setRootCell(editorCell);
+
+
+                              elements.add(accessor);
+                            }
+                          });
+                        }
                         return elements;
                       }
                       @Override
@@ -304,5 +406,31 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
   }
   private EditorCell createDiagram_1() {
     return createDiagram_0(getEditorContext(), myNode);
+  }
+  /*package*/ static class Inline_Builder_v93ikk_a1a5a extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_v93ikk_a1a5a(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createConstant_3();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createConstant_3() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
+      editorCell.setCellId("Constant_v93ikk_a0b0f0");
+      editorCell.setDefaultText("");
+      return editorCell;
+    }
   }
 }
