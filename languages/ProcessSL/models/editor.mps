@@ -268,7 +268,7 @@
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F0A7n" id="2S7w2zXEPfB" role="3EZMnx">
-        <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="type" />
+        <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="linkType" />
       </node>
       <node concept="3F0ifn" id="2S7w2zXDvrn" role="3EZMnx">
         <property role="3F0ifm" value="from C-fact" />
@@ -869,7 +869,7 @@
           <property role="3F0ifm" value=":" />
         </node>
         <node concept="3F0A7n" id="2S7w2zXO9Y4" role="3EZMnx">
-          <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="type" />
+          <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="linkType" />
         </node>
         <node concept="l2Vlx" id="2Ze6BQpCGyr" role="2iSdaV" />
       </node>
@@ -1008,6 +1008,20 @@
           <property role="3F0ifm" value="from " />
         </node>
         <node concept="3EZMnI" id="2Ze6BQpGbQq" role="3EZMnx">
+          <node concept="1iCGBv" id="6z7DEV3EGPR" role="3EZMnx">
+            <ref role="1NtTu8" to="it18:m5XqSfxGx7" resolve="transactionKindStepKindFrom" />
+            <node concept="1sVBvm" id="6z7DEV3EGPT" role="1sWHZn">
+              <node concept="1iCGBv" id="6z7DEV3EGQl" role="2wV5jI">
+                <ref role="1NtTu8" to="it18:m5XqSfxGsZ" resolve="transactionKind" />
+                <node concept="1sVBvm" id="6z7DEV3EGQn" role="1sWHZn">
+                  <node concept="3F0A7n" id="6z7DEV3EGQ$" role="2wV5jI">
+                    <property role="1Intyy" value="true" />
+                    <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="2iRkQZ" id="2Ze6BQpGbQr" role="2iSdaV" />
           <node concept="3EZMnI" id="2Ze6BQpGbQs" role="3EZMnx">
             <node concept="l2Vlx" id="2Ze6BQpGbQt" role="2iSdaV" />
@@ -1027,6 +1041,20 @@
         </node>
         <node concept="3EZMnI" id="2Ze6BQpGbQy" role="3EZMnx">
           <node concept="2iRkQZ" id="2Ze6BQpGbQz" role="2iSdaV" />
+          <node concept="1iCGBv" id="6z7DEV3EGQW" role="3EZMnx">
+            <ref role="1NtTu8" to="it18:m5XqSfxGx2" resolve="transactionKindStepKindTo" />
+            <node concept="1sVBvm" id="6z7DEV3EGQY" role="1sWHZn">
+              <node concept="1iCGBv" id="6z7DEV3EGRq" role="2wV5jI">
+                <ref role="1NtTu8" to="it18:m5XqSfxGsZ" resolve="transactionKind" />
+                <node concept="1sVBvm" id="6z7DEV3EGRs" role="1sWHZn">
+                  <node concept="3F0A7n" id="6z7DEV3EGRD" role="2wV5jI">
+                    <property role="1Intyy" value="true" />
+                    <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3EZMnI" id="2Ze6BQpGbQ$" role="3EZMnx">
             <node concept="l2Vlx" id="2Ze6BQpGbQ_" role="2iSdaV" />
             <node concept="1iCGBv" id="2Ze6BQpGbQA" role="3EZMnx">
@@ -1047,7 +1075,7 @@
           <property role="3F0ifm" value=":" />
         </node>
         <node concept="3F0A7n" id="2Ze6BQpGbQF" role="3EZMnx">
-          <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="type" />
+          <ref role="1NtTu8" to="it18:2S7w2zXEPeX" resolve="linkType" />
         </node>
         <node concept="l2Vlx" id="2Ze6BQpGbQG" role="2iSdaV" />
       </node>

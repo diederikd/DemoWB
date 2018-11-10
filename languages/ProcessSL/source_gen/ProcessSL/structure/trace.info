@@ -351,8 +351,8 @@
       <node id="397994270025762881" at="46,147,47,34" concept="1" />
       <node id="397994270025762881" at="47,34,48,95" concept="1" />
       <node id="397994270025762881" at="48,95,49,17" concept="1" />
-      <node id="3316760564124570557" at="49,17,50,63" concept="1" />
-      <node id="397994270025762887" at="50,63,51,188" concept="1" />
+      <node id="3316760564124570557" at="49,17,50,67" concept="1" />
+      <node id="397994270025762887" at="50,67,51,188" concept="1" />
       <node id="397994270025762882" at="51,188,52,186" concept="1" />
       <node id="397994270025762881" at="52,186,53,22" concept="6" />
       <node id="397994270025762881" at="45,0,55,0" concept="8" trace="createDescriptorForLink#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />

@@ -18,6 +18,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_OrganisationConstructionDiagram;
   private ConceptPresentation props_ProcesModel;
   private ConceptPresentation props_ProcesStructureDiagram;
+  private ConceptPresentation props_Simulation;
   private ConceptPresentation props_TransactionProductTable;
   private ConceptPresentation props_WorkInstructionSpecifications;
 
@@ -94,6 +95,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ProcesStructureDiagram = cpb.create();
         }
         return props_ProcesStructureDiagram;
+      case LanguageConceptSwitch.Simulation:
+        if (props_Simulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "start", "", "");
+          props_Simulation = cpb.create();
+        }
+        return props_Simulation;
       case LanguageConceptSwitch.TransactionProductTable:
         if (props_TransactionProductTable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

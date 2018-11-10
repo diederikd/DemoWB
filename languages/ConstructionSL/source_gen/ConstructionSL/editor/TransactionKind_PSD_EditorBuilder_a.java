@@ -13,10 +13,17 @@ import de.itemis.mps.editor.diagram.runtime.ContextVariables;
 import java.util.List;
 import de.itemis.mps.editor.diagram.runtime.model.Port;
 import java.util.ArrayList;
-import GeneralSL.editor.PortCFact;
-import GeneralSL.editor.PortPAct;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import GeneralSL.editor.PortCAct;
 import GeneralSL.editor.PortPFact;
+import GeneralSL.editor.PortCFact;
+import GeneralSL.editor.PortPAct;
 import de.itemis.mps.editor.diagram.runtime.shape.IShape;
 import GeneralSL.editor.TransactionKindPSD;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
@@ -31,8 +38,6 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass;
 import GeneralSL.editor.DemoStyles_StyleSheet.tfOriginalProductionStyleClass;
 import GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.util.EqualUtil;
@@ -44,15 +49,13 @@ import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyOrNode;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.AttributeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 /*package*/ class TransactionKind_PSD_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -81,75 +84,179 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       public void run() {
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
-        {
-          Port port = new Port("re");
-          port.setRelativeX(-1.5);
-          port.setRelativeY(1);
-          port.setShape(new PortCFact());
-          ports.add(port);
+        for (final SNode portObject : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(((SNode) _variablesContext.getValue("thisNode"))), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == ((SNode) _variablesContext.getValue("thisNode")) && SPropertyOperations.hasValue(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "in", null) && SPropertyOperations.hasValue(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "rq", null);
+          }
+        }).union(Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(((SNode) _variablesContext.getValue("thisNode"))), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == ((SNode) _variablesContext.getValue("thisNode")) && SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) != SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) && SPropertyOperations.hasValue(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "rq", null);
+          }
+        }))) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("re-act");
+                port.setRelativeX(-1.5);
+                port.setRelativeY(0);
+                port.setShape(new PortCAct());
+                {
+                  SNode parameterObject = portObject;
+                  port.setTooltipCell(new TransactionKind_PSD_EditorBuilder_a.Inline_Builder_5qi1gs_a0a0(editorContext, parameterObject).createCell());
+                }
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("pm");
-          port.setRelativeX(-0.5);
-          port.setRelativeY(1);
-          port.setShape(new PortCFact());
-          ports.add(port);
+        for (final SNode portObject : new ArrayList<SNode>()) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("pm");
+                port.setRelativeX(-0.5);
+                port.setRelativeY(0);
+                port.setShape(new PortCAct());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("ex");
-          port.setRelativeX(0.5);
-          port.setRelativeY(1);
-          port.setShape(new PortPAct());
-          ports.add(port);
+        for (final SNode portObject : new ArrayList<SNode>()) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("ex");
+                port.setRelativeX(0.5);
+                port.setRelativeY(0);
+                port.setShape(new PortPFact());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("st");
-          port.setRelativeX(1.5);
-          port.setRelativeY(1);
-          port.setShape(new PortCFact());
-          ports.add(port);
+        for (final SNode portObject : new ArrayList<SNode>()) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("st");
+                port.setRelativeX(1.5);
+                port.setRelativeY(0);
+                port.setShape(new PortCAct());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("ac");
-          port.setRelativeX(2.5);
-          port.setRelativeY(1);
-          port.setShape(new PortCFact());
-          ports.add(port);
+        for (final SNode portObject : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(((SNode) _variablesContext.getValue("thisNode"))), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == ((SNode) _variablesContext.getValue("thisNode")) && SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) != SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) && SPropertyOperations.hasValue(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "ac", null);
+          }
+        })) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("ac-fact");
+                port.setRelativeX(2.5);
+                port.setRelativeY(0);
+                port.setShape(new PortCFact());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("re");
-          port.setRelativeX(-1.5);
-          port.setRelativeY(0);
-          port.setShape(new PortCFact());
-          ports.add(port);
+        for (final SNode portObject : new ArrayList<SNode>()) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("re");
+                port.setRelativeX(-1.5);
+                port.setRelativeY(1);
+                port.setShape(new PortCFact());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("pm");
-          port.setRelativeX(-0.5);
-          port.setRelativeY(0);
-          port.setShape(new PortCAct());
-          ports.add(port);
+        for (final SNode portObject : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(((SNode) _variablesContext.getValue("thisNode"))), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == ((SNode) _variablesContext.getValue("thisNode")) && SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) != SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) && SPropertyOperations.hasValue(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "pm", null);
+          }
+        })) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("pm-fact");
+                port.setRelativeX(-0.5);
+                port.setRelativeY(1);
+                port.setShape(new PortCFact());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("ex");
-          port.setRelativeX(0.5);
-          port.setRelativeY(0);
-          port.setShape(new PortPFact());
-          ports.add(port);
+        for (final SNode portObject : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(((SNode) _variablesContext.getValue("thisNode"))), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) == ((SNode) _variablesContext.getValue("thisNode")) && SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) != SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) && SPropertyOperations.hasValue(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "ex", null);
+          }
+        })) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("ex-act");
+                port.setRelativeX(0.5);
+                port.setRelativeY(1);
+                port.setShape(new PortPAct());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("st");
-          port.setRelativeX(1.5);
-          port.setRelativeY(0);
-          port.setShape(new PortCAct());
-          ports.add(port);
+        for (final SNode portObject : new ArrayList<SNode>()) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("st");
+                port.setRelativeX(1.5);
+                port.setRelativeY(1);
+                port.setShape(new PortCFact());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
-        {
-          Port port = new Port("ac");
-          port.setRelativeX(2.5);
-          port.setRelativeY(0);
-          port.setShape(new PortCFact());
-          ports.add(port);
+        for (final SNode portObject : new ArrayList<SNode>()) {
+          ContextVariables.withParentAndValue(_variablesContext, "portObject", portObject, new Runnable() {
+            public void run() {
+              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+              {
+                Port port = new Port("ac-act");
+                port.setRelativeX(2.5);
+                port.setRelativeY(1);
+                port.setShape(new PortCAct());
+                port.setSNode(portObject);
+                ports.add(port);
+              }
+            }
+          });
         }
 
         EditorCell contentCell = createCollection_0();
@@ -284,6 +391,32 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
       return editorCell;
     } finally {
       getCellFactory().popCellContext();
+    }
+  }
+  /*package*/ static class Inline_Builder_5qi1gs_a0a0 extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_5qi1gs_a0a0(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createConstant_0();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createConstant_0() {
+      EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "request act");
+      editorCell.setCellId("Constant_5qi1gs_a0a0a");
+      editorCell.setDefaultText("");
+      return editorCell;
     }
   }
 }

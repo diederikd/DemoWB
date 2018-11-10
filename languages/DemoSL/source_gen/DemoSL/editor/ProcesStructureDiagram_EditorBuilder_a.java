@@ -63,10 +63,13 @@ import de.itemis.mps.editor.diagram.runtime.model.EndpointUtil;
 import org.jetbrains.annotations.Nullable;
 import java.util.Collections;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import de.itemis.mps.editor.diagram.runtime.DiagramUtil;
 import GeneralSL.editor.ArrowHead;
 import java.awt.Color;
 import de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import ProcessSL.behavior.TransactionKindStepKind__BehaviorDescriptor;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
@@ -74,6 +77,9 @@ import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 
 /*package*/ class ProcesStructureDiagram_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -331,6 +337,10 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                               final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
                               editorCell.setCellId("transformedGraphElement_c0f0" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
 
+                              final EditorCell endRoleCell = DiagramUtil.getCellIfNotEmpty(new ProcesStructureDiagram_EditorBuilder_a.Inline_Builder_v93ikk_a0c0f0(editorContext, parameterObject).createCell());
+                              if (endRoleCell != null) {
+                                editorCell.addEditorCell(endRoleCell);
+                              }
 
                               final IShape startShape = null;
                               final IShape endShape = new ArrowHead(0.5, 0.5, true, new Color(120, 0, 0));
@@ -341,7 +351,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                                 }
                                 @Override
                                 public IConnectionEndpointReference readTo() {
-                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds"))).first(), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind"))), "re");
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fdc476e1L, 0x2e078028fdc476e2L, "transactionKinds"))).first(), MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd531e54L, 0x2e078028fd531e55L, "transactionKind"))), "re-act");
                                 }
                                 @Override
                                 public IShape getStartShape() {
@@ -350,6 +360,77 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                                 @Override
                                 public IShape getEndShape() {
                                   return endShape;
+                                }
+                                @Override
+                                public EditorCell getEndRoleCell() {
+                                  return endRoleCell;
+                                }
+                                @Override
+                                public void delete() {
+                                }
+                                @Nullable
+                                public SNode getSNode() {
+                                  return parameterObject;
+                                }
+
+                              };
+                              accessor.setRootCell(editorCell);
+
+
+                              elements.add(accessor);
+                            }
+                          });
+                        }
+                        for (final SNode parameterObject : new Object() {
+                          public Iterable<SNode> query() {
+                            return Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+                              public boolean accept(SNode it) {
+                                return SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")) != SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind"));
+                              }
+                            });
+                          }
+                        }.query()) {
+                          ContextVariables.withParentAndValue(_variablesContext, "parameterObject", parameterObject, new Runnable() {
+                            public void run() {
+                              final ContextVariables _variablesContext = ContextVariables.getCurrent();
+                              final EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, parameterObject);
+                              editorCell.setCellId("transformedGraphElement_d0f0" + "." + ((SNode) _variablesContext.getValue("parameterObject")));
+
+                              final EditorCell startRoleCell = DiagramUtil.getCellIfNotEmpty(new ProcesStructureDiagram_EditorBuilder_a.Inline_Builder_v93ikk_a0d0f0(editorContext, parameterObject).createCell());
+                              final EditorCell endRoleCell = DiagramUtil.getCellIfNotEmpty(new ProcesStructureDiagram_EditorBuilder_a.Inline_Builder_v93ikk_a0d0f0_0(editorContext, parameterObject).createCell());
+                              if (startRoleCell != null) {
+                                editorCell.addEditorCell(startRoleCell);
+                              }
+                              if (endRoleCell != null) {
+                                editorCell.addEditorCell(endRoleCell);
+                              }
+
+                              final IShape startShape = null;
+                              final IShape endShape = new ArrowHead(0.5, 0.5, true, new Color(120, 0, 0));
+                              AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(EndpointUtil.createAccessorKeyForSNode(((SNode) _variablesContext.getValue("parameterObject")))) {
+                                @Override
+                                public IConnectionEndpointReference readFrom() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind"))), TransactionKindStepKind__BehaviorDescriptor.getStepKindValue_id2Ze6BQpVVy1.invoke(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom"))) + "-fact");
+                                }
+                                @Override
+                                public IConnectionEndpointReference readTo() {
+                                  return EndpointUtil.createEndpointReferenceForPortSafe(EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind"))), TransactionKindStepKind__BehaviorDescriptor.getStepKindValue_id2Ze6BQpVVy1.invoke(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo"))) + "-act");
+                                }
+                                @Override
+                                public IShape getStartShape() {
+                                  return startShape;
+                                }
+                                @Override
+                                public IShape getEndShape() {
+                                  return endShape;
+                                }
+                                @Override
+                                public EditorCell getStartRoleCell() {
+                                  return startRoleCell;
+                                }
+                                @Override
+                                public EditorCell getEndRoleCell() {
+                                  return endRoleCell;
                                 }
                                 @Override
                                 public void delete() {
@@ -430,6 +511,123 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
       EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "  ");
       editorCell.setCellId("Constant_v93ikk_a0b0f0");
       editorCell.setDefaultText("");
+      return editorCell;
+    }
+  }
+  /*package*/ static class Inline_Builder_v93ikk_a0c0f0 extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_v93ikk_a0c0f0(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createReadOnlyModelAccessor_0();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createReadOnlyModelAccessor_0() {
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
+        public String getText() {
+          return "re";
+        }
+        public void setText(String s) {
+        }
+        public boolean isValidText(String s) {
+          return EqualUtil.equals(s, getText());
+        }
+      }, myNode);
+      editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+      editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+      editorCell.setCellId("ReadOnlyModelAccessor_v93ikk_a0a2a5a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.EDITABLE, false);
+      editorCell.getStyle().putAll(style);
+      return editorCell;
+    }
+  }
+  /*package*/ static class Inline_Builder_v93ikk_a0d0f0 extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_v93ikk_a0d0f0(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createReadOnlyModelAccessor_1();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createReadOnlyModelAccessor_1() {
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
+        public String getText() {
+          return (String) TransactionKindStepKind__BehaviorDescriptor.getStepKindValue_id2Ze6BQpVVy1.invoke(SLinkOperations.getTarget(((SNode) ContextVariables.getCurrent().getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")));
+        }
+        public void setText(String s) {
+        }
+        public boolean isValidText(String s) {
+          return EqualUtil.equals(s, getText());
+        }
+      }, myNode);
+      editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+      editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+      editorCell.setCellId("ReadOnlyModelAccessor_v93ikk_a0a3a5a");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.EDITABLE, false);
+      editorCell.getStyle().putAll(style);
+      return editorCell;
+    }
+  }
+  /*package*/ static class Inline_Builder_v93ikk_a0d0f0_0 extends AbstractEditorBuilder {
+    @NotNull
+    private SNode myNode;
+
+    /*package*/ Inline_Builder_v93ikk_a0d0f0_0(@NotNull EditorContext context, @NotNull SNode node) {
+      super(context);
+      myNode = node;
+    }
+
+    /*package*/ EditorCell createCell() {
+      return createReadOnlyModelAccessor_2();
+    }
+
+    @NotNull
+    @Override
+    public SNode getNode() {
+      return myNode;
+    }
+
+    private EditorCell createReadOnlyModelAccessor_2() {
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
+        public String getText() {
+          return (String) TransactionKindStepKind__BehaviorDescriptor.getStepKindValue_id2Ze6BQpVVy1.invoke(SLinkOperations.getTarget(((SNode) ContextVariables.getCurrent().getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")));
+        }
+        public void setText(String s) {
+        }
+        public boolean isValidText(String s) {
+          return EqualUtil.equals(s, getText());
+        }
+      }, myNode);
+      editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+      editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+      editorCell.setCellId("ReadOnlyModelAccessor_v93ikk_a0a3a5a_0");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.EDITABLE, false);
+      editorCell.getStyle().putAll(style);
       return editorCell;
     }
   }

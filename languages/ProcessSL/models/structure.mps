@@ -182,7 +182,7 @@
     </node>
     <node concept="1TJgyi" id="2S7w2zXEPeX" role="1TKVEl">
       <property role="IQ2nx" value="3316760564124570557" />
-      <property role="TrG5h" value="type" />
+      <property role="TrG5h" value="linkType" />
       <ref role="AX2Wp" node="m5XqSfxGxf" resolve="linkType" />
     </node>
   </node>
