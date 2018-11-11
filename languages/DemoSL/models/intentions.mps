@@ -497,5 +497,33 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6z7DEV3P3an">
+    <property role="TrG5h" value="DeleteAllCases" />
+    <ref role="2ZfgGC" to="ar0b:2Ze6BQpWd1s" resolve="Simulation" />
+    <node concept="2S6ZIM" id="6z7DEV3P3ao" role="2ZfVej">
+      <node concept="3clFbS" id="6z7DEV3P3ap" role="2VODD2">
+        <node concept="3clFbF" id="6z7DEV3P3jC" role="3cqZAp">
+          <node concept="Xl_RD" id="6z7DEV3P3jB" role="3clFbG">
+            <property role="Xl_RC" value="Delete All Cases" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6z7DEV3P3aq" role="2ZfgGD">
+      <node concept="3clFbS" id="6z7DEV3P3ar" role="2VODD2">
+        <node concept="3clFbF" id="6z7DEV3P4Nc" role="3cqZAp">
+          <node concept="2OqwBi" id="6z7DEV3P6ya" role="3clFbG">
+            <node concept="2OqwBi" id="6z7DEV3P4V0" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6z7DEV3P4Nb" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6z7DEV3P540" role="2OqNvi">
+                <ref role="3TtcxE" to="ar0b:6z7DEV3N7vi" resolve="cases" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="6z7DEV3P7JK" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

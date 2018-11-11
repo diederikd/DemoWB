@@ -267,11 +267,64 @@
     <property role="EcuMT" value="3444719891740938332" />
     <property role="TrG5h" value="Simulation" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="Simulation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6z7DEV3N7vi" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569849403346" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="cases" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6z7DEV3N7vd" resolve="Case" />
+    </node>
+    <node concept="1TJgyj" id="6z7DEV40e2U" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569852838074" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="possibleActs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6z7DEV3RGZ6" resolve="Possibleact" />
+    </node>
     <node concept="1TJgyj" id="2Ze6BQpWd1t" role="1TKVEi">
       <property role="IQ2ns" value="3444719891740938333" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="start" />
+      <property role="20kJfa" value="startState" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+    </node>
+    <node concept="PrWs8" id="6z7DEV3KmFS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6z7DEV3N7vd">
+    <property role="EcuMT" value="7550186569849403341" />
+    <property role="TrG5h" value="Case" />
+    <property role="3GE5qa" value="Simulation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6z7DEV3QSdf" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569850389327" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="state" />
+      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+    </node>
+    <node concept="PrWs8" id="6z7DEV3RI56" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6z7DEV3RGZ6">
+    <property role="EcuMT" value="7550186569850605510" />
+    <property role="3GE5qa" value="Simulation" />
+    <property role="TrG5h" value="Possibleact" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6z7DEV3RGZ7" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569850605511" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="case" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6z7DEV3N7vd" resolve="Case" />
+    </node>
+    <node concept="1TJgyj" id="6z7DEV3RGZb" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569850605515" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="TransactionKindStepKind" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
     </node>

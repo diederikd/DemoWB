@@ -22,7 +22,7 @@ public class Simulation_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
     Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
-    references.put(MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "start"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL), this) {
+    references.put(MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "startState"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL), this) {
       @Nullable
       @Override
       public ReferenceScopeProvider getScopeProvider() {

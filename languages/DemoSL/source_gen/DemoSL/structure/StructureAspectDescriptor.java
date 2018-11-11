@@ -14,11 +14,13 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActionRuleSpecifications = createDescriptorForActionRuleSpecifications();
   /*package*/ final ConceptDescriptor myConceptBankContentsTable = createDescriptorForBankContentsTable();
+  /*package*/ final ConceptDescriptor myConceptCase = createDescriptorForCase();
   /*package*/ final ConceptDescriptor myConceptConstructionModel = createDescriptorForConstructionModel();
   /*package*/ final ConceptDescriptor myConceptDerivedFactSpecifications = createDescriptorForDerivedFactSpecifications();
   /*package*/ final ConceptDescriptor myConceptFactModel = createDescriptorForFactModel();
   /*package*/ final ConceptDescriptor myConceptObjectFactDiagram = createDescriptorForObjectFactDiagram();
   /*package*/ final ConceptDescriptor myConceptOrganisationConstructionDiagram = createDescriptorForOrganisationConstructionDiagram();
+  /*package*/ final ConceptDescriptor myConceptPossibleact = createDescriptorForPossibleact();
   /*package*/ final ConceptDescriptor myConceptProcesModel = createDescriptorForProcesModel();
   /*package*/ final ConceptDescriptor myConceptProcesStructureDiagram = createDescriptorForProcesStructureDiagram();
   /*package*/ final ConceptDescriptor myConceptSimulation = createDescriptorForSimulation();
@@ -32,7 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActionRuleSpecifications, myConceptBankContentsTable, myConceptConstructionModel, myConceptDerivedFactSpecifications, myConceptFactModel, myConceptObjectFactDiagram, myConceptOrganisationConstructionDiagram, myConceptProcesModel, myConceptProcesStructureDiagram, myConceptSimulation, myConceptTransactionProductTable, myConceptWorkInstructionSpecifications);
+    return Arrays.asList(myConceptActionRuleSpecifications, myConceptBankContentsTable, myConceptCase, myConceptConstructionModel, myConceptDerivedFactSpecifications, myConceptFactModel, myConceptObjectFactDiagram, myConceptOrganisationConstructionDiagram, myConceptPossibleact, myConceptProcesModel, myConceptProcesStructureDiagram, myConceptSimulation, myConceptTransactionProductTable, myConceptWorkInstructionSpecifications);
   }
 
   @Override
@@ -43,6 +45,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptActionRuleSpecifications;
       case LanguageConceptSwitch.BankContentsTable:
         return myConceptBankContentsTable;
+      case LanguageConceptSwitch.Case:
+        return myConceptCase;
       case LanguageConceptSwitch.ConstructionModel:
         return myConceptConstructionModel;
       case LanguageConceptSwitch.DerivedFactSpecifications:
@@ -53,6 +57,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptObjectFactDiagram;
       case LanguageConceptSwitch.OrganisationConstructionDiagram:
         return myConceptOrganisationConstructionDiagram;
+      case LanguageConceptSwitch.Possibleact:
+        return myConceptPossibleact;
       case LanguageConceptSwitch.ProcesModel:
         return myConceptProcesModel;
       case LanguageConceptSwitch.ProcesStructureDiagram:
@@ -88,6 +94,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/2743742872034909954");
     b.version(2);
     b.alias("BCT");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForCase() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("DemoSL", "Case", 0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/7550186569849403341");
+    b.version(2);
+    b.associate("state", 0x68c7a6aec3db834fL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(true).origin("7550186569850389327").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForConstructionModel() {
@@ -140,6 +155,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("OCD");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForPossibleact() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("DemoSL", "Possibleact", 0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L);
+    b.class_(false, false, false);
+    b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/7550186569850605510");
+    b.version(2);
+    b.associate("case", 0x68c7a6aec3decfc7L).target(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL).optional(false).origin("7550186569850605511").done();
+    b.associate("TransactionKindStepKind", 0x68c7a6aec3decfcbL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("7550186569850605515").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForProcesModel() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("DemoSL", "ProcesModel", 0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L);
     b.class_(false, false, true);
@@ -167,9 +191,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForSimulation() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("DemoSL", "Simulation", 0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL);
     b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/3444719891740938332");
     b.version(2);
-    b.associate("start", 0x2fce1a7d99f0d05dL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("3444719891740938333").done();
+    b.associate("startState", 0x2fce1a7d99f0d05dL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("3444719891740938333").done();
+    b.aggregate("cases", 0x68c7a6aec3cc77d2L).target(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL).optional(true).ordered(true).multiple(true).origin("7550186569849403346").done();
+    b.aggregate("possibleActs", 0x68c7a6aec400e0baL).target(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L).optional(true).ordered(true).multiple(true).origin("7550186569852838074").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTransactionProductTable() {

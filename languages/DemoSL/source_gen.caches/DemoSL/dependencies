@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="DemoSL.Language" file="Language.java">
+    <classNode dependClassName="DemoSL.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="DemoSL.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="DemoSL.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="DemoSL.editor.EditorAspectDescriptorImpl" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />

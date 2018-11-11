@@ -34,15 +34,17 @@ public class check_FactType_NonTypesystemRule extends AbstractNonTypesystemRule_
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(factType, "coordination facts should have id starting with 'F'", "r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)", "2222079712863850612", null, errorTarget);
       }
     }
-    if (isNotEmptyString(SPropertyOperations.getString(factType, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")))) {
-      if (ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(factType), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, "FactSL.structure.FactType"))).where(new IWhereFilter<SNode>() {
-        public boolean accept(SNode it) {
-          return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")).equals(SPropertyOperations.getString(factType, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id"))) && factType != it;
-        }
-      }).isNotEmpty()) {
-        {
-          MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(factType, "id of facttype is not unique", "r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)", "2222079712864604661", null, errorTarget);
+    if ((factType != null)) {
+      if (isNotEmptyString(SPropertyOperations.getString(factType, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")))) {
+        if (ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(factType), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, "FactSL.structure.FactType"))).where(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")).equals(SPropertyOperations.getString(factType, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id"))) && factType != it;
+          }
+        }).isNotEmpty()) {
+          {
+            MessageTarget errorTarget = new NodeMessageTarget();
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(factType, "id of facttype is not unique", "r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)", "2222079712864604661", null, errorTarget);
+          }
         }
       }
     }

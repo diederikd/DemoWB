@@ -109,7 +109,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concerns" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2ojITFEDW2B" resolve="BaseEntityType" />
+      <ref role="20lvS9" node="2ojITFEDDWf" resolve="FactType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2A">

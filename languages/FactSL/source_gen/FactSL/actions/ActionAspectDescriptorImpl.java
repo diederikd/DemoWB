@@ -20,8 +20,10 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
         case 0:
           return Collections.<NodeFactory>singletonList(new NewAggregation.NodeFactory_464479581526896630());
         case 1:
-          return Collections.<NodeFactory>singletonList(new NewGeneralisation.NodeFactory_464479581526720608());
+          return Collections.<NodeFactory>singletonList(new NewEventType.NodeFactory_7550186569848521449());
         case 2:
+          return Collections.<NodeFactory>singletonList(new NewGeneralisation.NodeFactory_464479581526720608());
+        case 3:
           return Collections.<NodeFactory>singletonList(new NewSpecialisation.NodeFactory_464479581526895724());
         default:
       }
@@ -29,5 +31,5 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
     return Collections.<NodeFactory>emptyList();
   }
 
-  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"Aggregation", "Generalisation", "Specialisation"};
+  private static String[] stringSwitchCases_tpto26_a0a0a0c = new String[]{"Aggregation", "EventType", "Generalisation", "Specialisation"};
 }

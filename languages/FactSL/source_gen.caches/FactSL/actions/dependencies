@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="FactSL.actions.ActionAspectDescriptorImpl" file="ActionAspectDescriptorImpl.java">
     <classNode dependClassName="FactSL.actions.NewAggregation" />
+    <classNode dependClassName="FactSL.actions.NewEventType" />
     <classNode dependClassName="FactSL.actions.NewGeneralisation" />
     <classNode dependClassName="FactSL.actions.NewSpecialisation" />
     <classNode dependClassName="java.lang.Override" />
@@ -15,6 +16,14 @@
     <classNode extendsClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
   </dependency>
   <dependency className="FactSL.actions.NewAggregation" file="NewAggregation.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="FactSL.actions.NewEventType" file="NewEventType.java">
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.NodeFactory" />

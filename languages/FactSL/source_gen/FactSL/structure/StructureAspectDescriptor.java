@@ -226,7 +226,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984101");
     b.version(2);
-    b.associate("concerns", 0x1ed669b9cbfe44e0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a7L).optional(false).origin("2222079712866223328").done();
+    b.associate("concerns", 0x1ed669b9cbfe44e0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL).optional(false).origin("2222079712866223328").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFactType() {

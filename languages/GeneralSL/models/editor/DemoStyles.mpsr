@@ -128,6 +128,10 @@
         </node>
       </node>
     </node>
+    <node concept="14StLt" id="6z7DEV3QM_V" role="V601i">
+      <property role="TrG5h" value="Plain" />
+      <node concept="Vb9p2" id="6z7DEV3QMUO" role="3F10Kt" />
+    </node>
     <node concept="14StLt" id="pMarvI3Von" role="V601i">
       <property role="TrG5h" value="Bold" />
       <node concept="Vb9p2" id="pMarvI3Voo" role="3F10Kt">

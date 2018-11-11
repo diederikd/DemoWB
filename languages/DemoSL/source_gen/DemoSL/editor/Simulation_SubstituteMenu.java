@@ -47,7 +47,7 @@ public class Simulation_SubstituteMenu extends SubstituteMenuBase {
   public class SMP_ReferenceScope_1sqeco_a extends ReferenceScopeSubstituteMenuPart {
 
     public SMP_ReferenceScope_1sqeco_a() {
-      super(MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, "DemoSL.structure.Simulation"), MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "start"));
+      super(MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, "DemoSL.structure.Simulation"), MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "startState"));
     }
     @NotNull
     @Override

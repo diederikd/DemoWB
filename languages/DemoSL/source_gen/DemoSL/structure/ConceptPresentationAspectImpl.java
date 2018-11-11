@@ -11,11 +11,13 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ActionRuleSpecifications;
   private ConceptPresentation props_BankContentsTable;
+  private ConceptPresentation props_Case;
   private ConceptPresentation props_ConstructionModel;
   private ConceptPresentation props_DerivedFactSpecifications;
   private ConceptPresentation props_FactModel;
   private ConceptPresentation props_ObjectFactDiagram;
   private ConceptPresentation props_OrganisationConstructionDiagram;
+  private ConceptPresentation props_Possibleact;
   private ConceptPresentation props_ProcesModel;
   private ConceptPresentation props_ProcesStructureDiagram;
   private ConceptPresentation props_Simulation;
@@ -43,6 +45,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_BankContentsTable = cpb.create();
         }
         return props_BankContentsTable;
+      case LanguageConceptSwitch.Case:
+        if (props_Case == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Case = cpb.create();
+        }
+        return props_Case;
       case LanguageConceptSwitch.ConstructionModel:
         if (props_ConstructionModel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -81,6 +90,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OrganisationConstructionDiagram = cpb.create();
         }
         return props_OrganisationConstructionDiagram;
+      case LanguageConceptSwitch.Possibleact:
+        if (props_Possibleact == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Possibleact");
+          props_Possibleact = cpb.create();
+        }
+        return props_Possibleact;
       case LanguageConceptSwitch.ProcesModel:
         if (props_ProcesModel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -98,7 +114,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Simulation:
         if (props_Simulation == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "start", "", "");
+          cpb.presentationByName();
           props_Simulation = cpb.create();
         }
         return props_Simulation;

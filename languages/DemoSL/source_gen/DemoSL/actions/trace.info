@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,20,0" name="DemoSL.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+</debug-info>
+

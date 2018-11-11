@@ -40,6 +40,13 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
           intentions[2] = new DeleteAll_Intention();
         }
         break;
+      case 1:
+        if (true) {
+          // Concept: Simulation 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new DeleteAllCases_Intention();
+        }
+        break;
       default:
     }
     myCached.put(concept, intentions);
@@ -49,11 +56,12 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[3];
+    IntentionFactory[] rv = new IntentionFactory[4];
     rv[0] = new AddStanderdTransactionPattern_Intention();
     rv[1] = new AddAllSTP_Intention();
     rv[2] = new DeleteAll_Intention();
+    rv[3] = new DeleteAllCases_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL)).seal();
 }
