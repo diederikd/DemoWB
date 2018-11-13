@@ -17,14 +17,14 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class DeleteAllCases_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class ResetSimulation_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public DeleteAllCases_Intention() {
+  public ResetSimulation_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:b6e47bc3-6995-4c31-aee4-73136b96cf76(DemoSL.intentions)", "7550186569849909911"));
   }
   @Override
   public String getPresentation() {
-    return "DeleteAllCases";
+    return "ResetSimulation";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -36,7 +36,7 @@ public final class DeleteAllCases_Intention extends AbstractIntentionDescriptor 
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new DeleteAllCases_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new ResetSimulation_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -45,15 +45,18 @@ public final class DeleteAllCases_Intention extends AbstractIntentionDescriptor 
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Delete All Cases";
+      return "Reset Simulation";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
       ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases"))).clear();
+      ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec400e0baL, "possibleActs"))).clear();
+      ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec42570c5L, "performedActs"))).clear();
+      ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec43484e0L, "casesCompleted"))).clear();
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return DeleteAllCases_Intention.this;
+      return ResetSimulation_Intention.this;
     }
   }
 }

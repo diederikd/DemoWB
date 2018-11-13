@@ -9,15 +9,15 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ActionRuleSpecifications = 0;
-  public static final int BankContentsTable = 1;
-  public static final int Case = 2;
-  public static final int ConstructionModel = 3;
-  public static final int DerivedFactSpecifications = 4;
-  public static final int FactModel = 5;
-  public static final int ObjectFactDiagram = 6;
-  public static final int OrganisationConstructionDiagram = 7;
-  public static final int Possibleact = 8;
+  public static final int Act = 0;
+  public static final int ActionRuleSpecifications = 1;
+  public static final int BankContentsTable = 2;
+  public static final int Case = 3;
+  public static final int ConstructionModel = 4;
+  public static final int DerivedFactSpecifications = 5;
+  public static final int FactModel = 6;
+  public static final int ObjectFactDiagram = 7;
+  public static final int OrganisationConstructionDiagram = 8;
   public static final int ProcesModel = 9;
   public static final int ProcesStructureDiagram = 10;
   public static final int Simulation = 11;
@@ -26,6 +26,7 @@ public final class LanguageConceptSwitch {
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL);
+    builder.put(0x68c7a6aec3decfc6L, Act);
     builder.put(0x2613bb9aeaa69efcL, ActionRuleSpecifications);
     builder.put(0x2613bb9aeaa69f02L, BankContentsTable);
     builder.put(0x68c7a6aec3cc77cdL, Case);
@@ -34,7 +35,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x2613bb9aeaa69efdL, FactModel);
     builder.put(0x1ed669b9cba05100L, ObjectFactDiagram);
     builder.put(0x2613bb9aeaa032b1L, OrganisationConstructionDiagram);
-    builder.put(0x68c7a6aec3decfc6L, Possibleact);
     builder.put(0x2e078028fd82bda0L, ProcesModel);
     builder.put(0x2e078028fdc476e1L, ProcesStructureDiagram);
     builder.put(0x2fce1a7d99f0d05cL, Simulation);

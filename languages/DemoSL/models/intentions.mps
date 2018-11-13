@@ -498,13 +498,13 @@
     </node>
   </node>
   <node concept="2S6QgY" id="6z7DEV3P3an">
-    <property role="TrG5h" value="DeleteAllCases" />
+    <property role="TrG5h" value="ResetSimulation" />
     <ref role="2ZfgGC" to="ar0b:2Ze6BQpWd1s" resolve="Simulation" />
     <node concept="2S6ZIM" id="6z7DEV3P3ao" role="2ZfVej">
       <node concept="3clFbS" id="6z7DEV3P3ap" role="2VODD2">
         <node concept="3clFbF" id="6z7DEV3P3jC" role="3cqZAp">
           <node concept="Xl_RD" id="6z7DEV3P3jB" role="3clFbG">
-            <property role="Xl_RC" value="Delete All Cases" />
+            <property role="Xl_RC" value="Reset Simulation" />
           </node>
         </node>
       </node>
@@ -520,6 +520,39 @@
               </node>
             </node>
             <node concept="2Kehj3" id="6z7DEV3P7JK" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6z7DEV499uB" role="3cqZAp">
+          <node concept="2OqwBi" id="6z7DEV49dGk" role="3clFbG">
+            <node concept="2OqwBi" id="6z7DEV49c0Y" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6z7DEV499u_" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6z7DEV49cea" role="2OqNvi">
+                <ref role="3TtcxE" to="ar0b:6z7DEV40e2U" resolve="possibleActs" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="6z7DEV49g4q" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6z7DEV4aDC3" role="3cqZAp">
+          <node concept="2OqwBi" id="6z7DEV4aJTV" role="3clFbG">
+            <node concept="2OqwBi" id="6z7DEV4aIel" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6z7DEV4aDC1" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6z7DEV4aIrL" role="2OqNvi">
+                <ref role="3TtcxE" to="ar0b:6z7DEV49n35" resolve="performedActs" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="6z7DEV4aMkT" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6z7DEV4gdSv" role="3cqZAp">
+          <node concept="2OqwBi" id="6z7DEV4gmzt" role="3clFbG">
+            <node concept="2OqwBi" id="6z7DEV4gkyG" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6z7DEV4gdSt" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6z7DEV4gkJa" role="2OqNvi">
+                <ref role="3TtcxE" to="ar0b:6z7DEV4d8jw" resolve="casesCompleted" />
+              </node>
+            </node>
+            <node concept="2Kehj3" id="6z7DEV4gpjZ" role="2OqNvi" />
           </node>
         </node>
       </node>

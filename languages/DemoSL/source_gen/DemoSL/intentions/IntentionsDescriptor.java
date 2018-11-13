@@ -44,7 +44,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
         if (true) {
           // Concept: Simulation 
           intentions = new IntentionFactory[1];
-          intentions[0] = new DeleteAllCases_Intention();
+          intentions[0] = new ResetSimulation_Intention();
         }
         break;
       default:
@@ -60,7 +60,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[0] = new AddStanderdTransactionPattern_Intention();
     rv[1] = new AddAllSTP_Intention();
     rv[2] = new DeleteAll_Intention();
-    rv[3] = new DeleteAllCases_Intention();
+    rv[3] = new ResetSimulation_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L), MetaIdFactory.conceptId(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL)).seal();

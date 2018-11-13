@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Act;
   private ConceptPresentation props_ActionRuleSpecifications;
   private ConceptPresentation props_BankContentsTable;
   private ConceptPresentation props_Case;
@@ -17,7 +18,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FactModel;
   private ConceptPresentation props_ObjectFactDiagram;
   private ConceptPresentation props_OrganisationConstructionDiagram;
-  private ConceptPresentation props_Possibleact;
   private ConceptPresentation props_ProcesModel;
   private ConceptPresentation props_ProcesStructureDiagram;
   private ConceptPresentation props_Simulation;
@@ -29,6 +29,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Act:
+        if (props_Act == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Act");
+          props_Act = cpb.create();
+        }
+        return props_Act;
       case LanguageConceptSwitch.ActionRuleSpecifications:
         if (props_ActionRuleSpecifications == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -90,13 +97,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_OrganisationConstructionDiagram = cpb.create();
         }
         return props_OrganisationConstructionDiagram;
-      case LanguageConceptSwitch.Possibleact:
-        if (props_Possibleact == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Possibleact");
-          props_Possibleact = cpb.create();
-        }
-        return props_Possibleact;
       case LanguageConceptSwitch.ProcesModel:
         if (props_ProcesModel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
