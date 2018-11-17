@@ -313,14 +313,15 @@
     <property role="TrG5h" value="Case" />
     <property role="3GE5qa" value="Simulation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6z7DEV3QSdf" role="1TKVEi">
-      <property role="IQ2ns" value="7550186569850389327" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="state" />
-      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
-    </node>
     <node concept="PrWs8" id="6z7DEV3RI56" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="6z7DEV4hIlu" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569857426782" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="runningtransactions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6z7DEV4hIlq" resolve="RunningTransaction" />
     </node>
   </node>
   <node concept="1TIwiD" id="6z7DEV3RGZ6">
@@ -340,6 +341,18 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="TransactionKindStepKind" />
       <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6z7DEV4hIlq">
+    <property role="EcuMT" value="7550186569857426778" />
+    <property role="3GE5qa" value="Simulation" />
+    <property role="TrG5h" value="RunningTransaction" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6z7DEV3QSdf" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569850389327" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="state" />
       <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
     </node>
   </node>

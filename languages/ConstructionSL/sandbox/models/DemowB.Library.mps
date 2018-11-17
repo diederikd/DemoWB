@@ -133,6 +133,9 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
+      <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
+        <reference id="3444719891740938333" name="startState" index="2QfGCw" />
+      </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
@@ -1465,7 +1468,7 @@
     <ref role="3jA7_1" node="1VmqrBbwQiO" />
     <node concept="a0NRJ" id="2S7w2zXEPeV" role="3jxjQb">
       <property role="3jFdel" value="response" />
-      <ref role="a0NRD" node="2S7w2zXAHOD" resolve="receive application" />
+      <ref role="a0NRD" node="2S7w2zXAHOD" resolve="promiss membership" />
       <ref role="a0NRG" node="2S7w2zXHINF" resolve="request fee paying" />
     </node>
     <node concept="a0NRJ" id="2S7w2zXGLsQ" role="3jxjQb">
@@ -1475,6 +1478,14 @@
     <node concept="a0NRJ" id="2S7w2zXGT6B" role="3jxjQb">
       <ref role="a0NRD" node="2S7w2zXDuSG" resolve="decline application" />
       <ref role="a0NRG" node="2S7w2zX$hdq" resolve="apply for membership" />
+    </node>
+    <node concept="a0NRJ" id="6z7DEV4hIbL" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zX$hdq" resolve="apply for membership" />
+      <ref role="a0NRG" node="2S7w2zXAHOD" resolve="promiss membership" />
+    </node>
+    <node concept="a0NRJ" id="6z7DEV4hIes" role="3jxjQb">
+      <ref role="a0NRD" node="2S7w2zXAHOD" resolve="promiss membership" />
+      <ref role="a0NRG" node="2S7w2zXAHOG" resolve="process application" />
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT6F" role="3jxjQb">
       <ref role="a0NRD" node="2S7w2zXDuSG" resolve="decline application" />
@@ -1548,7 +1559,7 @@
       <ref role="a0Nah" node="1VmqrBbwQiO" />
     </node>
     <node concept="a0Nag" id="2S7w2zXAHOD" role="3jxjQ9">
-      <property role="TrG5h" value="receive application" />
+      <property role="TrG5h" value="promiss membership" />
       <property role="a0N98" value="pm" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
     </node>
@@ -3920,6 +3931,10 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="2QfGCx" id="6z7DEV4hI96">
+    <property role="TrG5h" value="Library Simulation" />
+    <ref role="2QfGCw" node="6z7DEV3FN15" resolve="Initial" />
   </node>
 </model>
 

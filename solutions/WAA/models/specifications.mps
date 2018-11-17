@@ -138,10 +138,19 @@
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
       <concept id="7550186569849403341" name="DemoSL.structure.Case" flags="ng" index="2F2X5z">
+        <child id="7550186569857426782" name="runningtransactions" index="2GwkfK" />
+      </concept>
+      <concept id="7550186569850605510" name="DemoSL.structure.Act" flags="ng" index="2F6m_C">
+        <reference id="7550186569850605515" name="TransactionKindStepKind" index="2F6m__" />
+        <reference id="7550186569850605511" name="case" index="2F6m_D" />
+      </concept>
+      <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
         <reference id="7550186569850389327" name="state" index="2F72nx" />
       </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
+        <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
+        <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
         <child id="7550186569856222432" name="casesCompleted" index="2GWM9e" />
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
@@ -15553,11 +15562,38 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F2X5z" id="6z7DEV4endt" role="2GWM9e">
-      <ref role="2F72nx" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
+    <node concept="2F6m_C" id="6z7DEV4p_nX" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F2X5z" id="6z7DEV4g0h9" role="2GWM9e">
-      <ref role="2F72nx" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
+    <node concept="2F6m_C" id="6z7DEV4p_o7" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4p_oj" role="2GLOok">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4p_ok" role="2GLOok">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4p_oi" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4p_o$" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4p_oR" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F2X5z" id="6z7DEV4p_nV" role="2GWM9e">
+      <node concept="2GwkfO" id="6z7DEV4p_nW" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
+      </node>
     </node>
   </node>
 </model>
