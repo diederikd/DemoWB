@@ -32,14 +32,15 @@ public final class Case__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, "DemoSL.structure.Case");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<List<SNode>> getPossibleActs_id6z7DEV3Syvm = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getPossibleActs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV3Syvm").registry(REGISTRY).build();
+  public static final SMethod<List<SNode>> getPossibleActsOfCase_id6z7DEV3Syvm = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getPossibleActsOfCase").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV3Syvm").registry(REGISTRY).build();
+  public static final SMethod<List<SNode>> getPossibleActsOfRunningTransaction_id6z7DEV4sPHo = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getPossibleActsOfRunningTransaction").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV4sPHo").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPossibleActs_id6z7DEV3Syvm);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPossibleActsOfCase_id6z7DEV3Syvm, getPossibleActsOfRunningTransaction_id6z7DEV4sPHo);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> getPossibleActs_id6z7DEV3Syvm(@NotNull SNode __thisNode__) {
+  /*package*/ static List<SNode> getPossibleActsOfCase_id6z7DEV3Syvm(@NotNull SNode __thisNode__) {
     List<SNode> possibleacts = new ArrayList<SNode>();
     for (final SNode transaction : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")))) {
       for (SNode link : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(__thisNode__), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
@@ -52,6 +53,20 @@ public final class Case__BehaviorDescriptor extends BaseBHDescriptor {
         SLinkOperations.setTarget(possibleact, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind"), SLinkOperations.getTarget(link, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")));
         ListSequence.fromList(possibleacts).addElement(possibleact);
       }
+    }
+    return possibleacts;
+  }
+  /*package*/ static List<SNode> getPossibleActsOfRunningTransaction_id6z7DEV4sPHo(@NotNull SNode __thisNode__, final SNode runningTransaction) {
+    List<SNode> possibleacts = new ArrayList<SNode>();
+    for (SNode link : Sequence.fromIterable(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(__thisNode__), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, "DemoSL.structure.ProcesModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2e078028fd82bda0L, 0x2e078028fd82bda3L, "links"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c847L, "transactionKindStepKindFrom")) == SLinkOperations.getTarget(runningTransaction, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec3db834fL, "state"));
+      }
+    })) {
+      SNode possibleact = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, "DemoSL.structure.Act"));
+      SLinkOperations.setTarget(possibleact, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfc7L, "case"), __thisNode__);
+      SLinkOperations.setTarget(possibleact, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind"), SLinkOperations.getTarget(link, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")));
+      ListSequence.fromList(possibleacts).addElement(possibleact);
     }
     return possibleacts;
   }
@@ -73,7 +88,9 @@ public final class Case__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) getPossibleActs_id6z7DEV3Syvm(node));
+        return (T) ((List<SNode>) getPossibleActsOfCase_id6z7DEV3Syvm(node));
+      case 1:
+        return (T) ((List<SNode>) getPossibleActsOfRunningTransaction_id6z7DEV4sPHo(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

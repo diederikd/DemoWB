@@ -14769,7 +14769,7 @@
   <node concept="3jxjQ8" id="2Ze6BQpp0d1">
     <property role="TrG5h" value="Proces model WAA" />
     <property role="3jGGUk" value="true" />
-    <ref role="3jA7_1" node="pMarvI_0aH" />
+    <ref role="3jA7_1" node="pMarvI_0gM" />
     <node concept="a0Nag" id="2Ze6BQpzubY" role="3jxjQ9">
       <property role="a0N98" value="in" />
       <property role="TrG5h" value="initial indienen verzoek aanpassing arbeidsduur" />
@@ -15562,37 +15562,60 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F6m_C" id="6z7DEV4p_nX" role="2GSHpF">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+    <node concept="2F6m_C" id="6z7DEV4v3S7" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
       <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F6m_C" id="6z7DEV4p_o7" role="2GSHpF">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+    <node concept="2F6m_C" id="6z7DEV4v3Sh" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
       <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F6m_C" id="6z7DEV4p_oj" role="2GLOok">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+    <node concept="2F6m_C" id="6z7DEV4v3St" role="2GLOok">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
       <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
     </node>
-    <node concept="2F6m_C" id="6z7DEV4p_ok" role="2GLOok">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+    <node concept="2F6m_C" id="6z7DEV4v3Su" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
       <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F6m_C" id="6z7DEV4p_oi" role="2GSHpF">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+    <node concept="2F6m_C" id="6z7DEV4v3SJ" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4v3Tc" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucL" resolve="execute inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4v3Ty" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4v3TW" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucP" resolve="reject inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F6m_C" id="6z7DEV4v3Ss" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
       <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F6m_C" id="6z7DEV4p_o$" role="2GSHpF">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
+    <node concept="2F6m_C" id="6z7DEV4v3UY" role="2GLOok">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
       <ref role="2F6m__" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F6m_C" id="6z7DEV4p_oR" role="2GSHpF">
-      <ref role="2F6m_D" node="6z7DEV4p_nV" resolve="Case number 1" />
-      <ref role="2F6m__" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
+    <node concept="2F6m_C" id="6z7DEV4v3Ur" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
     </node>
-    <node concept="2F2X5z" id="6z7DEV4p_nV" role="2GWM9e">
-      <node concept="2GwkfO" id="6z7DEV4p_nW" role="2GwkfK">
-        <ref role="2F72nx" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
+    <node concept="2F6m_C" id="6z7DEV4v3Vz" role="2GSHpF">
+      <ref role="2F6m_D" node="6z7DEV4v3S5" resolve="Case number 1" />
+      <ref role="2F6m__" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="2F2X5z" id="6z7DEV4v3S5" role="2GWM9e">
+      <node concept="2GwkfO" id="6z7DEV4v3S6" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
+      </node>
+      <node concept="2GwkfO" id="6z7DEV4v3SI" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
       </node>
     </node>
   </node>
