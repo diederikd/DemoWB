@@ -86,6 +86,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/7550186569850605510");
     b.version(2);
+    b.prop("initiation", 0x68c7a6aec4d94f69L, "7550186569867022185");
     b.associate("case", 0x68c7a6aec3decfc7L).target(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL).optional(false).origin("7550186569850605511").done();
     b.associate("TransactionKindStepKind", 0x68c7a6aec3decfcbL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("7550186569850605515").done();
     return b.create();
@@ -196,6 +197,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/7550186569857426778");
     b.version(2);
+    b.prop("completed", 0x68c7a6aec47dd3d9L, "7550186569861026777");
     b.associate("state", 0x68c7a6aec3db834fL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(true).origin("7550186569850389327").done();
     return b.create();
   }

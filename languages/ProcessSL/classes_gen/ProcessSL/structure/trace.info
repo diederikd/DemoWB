@@ -365,61 +365,65 @@
   </root>
   <root nodeRef="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)/397994270025762895">
     <file name="linkType.java">
-      <node id="397994270025762895" at="14,0,15,0" concept="2" trace="myName" />
-      <node id="397994270025762895" at="15,27,16,18" concept="6" />
-      <node id="397994270025762895" at="18,0,19,0" concept="2" trace="myValue" />
-      <node id="397994270025762895" at="19,47,20,18" concept="1" />
-      <node id="397994270025762895" at="20,18,21,20" concept="1" />
-      <node id="397994270025762895" at="23,28,24,19" concept="6" />
-      <node id="397994270025762895" at="26,36,27,19" concept="6" />
-      <node id="397994270025762895" at="29,47,30,76" concept="5" />
-      <node id="397994270025762896" at="30,76,31,62" concept="1" />
-      <node id="397994270025762897" at="31,62,32,58" concept="1" />
-      <node id="3444719891733828955" at="32,58,33,63" concept="1" />
-      <node id="397994270025762895" at="33,63,34,16" concept="6" />
-      <node id="397994270025762895" at="36,39,37,29" concept="6" />
-      <node id="397994270025762895" at="40,24,41,35" concept="6" />
-      <node id="397994270025762896" at="43,61,44,31" concept="6" />
-      <node id="397994270025762897" at="46,57,47,27" concept="6" />
-      <node id="3444719891733828955" at="49,62,50,32" concept="6" />
-      <node id="397994270025762895" at="51,5,52,33" concept="6" />
-      <node id="397994270025762895" at="15,0,18,0" concept="4" trace="getName#()Ljava/lang/String;" />
-      <node id="397994270025762895" at="23,0,26,0" concept="4" trace="getValue#()Ljava/lang/String;" />
-      <node id="397994270025762895" at="26,0,29,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
-      <node id="397994270025762895" at="36,0,39,0" concept="8" trace="getDefault#()LProcessSL/structure/linkType;" />
-      <node id="397994270025762895" at="39,51,42,5" concept="3" />
-      <node id="397994270025762896" at="42,5,45,5" concept="3" />
-      <node id="397994270025762897" at="45,5,48,5" concept="3" />
-      <node id="3444719891733828955" at="48,5,51,5" concept="3" />
-      <node id="397994270025762895" at="19,0,23,0" concept="0" trace="linkType#(Ljava/lang/String;Ljava/lang/String;)V" />
-      <node id="397994270025762895" at="29,0,36,0" concept="8" trace="getConstants#()Ljava/util/List;" />
-      <node id="397994270025762895" at="39,0,54,0" concept="8" trace="parseValue#(Ljava/lang/String;)LProcessSL/structure/linkType;" />
-      <scope id="397994270025762895" at="15,27,16,18" />
-      <scope id="397994270025762895" at="23,28,24,19" />
-      <scope id="397994270025762895" at="26,36,27,19" />
-      <scope id="397994270025762895" at="36,39,37,29" />
-      <scope id="397994270025762895" at="40,24,41,35" />
-      <scope id="397994270025762896" at="43,61,44,31" />
-      <scope id="397994270025762897" at="46,57,47,27" />
-      <scope id="3444719891733828955" at="49,62,50,32" />
-      <scope id="397994270025762895" at="19,47,21,20" />
-      <scope id="397994270025762895" at="15,0,18,0" />
-      <scope id="397994270025762895" at="23,0,26,0" />
-      <scope id="397994270025762895" at="26,0,29,0" />
-      <scope id="397994270025762895" at="36,0,39,0" />
-      <scope id="397994270025762895" at="19,0,23,0">
+      <node id="397994270025762895" at="15,0,16,0" concept="2" trace="myName" />
+      <node id="397994270025762895" at="16,27,17,18" concept="6" />
+      <node id="397994270025762895" at="19,0,20,0" concept="2" trace="myValue" />
+      <node id="397994270025762895" at="20,47,21,18" concept="1" />
+      <node id="397994270025762895" at="21,18,22,20" concept="1" />
+      <node id="397994270025762895" at="24,28,25,19" concept="6" />
+      <node id="397994270025762895" at="27,36,28,19" concept="6" />
+      <node id="397994270025762895" at="30,47,31,76" concept="5" />
+      <node id="397994270025762896" at="31,76,32,62" concept="1" />
+      <node id="397994270025762897" at="32,62,33,58" concept="1" />
+      <node id="3444719891733828955" at="33,58,34,63" concept="1" />
+      <node id="7550186569867077034" at="34,63,35,64" concept="1" />
+      <node id="397994270025762895" at="35,64,36,16" concept="6" />
+      <node id="397994270025762895" at="38,39,39,29" concept="6" />
+      <node id="397994270025762895" at="42,24,43,35" concept="6" />
+      <node id="397994270025762896" at="45,61,46,31" concept="6" />
+      <node id="397994270025762897" at="48,57,49,27" concept="6" />
+      <node id="3444719891733828955" at="51,62,52,32" concept="6" />
+      <node id="7550186569867077034" at="54,63,55,33" concept="6" />
+      <node id="397994270025762895" at="56,5,57,33" concept="6" />
+      <node id="397994270025762895" at="16,0,19,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="397994270025762895" at="24,0,27,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="397994270025762895" at="27,0,30,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="397994270025762895" at="38,0,41,0" concept="8" trace="getDefault#()LProcessSL/structure/linkType;" />
+      <node id="397994270025762895" at="41,51,44,5" concept="3" />
+      <node id="397994270025762896" at="44,5,47,5" concept="3" />
+      <node id="397994270025762897" at="47,5,50,5" concept="3" />
+      <node id="3444719891733828955" at="50,5,53,5" concept="3" />
+      <node id="7550186569867077034" at="53,5,56,5" concept="3" />
+      <node id="397994270025762895" at="20,0,24,0" concept="0" trace="linkType#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="397994270025762895" at="30,0,38,0" concept="8" trace="getConstants#()Ljava/util/List;" />
+      <node id="397994270025762895" at="41,0,59,0" concept="8" trace="parseValue#(Ljava/lang/String;)LProcessSL/structure/linkType;" />
+      <scope id="397994270025762895" at="16,27,17,18" />
+      <scope id="397994270025762895" at="24,28,25,19" />
+      <scope id="397994270025762895" at="27,36,28,19" />
+      <scope id="397994270025762895" at="38,39,39,29" />
+      <scope id="397994270025762895" at="42,24,43,35" />
+      <scope id="397994270025762896" at="45,61,46,31" />
+      <scope id="397994270025762897" at="48,57,49,27" />
+      <scope id="3444719891733828955" at="51,62,52,32" />
+      <scope id="7550186569867077034" at="54,63,55,33" />
+      <scope id="397994270025762895" at="20,47,22,20" />
+      <scope id="397994270025762895" at="16,0,19,0" />
+      <scope id="397994270025762895" at="24,0,27,0" />
+      <scope id="397994270025762895" at="27,0,30,0" />
+      <scope id="397994270025762895" at="38,0,41,0" />
+      <scope id="397994270025762895" at="20,0,24,0">
         <var name="name" id="397994270025762895" />
         <var name="value" id="397994270025762895" />
       </scope>
-      <scope id="397994270025762895" at="29,47,34,16">
+      <scope id="397994270025762895" at="30,47,36,16">
         <var name="list" id="397994270025762895" />
       </scope>
-      <scope id="397994270025762895" at="29,0,36,0" />
-      <scope id="397994270025762895" at="39,51,52,33" />
-      <scope id="397994270025762895" at="39,0,54,0">
+      <scope id="397994270025762895" at="30,0,38,0" />
+      <scope id="397994270025762895" at="41,51,57,33" />
+      <scope id="397994270025762895" at="41,0,59,0">
         <var name="value" id="397994270025762895" />
       </scope>
-      <unit id="397994270025762895" at="9,0,55,0" name="ProcessSL.structure.linkType" />
+      <unit id="397994270025762895" at="9,0,60,0" name="ProcessSL.structure.linkType" />
     </file>
     <file name="linkType_PropertySupport.java">
       <node id="397994270025762895" at="11,24,12,18" concept="6" />

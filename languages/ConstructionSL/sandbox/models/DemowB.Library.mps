@@ -143,6 +143,7 @@
         <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
       </concept>
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
+        <property id="3444719891735568228" name="ingnoreLinks" index="2Qkckp" />
         <reference id="3316760564123826537" name="transactionKind" index="3jA7_1" />
         <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
         <child id="3316760564121910691" name="links" index="3jxjQb" />
@@ -1465,6 +1466,7 @@
   </node>
   <node concept="3jxjQ8" id="2S7w2zX$hdp">
     <property role="TrG5h" value="Proces Model Library" />
+    <property role="2Qkckp" value="true" />
     <ref role="3jA7_1" node="1VmqrBbwQiO" />
     <node concept="a0NRJ" id="2S7w2zXEPeV" role="3jxjQb">
       <property role="3jFdel" value="response" />

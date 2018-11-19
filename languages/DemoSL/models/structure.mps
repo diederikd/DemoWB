@@ -343,6 +343,14 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
     </node>
+    <node concept="1TJgyi" id="6z7DEV4QkXD" role="1TKVEl">
+      <property role="IQ2nx" value="7550186569867022185" />
+      <property role="TrG5h" value="initiation" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="6z7DEV4QkXH" role="lGtFl">
+        <property role="t5JxN" value="This act is derived from a iniitation link" />
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="6z7DEV4hIlq">
     <property role="EcuMT" value="7550186569857426778" />
@@ -354,6 +362,11 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="state" />
       <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+    </node>
+    <node concept="1TJgyi" id="6z7DEV4vtfp" role="1TKVEl">
+      <property role="IQ2nx" value="7550186569861026777" />
+      <property role="TrG5h" value="completed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
