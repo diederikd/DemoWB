@@ -31,7 +31,7 @@ public class NewCase {
       SLinkOperations.setTarget(runningTransaction, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec3db834fL, "state"), SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x2fce1a7d99f0d05dL, "startState")));
       ListSequence.fromList(SLinkOperations.getChildren(newCase, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions"))).addElement(runningTransaction);
       ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases"))).addElement(newCase);
-      Simulation__BehaviorDescriptor.updatePossibleActs_id6z7DEV4m8a2.invoke(node);
+      Simulation__BehaviorDescriptor.updatePossibleActs_id6z7DEV56A64.invoke(node);
     }
   }
 }

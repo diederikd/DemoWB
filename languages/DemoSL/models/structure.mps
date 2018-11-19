@@ -283,20 +283,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6z7DEV3N7vd" resolve="Case" />
     </node>
-    <node concept="1TJgyj" id="6z7DEV40e2U" role="1TKVEi">
-      <property role="IQ2ns" value="7550186569852838074" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="possibleActs" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6z7DEV3RGZ6" resolve="Act" />
-    </node>
-    <node concept="1TJgyj" id="6z7DEV49n35" role="1TKVEi">
-      <property role="IQ2ns" value="7550186569855234245" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="performedActs" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6z7DEV3RGZ6" resolve="Act" />
-    </node>
     <node concept="1TJgyj" id="2Ze6BQpWd1t" role="1TKVEi">
       <property role="IQ2ns" value="3444719891740938333" />
       <property role="20lmBu" value="reference" />
@@ -329,13 +315,6 @@
     <property role="3GE5qa" value="Simulation" />
     <property role="TrG5h" value="Act" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6z7DEV3RGZ7" role="1TKVEi">
-      <property role="IQ2ns" value="7550186569850605511" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="case" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6z7DEV3N7vd" resolve="Case" />
-    </node>
     <node concept="1TJgyj" id="6z7DEV3RGZb" role="1TKVEi">
       <property role="IQ2ns" value="7550186569850605515" />
       <property role="20lmBu" value="reference" />
@@ -357,6 +336,20 @@
     <property role="3GE5qa" value="Simulation" />
     <property role="TrG5h" value="RunningTransaction" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6z7DEV40e2U" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569852838074" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="possibleActs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6z7DEV3RGZ6" resolve="Act" />
+    </node>
+    <node concept="1TJgyj" id="6z7DEV49n35" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569855234245" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="performedActs" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6z7DEV3RGZ6" resolve="Act" />
+    </node>
     <node concept="1TJgyj" id="6z7DEV3QSdf" role="1TKVEi">
       <property role="IQ2ns" value="7550186569850389327" />
       <property role="20lmBu" value="reference" />
