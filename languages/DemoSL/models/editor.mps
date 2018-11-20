@@ -12,6 +12,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="swi3" ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)" />
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
@@ -143,11 +144,19 @@
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -171,6 +180,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -215,6 +225,9 @@
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -278,6 +291,7 @@
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
       <concept id="8963411245957652387" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_Query" flags="ig" index="37q72E" />
       <concept id="8963411245958754161" name="de.itemis.mps.editor.diagram.structure.Content_GenericElementQuery_ParameterObject" flags="ng" index="37u81S" />
+      <concept id="7899485855305560746" name="de.itemis.mps.editor.diagram.structure.QueryFunction_LineStyle" flags="ig" index="1k5mSy" />
       <concept id="6910723851735106293" name="de.itemis.mps.editor.diagram.structure.DiagramButtonConfig" flags="ng" index="3sA_1f">
         <property id="6910723851735128113" name="hasResetViewButton" index="3sAwEb" />
         <property id="6910723851735128106" name="hasRelayoutAllEdgesButton" index="3sAwEg" />
@@ -289,6 +303,7 @@
       </concept>
       <concept id="6987730699888898446" name="de.itemis.mps.editor.diagram.structure.LineStyle" flags="lg" index="3C0lA2">
         <property id="6987730699889504313" name="value" index="3DY1wP" />
+        <child id="7899485855305565127" name="query" index="1k5DXf" />
       </concept>
       <concept id="6987730699889040828" name="de.itemis.mps.editor.diagram.structure.LineColor" flags="lg" index="3C0NmK" />
       <concept id="8587703283523590697" name="de.itemis.mps.editor.diagram.structure.ConnectionEndpoint" flags="ng" index="1PNbMa">
@@ -1578,6 +1593,57 @@
             </node>
           </node>
           <node concept="2M4Efz" id="2Ze6BQpX6zv" role="aCds2">
+            <node concept="3C0lA2" id="6z7DEV5ugVO" role="3F10Kt">
+              <node concept="1k5mSy" id="6z7DEV5uhnt" role="1k5DXf">
+                <node concept="3clFbS" id="6z7DEV5uhnu" role="2VODD2">
+                  <node concept="3cpWs8" id="6z7DEV5uiH9" role="3cqZAp">
+                    <node concept="3cpWsn" id="6z7DEV5uiHa" role="3cpWs9">
+                      <property role="TrG5h" value="lineStyle" />
+                      <node concept="3uibUv" id="6z7DEV5uiHb" role="1tU5fm">
+                        <ref role="3uigEE" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                      </node>
+                      <node concept="Rm8GO" id="6z7DEV5ujEi" role="33vP2m">
+                        <ref role="Rm8GQ" to="swi3:4mmPun57bLv" resolve="SOLID" />
+                        <ref role="1Px2BO" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="6z7DEV5uktB" role="3cqZAp">
+                    <node concept="3clFbS" id="6z7DEV5uktD" role="3clFbx">
+                      <node concept="3clFbF" id="6z7DEV5unpl" role="3cqZAp">
+                        <node concept="37vLTI" id="6z7DEV5uovz" role="3clFbG">
+                          <node concept="Rm8GO" id="6z7DEV5upqS" role="37vLTx">
+                            <ref role="Rm8GQ" to="swi3:4mmPun57bLw" resolve="DASHED" />
+                            <ref role="1Px2BO" to="swi3:4mmPun57bLu" resolve="LineStyle" />
+                          </node>
+                          <node concept="37vLTw" id="6z7DEV5unpj" role="37vLTJ">
+                            <ref role="3cqZAo" node="6z7DEV5uiHa" resolve="lineStyle" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6z7DEV5um2e" role="3clFbw">
+                      <node concept="2OqwBi" id="6z7DEV5ukV6" role="2Oq$k0">
+                        <node concept="37u81S" id="6z7DEV5ukC8" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="6z7DEV5ulop" role="2OqNvi">
+                          <ref role="3TsBF5" to="it18:2S7w2zXEPeX" resolve="linkType" />
+                        </node>
+                      </node>
+                      <node concept="3t7uKx" id="6z7DEV5un0L" role="2OqNvi">
+                        <node concept="uoxfO" id="6z7DEV5un0N" role="3t7uKA">
+                          <ref role="uo_Cq" to="it18:m5XqSfxGxh" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3cpWs6" id="6z7DEV5ujYI" role="3cqZAp">
+                    <node concept="37vLTw" id="6z7DEV5uk93" role="3cqZAk">
+                      <ref role="3cqZAo" node="6z7DEV5uiHa" resolve="lineStyle" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3Tqbb2" id="2Ze6BQpX6PF" role="2M4AHM">
               <ref role="ehGHo" to="it18:m5XqSfxGx1" resolve="Link" />
             </node>

@@ -70,6 +70,7 @@ import de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import ProcessSL.behavior.TransactionKindStepKind__BehaviorDescriptor;
+import de.itemis.mps.editor.diagram.styles.editor.LineStyle;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
@@ -77,6 +78,7 @@ import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -442,6 +444,9 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 
                               };
                               accessor.setRootCell(editorCell);
+                              Style style = new StyleImpl();
+                              style.set(StyleAttributes.getInstance().<LineStyle>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-style"), _StyleParameter_QueryFunction_v93ikk_a0d0f0());
+                              accessor.setStyle(style);
 
 
                               elements.add(accessor);
@@ -487,6 +492,13 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
   }
   private EditorCell createDiagram_1() {
     return createDiagram_0(getEditorContext(), myNode);
+  }
+  private LineStyle _StyleParameter_QueryFunction_v93ikk_a0d0f0() {
+    LineStyle lineStyle = LineStyle.SOLID;
+    if (SPropertyOperations.hasValue(((SNode) ContextVariables.getCurrent().getValue("parameterObject")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x2e078028fdab53bdL, "linkType"), "wait", "response")) {
+      lineStyle = LineStyle.DASHED;
+    }
+    return lineStyle;
   }
   /*package*/ static class Inline_Builder_v93ikk_a1a5a extends AbstractEditorBuilder {
     @NotNull
