@@ -22,6 +22,10 @@
         <reference id="397994270025762887" name="transactionKindStepKindFrom" index="a0NRD" />
         <reference id="397994270025762882" name="transactionKindStepKindTo" index="a0NRG" />
       </concept>
+      <concept id="2743742872035015482" name="ProcessSL.structure.ICardinality" flags="ng" index="3cIS2w">
+        <property id="2743742872035015483" name="minCard" index="3cIS2x" />
+        <property id="2743742872035015485" name="maxCard" index="3cIS2B" />
+      </concept>
     </language>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
@@ -86,9 +90,9 @@
         <child id="2222079712862271067" name="startEvent" index="3l5TZy" />
         <child id="2222079712862271069" name="endEvent" index="3l5TZ$" />
       </concept>
-      <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2w">
-        <property id="2743742872035015483" name="minCardDomain" index="3cIS2x" />
-        <property id="2743742872035015485" name="maxCardDomain" index="3cIS2B" />
+      <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2x">
+        <property id="2743742872035015483" name="minCardDomain" index="3cIS2y" />
+        <property id="2743742872035015485" name="maxCardDomain" index="3cIS2C" />
         <property id="2743742872035015488" name="minCardRange" index="3cIS3q" />
         <property id="2743742872035015492" name="maxCardRange" index="3cIS3u" />
       </concept>
@@ -2172,8 +2176,8 @@
     <node concept="3cH7GO" id="IuxU86FIMv" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P40" />
       <property role="TrG5h" value="Naam" />
       <ref role="2Hnu9v" node="IuxU86frzh" resolve="Werkgever" />
@@ -2182,8 +2186,8 @@
     <node concept="3cH7GO" id="IuxU86FIQO" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P41" />
       <property role="TrG5h" value="Naam" />
       <ref role="2Hnu9v" node="IuxU86fr$j" resolve="Werknemer" />
@@ -2204,8 +2208,8 @@
     <node concept="3cH7GN" id="IuxU86gUC5" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="0" />
-      <property role="3cIS2B" value="N" />
+      <property role="3cIS2y" value="0" />
+      <property role="3cIS2C" value="N" />
       <property role="3cH7GY" value="P17" />
       <property role="TrG5h" value="werkgever" />
       <ref role="3cH7GL" node="IuxU86frzh" resolve="Werkgever" />
@@ -2214,8 +2218,8 @@
     <node concept="3cH7GN" id="IuxU86gpyy" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="0" />
-      <property role="3cIS2B" value="N" />
+      <property role="3cIS2y" value="0" />
+      <property role="3cIS2C" value="N" />
       <property role="3cH7GY" value="P18" />
       <property role="TrG5h" value="werknemer" />
       <ref role="3cH7GL" node="IuxU86fr$j" resolve="Werknemer" />
@@ -2224,8 +2228,8 @@
     <node concept="3cH7GO" id="IuxU86i86W" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P19" />
       <property role="TrG5h" value="datum indiensttreding" />
       <ref role="2Hnu9v" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
@@ -2234,8 +2238,8 @@
     <node concept="3cH7GO" id="IuxU86gUIl" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P20" />
       <property role="TrG5h" value="getekend op" />
       <ref role="2Hnu9v" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
@@ -2244,8 +2248,8 @@
     <node concept="3cH7GN" id="IuxU86i8cH" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="N" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P23" />
       <property role="TrG5h" value="arbeidsduur" />
       <ref role="3cH7GL" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
@@ -2268,8 +2272,8 @@
     <node concept="3cH7GN" id="IuxU86i8Fk" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="N" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="N" />
       <property role="3cH7GY" value="P29" />
       <property role="TrG5h" value="spreiding van de arbeidsduur" />
       <ref role="3cH7GL" node="IuxU86i8AQ" resolve="Spreiding" />
@@ -2283,8 +2287,8 @@
     <node concept="3cH7GO" id="IuxU86i8aQ" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P22" />
       <property role="TrG5h" value="arbeidsduur" />
       <ref role="2Hnu9v" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
@@ -2297,8 +2301,8 @@
     <node concept="3cH7GN" id="IuxU86i8D3" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="N" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P28" />
       <property role="TrG5h" value="werkperioden in spreiding" />
       <ref role="3cH7GL" node="IuxU86i8i2" resolve="Werkperiode" />
@@ -2311,8 +2315,8 @@
     <node concept="3cH7GO" id="IuxU86i8l1" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P25" />
       <property role="TrG5h" value="aanvangstijd periode" />
       <ref role="2Hnu9v" node="IuxU86i8i2" resolve="Werkperiode" />
@@ -2321,8 +2325,8 @@
     <node concept="3cH7GO" id="IuxU86i8jV" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P26" />
       <property role="TrG5h" value="eindtijd periode" />
       <ref role="2Hnu9v" node="IuxU86i8i2" resolve="Werkperiode" />
@@ -2345,8 +2349,8 @@
     <node concept="3cH7GN" id="IuxU86jqBD" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="0" />
-      <property role="3cIS2B" value="N" />
+      <property role="3cIS2y" value="0" />
+      <property role="3cIS2C" value="N" />
       <property role="3cH7GY" value="P30" />
       <property role="TrG5h" value="op grond van arbeidsovereenkomst" />
       <ref role="3cH7GL" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
@@ -2355,8 +2359,8 @@
     <node concept="3cH7GO" id="IuxU86jqU9" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="TrG5h" value="beoogde ingangsdatum van de aanpassing" />
       <property role="3cH7GY" value="P31" />
       <ref role="2Hnu9v" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
@@ -2365,8 +2369,8 @@
     <node concept="3cH7GO" id="IuxU86jqWK" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P32" />
       <property role="TrG5h" value="omvang van de aanpassing" />
       <ref role="2Hnu9v" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
@@ -2375,8 +2379,8 @@
     <node concept="3cH7GN" id="IuxU86jqZv" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="0" />
-      <property role="3cIS2B" value="N" />
+      <property role="3cIS2y" value="0" />
+      <property role="3cIS2C" value="N" />
       <property role="3cH7GY" value="P33" />
       <property role="TrG5h" value="gewenste spreiding" />
       <ref role="3cH7GL" node="IuxU86i8AQ" resolve="Spreiding" />
@@ -2385,8 +2389,8 @@
     <node concept="3cH7GO" id="IuxU86jr2c" role="3cH7GF">
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
+      <property role="3cIS2y" value="1" />
+      <property role="3cIS2C" value="1" />
       <property role="3cH7GY" value="P34" />
       <property role="TrG5h" value="schriftelijk ingediend" />
       <ref role="2Hnu9v" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
@@ -17603,66 +17607,92 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuc8" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuc9" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuca" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc1" resolve="decline indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucb" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc1" resolve="decline indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucc" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc1" resolve="decline indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc6" resolve="quit indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucd" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuce" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc3" resolve="execute indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucf" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc0" resolve="accept indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucg" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc7" resolve="reject indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuch" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc7" resolve="reject indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuci" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc7" resolve="reject indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc5" resolve="stop indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucj" role="3jxjQb">
       <property role="3jFdel" value="reversion" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc5" resolve="stop indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuck" role="3jxjQb">
       <property role="3jFdel" value="reversion" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc6" resolve="quit indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzubZ" resolve="request indienen verzoek aanpassing arbeidsduur" />
     </node>
@@ -17713,51 +17743,71 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucw" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucp" resolve="promiss verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucx" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzuco" resolve="decline verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucy" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuco" resolve="decline verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucz" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuco" resolve="decline verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzuct" resolve="quit verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuc$" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucp" resolve="promiss verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucq" resolve="execute verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzuc_" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucq" resolve="execute verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucA" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucB" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucu" resolve="reject verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucC" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucu" resolve="reject verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucD" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucu" resolve="reject verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzucs" resolve="stop verzoek aanpassing arbeidsduur te bespreken" />
     </node>
@@ -17808,51 +17858,71 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucR" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucS" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucT" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucU" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucO" resolve="quit inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucV" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucL" resolve="execute inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucW" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucL" resolve="execute inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucX" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucY" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucP" resolve="reject inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzucZ" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucP" resolve="reject inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzud0" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucP" resolve="reject inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucN" resolve="stop inwilligen verzoek aanpassing arbeidsduur" />
     </node>
@@ -17903,51 +17973,71 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzude" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud7" resolve="promiss afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudf" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud6" resolve="decline afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudg" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud6" resolve="decline afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudh" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud6" resolve="decline afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzudb" resolve="quit afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudi" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud7" resolve="promiss afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud8" resolve="execute afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudj" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud8" resolve="execute afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud9" resolve="state afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudk" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud9" resolve="state afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud5" resolve="accept afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudl" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzud9" resolve="state afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzudc" resolve="reject afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudm" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudc" resolve="reject afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzud9" resolve="state afwijzen van het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudn" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudc" resolve="reject afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuda" resolve="stop afwijzen van het verzoek" />
     </node>
@@ -17998,51 +18088,71 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzud_" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudr" resolve="request vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudu" resolve="promiss vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudA" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudr" resolve="request vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudt" resolve="decline vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudB" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudt" resolve="decline vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudr" resolve="request vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudC" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudt" resolve="decline vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudy" resolve="quit vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudD" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudu" resolve="promiss vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudv" resolve="execute vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudE" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudv" resolve="execute vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudw" resolve="state vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudF" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudw" resolve="state vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzuds" resolve="accept vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudG" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudw" resolve="state vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudz" resolve="reject vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudH" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudz" resolve="reject vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudw" resolve="state vaststellen van de spreiding van de uren " />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudI" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudz" resolve="reject vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzudx" resolve="stop vaststellen van de spreiding van de uren " />
     </node>
@@ -18093,51 +18203,71 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudW" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudM" resolve="request wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudP" resolve="promiss wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudX" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudM" resolve="request wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudO" resolve="decline wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudY" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudO" resolve="decline wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudM" resolve="request wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzudZ" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudO" resolve="decline wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudT" resolve="quit wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzue0" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudP" resolve="promiss wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudQ" resolve="execute wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzue1" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudQ" resolve="execute wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudR" resolve="state wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzue2" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudR" resolve="state wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudN" resolve="accept wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzue3" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudR" resolve="state wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudU" resolve="reject wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzue4" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudU" resolve="reject wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudR" resolve="state wijzigen van de spreiding van de uren" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzue5" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzudU" resolve="reject wijzigen van de spreiding van de uren" />
       <ref role="a0NRG" node="2Ze6BQpzudS" resolve="stop wijzigen van de spreiding van de uren" />
     </node>
@@ -18188,80 +18318,112 @@
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueE" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuew" resolve="request automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuez" resolve="promiss automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueF" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuew" resolve="request automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuey" resolve="decline automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueG" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuey" resolve="decline automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuew" resolve="request automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueH" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuey" resolve="decline automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzueB" resolve="quit automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueI" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuez" resolve="promiss automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzue$" resolve="execute automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueJ" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzue$" resolve="execute automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzue_" resolve="state automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueK" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzue_" resolve="state automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuex" resolve="accept automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueL" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzue_" resolve="state automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzueC" resolve="reject automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueM" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzueC" resolve="reject automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzue_" resolve="state automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpzueN" role="3jxjQb">
       <property role="3jFdel" value="response" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzueC" resolve="reject automatisch aanpassing overeenkomstig het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzueA" resolve="stop automatisch aanpassing overeenkomstig het verzoek" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpEiWi" role="3jxjQb">
       <property role="3jFdel" value="initiation" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
     </node>
     <node concept="a0NRJ" id="2Ze6BQpEj1e" role="3jxjQb">
       <property role="3jFdel" value="initiation" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="promiss indienen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="6z7DEV4$BrV" role="3jxjQb">
       <property role="3jFdel" value="wait" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="6z7DEV4$BvY" role="3jxjQb">
       <property role="3jFdel" value="wait" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzuc4" resolve="state indienen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="6z7DEV5vkQC" role="3jxjQb">
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRG" node="2Ze6BQpzudr" resolve="request vaststellen van de spreiding van de uren " />
       <ref role="a0NRD" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="6z7DEV5vndU" role="3jxjQb">
       <property role="3jFdel" value="wait" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzuds" resolve="accept vaststellen van de spreiding van de uren " />
       <ref role="a0NRG" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
     </node>

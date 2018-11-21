@@ -443,6 +443,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="DemoSL.editor.ProcesModel_EditorBuilder_a" file="ProcesModel_EditorBuilder_a.java">
+    <classNode dependClassName="de.itemis.mps.editor.celllayout.runtime.cells.HorizontalLineCell" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

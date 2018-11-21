@@ -19,6 +19,9 @@
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
@@ -28,6 +31,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -185,6 +189,9 @@
       <property role="TrG5h" value="linkType" />
       <ref role="AX2Wp" node="m5XqSfxGxf" resolve="linkType" />
     </node>
+    <node concept="PrWs8" id="6z7DEV5LAwv" role="PzmwI">
+      <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
+    </node>
   </node>
   <node concept="AxPO7" id="m5XqSfxGxf">
     <property role="TrG5h" value="linkType" />
@@ -206,6 +213,24 @@
       <property role="1uS6qo" value="initiation" />
       <property role="1uS6qv" value="initiation" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2ojITFEE3GU">
+    <property role="EcuMT" value="2743742872035015482" />
+    <property role="TrG5h" value="ICardinality" />
+    <node concept="1TJgyi" id="2ojITFEE3GV" role="1TKVEl">
+      <property role="IQ2nx" value="2743742872035015483" />
+      <property role="TrG5h" value="minCard" />
+      <ref role="AX2Wp" node="2ojITFEE4jr" resolve="cardinality" />
+    </node>
+    <node concept="1TJgyi" id="2ojITFEE3GX" role="1TKVEl">
+      <property role="IQ2nx" value="2743742872035015485" />
+      <property role="TrG5h" value="maxCard" />
+      <ref role="AX2Wp" node="2ojITFEE4jr" resolve="cardinality" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="2ojITFEE4jr">
+    <property role="TrG5h" value="cardinality" />
+    <property role="FLfZY" value="[0-9]+|[*]" />
   </node>
 </model>
 

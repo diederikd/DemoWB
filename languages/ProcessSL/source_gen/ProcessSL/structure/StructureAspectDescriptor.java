@@ -12,6 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptICardinality = createDescriptorForICardinality();
   /*package*/ final ConceptDescriptor myConceptLink = createDescriptorForLink();
   /*package*/ final ConceptDescriptor myConceptTransactionKindStepKind = createDescriptorForTransactionKindStepKind();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -22,13 +23,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptLink, myConceptTransactionKindStepKind);
+    return Arrays.asList(myConceptICardinality, myConceptLink, myConceptTransactionKindStepKind);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.ICardinality:
+        return myConceptICardinality;
       case LanguageConceptSwitch.Link:
         return myConceptLink;
       case LanguageConceptSwitch.TransactionKindStepKind:
@@ -42,9 +45,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForICardinality() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ProcessSL", "ICardinality", 0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x2613bb9aeaa83b3aL);
+    b.interface_();
+    b.origin("r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)/2743742872035015482");
+    b.version(2);
+    b.prop("minCard", 0x2613bb9aeaa83b3bL, "2743742872035015483");
+    b.prop("maxCard", 0x2613bb9aeaa83b3dL, "2743742872035015485");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForLink() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ProcessSL", "Link", 0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L);
     b.class_(false, false, false);
+    b.parent(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x2613bb9aeaa83b3aL);
     b.origin("r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)/397994270025762881");
     b.version(2);
     b.prop("linkType", 0x2e078028fdab53bdL, "3316760564124570557");

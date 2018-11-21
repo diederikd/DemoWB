@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ICardinality;
   private ConceptPresentation props_Link;
   private ConceptPresentation props_TransactionKindStepKind;
 
@@ -17,6 +18,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ICardinality:
+        if (props_ICardinality == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ICardinality = cpb.create();
+        }
+        return props_ICardinality;
       case LanguageConceptSwitch.Link:
         if (props_Link == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
