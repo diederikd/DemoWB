@@ -147,6 +147,7 @@
       </concept>
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
         <property id="3444719891735568228" name="ingnoreLinks" index="2Qkckp" />
+        <property id="3316760564125224636" name="filter" index="3jGGUk" />
         <reference id="3316760564123826537" name="transactionKind" index="3jA7_1" />
         <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
         <child id="3316760564121910691" name="links" index="3jxjQb" />
@@ -17480,6 +17481,7 @@
   <node concept="3jxjQ8" id="2Ze6BQpp0d1">
     <property role="TrG5h" value="Proces model WAA" />
     <property role="2Qkckp" value="true" />
+    <property role="3jGGUk" value="true" />
     <ref role="3jA7_1" node="pMarvI_0aH" />
     <node concept="a0Nag" id="2Ze6BQpzubY" role="3jxjQ9">
       <property role="a0N98" value="in" />
