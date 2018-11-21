@@ -53,7 +53,7 @@
     <classNode dependClassName="FactSL.behavior.EntityType__BehaviorDescriptor" />
     <classNode dependClassName="FactSL.behavior.EventType__BehaviorDescriptor" />
     <classNode dependClassName="FactSL.behavior.FactType__BehaviorDescriptor" />
-    <classNode dependClassName="FactSL.behavior.IPropertyType__BehaviorDescriptor" />
+    <classNode dependClassName="FactSL.behavior.ICardinality__BehaviorDescriptor" />
     <classNode dependClassName="FactSL.behavior.PropertyType__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.api.BHDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -158,7 +158,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor" />
   </dependency>
-  <dependency className="FactSL.behavior.IPropertyType__BehaviorDescriptor" file="IPropertyType__BehaviorDescriptor.java">
+  <dependency className="FactSL.behavior.ICardinality__BehaviorDescriptor" file="ICardinality__BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.Arrays" />

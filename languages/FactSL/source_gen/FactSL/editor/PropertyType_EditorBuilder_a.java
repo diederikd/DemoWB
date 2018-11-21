@@ -215,14 +215,14 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     return editorCell;
   }
   private EditorCell createRefCell_0() {
-    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain");
+    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
             return new PropertyType_EditorBuilder_a.Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "domain");
+        }, targetNode, "domainOfProperty");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -230,12 +230,12 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       }
     };
 
-    provider.setNoTargetText("<no domain>");
+    provider.setNoTargetText("<no domainOfProperty>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain"));
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
@@ -528,14 +528,14 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     return editorCell;
   }
   private EditorCell createRefCell_2() {
-    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain");
+    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
             return new PropertyType_EditorBuilder_a.Inline_Builder2(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "domain");
+        }, targetNode, "domainOfProperty");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -543,12 +543,12 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       }
     };
 
-    provider.setNoTargetText("<no domain>");
+    provider.setNoTargetText("<no domainOfProperty>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain"));
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
@@ -939,14 +939,14 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     return editorCell;
   }
   private EditorCell createRefCell_5() {
-    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain");
+    final SReferenceLink referenceLink = MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty");
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
             return new PropertyType_EditorBuilder_a.Inline_Builder5(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, "domain");
+        }, targetNode, "domainOfProperty");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -954,12 +954,12 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       }
     };
 
-    provider.setNoTargetText("<no domain>");
+    provider.setNoTargetText("<no domainOfProperty>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain"));
+      editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty"));
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));

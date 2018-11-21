@@ -89,7 +89,7 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
           private IShape endShape = null;
           private IShape startShape = null;
 
-          private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain")));
+          private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty")));
           private IConnectionEndpointReference endpointTo = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a9L, 0x2613bb9aeaa7c0abL, "prange")));
 
           {

@@ -7,7 +7,6 @@
   </models>
   <sourcePath />
   <languageVersions>
-    <language slang="l:e81fc117-1697-4e77-8b54-4a5aa8f4ea97:ActionSL" version="0" />
     <language slang="l:d87481a3-8853-4c7c-9cb5-096d805e832c:ConstructionSL" version="1" />
     <language slang="l:61f0ccba-8ded-47ee-b024-8f1c223c70ef:DemoSL" version="0" />
     <language slang="l:6836a913-df90-4e79-9a37-cb334bb02ea5:FactSL" version="0" />

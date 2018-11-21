@@ -545,7 +545,7 @@
     </file>
   </root>
   <root nodeRef="r:5188a2d6-1793-4c1f-ab4d-ef2646a67ee5(FactSL.behavior)/2222079712862556088">
-    <file name="IPropertyType__BehaviorDescriptor.java">
+    <file name="ICardinality__BehaviorDescriptor.java">
       <node id="2222079712862556088" at="21,0,22,0" concept="7" trace="CONCEPT" />
       <node id="2222079712862556088" at="22,0,23,0" concept="7" trace="REGISTRY" />
       <node id="2222079712862556088" at="25,0,26,0" concept="7" trace="BH_METHODS" />
@@ -553,7 +553,7 @@
       <node id="2222079712862556108" at="28,182,29,182" concept="2" />
       <node id="2222079712862561291" at="29,182,30,183" concept="2" />
       <node id="2222079712862561496" at="30,183,31,183" concept="2" />
-      <node id="2222079712862556088" at="35,51,36,20" concept="9" />
+      <node id="2222079712862556088" at="35,50,36,20" concept="9" />
       <node id="2222079712862556088" at="40,114,41,21" concept="2" />
       <node id="2222079712862556088" at="45,114,46,49" concept="5" />
       <node id="2222079712862556088" at="47,26,48,56" concept="11" />
@@ -563,7 +563,7 @@
       <node id="2222079712862556088" at="63,14,64,58" concept="11" />
       <node id="2222079712862556088" at="70,48,71,22" concept="6" />
       <node id="2222079712862556088" at="76,40,77,19" concept="6" />
-      <node id="2222079712862556088" at="35,0,38,0" concept="1" trace="IPropertyType__BehaviorDescriptor#()V" />
+      <node id="2222079712862556088" at="35,0,38,0" concept="1" trace="ICardinality__BehaviorDescriptor#()V" />
       <node id="2222079712862556088" at="46,49,49,5" concept="3" />
       <node id="2222079712862556088" at="58,49,61,5" concept="3" />
       <node id="2222079712862556088" at="39,0,43,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
@@ -574,7 +574,7 @@
       <node id="2222079712862556088" at="27,0,33,0" concept="8" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2222079712862556088" at="44,0,55,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <node id="2222079712862556088" at="56,0,67,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="2222079712862556088" at="35,51,36,20" />
+      <scope id="2222079712862556088" at="35,50,36,20" />
       <scope id="2222079712862556088" at="40,114,41,21" />
       <scope id="2222079712862556088" at="47,26,48,56" />
       <scope id="2222079712862556088" at="51,14,52,58" />
@@ -610,7 +610,7 @@
         <var name="method" id="2222079712862556088" />
         <var name="parameters" id="2222079712862556088" />
       </scope>
-      <unit id="2222079712862556088" at="20,0,80,0" name="FactSL.behavior.IPropertyType__BehaviorDescriptor" />
+      <unit id="2222079712862556088" at="20,0,80,0" name="FactSL.behavior.ICardinality__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

@@ -2400,8 +2400,8 @@
             <node concept="23hSZX" id="pMarvHVfKz" role="ljJml">
               <node concept="2OqwBi" id="pMarvHVfUW" role="23hSWE">
                 <node concept="37u81S" id="pMarvHVfKM" role="2Oq$k0" />
-                <node concept="3TrEf2" id="pMarvHVg8M" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ajas:2ojITFEDW2E" resolve="domain" />
+                <node concept="3TrEf2" id="6z7DEV5ImhD" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
                 </node>
               </node>
             </node>

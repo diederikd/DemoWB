@@ -23,19 +23,20 @@ public final class LanguageConceptSwitch {
   public static final int EventType = 11;
   public static final int FactType = 12;
   public static final int Generalisation = 13;
-  public static final int IPropertyType = 14;
-  public static final int Length = 15;
-  public static final int Mass = 16;
-  public static final int Number = 17;
-  public static final int PropertyType = 18;
-  public static final int Specialisation = 19;
-  public static final int Temperature = 20;
-  public static final int Text = 21;
-  public static final int Time = 22;
-  public static final int TruthValue = 23;
-  public static final int ValueType = 24;
-  public static final int Velocity = 25;
-  public static final int Volume = 26;
+  public static final int ICardinality = 14;
+  public static final int IPropertyType = 15;
+  public static final int Length = 16;
+  public static final int Mass = 17;
+  public static final int Number = 18;
+  public static final int PropertyType = 19;
+  public static final int Specialisation = 20;
+  public static final int Temperature = 21;
+  public static final int Text = 22;
+  public static final int Time = 23;
+  public static final int TruthValue = 24;
+  public static final int ValueType = 25;
+  public static final int Velocity = 26;
+  public static final int Volume = 27;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x6836a913df904e79L, 0x9a37cb334bb02ea5L);
@@ -53,7 +54,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x2613bb9aeaa7c0a5L, EventType);
     builder.put(0x2613bb9aeaa69f0fL, FactType);
     builder.put(0x67229b7ee4c9080L, Generalisation);
-    builder.put(0x2613bb9aeaa83b3aL, IPropertyType);
+    builder.put(0x2613bb9aeaa83b3aL, ICardinality);
+    builder.put(0x68c7a6aec59a44f0L, IPropertyType);
     builder.put(0x2613bb9aeaa83b33L, Length);
     builder.put(0x2613bb9aeaa83b32L, Mass);
     builder.put(0x2613bb9aeaa83b38L, Number);

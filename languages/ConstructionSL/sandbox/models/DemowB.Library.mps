@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL" version="1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
     <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
     <use id="a2c2ae09-7c36-4fba-9b64-5e0450cb1363" name="ProcessSL" version="0" />
@@ -63,6 +62,9 @@
       </concept>
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
+      <concept id="7550186569879667952" name="FactSL.structure.IPropertyType" flags="ng" index="2Hnu9u">
+        <reference id="7550186569879667953" name="domainOfProperty" index="2Hnu9v" />
+      </concept>
       <concept id="2743742872034984105" name="FactSL.structure.PropertyType" flags="ng" index="3cH7GN">
         <reference id="2743742872034984107" name="prange" index="3cH7GL" />
       </concept>
@@ -79,12 +81,11 @@
         <child id="2222079712862271067" name="startEvent" index="3l5TZy" />
         <child id="2222079712862271069" name="endEvent" index="3l5TZ$" />
       </concept>
-      <concept id="2743742872035015482" name="FactSL.structure.IPropertyType" flags="ng" index="3cIS2w">
+      <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2w">
         <property id="2743742872035015483" name="minCardDomain" index="3cIS2x" />
         <property id="2743742872035015485" name="maxCardDomain" index="3cIS2B" />
         <property id="2743742872035015488" name="minCardRange" index="3cIS3q" />
         <property id="2743742872035015492" name="maxCardRange" index="3cIS3u" />
-        <reference id="2743742872034984106" name="domain" index="3cH7GK" />
       </concept>
       <concept id="2743742872035015480" name="FactSL.structure.Number" flags="ng" index="3cIS2y" />
       <concept id="2743742872035015473" name="FactSL.structure.Amount" flags="ng" index="3cIS2F" />
@@ -274,7 +275,7 @@
       <property role="3cIS3u" value="1" />
       <property role="TrG5h" value="MEMBER" />
       <ref role="3cH7GL" node="1VmqrBb_kPt" resolve="PERSON" />
-      <ref role="3cH7GK" node="1VmqrBbC534" resolve="MEMBERSHIP" />
+      <ref role="2Hnu9v" node="1VmqrBbC534" resolve="MEMBERSHIP" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbn48o" role="3cH7GF">
       <property role="3cH7GY" value="P7" />
@@ -284,8 +285,8 @@
       <property role="3cIS3q" value="1" />
       <property role="3cIS3u" value="1" />
       <property role="TrG5h" value="copy of Book" />
-      <ref role="3cH7GK" node="1VmqrBbL$XC" resolve="COPY" />
       <ref role="3cH7GL" node="1VmqrBbkqsb" resolve="BOOK" />
+      <ref role="2Hnu9v" node="1VmqrBbL$XC" resolve="COPY" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbWhMh" role="3cH7GF">
       <property role="3cIS2x" value="0" />
@@ -295,8 +296,8 @@
       <property role="TrG5h" value="book of the Loan" />
       <property role="3cH7GY" value="P8" />
       <property role="a0oEV" value="production" />
-      <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
       <ref role="3cH7GL" node="1VmqrBbL$XC" resolve="COPY" />
+      <ref role="2Hnu9v" node="1VmqrBbkqs5" resolve="LOAN" />
     </node>
     <node concept="3cH7GN" id="1VmqrBbN0Cy" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -306,8 +307,8 @@
       <property role="TrG5h" value="membership of Loan" />
       <property role="a0oEV" value="production" />
       <property role="3cH7GY" value="P9" />
-      <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
       <ref role="3cH7GL" node="1VmqrBbC534" resolve="MEMBERSHIP" />
+      <ref role="2Hnu9v" node="1VmqrBbkqs5" resolve="LOAN" />
     </node>
     <node concept="3cH7GO" id="2S7w2zXwiuO" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -316,7 +317,7 @@
       <property role="3cIS2B" value="1" />
       <property role="TrG5h" value="penalty of the LOAN" />
       <property role="3cH7GY" value="P28" />
-      <ref role="3cH7GK" node="1VmqrBbkqs5" resolve="LOAN" />
+      <ref role="2Hnu9v" node="1VmqrBbkqs5" resolve="LOAN" />
       <node concept="3cIS2F" id="2S7w2zXwCp_" role="3jxEvA" />
     </node>
     <node concept="3cH7GO" id="pMarvI2$KN" role="3cH7GF">
@@ -326,7 +327,7 @@
       <property role="3cIS2B" value="1" />
       <property role="TrG5h" value="ISBN number of the BOOK" />
       <property role="3cH7GY" value="P29" />
-      <ref role="3cH7GK" node="1VmqrBbkqsb" resolve="BOOK" />
+      <ref role="2Hnu9v" node="1VmqrBbkqsb" resolve="BOOK" />
       <node concept="3cIS2y" id="pMarvI2$LH" role="3jxEvA" />
     </node>
     <node concept="3cH7GO" id="pMarvIg0Ci" role="3cH7GF">
@@ -336,7 +337,7 @@
       <property role="3cIS2B" value="1" />
       <property role="3cH7GY" value="P30" />
       <property role="TrG5h" value="Name" />
-      <ref role="3cH7GK" node="1VmqrBb_kPt" resolve="PERSON" />
+      <ref role="2Hnu9v" node="1VmqrBb_kPt" resolve="PERSON" />
       <node concept="3CcyfB" id="pMarvIgy5M" role="3jxEvA" />
     </node>
     <node concept="3cH7GZ" id="2S7w2zXv4BS" role="3cH7GF">

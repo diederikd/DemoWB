@@ -4,7 +4,6 @@
   <languages>
     <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
     <use id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL" version="1" />
-    <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
   </languages>
   <imports />
@@ -28,17 +27,17 @@
         <child id="3316760564119748940" name="isActorRoleIn" index="3jp$5$" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
-        <child id="2743742872034584204" name="roles" index="3cGxOm" />
+        <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
         <child id="2743742872034489010" name="transactions" index="3cGS$C" />
       </concept>
       <concept id="3316760564119924851" name="ConstructionSL.structure.CompositeActorRoleReference" flags="ng" index="3joZ1r">
         <reference id="3316760564119924852" name="compositeActorRole" index="3joZ1s" />
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
-        <reference id="7147711074394506357" name="actor" index="1Tmc4J" />
+        <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
-        <reference id="7147711074394506474" name="actor" index="1Tmc6K" />
+        <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -83,7 +82,7 @@
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2222079712857969143" name="DemoSL.structure.ConstructionModel" flags="ng" index="3llzxe">
-        <child id="2222079712857969155" name="roles" index="3llzIU" />
+        <child id="2222079712857969155" name="actorRoles" index="3llzIU" />
         <child id="2222079712857969154" name="scopeOfInterest" index="3llzIV" />
       </concept>
     </language>

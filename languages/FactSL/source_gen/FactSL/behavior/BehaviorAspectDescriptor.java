@@ -19,7 +19,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myConstructedEntityType__BehaviorDescriptor = new ConstructedEntityType__BehaviorDescriptor();
   private final BHDescriptor myPropertyType__BehaviorDescriptor = new PropertyType__BehaviorDescriptor();
   private final BHDescriptor myAttributeType__BehaviorDescriptor = new AttributeType__BehaviorDescriptor();
-  private final BHDescriptor myIPropertyType__BehaviorDescriptor = new IPropertyType__BehaviorDescriptor();
+  private final BHDescriptor myICardinality__BehaviorDescriptor = new ICardinality__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -41,7 +41,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 5:
         return myFactType__BehaviorDescriptor;
       case 6:
-        return myIPropertyType__BehaviorDescriptor;
+        return myICardinality__BehaviorDescriptor;
       case 7:
         return myPropertyType__BehaviorDescriptor;
       default:

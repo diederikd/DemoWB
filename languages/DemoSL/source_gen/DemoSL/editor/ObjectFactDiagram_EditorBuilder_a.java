@@ -389,7 +389,7 @@ import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
                               AbstractEdgeAccessor accessor = new AbstractEdgeAccessor(EndpointUtil.createAccessorKeyForSNode(((SNode) _variablesContext.getValue("parameterObject")))) {
                                 @Override
                                 public IConnectionEndpointReference readFrom() {
-                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain")));
+                                  return EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("parameterObject")), MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty")));
                                 }
                                 @Override
                                 public IConnectionEndpointReference readTo() {

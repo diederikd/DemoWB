@@ -26,6 +26,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptEventType = createDescriptorForEventType();
   /*package*/ final ConceptDescriptor myConceptFactType = createDescriptorForFactType();
   /*package*/ final ConceptDescriptor myConceptGeneralisation = createDescriptorForGeneralisation();
+  /*package*/ final ConceptDescriptor myConceptICardinality = createDescriptorForICardinality();
   /*package*/ final ConceptDescriptor myConceptIPropertyType = createDescriptorForIPropertyType();
   /*package*/ final ConceptDescriptor myConceptLength = createDescriptorForLength();
   /*package*/ final ConceptDescriptor myConceptMass = createDescriptorForMass();
@@ -47,7 +48,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDate, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptGeneralisation, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
+    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDate, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactType, myConceptGeneralisation, myConceptICardinality, myConceptIPropertyType, myConceptLength, myConceptMass, myConceptNumber, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
   }
 
   @Override
@@ -82,6 +83,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFactType;
       case LanguageConceptSwitch.Generalisation:
         return myConceptGeneralisation;
+      case LanguageConceptSwitch.ICardinality:
+        return myConceptICardinality;
       case LanguageConceptSwitch.IPropertyType:
         return myConceptIPropertyType;
       case LanguageConceptSwitch.Length:
@@ -150,6 +153,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FactSL.structure.FactType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL);
+    b.parent(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984110");
     b.version(2);
     b.aggregate("arange", 0x2e078028fd8127ceL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0b0L).optional(false).ordered(true).multiple(false).origin("3316760564121806798").done();
@@ -251,8 +255,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("set", 0x67229b7ee4c90b0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x67229b7ee43dee0L).optional(false).origin("464479581526331568").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForIPropertyType() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "IPropertyType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL);
+  private static ConceptDescriptor createDescriptorForICardinality() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "ICardinality", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL);
     b.interface_();
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015482");
     b.version(2);
@@ -260,7 +264,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.prop("maxCardDomain", 0x2613bb9aeaa83b3dL, "2743742872035015485");
     b.prop("minCardRange", 0x2613bb9aeaa83b40L, "2743742872035015488");
     b.prop("maxCardRange", 0x2613bb9aeaa83b44L, "2743742872035015492");
-    b.associate("domain", 0x2613bb9aeaa7c0aaL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("2743742872034984106").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForIPropertyType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "IPropertyType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L);
+    b.interface_();
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/7550186569879667952");
+    b.version(2);
+    b.associate("domainOfProperty", 0x68c7a6aec59a44f1L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("7550186569879667953").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLength() {
@@ -295,6 +306,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("FactSL.structure.FactType", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL);
     b.parent(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL);
+    b.parent(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L);
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872034984105");
     b.version(2);
     b.associate("prange", 0x2613bb9aeaa7c0abL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a6L).optional(false).origin("2743742872034984107").done();

@@ -2,9 +2,7 @@
 <model ref="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)">
   <persistence version="9" />
   <languages>
-    <use id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL" version="1" />
     <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
-    <use id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL" version="0" />
     <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>

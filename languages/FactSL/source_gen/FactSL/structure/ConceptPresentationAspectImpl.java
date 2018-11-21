@@ -23,6 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EventType;
   private ConceptPresentation props_FactType;
   private ConceptPresentation props_Generalisation;
+  private ConceptPresentation props_ICardinality;
   private ConceptPresentation props_IPropertyType;
   private ConceptPresentation props_Length;
   private ConceptPresentation props_Mass;
@@ -138,6 +139,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Generalisation = cpb.create();
         }
         return props_Generalisation;
+      case LanguageConceptSwitch.ICardinality:
+        if (props_ICardinality == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ICardinality = cpb.create();
+        }
+        return props_ICardinality;
       case LanguageConceptSwitch.IPropertyType:
         if (props_IPropertyType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

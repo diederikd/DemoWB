@@ -165,7 +165,10 @@
       <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
     </node>
     <node concept="PrWs8" id="2ojITFEE3Hc" role="PzmwI">
-      <ref role="PrY4T" node="2ojITFEE3GU" resolve="IPropertyType" />
+      <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
+    </node>
+    <node concept="PrWs8" id="6z7DEV5A$jT" role="PzmwI">
+      <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyType" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2I">
@@ -176,7 +179,10 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="1VmqrBbn489" role="PzmwI">
-      <ref role="PrY4T" node="2ojITFEE3GU" resolve="IPropertyType" />
+      <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
+    </node>
+    <node concept="PrWs8" id="6z7DEV5A$kN" role="PzmwI">
+      <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyType" />
     </node>
     <node concept="1TJgyj" id="2S7w2zXwive" role="1TKVEi">
       <property role="IQ2ns" value="3316760564121806798" />
@@ -273,14 +279,7 @@
   </node>
   <node concept="PlHQZ" id="2ojITFEE3GU">
     <property role="EcuMT" value="2743742872035015482" />
-    <property role="TrG5h" value="IPropertyType" />
-    <node concept="1TJgyj" id="2ojITFEDW2E" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034984106" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="domain" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
-    </node>
+    <property role="TrG5h" value="ICardinality" />
     <node concept="1TJgyi" id="2ojITFEE3GV" role="1TKVEl">
       <property role="IQ2nx" value="2743742872035015483" />
       <property role="TrG5h" value="minCardDomain" />
@@ -421,6 +420,17 @@
     <property role="TrG5h" value="Date" />
     <property role="34LRSv" value="date" />
     <ref role="1TJDcQ" node="2ojITFEDW2K" resolve="ValueType" />
+  </node>
+  <node concept="PlHQZ" id="6z7DEV5A$jK">
+    <property role="EcuMT" value="7550186569879667952" />
+    <property role="TrG5h" value="IPropertyType" />
+    <node concept="1TJgyj" id="6z7DEV5A$jL" role="1TKVEi">
+      <property role="IQ2ns" value="7550186569879667953" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="domainOfProperty" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
+    </node>
   </node>
 </model>
 

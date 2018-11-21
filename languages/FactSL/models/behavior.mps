@@ -297,7 +297,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1VmqrBbL$YS">
-    <ref role="13h7C2" to="ajas:2ojITFEE3GU" resolve="IPropertyType" />
+    <ref role="13h7C2" to="ajas:2ojITFEE3GU" resolve="ICardinality" />
     <node concept="13hLZK" id="1VmqrBbL$YT" role="13h7CW">
       <node concept="3clFbS" id="1VmqrBbL$YU" role="2VODD2">
         <node concept="3clFbF" id="1VmqrBbLAcP" role="3cqZAp">

@@ -177,7 +177,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   private boolean nodeCondition_dvbitk_a1a0a() {
     return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0aeL, "FactSL.structure.AttributeType"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain")) == myNode;
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty")) == myNode;
       }
     }).isNotEmpty();
   }
@@ -278,7 +278,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
     private Object executeQuery(final SNode node, final EditorContext editorContext) {
       return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(myNode), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, "DemoSL.structure.FactModel")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2613bb9aeaa69efdL, 0x2613bb9aeaa7c0b1L, "facts")), MetaAdapterFactory.getConcept(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0aeL, "FactSL.structure.AttributeType"))).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa83b3aL, 0x2613bb9aeaa7c0aaL, "domain")) == myNode;
+          return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x68c7a6aec59a44f0L, 0x68c7a6aec59a44f1L, "domainOfProperty")) == myNode;
         }
       });
     }
