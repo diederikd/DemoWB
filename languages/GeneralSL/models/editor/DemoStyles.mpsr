@@ -163,6 +163,18 @@
         <property role="Vbekb" value="BOLD" />
       </node>
     </node>
+    <node concept="14StLt" id="4obCtttw6Px" role="V601i">
+      <property role="TrG5h" value="Wait" />
+      <node concept="30gYXW" id="4obCtttw8RW" role="3F10Kt">
+        <property role="Vb096" value="orange" />
+      </node>
+    </node>
+    <node concept="14StLt" id="4obCtttw8SR" role="V601i">
+      <property role="TrG5h" value="Run" />
+      <node concept="30gYXW" id="4obCtttw8TH" role="3F10Kt">
+        <property role="Vb096" value="green" />
+      </node>
+    </node>
   </node>
 </model>
 

@@ -813,6 +813,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="ConstructionSL.editor.TransactionKind_CM_EditorBuilder_a" file="TransactionKind_CM_EditorBuilder_a.java">
+    <classNode dependClassName="ConstructionSL.behavior.TransactionKind__BehaviorDescriptor" />
     <classNode dependClassName="FactSL.behavior.FactType__BehaviorDescriptor" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />
@@ -988,6 +989,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="ConstructionSL.editor.TransactionKind_PSD_EditorBuilder_a" file="TransactionKind_PSD_EditorBuilder_a.java">
+    <classNode dependClassName="ConstructionSL.behavior.TransactionKind__BehaviorDescriptor" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfOriginalProductionStyleClass" />
@@ -1060,6 +1062,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="ConstructionSL.editor.TransactionKind_TPT_EditorBuilder_a" file="TransactionKind_TPT_EditorBuilder_a.java">
+    <classNode dependClassName="ConstructionSL.behavior.TransactionKind__BehaviorDescriptor" />
     <classNode dependClassName="FactSL.behavior.FactType__BehaviorDescriptor" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />
@@ -1123,6 +1126,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="ConstructionSL.editor.TransactionKind_idAndName_EditorBuilder_a" file="TransactionKind_idAndName_EditorBuilder_a.java">
+    <classNode dependClassName="ConstructionSL.behavior.TransactionKind__BehaviorDescriptor" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.BlackStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />

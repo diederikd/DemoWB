@@ -8,7 +8,10 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="DemoSL.editor.Act_EditorBuilder_a" file="Act_EditorBuilder_a.java">
+    <classNode dependClassName="DemoSL.behavior.Act__BehaviorDescriptor" />
     <classNode dependClassName="DemoSL.editor.ExecuteAct" />
+    <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.RunStyleClass" />
+    <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.WaitStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfOriginalProductionStyleClass" />
@@ -201,13 +204,12 @@
   </dependency>
   <dependency className="DemoSL.editor.ExecuteAct" file="ExecuteAct.java">
     <classNode dependClassName="DemoSL.behavior.Act__BehaviorDescriptor" />
-    <classNode dependClassName="DemoSL.behavior.Case__BehaviorDescriptor" />
+    <classNode dependClassName="DemoSL.behavior.RunningTransaction__BehaviorDescriptor" />
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />

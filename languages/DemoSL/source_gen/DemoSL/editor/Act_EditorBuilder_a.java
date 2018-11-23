@@ -51,6 +51,9 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSPropertyO
 import java.awt.Color;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
+import GeneralSL.editor.DemoStyles_StyleSheet.WaitStyleClass;
+import GeneralSL.editor.DemoStyles_StyleSheet.RunStyleClass;
+import DemoSL.behavior.Act__BehaviorDescriptor;
 
 /*package*/ class Act_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -451,11 +454,22 @@ import jetbrains.mps.nodeEditor.MPSColors;
     style.set(StyleAttributes.SELECTABLE, false);
     style.set(StyleAttributes.DRAW_BORDER, true);
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
-    style.set(StyleAttributes.BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.lightGray));
+    if (_StyleParameter_QueryFunction_jfbt31_a3h0()) {
+      new WaitStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    }
+    if (_StyleParameter_QueryFunction_jfbt31_a4h0()) {
+      new RunStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    }
     editorCell.getStyle().putAll(style);
     ExecuteAct.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.addEditorCell(createConstant_4());
     return editorCell;
+  }
+  private boolean _StyleParameter_QueryFunction_jfbt31_a3h0() {
+    return (boolean) Act__BehaviorDescriptor.mustWait_id6z7DEV4Cxa2.invoke(getNode());
+  }
+  private boolean _StyleParameter_QueryFunction_jfbt31_a4h0() {
+    return !((boolean) Act__BehaviorDescriptor.mustWait_id6z7DEV4Cxa2.invoke(getNode()));
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "execute");

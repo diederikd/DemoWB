@@ -184,6 +184,26 @@ public class DemoStyles_StyleSheet {
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
     new DemoStyles_StyleSheet.DarkredBoldStyleClass(editorContext, node).apply(style, editorCell);
   }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Wait(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new DemoStyles_StyleSheet.WaitStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
+  public static void apply_Run(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new DemoStyles_StyleSheet.RunStyleClass(editorContext, node).apply(style, editorCell);
+  }
 
   public static class tfOriginalProductionStyleClass extends AbstractStyleClass {
     public tfOriginalProductionStyleClass(EditorContext editorContext, SNode node) {
@@ -370,6 +390,28 @@ public class DemoStyles_StyleSheet {
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(new Color(9109504)));
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
+    }
+
+  }
+  public static class WaitStyleClass extends AbstractStyleClass {
+    public WaitStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.TEXT_BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.orange));
+    }
+
+  }
+  public static class RunStyleClass extends AbstractStyleClass {
+    public RunStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.TEXT_BACKGROUND_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.green));
     }
 
   }

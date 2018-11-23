@@ -36,6 +36,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import ConstructionSL.behavior.TransactionKind__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -260,16 +261,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        if (SPropertyOperations.hasValue(myNode, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa55dc1L, "type"), "original", "original")) {
-          return "O-";
-        }
-        if (SPropertyOperations.hasValue(myNode, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa55dc1L, "type"), "informational", "original")) {
-          return "I-";
-        }
-        if (SPropertyOperations.hasValue(myNode, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa55dc1L, "type"), "documental", "original")) {
-          return "D-";
-        }
-        return "";
+        return (String) TransactionKind__BehaviorDescriptor.getTransactionKindId_id6z7DEV5OneK.invoke(myNode);
       }
       public void setText(String s) {
       }

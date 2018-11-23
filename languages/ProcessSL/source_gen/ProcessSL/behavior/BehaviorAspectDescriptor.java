@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myTransactionKindStepKind__BehaviorDescriptor = new TransactionKindStepKind__BehaviorDescriptor();
+  private final BHDescriptor myLink__BehaviorDescriptor = new Link__BehaviorDescriptor();
   private final BHDescriptor myICardinality__BehaviorDescriptor = new ICardinality__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
@@ -25,10 +26,12 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 0:
         return myICardinality__BehaviorDescriptor;
       case 1:
+        return myLink__BehaviorDescriptor;
+      case 2:
         return myTransactionKindStepKind__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x2613bb9aeaa83b3aL), MetaIdFactory.conceptId(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x2613bb9aeaa83b3aL), MetaIdFactory.conceptId(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L), MetaIdFactory.conceptId(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL)).seal();
 }
