@@ -203,15 +203,20 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2S7w2zXHkUW" role="1TKVEl">
       <property role="IQ2nx" value="3316760564125224636" />
-      <property role="TrG5h" value="filter" />
+      <property role="TrG5h" value="filterTransactionKind" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="t5JxF" id="2Ze6BQpCF0U" role="lGtFl">
         <property role="t5JxN" value="for presentation purposes only" />
       </node>
     </node>
+    <node concept="1TJgyi" id="4obCtttVNtL" role="1TKVEl">
+      <property role="IQ2nx" value="5047305753764771697" />
+      <property role="TrG5h" value="showLinksInTable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyi" id="2Ze6BQpBHX$" role="1TKVEl">
       <property role="IQ2nx" value="3444719891735568228" />
-      <property role="TrG5h" value="ingnoreLinks" />
+      <property role="TrG5h" value="onlyExternal" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
       <node concept="t5JxF" id="2Ze6BQpCF0Y" role="lGtFl">
         <property role="t5JxN" value="for presentation purposes only" />

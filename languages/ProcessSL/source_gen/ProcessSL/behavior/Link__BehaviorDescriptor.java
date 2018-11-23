@@ -31,8 +31,9 @@ public final class Link__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getTransactionKindToId_id6z7DEV5OvtJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTransactionKindToId").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV5OvtJ").registry(REGISTRY).build();
   public static final SMethod<String> getStepKindFrom_id6z7DEV5O_li = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStepKindFrom").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV5O_li").registry(REGISTRY).build();
   public static final SMethod<String> getStepKindTo_id6z7DEV5Oxs$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStepKindTo").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV5Oxs$").registry(REGISTRY).build();
+  public static final SMethod<Boolean> isExternal_id4obCtttCqTy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isExternal").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4obCtttCqTy").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTransactionKindFromId_id6z7DEV5Oyvh, getTransactionKindToId_id6z7DEV5OvtJ, getStepKindFrom_id6z7DEV5O_li, getStepKindTo_id6z7DEV5Oxs$);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTransactionKindFromId_id6z7DEV5Oyvh, getTransactionKindToId_id6z7DEV5OvtJ, getStepKindFrom_id6z7DEV5O_li, getStepKindTo_id6z7DEV5Oxs$, isExternal_id4obCtttCqTy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -48,6 +49,9 @@ public final class Link__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static String getStepKindTo_id6z7DEV5Oxs$(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString_def(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x585f5ae0f86c842L, "transactionKindStepKindTo")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), null);
+  }
+  /*package*/ static boolean isExternal_id4obCtttCqTy(@NotNull SNode __thisNode__) {
+    return (SPropertyOperations.hasValue(__thisNode__, MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x2e078028fdab53bdL, "linkType"), "initiation", "response") | SPropertyOperations.hasValue(__thisNode__, MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c841L, 0x2e078028fdab53bdL, "linkType"), "wait", "response"));
   }
 
   /*package*/ Link__BehaviorDescriptor() {
@@ -74,6 +78,8 @@ public final class Link__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((String) getStepKindFrom_id6z7DEV5O_li(node));
       case 3:
         return (T) ((String) getStepKindTo_id6z7DEV5Oxs$(node));
+      case 4:
+        return (T) ((Boolean) isExternal_id4obCtttCqTy(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -122,12 +122,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -275,7 +269,7 @@
             <node concept="2OqwBi" id="2Ze6BQpBM$2" role="2Oq$k0">
               <node concept="13iPFW" id="2Ze6BQpBMsd" role="2Oq$k0" />
               <node concept="3TrcHB" id="2Ze6BQpBMOL" role="2OqNvi">
-                <ref role="3TsBF5" to="ar0b:2S7w2zXHkUW" resolve="filter" />
+                <ref role="3TsBF5" to="ar0b:2S7w2zXHkUW" resolve="filterTransactionKind" />
               </node>
             </node>
             <node concept="tyxLq" id="2Ze6BQpBNvD" role="2OqNvi">
@@ -290,7 +284,7 @@
             <node concept="2OqwBi" id="2Ze6BQpBNKK" role="2Oq$k0">
               <node concept="13iPFW" id="2Ze6BQpBNCl" role="2Oq$k0" />
               <node concept="3TrcHB" id="2Ze6BQpBO3n" role="2OqNvi">
-                <ref role="3TsBF5" to="ar0b:2Ze6BQpBHX$" resolve="ingnoreLinks" />
+                <ref role="3TsBF5" to="ar0b:2Ze6BQpBHX$" resolve="onlyExternal" />
               </node>
             </node>
             <node concept="tyxLq" id="2Ze6BQpBOLG" role="2OqNvi">
@@ -3651,17 +3645,6 @@
                       <node concept="2jxLKc" id="6z7DEV5PRGY" role="1tU5fm" />
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="6z7DEV5WgkZ" role="3cqZAp">
-              <property role="35gtTG" value="info" />
-              <node concept="3cpWs3" id="6z7DEV5WhmJ" role="34bqiv">
-                <node concept="37vLTw" id="6z7DEV5Whnh" role="3uHU7w">
-                  <ref role="3cqZAo" node="6z7DEV5Q91S" resolve="act" />
-                </node>
-                <node concept="Xl_RD" id="6z7DEV5Wgl1" role="3uHU7B">
-                  <property role="Xl_RC" value="add act " />
                 </node>
               </node>
             </node>
