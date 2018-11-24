@@ -2274,65 +2274,6 @@
   <node concept="13h7C7" id="6z7DEV3Syvb">
     <property role="3GE5qa" value="Simulation" />
     <ref role="13h7C2" to="ar0b:6z7DEV3N7vd" resolve="Case" />
-    <node concept="13i0hz" id="6z7DEV3Syvm" role="13h7CS">
-      <property role="TrG5h" value="getPossibleActs" />
-      <node concept="3Tm1VV" id="6z7DEV3Syvn" role="1B3o_S" />
-      <node concept="3clFbS" id="6z7DEV3Syvp" role="3clF47">
-        <node concept="3cpWs8" id="6z7DEV3SFwd" role="3cqZAp">
-          <node concept="3cpWsn" id="6z7DEV3SFwg" role="3cpWs9">
-            <property role="TrG5h" value="possibleacts" />
-            <node concept="2I9FWS" id="6z7DEV3SFwb" role="1tU5fm">
-              <ref role="2I9WkF" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
-            </node>
-            <node concept="2ShNRf" id="6z7DEV3SFGk" role="33vP2m">
-              <node concept="2T8Vx0" id="6z7DEV3SFGi" role="2ShVmc">
-                <node concept="2I9FWS" id="6z7DEV3SFGj" role="2T96Bj">
-                  <ref role="2I9WkF" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="6z7DEV4iePG" role="3cqZAp">
-          <node concept="2GrKxI" id="6z7DEV4iePI" role="2Gsz3X">
-            <property role="TrG5h" value="transaction" />
-          </node>
-          <node concept="2OqwBi" id="6z7DEV4ifec" role="2GsD0m">
-            <node concept="13iPFW" id="6z7DEV4if4i" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="6z7DEV4jYO8" role="2OqNvi">
-              <ref role="3TtcxE" to="ar0b:6z7DEV4hIlu" resolve="runningtransactions" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6z7DEV4iePM" role="2LFqv$">
-            <node concept="3clFbF" id="6z7DEV3SGoj" role="3cqZAp">
-              <node concept="2OqwBi" id="6z7DEV3SI3C" role="3clFbG">
-                <node concept="37vLTw" id="6z7DEV3SGoi" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6z7DEV3SFwg" resolve="possibleacts" />
-                </node>
-                <node concept="X8dFx" id="6z7DEV55xzI" role="2OqNvi">
-                  <node concept="2OqwBi" id="6z7DEV55xzK" role="25WWJ7">
-                    <node concept="2GrUjf" id="6z7DEV55xzL" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="6z7DEV4iePI" resolve="transaction" />
-                    </node>
-                    <node concept="2qgKlT" id="6z7DEV55xzM" role="2OqNvi">
-                      <ref role="37wK5l" node="6z7DEV52qhF" resolve="getPossibleActs" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="6z7DEV3SFSh" role="3cqZAp">
-          <node concept="37vLTw" id="6z7DEV3SGe4" role="3cqZAk">
-            <ref role="3cqZAo" node="6z7DEV3SFwg" resolve="possibleacts" />
-          </node>
-        </node>
-      </node>
-      <node concept="2I9FWS" id="6z7DEV3SFc4" role="3clF45">
-        <ref role="2I9WkF" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
-      </node>
-    </node>
     <node concept="13i0hz" id="6z7DEV55AXG" role="13h7CS">
       <property role="TrG5h" value="updatePossibleActs" />
       <node concept="3Tm1VV" id="6z7DEV55AXH" role="1B3o_S" />
@@ -2370,65 +2311,6 @@
   <node concept="13h7C7" id="6z7DEV3SPZ8">
     <property role="3GE5qa" value="Simulation" />
     <ref role="13h7C2" to="ar0b:2Ze6BQpWd1s" resolve="Simulation" />
-    <node concept="13i0hz" id="6z7DEV52hnr" role="13h7CS">
-      <property role="TrG5h" value="getPossibleActs" />
-      <node concept="3Tm1VV" id="6z7DEV52hns" role="1B3o_S" />
-      <node concept="3clFbS" id="6z7DEV52hnt" role="3clF47">
-        <node concept="3cpWs8" id="6z7DEV52hnu" role="3cqZAp">
-          <node concept="3cpWsn" id="6z7DEV52hnv" role="3cpWs9">
-            <property role="TrG5h" value="possibleacts" />
-            <node concept="2I9FWS" id="6z7DEV52hnw" role="1tU5fm">
-              <ref role="2I9WkF" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
-            </node>
-            <node concept="2ShNRf" id="6z7DEV52hnx" role="33vP2m">
-              <node concept="2T8Vx0" id="6z7DEV52hny" role="2ShVmc">
-                <node concept="2I9FWS" id="6z7DEV52hnz" role="2T96Bj">
-                  <ref role="2I9WkF" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="6z7DEV52hn$" role="3cqZAp">
-          <node concept="2GrKxI" id="6z7DEV52hn_" role="2Gsz3X">
-            <property role="TrG5h" value="caseNode" />
-          </node>
-          <node concept="3clFbS" id="6z7DEV52hnA" role="2LFqv$">
-            <node concept="3clFbF" id="6z7DEV52hnB" role="3cqZAp">
-              <node concept="2OqwBi" id="6z7DEV52hnC" role="3clFbG">
-                <node concept="37vLTw" id="6z7DEV52hnD" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6z7DEV52hnv" resolve="possibleacts" />
-                </node>
-                <node concept="X8dFx" id="6z7DEV52hnE" role="2OqNvi">
-                  <node concept="2OqwBi" id="6z7DEV52hnF" role="25WWJ7">
-                    <node concept="2GrUjf" id="6z7DEV52hnG" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="6z7DEV52hn_" resolve="caseNode" />
-                    </node>
-                    <node concept="2qgKlT" id="6z7DEV52hnH" role="2OqNvi">
-                      <ref role="37wK5l" node="6z7DEV3Syvm" resolve="getPossibleActs" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="6z7DEV52hnI" role="2GsD0m">
-            <node concept="13iPFW" id="6z7DEV52hnJ" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="6z7DEV52kYZ" role="2OqNvi">
-              <ref role="3TtcxE" to="ar0b:6z7DEV3N7vi" resolve="cases" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="6z7DEV52hnS" role="3cqZAp">
-          <node concept="37vLTw" id="6z7DEV52hnT" role="3cqZAk">
-            <ref role="3cqZAo" node="6z7DEV52hnv" resolve="possibleacts" />
-          </node>
-        </node>
-      </node>
-      <node concept="2I9FWS" id="6z7DEV52hnU" role="3clF45">
-        <ref role="2I9WkF" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
-      </node>
-    </node>
     <node concept="13i0hz" id="6z7DEV56A64" role="13h7CS">
       <property role="TrG5h" value="updatePossibleActs" />
       <node concept="3Tm1VV" id="6z7DEV56A65" role="1B3o_S" />
@@ -3682,12 +3564,6 @@
           <ref role="ehGHo" to="ar0b:6z7DEV3RGZ6" resolve="Act" />
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="4obCtttpytm" role="13h7CS">
-      <property role="TrG5h" value="removeNonInitiatonActs" />
-      <node concept="3Tm1VV" id="4obCtttpytn" role="1B3o_S" />
-      <node concept="3cqZAl" id="4obCtttpCok" role="3clF45" />
-      <node concept="3clFbS" id="4obCtttpytp" role="3clF47" />
     </node>
     <node concept="13hLZK" id="6z7DEV4JMk5" role="13h7CW">
       <node concept="3clFbS" id="6z7DEV4JMk6" role="2VODD2" />

@@ -46,11 +46,9 @@
   </dependency>
   <dependency className="DemoSL.behavior.Case__BehaviorDescriptor" file="Case__BehaviorDescriptor.java">
     <classNode dependClassName="DemoSL.behavior.RunningTransaction__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Void" />
-    <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />
@@ -135,11 +133,9 @@
   </dependency>
   <dependency className="DemoSL.behavior.Simulation__BehaviorDescriptor" file="Simulation__BehaviorDescriptor.java">
     <classNode dependClassName="DemoSL.behavior.Case__BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.Void" />
-    <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.core.aspects.behaviour.AccessPrivileges" />

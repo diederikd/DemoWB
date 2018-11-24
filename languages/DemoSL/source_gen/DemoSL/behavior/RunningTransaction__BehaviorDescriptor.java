@@ -38,9 +38,8 @@ public final class RunningTransaction__BehaviorDescriptor extends BaseBHDescript
   public static final SMethod<List<SNode>> getPossibleActs_id6z7DEV52qhF = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getPossibleActs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV52qhF").registry(REGISTRY).build();
   public static final SMethod<Void> updatePossibleActs_id6z7DEV531Em = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updatePossibleActs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV531Em").registry(REGISTRY).build();
   public static final SMethod<Void> performAct_id6z7DEV5PQjx = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performAct").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV5PQjx").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> removeNonInitiatonActs_id4obCtttpytm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("removeNonInitiatonActs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("4obCtttpytm").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTransactionKind_id6z7DEV4JMkf, getState_id6z7DEV4JN86, getPossibleActs_id6z7DEV52qhF, updatePossibleActs_id6z7DEV531Em, performAct_id6z7DEV5PQjx, removeNonInitiatonActs_id4obCtttpytm);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTransactionKind_id6z7DEV4JMkf, getState_id6z7DEV4JN86, getPossibleActs_id6z7DEV52qhF, updatePossibleActs_id6z7DEV531Em, performAct_id6z7DEV5PQjx);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -125,8 +124,6 @@ public final class RunningTransaction__BehaviorDescriptor extends BaseBHDescript
       ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec42570c5L, "performedActs"))).addElement(act);
     }
   }
-  /*package*/ static void removeNonInitiatonActs_id4obCtttpytm(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ RunningTransaction__BehaviorDescriptor() {
     super(REGISTRY);
@@ -155,9 +152,6 @@ public final class RunningTransaction__BehaviorDescriptor extends BaseBHDescript
         return null;
       case 4:
         performAct_id6z7DEV5PQjx(node, (SNode) parameters[0]);
-        return null;
-      case 5:
-        removeNonInitiatonActs_id4obCtttpytm(node);
         return null;
       default:
         throw new BHMethodNotFoundException(this, method);

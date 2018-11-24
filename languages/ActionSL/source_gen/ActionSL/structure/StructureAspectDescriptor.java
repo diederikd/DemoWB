@@ -13,6 +13,9 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActionRule = createDescriptorForActionRule();
+  /*package*/ final ConceptDescriptor myConceptAssess = createDescriptorForAssess();
+  /*package*/ final ConceptDescriptor myConceptWhen = createDescriptorForWhen();
+  /*package*/ final ConceptDescriptor myConceptWith = createDescriptorForWith();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -21,7 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActionRule);
+    return Arrays.asList(myConceptActionRule, myConceptAssess, myConceptWhen, myConceptWith);
   }
 
   @Override
@@ -30,6 +33,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.ActionRule:
         return myConceptActionRule;
+      case LanguageConceptSwitch.Assess:
+        return myConceptAssess;
+      case LanguageConceptSwitch.When:
+        return myConceptWhen;
+      case LanguageConceptSwitch.With:
+        return myConceptWith;
       default:
         return null;
     }
@@ -41,12 +50,36 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForActionRule() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "ActionRule", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x585f5ae0f823b54L);
-    b.class_(false, true, false);
-    b.parent(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL);
+    b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/397994270025464660");
     b.version(2);
-    b.prop("type", 0x585f5ae0f847f15L, "397994270025613077");
-    b.associate("appliesTo", 0x585f5ae0f86c85eL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("397994270025762910").done();
+    b.aggregate("when", 0x460ba1d75e46bdd6L).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L).optional(false).ordered(true).multiple(false).origin("5047305753770507734").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForAssess() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "Assess", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e5061a4L);
+    b.class_(false, false, false);
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771139492");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWhen() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "When", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L);
+    b.class_(false, false, false);
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753770367505");
+    b.version(2);
+    b.prop("stepKind", 0x460ba1d75e44f98bL, "5047305753770391947");
+    b.associate("appliesToTransactionKind", 0x460ba1d75e44f986L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(false).origin("5047305753770391942").done();
+    b.associate("appliesToStepKind", 0x460ba1d75e449a12L).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(true).origin("5047305753770367506").done();
+    b.aggregate("with", 0x460ba1d75e506103L).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e5060d8L).optional(true).ordered(true).multiple(true).origin("5047305753771139331").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWith() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "With", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e5060d8L);
+    b.class_(false, false, false);
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771139288");
+    b.version(2);
+    b.associate("property", 0x460ba1d75e5060d9L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a9L).optional(false).origin("5047305753771139289").done();
     return b.create();
   }
 }

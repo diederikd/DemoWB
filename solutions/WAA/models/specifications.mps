@@ -59,6 +59,20 @@
         <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
       </concept>
     </language>
+    <language id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL">
+      <concept id="397994270025464660" name="ActionSL.structure.ActionRule" flags="ng" index="a1WVU">
+        <child id="5047305753770507734" name="when" index="ojhK1" />
+      </concept>
+      <concept id="5047305753770367505" name="ActionSL.structure.When" flags="ng" index="ojNJ6">
+        <property id="5047305753770391947" name="stepKind" index="ojPxs" />
+        <reference id="5047305753770367506" name="appliesToStepKind" index="ojNJ5" />
+        <reference id="5047305753770391942" name="appliesToTransactionKind" index="ojPxh" />
+        <child id="5047305753771139331" name="with" index="omW3k" />
+      </concept>
+      <concept id="5047305753771139288" name="ActionSL.structure.With" flags="ng" index="omW4f">
+        <reference id="5047305753771139289" name="property" index="omW4e" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -151,7 +165,6 @@
         <reference id="7550186569850605515" name="TransactionKindStepKind" index="2F6m__" />
       </concept>
       <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
-        <property id="7550186569861026777" name="completed" index="2GIBlR" />
         <reference id="7550186569850389327" name="state" index="2F72nx" />
         <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
         <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
@@ -162,6 +175,9 @@
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
+      <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA">
+        <child id="5047305753770528015" name="rules" index="ojaNo" />
+      </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
       </concept>
@@ -185,7 +201,7 @@
     <node concept="3cHilr" id="pMarvI_09U" role="3llzIV">
       <property role="TrG5h" value="Werkgever" />
       <node concept="3cGziv" id="pMarvI_0aH" role="3cGS$C">
-        <property role="3cGS$Q" value="indienen verzoek aanpassing arbeidsduur" />
+        <property role="3cGS$Q" value="verzoeken om aanpassing van de arbeidsduur" />
         <property role="3cGzis" value="T1" />
         <ref role="3lGtC5" node="IuxU86fpw6" resolve="verzoek is ingediend" />
         <node concept="1Tmc4s" id="pMarvI_0aI" role="1TmdgA">
@@ -18448,52 +18464,55 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F2X5z" id="4obCttufE5l" role="2F2X5W">
-      <node concept="2GwkfO" id="4obCttufE5m" role="2GwkfK">
+    <node concept="2F2X5z" id="4obCttuh9B1" role="2F2X5W">
+      <node concept="2GwkfO" id="4obCttuh9B2" role="2GwkfK">
         <ref role="2F72nx" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="4obCttufE5n" role="2GSHpF">
+        <node concept="2F6m_C" id="4obCttuh9B3" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE5x" role="2GLOok">
+        <node concept="2F6m_C" id="4obCttuh9Bd" role="2GLOok">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE5y" role="2GLOok">
+        <node concept="2F6m_C" id="4obCttuh9Be" role="2GLOok">
           <property role="2G7IB7" value="true" />
           <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE5z" role="2GLOok">
+        <node concept="2F6m_C" id="4obCttuh9Bf" role="2GLOok">
           <property role="2G7IB7" value="true" />
           <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE5s" role="2GSHpF">
+        <node concept="2F6m_C" id="4obCttuh9B8" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
         </node>
       </node>
-      <node concept="2GwkfO" id="4obCttufE5F" role="2GwkfK">
-        <property role="2GIBlR" value="true" />
+      <node concept="2GwkfO" id="4obCttuh9Bn" role="2GwkfK">
         <ref role="2F72nx" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
-        <node concept="2F6m_C" id="4obCttufE5$" role="2GSHpF">
+        <node concept="2F6m_C" id="4obCttuh9Bg" role="2GSHpF">
           <property role="2G7IB7" value="true" />
           <ref role="2F6m__" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE5G" role="2GSHpF">
+        <node concept="2F6m_C" id="4obCttuh9Bo" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzud7" resolve="promiss afwijzen van het verzoek" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE5Y" role="2GSHpF">
+        <node concept="2F6m_C" id="4obCttuh9BE" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzud8" resolve="execute afwijzen van het verzoek" />
         </node>
-        <node concept="2F6m_C" id="4obCttufE62" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzud9" resolve="state afwijzen van het verzoek" />
-        </node>
-        <node concept="2F6m_C" id="4obCttufE67" role="2GSHpF">
+        <node concept="2F6m_C" id="4obCttuh9BN" role="2GLOok">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzud5" resolve="accept afwijzen van het verzoek" />
+        </node>
+        <node concept="2F6m_C" id="4obCttuh9BO" role="2GLOok">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzudc" resolve="reject afwijzen van het verzoek" />
+        </node>
+        <node concept="2F6m_C" id="4obCttuh9BI" role="2GSHpF">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzud9" resolve="state afwijzen van het verzoek" />
         </node>
       </node>
     </node>
@@ -20229,6 +20248,19 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3cHilA" id="4obCttuiHgz">
+    <property role="TrG5h" value="ARS WAA" />
+    <node concept="a1WVU" id="4obCttuk0Wo" role="ojaNo">
+      <node concept="ojNJ6" id="4obCttuk0Wp" role="ojhK1">
+        <property role="ojPxs" value="rq" />
+        <ref role="ojPxh" node="pMarvI_0aH" />
+        <ref role="ojNJ5" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
+        <node concept="omW4f" id="4obCttulfAY" role="omW3k">
+          <ref role="omW4e" node="IuxU86i8cH" resolve="arbeidsduur" />
         </node>
       </node>
     </node>

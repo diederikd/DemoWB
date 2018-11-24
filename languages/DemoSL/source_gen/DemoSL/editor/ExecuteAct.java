@@ -36,18 +36,13 @@ public class ExecuteAct {
         JOptionPane.showMessageDialog(null, Act__BehaviorDescriptor.mustWaitMessage_id6z7DEV4CZx0.invoke(node), "DemoWB", JOptionPane.WARNING_MESSAGE);
         return;
       }
-      // Check if transaction is running 
-      // Check if transaction is not running yet 
-
+      // Perform act 
       RunningTransaction__BehaviorDescriptor.performAct_id6z7DEV5PQjx.invoke(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, "DemoSL.structure.RunningTransaction"), false, false), node);
-
-      // Add performed act 
 
       // After completion of the transaction mark it complete 
       if (SPropertyOperations.hasValue(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "ac", null) | SPropertyOperations.hasValue(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "qt", null) | SPropertyOperations.hasValue(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getProperty(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c7e6L, "stepKind"), "sp", null)) {
         SPropertyOperations.set(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, "DemoSL.structure.RunningTransaction"), false, false), MetaAdapterFactory.getProperty(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec47dd3d9L, "completed"), "" + (true));
       }
-      // Update possible actions 
 
       // After completion of all transactions mark case complete 
       if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, "DemoSL.structure.Case"), false, false), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions"))).where(new IWhereFilter<SNode>() {

@@ -10,6 +10,9 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ActionRule;
+  private ConceptPresentation props_Assess;
+  private ConceptPresentation props_When;
+  private ConceptPresentation props_With;
 
   @Override
   @Nullable
@@ -19,9 +22,31 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ActionRule:
         if (props_ActionRule == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ActionRule");
           props_ActionRule = cpb.create();
         }
         return props_ActionRule;
+      case LanguageConceptSwitch.Assess:
+        if (props_Assess == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Assess");
+          props_Assess = cpb.create();
+        }
+        return props_Assess;
+      case LanguageConceptSwitch.When:
+        if (props_When == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("When");
+          props_When = cpb.create();
+        }
+        return props_When;
+      case LanguageConceptSwitch.With:
+        if (props_With == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e5060d8L, 0x460ba1d75e5060d9L, "property", "", "");
+          props_With = cpb.create();
+        }
+        return props_With;
     }
     return null;
   }

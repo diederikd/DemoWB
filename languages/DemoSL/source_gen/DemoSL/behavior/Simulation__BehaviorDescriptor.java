@@ -8,15 +8,14 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
 import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
-import java.util.List;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.SModifiersImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import java.util.ArrayList;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
@@ -27,21 +26,13 @@ public final class Simulation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, "DemoSL.structure.Simulation");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<List<SNode>> getPossibleActs_id6z7DEV52hnr = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getPossibleActs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV52hnr").registry(REGISTRY).build();
   public static final SMethod<Void> updatePossibleActs_id6z7DEV56A64 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updatePossibleActs").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6z7DEV56A64").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPossibleActs_id6z7DEV52hnr, updatePossibleActs_id6z7DEV56A64);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(updatePossibleActs_id6z7DEV56A64);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> getPossibleActs_id6z7DEV52hnr(@NotNull SNode __thisNode__) {
-    List<SNode> possibleacts = new ArrayList<SNode>();
-    for (SNode caseNode : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")))) {
-      ListSequence.fromList(possibleacts).addSequence(ListSequence.fromList(Case__BehaviorDescriptor.getPossibleActs_id6z7DEV3Syvm.invoke(caseNode)));
-    }
-    return possibleacts;
-  }
   /*package*/ static void updatePossibleActs_id6z7DEV56A64(@NotNull SNode __thisNode__) {
     for (SNode caseNode : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")))) {
       Case__BehaviorDescriptor.updatePossibleActs_id6z7DEV55AXG.invoke(caseNode);
@@ -65,8 +56,6 @@ public final class Simulation__BehaviorDescriptor extends BaseBHDescriptor {
     }
     switch (methodIndex) {
       case 0:
-        return (T) ((List<SNode>) getPossibleActs_id6z7DEV52hnr(node));
-      case 1:
         updatePossibleActs_id6z7DEV56A64(node);
         return null;
       default:
