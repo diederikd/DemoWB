@@ -34,6 +34,7 @@
   <dependency className="ProcessSL.behavior.Link__BehaviorDescriptor" file="Link__BehaviorDescriptor.java">
     <classNode dependClassName="ConstructionSL.behavior.TransactionKind__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

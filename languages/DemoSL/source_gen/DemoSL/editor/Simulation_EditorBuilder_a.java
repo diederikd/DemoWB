@@ -59,6 +59,8 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.QueryListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import org.jetbrains.mps.openapi.language.SConceptFeature;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
 
@@ -448,7 +450,11 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
       }
     }
     private Object executeQuery(final SNode node, final EditorContext editorContext) {
-      return SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec400e0baL, "possibleActs"));
+      return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec400e0baL, "possibleActs"))).sort(new ISelector<SNode, String>() {
+        public String select(SNode it) {
+          return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")), MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id"));
+        }
+      }, true);
     }
     @Override
     public Iterable<? extends SNode> getNodesForList(final SNode node) {
@@ -575,7 +581,11 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
       }
     }
     private Object executeQuery(final SNode node, final EditorContext editorContext) {
-      return SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec42570c5L, "performedActs"));
+      return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec42570c5L, "performedActs"))).sort(new ISelector<SNode, String>() {
+        public String select(SNode it) {
+          return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")), MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id"));
+        }
+      }, true);
     }
     @Override
     public Iterable<? extends SNode> getNodesForList(final SNode node) {
