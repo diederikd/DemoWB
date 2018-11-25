@@ -169,6 +169,16 @@ public class DemoStyles_StyleSheet {
    * @deprecated Since MPS 3.5 use generated StyleClass
    */
   @Deprecated
+  public static void apply_Italic(Style style, EditorCell editorCell) {
+    SNode node = (editorCell == null ? null : editorCell.getSNode());
+    EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
+    new DemoStyles_StyleSheet.ItalicStyleClass(editorContext, node).apply(style, editorCell);
+  }
+  /**
+   * 
+   * @deprecated Since MPS 3.5 use generated StyleClass
+   */
+  @Deprecated
   public static void apply_Darkred(Style style, EditorCell editorCell) {
     SNode node = (editorCell == null ? null : editorCell.getSNode());
     EditorContext editorContext = (editorCell == null ? null : editorCell.getContext());
@@ -367,6 +377,17 @@ public class DemoStyles_StyleSheet {
     @Override
     public void apply(Style style, EditorCell editorCell) {
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
+    }
+
+  }
+  public static class ItalicStyleClass extends AbstractStyleClass {
+    public ItalicStyleClass(EditorContext editorContext, SNode node) {
+      super(editorContext, node);
+    }
+
+    @Override
+    public void apply(Style style, EditorCell editorCell) {
+      style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
     }
 
   }

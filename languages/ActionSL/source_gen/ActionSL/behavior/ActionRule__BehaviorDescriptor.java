@@ -12,6 +12,7 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -24,6 +25,9 @@ public final class ActionRule__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x585f5ae0f823b54L, 0x460ba1d75e46bdd6L, "eventPart"), MetaAdapterFactory.getConcept(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L, "ActionSL.structure.When"));
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x585f5ae0f823b54L, 0x460ba1d75e5644cfL, "assessPart"), MetaAdapterFactory.getConcept(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e5061a4L, "ActionSL.structure.Assess"));
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x585f5ae0f823b54L, 0x460ba1d75e5644d2L, "responsPart"), MetaAdapterFactory.getConcept(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e56459aL, "ActionSL.structure.Respons"));
   }
 
 

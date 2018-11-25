@@ -61,17 +61,39 @@
     </language>
     <language id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL">
       <concept id="397994270025464660" name="ActionSL.structure.ActionRule" flags="ng" index="a1WVU">
-        <child id="5047305753770507734" name="when" index="ojhK1" />
+        <child id="5047305753770507734" name="eventPart" index="ojhK1" />
+        <child id="5047305753771525330" name="responsPart" index="onuk5" />
+        <child id="5047305753771525327" name="assessPart" index="onuko" />
       </concept>
       <concept id="5047305753770367505" name="ActionSL.structure.When" flags="ng" index="ojNJ6">
         <property id="5047305753770391947" name="stepKind" index="ojPxs" />
         <reference id="5047305753770367506" name="appliesToStepKind" index="ojNJ5" />
         <reference id="5047305753770391942" name="appliesToTransactionKind" index="ojPxh" />
-        <child id="5047305753771139331" name="with" index="omW3k" />
       </concept>
+      <concept id="5047305753771139492" name="ActionSL.structure.Assess" flags="ng" index="omW1N" />
       <concept id="5047305753771139288" name="ActionSL.structure.With" flags="ng" index="omW4f">
         <reference id="5047305753771139289" name="property" index="omW4e" />
       </concept>
+      <concept id="5047305753771629473" name="ActionSL.structure.WithClause" flags="ng" index="on7DQ">
+        <property id="5047305753771742673" name="showWith" index="okzg6" />
+        <child id="5047305753771629474" name="with" index="on7DP" />
+      </concept>
+      <concept id="5047305753771629418" name="ActionSL.structure.ActionClause" flags="ng" index="on7EX">
+        <property id="5047305753771629419" name="stepkind" index="on7EW" />
+        <reference id="5047305753771629421" name="appliesTo" index="on7EU" />
+      </concept>
+      <concept id="5047305753771525530" name="ActionSL.structure.Respons" flags="ng" index="onuhd">
+        <child id="5047305753771525533" name="then" index="onuha" />
+        <child id="5047305753771525531" name="if" index="onuhc" />
+        <child id="5047305753771525536" name="else" index="onuhR" />
+      </concept>
+      <concept id="5047305753771525529" name="ActionSL.structure.Else" flags="ng" index="onuhe">
+        <child id="5047305753771706662" name="actions" index="okEzL" />
+      </concept>
+      <concept id="5047305753771525528" name="ActionSL.structure.Then" flags="ng" index="onuhf">
+        <child id="5047305753771706656" name="actions" index="okEzR" />
+      </concept>
+      <concept id="5047305753771525334" name="ActionSL.structure.If" flags="ng" index="onuk1" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -20254,13 +20276,40 @@
   </node>
   <node concept="3cHilA" id="4obCttuiHgz">
     <property role="TrG5h" value="ARS WAA" />
-    <node concept="a1WVU" id="4obCttuk0Wo" role="ojaNo">
-      <node concept="ojNJ6" id="4obCttuk0Wp" role="ojhK1">
-        <property role="ojPxs" value="rq" />
-        <ref role="ojPxh" node="pMarvI_0aH" />
-        <ref role="ojNJ5" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
-        <node concept="omW4f" id="4obCttulfAY" role="omW3k">
+    <node concept="a1WVU" id="4obCttunXiL" role="ojaNo">
+      <node concept="ojNJ6" id="4obCttunXiM" role="ojhK1">
+        <property role="okzg6" value="true" />
+        <property role="ojPxs" value="ac" />
+        <ref role="ojPxh" node="IuxU86aVkj" />
+        <ref role="ojNJ5" node="2Ze6BQpzud5" resolve="accept afwijzen van het verzoek" />
+        <node concept="omW4f" id="4obCttuo3QV" role="on7DP">
           <ref role="omW4e" node="IuxU86i8cH" resolve="arbeidsduur" />
+        </node>
+        <node concept="omW4f" id="4obCttuo3R1" role="on7DP">
+          <ref role="omW4e" node="IuxU86gpyy" resolve="werknemer" />
+        </node>
+      </node>
+      <node concept="omW1N" id="4obCttunXiN" role="onuko" />
+      <node concept="onuhd" id="4obCttunXiO" role="onuk5">
+        <node concept="onuk1" id="4obCttunXiP" role="onuhc" />
+        <node concept="onuhf" id="4obCttunXiQ" role="onuha">
+          <node concept="on7EX" id="4obCttunXiX" role="okEzR">
+            <property role="okzg6" value="true" />
+            <property role="on7EW" value="ac" />
+            <ref role="on7EU" node="IuxU86aVkj" />
+          </node>
+          <node concept="on7EX" id="4obCttunXiZ" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="ac" />
+            <ref role="on7EU" node="pMarvIOY32" />
+          </node>
+        </node>
+        <node concept="onuhe" id="4obCttunXj2" role="onuhR">
+          <node concept="on7EX" id="4obCttunXj3" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="ac" />
+            <ref role="on7EU" node="IuxU86aVkj" />
+          </node>
         </node>
       </node>
     </node>

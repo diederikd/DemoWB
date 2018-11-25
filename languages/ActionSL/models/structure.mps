@@ -30,8 +30,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -60,9 +65,23 @@
     <node concept="1TJgyj" id="4obCttuhFRm" role="1TKVEi">
       <property role="IQ2ns" value="5047305753770507734" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="when" />
+      <property role="20kJfa" value="eventPart" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4obCttuh9Ch" resolve="When" />
+    </node>
+    <node concept="1TJgyj" id="4obCttul$jf" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771525327" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="assessPart" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4obCttuk66$" resolve="Assess" />
+    </node>
+    <node concept="1TJgyj" id="4obCttul$ji" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771525330" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="responsPart" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4obCttul$mq" resolve="Respons" />
     </node>
   </node>
   <node concept="1TIwiD" id="4obCttuh9Ch">
@@ -87,12 +106,8 @@
       <property role="TrG5h" value="stepKind" />
       <ref role="AX2Wp" node="m5XqSfxGpH" resolve="stepKindPerfectTense" />
     </node>
-    <node concept="1TJgyj" id="4obCttuk643" role="1TKVEi">
-      <property role="IQ2ns" value="5047305753771139331" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="with" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="4obCttuk63o" resolve="With" />
+    <node concept="PrWs8" id="4obCttulXID" role="PzmwI">
+      <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
     </node>
   </node>
   <node concept="AxPO7" id="m5XqSfxGpH">
@@ -156,6 +171,96 @@
     <property role="EcuMT" value="5047305753771139492" />
     <property role="TrG5h" value="Assess" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4obCttul$jm">
+    <property role="EcuMT" value="5047305753771525334" />
+    <property role="TrG5h" value="If" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4obCttul$mo">
+    <property role="EcuMT" value="5047305753771525528" />
+    <property role="TrG5h" value="Then" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4obCttumg$w" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771706656" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4obCttulXHE" resolve="ActionClause" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4obCttul$mp">
+    <property role="EcuMT" value="5047305753771525529" />
+    <property role="TrG5h" value="Else" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4obCttumg$A" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771706662" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4obCttulXHE" resolve="ActionClause" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4obCttul$mq">
+    <property role="EcuMT" value="5047305753771525530" />
+    <property role="TrG5h" value="Respons" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4obCttul$mr" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771525531" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="if" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4obCttul$jm" resolve="If" />
+    </node>
+    <node concept="1TJgyj" id="4obCttul$mt" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771525533" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4obCttul$mo" resolve="Then" />
+    </node>
+    <node concept="1TJgyj" id="4obCttul$mw" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771525536" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="else" />
+      <ref role="20lvS9" node="4obCttul$mp" resolve="Else" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4obCttulXHE">
+    <property role="EcuMT" value="5047305753771629418" />
+    <property role="TrG5h" value="ActionClause" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4obCttulXHF" role="1TKVEl">
+      <property role="IQ2nx" value="5047305753771629419" />
+      <property role="TrG5h" value="stepkind" />
+      <ref role="AX2Wp" to="it18:m5XqSfxGpH" resolve="generalStepKind" />
+    </node>
+    <node concept="1TJgyj" id="4obCttulXHH" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771629421" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="appliesTo" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+    </node>
+    <node concept="PrWs8" id="4obCttulXI_" role="PzmwI">
+      <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4obCttulXIx">
+    <property role="EcuMT" value="5047305753771629473" />
+    <property role="TrG5h" value="WithClause" />
+    <node concept="1TJgyi" id="4obCttumpnh" role="1TKVEl">
+      <property role="IQ2nx" value="5047305753771742673" />
+      <property role="TrG5h" value="showWith" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="4obCttulXIy" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771629474" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="with" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4obCttuk63o" resolve="With" />
+    </node>
   </node>
 </model>
 

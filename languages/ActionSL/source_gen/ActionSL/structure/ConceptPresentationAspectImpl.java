@@ -9,16 +9,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ActionClause;
   private ConceptPresentation props_ActionRule;
   private ConceptPresentation props_Assess;
+  private ConceptPresentation props_Else;
+  private ConceptPresentation props_If;
+  private ConceptPresentation props_Respons;
+  private ConceptPresentation props_Then;
   private ConceptPresentation props_When;
   private ConceptPresentation props_With;
+  private ConceptPresentation props_WithClause;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ActionClause:
+        if (props_ActionClause == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57db6aL, 0x460ba1d75e57db6dL, "appliesTo", "", "");
+          props_ActionClause = cpb.create();
+        }
+        return props_ActionClause;
       case LanguageConceptSwitch.ActionRule:
         if (props_ActionRule == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -33,6 +46,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Assess = cpb.create();
         }
         return props_Assess;
+      case LanguageConceptSwitch.Else:
+        if (props_Else == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Else");
+          props_Else = cpb.create();
+        }
+        return props_Else;
+      case LanguageConceptSwitch.If:
+        if (props_If == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("If");
+          props_If = cpb.create();
+        }
+        return props_If;
+      case LanguageConceptSwitch.Respons:
+        if (props_Respons == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Respons");
+          props_Respons = cpb.create();
+        }
+        return props_Respons;
+      case LanguageConceptSwitch.Then:
+        if (props_Then == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Then");
+          props_Then = cpb.create();
+        }
+        return props_Then;
       case LanguageConceptSwitch.When:
         if (props_When == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -47,6 +88,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_With = cpb.create();
         }
         return props_With;
+      case LanguageConceptSwitch.WithClause:
+        if (props_WithClause == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_WithClause = cpb.create();
+        }
+        return props_WithClause;
     }
     return null;
   }

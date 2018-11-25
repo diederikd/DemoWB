@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="ActionSL.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4ca71d67-5128-4ff0-9ce9-58b699d858c3(ActionSL.intentions)/5047305753771746608">
+    <file name="AddWith_Intention.java">
+      <node id="5047305753771746608" at="20,0,21,0" concept="2" trace="myCachedExecutable" />
+      <node id="5047305753771746608" at="21,30,22,134" concept="6" />
+      <node id="5047305753771746608" at="25,35,26,21" concept="5" />
+      <node id="5047305753771746608" at="30,53,31,19" concept="5" />
+      <node id="5047305753771746608" at="32,5,33,16" concept="5" />
+      <node id="5047305753771810851" at="35,91,36,187" concept="5" />
+      <node id="5047305753771746608" at="39,35,40,17" concept="5" />
+      <node id="5047305753771746608" at="43,37,44,123" concept="1" />
+      <node id="5047305753771746608" at="45,5,46,30" concept="5" />
+      <node id="5047305753771747179" at="52,87,53,24" concept="5" />
+      <node id="5047305753771760586" at="56,78,57,177" concept="1" />
+      <node id="5047305753771746608" at="60,48,61,36" concept="5" />
+      <node id="5047305753771746608" at="49,0,51,0" concept="0" trace="IntentionImplementation#()V" />
+      <node id="5047305753771746608" at="21,0,24,0" concept="0" trace="AddWith_Intention#()V" />
+      <node id="5047305753771746608" at="29,84,32,5" concept="3" />
+      <node id="5047305753771746608" at="35,0,38,0" concept="4" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="5047305753771746608" at="42,99,45,5" concept="3" />
+      <node id="5047305753771746608" at="24,0,28,0" concept="4" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="5047305753771746608" at="38,0,42,0" concept="4" trace="isSurroundWith#()Z" />
+      <node id="5047305753771746608" at="51,0,55,0" concept="4" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="5047305753771746608" at="55,0,59,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="5047305753771746608" at="59,0,63,0" concept="4" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="5047305753771746608" at="42,0,48,0" concept="4" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="5047305753771746608" at="28,0,35,0" concept="4" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <scope id="5047305753771746608" at="49,38,49,38" />
+      <scope id="5047305753771746608" at="21,30,22,134" />
+      <scope id="5047305753771746608" at="25,35,26,21" />
+      <scope id="5047305753771746608" at="30,53,31,19" />
+      <scope id="5047305753771753310" at="35,91,36,187" />
+      <scope id="5047305753771746608" at="39,35,40,17" />
+      <scope id="5047305753771746608" at="43,37,44,123" />
+      <scope id="5047305753771746610" at="52,87,53,24" />
+      <scope id="5047305753771746612" at="56,78,57,177" />
+      <scope id="5047305753771746608" at="60,48,61,36" />
+      <scope id="5047305753771746608" at="49,0,51,0" />
+      <scope id="5047305753771746608" at="21,0,24,0" />
+      <scope id="5047305753771746608" at="35,0,38,0">
+        <var name="editorContext" id="5047305753771746608" />
+        <var name="node" id="5047305753771746608" />
+      </scope>
+      <scope id="5047305753771746608" at="24,0,28,0" />
+      <scope id="5047305753771746608" at="29,84,33,16" />
+      <scope id="5047305753771746608" at="38,0,42,0" />
+      <scope id="5047305753771746608" at="42,99,46,30" />
+      <scope id="5047305753771746608" at="51,0,55,0">
+        <var name="editorContext" id="5047305753771746608" />
+        <var name="node" id="5047305753771746608" />
+      </scope>
+      <scope id="5047305753771746608" at="55,0,59,0">
+        <var name="editorContext" id="5047305753771746608" />
+        <var name="node" id="5047305753771746608" />
+      </scope>
+      <scope id="5047305753771746608" at="59,0,63,0" />
+      <scope id="5047305753771746608" at="42,0,48,0">
+        <var name="context" id="5047305753771746608" />
+        <var name="node" id="5047305753771746608" />
+      </scope>
+      <scope id="5047305753771746608" at="28,0,35,0">
+        <var name="editorContext" id="5047305753771746608" />
+        <var name="node" id="5047305753771746608" />
+      </scope>
+      <unit id="5047305753771746608" at="48,0,64,0" name="ActionSL.intentions.AddWith_Intention$IntentionImplementation" />
+      <unit id="5047305753771746608" at="19,0,65,0" name="ActionSL.intentions.AddWith_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="5047305753771746608" at="37,47,38,50" concept="1" />
+      <node id="5047305753771746608" at="50,52,51,36" concept="1" />
+    </file>
+  </root>
+</debug-info>
+
