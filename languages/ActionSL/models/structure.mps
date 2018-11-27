@@ -159,18 +159,36 @@
     <property role="EcuMT" value="5047305753771139288" />
     <property role="TrG5h" value="With" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4obCttuk63p" role="1TKVEi">
-      <property role="IQ2ns" value="5047305753771139289" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="property" />
+    <node concept="1TJgyj" id="4obCttuopX2" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753772269378" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="formulation" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ajas:2ojITFEDW2D" resolve="PropertyType" />
+      <ref role="20lvS9" to="ajas:4obCttuo601" resolve="PropertyKindFormulation" />
     </node>
   </node>
   <node concept="1TIwiD" id="4obCttuk66$">
     <property role="EcuMT" value="5047305753771139492" />
     <property role="TrG5h" value="Assess" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4obCttuo604" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753772187652" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="justice" />
+      <ref role="20lvS9" to="ajas:4obCttuo600" resolve="FactKindFormulation" />
+    </node>
+    <node concept="1TJgyj" id="4obCttuo606" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753772187654" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sincerity" />
+      <ref role="20lvS9" to="ajas:4obCttuo600" resolve="FactKindFormulation" />
+    </node>
+    <node concept="1TJgyj" id="4obCttuo609" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753772187657" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="truth" />
+      <ref role="20lvS9" to="ajas:4obCttuo600" resolve="FactKindFormulation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4obCttul$jm">
     <property role="EcuMT" value="5047305753771525334" />

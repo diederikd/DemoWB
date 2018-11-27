@@ -432,5 +432,34 @@
       <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4obCttuo600">
+    <property role="EcuMT" value="5047305753772187648" />
+    <property role="TrG5h" value="FactKindFormulation" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4obCttuo601">
+    <property role="EcuMT" value="5047305753772187649" />
+    <property role="TrG5h" value="PropertyKindFormulation" />
+    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <node concept="1TJgyj" id="4obCttuk63p" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753771139289" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="property" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2D" resolve="PropertyType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4obCttuo602">
+    <property role="EcuMT" value="5047305753772187650" />
+    <property role="TrG5h" value="AttributeKindFormulation" />
+    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+  </node>
+  <node concept="1TIwiD" id="4obCttuo603">
+    <property role="EcuMT" value="5047305753772187651" />
+    <property role="TrG5h" value="ProductKindFormulation" />
+    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+  </node>
 </model>
 

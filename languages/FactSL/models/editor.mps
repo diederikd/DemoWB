@@ -2223,5 +2223,23 @@
       <node concept="l2Vlx" id="IuxU86GGcZ" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="4obCttuopWU">
+    <ref role="1XX52x" to="ajas:4obCttuo601" resolve="PropertyKindFormulation" />
+    <node concept="3EZMnI" id="4obCttuk63_" role="2wV5jI">
+      <node concept="1iCGBv" id="4obCttuk63G" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:4obCttuk63p" resolve="property" />
+        <node concept="1sVBvm" id="4obCttuk63I" role="1sWHZn">
+          <node concept="3F0A7n" id="4obCttukcmB" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4obCttuk63X" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="l2Vlx" id="4obCttuk63C" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -12,6 +12,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Aggregation;
   private ConceptPresentation props_Amount;
   private ConceptPresentation props_Area;
+  private ConceptPresentation props_AttributeKindFormulation;
   private ConceptPresentation props_AttributeType;
   private ConceptPresentation props_BaseEntityType;
   private ConceptPresentation props_ConstructedEntityType;
@@ -21,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EntityTypeSet;
   private ConceptPresentation props_EventLaw;
   private ConceptPresentation props_EventType;
+  private ConceptPresentation props_FactKindFormulation;
   private ConceptPresentation props_FactType;
   private ConceptPresentation props_Generalisation;
   private ConceptPresentation props_ICardinality;
@@ -28,6 +30,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Length;
   private ConceptPresentation props_Mass;
   private ConceptPresentation props_Number;
+  private ConceptPresentation props_ProductKindFormulation;
+  private ConceptPresentation props_PropertyKindFormulation;
   private ConceptPresentation props_PropertyType;
   private ConceptPresentation props_Specialisation;
   private ConceptPresentation props_Temperature;
@@ -64,6 +68,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Area = cpb.create();
         }
         return props_Area;
+      case LanguageConceptSwitch.AttributeKindFormulation:
+        if (props_AttributeKindFormulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("AttributeKindFormulation");
+          props_AttributeKindFormulation = cpb.create();
+        }
+        return props_AttributeKindFormulation;
       case LanguageConceptSwitch.AttributeType:
         if (props_AttributeType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -126,6 +137,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EventType = cpb.create();
         }
         return props_EventType;
+      case LanguageConceptSwitch.FactKindFormulation:
+        if (props_FactKindFormulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_FactKindFormulation = cpb.create();
+        }
+        return props_FactKindFormulation;
       case LanguageConceptSwitch.FactType:
         if (props_FactType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -172,6 +189,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Number = cpb.create();
         }
         return props_Number;
+      case LanguageConceptSwitch.ProductKindFormulation:
+        if (props_ProductKindFormulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ProductKindFormulation");
+          props_ProductKindFormulation = cpb.create();
+        }
+        return props_ProductKindFormulation;
+      case LanguageConceptSwitch.PropertyKindFormulation:
+        if (props_PropertyKindFormulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606001L, 0x460ba1d75e5060d9L, "property", "", "");
+          props_PropertyKindFormulation = cpb.create();
+        }
+        return props_PropertyKindFormulation;
       case LanguageConceptSwitch.PropertyType:
         if (props_PropertyType == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

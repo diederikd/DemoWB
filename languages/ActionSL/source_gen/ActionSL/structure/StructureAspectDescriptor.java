@@ -91,6 +91,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771139492");
     b.version(2);
+    b.aggregate("justice", 0x460ba1d75e606004L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L).optional(true).ordered(true).multiple(false).origin("5047305753772187652").done();
+    b.aggregate("sincerity", 0x460ba1d75e606006L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L).optional(true).ordered(true).multiple(false).origin("5047305753772187654").done();
+    b.aggregate("truth", 0x460ba1d75e606009L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L).optional(true).ordered(true).multiple(false).origin("5047305753772187657").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForElse() {
@@ -142,7 +145,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771139288");
     b.version(2);
-    b.associate("property", 0x460ba1d75e5060d9L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a9L).optional(false).origin("5047305753771139289").done();
+    b.aggregate("formulation", 0x460ba1d75e619f42L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606001L).optional(false).ordered(true).multiple(false).origin("5047305753772269378").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWithClause() {

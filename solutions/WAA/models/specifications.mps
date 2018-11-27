@@ -72,7 +72,7 @@
       </concept>
       <concept id="5047305753771139492" name="ActionSL.structure.Assess" flags="ng" index="omW1N" />
       <concept id="5047305753771139288" name="ActionSL.structure.With" flags="ng" index="omW4f">
-        <reference id="5047305753771139289" name="property" index="omW4e" />
+        <child id="5047305753772269378" name="formulation" index="oqzUl" />
       </concept>
       <concept id="5047305753771629473" name="ActionSL.structure.WithClause" flags="ng" index="on7DQ">
         <property id="5047305753771742673" name="showWith" index="okzg6" />
@@ -105,6 +105,9 @@
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
       <concept id="837255710697040837" name="FactSL.structure.Date" flags="ng" index="dRiLB" />
+      <concept id="5047305753772187649" name="FactSL.structure.PropertyKindFormulation" flags="ng" index="oqW7m">
+        <reference id="5047305753771139289" name="property" index="omW4e" />
+      </concept>
       <concept id="7550186569879667952" name="FactSL.structure.IPropertyType" flags="ng" index="2Hnu9u">
         <reference id="7550186569879667953" name="domainOfProperty" index="2Hnu9v" />
       </concept>
@@ -20282,11 +20285,15 @@
         <property role="ojPxs" value="ac" />
         <ref role="ojPxh" node="IuxU86aVkj" />
         <ref role="ojNJ5" node="2Ze6BQpzud5" resolve="accept afwijzen van het verzoek" />
-        <node concept="omW4f" id="4obCttuo3QV" role="on7DP">
-          <ref role="omW4e" node="IuxU86i8cH" resolve="arbeidsduur" />
+        <node concept="omW4f" id="4obCttup4J9" role="on7DP">
+          <node concept="oqW7m" id="4obCttup4Jd" role="oqzUl">
+            <ref role="omW4e" node="IuxU86i8cH" resolve="arbeidsduur" />
+          </node>
         </node>
-        <node concept="omW4f" id="4obCttuo3R1" role="on7DP">
-          <ref role="omW4e" node="IuxU86gpyy" resolve="werknemer" />
+        <node concept="omW4f" id="4obCttup4Jg" role="on7DP">
+          <node concept="oqW7m" id="4obCttup4Jm" role="oqzUl">
+            <ref role="omW4e" node="IuxU86i8D3" resolve="werkperioden in spreiding" />
+          </node>
         </node>
       </node>
       <node concept="omW1N" id="4obCttunXiN" role="onuko" />
