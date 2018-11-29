@@ -437,11 +437,13 @@
     <property role="TrG5h" value="FactKindFormulation" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Formulation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4obCttuo601">
     <property role="EcuMT" value="5047305753772187649" />
     <property role="TrG5h" value="PropertyKindFormulation" />
+    <property role="3GE5qa" value="Formulation" />
     <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
     <node concept="1TJgyj" id="4obCttuk63p" role="1TKVEi">
       <property role="IQ2ns" value="5047305753771139289" />
@@ -454,12 +456,21 @@
   <node concept="1TIwiD" id="4obCttuo602">
     <property role="EcuMT" value="5047305753772187650" />
     <property role="TrG5h" value="AttributeKindFormulation" />
+    <property role="3GE5qa" value="Formulation" />
     <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
   </node>
   <node concept="1TIwiD" id="4obCttuo603">
     <property role="EcuMT" value="5047305753772187651" />
     <property role="TrG5h" value="ProductKindFormulation" />
+    <property role="3GE5qa" value="Formulation" />
     <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <node concept="1TJgyj" id="4obCttuqy1U" role="1TKVEi">
+      <property role="IQ2ns" value="5047305753772826746" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="product" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
+    </node>
   </node>
 </model>
 

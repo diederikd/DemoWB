@@ -16,14 +16,14 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class AddWith_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class AddWithForWhen_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public AddWith_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:4ca71d67-5128-4ff0-9ce9-58b699d858c3(ActionSL.intentions)", "5047305753771746608"));
+  public AddWithForWhen_Intention() {
+    super(Kind.NORMAL, false, new SNodePointer("r:4ca71d67-5128-4ff0-9ce9-58b699d858c3(ActionSL.intentions)", "5047305753772614674"));
   }
   @Override
   public String getPresentation() {
-    return "AddWith";
+    return "AddWithForWhen";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -41,7 +41,7 @@ public final class AddWith_Intention extends AbstractIntentionDescriptor impleme
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new AddWith_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new AddWithForWhen_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -58,7 +58,7 @@ public final class AddWith_Intention extends AbstractIntentionDescriptor impleme
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return AddWith_Intention.this;
+      return AddWithForWhen_Intention.this;
     }
   }
 }

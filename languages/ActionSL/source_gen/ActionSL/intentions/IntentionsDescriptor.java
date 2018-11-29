@@ -33,9 +33,16 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     switch (conceptIndex.index(cncpt)) {
       case 0:
         if (true) {
-          // Concept: WithClause 
+          // Concept: ActionClause 
           intentions = new IntentionFactory[1];
-          intentions[0] = new AddWith_Intention();
+          intentions[0] = new AddWithForActionClause_Intention();
+        }
+        break;
+      case 1:
+        if (true) {
+          // Concept: When 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AddWithForWhen_Intention();
         }
         break;
       default:
@@ -47,9 +54,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[1];
-    rv[0] = new AddWith_Intention();
+    IntentionFactory[] rv = new IntentionFactory[2];
+    rv[0] = new AddWithForActionClause_Intention();
+    rv[1] = new AddWithForWhen_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57dba1L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57db6aL), MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L)).seal();
 }

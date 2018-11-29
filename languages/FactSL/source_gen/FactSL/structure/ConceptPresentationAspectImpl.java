@@ -192,7 +192,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ProductKindFormulation:
         if (props_ProductKindFormulation == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ProductKindFormulation");
+          cpb.presentationByReference(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606003L, 0x460ba1d75e6a207aL, "product", "", "");
           props_ProductKindFormulation = cpb.create();
         }
         return props_ProductKindFormulation;

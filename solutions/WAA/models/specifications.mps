@@ -207,6 +207,7 @@
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
       </concept>
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
+        <property id="3444719891735568228" name="onlyExternal" index="2Qkckp" />
         <reference id="3316760564123826537" name="transactionKind" index="3jA7_1" />
         <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
         <child id="3316760564121910691" name="links" index="3jxjQb" />
@@ -17597,6 +17598,7 @@
   </node>
   <node concept="3jxjQ8" id="2Ze6BQpp0d1">
     <property role="TrG5h" value="Proces model WAA" />
+    <property role="2Qkckp" value="true" />
     <ref role="3jA7_1" node="pMarvI_0aH" />
     <node concept="a0Nag" id="2Ze6BQpzubY" role="3jxjQ9">
       <property role="a0N98" value="in" />
@@ -18436,13 +18438,6 @@
       <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
       <ref role="a0NRG" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
     </node>
-    <node concept="a0NRJ" id="2Ze6BQpEj1e" role="3jxjQb">
-      <property role="3jFdel" value="initiation" />
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
-      <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-      <ref role="a0NRG" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-    </node>
     <node concept="a0NRJ" id="6z7DEV4$BrV" role="3jxjQb">
       <property role="3jFdel" value="wait" />
       <property role="3cIS2x" value="1" />
@@ -18450,25 +18445,18 @@
       <ref role="a0NRD" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
       <ref role="a0NRG" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
     </node>
+    <node concept="a0NRJ" id="2Ze6BQpEj1e" role="3jxjQb">
+      <property role="3jFdel" value="initiation" />
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
+      <ref role="a0NRG" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
+    </node>
     <node concept="a0NRJ" id="6z7DEV4$BvY" role="3jxjQb">
       <property role="3jFdel" value="wait" />
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
-      <ref role="a0NRG" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
-    </node>
-    <node concept="a0NRJ" id="4obCttufj7z" role="3jxjQb">
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="initiation" />
-      <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-      <ref role="a0NRG" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
-    </node>
-    <node concept="a0NRJ" id="4obCttufjpz" role="3jxjQb">
-      <property role="3cIS2x" value="1" />
-      <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="wait" />
-      <ref role="a0NRD" node="2Ze6BQpzud5" resolve="accept afwijzen van het verzoek" />
       <ref role="a0NRG" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="a0NRJ" id="6z7DEV5vkQC" role="3jxjQb">
@@ -18484,6 +18472,20 @@
       <property role="3cIS2B" value="1" />
       <ref role="a0NRG" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
       <ref role="a0NRD" node="2Ze6BQpzuds" resolve="accept vaststellen van de spreiding van de uren " />
+    </node>
+    <node concept="a0NRJ" id="4obCttufj7z" role="3jxjQb">
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <property role="3jFdel" value="initiation" />
+      <ref role="a0NRD" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
+      <ref role="a0NRG" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
+    </node>
+    <node concept="a0NRJ" id="4obCttufjpz" role="3jxjQb">
+      <property role="3cIS2x" value="1" />
+      <property role="3cIS2B" value="1" />
+      <property role="3jFdel" value="wait" />
+      <ref role="a0NRD" node="2Ze6BQpzud5" resolve="accept afwijzen van het verzoek" />
+      <ref role="a0NRG" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
     </node>
   </node>
   <node concept="2QfGCx" id="2Ze6BQpWSlh">

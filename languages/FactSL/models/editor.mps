@@ -223,6 +223,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -2224,6 +2227,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4obCttuopWU">
+    <property role="3GE5qa" value="Formulation" />
     <ref role="1XX52x" to="ajas:4obCttuo601" resolve="PropertyKindFormulation" />
     <node concept="3EZMnI" id="4obCttuk63_" role="2wV5jI">
       <node concept="1iCGBv" id="4obCttuk63G" role="3EZMnx">
@@ -2235,10 +2239,57 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="4obCttup78c" role="3EZMnx">
+        <property role="3F0ifm" value="of" />
+      </node>
+      <node concept="1iCGBv" id="4obCttup78q" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:4obCttuk63p" resolve="property" />
+        <node concept="1sVBvm" id="4obCttup78s" role="1sWHZn">
+          <node concept="1iCGBv" id="4obCttup78C" role="2wV5jI">
+            <ref role="1NtTu8" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
+            <node concept="1sVBvm" id="4obCttup78E" role="1sWHZn">
+              <node concept="3F0A7n" id="4obCttup78L" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="4obCttuk63X" role="3EZMnx">
         <property role="3F0ifm" value="is" />
       </node>
+      <node concept="1iCGBv" id="4obCttupVO4" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:4obCttuk63p" resolve="property" />
+        <node concept="1sVBvm" id="4obCttupVO6" role="1sWHZn">
+          <node concept="1iCGBv" id="4obCttupVOn" role="2wV5jI">
+            <ref role="1NtTu8" to="ajas:2ojITFEDW2F" resolve="prange" />
+            <node concept="1sVBvm" id="4obCttupVOp" role="1sWHZn">
+              <node concept="3F0A7n" id="4obCttupVOw" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="l2Vlx" id="4obCttuk63C" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4obCttuqy24">
+    <property role="3GE5qa" value="Formulation" />
+    <ref role="1XX52x" to="ajas:4obCttuo603" resolve="ProductKindFormulation" />
+    <node concept="3EZMnI" id="4obCttuqy26" role="2wV5jI">
+      <node concept="1iCGBv" id="4obCttuqy2d" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:4obCttuqy1U" resolve="product" />
+        <node concept="1sVBvm" id="4obCttuqy2f" role="1sWHZn">
+          <node concept="3F0A7n" id="4obCttuqy2m" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4obCttuqy29" role="2iSdaV" />
     </node>
   </node>
 </model>
