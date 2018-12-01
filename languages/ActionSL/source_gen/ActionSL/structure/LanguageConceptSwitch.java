@@ -16,9 +16,10 @@ public final class LanguageConceptSwitch {
   public static final int If = 4;
   public static final int Respons = 5;
   public static final int Then = 6;
-  public static final int When = 7;
-  public static final int With = 8;
-  public static final int WithClause = 9;
+  public static final int TransactionReference = 7;
+  public static final int When = 8;
+  public static final int With = 9;
+  public static final int WithClause = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L);
@@ -29,6 +30,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x460ba1d75e5644d6L, If);
     builder.put(0x460ba1d75e56459aL, Respons);
     builder.put(0x460ba1d75e564598L, Then);
+    builder.put(0x5ed15a66c85ec47fL, TransactionReference);
     builder.put(0x460ba1d75e449a11L, When);
     builder.put(0x460ba1d75e5060d8L, With);
     builder.put(0x460ba1d75e57dba1L, WithClause);

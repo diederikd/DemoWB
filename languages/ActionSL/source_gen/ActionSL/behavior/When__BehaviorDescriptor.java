@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -30,6 +31,7 @@ public final class When__BehaviorDescriptor extends BaseBHDescriptor {
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGeneralStepKind_id2Ze6BQpVVy1);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
+    SLinkOperations.setNewChild(__thisNode__, MetaAdapterFactory.getContainmentLink(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L, 0x5ed15a66c85ec4c4L, "transactionReference"), MetaAdapterFactory.getConcept(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x5ed15a66c85ec47fL, "ActionSL.structure.TransactionReference"));
   }
 
   /*package*/ static String getGeneralStepKind_id2Ze6BQpVVy1(@NotNull SNode __thisNode__) {

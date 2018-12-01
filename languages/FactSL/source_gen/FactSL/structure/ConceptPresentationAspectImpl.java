@@ -71,7 +71,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.AttributeKindFormulation:
         if (props_AttributeKindFormulation == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("AttributeKindFormulation");
+          cpb.presentationByReference(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606002L, 0x5ed15a66c865ac43L, "attribute", "", "");
           props_AttributeKindFormulation = cpb.create();
         }
         return props_AttributeKindFormulation;

@@ -16,6 +16,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_If;
   private ConceptPresentation props_Respons;
   private ConceptPresentation props_Then;
+  private ConceptPresentation props_TransactionReference;
   private ConceptPresentation props_When;
   private ConceptPresentation props_With;
   private ConceptPresentation props_WithClause;
@@ -28,7 +29,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ActionClause:
         if (props_ActionClause == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57db6aL, 0x460ba1d75e57db6dL, "appliesTo", "", "");
+          cpb.presentationByReference(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57db6aL, 0x460ba1d75e57db6dL, "transactionKind", "", "");
           props_ActionClause = cpb.create();
         }
         return props_ActionClause;
@@ -74,6 +75,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Then = cpb.create();
         }
         return props_Then;
+      case LanguageConceptSwitch.TransactionReference:
+        if (props_TransactionReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TransactionReference");
+          props_TransactionReference = cpb.create();
+        }
+        return props_TransactionReference;
       case LanguageConceptSwitch.When:
         if (props_When == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

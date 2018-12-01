@@ -458,6 +458,13 @@
     <property role="TrG5h" value="AttributeKindFormulation" />
     <property role="3GE5qa" value="Formulation" />
     <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <node concept="1TJgyj" id="5VhmAr8pqL3" role="1TKVEi">
+      <property role="IQ2ns" value="6832341507193023555" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2ojITFEDW2I" resolve="AttributeType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4obCttuo603">
     <property role="EcuMT" value="5047305753772187651" />
