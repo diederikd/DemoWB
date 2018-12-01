@@ -465,6 +465,18 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2I" resolve="AttributeType" />
     </node>
+    <node concept="1TJgyi" id="5VhmAr8qJXO" role="1TKVEl">
+      <property role="IQ2nx" value="6832341507193372532" />
+      <property role="TrG5h" value="valueVariable" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5VhmAr8qJYz" role="1TKVEi">
+      <property role="IQ2ns" value="6832341507193372579" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5VhmAr8qJXK" resolve="Operator" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4obCttuo603">
     <property role="EcuMT" value="5047305753772187651" />
@@ -478,6 +490,35 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5VhmAr8qJXK">
+    <property role="EcuMT" value="6832341507193372528" />
+    <property role="TrG5h" value="Operator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5VhmAr8qJXL">
+    <property role="EcuMT" value="6832341507193372529" />
+    <property role="3GE5qa" value="Operator" />
+    <property role="TrG5h" value="IsEqualTo" />
+    <property role="34LRSv" value="is equal to" />
+    <ref role="1TJDcQ" node="5VhmAr8qJXK" resolve="Operator" />
+  </node>
+  <node concept="1TIwiD" id="5VhmAr8qJXM">
+    <property role="EcuMT" value="6832341507193372530" />
+    <property role="3GE5qa" value="Operator" />
+    <property role="TrG5h" value="IsGreaterThan" />
+    <property role="34LRSv" value="is greater than" />
+    <ref role="1TJDcQ" node="5VhmAr8qJXK" resolve="Operator" />
+  </node>
+  <node concept="1TIwiD" id="5VhmAr8qJXN">
+    <property role="EcuMT" value="6832341507193372531" />
+    <property role="3GE5qa" value="Operator" />
+    <property role="TrG5h" value="IsLessThan" />
+    <property role="34LRSv" value="is less than" />
+    <ref role="1TJDcQ" node="5VhmAr8qJXK" resolve="Operator" />
   </node>
 </model>
 

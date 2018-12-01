@@ -2305,7 +2305,23 @@
           </node>
         </node>
       </node>
+      <node concept="3F1sOY" id="5VhmAr8rl$$" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:5VhmAr8qJYz" resolve="operator" />
+      </node>
+      <node concept="3F0A7n" id="5VhmAr8rl$T" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:5VhmAr8qJXO" resolve="valueVariable" />
+      </node>
       <node concept="l2Vlx" id="5VhmAr8pqLj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5VhmAr8rUqK">
+    <property role="3GE5qa" value="Operator" />
+    <ref role="1XX52x" to="ajas:5VhmAr8qJXK" resolve="Operator" />
+    <node concept="3EZMnI" id="5VhmAr8rUqM" role="2wV5jI">
+      <node concept="PMmxH" id="5VhmAr8rUqW" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="l2Vlx" id="5VhmAr8rUqP" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -27,9 +27,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Generalisation;
   private ConceptPresentation props_ICardinality;
   private ConceptPresentation props_IPropertyType;
+  private ConceptPresentation props_IsEqualTo;
+  private ConceptPresentation props_IsGreaterThan;
+  private ConceptPresentation props_IsLessThan;
   private ConceptPresentation props_Length;
   private ConceptPresentation props_Mass;
   private ConceptPresentation props_Number;
+  private ConceptPresentation props_Operator;
   private ConceptPresentation props_ProductKindFormulation;
   private ConceptPresentation props_PropertyKindFormulation;
   private ConceptPresentation props_PropertyType;
@@ -168,6 +172,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IPropertyType = cpb.create();
         }
         return props_IPropertyType;
+      case LanguageConceptSwitch.IsEqualTo:
+        if (props_IsEqualTo == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is equal to");
+          props_IsEqualTo = cpb.create();
+        }
+        return props_IsEqualTo;
+      case LanguageConceptSwitch.IsGreaterThan:
+        if (props_IsGreaterThan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is greater than");
+          props_IsGreaterThan = cpb.create();
+        }
+        return props_IsGreaterThan;
+      case LanguageConceptSwitch.IsLessThan:
+        if (props_IsLessThan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("is less than");
+          props_IsLessThan = cpb.create();
+        }
+        return props_IsLessThan;
       case LanguageConceptSwitch.Length:
         if (props_Length == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -189,6 +214,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Number = cpb.create();
         }
         return props_Number;
+      case LanguageConceptSwitch.Operator:
+        if (props_Operator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Operator = cpb.create();
+        }
+        return props_Operator;
       case LanguageConceptSwitch.ProductKindFormulation:
         if (props_ProductKindFormulation == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

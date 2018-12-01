@@ -107,8 +107,14 @@
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
       <concept id="837255710697040837" name="FactSL.structure.Date" flags="ng" index="dRiLB" />
+      <concept id="6832341507193372529" name="FactSL.structure.IsEqualTo" flags="ng" index="2mIUkn" />
       <concept id="5047305753772187650" name="FactSL.structure.AttributeKindFormulation" flags="ng" index="oqW7l">
+        <property id="6832341507193372532" name="valueVariable" index="2mIUki" />
         <reference id="6832341507193023555" name="attribute" index="2mHfo_" />
+        <child id="6832341507193372579" name="operator" index="2mIUn5" />
+      </concept>
+      <concept id="5047305753772187649" name="FactSL.structure.PropertyKindFormulation" flags="ng" index="oqW7m">
+        <reference id="5047305753771139289" name="property" index="omW4e" />
       </concept>
       <concept id="7550186569879667952" name="FactSL.structure.IPropertyType" flags="ng" index="2Hnu9u">
         <reference id="7550186569879667953" name="domainOfProperty" index="2Hnu9v" />
@@ -21283,7 +21289,17 @@
       </node>
       <node concept="omW1N" id="5VhmAr8op0v" role="onuko">
         <node concept="oqW7l" id="5VhmAr8qny9" role="oqW7u">
+          <property role="2mIUki" value="true" />
           <ref role="2mHfo_" node="IuxU86jr2c" resolve="schriftelijk ingediend" />
+          <node concept="2mIUkn" id="5VhmAr8rUqh" role="2mIUn5" />
+        </node>
+        <node concept="oqW7l" id="5VhmAr8qJXA" role="oqW7u">
+          <property role="2mIUki" value="0" />
+          <ref role="2mHfo_" node="IuxU86i8aQ" resolve="arbeidsduur" />
+          <node concept="2mIUkn" id="5VhmAr8rUqe" role="2mIUn5" />
+        </node>
+        <node concept="oqW7m" id="5VhmAr8qJXs" role="oqW7u">
+          <ref role="omW4e" node="IuxU86i8cH" resolve="arbeidsduur" />
         </node>
       </node>
       <node concept="onuhd" id="5VhmAr8op0w" role="onuk5">
