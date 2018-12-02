@@ -520,5 +520,17 @@
     <property role="34LRSv" value="is less than" />
     <ref role="1TJDcQ" node="5VhmAr8qJXK" resolve="Operator" />
   </node>
+  <node concept="1TIwiD" id="5VhmAr8syif">
+    <property role="EcuMT" value="6832341507193840783" />
+    <property role="3GE5qa" value="Formulation" />
+    <property role="TrG5h" value="NotFormalFormulation" />
+    <property role="34LRSv" value="not famalised formulation" />
+    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <node concept="1TJgyi" id="5VhmAr8syig" role="1TKVEl">
+      <property role="IQ2nx" value="6832341507193840784" />
+      <property role="TrG5h" value="formulation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

@@ -135,6 +135,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/2743742872034909955");
     b.version(2);
+    b.aggregate("rules", 0x5ed15a66c8748012L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x5ed15a66c872248fL).optional(true).ordered(true).multiple(true).origin("6832341507193995282").done();
     b.alias("DFS");
     return b.create();
   }

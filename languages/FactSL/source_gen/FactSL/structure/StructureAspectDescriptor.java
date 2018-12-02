@@ -35,6 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIsLessThan = createDescriptorForIsLessThan();
   /*package*/ final ConceptDescriptor myConceptLength = createDescriptorForLength();
   /*package*/ final ConceptDescriptor myConceptMass = createDescriptorForMass();
+  /*package*/ final ConceptDescriptor myConceptNotFormalFormulation = createDescriptorForNotFormalFormulation();
   /*package*/ final ConceptDescriptor myConceptNumber = createDescriptorForNumber();
   /*package*/ final ConceptDescriptor myConceptOperator = createDescriptorForOperator();
   /*package*/ final ConceptDescriptor myConceptProductKindFormulation = createDescriptorForProductKindFormulation();
@@ -56,7 +57,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeKindFormulation, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDate, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactKindFormulation, myConceptFactType, myConceptGeneralisation, myConceptICardinality, myConceptIPropertyType, myConceptIsEqualTo, myConceptIsGreaterThan, myConceptIsLessThan, myConceptLength, myConceptMass, myConceptNumber, myConceptOperator, myConceptProductKindFormulation, myConceptPropertyKindFormulation, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
+    return Arrays.asList(myConceptAggregation, myConceptAmount, myConceptArea, myConceptAttributeKindFormulation, myConceptAttributeType, myConceptBaseEntityType, myConceptConstructedEntityType, myConceptDate, myConceptDuration, myConceptEntityType, myConceptEntityTypeSet, myConceptEventLaw, myConceptEventType, myConceptFactKindFormulation, myConceptFactType, myConceptGeneralisation, myConceptICardinality, myConceptIPropertyType, myConceptIsEqualTo, myConceptIsGreaterThan, myConceptIsLessThan, myConceptLength, myConceptMass, myConceptNotFormalFormulation, myConceptNumber, myConceptOperator, myConceptProductKindFormulation, myConceptPropertyKindFormulation, myConceptPropertyType, myConceptSpecialisation, myConceptTemperature, myConceptText, myConceptTime, myConceptTruthValue, myConceptValueType, myConceptVelocity, myConceptVolume);
   }
 
   @Override
@@ -109,6 +110,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptLength;
       case LanguageConceptSwitch.Mass:
         return myConceptMass;
+      case LanguageConceptSwitch.NotFormalFormulation:
+        return myConceptNotFormalFormulation;
       case LanguageConceptSwitch.Number:
         return myConceptNumber;
       case LanguageConceptSwitch.Operator:
@@ -359,6 +362,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2743742872035015474");
     b.version(2);
     b.alias("mass");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNotFormalFormulation() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FactSL", "NotFormalFormulation", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x5ed15a66c872248fL);
+    b.class_(false, false, false);
+    b.super_("FactSL.structure.FactKindFormulation", 0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L);
+    b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/6832341507193840783");
+    b.version(2);
+    b.prop("formulation", 0x5ed15a66c8722490L, "6832341507193840784");
+    b.alias("not famalised formulation");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNumber() {

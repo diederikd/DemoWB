@@ -32,6 +32,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IsLessThan;
   private ConceptPresentation props_Length;
   private ConceptPresentation props_Mass;
+  private ConceptPresentation props_NotFormalFormulation;
   private ConceptPresentation props_Number;
   private ConceptPresentation props_Operator;
   private ConceptPresentation props_ProductKindFormulation;
@@ -207,6 +208,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Mass = cpb.create();
         }
         return props_Mass;
+      case LanguageConceptSwitch.NotFormalFormulation:
+        if (props_NotFormalFormulation == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("not famalised formulation");
+          props_NotFormalFormulation = cpb.create();
+        }
+        return props_NotFormalFormulation;
       case LanguageConceptSwitch.Number:
         if (props_Number == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

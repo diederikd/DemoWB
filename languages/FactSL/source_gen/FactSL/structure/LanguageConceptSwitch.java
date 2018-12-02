@@ -32,19 +32,20 @@ public final class LanguageConceptSwitch {
   public static final int IsLessThan = 20;
   public static final int Length = 21;
   public static final int Mass = 22;
-  public static final int Number = 23;
-  public static final int Operator = 24;
-  public static final int ProductKindFormulation = 25;
-  public static final int PropertyKindFormulation = 26;
-  public static final int PropertyType = 27;
-  public static final int Specialisation = 28;
-  public static final int Temperature = 29;
-  public static final int Text = 30;
-  public static final int Time = 31;
-  public static final int TruthValue = 32;
-  public static final int ValueType = 33;
-  public static final int Velocity = 34;
-  public static final int Volume = 35;
+  public static final int NotFormalFormulation = 23;
+  public static final int Number = 24;
+  public static final int Operator = 25;
+  public static final int ProductKindFormulation = 26;
+  public static final int PropertyKindFormulation = 27;
+  public static final int PropertyType = 28;
+  public static final int Specialisation = 29;
+  public static final int Temperature = 30;
+  public static final int Text = 31;
+  public static final int Time = 32;
+  public static final int TruthValue = 33;
+  public static final int ValueType = 34;
+  public static final int Velocity = 35;
+  public static final int Volume = 36;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x6836a913df904e79L, 0x9a37cb334bb02ea5L);
@@ -71,6 +72,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x5ed15a66c86aff73L, IsLessThan);
     builder.put(0x2613bb9aeaa83b33L, Length);
     builder.put(0x2613bb9aeaa83b32L, Mass);
+    builder.put(0x5ed15a66c872248fL, NotFormalFormulation);
     builder.put(0x2613bb9aeaa83b38L, Number);
     builder.put(0x5ed15a66c86aff70L, Operator);
     builder.put(0x460ba1d75e606003L, ProductKindFormulation);

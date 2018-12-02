@@ -4529,5 +4529,62 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5VhmAr8t80t">
+    <property role="3GE5qa" value="Fact Model" />
+    <ref role="1XX52x" to="ar0b:2ojITFEDDW3" resolve="DerivedFactSpecifications" />
+    <node concept="3EZMnI" id="5VhmAr8t80v" role="2wV5jI">
+      <node concept="l2Vlx" id="5VhmAr8t80w" role="2iSdaV" />
+      <node concept="3F0ifn" id="5VhmAr8t80x" role="3EZMnx">
+        <property role="3F0ifm" value="derived fact specifications" />
+      </node>
+      <node concept="3F0A7n" id="5VhmAr8t80y" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="5VhmAr8t80z" role="3EZMnx">
+        <node concept="3mYdg7" id="5VhmAr8t80$" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="5VhmAr8t80_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5VhmAr8t80A" role="3EZMnx">
+        <node concept="l2Vlx" id="5VhmAr8t80B" role="2iSdaV" />
+        <node concept="lj46D" id="5VhmAr8t80C" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="5VhmAr8t80D" role="3EZMnx">
+          <property role="3F0ifm" value="rules" />
+        </node>
+        <node concept="3F0ifn" id="5VhmAr8t80E" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="11L4FC" id="5VhmAr8t80F" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="5VhmAr8t80G" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="5VhmAr8t80H" role="3EZMnx">
+          <ref role="1NtTu8" to="ar0b:5VhmAr8t80i" resolve="rules" />
+          <node concept="l2Vlx" id="5VhmAr8t80I" role="2czzBx" />
+          <node concept="pj6Ft" id="5VhmAr8t80J" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="5VhmAr8t80K" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="5VhmAr8t80L" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5VhmAr8t80M" role="3EZMnx">
+        <node concept="3mYdg7" id="5VhmAr8t80N" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

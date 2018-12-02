@@ -2324,5 +2324,15 @@
       <node concept="l2Vlx" id="5VhmAr8rUqP" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5VhmAr8syir">
+    <property role="3GE5qa" value="Formulation" />
+    <ref role="1XX52x" to="ajas:5VhmAr8syif" resolve="NotFormalFormulation" />
+    <node concept="3EZMnI" id="5VhmAr8syit" role="2wV5jI">
+      <node concept="3F0A7n" id="5VhmAr8syiB" role="3EZMnx">
+        <ref role="1NtTu8" to="ajas:5VhmAr8syig" resolve="formulation" />
+      </node>
+      <node concept="l2Vlx" id="5VhmAr8syiw" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -107,14 +107,8 @@
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
       <concept id="837255710697040837" name="FactSL.structure.Date" flags="ng" index="dRiLB" />
-      <concept id="6832341507193372529" name="FactSL.structure.IsEqualTo" flags="ng" index="2mIUkn" />
-      <concept id="5047305753772187650" name="FactSL.structure.AttributeKindFormulation" flags="ng" index="oqW7l">
-        <property id="6832341507193372532" name="valueVariable" index="2mIUki" />
-        <reference id="6832341507193023555" name="attribute" index="2mHfo_" />
-        <child id="6832341507193372579" name="operator" index="2mIUn5" />
-      </concept>
-      <concept id="5047305753772187649" name="FactSL.structure.PropertyKindFormulation" flags="ng" index="oqW7m">
-        <reference id="5047305753771139289" name="property" index="omW4e" />
+      <concept id="6832341507193840783" name="FactSL.structure.NotFormalFormulation" flags="ng" index="2mCRVD">
+        <property id="6832341507193840784" name="formulation" index="2mCRVQ" />
       </concept>
       <concept id="7550186569879667952" name="FactSL.structure.IPropertyType" flags="ng" index="2Hnu9u">
         <reference id="7550186569879667953" name="domainOfProperty" index="2Hnu9v" />
@@ -200,13 +194,18 @@
       <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
         <property id="7550186569861026777" name="completed" index="2GIBlR" />
         <reference id="7550186569850389327" name="state" index="2F72nx" />
+        <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
         <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
       </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
+        <child id="7550186569849403346" name="cases" index="2F2X5W" />
         <child id="7550186569856222432" name="casesCompleted" index="2GWM9e" />
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
+      <concept id="2743742872034909955" name="DemoSL.structure.DerivedFactSpecifications" flags="ng" index="3cHiip">
+        <child id="6832341507193995282" name="rules" index="2mDtDO" />
+      </concept>
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
       <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA">
         <child id="5047305753770528015" name="rules" index="ojaNo" />
@@ -19539,6 +19538,31 @@
         </node>
       </node>
     </node>
+    <node concept="2F2X5z" id="5VhmAr8t7Yj" role="2F2X5W">
+      <node concept="2GwkfO" id="5VhmAr8t7Yk" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
+        <node concept="2F6m_C" id="5VhmAr8t7Yl" role="2GSHpF">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="5VhmAr8t7YA" role="2GLOok">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="5VhmAr8t7YB" role="2GLOok">
+          <property role="2G7IB7" value="true" />
+          <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
+        </node>
+        <node concept="2F6m_C" id="5VhmAr8t7YC" role="2GLOok">
+          <property role="2G7IB7" value="true" />
+          <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="5VhmAr8t7Yu" role="2GSHpF">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="3jKZr9" id="4obCttudk_o">
     <property role="TrG5h" value="PSD Afwijzen van het verzoek" />
@@ -21276,7 +21300,7 @@
     </node>
   </node>
   <node concept="3cHilA" id="4obCttuiHgz">
-    <property role="TrG5h" value="ARS WAA" />
+    <property role="TrG5h" value="Action Rule Specification (ARS) WAA" />
     <node concept="a1WVU" id="5VhmAr8op0s" role="ojaNo">
       <node concept="ojNJ6" id="5VhmAr8op0t" role="ojhK1">
         <property role="okzg6" value="false" />
@@ -21288,18 +21312,26 @@
         </node>
       </node>
       <node concept="omW1N" id="5VhmAr8op0v" role="onuko">
-        <node concept="oqW7l" id="5VhmAr8qny9" role="oqW7u">
-          <property role="2mIUki" value="true" />
-          <ref role="2mHfo_" node="IuxU86jr2c" resolve="schriftelijk ingediend" />
-          <node concept="2mIUkn" id="5VhmAr8rUqh" role="2mIUn5" />
+        <node concept="2mCRVD" id="5VhmAr8t7Ua" role="oqW7u">
+          <property role="2mCRVQ" value="- de datum indiensttreding van arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling ligt ten minste de samentelling volgens werknemer van aanpassing van de arbeidsduur voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
-        <node concept="oqW7l" id="5VhmAr8qJXA" role="oqW7u">
-          <property role="2mIUki" value="0" />
-          <ref role="2mHfo_" node="IuxU86i8aQ" resolve="arbeidsduur" />
-          <node concept="2mIUkn" id="5VhmAr8rUqe" role="2mIUn5" />
+        <node concept="2mCRVD" id="5VhmAr8t7Up" role="oqW7u">
+          <property role="2mCRVQ" value="- de datum indienen verzoek van aanpassing van de arbeidsduur ligt ten minste 4 maanden voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
-        <node concept="oqW7m" id="5VhmAr8qJXs" role="oqW7u">
-          <ref role="omW4e" node="IuxU86i8cH" resolve="arbeidsduur" />
+        <node concept="2mCRVD" id="5VhmAr8t7W5" role="oqW7u">
+          <property role="2mCRVQ" value="- de omvang van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
+        </node>
+        <node concept="2mCRVD" id="5VhmAr8t7Wm" role="oqW7u">
+          <property role="2mCRVQ" value="- de gewenste spreiding van aanpassing van de arbeidsduur is opgegeven" />
+        </node>
+        <node concept="2mCRVD" id="5VhmAr8t7WF" role="oqW7u">
+          <property role="2mCRVQ" value="- schriftelijk ingediend van aanpassing van de arbeidsduur is waar" />
+        </node>
+        <node concept="2mCRVD" id="5VhmAr8t7X4" role="oqW7u">
+          <property role="2mCRVQ" value="- de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
+        </node>
+        <node concept="2mCRVD" id="5VhmAr8t7Xx" role="oqW7u">
+          <property role="2mCRVQ" value="- de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
       </node>
       <node concept="onuhd" id="5VhmAr8op0w" role="onuk5">
@@ -21319,6 +21351,86 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="a1WVU" id="5VhmAr8t7UA" role="ojaNo">
+      <node concept="ojNJ6" id="5VhmAr8t7UB" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="ac" />
+        <ref role="ojNJ5" node="2Ze6BQpzuc0" resolve="accepteren van de beslissing op het verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="5VhmAr8t7UC" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0aH" />
+          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        </node>
+      </node>
+      <node concept="omW1N" id="5VhmAr8t7UD" role="onuko">
+        <node concept="2mCRVD" id="5VhmAr8t7XL" role="oqW7u">
+          <property role="2mCRVQ" value="- zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen van aanpassing van de arbeidsduur is waar" />
+        </node>
+      </node>
+      <node concept="onuhd" id="5VhmAr8t7UE" role="onuk5">
+        <node concept="onuk1" id="5VhmAr8t7UF" role="onuhc" />
+        <node concept="onuhf" id="5VhmAr8t7UG" role="onuha">
+          <node concept="on7EX" id="5VhmAr8t7VI" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="rq" />
+            <ref role="on7EU" node="IuxU86aVkj" />
+          </node>
+        </node>
+        <node concept="onuhe" id="5VhmAr8t7VH" role="onuhR">
+          <node concept="on7EX" id="5VhmAr8t7VA" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="rq" />
+            <ref role="on7EU" node="pMarvI_0gz" />
+          </node>
+          <node concept="on7EX" id="5VhmAr8t7Vj" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="rq" />
+            <ref role="on7EU" node="pMarvI_0gM" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="5VhmAr8t7YR" role="ojaNo">
+      <node concept="ojNJ6" id="5VhmAr8t7YS" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="pm" />
+        <ref role="ojNJ5" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="5VhmAr8t7YT" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gM" />
+          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        </node>
+      </node>
+      <node concept="omW1N" id="5VhmAr8t7YU" role="onuko">
+        <node concept="2mCRVD" id="5VhmAr8t806" role="oqW7u">
+          <property role="2mCRVQ" value="- de werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken van aanpassing van de arbeidsduur is waar" />
+        </node>
+      </node>
+      <node concept="onuhd" id="5VhmAr8t7YV" role="onuk5">
+        <node concept="onuk1" id="5VhmAr8t7YW" role="onuhc" />
+        <node concept="onuhf" id="5VhmAr8t7YX" role="onuha">
+          <node concept="on7EX" id="5VhmAr8t809" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="rq" />
+            <ref role="on7EU" node="pMarvIOY32" />
+          </node>
+        </node>
+        <node concept="onuhe" id="5VhmAr8t80c" role="onuhR">
+          <node concept="on7EX" id="5VhmAr8t80d" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="rq" />
+            <ref role="on7EU" node="pMarvI_0hi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3cHiip" id="5VhmAr8t81u">
+    <property role="TrG5h" value="DFR WAA" />
+    <node concept="2mCRVD" id="5VhmAr8udDS" role="2mDtDO">
+      <property role="2mCRVQ" value="-  " />
+    </node>
+    <node concept="2mCRVD" id="5VhmAr8udE0" role="2mDtDO">
+      <property role="2mCRVQ" value="- " />
     </node>
   </node>
 </model>
