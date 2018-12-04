@@ -122,6 +122,7 @@ public final class RunningTransaction__BehaviorDescriptor extends BaseBHDescript
         }
       }
       ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec42570c5L, "performedActs"))).addElement(act);
+      SLinkOperations.setTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec3db834fL, "state"), SLinkOperations.getTarget(act, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")));
     }
   }
 
