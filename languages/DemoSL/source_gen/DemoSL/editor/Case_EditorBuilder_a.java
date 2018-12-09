@@ -9,9 +9,12 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -54,9 +57,23 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.setCellId("Collection_87dhgu_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createReadOnlyModelAccessor_0());
-    editorCell.addEditorCell(createRefNodeList_0());
+    try {
+      getCellFactory().pushCellContext();
+      getCellFactory().addCellContextHints(Sequence.fromIterable(getEditorHints0()).toGenericArray(String.class));
+      editorCell.addEditorCell(createReadOnlyModelAccessor_0());
+      editorCell.addEditorCell(createRefNodeList_0());
+      setInnerCellsContext(editorCell);
+    } finally {
+      getCellFactory().popCellContext();
+    }
     return editorCell;
+  }
+  private Iterable<String> getEditorHints0() {
+    if (SNodeOperations.getContainingLinkRole(myNode).equals("casesStarted")) {
+      return ListSequence.fromListAndArray(new ArrayList<String>(), "GeneralSL.editor.Simulation.simulation");
+    }
+    return ListSequence.fromList(new ArrayList<String>());
+
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {

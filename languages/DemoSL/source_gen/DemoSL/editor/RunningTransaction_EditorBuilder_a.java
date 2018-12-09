@@ -389,6 +389,7 @@ import GeneralSL.editor.DemoStyles_StyleSheet.BoldStyleClass;
     editorCell.setCellId("Constant_nagnie_c0");
     Style style = new StyleImpl();
     new BoldStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;

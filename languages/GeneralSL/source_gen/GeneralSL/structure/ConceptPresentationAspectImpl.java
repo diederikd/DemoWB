@@ -10,7 +10,6 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ILowerCaseNamedConcept;
-  private ConceptPresentation props_IUpperCaseNamedConcept;
 
   @Override
   @Nullable
@@ -23,12 +22,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ILowerCaseNamedConcept = cpb.create();
         }
         return props_ILowerCaseNamedConcept;
-      case LanguageConceptSwitch.IUpperCaseNamedConcept:
-        if (props_IUpperCaseNamedConcept == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_IUpperCaseNamedConcept = cpb.create();
-        }
-        return props_IUpperCaseNamedConcept;
     }
     return null;
   }

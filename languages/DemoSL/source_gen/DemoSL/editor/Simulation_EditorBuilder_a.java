@@ -298,9 +298,9 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new Simulation_EditorBuilder_a.casesListHandler_e23mmq_j0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new Simulation_EditorBuilder_a.casesStartedListHandler_e23mmq_j0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_cases");
+    editorCell.setCellId("refNodeList_casesStarted");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
@@ -308,11 +308,11 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class casesListHandler_e23mmq_j0 extends RefNodeListHandler {
+  private static class casesStartedListHandler_e23mmq_j0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public casesListHandler_e23mmq_j0(SNode ownerNode, EditorContext context) {
+    public casesStartedListHandler_e23mmq_j0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -322,7 +322,7 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases");
+      return MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "casesStarted");
     }
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, "DemoSL.structure.Case");
@@ -337,7 +337,7 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(casesListHandler_e23mmq_j0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(casesStartedListHandler_e23mmq_j0.this.getNode(), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "casesStarted")));
       try {
         EditorCell emptyCell = null;
         emptyCell = createConstant_7();
@@ -450,7 +450,7 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
       }
     }
     private Object executeQuery(final SNode node, final EditorContext editorContext) {
-      return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec400e0baL, "possibleActs"))).sort(new ISelector<SNode, String>() {
+      return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "casesStarted")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec400e0baL, "possibleActs"))).sort(new ISelector<SNode, String>() {
         public String select(SNode it) {
           return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")), MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id"));
         }
@@ -581,7 +581,7 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
       }
     }
     private Object executeQuery(final SNode node, final EditorContext editorContext) {
-      return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec42570c5L, "performedActs"))).sort(new ISelector<SNode, String>() {
+      return Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.getChildren(myNode, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "casesStarted")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec42570c5L, "performedActs"))).sort(new ISelector<SNode, String>() {
         public String select(SNode it) {
           return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3decfc6L, 0x68c7a6aec3decfcbL, "TransactionKindStepKind")), MetaAdapterFactory.getReferenceLink(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL, 0x585f5ae0f86c73fL, "transactionKind")), MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id"));
         }

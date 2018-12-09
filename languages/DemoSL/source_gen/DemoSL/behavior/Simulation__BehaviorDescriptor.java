@@ -34,7 +34,7 @@ public final class Simulation__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static void updatePossibleActs_id6z7DEV56A64(@NotNull SNode __thisNode__) {
-    for (SNode caseNode : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "cases")))) {
+    for (SNode caseNode : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "casesStarted")))) {
       Case__BehaviorDescriptor.updatePossibleActs_id6z7DEV55AXG.invoke(caseNode);
     }
   }

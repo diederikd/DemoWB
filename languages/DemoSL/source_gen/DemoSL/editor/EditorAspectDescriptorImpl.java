@@ -8,6 +8,7 @@ import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
+import java.util.Arrays;
 import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
@@ -39,7 +40,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 9:
         return Collections.<ConceptEditor>singletonList(new ProcesStructureDiagram_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new RunningTransaction_Editor());
+        return Arrays.asList(new ConceptEditor[]{new RunningTransaction_Editor(), new RunningTransaction_simulation_Editor()});
       case 11:
         return Collections.<ConceptEditor>singletonList(new Simulation_Editor());
       case 12:

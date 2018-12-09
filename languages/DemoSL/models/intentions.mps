@@ -516,32 +516,10 @@
             <node concept="2OqwBi" id="6z7DEV3P4V0" role="2Oq$k0">
               <node concept="2Sf5sV" id="6z7DEV3P4Nb" role="2Oq$k0" />
               <node concept="3Tsc0h" id="6z7DEV3P540" role="2OqNvi">
-                <ref role="3TtcxE" to="ar0b:6z7DEV3N7vi" resolve="cases" />
+                <ref role="3TtcxE" to="ar0b:6z7DEV3N7vi" resolve="casesStarted" />
               </node>
             </node>
             <node concept="2Kehj3" id="6z7DEV3P7JK" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6z7DEV499uB" role="3cqZAp">
-          <node concept="2OqwBi" id="6z7DEV49dGk" role="3clFbG">
-            <node concept="2OqwBi" id="6z7DEV49c0Y" role="2Oq$k0">
-              <node concept="2Sf5sV" id="6z7DEV499u_" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6z7DEV49cea" role="2OqNvi">
-                <ref role="3TtcxE" to="ar0b:6z7DEV40e2U" resolve="possibleActs" />
-              </node>
-            </node>
-            <node concept="2Kehj3" id="6z7DEV49g4q" role="2OqNvi" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="6z7DEV4aDC3" role="3cqZAp">
-          <node concept="2OqwBi" id="6z7DEV4aJTV" role="3clFbG">
-            <node concept="2OqwBi" id="6z7DEV4aIel" role="2Oq$k0">
-              <node concept="2Sf5sV" id="6z7DEV4aDC1" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6z7DEV4aIrL" role="2OqNvi">
-                <ref role="3TtcxE" to="ar0b:6z7DEV49n35" resolve="performedActs" />
-              </node>
-            </node>
-            <node concept="2Kehj3" id="6z7DEV4aMkT" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbF" id="6z7DEV4gdSv" role="3cqZAp">

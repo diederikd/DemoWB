@@ -8,6 +8,7 @@ import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
+import java.util.Arrays;
 import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
@@ -29,7 +30,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 4:
         return Collections.<ConceptEditor>singletonList(new If_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new Respons_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Respons_Editor(), new Respons_simulation_Editor()});
       case 6:
         return Collections.<ConceptEditor>singletonList(new Then_Editor());
       case 7:

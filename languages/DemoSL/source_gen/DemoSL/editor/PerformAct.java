@@ -18,13 +18,13 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 
-public class ExecuteAct {
+public class PerformAct {
   public static void setCellActions(EditorCell editorCell, SNode node, EditorContext context) {
-    editorCell.setAction(CellActionType.CLICK, new ExecuteAct.ExecuteAct_CLICK(node));
+    editorCell.setAction(CellActionType.CLICK, new PerformAct.PerformAct_CLICK(node));
   }
-  public static class ExecuteAct_CLICK extends AbstractCellAction {
+  public static class PerformAct_CLICK extends AbstractCellAction {
     /*package*/ SNode myNode;
-    public ExecuteAct_CLICK(SNode node) {
+    public PerformAct_CLICK(SNode node) {
       this.myNode = node;
     }
     public void execute(EditorContext editorContext) {

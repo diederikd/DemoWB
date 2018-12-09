@@ -2335,7 +2335,7 @@
           <node concept="2OqwBi" id="6z7DEV56BrG" role="2GsD0m">
             <node concept="13iPFW" id="6z7DEV56BrH" role="2Oq$k0" />
             <node concept="3Tsc0h" id="6z7DEV56BrI" role="2OqNvi">
-              <ref role="3TtcxE" to="ar0b:6z7DEV3N7vi" resolve="cases" />
+              <ref role="3TtcxE" to="ar0b:6z7DEV3N7vi" resolve="casesStarted" />
             </node>
           </node>
         </node>

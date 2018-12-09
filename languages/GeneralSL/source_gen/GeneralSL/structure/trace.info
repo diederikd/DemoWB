@@ -13,13 +13,13 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="ConceptPresentationAspectImpl.java">
-      <unit at="11,0,36,0" name="GeneralSL.structure.ConceptPresentationAspectImpl" />
+      <unit at="11,0,29,0" name="GeneralSL.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="GeneralSL.structure.LanguageConceptSwitch" />
+      <unit at="10,0,28,0" name="GeneralSL.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="14,0,64,0" name="GeneralSL.structure.StructureAspectDescriptor" />
+      <unit at="14,0,52,0" name="GeneralSL.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034489002">
@@ -45,89 +45,35 @@
   <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034489003">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="2743742872034489003" at="12,0,13,0" concept="3" trace="props_ILowerCaseNamedConcept" />
-      <node id="2743742872034489003" at="21,51,22,76" concept="6" />
-      <node id="2743742872034489003" at="22,76,23,54" concept="2" />
-      <node id="2743742872034489003" at="24,9,25,44" concept="7" />
-      <node id="2743742872034489003" at="20,56,24,9" concept="4" />
-      <scope id="2743742872034489003" at="21,51,23,54">
+      <node id="2743742872034489003" at="20,51,21,76" concept="6" />
+      <node id="2743742872034489003" at="21,76,22,54" concept="2" />
+      <node id="2743742872034489003" at="23,9,24,44" concept="7" />
+      <node id="2743742872034489003" at="19,56,23,9" concept="4" />
+      <scope id="2743742872034489003" at="20,51,22,54">
         <var name="cpb" id="2743742872034489003" />
       </scope>
-      <scope id="2743742872034489003" at="20,56,25,44" />
+      <scope id="2743742872034489003" at="19,56,24,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <node id="2743742872034489003" at="12,0,13,0" concept="8" trace="ILowerCaseNamedConcept" />
-      <node id="2743742872034489003" at="16,116,17,61" concept="2" />
+      <node id="2743742872034489003" at="15,116,16,61" concept="2" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2743742872034489003" at="15,0,16,0" concept="3" trace="myConceptILowerCaseNamedConcept" />
-      <node id="2743742872034489003" at="32,56,33,47" concept="7" />
-      <node id="2743742872034489003" at="45,80,46,166" concept="6" />
-      <node id="2743742872034489003" at="46,166,47,19" concept="2" />
-      <node id="2743742872034489003" at="47,19,48,76" concept="2" />
-      <node id="2743742872034489003" at="48,76,49,96" concept="2" />
-      <node id="2743742872034489003" at="49,96,50,17" concept="2" />
-      <node id="2743742872034489004" at="50,17,51,63" concept="2" />
-      <node id="2743742872034489003" at="51,63,52,22" concept="7" />
-      <node id="2743742872034489003" at="45,0,54,0" concept="9" trace="createDescriptorForILowerCaseNamedConcept#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2743742872034489003" at="32,56,33,47" />
-      <scope id="2743742872034489003" at="45,80,52,22">
+      <node id="2743742872034489003" at="31,56,32,47" concept="7" />
+      <node id="2743742872034489003" at="42,80,43,166" concept="6" />
+      <node id="2743742872034489003" at="43,166,44,19" concept="2" />
+      <node id="2743742872034489003" at="44,19,45,76" concept="2" />
+      <node id="2743742872034489003" at="45,76,46,96" concept="2" />
+      <node id="2743742872034489003" at="46,96,47,17" concept="2" />
+      <node id="2743742872034489004" at="47,17,48,63" concept="2" />
+      <node id="2743742872034489003" at="48,63,49,22" concept="7" />
+      <node id="2743742872034489003" at="42,0,51,0" concept="9" trace="createDescriptorForILowerCaseNamedConcept#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2743742872034489003" at="31,56,32,47" />
+      <scope id="2743742872034489003" at="42,80,49,22">
         <var name="b" id="2743742872034489003" />
       </scope>
-      <scope id="2743742872034489003" at="45,0,54,0" />
-    </file>
-  </root>
-  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034535482">
-    <file name="uppercaseString_PropertySupport.java">
-      <node id="2743742872034535482" at="8,44,9,28" concept="6" />
-      <node id="2743742872034535482" at="10,24,11,21" concept="2" />
-      <node id="2743742872034535482" at="12,12,13,24" concept="2" />
-      <node id="2743742872034535482" at="14,5,15,42" concept="7" />
-      <node id="2743742872034535482" at="12,10,14,5" concept="0" />
-      <node id="2743742872034535482" at="9,28,14,5" concept="4" />
-      <node id="2743742872034535482" at="8,0,17,0" concept="5" trace="canSetValue#(Ljava/lang/String;)Z" />
-      <scope id="2743742872034535482" at="10,24,11,21" />
-      <scope id="2743742872034535482" at="12,12,13,24" />
-      <scope id="2743742872034535482" at="8,44,15,42">
-        <var name="testValue" id="2743742872034535482" />
-      </scope>
-      <scope id="2743742872034535482" at="8,0,17,0">
-        <var name="value" id="2743742872034535482" />
-      </scope>
-      <unit id="2743742872034535482" at="7,0,18,0" name="GeneralSL.structure.uppercaseString_PropertySupport" />
-    </file>
-  </root>
-  <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/2743742872034536271">
-    <file name="ConceptPresentationAspectImpl.java">
-      <node id="2743742872034536271" at="13,0,14,0" concept="3" trace="props_IUpperCaseNamedConcept" />
-      <node id="2743742872034536271" at="27,51,28,76" concept="6" />
-      <node id="2743742872034536271" at="28,76,29,54" concept="2" />
-      <node id="2743742872034536271" at="30,9,31,44" concept="7" />
-      <node id="2743742872034536271" at="26,56,30,9" concept="4" />
-      <scope id="2743742872034536271" at="27,51,29,54">
-        <var name="cpb" id="2743742872034536271" />
-      </scope>
-      <scope id="2743742872034536271" at="26,56,31,44" />
-    </file>
-    <file name="LanguageConceptSwitch.java">
-      <node id="2743742872034536271" at="13,0,14,0" concept="8" trace="IUpperCaseNamedConcept" />
-      <node id="2743742872034536271" at="17,61,18,61" concept="2" />
-    </file>
-    <file name="StructureAspectDescriptor.java">
-      <node id="2743742872034536271" at="16,0,17,0" concept="3" trace="myConceptIUpperCaseNamedConcept" />
-      <node id="2743742872034536271" at="34,56,35,47" concept="7" />
-      <node id="2743742872034536271" at="54,80,55,166" concept="6" />
-      <node id="2743742872034536271" at="55,166,56,19" concept="2" />
-      <node id="2743742872034536271" at="56,19,57,76" concept="2" />
-      <node id="2743742872034536271" at="57,76,58,96" concept="2" />
-      <node id="2743742872034536271" at="58,96,59,17" concept="2" />
-      <node id="2743742872034536272" at="59,17,60,64" concept="2" />
-      <node id="2743742872034536271" at="60,64,61,22" concept="7" />
-      <node id="2743742872034536271" at="54,0,63,0" concept="9" trace="createDescriptorForIUpperCaseNamedConcept#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2743742872034536271" at="34,56,35,47" />
-      <scope id="2743742872034536271" at="54,80,61,22">
-        <var name="b" id="2743742872034536271" />
-      </scope>
-      <scope id="2743742872034536271" at="54,0,63,0" />
+      <scope id="2743742872034489003" at="42,0,51,0" />
     </file>
   </root>
   <root nodeRef="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)/397994270025465421">

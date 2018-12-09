@@ -5366,7 +5366,7 @@
                         <node concept="liA8E" id="u_" role="2OqNvi">
                           <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2.aggregate(java.lang.String,long):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AggregationLinkBuilder" resolve="aggregate" />
                           <node concept="Xl_RD" id="uA" role="37wK5m">
-                            <property role="Xl_RC" value="cases" />
+                            <property role="Xl_RC" value="casesStarted" />
                           </node>
                           <node concept="1adDum" id="uB" role="37wK5m">
                             <property role="1adDun" value="0x68c7a6aec3cc77d2L" />

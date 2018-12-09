@@ -57,7 +57,7 @@ import java.awt.Color;
 import jetbrains.mps.openapi.editor.style.StyleRegistry;
 import jetbrains.mps.nodeEditor.MPSColors;
 import GeneralSL.editor.DemoStyles_StyleSheet.WaitStyleClass;
-import GeneralSL.editor.DemoStyles_StyleSheet.RunStyleClass;
+import GeneralSL.editor.DemoStyles_StyleSheet.YesStyleClass;
 
 /*package*/ class Act_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -608,10 +608,10 @@ import GeneralSL.editor.DemoStyles_StyleSheet.RunStyleClass;
       new WaitStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     }
     if (_StyleParameter_QueryFunction_jfbt31_a4a0k0()) {
-      new RunStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      new YesStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
     }
     editorCell.getStyle().putAll(style);
-    ExecuteAct.setCellActions(editorCell, myNode, getEditorContext());
+    PerformAct.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.addEditorCell(createConstant_6());
     return editorCell;
   }

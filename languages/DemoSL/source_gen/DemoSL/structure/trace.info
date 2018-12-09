@@ -450,8 +450,8 @@
       <node id="3444719891740938332" at="211,71,212,93" concept="0" />
       <node id="3444719891740938332" at="212,93,213,17" concept="0" />
       <node id="3444719891740938333" at="213,17,214,173" concept="0" />
-      <node id="7550186569849403346" at="214,173,215,197" concept="0" />
-      <node id="7550186569856222432" at="215,197,216,206" concept="0" />
+      <node id="7550186569849403346" at="214,173,215,204" concept="0" />
+      <node id="7550186569856222432" at="215,204,216,206" concept="0" />
       <node id="3444719891740938332" at="216,206,217,22" concept="4" />
       <node id="3444719891740938332" at="208,0,219,0" concept="6" trace="createDescriptorForSimulation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="3444719891740938332" at="69,44,70,35" />

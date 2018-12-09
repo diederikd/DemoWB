@@ -61,27 +61,9 @@
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
-  <node concept="PlHQZ" id="2ojITFECeHf">
-    <property role="EcuMT" value="2743742872034536271" />
-    <property role="TrG5h" value="IUpperCaseNamedConcept" />
-    <property role="3GE5qa" value="General" />
-    <node concept="1TJgyi" id="2ojITFECeHg" role="1TKVEl">
-      <property role="IQ2nx" value="2743742872034536272" />
-      <property role="TrG5h" value="uName" />
-      <ref role="AX2Wp" node="2ojITFECewU" resolve="uppercaseString" />
-    </node>
-    <node concept="PrWs8" id="2ojITFEF2zJ" role="PrDN$">
-      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
-    </node>
-  </node>
   <node concept="Az7Fb" id="2ojITFEC3aE">
     <property role="TrG5h" value="lowercaseString" />
     <property role="FLfZY" value="[a-z\\s]+" />
-    <property role="3GE5qa" value="General" />
-  </node>
-  <node concept="Az7Fb" id="2ojITFECewU">
-    <property role="TrG5h" value="uppercaseString" />
-    <property role="FLfZY" value="[A-Z\\s]+" />
     <property role="3GE5qa" value="General" />
   </node>
   <node concept="AxPO7" id="m5XqSfwzTd">

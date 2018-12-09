@@ -175,10 +175,28 @@
         <property role="Vb096" value="orange" />
       </node>
     </node>
-    <node concept="14StLt" id="4obCtttw8SR" role="V601i">
+    <node concept="14StLt" id="1dPpwTRTaTY" role="V601i">
       <property role="TrG5h" value="Run" />
-      <node concept="30gYXW" id="4obCtttw8TH" role="3F10Kt">
+      <node concept="30gYXW" id="1dPpwTRTaTZ" role="3F10Kt">
         <property role="Vb096" value="green" />
+      </node>
+    </node>
+    <node concept="14StLt" id="4obCtttw8SR" role="V601i">
+      <property role="TrG5h" value="Yes" />
+      <node concept="30gYXW" id="4obCtttw8TH" role="3F10Kt">
+        <property role="Vb096" value="DARK_GREEN" />
+      </node>
+      <node concept="VechU" id="1dPpwTRTbtS" role="3F10Kt">
+        <property role="Vb096" value="WHITE" />
+      </node>
+    </node>
+    <node concept="14StLt" id="1dPpwTRTb99" role="V601i">
+      <property role="TrG5h" value="No" />
+      <node concept="30gYXW" id="1dPpwTRTb9a" role="3F10Kt">
+        <property role="Vb096" value="red" />
+      </node>
+      <node concept="VechU" id="1dPpwTRTbtH" role="3F10Kt">
+        <property role="Vb096" value="WHITE" />
       </node>
     </node>
   </node>

@@ -6,6 +6,7 @@
     <classNode dependClassName="DemoSL.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="DemoSL.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="DemoSL.intentions.IntentionsDescriptor" />
+    <classNode dependClassName="DemoSL.migration.MigrationDescriptor" />
     <classNode dependClassName="DemoSL.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="DemoSL.structure.StructureAspectDescriptor" />
     <classNode dependClassName="DemoSL.typesystem.TypesystemDescriptor" />
@@ -13,6 +14,7 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />

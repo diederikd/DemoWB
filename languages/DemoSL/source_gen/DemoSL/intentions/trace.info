@@ -279,11 +279,9 @@
       <node id="7550186569849909911" at="38,37,39,131" concept="1" />
       <node id="7550186569849909911" at="40,5,41,30" concept="7" />
       <node id="7550186569849910504" at="47,87,48,32" concept="7" />
-      <node id="7550186569849916620" at="51,78,52,203" concept="1" />
-      <node id="7550186569855178663" at="52,203,53,210" concept="1" />
-      <node id="7550186569855572483" at="53,210,54,211" concept="1" />
-      <node id="7550186569857031711" at="54,211,55,212" concept="1" />
-      <node id="7550186569849909911" at="58,48,59,44" concept="7" />
+      <node id="7550186569849916620" at="51,78,52,210" concept="1" />
+      <node id="7550186569857031711" at="52,210,53,212" concept="1" />
+      <node id="7550186569849909911" at="56,48,57,44" concept="7" />
       <node id="7550186569849909911" at="44,0,46,0" concept="0" trace="IntentionImplementation#()V" />
       <node id="7550186569849909911" at="22,0,25,0" concept="0" trace="ResetSimulation_Intention#()V" />
       <node id="7550186569849909911" at="37,99,40,5" concept="4" />
@@ -291,9 +289,9 @@
       <node id="7550186569849909911" at="29,0,33,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
       <node id="7550186569849909911" at="33,0,37,0" concept="5" trace="isSurroundWith#()Z" />
       <node id="7550186569849909911" at="46,0,50,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
-      <node id="7550186569849909911" at="57,0,61,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="7550186569849909911" at="55,0,59,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="7550186569849909911" at="50,0,55,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="7550186569849909911" at="37,0,43,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
-      <node id="7550186569849909911" at="50,0,57,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <scope id="7550186569849909911" at="44,38,44,38" />
       <scope id="7550186569849909911" at="22,38,23,132" />
       <scope id="7550186569849909911" at="26,35,27,29" />
@@ -301,8 +299,9 @@
       <scope id="7550186569849909911" at="34,35,35,17" />
       <scope id="7550186569849909911" at="38,37,39,131" />
       <scope id="7550186569849909913" at="47,87,48,32" />
-      <scope id="7550186569849909911" at="58,48,59,44" />
+      <scope id="7550186569849909911" at="56,48,57,44" />
       <scope id="7550186569849909911" at="44,0,46,0" />
+      <scope id="7550186569849909915" at="51,78,53,212" />
       <scope id="7550186569849909911" at="22,0,25,0" />
       <scope id="7550186569849909911" at="25,0,29,0" />
       <scope id="7550186569849909911" at="29,0,33,0">
@@ -315,18 +314,17 @@
         <var name="editorContext" id="7550186569849909911" />
         <var name="node" id="7550186569849909911" />
       </scope>
-      <scope id="7550186569849909915" at="51,78,55,212" />
-      <scope id="7550186569849909911" at="57,0,61,0" />
+      <scope id="7550186569849909911" at="55,0,59,0" />
+      <scope id="7550186569849909911" at="50,0,55,0">
+        <var name="editorContext" id="7550186569849909911" />
+        <var name="node" id="7550186569849909911" />
+      </scope>
       <scope id="7550186569849909911" at="37,0,43,0">
         <var name="context" id="7550186569849909911" />
         <var name="node" id="7550186569849909911" />
       </scope>
-      <scope id="7550186569849909911" at="50,0,57,0">
-        <var name="editorContext" id="7550186569849909911" />
-        <var name="node" id="7550186569849909911" />
-      </scope>
-      <unit id="7550186569849909911" at="43,0,62,0" name="DemoSL.intentions.ResetSimulation_Intention$IntentionImplementation" />
-      <unit id="7550186569849909911" at="20,0,63,0" name="DemoSL.intentions.ResetSimulation_Intention" />
+      <unit id="7550186569849909911" at="43,0,60,0" name="DemoSL.intentions.ResetSimulation_Intention$IntentionImplementation" />
+      <unit id="7550186569849909911" at="20,0,61,0" name="DemoSL.intentions.ResetSimulation_Intention" />
     </file>
   </root>
 </debug-info>
