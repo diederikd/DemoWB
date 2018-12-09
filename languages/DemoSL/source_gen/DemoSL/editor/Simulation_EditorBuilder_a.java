@@ -103,7 +103,7 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
     editorCell.addEditorCell(createQueryList_1());
     editorCell.addEditorCell(createConstant_10());
     editorCell.addEditorCell(createConstant_11());
-    editorCell.addEditorCell(createQueryList_3());
+    editorCell.addEditorCell(createCollection_2());
     editorCell.addEditorCell(createConstant_12());
     editorCell.addEditorCell(createConstant_13());
     editorCell.addEditorCell(createRefNodeList_1());
@@ -517,14 +517,30 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
     editorCell.setDefaultText("");
     return editorCell;
   }
+  private EditorCell createCollection_2() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_e23mmq_p0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, false);
+    editorCell.getStyle().putAll(style);
+    try {
+      getCellFactory().pushCellContext();
+      getCellFactory().addCellContextHints(new String[]{"GeneralSL.editor.Simulation.performedAct"});
+      editorCell.addEditorCell(createQueryList_3());
+      setInnerCellsContext(editorCell);
+    } finally {
+      getCellFactory().popCellContext();
+    }
+    return editorCell;
+  }
   private EditorCell createQueryList_2(final EditorContext editorContext, final SNode node) {
 
     return QueryListContext.computeWithContext(new QueryListContext(node), new _FunctionTypes._return_P0_E0<EditorCell_QueryList>() {
       public EditorCell_QueryList invoke() {
-        QueryListHandler handler = new Simulation_EditorBuilder_a.QueryListHandler_e23mmq_p0(editorContext, node);
+        QueryListHandler handler = new Simulation_EditorBuilder_a.QueryListHandler_e23mmq_a51a(editorContext, node);
 
         EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
-        editorCell.setCellId("QueryList_e23mmq_p0");
+        editorCell.setCellId("QueryList_e23mmq_a51a");
         Style style = new StyleImpl();
         style.set(StyleAttributes.READ_ONLY, true);
         editorCell.getStyle().putAll(style);
@@ -537,9 +553,9 @@ import com.mbeddr.mpsutil.editor.querylist.runtime.SubstituteInfoFactory;
   private EditorCell createQueryList_3() {
     return createQueryList_2(getEditorContext(), myNode);
   }
-  private static class QueryListHandler_e23mmq_p0 extends QueryListHandler {
+  private static class QueryListHandler_e23mmq_a51a extends QueryListHandler {
     private SNode myNode;
-    public QueryListHandler_e23mmq_p0(EditorContext context, SNode ownerNode) {
+    public QueryListHandler_e23mmq_a51a(EditorContext context, SNode ownerNode) {
       super(context, ownerNode);
       myNode = ownerNode;
     }
