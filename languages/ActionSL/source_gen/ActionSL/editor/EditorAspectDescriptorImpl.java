@@ -24,7 +24,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 1:
         return Collections.<ConceptEditor>singletonList(new ActionRule_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Assess_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Assess_Editor(), new Assess_simulation_Editor()});
       case 3:
         return Collections.<ConceptEditor>singletonList(new Else_Editor());
       case 4:
