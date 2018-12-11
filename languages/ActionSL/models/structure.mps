@@ -27,6 +27,7 @@
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -171,12 +172,19 @@
     <property role="EcuMT" value="5047305753771139492" />
     <property role="TrG5h" value="Assess" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1dPpwTSmYV7" role="1TKVEi">
+      <property role="IQ2ns" value="1402139071330643655" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Performer" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1dPpwTSmYdl" resolve="Performer" />
+    </node>
     <node concept="1TJgyj" id="4obCttuo604" role="1TKVEi">
       <property role="IQ2ns" value="5047305753772187652" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="justice" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="ajas:4obCttuo600" resolve="FactKindFormulation" />
+      <property role="20kJfa" value="Addressee" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="1dPpwTSmYdm" resolve="Addressee" />
     </node>
     <node concept="1TJgyj" id="4obCttuo606" role="1TKVEi">
       <property role="IQ2ns" value="5047305753772187654" />
@@ -300,6 +308,32 @@
       <property role="20kJfa" value="object" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1dPpwTSmYdl">
+    <property role="EcuMT" value="1402139071330640725" />
+    <property role="TrG5h" value="Performer" />
+    <property role="34LRSv" value="The performer of the .. is the .." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1dPpwTSmYFL" role="1TKVEi">
+      <property role="IQ2ns" value="1402139071330642673" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actorRole" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1dPpwTSmYdm">
+    <property role="EcuMT" value="1402139071330640726" />
+    <property role="TrG5h" value="Addressee" />
+    <property role="34LRSv" value="The addressee of the .. is the .." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1dPpwTSmYFI" role="1TKVEi">
+      <property role="IQ2ns" value="1402139071330642670" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actorRole" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
     </node>
   </node>
 </model>

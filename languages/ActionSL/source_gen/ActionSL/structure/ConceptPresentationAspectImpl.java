@@ -11,9 +11,11 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_ActionClause;
   private ConceptPresentation props_ActionRule;
+  private ConceptPresentation props_Addressee;
   private ConceptPresentation props_Assess;
   private ConceptPresentation props_Else;
   private ConceptPresentation props_If;
+  private ConceptPresentation props_Performer;
   private ConceptPresentation props_Respons;
   private ConceptPresentation props_Then;
   private ConceptPresentation props_TransactionReference;
@@ -40,6 +42,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ActionRule = cpb.create();
         }
         return props_ActionRule;
+      case LanguageConceptSwitch.Addressee:
+        if (props_Addressee == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("The addressee of the .. is the ..");
+          props_Addressee = cpb.create();
+        }
+        return props_Addressee;
       case LanguageConceptSwitch.Assess:
         if (props_Assess == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -61,6 +70,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_If = cpb.create();
         }
         return props_If;
+      case LanguageConceptSwitch.Performer:
+        if (props_Performer == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("The performer of the .. is the ..");
+          props_Performer = cpb.create();
+        }
+        return props_Performer;
       case LanguageConceptSwitch.Respons:
         if (props_Respons == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

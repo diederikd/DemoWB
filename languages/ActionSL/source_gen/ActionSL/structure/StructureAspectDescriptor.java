@@ -14,9 +14,11 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptActionClause = createDescriptorForActionClause();
   /*package*/ final ConceptDescriptor myConceptActionRule = createDescriptorForActionRule();
+  /*package*/ final ConceptDescriptor myConceptAddressee = createDescriptorForAddressee();
   /*package*/ final ConceptDescriptor myConceptAssess = createDescriptorForAssess();
   /*package*/ final ConceptDescriptor myConceptElse = createDescriptorForElse();
   /*package*/ final ConceptDescriptor myConceptIf = createDescriptorForIf();
+  /*package*/ final ConceptDescriptor myConceptPerformer = createDescriptorForPerformer();
   /*package*/ final ConceptDescriptor myConceptRespons = createDescriptorForRespons();
   /*package*/ final ConceptDescriptor myConceptThen = createDescriptorForThen();
   /*package*/ final ConceptDescriptor myConceptTransactionReference = createDescriptorForTransactionReference();
@@ -31,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActionClause, myConceptActionRule, myConceptAssess, myConceptElse, myConceptIf, myConceptRespons, myConceptThen, myConceptTransactionReference, myConceptWhen, myConceptWith, myConceptWithClause);
+    return Arrays.asList(myConceptActionClause, myConceptActionRule, myConceptAddressee, myConceptAssess, myConceptElse, myConceptIf, myConceptPerformer, myConceptRespons, myConceptThen, myConceptTransactionReference, myConceptWhen, myConceptWith, myConceptWithClause);
   }
 
   @Override
@@ -42,12 +44,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptActionClause;
       case LanguageConceptSwitch.ActionRule:
         return myConceptActionRule;
+      case LanguageConceptSwitch.Addressee:
+        return myConceptAddressee;
       case LanguageConceptSwitch.Assess:
         return myConceptAssess;
       case LanguageConceptSwitch.Else:
         return myConceptElse;
       case LanguageConceptSwitch.If:
         return myConceptIf;
+      case LanguageConceptSwitch.Performer:
+        return myConceptPerformer;
       case LanguageConceptSwitch.Respons:
         return myConceptRespons;
       case LanguageConceptSwitch.Then:
@@ -89,12 +95,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("responsPart", 0x460ba1d75e5644d2L).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e56459aL).optional(false).ordered(true).multiple(false).origin("5047305753771525330").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForAddressee() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "Addressee", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1375660e785be356L);
+    b.class_(false, false, false);
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/1402139071330640726");
+    b.version(2);
+    b.associate("actorRole", 0x1375660e785beaeeL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L).optional(false).origin("1402139071330642670").done();
+    b.alias("The addressee of the .. is the ..");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAssess() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "Assess", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e5061a4L);
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771139492");
     b.version(2);
-    b.aggregate("justice", 0x460ba1d75e606004L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L).optional(true).ordered(true).multiple(true).origin("5047305753772187652").done();
+    b.aggregate("Performer", 0x1375660e785beec7L).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1375660e785be355L).optional(true).ordered(true).multiple(false).origin("1402139071330643655").done();
+    b.aggregate("Addressee", 0x460ba1d75e606004L).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1375660e785be356L).optional(true).ordered(true).multiple(false).origin("5047305753772187652").done();
     b.aggregate("sincerity", 0x460ba1d75e606006L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L).optional(true).ordered(true).multiple(true).origin("5047305753772187654").done();
     b.aggregate("truth", 0x460ba1d75e606009L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x460ba1d75e606000L).optional(true).ordered(true).multiple(true).origin("5047305753772187657").done();
     return b.create();
@@ -112,6 +128,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771525334");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPerformer() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "Performer", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1375660e785be355L);
+    b.class_(false, false, false);
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/1402139071330640725");
+    b.version(2);
+    b.associate("actorRole", 0x1375660e785beaf1L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L).optional(false).origin("1402139071330642673").done();
+    b.alias("The performer of the .. is the ..");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRespons() {
