@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ActionSL/ActionSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/sandbox/DemowB.sandbox.msd" folder="" />

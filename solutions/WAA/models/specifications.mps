@@ -2,13 +2,8 @@
 <model ref="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)">
   <persistence version="9" />
   <languages>
-    <use id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL" version="1" />
-    <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
-    <use id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL" version="0" />
-    <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
-    <use id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL" version="0" />
-    <use id="a2c2ae09-7c36-4fba-9b64-5e0450cb1363" name="ProcessSL" version="0" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
+    <devkit ref="2b99ba1d-c887-40de-a1eb-42c0e5a4b518(DemoSpecificationLanguage)" />
   </languages>
   <imports />
   <registry>
