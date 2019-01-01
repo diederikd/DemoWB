@@ -58,41 +58,6 @@
         <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
       </concept>
     </language>
-    <language id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL">
-      <concept id="397994270025464660" name="ActionSL.structure.ActionRule" flags="ng" index="a1WVU">
-        <child id="5047305753770507734" name="eventPart" index="ojhK1" />
-        <child id="5047305753771525330" name="responsPart" index="onuk5" />
-        <child id="5047305753771525327" name="assessPart" index="onuko" />
-      </concept>
-      <concept id="5047305753770367505" name="ActionSL.structure.When" flags="ng" index="ojNJ6">
-        <property id="5047305753770391947" name="stepKind" index="ojPxs" />
-        <reference id="5047305753770367506" name="appliesToStepKind" index="ojNJ5" />
-        <reference id="5047305753770391942" name="appliesToTransactionKind" index="ojPxh" />
-      </concept>
-      <concept id="5047305753771139492" name="ActionSL.structure.Assess" flags="ng" index="omW1N">
-        <child id="5047305753772187654" name="sincerity" index="oqW7h" />
-        <child id="5047305753772187652" name="justice" index="oqW7j" />
-      </concept>
-      <concept id="5047305753771139288" name="ActionSL.structure.With" flags="ng" index="omW4f">
-        <child id="5047305753772269378" name="formulation" index="oqzUl" />
-      </concept>
-      <concept id="5047305753771629473" name="ActionSL.structure.WithClause" flags="ng" index="on7DQ">
-        <property id="5047305753771742673" name="showWith" index="okzg6" />
-        <child id="5047305753771629474" name="with" index="on7DP" />
-      </concept>
-      <concept id="5047305753771629418" name="ActionSL.structure.ActionClause" flags="ng" index="on7EX">
-        <property id="5047305753771629419" name="stepkind" index="on7EW" />
-        <reference id="5047305753771629421" name="appliesTo" index="on7EU" />
-      </concept>
-      <concept id="5047305753771525530" name="ActionSL.structure.Respons" flags="ng" index="onuhd">
-        <child id="5047305753771525533" name="then" index="onuha" />
-        <child id="5047305753771525531" name="if" index="onuhc" />
-      </concept>
-      <concept id="5047305753771525528" name="ActionSL.structure.Then" flags="ng" index="onuhf">
-        <child id="5047305753771706656" name="actions" index="okEzR" />
-      </concept>
-      <concept id="5047305753771525334" name="ActionSL.structure.If" flags="ng" index="onuk1" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -102,12 +67,6 @@
       </concept>
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
-      <concept id="5047305753772187651" name="FactSL.structure.ProductKindFormulation" flags="ng" index="oqW7k">
-        <reference id="5047305753772826746" name="product" index="ooo6H" />
-      </concept>
-      <concept id="5047305753772187649" name="FactSL.structure.PropertyKindFormulation" flags="ng" index="oqW7m">
-        <reference id="5047305753771139289" name="property" index="omW4e" />
-      </concept>
       <concept id="7550186569879667952" name="FactSL.structure.IPropertyType" flags="ng" index="2Hnu9u">
         <reference id="7550186569879667953" name="domainOfProperty" index="2Hnu9v" />
       </concept>
@@ -185,9 +144,7 @@
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
-      <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA">
-        <child id="5047305753770528015" name="rules" index="ojaNo" />
-      </concept>
+      <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA" />
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
         <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
@@ -4032,37 +3989,6 @@
   </node>
   <node concept="3cHilA" id="4obCttupDUQ">
     <property role="TrG5h" value="ARS Library" />
-    <node concept="a1WVU" id="4obCttupDUR" role="ojaNo">
-      <node concept="ojNJ6" id="4obCttupDUS" role="ojhK1">
-        <property role="okzg6" value="true" />
-        <property role="ojPxs" value="ac" />
-        <ref role="ojPxh" node="2S7w2zXuJeG" />
-        <ref role="ojNJ5" node="2S7w2zXKeI_" resolve="accept book issuing" />
-        <node concept="omW4f" id="4obCttupVN$" role="on7DP">
-          <node concept="oqW7m" id="4obCttupVNF" role="oqzUl">
-            <ref role="omW4e" node="1VmqrBbC52Q" resolve="MEMBER" />
-          </node>
-        </node>
-      </node>
-      <node concept="omW1N" id="4obCttupDUT" role="onuko">
-        <node concept="oqW7k" id="4obCttur6og" role="oqW7j">
-          <ref role="ooo6H" node="1VmqrBbT30t" resolve="Person is deceased" />
-        </node>
-        <node concept="oqW7k" id="4obCttur6op" role="oqW7h">
-          <ref role="ooo6H" node="1VmqrBbT30r" resolve="Person is born" />
-        </node>
-      </node>
-      <node concept="onuhd" id="4obCttupDUU" role="onuk5">
-        <node concept="onuk1" id="4obCttupDUV" role="onuhc" />
-        <node concept="onuhf" id="4obCttupDUW" role="onuha">
-          <node concept="on7EX" id="4obCttupDV3" role="okEzR">
-            <property role="okzg6" value="false" />
-            <property role="on7EW" value="ac" />
-            <ref role="on7EU" node="2S7w2zXuJeG" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
 </model>
 
