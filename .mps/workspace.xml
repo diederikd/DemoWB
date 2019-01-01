@@ -17,25 +17,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications_test/.model" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications_test/OCD WAA test.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mps/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/editor/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/Assess_simulation_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/Assess_simulation_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/sandbox/models/DemowB.test.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/sandbox/models/DemowB.test.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/sandbox/source_gen.caches/DemowB/test/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/sandbox/source_gen.caches/DemowB/test/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications_test.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications_test.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications_test/Construction model WAA test.mpsr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications_test/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications_test/generated" afterDir="false" />
-    </list>
+    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -620,7 +602,7 @@
     <session id="1153433957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="42" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.14" value="2" />
@@ -1138,92 +1120,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="2b99ba1d-c887-40de-a1eb-42c0e5a4b518" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4bccd520-d06a-4a5d-b0c1-9cffb6501752(WAA.specifications_test) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/WAA/models/specifications_test]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/WAA/models/specifications.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1232,21 +1128,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/WAA/models/specifications.mps]" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -5265,7 +5165,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Enhanced proces model" />
     <MESSAGE value="PSD enhancements" />
     <MESSAGE value="initial in PSD" />
     <MESSAGE value="links in PSD (not finished)" />
@@ -5290,7 +5189,8 @@
     <MESSAGE value="performed acts cannot be executed" />
     <MESSAGE value="Assess editor" />
     <MESSAGE value="First steps performer and addressee" />
-    <option name="LAST_COMMIT_MESSAGE" value="First steps performer and addressee" />
+    <MESSAGE value="Devkit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Devkit" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://WAA/WAA.specifications/OCD WAA" />
