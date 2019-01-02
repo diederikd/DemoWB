@@ -40,6 +40,7 @@ public class PerformYes {
           }
         }).first();
         RunningTransaction__BehaviorDescriptor.performAct_id6z7DEV5PQjx.invoke(SNodeOperations.cast(SNodeOperations.getParent(act), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, "DemoSL.structure.RunningTransaction")), act);
+        Helper.CompleteTransactionAndCase(act);
       }
       for (final SNode action : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e56459aL, 0x460ba1d75e5645a0L, "else")), MetaAdapterFactory.getContainmentLink(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e564599L, 0x460ba1d75e590926L, "actions")))) {
         SNode act = Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.collectMany(SLinkOperations.collectMany(SModelOperations.nodes(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, "DemoSL.structure.Simulation")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x2fce1a7d99f0d05cL, 0x68c7a6aec3cc77d2L, "casesStarted")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL, 0x68c7a6aec446e55eL, "runningtransactions")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec400e0baL, "possibleActs"))).where(new IWhereFilter<SNode>() {
@@ -48,6 +49,7 @@ public class PerformYes {
           }
         }).first();
         SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(act), MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, "DemoSL.structure.RunningTransaction")), MetaAdapterFactory.getContainmentLink(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec446e55aL, 0x68c7a6aec400e0baL, "possibleActs")).remove(act);
+        Helper.CompleteTransactionAndCase(act);
       }
     }
   }

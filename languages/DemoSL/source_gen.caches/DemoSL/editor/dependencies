@@ -426,6 +426,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
+  <dependency className="DemoSL.editor.Helper" file="Helper.java">
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
   <dependency className="DemoSL.editor.NewCase" file="NewCase.java">
     <classNode dependClassName="DemoSL.behavior.Simulation__BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
@@ -598,14 +608,10 @@
   <dependency className="DemoSL.editor.PerformAct" file="PerformAct.java">
     <classNode dependClassName="DemoSL.behavior.Act__BehaviorDescriptor" />
     <classNode dependClassName="DemoSL.behavior.RunningTransaction__BehaviorDescriptor" />
+    <classNode dependClassName="DemoSL.editor.Helper" />
     <classNode dependClassName="javax.swing.JOptionPane" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
@@ -615,6 +621,7 @@
   <dependency className="DemoSL.editor.PerformNo" file="PerformNo.java">
     <classNode dependClassName="ActionSL.behavior.ActionClause__BehaviorDescriptor" />
     <classNode dependClassName="DemoSL.behavior.RunningTransaction__BehaviorDescriptor" />
+    <classNode dependClassName="DemoSL.editor.Helper" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
@@ -632,6 +639,7 @@
   <dependency className="DemoSL.editor.PerformYes" file="PerformYes.java">
     <classNode dependClassName="ActionSL.behavior.ActionClause__BehaviorDescriptor" />
     <classNode dependClassName="DemoSL.behavior.RunningTransaction__BehaviorDescriptor" />
+    <classNode dependClassName="DemoSL.editor.Helper" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.cells.AbstractCellAction" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />

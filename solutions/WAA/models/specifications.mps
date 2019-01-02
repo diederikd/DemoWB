@@ -195,7 +195,6 @@
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
         <child id="7550186569849403346" name="casesStarted" index="2F2X5W" />
-        <child id="7550186569856222432" name="casesCompleted" index="2GWM9e" />
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909955" name="DemoSL.structure.DerivedFactSpecifications" flags="ng" index="3cHiip">
@@ -19447,130 +19446,59 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F2X5z" id="1dPpwTSjU8h" role="2GWM9e">
-      <node concept="2GwkfO" id="1dPpwTSjU8i" role="2GwkfK">
-        <property role="2GIBlR" value="true" />
-        <ref role="2F72nx" node="2Ze6BQpzuc0" resolve="accepteren van de beslissing op het verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="1dPpwTSjU8j" role="2GSHpF">
+    <node concept="2F2X5z" id="1S2F7pX07kZ" role="2F2X5W">
+      <node concept="2GwkfO" id="1S2F7pX07l0" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
+        <node concept="2F6m_C" id="1S2F7pX07l1" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjU8s" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjU8$" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07li" role="2GLOok">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjUfg" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07la" role="2GSHpF">
           <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc4" resolve="mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjUfp" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc0" resolve="accepteren van de beslissing op het verzoek aanpassing arbeidsduur" />
+          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
         </node>
       </node>
-      <node concept="2GwkfO" id="1dPpwTSjU8L" role="2GwkfK">
+      <node concept="2GwkfO" id="1S2F7pX07ly" role="2GwkfK">
         <property role="2GIBlR" value="true" />
         <ref role="2F72nx" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
-        <node concept="2F6m_C" id="1dPpwTSjU8_" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07lj" role="2GSHpF">
           <property role="2G7IB7" value="true" />
           <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjU8M" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07lz" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzucp" resolve="promiss verzoek aanpassing arbeidsduur te bespreken" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjU9g" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07u1" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzucq" resolve="execute verzoek aanpassing arbeidsduur te bespreken" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjU9n" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07u8" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjU9w" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07uh" role="2GSHpF">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
         </node>
       </node>
-      <node concept="2GwkfO" id="1dPpwTSjU9S" role="2GwkfK">
-        <property role="2GIBlR" value="true" />
-        <ref role="2F72nx" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="1dPpwTSjU8A" role="2GSHpF">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjU9T" role="2GSHpF">
+      <node concept="2GwkfO" id="1S2F7pX07l_" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
+        <node concept="2F6m_C" id="1S2F7pX07lA" role="2GLOok">
           <property role="2G7IB7" value="false" />
           <ref role="2F6m__" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjUav" role="2GSHpF">
+        <node concept="2F6m_C" id="1S2F7pX07lB" role="2GLOok">
           <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucL" resolve="execute inwilligen verzoek aanpassing arbeidsduur" />
+          <ref role="2F6m__" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
         </node>
-        <node concept="2F6m_C" id="1dPpwTSjUeJ" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucM" resolve="state inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjUeS" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucI" resolve="accept inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-      </node>
-      <node concept="2GwkfO" id="1dPpwTSjUdo" role="2GwkfK">
-        <property role="2GIBlR" value="true" />
-        <ref role="2F72nx" node="2Ze6BQpzuds" resolve="accept vaststellen van de spreiding van de uren " />
-        <node concept="2F6m_C" id="1dPpwTSjUaw" role="2GSHpF">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzudr" resolve="request vaststellen van de spreiding van de uren " />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjUdp" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzudu" resolve="promiss vaststellen van de spreiding van de uren " />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjUe7" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzudv" resolve="execute vaststellen van de spreiding van de uren " />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjUee" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzudw" resolve="state vaststellen van de spreiding van de uren " />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSjUen" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuds" resolve="accept vaststellen van de spreiding van de uren " />
-        </node>
-      </node>
-    </node>
-    <node concept="2F2X5z" id="1dPpwTSkusj" role="2F2X5W">
-      <node concept="2GwkfO" id="1dPpwTSkusk" role="2GwkfK">
-        <ref role="2F72nx" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="1dPpwTSkusl" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSkuwq" role="2GLOok">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSkuwr" role="2GLOok">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSkuws" role="2GLOok">
+        <node concept="2F6m_C" id="1S2F7pX07lk" role="2GSHpF">
           <property role="2G7IB7" value="true" />
           <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSkuwt" role="2GLOok">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
-        </node>
-        <node concept="2F6m_C" id="1dPpwTSkusu" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
         </node>
       </node>
     </node>
@@ -21430,6 +21358,137 @@
             <property role="okzg6" value="false" />
             <property role="on7EW" value="rq" />
             <ref role="on7EU" node="pMarvI_0hi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1S2F7pX07d7" role="ojaNo">
+      <node concept="ojNJ6" id="1S2F7pX07d8" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="rq" />
+        <ref role="ojNJ5" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
+        <node concept="2mzTSp" id="1S2F7pX07d9" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gz" />
+          <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1S2F7pX07da" role="onuko" />
+      <node concept="onuhd" id="1S2F7pX07db" role="onuk5">
+        <node concept="onuk1" id="1S2F7pX07dc" role="onuhc" />
+        <node concept="onuhf" id="1S2F7pX07dd" role="onuha">
+          <node concept="on7EX" id="1S2F7pX07eG" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="pm" />
+            <ref role="on7EU" node="pMarvI_0gz" />
+          </node>
+        </node>
+        <node concept="onuhe" id="1S2F7pX07eJ" role="onuhR">
+          <node concept="on7EX" id="1S2F7pX07eK" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="dc" />
+            <ref role="on7EU" node="pMarvI_0gz" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1S2F7pX07gz" role="ojaNo">
+      <node concept="ojNJ6" id="1S2F7pX07g$" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="rq" />
+        <ref role="ojNJ5" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="1S2F7pX07g_" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gM" />
+          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1S2F7pX07gA" role="onuko" />
+      <node concept="onuhd" id="1S2F7pX07gB" role="onuk5">
+        <node concept="onuk1" id="1S2F7pX07gC" role="onuhc" />
+        <node concept="onuhf" id="1S2F7pX07gD" role="onuha">
+          <node concept="on7EX" id="1S2F7pX07is" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="pm" />
+            <ref role="on7EU" node="pMarvI_0gM" />
+          </node>
+        </node>
+        <node concept="onuhe" id="1S2F7pX07iv" role="onuhR">
+          <node concept="on7EX" id="1S2F7pX07iw" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="dc" />
+            <ref role="on7EU" node="pMarvI_0gM" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1S2F7pX07mr" role="ojaNo">
+      <node concept="ojNJ6" id="1S2F7pX07ms" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="pm" />
+        <ref role="ojNJ5" node="2Ze6BQpzucp" resolve="promiss verzoek aanpassing arbeidsduur te bespreken" />
+        <node concept="2mzTSp" id="1S2F7pX07mt" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gz" />
+          <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1S2F7pX07mu" role="onuko" />
+      <node concept="onuhd" id="1S2F7pX07mv" role="onuk5">
+        <node concept="onuk1" id="1S2F7pX07mw" role="onuhc" />
+        <node concept="onuhf" id="1S2F7pX07mx" role="onuha">
+          <node concept="on7EX" id="1S2F7pX07oC" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="ex" />
+            <ref role="on7EU" node="pMarvI_0gz" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1S2F7pX07oF" role="ojaNo">
+      <node concept="ojNJ6" id="1S2F7pX07oG" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="ex" />
+        <ref role="ojNJ5" node="2Ze6BQpzucq" resolve="execute verzoek aanpassing arbeidsduur te bespreken" />
+        <node concept="2mzTSp" id="1S2F7pX07oH" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gz" />
+          <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1S2F7pX07oI" role="onuko" />
+      <node concept="onuhd" id="1S2F7pX07oJ" role="onuk5">
+        <node concept="onuk1" id="1S2F7pX07oK" role="onuhc" />
+        <node concept="onuhf" id="1S2F7pX07oL" role="onuha">
+          <node concept="on7EX" id="1S2F7pX07r8" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="st" />
+            <ref role="on7EU" node="pMarvI_0gz" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1S2F7pX07rb" role="ojaNo">
+      <node concept="ojNJ6" id="1S2F7pX07rc" role="ojhK1">
+        <property role="okzg6" value="false" />
+        <property role="ojPxs" value="st" />
+        <ref role="ojNJ5" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
+        <node concept="2mzTSp" id="1S2F7pX07rd" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gz" />
+          <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1S2F7pX07re" role="onuko" />
+      <node concept="onuhd" id="1S2F7pX07rf" role="onuk5">
+        <node concept="onuk1" id="1S2F7pX07rg" role="onuhc" />
+        <node concept="onuhf" id="1S2F7pX07rh" role="onuha">
+          <node concept="on7EX" id="1S2F7pX07tS" role="okEzR">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="ac" />
+            <ref role="on7EU" node="pMarvI_0gz" />
+          </node>
+        </node>
+        <node concept="onuhe" id="1S2F7pX07tV" role="onuhR">
+          <node concept="on7EX" id="1S2F7pX07tW" role="okEzL">
+            <property role="okzg6" value="false" />
+            <property role="on7EW" value="rj" />
+            <ref role="on7EU" node="pMarvI_0gz" />
           </node>
         </node>
       </node>
