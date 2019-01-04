@@ -16,14 +16,14 @@ import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 
-public final class AddWithForWhen_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class AddWhileForWhen_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public AddWithForWhen_Intention() {
-    super(Kind.NORMAL, false, new SNodePointer("r:4ca71d67-5128-4ff0-9ce9-58b699d858c3(ActionSL.intentions)", "5047305753772614674"));
+  public AddWhileForWhen_Intention() {
+    super(Kind.NORMAL, false, new SNodePointer("r:4ca71d67-5128-4ff0-9ce9-58b699d858c3(ActionSL.intentions)", "2162480395995516038"));
   }
   @Override
   public String getPresentation() {
-    return "AddWithForWhen";
+    return "AddWhileForWhen";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -33,7 +33,7 @@ public final class AddWithForWhen_Intention extends AbstractIntentionDescriptor 
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return (SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57dba1L, 0x460ba1d75e5995d1L, "showWith")) == false);
+    return (SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e105dL, 0x1e02ac767d0e105eL, "showWhile")) == false);
   }
   @Override
   public boolean isSurroundWith() {
@@ -41,7 +41,7 @@ public final class AddWithForWhen_Intention extends AbstractIntentionDescriptor 
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new AddWithForWhen_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new AddWhileForWhen_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -50,15 +50,15 @@ public final class AddWithForWhen_Intention extends AbstractIntentionDescriptor 
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Add with for when";
+      return "Add while";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57dba1L, 0x460ba1d75e5995d1L, "showWith"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e105dL, 0x1e02ac767d0e105eL, "showWhile"), "" + (true));
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return AddWithForWhen_Intention.this;
+      return AddWhileForWhen_Intention.this;
     }
   }
 }

@@ -21242,7 +21242,7 @@
     <property role="TrG5h" value="Action Rule Specification (ARS) WAA" />
     <node concept="a1WVU" id="5VhmAr8op0s" role="ojaNo">
       <node concept="ojNJ6" id="5VhmAr8op0t" role="ojhK1">
-        <property role="okzg6" value="false" />
+        <property role="okzg6" value="true" />
         <property role="ojPxs" value="rq" />
         <ref role="ojNJ5" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
         <node concept="2mzTSp" id="5VhmAr8op16" role="2mzTUy">

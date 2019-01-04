@@ -23,6 +23,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptThen = createDescriptorForThen();
   /*package*/ final ConceptDescriptor myConceptTransactionReference = createDescriptorForTransactionReference();
   /*package*/ final ConceptDescriptor myConceptWhen = createDescriptorForWhen();
+  /*package*/ final ConceptDescriptor myConceptWhile = createDescriptorForWhile();
+  /*package*/ final ConceptDescriptor myConceptWhileClause = createDescriptorForWhileClause();
   /*package*/ final ConceptDescriptor myConceptWith = createDescriptorForWith();
   /*package*/ final ConceptDescriptor myConceptWithClause = createDescriptorForWithClause();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -33,7 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptActionClause, myConceptActionRule, myConceptAddressee, myConceptAssess, myConceptElse, myConceptIf, myConceptPerformer, myConceptRespons, myConceptThen, myConceptTransactionReference, myConceptWhen, myConceptWith, myConceptWithClause);
+    return Arrays.asList(myConceptActionClause, myConceptActionRule, myConceptAddressee, myConceptAssess, myConceptElse, myConceptIf, myConceptPerformer, myConceptRespons, myConceptThen, myConceptTransactionReference, myConceptWhen, myConceptWhile, myConceptWhileClause, myConceptWith, myConceptWithClause);
   }
 
   @Override
@@ -62,6 +64,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTransactionReference;
       case LanguageConceptSwitch.When:
         return myConceptWhen;
+      case LanguageConceptSwitch.While:
+        return myConceptWhile;
+      case LanguageConceptSwitch.WhileClause:
+        return myConceptWhileClause;
       case LanguageConceptSwitch.With:
         return myConceptWith;
       case LanguageConceptSwitch.WithClause:
@@ -170,11 +176,32 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "When", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L);
     b.class_(false, false, false);
     b.parent(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57dba1L);
+    b.parent(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e105dL);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753770367505");
     b.version(2);
     b.prop("stepKind", 0x460ba1d75e44f98bL, "5047305753770391947");
     b.associate("appliesToStepKind", 0x460ba1d75e449a12L).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(true).origin("5047305753770367506").done();
     b.aggregate("transactionReference", 0x5ed15a66c85ec4c4L).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x5ed15a66c85ec47fL).optional(false).ordered(true).multiple(false).origin("6832341507192571076").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWhile() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "While", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e078bL);
+    b.class_(false, false, false);
+    b.parent(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57dba1L);
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/2162480395995449227");
+    b.version(2);
+    b.prop("stepKind", 0x1e02ac767d0e078dL, "2162480395995449229");
+    b.associate("appliesToStepKind", 0x1e02ac767d0e078cL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(true).origin("2162480395995449228").done();
+    b.aggregate("transactionReference", 0x1e02ac767d0e078fL).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x5ed15a66c85ec47fL).optional(false).ordered(true).multiple(false).origin("2162480395995449231").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWhileClause() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("ActionSL", "WhileClause", 0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e105dL);
+    b.interface_();
+    b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/2162480395995451485");
+    b.version(2);
+    b.prop("showWhile", 0x1e02ac767d0e105eL, "2162480395995451486");
+    b.aggregate("while", 0x1e02ac767d0e105fL).target(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e078bL).optional(true).ordered(true).multiple(true).origin("2162480395995451487").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWith() {

@@ -20,6 +20,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Then;
   private ConceptPresentation props_TransactionReference;
   private ConceptPresentation props_When;
+  private ConceptPresentation props_While;
+  private ConceptPresentation props_WhileClause;
   private ConceptPresentation props_With;
   private ConceptPresentation props_WithClause;
 
@@ -105,6 +107,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_When = cpb.create();
         }
         return props_When;
+      case LanguageConceptSwitch.While:
+        if (props_While == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("While");
+          props_While = cpb.create();
+        }
+        return props_While;
+      case LanguageConceptSwitch.WhileClause:
+        if (props_WhileClause == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_WhileClause = cpb.create();
+        }
+        return props_WhileClause;
       case LanguageConceptSwitch.With:
         if (props_With == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

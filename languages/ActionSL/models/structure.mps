@@ -103,6 +103,9 @@
     <node concept="PrWs8" id="4obCttulXID" role="PzmwI">
       <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
     </node>
+    <node concept="PrWs8" id="1S2F7pX3xFE" role="PzmwI">
+      <ref role="PrY4T" node="1S2F7pX3x1t" resolve="WhileClause" />
+    </node>
     <node concept="1TJgyj" id="5VhmAr8nGj4" role="1TKVEi">
       <property role="IQ2ns" value="6832341507192571076" />
       <property role="20lmBu" value="aggregation" />
@@ -334,6 +337,48 @@
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1S2F7pX3wub">
+    <property role="EcuMT" value="2162480395995449227" />
+    <property role="TrG5h" value="While" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1S2F7pX3wuc" role="1TKVEi">
+      <property role="IQ2ns" value="2162480395995449228" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="appliesToStepKind" />
+      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+    </node>
+    <node concept="1TJgyi" id="1S2F7pX3wud" role="1TKVEl">
+      <property role="IQ2nx" value="2162480395995449229" />
+      <property role="TrG5h" value="stepKind" />
+      <ref role="AX2Wp" node="m5XqSfxGpH" resolve="stepKindPerfectTense" />
+    </node>
+    <node concept="PrWs8" id="1S2F7pX3wue" role="PzmwI">
+      <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
+    </node>
+    <node concept="1TJgyj" id="1S2F7pX3wuf" role="1TKVEi">
+      <property role="IQ2ns" value="2162480395995449231" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="transactionReference" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5VhmAr8nGhZ" resolve="TransactionReference" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1S2F7pX3x1t">
+    <property role="EcuMT" value="2162480395995451485" />
+    <property role="TrG5h" value="WhileClause" />
+    <node concept="1TJgyi" id="1S2F7pX3x1u" role="1TKVEl">
+      <property role="IQ2nx" value="2162480395995451486" />
+      <property role="TrG5h" value="showWhile" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="1S2F7pX3x1v" role="1TKVEi">
+      <property role="IQ2ns" value="2162480395995451487" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="while" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1S2F7pX3wub" resolve="While" />
     </node>
   </node>
 </model>

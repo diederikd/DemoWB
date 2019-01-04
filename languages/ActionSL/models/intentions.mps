@@ -48,6 +48,7 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
+        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
@@ -126,7 +127,7 @@
       <node concept="3clFbS" id="4obCttupIgk" role="2VODD2">
         <node concept="3clFbF" id="4obCttupIgl" role="3cqZAp">
           <node concept="Xl_RD" id="4obCttupIgm" role="3clFbG">
-            <property role="Xl_RC" value="Add with" />
+            <property role="Xl_RC" value="Add with for when" />
           </node>
         </node>
       </node>
@@ -161,6 +162,109 @@
               <node concept="2OqwBi" id="4obCttupIgA" role="3uHU7B">
                 <node concept="2Sf5sV" id="4obCttupIgB" role="2Oq$k0" />
                 <node concept="3TrcHB" id="4obCttupIgC" role="2OqNvi">
+                  <ref role="3TsBF5" to="qiqe:4obCttumpnh" resolve="showWith" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1S2F7pX3KM6">
+    <property role="TrG5h" value="AddWhileForWhen" />
+    <ref role="2ZfgGC" to="qiqe:4obCttuh9Ch" resolve="When" />
+    <node concept="2S6ZIM" id="1S2F7pX3KM7" role="2ZfVej">
+      <node concept="3clFbS" id="1S2F7pX3KM8" role="2VODD2">
+        <node concept="3clFbF" id="1S2F7pX3KM9" role="3cqZAp">
+          <node concept="Xl_RD" id="1S2F7pX3KMa" role="3clFbG">
+            <property role="Xl_RC" value="Add while" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1S2F7pX3KMb" role="2ZfgGD">
+      <node concept="3clFbS" id="1S2F7pX3KMc" role="2VODD2">
+        <node concept="3clFbF" id="1S2F7pX3KMd" role="3cqZAp">
+          <node concept="2OqwBi" id="1S2F7pX3KMe" role="3clFbG">
+            <node concept="2OqwBi" id="1S2F7pX3KMf" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1S2F7pX3KMg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1S2F7pX3Od1" role="2OqNvi">
+                <ref role="3TsBF5" to="qiqe:1S2F7pX3x1u" resolve="showWhile" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="1S2F7pX3KMi" role="2OqNvi">
+              <node concept="3clFbT" id="1S2F7pX3KMj" role="tz02z">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1S2F7pX3KMk" role="2ZfVeh">
+      <node concept="3clFbS" id="1S2F7pX3KMl" role="2VODD2">
+        <node concept="3cpWs6" id="1S2F7pX3KMm" role="3cqZAp">
+          <node concept="1eOMI4" id="1S2F7pX3KMn" role="3cqZAk">
+            <node concept="3clFbC" id="1S2F7pX3KMo" role="1eOMHV">
+              <node concept="3clFbT" id="1S2F7pX3KMp" role="3uHU7w">
+                <property role="3clFbU" value="false" />
+              </node>
+              <node concept="2OqwBi" id="1S2F7pX3KMq" role="3uHU7B">
+                <node concept="2Sf5sV" id="1S2F7pX3KMr" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1S2F7pX3NLt" role="2OqNvi">
+                  <ref role="3TsBF5" to="qiqe:1S2F7pX3x1u" resolve="showWhile" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1S2F7pX4x5d">
+    <property role="TrG5h" value="AddWithForWhile" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="qiqe:1S2F7pX3wub" resolve="While" />
+    <node concept="2S6ZIM" id="1S2F7pX4x5e" role="2ZfVej">
+      <node concept="3clFbS" id="1S2F7pX4x5f" role="2VODD2">
+        <node concept="3clFbF" id="1S2F7pX4x5g" role="3cqZAp">
+          <node concept="Xl_RD" id="1S2F7pX4x5h" role="3clFbG">
+            <property role="Xl_RC" value="Add with for while" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1S2F7pX4x5i" role="2ZfgGD">
+      <node concept="3clFbS" id="1S2F7pX4x5j" role="2VODD2">
+        <node concept="3clFbF" id="1S2F7pX4x5k" role="3cqZAp">
+          <node concept="2OqwBi" id="1S2F7pX4x5l" role="3clFbG">
+            <node concept="2OqwBi" id="1S2F7pX4x5m" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1S2F7pX4x5n" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1S2F7pX4x5o" role="2OqNvi">
+                <ref role="3TsBF5" to="qiqe:4obCttumpnh" resolve="showWith" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="1S2F7pX4x5p" role="2OqNvi">
+              <node concept="3clFbT" id="1S2F7pX4x5q" role="tz02z">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1S2F7pX4x5r" role="2ZfVeh">
+      <node concept="3clFbS" id="1S2F7pX4x5s" role="2VODD2">
+        <node concept="3cpWs6" id="1S2F7pX4x5t" role="3cqZAp">
+          <node concept="1eOMI4" id="1S2F7pX4x5u" role="3cqZAk">
+            <node concept="3clFbC" id="1S2F7pX4x5v" role="1eOMHV">
+              <node concept="3clFbT" id="1S2F7pX4x5w" role="3uHU7w">
+                <property role="3clFbU" value="false" />
+              </node>
+              <node concept="2OqwBi" id="1S2F7pX4x5x" role="3uHU7B">
+                <node concept="2Sf5sV" id="1S2F7pX4x5y" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1S2F7pX4x5z" role="2OqNvi">
                   <ref role="3TsBF5" to="qiqe:4obCttumpnh" resolve="showWith" />
                 </node>
               </node>

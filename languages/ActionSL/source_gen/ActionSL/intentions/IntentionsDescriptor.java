@@ -41,8 +41,16 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 1:
         if (true) {
           // Concept: When 
-          intentions = new IntentionFactory[1];
+          intentions = new IntentionFactory[2];
           intentions[0] = new AddWithForWhen_Intention();
+          intentions[1] = new AddWhileForWhen_Intention();
+        }
+        break;
+      case 2:
+        if (true) {
+          // Concept: While 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AddWithForWhile_Intention();
         }
         break;
       default:
@@ -54,10 +62,12 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[2];
+    IntentionFactory[] rv = new IntentionFactory[4];
     rv[0] = new AddWithForActionClause_Intention();
     rv[1] = new AddWithForWhen_Intention();
+    rv[2] = new AddWhileForWhen_Intention();
+    rv[3] = new AddWithForWhile_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57db6aL), MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e57db6aL), MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x460ba1d75e449a11L), MetaIdFactory.conceptId(0xe81fc11716974e77L, 0x8b544a5aa8f4ea97L, 0x1e02ac767d0e078bL)).seal();
 }
