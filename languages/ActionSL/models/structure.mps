@@ -323,7 +323,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
   </node>
   <node concept="1TIwiD" id="1dPpwTSmYdm">
@@ -336,7 +336,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
   </node>
   <node concept="1TIwiD" id="1S2F7pX3wub">
