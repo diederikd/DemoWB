@@ -106,7 +106,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/1402139071330640726");
     b.version(2);
-    b.associate("actorRole", 0x1375660e785beaeeL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L).optional(false).origin("1402139071330642670").done();
+    b.associate("actorRole", 0x1375660e785beaeeL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("1402139071330642670").done();
     b.alias("The addressee of the .. is the ..");
     return b.create();
   }
@@ -141,7 +141,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/1402139071330640725");
     b.version(2);
-    b.associate("actorRole", 0x1375660e785beaf1L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L).optional(false).origin("1402139071330642673").done();
+    b.associate("actorRole", 0x1375660e785beaf1L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("1402139071330642673").done();
     b.alias("The performer of the .. is the ..");
     return b.create();
   }
