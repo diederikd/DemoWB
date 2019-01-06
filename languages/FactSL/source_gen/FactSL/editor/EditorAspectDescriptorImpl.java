@@ -35,7 +35,7 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 6:
         return Collections.<ConceptEditor>singletonList(new EventLaw_Editor());
       case 7:
-        return Arrays.asList(new ConceptEditor[]{new EventType_Editor(), new EventType_OFD_Editor()});
+        return Arrays.asList(new ConceptEditor[]{new EventType_Editor(), new EventType_OFD_Editor(), new EventType_TPT_Editor()});
       case 8:
         return Collections.<ConceptEditor>singletonList(new Generalisation_Editor());
       case 9:

@@ -3833,7 +3833,7 @@
     </node>
   </node>
   <node concept="3cHiir" id="IuxU86jro0">
-    <property role="TrG5h" value="TPT WAA" />
+    <property role="TrG5h" value="Transaction Product Table WAA" />
   </node>
   <node concept="3jKZr9" id="IuxU86l2CX">
     <property role="TrG5h" value="PSD Volledig inwilligen van het verzoek" />

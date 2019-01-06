@@ -5,6 +5,7 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
+    <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13,6 +14,7 @@
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" />
     <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
+    <import index="squ6" ref="r:b60215f1-3d3e-41cc-8321-723ef8eb59dd(jetbrains.mps.lang.editor.table.runtime)" />
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="fujt" ref="r:d2c51d36-f7cf-4f9c-82a0-80381f5c10fb(ConstructionSL.behavior)" implicit="true" />
@@ -869,7 +871,6 @@
       <ref role="2$4xQ3" to="wtx7:1VmqrBbuzsf" resolve="TPT" />
     </node>
     <node concept="3EZMnI" id="1VmqrBbFxlq" role="2wV5jI">
-      <node concept="l2Vlx" id="1VmqrBbFxlr" role="2iSdaV" />
       <node concept="3EZMnI" id="1VmqrBbFxmd" role="3EZMnx">
         <node concept="VPM3Z" id="1VmqrBbFxme" role="3F10Kt">
           <property role="VOm3f" value="false" />
@@ -976,47 +977,7 @@
       <node concept="3F0A7n" id="1VmqrBbFxm8" role="3EZMnx">
         <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
       </node>
-      <node concept="3F0ifn" id="1VmqrBbGrUD" role="3EZMnx">
-        <property role="3F0ifm" value="--&gt;" />
-      </node>
-      <node concept="1iCGBv" id="1VmqrBbFxns" role="3EZMnx">
-        <ref role="1NtTu8" to="pgdh:1VmqrBbpVeW" resolve="hasProduct" />
-        <node concept="1sVBvm" id="1VmqrBbFxnt" role="1sWHZn">
-          <node concept="3F0A7n" id="1VmqrBbFxnu" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="ajas:2ojITFEDW2$" resolve="id" />
-          </node>
-        </node>
-      </node>
-      <node concept="1HlG4h" id="1VmqrBbFxnv" role="3EZMnx">
-        <node concept="1HfYo3" id="1VmqrBbFxnw" role="1HlULh">
-          <node concept="3TQlhw" id="1VmqrBbFxnx" role="1Hhtcw">
-            <node concept="3clFbS" id="1VmqrBbFxny" role="2VODD2">
-              <node concept="3clFbF" id="1VmqrBbFxnz" role="3cqZAp">
-                <node concept="2OqwBi" id="1VmqrBbFxn$" role="3clFbG">
-                  <node concept="2OqwBi" id="1VmqrBbFxn_" role="2Oq$k0">
-                    <node concept="pncrf" id="1VmqrBbFxnA" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="1VmqrBbFxnB" role="2OqNvi">
-                      <ref role="3Tt5mk" to="pgdh:1VmqrBbpVeW" resolve="hasProduct" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="1VmqrBbFxnC" role="2OqNvi">
-                    <ref role="37wK5l" to="cbuy:1VmqrBbAdFp" resolve="getName" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="ljvvj" id="1VmqrBbFxnD" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1VmqrBbFxnP" role="3EZMnx">
-        <node concept="pVoyu" id="1VmqrBbFxnQ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
+      <node concept="l2Vlx" id="1VmqrBbFxlr" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1VmqrBbw45J">

@@ -42,6 +42,124 @@
       <unit at="24,0,87,0" name="FactSL.editor.PropertyKindFormulation_SubstituteMenu" />
     </file>
   </root>
+  <root nodeRef="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/2162480395999154754">
+    <file name="EventType_TPT_Editor.java">
+      <node id="2162480395999154754" at="14,0,15,0" concept="3" trace="myContextHints" />
+      <node id="2162480395999154754" at="17,47,18,26" concept="7" />
+      <node id="2162480395999154754" at="20,79,21,79" concept="7" />
+      <node id="2162480395999154754" at="20,0,23,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2162480395999154754" at="15,0,20,0" concept="5" trace="getContextHints#()Ljava/util/Collection;" />
+      <scope id="2162480395999154754" at="17,47,18,26" />
+      <scope id="2162480395999154754" at="20,79,21,79" />
+      <scope id="2162480395999154754" at="20,0,23,0">
+        <var name="editorContext" id="2162480395999154754" />
+        <var name="node" id="2162480395999154754" />
+      </scope>
+      <scope id="2162480395999154754" at="15,0,20,0" />
+      <unit id="2162480395999154754" at="13,0,24,0" name="FactSL.editor.EventType_TPT_Editor" />
+    </file>
+    <file name="EventType_TPT_EditorBuilder_a.java">
+      <node id="2162480395999154754" at="42,93,43,19" concept="10" />
+      <node id="2162480395999154754" at="43,19,44,18" concept="2" />
+      <node id="2162480395999154754" at="49,26,50,18" concept="7" />
+      <node id="2162480395999154754" at="53,39,54,32" concept="7" />
+      <node id="2162480395999154754" at="57,43,58,118" concept="6" />
+      <node id="2162480395999154754" at="58,118,59,48" concept="2" />
+      <node id="2162480395999154754" at="59,48,60,28" concept="2" />
+      <node id="2162480395999154754" at="60,28,61,31" concept="2" />
+      <node id="2162480395999159200" at="61,31,62,49" concept="2" />
+      <node id="2222079712860968415" at="62,49,63,62" concept="2" />
+      <node id="2162480395999154754" at="63,62,64,22" concept="7" />
+      <node id="2162480395999159200" at="66,41,67,39" concept="2" />
+      <node id="2162480395999159200" at="68,9,69,154" concept="6" />
+      <node id="2162480395999159200" at="69,154,70,76" concept="2" />
+      <node id="2162480395999159200" at="70,76,71,149" concept="6" />
+      <node id="2162480395999159200" at="71,149,72,43" concept="2" />
+      <node id="2162480395999159200" at="72,43,73,153" concept="2" />
+      <node id="2162480395999159200" at="73,153,74,157" concept="2" />
+      <node id="2162480395999159200" at="74,157,75,42" concept="2" />
+      <node id="2162480395999159200" at="75,42,76,86" concept="2" />
+      <node id="2162480395999159200" at="76,86,77,33" concept="2" />
+      <node id="2162480395999159200" at="77,33,78,306" concept="6" />
+      <node id="2162480395999159200" at="80,41,81,118" concept="7" />
+      <node id="2162480395999159200" at="84,74,85,89" concept="6" />
+      <node id="2162480395999159200" at="85,89,86,145" concept="7" />
+      <node id="2162480395999159200" at="87,12,88,24" concept="7" />
+      <node id="2162480395999159200" at="89,15,90,40" concept="2" />
+      <node id="2222079712860968419" at="95,31,96,90" concept="7" />
+      <node id="2222079712860968415" at="100,44,101,46" concept="7" />
+      <node id="2222079712860968415" at="103,15,104,79" concept="2" />
+      <node id="2222079712860968415" at="104,79,105,82" concept="2" />
+      <node id="2222079712860968415" at="105,82,106,60" concept="2" />
+      <node id="2222079712860968415" at="106,60,107,34" concept="6" />
+      <node id="2222079712860968425" at="107,34,108,60" concept="2" />
+      <node id="2222079712860968415" at="108,60,109,47" concept="2" />
+      <node id="2222079712860968415" at="109,47,110,40" concept="2" />
+      <node id="2222079712860968415" at="110,40,111,22" concept="7" />
+      <node id="2162480395999154754" at="39,0,41,0" concept="3" trace="myNode" />
+      <node id="2222079712860968415" at="98,0,100,0" concept="5" trace="setText#(Ljava/lang/String;)V" />
+      <node id="2162480395999154754" at="53,0,56,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2162480395999159200" at="80,0,83,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="2222079712860968415" at="95,0,98,0" concept="5" trace="getText#()Ljava/lang/String;" />
+      <node id="2222079712860968415" at="100,0,103,0" concept="5" trace="isValidText#(Ljava/lang/String;)Z" />
+      <node id="2162480395999154754" at="42,0,46,0" concept="1" trace="EventType_TPT_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2162480395999154754" at="47,0,52,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2162480395999159200" at="78,306,83,9" concept="6" />
+      <node id="2162480395999159200" at="83,9,88,24" concept="4" />
+      <node id="2162480395999154754" at="57,0,66,0" concept="5" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2222079712860968415" at="93,54,103,15" concept="6" />
+      <node id="2222079712860968415" at="93,0,113,0" concept="5" trace="createReadOnlyModelAccessor_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="2162480395999159200" at="67,39,91,5" concept="11" />
+      <node id="2162480395999159200" at="66,0,93,0" concept="5" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="2222079712860968415" at="98,37,98,37" />
+      <scope id="2162480395999154754" at="49,26,50,18" />
+      <scope id="2162480395999154754" at="53,39,54,32" />
+      <scope id="2162480395999159200" at="80,41,81,118" />
+      <scope id="2162480395999159200" at="89,15,90,40" />
+      <scope id="2222079712860968418" at="95,31,96,90" />
+      <scope id="2222079712860968415" at="100,44,101,46" />
+      <scope id="2162480395999154754" at="42,93,44,18" />
+      <scope id="2162480395999159200" at="84,74,86,145">
+        <var name="manager" id="2162480395999159200" />
+      </scope>
+      <scope id="2222079712860968415" at="98,0,100,0">
+        <var name="s" id="2222079712860968415" />
+      </scope>
+      <scope id="2162480395999154754" at="53,0,56,0" />
+      <scope id="2162480395999159200" at="80,0,83,0">
+        <var name="it" id="2162480395999159200" />
+      </scope>
+      <scope id="2222079712860968415" at="95,0,98,0" />
+      <scope id="2222079712860968415" at="100,0,103,0">
+        <var name="s" id="2222079712860968415" />
+      </scope>
+      <scope id="2162480395999154754" at="42,0,46,0">
+        <var name="context" id="2162480395999154754" />
+        <var name="node" id="2162480395999154754" />
+      </scope>
+      <scope id="2162480395999154754" at="47,0,52,0" />
+      <scope id="2162480395999154754" at="57,43,64,22">
+        <var name="editorCell" id="2162480395999154754" />
+      </scope>
+      <scope id="2162480395999154754" at="57,0,66,0" />
+      <scope id="2222079712860968415" at="93,54,111,22">
+        <var name="editorCell" id="2222079712860968415" />
+        <var name="style" id="2222079712860968415" />
+      </scope>
+      <scope id="2162480395999159200" at="68,9,88,24">
+        <var name="currentPropertyAttributes" id="2162480395999159200" />
+        <var name="editorCell" id="2162480395999159200" />
+        <var name="property" id="2162480395999159200" />
+        <var name="propertyAttributes" id="2162480395999159200" />
+      </scope>
+      <scope id="2222079712860968415" at="93,0,113,0" />
+      <scope id="2162480395999159200" at="66,41,91,5" />
+      <scope id="2162480395999159200" at="66,0,93,0" />
+      <unit id="2162480395999159200" at="79,102,83,7" name="FactSL.editor.EventType_TPT_EditorBuilder_a$1" />
+      <unit id="2222079712860968415" at="94,88,103,5" name="FactSL.editor.EventType_TPT_EditorBuilder_a$2" />
+      <unit id="2162480395999154754" at="38,0,114,0" name="FactSL.editor.EventType_TPT_EditorBuilder_a" />
+    </file>
+  </root>
   <root nodeRef="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/2222079712859039465">
     <file name="BaseEntityType_Editor.java">
       <node id="2222079712859039465" at="11,79,12,80" concept="7" />
