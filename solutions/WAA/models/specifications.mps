@@ -39,6 +39,7 @@
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="id" index="3cGPkH" />
+        <child id="3316760564119748940" name="isActorRoleIn" index="3jp$5$" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
@@ -46,6 +47,9 @@
       </concept>
       <concept id="3316760564118789716" name="ConstructionSL.structure.TransactionKindReference" flags="ng" index="3jl9TW">
         <reference id="3316760564118789717" name="transactionKind" index="3jl9TX" />
+      </concept>
+      <concept id="3316760564119924851" name="ConstructionSL.structure.CompositeActorRoleReference" flags="ng" index="3joZ1r">
+        <reference id="3316760564119924852" name="compositeActorRole" index="3joZ1s" />
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
         <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
@@ -70,7 +74,9 @@
         <child id="6832341507192571076" name="transactionReference" index="2mzTUy" />
       </concept>
       <concept id="5047305753771139492" name="ActionSL.structure.Assess" flags="ng" index="omW1N">
+        <child id="5047305753772187652" name="Addressee" index="oqW7j" />
         <child id="5047305753772187657" name="truth" index="oqW7u" />
+        <child id="1402139071330643655" name="Performer" index="1FbCz9" />
       </concept>
       <concept id="5047305753771629473" name="ActionSL.structure.WithClause" flags="ng" index="on7DQ">
         <property id="5047305753771742673" name="showWith" index="okzg6" />
@@ -91,6 +97,12 @@
         <child id="5047305753771706656" name="actions" index="okEzR" />
       </concept>
       <concept id="5047305753771525334" name="ActionSL.structure.If" flags="ng" index="onuk1" />
+      <concept id="1402139071330640726" name="ActionSL.structure.Addressee" flags="ng" index="1FbClo">
+        <reference id="1402139071330642670" name="actorRole" index="1FbCNw" />
+      </concept>
+      <concept id="1402139071330640725" name="ActionSL.structure.Performer" flags="ng" index="1FbClr">
+        <reference id="1402139071330642673" name="actorRole" index="1FbCNZ" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -225,7 +237,7 @@
   <node concept="3llzxe" id="pMarvI_09T">
     <property role="TrG5h" value="Construction model WAA" />
     <node concept="3cHilr" id="pMarvI_09U" role="3llzIV">
-      <property role="TrG5h" value="Werkgever" />
+      <property role="TrG5h" value="WAA" />
       <node concept="3cGziv" id="pMarvI_0aH" role="3cGS$C">
         <property role="3cGS$Q" value="verzoeken om aanpassing van de arbeidsduur" />
         <property role="3cGzis" value="T1" />
@@ -302,29 +314,51 @@
           <ref role="1Tmc6K" node="pMarvIY8DL" resolve="Verzoek controller" />
         </node>
       </node>
+      <node concept="3cGzii" id="1S2F7pX5Dub" role="3cGxOm">
+        <property role="TrG5h" value="Werkgever" />
+        <property role="3cGzig" value="CA01" />
+      </node>
       <node concept="3cGS$N" id="pMarvI_0hc" role="3cGxOm">
         <property role="TrG5h" value="Verzoek verwerker" />
         <property role="3cGPkH" value="A1" />
+        <node concept="3joZ1r" id="1S2F7pX5Dur" role="3jp$5$">
+          <ref role="3joZ1s" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="3cGS$N" id="pMarvI_0hR" role="3cGxOm">
         <property role="TrG5h" value="Inwilliger van het verzoek" />
         <property role="3cGPkH" value="A3" />
+        <node concept="3joZ1r" id="1S2F7pX5Duu" role="3jp$5$">
+          <ref role="3joZ1s" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="3cGS$N" id="IuxU86aVu8" role="3cGxOm">
         <property role="TrG5h" value="Afwijzer van het verzoek" />
         <property role="3cGPkH" value="A4" />
+        <node concept="3joZ1r" id="1S2F7pX5Dux" role="3jp$5$">
+          <ref role="3joZ1s" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="3cGS$N" id="pMarvI_0ib" role="3cGxOm">
         <property role="TrG5h" value="Vaststeller van de spreiding" />
         <property role="3cGPkH" value="A5" />
+        <node concept="3joZ1r" id="1S2F7pX5Du$" role="3jp$5$">
+          <ref role="3joZ1s" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="3cGS$N" id="pMarvIXhe9" role="3cGxOm">
         <property role="TrG5h" value="Wijziger van de spreiding " />
         <property role="3cGPkH" value="A6" />
+        <node concept="3joZ1r" id="1S2F7pX5DuB" role="3jp$5$">
+          <ref role="3joZ1s" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="3cGS$N" id="pMarvIY8DL" role="3cGxOm">
         <property role="TrG5h" value="Verzoek controller" />
         <property role="3cGPkH" value="A7" />
+        <node concept="3joZ1r" id="1S2F7pX5DuE" role="3jp$5$">
+          <ref role="3joZ1s" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="37mRI7" id="pMarvI_0b7" role="lGtFl">
         <node concept="37mRIm" id="pMarvI_0b8" role="37mRID">
@@ -21272,6 +21306,12 @@
         <node concept="2mCRVD" id="5VhmAr8t7Xx" role="oqW7u">
           <property role="2mCRVQ" value="- de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
+        <node concept="1FbClr" id="1S2F7pX5DtQ" role="1FbCz9">
+          <ref role="1FbCNZ" node="pMarvI_0aB" resolve="Werknemer" />
+        </node>
+        <node concept="1FbClo" id="1S2F7pX5DtT" role="oqW7j">
+          <ref role="1FbCNw" node="1S2F7pX5Dub" resolve="Werkgever" />
+        </node>
       </node>
       <node concept="onuhd" id="5VhmAr8op0w" role="onuk5">
         <node concept="onuk1" id="5VhmAr8op0x" role="onuhc" />
@@ -21304,6 +21344,12 @@
       <node concept="omW1N" id="5VhmAr8t7UD" role="onuko">
         <node concept="2mCRVD" id="5VhmAr8t7XL" role="oqW7u">
           <property role="2mCRVQ" value="- zwaarwegende bedrijfs- of dienstbelangen zich verzetten zich tegen het inwilligen van aanpassing van de arbeidsduur is waar" />
+        </node>
+        <node concept="1FbClr" id="1S2F7pX5DuH" role="1FbCz9">
+          <ref role="1FbCNZ" node="pMarvI_0hc" resolve="Verzoek verwerker" />
+        </node>
+        <node concept="1FbClo" id="1S2F7pX5DuK" role="oqW7j">
+          <ref role="1FbCNw" node="pMarvI_0aB" resolve="Werknemer" />
         </node>
       </node>
       <node concept="onuhd" id="5VhmAr8t7UE" role="onuk5">
@@ -21343,6 +21389,12 @@
         <node concept="2mCRVD" id="5VhmAr8t806" role="oqW7u">
           <property role="2mCRVQ" value="- de werkgever heeft een zodanig belang dat de wens van de werknemer daarvoor naar maatstaven van redelijkheid en billijkheid moet wijken van aanpassing van de arbeidsduur is waar" />
         </node>
+        <node concept="1FbClr" id="1S2F7pX5DuN" role="1FbCz9">
+          <ref role="1FbCNZ" node="pMarvI_0hR" resolve="Inwilliger van het verzoek" />
+        </node>
+        <node concept="1FbClo" id="1S2F7pX5DuQ" role="oqW7j">
+          <ref role="1FbCNw" node="pMarvI_0hc" resolve="Verzoek verwerker" />
+        </node>
       </node>
       <node concept="onuhd" id="5VhmAr8t7YV" role="onuk5">
         <node concept="onuk1" id="5VhmAr8t7YW" role="onuhc" />
@@ -21372,7 +21424,14 @@
           <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
         </node>
       </node>
-      <node concept="omW1N" id="1S2F7pX07da" role="onuko" />
+      <node concept="omW1N" id="1S2F7pX07da" role="onuko">
+        <node concept="1FbClr" id="1S2F7pX5DuT" role="1FbCz9">
+          <ref role="1FbCNZ" node="pMarvI_0hc" resolve="Verzoek verwerker" />
+        </node>
+        <node concept="1FbClo" id="1S2F7pX5DuW" role="oqW7j">
+          <ref role="1FbCNw" node="pMarvI_0aB" resolve="Werknemer" />
+        </node>
+      </node>
       <node concept="onuhd" id="1S2F7pX07db" role="onuk5">
         <node concept="onuk1" id="1S2F7pX07dc" role="onuhc" />
         <node concept="onuhf" id="1S2F7pX07dd" role="onuha">
@@ -21401,7 +21460,14 @@
           <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
         </node>
       </node>
-      <node concept="omW1N" id="1S2F7pX07gA" role="onuko" />
+      <node concept="omW1N" id="1S2F7pX07gA" role="onuko">
+        <node concept="1FbClr" id="1S2F7pX5DuZ" role="1FbCz9">
+          <ref role="1FbCNZ" node="pMarvI_0hc" resolve="Verzoek verwerker" />
+        </node>
+        <node concept="1FbClo" id="1S2F7pX5Dv2" role="oqW7j">
+          <ref role="1FbCNw" node="pMarvI_0hR" resolve="Inwilliger van het verzoek" />
+        </node>
+      </node>
       <node concept="onuhd" id="1S2F7pX07gB" role="onuk5">
         <node concept="onuk1" id="1S2F7pX07gC" role="onuhc" />
         <node concept="onuhf" id="1S2F7pX07gD" role="onuha">
