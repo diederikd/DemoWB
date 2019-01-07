@@ -5,12 +5,26 @@ package ConstructionSL.editor;
 import jetbrains.mps.smodel.action.IReferentPresentationProvider;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import ConstructionSL.behavior.TransactionKind__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import ConstructionSL.behavior.TransactionKind__BehaviorDescriptor;
 import ConstructionSL.behavior.AbstractActorRole__BehaviorDescriptor;
 
 public class PresentationProviders {
+  public static final IReferentPresentationProvider PRESENTATION_bjfh2y_a0a7a = new IReferentPresentationProvider() {
+    @NotNull
+    @Override
+    public String getPresentation(@NotNull SNode sourceNode, @NotNull SNode targetNode) {
+      return SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")) + " " + SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    }
+  };
+  public static final IReferentPresentationProvider PRESENTATION_bjfh2y_a0a7a_0 = new IReferentPresentationProvider() {
+    @NotNull
+    @Override
+    public String getPresentation(@NotNull SNode sourceNode, @NotNull SNode targetNode) {
+      return SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")) + " " + SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    }
+  };
   public static final IReferentPresentationProvider PRESENTATION_rnhr2h_a0a0a = new IReferentPresentationProvider() {
     @NotNull
     @Override

@@ -43,10 +43,14 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.lang.editor.cellProviders.SReferenceCellProvider;
 import jetbrains.mps.util.Computable;
 import jetbrains.mps.editor.runtime.impl.CellUtil;
-import jetbrains.mps.nodeEditor.cellMenu.SReferenceSubstituteInfo;
+import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
+import jetbrains.mps.lang.editor.cellProviders.ReferenceCellContext;
+import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
+import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfoPartEx;
 import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
-import FactSL.behavior.FactType__BehaviorDescriptor;
+import jetbrains.mps.lang.editor.generator.internal.PrimaryReferentMenuCellMenuPart;
+import jetbrains.mps.smodel.action.IReferentPresentationProvider;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 /*package*/ class TransactionKind_CM_EditorBuilder_a extends AbstractEditorBuilder {
@@ -346,7 +350,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
       editorCell.setReferenceCell(true);
       editorCell.setSRole(MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x1ed669b9cb67b3bcL, "hasProduct"));
     }
-    editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new ReferenceCellContext(getNode(), getNode(), referenceLink), new SubstituteInfoPartExt[]{new TransactionKind_CM_EditorBuilder_a.TransactionKind_hasProduct_cellMenu_bjfh2y_a0h0(), new SChildSubstituteInfoPartEx(editorCell)}));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute"));
     Iterable<SNode> currentReferenceAttributes = Sequence.fromIterable(referenceAttributes).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
@@ -383,13 +387,13 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
     private EditorCell createProperty_3() {
       getCellFactory().pushCellContext();
       try {
-        final SProperty property = MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id");
+        final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
         EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, true, false), myNode);
-        editorCell.setDefaultText("<no id>");
+        editorCell.setDefaultText("<no name>");
         editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteEasily(myNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
         editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteEasily(myNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
-        editorCell.setCellId("property_id1");
+        editorCell.setCellId("property_name1");
         editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
         setCellContext(editorCell);
         Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute"));
@@ -408,10 +412,24 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
       }
     }
   }
+  public static class TransactionKind_hasProduct_cellMenu_bjfh2y_a0h0 extends PrimaryReferentMenuCellMenuPart {
+    public TransactionKind_hasProduct_cellMenu_bjfh2y_a0h0() {
+    }
+    @NotNull
+    @Override
+    protected IReferentPresentationProvider getMatchingTextProvider() {
+      return PresentationProviders.PRESENTATION_bjfh2y_a0a7a;
+    }
+    @NotNull
+    @Override
+    protected IReferentPresentationProvider getVisibleMatchingTextProvider() {
+      return PresentationProviders.PRESENTATION_bjfh2y_a0a7a_0;
+    }
+  }
   private EditorCell createReadOnlyModelAccessor_1() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        return (String) FactType__BehaviorDescriptor.getName_id1VmqrBbAdFp.invoke(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x1ed669b9cb67b3bcL, "hasProduct")));
+        return "(" + SPropertyOperations.getString(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x1ed669b9cb67b3bcL, "hasProduct")), MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")) + ")";
       }
       public void setText(String s) {
       }
