@@ -22,6 +22,7 @@
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
+    <import index="fujt" ref="r:d2c51d36-f7cf-4f9c-82a0-80381f5c10fb(ConstructionSL.behavior)" implicit="true" />
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" implicit="true" />
     <import index="jtpl" ref="r:afd98833-8b36-426e-b5d7-f617ffac5163(ProcessSL.behavior)" implicit="true" />
     <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" implicit="true" />
@@ -66,6 +67,9 @@
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="6150987479542522273" name="jetbrains.mps.lang.editor.structure.QueryHintsSpecification" flags="ig" index="2Hnlc$" />
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
@@ -81,6 +85,10 @@
       <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
+      <concept id="1164996492011" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReferentPrimary" flags="ng" index="ZcVJ$">
+        <child id="6646996417796504278" name="visibleMatchingText" index="ecLFg" />
+        <child id="6918029743851332884" name="matchingText" index="1NQq9M" />
       </concept>
       <concept id="1182191800432" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeListFilter" flags="in" index="107P5z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
@@ -126,6 +134,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -151,6 +160,8 @@
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
+      <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
+      <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
@@ -1332,6 +1343,76 @@
           </node>
           <node concept="ljvvj" id="2S7w2zXBZNc" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+          <node concept="OXEIz" id="1S2F7pXHNUZ" role="P5bDN">
+            <node concept="ZcVJ$" id="1S2F7pXHNV1" role="OY2wv">
+              <node concept="1NMggl" id="1S2F7pXHNV3" role="1NQq9M">
+                <node concept="3clFbS" id="1S2F7pXHNV4" role="2VODD2">
+                  <node concept="3clFbF" id="1S2F7pXHO3D" role="3cqZAp">
+                    <node concept="3cpWs3" id="1S2F7pXJd62" role="3clFbG">
+                      <node concept="2OqwBi" id="1S2F7pXJe3P" role="3uHU7w">
+                        <node concept="1NM5Ph" id="1S2F7pXJdE0" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1S2F7pXJez5" role="2OqNvi">
+                          <ref role="3TsBF5" to="d13l:2ojITFEC3aG" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs3" id="1S2F7pXJbtp" role="3uHU7B">
+                        <node concept="3cpWs3" id="1S2F7pXJ618" role="3uHU7B">
+                          <node concept="2OqwBi" id="1S2F7pXJ9xc" role="3uHU7B">
+                            <node concept="1NM5Ph" id="1S2F7pXJ9a3" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="1S2F7pXJa4S" role="2OqNvi">
+                              <ref role="37wK5l" to="fujt:6z7DEV5OneK" resolve="getTransactionKindId" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="1S2F7pXHOmG" role="3uHU7w">
+                            <node concept="1NM5Ph" id="1S2F7pXHO3C" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1S2F7pXHP86" role="2OqNvi">
+                              <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="1S2F7pXJbJT" role="3uHU7w">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1NMggl" id="1S2F7pXHPEb" role="ecLFg">
+                <node concept="3clFbS" id="1S2F7pXHPEc" role="2VODD2">
+                  <node concept="3clFbF" id="1S2F7pXJfet" role="3cqZAp">
+                    <node concept="3cpWs3" id="1S2F7pXJfeu" role="3clFbG">
+                      <node concept="2OqwBi" id="1S2F7pXJfev" role="3uHU7w">
+                        <node concept="1NM5Ph" id="1S2F7pXJfew" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1S2F7pXJfex" role="2OqNvi">
+                          <ref role="3TsBF5" to="d13l:2ojITFEC3aG" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs3" id="1S2F7pXJfey" role="3uHU7B">
+                        <node concept="3cpWs3" id="1S2F7pXJfez" role="3uHU7B">
+                          <node concept="2OqwBi" id="1S2F7pXJfe$" role="3uHU7B">
+                            <node concept="1NM5Ph" id="1S2F7pXJfe_" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="1S2F7pXJfeA" role="2OqNvi">
+                              <ref role="37wK5l" to="fujt:6z7DEV5OneK" resolve="getTransactionKindId" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="1S2F7pXJfeB" role="3uHU7w">
+                            <node concept="1NM5Ph" id="1S2F7pXJfeC" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="1S2F7pXJfeD" role="2OqNvi">
+                              <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="1S2F7pXJfeE" role="3uHU7w">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="l2Vlx" id="6z7DEV5JHJO" role="2iSdaV" />
