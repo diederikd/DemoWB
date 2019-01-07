@@ -91,7 +91,7 @@
   <node concept="1TIwiD" id="2ojITFECoW5">
     <property role="EcuMT" value="2743742872034578181" />
     <property role="TrG5h" value="TransactionKind" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4vyZ9NNOunp" resolve="AbstractTransactionKind" />
     <node concept="1TJgyj" id="6cLLlCqqh5W" role="1TKVEi">
       <property role="IQ2ns" value="7147711074394509692" />
       <property role="20lmBu" value="aggregation" />
@@ -154,7 +154,7 @@
   <node concept="1TIwiD" id="2ojITFECoWc">
     <property role="EcuMT" value="2743742872034578188" />
     <property role="TrG5h" value="AggregateTransactionKind" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4vyZ9NNOunp" resolve="AbstractTransactionKind" />
     <node concept="1TJgyi" id="2ojITFECoWd" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578189" />
       <property role="TrG5h" value="id" />
@@ -206,7 +206,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="transactions" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
+      <ref role="20lvS9" node="4vyZ9NNOunp" resolve="AbstractTransactionKind" />
     </node>
     <node concept="PrWs8" id="2ojITFEDDV2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -289,6 +289,13 @@
     <node concept="PrWs8" id="2ojITFECvwn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4vyZ9NNOunp">
+    <property role="EcuMT" value="5179980272465208793" />
+    <property role="TrG5h" value="AbstractTransactionKind" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

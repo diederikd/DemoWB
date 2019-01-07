@@ -10,21 +10,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int AbstractActorRole = 0;
-  public static final int ActorRole = 1;
-  public static final int ActorRoleReference = 2;
-  public static final int AggregateTransactionKind = 3;
-  public static final int CompositeActorRole = 4;
-  public static final int CompositeActorRoleReference = 5;
-  public static final int Executor = 6;
-  public static final int Initiator = 7;
-  public static final int ScopeOfInterest = 8;
-  public static final int TransactionKind = 9;
-  public static final int TransactionKindReference = 10;
-  public static final int test = 11;
+  public static final int AbstractTransactionKind = 1;
+  public static final int ActorRole = 2;
+  public static final int ActorRoleReference = 3;
+  public static final int AggregateTransactionKind = 4;
+  public static final int CompositeActorRole = 5;
+  public static final int CompositeActorRoleReference = 6;
+  public static final int Executor = 7;
+  public static final int Initiator = 8;
+  public static final int ScopeOfInterest = 9;
+  public static final int TransactionKind = 10;
+  public static final int TransactionKindReference = 11;
+  public static final int test = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xd87481a388534c7cL, 0x9cb5096d805e832cL);
     builder.put(0x585f5ae0f8b9236L, AbstractActorRole);
+    builder.put(0x47e2fc9cf3d1e5d9L, AbstractTransactionKind);
     builder.put(0x2613bb9aeaa032a9L, ActorRole);
     builder.put(0x2e078028fd531e4eL, ActorRoleReference);
     builder.put(0x2613bb9aeaa18f0cL, AggregateTransactionKind);

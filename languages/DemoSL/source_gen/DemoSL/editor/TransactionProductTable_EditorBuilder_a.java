@@ -257,7 +257,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
             for (int yi = 0; yi < sizeY; yi++) {
               final int x = xi;
               final int y = yi;
-              // SNode 
+              // node<> 
               Object queryResult_ = queryCellsSafely(node, x, y);
               grid.setElement(x, y, new GridElementFactory(editorContext, node, true, true, grid).create(queryResult_));
 

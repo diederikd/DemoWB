@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AbstractActorRole;
+  private ConceptPresentation props_AbstractTransactionKind;
   private ConceptPresentation props_ActorRole;
   private ConceptPresentation props_ActorRoleReference;
   private ConceptPresentation props_AggregateTransactionKind;
@@ -33,6 +34,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AbstractActorRole = cpb.create();
         }
         return props_AbstractActorRole;
+      case LanguageConceptSwitch.AbstractTransactionKind:
+        if (props_AbstractTransactionKind == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractTransactionKind = cpb.create();
+        }
+        return props_AbstractTransactionKind;
       case LanguageConceptSwitch.ActorRole:
         if (props_ActorRole == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
