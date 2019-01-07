@@ -632,7 +632,7 @@
     <session id="1153433957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
+          <entry key="project.closed" value="43" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.14" value="2" />
@@ -898,7 +898,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="24" />
-    <option name="y" value="27" />
+    <option name="y" value="23" />
     <option name="width" value="1591" />
     <option name="height" value="959" />
   </component>
@@ -1162,6 +1162,22 @@
               <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WAA" />
               <option name="myItemType" value="" />
@@ -1176,24 +1192,8 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>

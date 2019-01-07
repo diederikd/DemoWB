@@ -6,7 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -16,7 +17,11 @@
         <child id="1225194240801" name="constructor" index="13h7CW" />
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
-      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz" />
+      <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
+        <property id="1225194472832" name="isVirtual" index="13i0it" />
+        <property id="1225194472834" name="isAbstract" index="13i0iv" />
+        <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
+      </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -34,6 +39,9 @@
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -149,6 +157,74 @@
     </node>
     <node concept="13hLZK" id="6cLLlCqqh6X" role="13h7CW">
       <node concept="3clFbS" id="6cLLlCqqh6Y" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1S2F7pXAkTT">
+    <ref role="13h7C2" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
+    <node concept="13i0hz" id="1S2F7pXAkU4" role="13h7CS">
+      <property role="TrG5h" value="getID" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="1S2F7pXAkU5" role="1B3o_S" />
+      <node concept="17QB3L" id="1S2F7pXAkUs" role="3clF45" />
+      <node concept="3clFbS" id="1S2F7pXAkU7" role="3clF47" />
+    </node>
+    <node concept="13hLZK" id="1S2F7pXAkTU" role="13h7CW">
+      <node concept="3clFbS" id="1S2F7pXAkTV" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1S2F7pXAkVh">
+    <ref role="13h7C2" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+    <node concept="13hLZK" id="1S2F7pXAkVi" role="13h7CW">
+      <node concept="3clFbS" id="1S2F7pXAkVj" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1S2F7pXAkVs" role="13h7CS">
+      <property role="TrG5h" value="getID" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1S2F7pXAkU4" resolve="getID" />
+      <node concept="3Tm1VV" id="1S2F7pXAkVt" role="1B3o_S" />
+      <node concept="3clFbS" id="1S2F7pXAkVw" role="3clF47">
+        <node concept="3clFbF" id="1S2F7pXAkVR" role="3cqZAp">
+          <node concept="2OqwBi" id="1S2F7pXAl6f" role="3clFbG">
+            <node concept="13iPFW" id="1S2F7pXAkVQ" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1S2F7pXAlgp" role="2OqNvi">
+              <ref role="3TsBF5" to="pgdh:2ojITFECeUR" resolve="id" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1S2F7pXAkVx" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1S2F7pXAlmR">
+    <ref role="13h7C2" to="pgdh:2ojITFECoW8" resolve="CompositeActorRole" />
+    <node concept="13hLZK" id="1S2F7pXAlmS" role="13h7CW">
+      <node concept="3clFbS" id="1S2F7pXAlmT" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1S2F7pXAln2" role="13h7CS">
+      <property role="TrG5h" value="getID" />
+      <property role="13i0it" value="false" />
+      <property role="13i0iv" value="false" />
+      <ref role="13i0hy" node="1S2F7pXAkU4" resolve="getID" />
+      <node concept="3Tm1VV" id="1S2F7pXAln3" role="1B3o_S" />
+      <node concept="3clFbS" id="1S2F7pXAln6" role="3clF47">
+        <node concept="3clFbF" id="1S2F7pXAlnt" role="3cqZAp">
+          <node concept="2OqwBi" id="1S2F7pXAlxP" role="3clFbG">
+            <node concept="13iPFW" id="1S2F7pXAlns" role="2Oq$k0" />
+            <node concept="3TrcHB" id="1S2F7pXAlFX" role="2OqNvi">
+              <ref role="3TsBF5" to="pgdh:2ojITFECoWa" resolve="id" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1S2F7pXAln7" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1S2F7pXDBQk">
+    <ref role="13h7C2" to="pgdh:6cLLlCqqgh6" resolve="Initiator" />
+    <node concept="13hLZK" id="1S2F7pXDBQl" role="13h7CW">
+      <node concept="3clFbS" id="1S2F7pXDBQm" role="2VODD2" />
     </node>
   </node>
 </model>
