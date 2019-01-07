@@ -43,6 +43,9 @@ import de.slisson.mps.tables.runtime.gridmodel.Grid;
 import java.util.List;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderGrid;
 import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeDeleteAction;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderGridFactory;
@@ -197,7 +200,14 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
   public HeaderGrid createHeadQuery_4z9nnr_a3a(final EditorContext editorContext, final SNode node) {
     Object queryResult = new Object() {
       public Object query() {
-        return "Transaction";
+        List<SNode> tableHeaders = new ArrayList<SNode>();
+        SNode c1 = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1e02ac767d77338cL, "DemoSL.structure.TableHeader"));
+        SPropertyOperations.assign(c1, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Transaction");
+        ListSequence.fromList(tableHeaders).addElement(c1);
+        SNode c2 = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1e02ac767d77338cL, "DemoSL.structure.TableHeader"));
+        SPropertyOperations.assign(c2, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "Product");
+        ListSequence.fromList(tableHeaders).addElement(c2);
+        return tableHeaders;
       }
     }.query();
     IHeaderNodeInsertAction insertAction = new IHeaderNodeInsertAction() {

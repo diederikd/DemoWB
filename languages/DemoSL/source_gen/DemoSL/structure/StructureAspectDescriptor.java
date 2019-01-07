@@ -25,6 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptProcesStructureDiagram = createDescriptorForProcesStructureDiagram();
   /*package*/ final ConceptDescriptor myConceptRunningTransaction = createDescriptorForRunningTransaction();
   /*package*/ final ConceptDescriptor myConceptSimulation = createDescriptorForSimulation();
+  /*package*/ final ConceptDescriptor myConceptTableHeader = createDescriptorForTableHeader();
   /*package*/ final ConceptDescriptor myConceptTransactionProductTable = createDescriptorForTransactionProductTable();
   /*package*/ final ConceptDescriptor myConceptWorkInstructionSpecifications = createDescriptorForWorkInstructionSpecifications();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -35,7 +36,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAct, myConceptActionRuleSpecifications, myConceptBankContentsTable, myConceptCase, myConceptConstructionModel, myConceptDerivedFactSpecifications, myConceptFactModel, myConceptObjectFactDiagram, myConceptOrganisationConstructionDiagram, myConceptProcesModel, myConceptProcesStructureDiagram, myConceptRunningTransaction, myConceptSimulation, myConceptTransactionProductTable, myConceptWorkInstructionSpecifications);
+    return Arrays.asList(myConceptAct, myConceptActionRuleSpecifications, myConceptBankContentsTable, myConceptCase, myConceptConstructionModel, myConceptDerivedFactSpecifications, myConceptFactModel, myConceptObjectFactDiagram, myConceptOrganisationConstructionDiagram, myConceptProcesModel, myConceptProcesStructureDiagram, myConceptRunningTransaction, myConceptSimulation, myConceptTableHeader, myConceptTransactionProductTable, myConceptWorkInstructionSpecifications);
   }
 
   @Override
@@ -68,6 +69,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRunningTransaction;
       case LanguageConceptSwitch.Simulation:
         return myConceptSimulation;
+      case LanguageConceptSwitch.TableHeader:
+        return myConceptTableHeader;
       case LanguageConceptSwitch.TransactionProductTable:
         return myConceptTransactionProductTable;
       case LanguageConceptSwitch.WorkInstructionSpecifications:
@@ -214,6 +217,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("startState", 0x2fce1a7d99f0d05dL).target(0xa2c2ae097c364fbaL, 0x9b645e0450cb1363L, 0x585f5ae0f86c73eL).optional(false).origin("3444719891740938333").done();
     b.aggregate("casesStarted", 0x68c7a6aec3cc77d2L).target(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL).optional(true).ordered(true).multiple(true).origin("7550186569849403346").done();
     b.aggregate("casesCompleted", 0x68c7a6aec43484e0L).target(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x68c7a6aec3cc77cdL).optional(true).ordered(true).multiple(true).origin("7550186569856222432").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTableHeader() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("DemoSL", "TableHeader", 0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL, 0x1e02ac767d77338cL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/2162480396002341772");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTransactionProductTable() {

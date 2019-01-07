@@ -18,33 +18,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/FactSL/source_gen/FactSL/editor/EventType_TPT_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FactSL/source_gen/FactSL/editor/EventType_TPT_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/TableHeader_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/TableHeader_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/TransactionKind_TPT_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/TransactionKind_TPT_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/LanguageConceptSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/classes_gen/DemoSL/structure/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen.caches/DemoSL/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/TransactionProductTable_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/TransactionProductTable_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/classes_gen/FactSL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/classes_gen/FactSL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/classes_gen/FactSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/classes_gen/FactSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/source_gen.caches/FactSL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/source_gen.caches/FactSL/editor/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/source_gen.caches/FactSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/source_gen.caches/FactSL/editor/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/source_gen.caches/FactSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/source_gen.caches/FactSL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/source_gen/FactSL/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/source_gen/FactSL/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FactSL/source_gen/FactSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FactSL/source_gen/FactSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/LanguageConceptSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/source_gen/DemoSL/structure/trace.info" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -659,7 +656,7 @@
         <counts>
           <entry key="&lt;no name&gt;[ActionRuleSpecifications]" value="3" />
           <entry key="&lt;no name&gt;[CellActionMapDeclaration]" value="4" />
-          <entry key="&lt;no name&gt;[ConceptDeclaration]" value="28" />
+          <entry key="&lt;no name&gt;[ConceptDeclaration]" value="29" />
           <entry key="&lt;no name&gt;[ConceptEditorContextHints]" value="1" />
           <entry key="&lt;no name&gt;[ConstructionModel]" value="6" />
           <entry key="&lt;no name&gt;[DerivedFactSpecifications]" value="1" />
@@ -849,7 +846,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="MPS_NODE" value="1178" />
+          <entry key="MPS_NODE" value="1179" />
           <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
@@ -863,24 +860,14 @@
         <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="179">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="607" />
-                    <property name="caretXRelative" value="208" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010434" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -895,7 +882,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="mps://node://WAA/WAA.specifications/Transaction Product Table WAA">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -916,7 +903,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -932,116 +919,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://FactSL/FactSL.structure/EventType">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="319" />
-                    <property name="caretXRelative" value="72" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/2222079712862430421" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/2222079712862430421" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://FactSL/FactSL.editor/null_Editor">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="59" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
-                      <node node_reference="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/2162480395999159200" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://ConstructionSL/ConstructionSL.structure/TransactionKind">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="411" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a">
-                      <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2222079712860968328" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2222079712857744874" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="mps://node://DemoSL/DemoSL.structure/TransactionProductTable">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1049,11 +926,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="263" />
-                    <property name="caretXRelative" value="88" />
+                    <property name="caretX" value="279" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_value">
-                      <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" />
+                    <cellInfo cellId="Constant_zedcwq_b0">
+                      <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480396002359091" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -1099,7 +976,7 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -1116,18 +993,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
+        <entry file="mps://node://DemoSL/DemoSL.structure/TableHeader">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="782">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="119" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="99" />
+                    <property name="caretXRelative" value="32" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_fmu1p2_e0">
-                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531014179" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480396003073820" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -1136,7 +1013,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -1147,6 +1024,34 @@
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
                 </enabledHints>
               </inspectorMemento>
+              <node node_ref="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480396003073818" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://ConstructionSL/ConstructionSL.structure/TransactionKind">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2222079712857744874" />
             </state>
           </provider>
         </entry>
@@ -1157,7 +1062,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2018.3" />
+        <entry key="$PROJECT_DIR$" value="020df71865e94e88aa46c5452f22b0bfcb2b3bc1" />
       </map>
     </option>
   </component>
@@ -1447,154 +1352,10 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/FactSL/models/editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/WAA/models/specifications.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/DemoSL/models/editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/DemoSL/models/structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/DemoSL/models/editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Construction Model" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/DemoSL/models/structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Simulation" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -1812,8 +1573,7 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="27" width="1591" height="959" extended-state="1" />
-    <editor active="true" />
+    <frame x="24" y="27" width="1591" height="959" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32062057" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1846,7 +1606,7 @@
       <window_info anchor="bottom" id="RefactoringView" order="26" sideWeight="0.49385908" weight="0.329849" />
       <window_info anchor="bottom" id="Trace Explorer" order="27" />
       <window_info anchor="bottom" id="mbeddr TODO" order="28" />
-      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.52747256" side_tool="true" visible="true" weight="0.29616725" />
+      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.5235941" side_tool="true" visible="true" weight="0.32868758" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="30" weight="0.329849" />
       <window_info anchor="bottom" id="Activation Trace" order="31" weight="0.329849" />
       <window_info anchor="bottom" id="Visualiseer" order="32" />
@@ -9146,121 +8906,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://ActionSL/ActionSL.structure/When">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ActionSL/ActionSL.structure/WithClause">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="239" />
-                <property name="caretXRelative" value="80" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="name">
-                  <node node_reference="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771629473" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node node_ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771629473" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ActionSL/ActionSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ActionSL/ActionSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ActionSL/ActionSL.structure/WithClause">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://ActionSL/ActionSL.structure/&lt;no name&gt;[ConceptDeclaration]" />
     <entry file="mps://node://ActionSL/ActionSL.structure/WithClause">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -9324,279 +8970,6 @@
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/2162480395995451485" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_with">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_with">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:4ca71d67-5128-4ff0-9ce9-58b699d858c3(ActionSL.intentions)/2162480395995530049" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_with">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_with">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395995589620" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_with">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_with">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507192754205" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA" />
-    <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="190">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="104" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_87dhgu_a0">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="190">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="104" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_87dhgu_a0">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395995652121" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -9743,150 +9116,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[ProcesModel]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="175" />
-                <property name="caretXRelative" value="72" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_linkType">
-                  <node node_reference="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008644" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_vlyntf_c0i0">
-                  <node node_reference="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008621" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008644" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.PM" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[ConstructionModel]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_hasProduct">
-                  <node node_reference="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008618" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008618" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[FactModel]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="24" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_id">
-                  <node node_reference="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008698" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[ActionRuleSpecifications]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="311" />
-                <property name="caretXRelative" value="128" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008702" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS)/2162480395996008702" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[ProcesModel]" />
+    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[ConstructionModel]" />
+    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[FactModel]" />
+    <entry file="mps://node://DemowB.sandbox/DemowB.testARS/&lt;no name&gt;[ActionRuleSpecifications]" />
     <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -9916,472 +9149,6 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="190">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="104" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_87dhgu_a0">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="190">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="119" />
-                <property name="caretXRelative" value="104" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_87dhgu_a0">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559807" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="399" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_actorRole">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010361" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellId="empty_actorRole">
-                <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010361" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="90">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="72" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010410" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010361" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="399" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_actorRole">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010361" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellId="empty_actorRole">
-                <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010361" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010361" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="481">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="343" />
-                <property name="caretXRelative" value="224" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507193994920" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010410" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="90">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="72" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010410" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010410" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="446">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_id">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602161" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507193994920" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="481">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="343" />
-                <property name="caretXRelative" value="224" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507193994920" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/6832341507193994920" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="5" viewPositionY="1099">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="279" />
-                <property name="caretXRelative" value="160" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559305" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellId="empty_actorRole">
-                <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010425" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602161" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="446">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="111" />
-                <property name="caretXRelative" value="16" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_id">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602161" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602161" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
         </state>
@@ -10408,108 +9175,6 @@
             <restoreAlways />
           </memento>
           <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559305" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="5" viewPositionY="1099">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="279" />
-                <property name="caretXRelative" value="160" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559305" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellId="empty_actorRole">
-                <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010425" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395994559305" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="179">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="607" />
-                <property name="caretXRelative" value="208" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010434" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="179">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="607" />
-                <property name="caretXRelative" value="208" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010434" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010434" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -10592,61 +9257,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://FactSL/FactSL.editor/null_Editor">
+    <entry file="mps://node://FactSL/FactSL.editor/null_Editor" />
+    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/TransactionKind">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="59" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
-                  <node node_reference="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/2162480395999159200" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable />
             <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/TransactionKind">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="411" />
-                <property name="caretXRelative" value="8" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2222079712860968328" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -10661,18 +9283,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://WAA/WAA.specifications/TPT WAA">
+    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]" />
+    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </inspectorMemento>
+          <node />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://DemoSL/DemoSL.structure/TableHeader">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="223" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="99" />
+                <property name="caretXRelative" value="32" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" />
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480396003073820" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -10681,7 +9346,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -10692,13 +9357,7 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <node />
+          <node node_ref="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480396003073818" />
         </state>
       </provider>
     </entry>
@@ -10709,11 +9368,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="263" />
-                <property name="caretXRelative" value="88" />
+                <property name="caretX" value="279" />
+                <property name="caretXRelative" value="8" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_value">
-                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" />
+                <cellInfo cellId="Constant_zedcwq_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480396002359091" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -10759,7 +9418,7 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2162480395999585761" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -10771,6 +9430,40 @@
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/2222079712856524806" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://WAA/WAA.specifications/TPT WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="223" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
         </state>
       </provider>
     </entry>

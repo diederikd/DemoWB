@@ -22,8 +22,9 @@ public final class LanguageConceptSwitch {
   public static final int ProcesStructureDiagram = 10;
   public static final int RunningTransaction = 11;
   public static final int Simulation = 12;
-  public static final int TransactionProductTable = 13;
-  public static final int WorkInstructionSpecifications = 14;
+  public static final int TableHeader = 13;
+  public static final int TransactionProductTable = 14;
+  public static final int WorkInstructionSpecifications = 15;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x61f0ccba8ded47eeL, 0xb0248f1c223c70efL);
@@ -40,6 +41,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2e078028fdc476e1L, ProcesStructureDiagram);
     builder.put(0x68c7a6aec446e55aL, RunningTransaction);
     builder.put(0x2fce1a7d99f0d05cL, Simulation);
+    builder.put(0x1e02ac767d77338cL, TableHeader);
     builder.put(0x2613bb9aeaa69f01L, TransactionProductTable);
     builder.put(0x2613bb9aeaa69f00L, WorkInstructionSpecifications);
     myIndex = builder.seal();
