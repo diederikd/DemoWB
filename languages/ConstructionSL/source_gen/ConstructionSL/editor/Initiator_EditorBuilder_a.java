@@ -41,8 +41,8 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.lang.editor.generator.internal.PrimaryReferentMenuCellMenuPart;
 import jetbrains.mps.smodel.action.IReferentPresentationProvider;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import ConstructionSL.behavior.AbstractActorRole__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import ConstructionSL.behavior.AbstractActorRole__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.openapi.editor.style.Style;
@@ -193,7 +193,10 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        return "(" + AbstractActorRole__BehaviorDescriptor.getID_id1S2F7pXAkU4.invoke(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690475L, "actorRole"))) + ")";
+        if ((SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690475L, "actorRole")) != null)) {
+          return "(" + AbstractActorRole__BehaviorDescriptor.getID_id1S2F7pXAkU4.invoke(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690475L, "actorRole"))) + ")";
+        }
+        return "";
       }
       public void setText(String s) {
       }

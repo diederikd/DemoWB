@@ -343,7 +343,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
       }
     };
 
-    provider.setNoTargetText("<no hasProduct>");
+    provider.setNoTargetText("<select product>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
@@ -429,7 +429,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
   private EditorCell createReadOnlyModelAccessor_1() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        return "(" + SPropertyOperations.getString(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x1ed669b9cb67b3bcL, "hasProduct")), MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")) + ")";
+        if ((SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x1ed669b9cb67b3bcL, "hasProduct")) != null)) {
+          return "(" + SPropertyOperations.getString(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x1ed669b9cb67b3bcL, "hasProduct")), MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id")) + ")";
+        }
+        return "";
       }
       public void setText(String s) {
       }

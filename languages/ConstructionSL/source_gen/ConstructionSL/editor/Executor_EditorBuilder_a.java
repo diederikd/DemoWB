@@ -44,8 +44,8 @@ import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.lang.editor.generator.internal.PrimaryReferentMenuCellMenuPart;
 import jetbrains.mps.smodel.action.IReferentPresentationProvider;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import ConstructionSL.behavior.AbstractActorRole__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import ConstructionSL.behavior.AbstractActorRole__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 
@@ -117,7 +117,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       }
     };
 
-    provider.setNoTargetText("<no actorRole>");
+    provider.setNoTargetText("<select executor>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
@@ -167,7 +167,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
         EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-        editorCell.setDefaultText("<no name>");
+        editorCell.setDefaultText("<select executor>");
         editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
         editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         editorCell.setCellId("property_name");
@@ -206,7 +206,10 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor() {
       public String getText() {
-        return "(" + AbstractActorRole__BehaviorDescriptor.getID_id1S2F7pXAkU4.invoke(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904eaL, "actorRole"))) + ")";
+        if ((SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904eaL, "actorRole")) != null)) {
+          return "(" + AbstractActorRole__BehaviorDescriptor.getID_id1S2F7pXAkU4.invoke(SLinkOperations.getTarget(myNode, MetaAdapterFactory.getReferenceLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904eaL, "actorRole"))) + ")";
+        }
+        return "";
       }
       public void setText(String s) {
       }
