@@ -3589,5 +3589,28 @@
       <node concept="3clFbS" id="6z7DEV4JMk6" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="4vyZ9NO2rA0">
+    <property role="3GE5qa" value="Construction Model" />
+    <ref role="13h7C2" to="ar0b:2ojITFEC3aL" resolve="OrganisationConstructionDiagram" />
+    <node concept="13hLZK" id="4vyZ9NO2rA1" role="13h7CW">
+      <node concept="3clFbS" id="4vyZ9NO2rA2" role="2VODD2">
+        <node concept="3clFbF" id="4vyZ9NO2rAn" role="3cqZAp">
+          <node concept="2OqwBi" id="4vyZ9NO2slI" role="3clFbG">
+            <node concept="2OqwBi" id="4vyZ9NO2rI7" role="2Oq$k0">
+              <node concept="13iPFW" id="4vyZ9NO2rAl" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4vyZ9NO2rQB" role="2OqNvi">
+                <ref role="3TsBF5" to="ar0b:4vyZ9NNZYKi" resolve="internalCompositeActorRole" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="4vyZ9NO2szb" role="2OqNvi">
+              <node concept="3clFbT" id="4vyZ9NO2sAQ" role="tz02z">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

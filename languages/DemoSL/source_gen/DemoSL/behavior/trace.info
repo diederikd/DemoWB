@@ -15,7 +15,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="14,0,44,0" name="DemoSL.behavior.BehaviorAspectDescriptor" />
+      <unit at="14,0,47,0" name="DemoSL.behavior.BehaviorAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:297ba07d-585d-425a-b80f-7b0c8d53e99c(DemoSL.behavior)/3316760564125595245">
@@ -358,6 +358,72 @@
       <unit id="3444719891733643754" at="171,303,175,5" name="DemoSL.behavior.ProcesModel__BehaviorDescriptor$25" />
       <unit id="3444719891733643772" at="175,240,179,5" name="DemoSL.behavior.ProcesModel__BehaviorDescriptor$26" />
       <unit id="3316760564125595245" at="29,0,256,0" name="DemoSL.behavior.ProcesModel__BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:297ba07d-585d-425a-b80f-7b0c8d53e99c(DemoSL.behavior)/5179980272468867456">
+    <file name="OrganisationConstructionDiagram__BehaviorDescriptor.java">
+      <node id="5179980272468867456" at="21,0,22,0" concept="8" trace="CONCEPT" />
+      <node id="5179980272468867456" at="22,0,23,0" concept="8" trace="REGISTRY" />
+      <node id="5179980272468867456" at="25,0,26,0" concept="8" trace="BH_METHODS" />
+      <node id="5179980272468867479" at="27,63,28,202" concept="1" />
+      <node id="5179980272468867456" at="32,69,33,20" concept="10" />
+      <node id="5179980272468867456" at="37,114,38,21" concept="1" />
+      <node id="5179980272468867456" at="42,114,43,49" concept="5" />
+      <node id="5179980272468867456" at="44,26,45,56" concept="12" />
+      <node id="5179980272468867456" at="48,14,49,58" concept="12" />
+      <node id="5179980272468867456" at="54,128,55,49" concept="5" />
+      <node id="5179980272468867456" at="56,26,57,56" concept="12" />
+      <node id="5179980272468867456" at="60,14,61,58" concept="12" />
+      <node id="5179980272468867456" at="67,48,68,22" concept="6" />
+      <node id="5179980272468867456" at="73,40,74,19" concept="6" />
+      <node id="5179980272468867456" at="27,0,30,0" concept="9" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5179980272468867456" at="32,0,35,0" concept="0" trace="OrganisationConstructionDiagram__BehaviorDescriptor#()V" />
+      <node id="5179980272468867456" at="43,49,46,5" concept="3" />
+      <node id="5179980272468867456" at="55,49,58,5" concept="3" />
+      <node id="5179980272468867456" at="36,0,40,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
+      <node id="5179980272468867456" at="46,5,50,5" concept="11" />
+      <node id="5179980272468867456" at="58,5,62,5" concept="11" />
+      <node id="5179980272468867456" at="65,0,70,0" concept="4" trace="getDeclaredMethods#()Ljava/util/List;" />
+      <node id="5179980272468867456" at="71,0,76,0" concept="4" trace="getConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5179980272468867456" at="41,0,52,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <node id="5179980272468867456" at="53,0,64,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
+      <scope id="5179980272468867456" at="27,63,28,202" />
+      <scope id="5179980272468867456" at="32,69,33,20" />
+      <scope id="5179980272468867456" at="37,114,38,21" />
+      <scope id="5179980272468867456" at="44,26,45,56" />
+      <scope id="5179980272468867456" at="48,14,49,58" />
+      <scope id="5179980272468867456" at="56,26,57,56" />
+      <scope id="5179980272468867456" at="60,14,61,58" />
+      <scope id="5179980272468867456" at="67,48,68,22" />
+      <scope id="5179980272468867456" at="73,40,74,19" />
+      <scope id="5179980272468867456" at="27,0,30,0">
+        <var name="__thisNode__" id="5179980272468867456" />
+      </scope>
+      <scope id="5179980272468867456" at="32,0,35,0" />
+      <scope id="5179980272468867456" at="36,0,40,0">
+        <var name="constructor" id="5179980272468867456" />
+        <var name="node" id="5179980272468867456" />
+        <var name="parameters" id="5179980272468867456" />
+      </scope>
+      <scope id="5179980272468867456" at="65,0,70,0" />
+      <scope id="5179980272468867456" at="71,0,76,0" />
+      <scope id="5179980272468867456" at="42,114,50,5">
+        <var name="methodIndex" id="5179980272468867456" />
+      </scope>
+      <scope id="5179980272468867456" at="54,128,62,5">
+        <var name="methodIndex" id="5179980272468867456" />
+      </scope>
+      <scope id="5179980272468867456" at="41,0,52,0">
+        <var name="method" id="5179980272468867456" />
+        <var name="node" id="5179980272468867456" />
+        <var name="parameters" id="5179980272468867456" />
+      </scope>
+      <scope id="5179980272468867456" at="53,0,64,0">
+        <var name="concept" id="5179980272468867456" />
+        <var name="method" id="5179980272468867456" />
+        <var name="parameters" id="5179980272468867456" />
+      </scope>
+      <unit id="5179980272468867456" at="20,0,77,0" name="DemoSL.behavior.OrganisationConstructionDiagram__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:297ba07d-585d-425a-b80f-7b0c8d53e99c(DemoSL.behavior)/7550186569850824651">

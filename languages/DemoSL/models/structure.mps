@@ -65,6 +65,11 @@
     <node concept="PrWs8" id="2ojITFECuH2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="4vyZ9NNZYKi" role="1TKVEl">
+      <property role="IQ2nx" value="5179980272468225042" />
+      <property role="TrG5h" value="internalCompositeActorRole" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDDVW">
     <property role="EcuMT" value="2743742872034909948" />

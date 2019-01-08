@@ -367,7 +367,6 @@
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
-      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -2819,60 +2818,16 @@
         <node concept="2ZMM4L" id="LlDDn7e$mV" role="aCds2">
           <node concept="3clFbS" id="LlDDn7e$mX" role="2VODD2">
             <node concept="3clFbF" id="LlDDn7e$vW" role="3cqZAp">
-              <node concept="2OqwBi" id="LlDDn7iroR" role="3clFbG">
-                <node concept="2OqwBi" id="LlDDn7eAJu" role="2Oq$k0">
-                  <node concept="2OqwBi" id="LlDDn7e$G6" role="2Oq$k0">
-                    <node concept="2ZN8Hh" id="LlDDn7e$vV" role="2Oq$k0" />
-                    <node concept="3Tsc0h" id="LlDDn7e$Vs" role="2OqNvi">
-                      <ref role="3TtcxE" to="pgdh:2ojITFECqqc" resolve="actorRoles" />
-                    </node>
-                  </node>
-                  <node concept="v3k3i" id="LlDDn7eEdZ" role="2OqNvi">
-                    <node concept="chp4Y" id="LlDDn7eEv9" role="v3oSu">
-                      <ref role="cht4Q" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3zZkjj" id="LlDDn7irFl" role="2OqNvi">
-                  <node concept="1bVj0M" id="LlDDn7irFn" role="23t8la">
-                    <node concept="3clFbS" id="LlDDn7irFo" role="1bW5cS">
-                      <node concept="3clFbF" id="LlDDn7irRq" role="3cqZAp">
-                        <node concept="2OqwBi" id="LlDDn7iuA2" role="3clFbG">
-                          <node concept="2OqwBi" id="LlDDn7is8v" role="2Oq$k0">
-                            <node concept="37vLTw" id="LlDDn7irRp" role="2Oq$k0">
-                              <ref role="3cqZAo" node="LlDDn7irFp" resolve="it" />
-                            </node>
-                            <node concept="3Tsc0h" id="LlDDn7isvO" role="2OqNvi">
-                              <ref role="3TtcxE" to="pgdh:2S7w2zXos5c" resolve="isActorRoleIn" />
-                            </node>
-                          </node>
-                          <node concept="1v1jN8" id="LlDDn7iweR" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="Rh6nW" id="LlDDn7irFp" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="LlDDn7irFq" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2ZMM4L" id="LlDDn7eEP0" role="aCds2">
-          <node concept="3clFbS" id="LlDDn7eEP1" role="2VODD2">
-            <node concept="3clFbF" id="LlDDn7eEP2" role="3cqZAp">
-              <node concept="2OqwBi" id="LlDDn7eEP3" role="3clFbG">
-                <node concept="2OqwBi" id="LlDDn7eEP4" role="2Oq$k0">
-                  <node concept="2ZN8Hh" id="LlDDn7eEP5" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="LlDDn7eEP6" role="2OqNvi">
+              <node concept="2OqwBi" id="LlDDn7eAJu" role="3clFbG">
+                <node concept="2OqwBi" id="LlDDn7e$G6" role="2Oq$k0">
+                  <node concept="2ZN8Hh" id="LlDDn7e$vV" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="LlDDn7e$Vs" role="2OqNvi">
                     <ref role="3TtcxE" to="pgdh:2ojITFECqqc" resolve="actorRoles" />
                   </node>
                 </node>
-                <node concept="v3k3i" id="LlDDn7eEP7" role="2OqNvi">
-                  <node concept="chp4Y" id="LlDDn7eFjG" role="v3oSu">
-                    <ref role="cht4Q" to="pgdh:2ojITFECoW8" resolve="CompositeActorRole" />
+                <node concept="v3k3i" id="LlDDn7eEdZ" role="2OqNvi">
+                  <node concept="chp4Y" id="LlDDn7eEv9" role="v3oSu">
+                    <ref role="cht4Q" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
                   </node>
                 </node>
               </node>
