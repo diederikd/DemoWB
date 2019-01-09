@@ -24,7 +24,7 @@
       <unit at="24,0,87,0" name="FactSL.editor.AttributeType_SubstituteMenu" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="18,0,98,0" name="FactSL.editor.EditorAspectDescriptorImpl" />
+      <unit at="18,0,100,0" name="FactSL.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="EventType_SubstituteMenu.java">
       <unit at="47,0,65,0" name="FactSL.editor.EventType_SubstituteMenu$SMP_ReferenceScope_7cujuq_a" />
@@ -7111,6 +7111,51 @@
       <unit id="5047305753772826756" at="71,42,90,5" name="FactSL.editor.ProductKindFormulation_EditorBuilder_a$1" />
       <unit id="5047305753772826767" at="112,0,164,0" name="FactSL.editor.ProductKindFormulation_EditorBuilder_a$Inline_Builder0" />
       <unit id="5047305753772826756" at="42,0,165,0" name="FactSL.editor.ProductKindFormulation_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/5179980272473778784">
+    <file name="ValueType_Editor.java">
+      <node id="5179980272473778784" at="11,79,12,75" concept="7" />
+      <node id="5179980272473778784" at="11,0,14,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="5179980272473778784" at="11,79,12,75" />
+      <scope id="5179980272473778784" at="11,0,14,0">
+        <var name="editorContext" id="5179980272473778784" />
+        <var name="node" id="5179980272473778784" />
+      </scope>
+      <unit id="5179980272473778784" at="10,0,15,0" name="FactSL.editor.ValueType_Editor" />
+    </file>
+    <file name="ValueType_EditorBuilder_a.java">
+      <node id="5179980272473778784" at="16,89,17,19" concept="10" />
+      <node id="5179980272473778784" at="17,19,18,18" concept="2" />
+      <node id="5179980272473778784" at="23,26,24,18" concept="7" />
+      <node id="5179980272473778784" at="27,39,28,31" concept="7" />
+      <node id="5179980272473778786" at="31,42,32,119" concept="6" />
+      <node id="5179980272473778786" at="32,119,33,72" concept="6" />
+      <node id="5179980272473778786" at="34,26,35,27" concept="2" />
+      <node id="5179980272473778786" at="35,27,36,30" concept="2" />
+      <node id="5179980272473778786" at="37,5,38,22" concept="7" />
+      <node id="5179980272473778784" at="13,0,15,0" concept="3" trace="myNode" />
+      <node id="5179980272473778784" at="27,0,30,0" concept="5" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5179980272473778784" at="16,0,20,0" concept="1" trace="ValueType_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5179980272473778786" at="33,72,37,5" concept="4" />
+      <node id="5179980272473778784" at="21,0,26,0" concept="5" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5179980272473778786" at="31,0,40,0" concept="5" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="5179980272473778784" at="23,26,24,18" />
+      <scope id="5179980272473778784" at="27,39,28,31" />
+      <scope id="5179980272473778784" at="16,89,18,18" />
+      <scope id="5179980272473778786" at="34,26,36,30" />
+      <scope id="5179980272473778784" at="27,0,30,0" />
+      <scope id="5179980272473778784" at="16,0,20,0">
+        <var name="context" id="5179980272473778784" />
+        <var name="node" id="5179980272473778784" />
+      </scope>
+      <scope id="5179980272473778784" at="21,0,26,0" />
+      <scope id="5179980272473778786" at="31,42,38,22">
+        <var name="bigCell" id="5179980272473778786" />
+        <var name="editorCell" id="5179980272473778786" />
+      </scope>
+      <scope id="5179980272473778786" at="31,0,40,0" />
+      <unit id="5179980272473778784" at="12,0,41,0" name="FactSL.editor.ValueType_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:3603e63e-b8c6-45dd-ba22-5e5ec81f483f(FactSL.editor)/6832341507193023566">

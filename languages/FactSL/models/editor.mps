@@ -2367,5 +2367,12 @@
       <ref role="2$4xQ3" to="wtx7:1VmqrBbuzsf" resolve="TPT" />
     </node>
   </node>
+  <node concept="24kQdi" id="4vyZ9NOlaDw">
+    <property role="3GE5qa" value="Value Types" />
+    <ref role="1XX52x" to="ajas:2ojITFEDW2K" resolve="ValueType" />
+    <node concept="PMmxH" id="4vyZ9NOlaDy" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
 </model>
 
