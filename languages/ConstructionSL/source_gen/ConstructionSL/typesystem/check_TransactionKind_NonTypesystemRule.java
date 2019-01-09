@@ -7,29 +7,56 @@ import jetbrains.mps.lang.typesystem.runtime.NonTypesystemRule_Runtime;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class check_TransactionKind_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
   public check_TransactionKind_NonTypesystemRule() {
   }
   public void applyRule(final SNode transactionKind, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(transactionKind), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, "ConstructionSL.structure.TransactionKind"))).where(new IWhereFilter<SNode>() {
-      public boolean accept(SNode it) {
-        return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id")).equals(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id"))) && transactionKind != it;
+    if (isNotEmptyString(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id")))) {
+      if (ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(transactionKind), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, "ConstructionSL.structure.TransactionKind"))).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id")).equals(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id"))) && transactionKind != it;
+        }
+      }).isNotEmpty()) {
+        {
+          MessageTarget errorTarget = new NodeMessageTarget();
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "id of transactionkind is not unique", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "2222079712864604661", null, errorTarget);
+        }
       }
-    }).isNotEmpty()) {
+    }
+    if (ListSequence.fromList(SLinkOperations.getChildren(transactionKind, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x6331c55a1a69117cL, "initiatorConcept"))).isEmpty()) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "id of transactionkind is not unique", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "2222079712864604661", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have at least one initiator", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272474956246", null, errorTarget);
+      }
+    }
+    if ((SLinkOperations.getTarget(transactionKind, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x6331c55a1a69118fL, "executorConcept")) == null)) {
+      {
+        MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have one executor", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272475003321", null, errorTarget);
+      }
+    }
+    if (isEmptyString(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL, 0x2613bb9aeaa032acL, "name")))) {
+      {
+        MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have a name", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272475019431", null, errorTarget);
+      }
+    }
+    if (isEmptyString(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id")))) {
+      {
+        MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have a unique id", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272474955835", null, errorTarget);
       }
     }
   }
@@ -41,5 +68,11 @@ public class check_TransactionKind_NonTypesystemRule extends AbstractNonTypesyst
   }
   public boolean overrides() {
     return false;
+  }
+  private static boolean isNotEmptyString(String str) {
+    return str != null && str.length() > 0;
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.length() == 0;
   }
 }
