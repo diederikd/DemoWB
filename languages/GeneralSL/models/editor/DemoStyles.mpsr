@@ -138,10 +138,16 @@
         <property role="Vbekb" value="BOLD" />
       </node>
     </node>
-    <node concept="14StLt" id="pMarvIFrHl" role="V601i">
+    <node concept="14StLt" id="4vyZ9NOzYAu" role="V601i">
       <property role="TrG5h" value="Black" />
-      <node concept="VechU" id="pMarvIFyzG" role="3F10Kt">
+      <node concept="VechU" id="4vyZ9NOzYAv" role="3F10Kt">
         <property role="Vb096" value="black" />
+      </node>
+    </node>
+    <node concept="14StLt" id="pMarvIFrHl" role="V601i">
+      <property role="TrG5h" value="Gray" />
+      <node concept="VechU" id="pMarvIFyzG" role="3F10Kt">
+        <property role="Vb096" value="gray" />
       </node>
     </node>
     <node concept="14StLt" id="4obCttul$l2" role="V601i">

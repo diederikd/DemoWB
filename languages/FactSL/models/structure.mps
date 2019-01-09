@@ -331,14 +331,14 @@
       <property role="IQ2ns" value="2222079712865361134" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="eventTypeA" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
     </node>
     <node concept="1TJgyj" id="1VmqrBbWhNK" role="1TKVEi">
       <property role="IQ2ns" value="2222079712865361136" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="eventTypeB" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
     </node>
   </node>

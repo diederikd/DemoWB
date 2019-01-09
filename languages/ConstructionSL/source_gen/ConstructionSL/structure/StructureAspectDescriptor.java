@@ -140,7 +140,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506429");
     b.version(2);
-    b.associate("actorRole", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506474").done();
+    b.associate("actorRole", 0x6331c55a1a6904eaL).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("7147711074394506474").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForInitiator() {
@@ -148,7 +148,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506310");
     b.version(2);
-    b.associate("actorRole", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(false).origin("7147711074394506357").done();
+    b.associate("actorRole", 0x6331c55a1a690475L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x585f5ae0f8b9236L).optional(true).origin("7147711074394506357").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForScopeOfInterest() {

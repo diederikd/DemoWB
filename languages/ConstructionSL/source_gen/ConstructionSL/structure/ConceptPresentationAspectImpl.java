@@ -78,14 +78,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Executor:
         if (props_Executor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a6904bdL, 0x6331c55a1a6904eaL, "actorRole", "", "");
+          cpb.rawPresentation("Executor");
           props_Executor = cpb.create();
         }
         return props_Executor;
       case LanguageConceptSwitch.Initiator:
         if (props_Initiator == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x6331c55a1a690446L, 0x6331c55a1a690475L, "actorRole", "", "");
+          cpb.rawPresentation("Initiator");
           props_Initiator = cpb.create();
         }
         return props_Initiator;

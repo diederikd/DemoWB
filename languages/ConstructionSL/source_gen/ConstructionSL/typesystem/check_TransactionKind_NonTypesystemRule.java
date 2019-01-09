@@ -15,8 +15,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
+import jetbrains.mps.errors.messageTargets.PropertyMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.errors.messageTargets.ReferenceMessageTarget;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class check_TransactionKind_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -31,6 +33,7 @@ public class check_TransactionKind_NonTypesystemRule extends AbstractNonTypesyst
       }).isNotEmpty()) {
         {
           MessageTarget errorTarget = new NodeMessageTarget();
+          errorTarget = new PropertyMessageTarget("id");
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "id of transactionkind is not unique", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "2222079712864604661", null, errorTarget);
         }
       }
@@ -38,24 +41,28 @@ public class check_TransactionKind_NonTypesystemRule extends AbstractNonTypesyst
     if (ListSequence.fromList(SLinkOperations.getChildren(transactionKind, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x6331c55a1a69117cL, "initiatorConcept"))).isEmpty()) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
+        errorTarget = new ReferenceMessageTarget("initiatorConcept");
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have at least one initiator", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272474956246", null, errorTarget);
       }
     }
     if ((SLinkOperations.getTarget(transactionKind, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x6331c55a1a69118fL, "executorConcept")) == null)) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
+        errorTarget = new ReferenceMessageTarget("executorConcept");
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have one executor", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272475003321", null, errorTarget);
       }
     }
     if (isEmptyString(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL, 0x2613bb9aeaa032acL, "name")))) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
+        errorTarget = new PropertyMessageTarget("name");
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have a name", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272475019431", null, errorTarget);
       }
     }
     if (isEmptyString(SPropertyOperations.getString(transactionKind, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, 0x2613bb9aeaa18f06L, "id")))) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
+        errorTarget = new PropertyMessageTarget("id");
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(transactionKind, "transactionkind should have a unique id", "r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272474955835", null, errorTarget);
       }
     }

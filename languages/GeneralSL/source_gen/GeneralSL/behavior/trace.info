@@ -176,5 +176,16 @@
       <unit id="2743742872034593632" at="28,0,152,0" name="GeneralSL.behavior.ILowerCaseNamedConcept__BehaviorDescriptor" />
     </file>
   </root>
+  <root nodeRef="r:fadd3d0e-ddc4-4915-bb2e-0af347cdb7cf(GeneralSL.behavior)/5179980272476671836">
+    <file name="CamelCase.java">
+      <node id="5179980272476681230" at="7,40,8,138" concept="5" />
+      <node id="5179980272476681225" at="7,0,10,0" concept="8" trace="split#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="5179980272476681227" at="7,40,8,138" />
+      <scope id="5179980272476681225" at="7,0,10,0">
+        <var name="s" id="5179980272476681241" />
+      </scope>
+      <unit id="5179980272476671836" at="6,0,11,0" name="GeneralSL.behavior.CamelCase" />
+    </file>
+  </root>
 </debug-info>
 

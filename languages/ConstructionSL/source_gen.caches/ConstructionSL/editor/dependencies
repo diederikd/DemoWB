@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="ConstructionSL.editor.AbstractActorRole_Editor" file="AbstractActorRole_Editor.java">
+    <classNode dependClassName="ConstructionSL.editor.AbstractActorRole_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="ConstructionSL.editor.AbstractActorRole_EditorBuilder_a" file="AbstractActorRole_EditorBuilder_a.java">
+    <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.GrayStyleClass" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="ConstructionSL.editor.AbstractTransactionKind_Editor" file="AbstractTransactionKind_Editor.java">
+    <classNode dependClassName="ConstructionSL.editor.AbstractTransactionKind_EditorBuilder_a" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="ConstructionSL.editor.AbstractTransactionKind_EditorBuilder_a" file="AbstractTransactionKind_EditorBuilder_a.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
   <dependency className="ConstructionSL.editor.ActorRoleReference_Editor" file="ActorRoleReference_Editor.java">
     <classNode dependClassName="ConstructionSL.editor.ActorRoleReference_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -396,6 +436,8 @@
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
   <dependency className="ConstructionSL.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
+    <classNode dependClassName="ConstructionSL.editor.AbstractActorRole_Editor" />
+    <classNode dependClassName="ConstructionSL.editor.AbstractTransactionKind_Editor" />
     <classNode dependClassName="ConstructionSL.editor.ActorRoleReference_Editor" />
     <classNode dependClassName="ConstructionSL.editor.ActorRoleReference_SubstituteMenu" />
     <classNode dependClassName="ConstructionSL.editor.ActorRole_Editor" />
@@ -406,9 +448,7 @@
     <classNode dependClassName="ConstructionSL.editor.CompositeActorRole_Editor" />
     <classNode dependClassName="ConstructionSL.editor.CompositeActorRole_OCD_Editor" />
     <classNode dependClassName="ConstructionSL.editor.Executor_Editor" />
-    <classNode dependClassName="ConstructionSL.editor.Executor_SubstituteMenu" />
     <classNode dependClassName="ConstructionSL.editor.Initiator_Editor" />
-    <classNode dependClassName="ConstructionSL.editor.Initiator_SubstituteMenu" />
     <classNode dependClassName="ConstructionSL.editor.ScopeOfInterest_Editor" />
     <classNode dependClassName="ConstructionSL.editor.ScopeOfInterest_OCD_Editor" />
     <classNode dependClassName="ConstructionSL.editor.TransactionKindReference_Editor" />
@@ -475,7 +515,6 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Error" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.SPropertyAccessor" />
@@ -494,27 +533,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="ConstructionSL.editor.Executor_SubstituteMenu" file="Executor_SubstituteMenu.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.ConceptMenusPart" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
-    <classNode dependClassName="jetbrains.mps.smodel.ConceptDescendantsCache" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="ConstructionSL.editor.Initiator_Editor" file="Initiator_Editor.java">
     <classNode dependClassName="ConstructionSL.editor.Initiator_EditorBuilder_a" />
@@ -555,7 +573,6 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Error" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Property" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.ModelAccessor" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.SPropertyAccessor" />
@@ -574,27 +591,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="ConstructionSL.editor.Initiator_SubstituteMenu" file="Initiator_SubstituteMenu.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.ArrayList" />
-    <classNode dependClassName="java.util.Collection" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.ConceptMenusPart" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.MenuPart" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup" />
-    <classNode dependClassName="jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem" />
-    <classNode dependClassName="jetbrains.mps.smodel.ConceptDescendantsCache" />
-    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.language.LanguageRegistry" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.menus.substitute.SubstituteMenuBase" />
   </dependency>
   <dependency className="ConstructionSL.editor.PresentationProviders" file="PresentationProviders.java">
     <classNode dependClassName="ConstructionSL.behavior.AbstractActorRole__BehaviorDescriptor" />
@@ -1203,7 +1199,7 @@
   </dependency>
   <dependency className="ConstructionSL.editor.TransactionKind_idAndName_EditorBuilder_a" file="TransactionKind_idAndName_EditorBuilder_a.java">
     <classNode dependClassName="ConstructionSL.behavior.TransactionKind__BehaviorDescriptor" />
-    <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.BlackStyleClass" />
+    <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.GrayStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfDocumentalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfInformationalProductionStyleClass" />
     <classNode dependClassName="GeneralSL.editor.DemoStyles_StyleSheet.tfOriginalProductionStyleClass" />

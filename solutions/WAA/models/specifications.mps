@@ -147,6 +147,11 @@
       <concept id="2743742872035015481" name="FactSL.structure.TruthValue" flags="ng" index="3cIS2z" />
       <concept id="2743742872035015470" name="FactSL.structure.Duration" flags="ng" index="3cIS2O" />
       <concept id="2743742872035015471" name="FactSL.structure.Time" flags="ng" index="3cIS2P" />
+      <concept id="2222079712865361131" name="FactSL.structure.EventLaw" flags="ng" index="3l9Rli">
+        <property id="2222079712865361132" name="type" index="3l9Rll" />
+        <reference id="2222079712865361136" name="eventTypeB" index="3l9Rl9" />
+        <reference id="2222079712865361134" name="eventTypeA" index="3l9Rln" />
+      </concept>
       <concept id="464479581526895583" name="FactSL.structure.Specialisation" flags="ng" index="3C9K9C">
         <reference id="464479581526895585" name="entityType" index="3C9K9m" />
         <reference id="464479581526895584" name="constructuredentityType" index="3C9K9n" />
@@ -191,22 +196,8 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
-      <concept id="7550186569849403341" name="DemoSL.structure.Case" flags="ng" index="2F2X5z">
-        <child id="7550186569857426782" name="runningtransactions" index="2GwkfK" />
-      </concept>
-      <concept id="7550186569850605510" name="DemoSL.structure.Act" flags="ng" index="2F6m_C">
-        <property id="7550186569867022185" name="initiation" index="2G7IB7" />
-        <reference id="7550186569850605515" name="TransactionKindStepKind" index="2F6m__" />
-      </concept>
-      <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
-        <property id="7550186569861026777" name="completed" index="2GIBlR" />
-        <reference id="7550186569850389327" name="state" index="2F72nx" />
-        <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
-        <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
-      </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
-        <child id="7550186569849403346" name="casesStarted" index="2F2X5W" />
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909955" name="DemoSL.structure.DerivedFactSpecifications" flags="ng" index="3cHiip">
@@ -218,6 +209,7 @@
       </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
+        <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
       </concept>
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
         <property id="3316760564125224636" name="filterTransactionKind" index="3jGGUk" />
@@ -2366,6 +2358,11 @@
   </node>
   <node concept="3cHilB" id="IuxU86foXL">
     <property role="TrG5h" value="Fact model WAA" />
+    <node concept="3l9Rli" id="4vyZ9NOy8fK" role="3l9RgF">
+      <property role="3l9Rll" value="precludes" />
+      <ref role="3l9Rl9" node="IuxU86jreF" resolve="arbeidsduur beindigd" />
+      <ref role="3l9Rln" node="IuxU86fqya" resolve="verzoek is ingewilligd" />
+    </node>
     <node concept="3cH7GX" id="IuxU86fryo" role="3cH7GF">
       <property role="TrG5h" value="Persoon" />
       <property role="3cH7GY" value="P13" />
@@ -19590,62 +19587,6 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F2X5z" id="1S2F7pX07kZ" role="2F2X5W">
-      <node concept="2GwkfO" id="1S2F7pX07l0" role="2GwkfK">
-        <ref role="2F72nx" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="1S2F7pX07l1" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07li" role="2GLOok">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07la" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        </node>
-      </node>
-      <node concept="2GwkfO" id="1S2F7pX07ly" role="2GwkfK">
-        <property role="2GIBlR" value="true" />
-        <ref role="2F72nx" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
-        <node concept="2F6m_C" id="1S2F7pX07lj" role="2GSHpF">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07lz" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucp" resolve="promiss verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07u1" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucq" resolve="execute verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07u8" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucr" resolve="state verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07uh" role="2GSHpF">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucn" resolve="accept verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-      </node>
-      <node concept="2GwkfO" id="1S2F7pX07l_" role="2GwkfK">
-        <ref role="2F72nx" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="1S2F7pX07lA" role="2GLOok">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07lB" role="2GLOok">
-          <property role="2G7IB7" value="false" />
-          <ref role="2F6m__" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="1S2F7pX07lk" role="2GSHpF">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="3jKZr9" id="4obCttudk_o">
     <property role="TrG5h" value="PSD Afwijzen van het verzoek" />

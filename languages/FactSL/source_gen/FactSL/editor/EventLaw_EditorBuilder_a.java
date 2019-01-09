@@ -77,12 +77,12 @@ import GeneralSL.editor.DemoStyles_StyleSheet.DarkredBoldStyleClass;
         }, targetNode, "eventTypeA");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_reference(cell);
         return cell;
       }
     };
 
-    provider.setNoTargetText("<no eventTypeA>");
+    provider.setNoTargetText("<select eventtype>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
@@ -128,8 +128,8 @@ import GeneralSL.editor.DemoStyles_StyleSheet.DarkredBoldStyleClass;
       try {
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-        editorCell.setDefaultText("<no name>");
+        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
+        editorCell.setDefaultText("<select eventtype>");
         editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
         editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         editorCell.setCellId("property_name");
@@ -192,12 +192,12 @@ import GeneralSL.editor.DemoStyles_StyleSheet.DarkredBoldStyleClass;
         }, targetNode, "eventTypeB");
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_reference(cell);
         return cell;
       }
     };
 
-    provider.setNoTargetText("<no eventTypeB>");
+    provider.setNoTargetText("<select eventtype>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
@@ -243,8 +243,8 @@ import GeneralSL.editor.DemoStyles_StyleSheet.DarkredBoldStyleClass;
       try {
         final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-        editorCell.setDefaultText("<no name>");
+        EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
+        editorCell.setDefaultText("<select eventtype>");
         editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
         editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
         editorCell.setCellId("property_name1");

@@ -38,7 +38,7 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
-import GeneralSL.editor.DemoStyles_StyleSheet.BlackStyleClass;
+import GeneralSL.editor.DemoStyles_StyleSheet.GrayStyleClass;
 
 /*package*/ class TransactionKind_idAndName_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -151,7 +151,7 @@ import GeneralSL.editor.DemoStyles_StyleSheet.BlackStyleClass;
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
-      new BlackStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
+      new GrayStyleClass(getEditorContext(), getNode()).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);

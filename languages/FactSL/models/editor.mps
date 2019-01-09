@@ -71,6 +71,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -926,9 +927,12 @@
     <node concept="3EZMnI" id="1VmqrBbWhNX" role="2wV5jI">
       <node concept="l2Vlx" id="1VmqrBbWhNY" role="2iSdaV" />
       <node concept="1iCGBv" id="1VmqrBbWhO1" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;select eventtype&gt;" />
         <ref role="1NtTu8" to="ajas:1VmqrBbWhNI" resolve="eventTypeA" />
         <node concept="1sVBvm" id="1VmqrBbWhO4" role="1sWHZn">
           <node concept="3F0A7n" id="1VmqrBbWhO6" role="2wV5jI">
+            <property role="1$x2rV" value="&lt;select eventtype&gt;" />
+            <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
@@ -938,9 +942,12 @@
         <ref role="1k5W1q" to="wtx7:1VmqrBbYZyS" resolve="DarkredBold" />
       </node>
       <node concept="1iCGBv" id="1VmqrBbWhO8" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;select eventtype&gt;" />
         <ref role="1NtTu8" to="ajas:1VmqrBbWhNK" resolve="eventTypeB" />
         <node concept="1sVBvm" id="1VmqrBbWhOb" role="1sWHZn">
           <node concept="3F0A7n" id="1VmqrBbWhOd" role="2wV5jI">
+            <property role="1$x2rV" value="&lt;select eventtype&gt;" />
+            <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
@@ -1712,7 +1719,12 @@
       <node concept="3F0ifn" id="pMarvIhOln" role="3EZMnx">
         <property role="3F0ifm" value="entity type set" />
       </node>
+      <node concept="3F0ifn" id="4vyZ9NOuu7V" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
       <node concept="3F0A7n" id="pMarvIhOlo" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;name of entity type set&gt;" />
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="ljvvj" id="pMarvIvrrI" role="3F10Kt">
           <property role="VOm3f" value="true" />

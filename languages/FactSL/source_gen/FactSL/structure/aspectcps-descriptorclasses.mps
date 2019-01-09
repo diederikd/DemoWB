@@ -7823,7 +7823,7 @@
                 <node concept="liA8E" id="Gs" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AssociationLinkBuilder.optional(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AssociationLinkBuilder" resolve="optional" />
                   <node concept="3clFbT" id="GA" role="37wK5m">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
@@ -7874,7 +7874,7 @@
                 <node concept="liA8E" id="GI" role="2OqNvi">
                   <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AssociationLinkBuilder.optional(boolean):jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2$AssociationLinkBuilder" resolve="optional" />
                   <node concept="3clFbT" id="GS" role="37wK5m">
-                    <property role="3clFbU" value="false" />
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>

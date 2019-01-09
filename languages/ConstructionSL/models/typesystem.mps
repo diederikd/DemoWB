@@ -66,8 +66,15 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
+      </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -135,6 +142,9 @@
                 </node>
                 <node concept="1YBJjd" id="1VmqrBbUpYO" role="2OEOjV">
                   <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+                </node>
+                <node concept="2ODE4t" id="4vyZ9NOJYeO" role="2OEWyd">
+                  <ref role="2ODJFN" to="pgdh:2ojITFECoW6" resolve="id" />
                 </node>
               </node>
             </node>
@@ -222,6 +232,9 @@
             <node concept="1YBJjd" id="4vyZ9NOpE7o" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
+            <node concept="2OE7Q9" id="4vyZ9NOJXTO" role="2OEWyd">
+              <ref role="2OEe5H" to="pgdh:6cLLlCqqh5W" resolve="initiatorConcept" />
+            </node>
           </node>
         </node>
         <node concept="2OqwBi" id="4vyZ9NOpE7p" role="3clFbw">
@@ -244,6 +257,9 @@
             </node>
             <node concept="1YBJjd" id="4vyZ9NOpPAV" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+            </node>
+            <node concept="2OE7Q9" id="4vyZ9NOJX$O" role="2OEWyd">
+              <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
             </node>
           </node>
         </node>
@@ -268,6 +284,9 @@
             <node concept="1YBJjd" id="4vyZ9NOpTyD" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
+            <node concept="2ODE4t" id="4vyZ9NOJXfO" role="2OEWyd">
+              <ref role="2ODJFN" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
           </node>
         </node>
         <node concept="2OqwBi" id="4vyZ9NOpTyE" role="3clFbw">
@@ -290,6 +309,9 @@
             </node>
             <node concept="1YBJjd" id="4vyZ9NOpE0X" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+            </node>
+            <node concept="2ODE4t" id="4vyZ9NOJW_Q" role="2OEWyd">
+              <ref role="2ODJFN" to="pgdh:2ojITFECoW6" resolve="id" />
             </node>
           </node>
         </node>
@@ -409,6 +431,155 @@
     <node concept="1YaCAy" id="pMarvIY8JG" role="1YuTPh">
       <property role="TrG5h" value="executor" />
       <ref role="1YaFvo" to="pgdh:6cLLlCqqgiX" resolve="Executor" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4vyZ9NOFAuy">
+    <property role="TrG5h" value="check_AggregateTransactionKind" />
+    <node concept="3clFbS" id="4vyZ9NOFAuz" role="18ibNy">
+      <node concept="3clFbJ" id="4vyZ9NOFAu$" role="3cqZAp">
+        <node concept="3clFbS" id="4vyZ9NOFAu_" role="3clFbx">
+          <node concept="3clFbJ" id="4vyZ9NOFAuA" role="3cqZAp">
+            <node concept="3clFbS" id="4vyZ9NOFAuB" role="3clFbx">
+              <node concept="2MkqsV" id="4vyZ9NOFAuC" role="3cqZAp">
+                <node concept="Xl_RD" id="4vyZ9NOFAuD" role="2MkJ7o">
+                  <property role="Xl_RC" value="id of aggregate transactionkind is not unique" />
+                </node>
+                <node concept="1YBJjd" id="4vyZ9NOFAuE" role="2OEOjV">
+                  <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="4vyZ9NOFAuF" role="3clFbw">
+              <node concept="2OqwBi" id="4vyZ9NOFAuG" role="2Oq$k0">
+                <node concept="2OqwBi" id="4vyZ9NOFAuH" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4vyZ9NOFAuI" role="2Oq$k0">
+                    <node concept="1YBJjd" id="4vyZ9NOFAuJ" role="2Oq$k0">
+                      <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+                    </node>
+                    <node concept="I4A8Y" id="4vyZ9NOFAuK" role="2OqNvi" />
+                  </node>
+                  <node concept="2SmgA7" id="4vyZ9NOFAuL" role="2OqNvi">
+                    <node concept="chp4Y" id="4vyZ9NOFBDw" role="1dBWTz">
+                      <ref role="cht4Q" to="pgdh:2ojITFECoWc" resolve="AggregateTransactionKind" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3zZkjj" id="4vyZ9NOFAuN" role="2OqNvi">
+                  <node concept="1bVj0M" id="4vyZ9NOFAuO" role="23t8la">
+                    <node concept="3clFbS" id="4vyZ9NOFAuP" role="1bW5cS">
+                      <node concept="3clFbF" id="4vyZ9NOFAuQ" role="3cqZAp">
+                        <node concept="1Wc70l" id="4vyZ9NOFAuR" role="3clFbG">
+                          <node concept="2OqwBi" id="4vyZ9NOFAuS" role="3uHU7B">
+                            <node concept="2OqwBi" id="4vyZ9NOFAuT" role="2Oq$k0">
+                              <node concept="37vLTw" id="4vyZ9NOFAuU" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4vyZ9NOFAv3" resolve="it" />
+                              </node>
+                              <node concept="3TrcHB" id="4vyZ9NOHKmD" role="2OqNvi">
+                                <ref role="3TsBF5" to="pgdh:2ojITFECoWd" resolve="id" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="4vyZ9NOFAuW" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <node concept="2OqwBi" id="4vyZ9NOFAuX" role="37wK5m">
+                                <node concept="1YBJjd" id="4vyZ9NOFAuY" role="2Oq$k0">
+                                  <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+                                </node>
+                                <node concept="3TrcHB" id="4vyZ9NOHKGR" role="2OqNvi">
+                                  <ref role="3TsBF5" to="pgdh:2ojITFECoWd" resolve="id" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3y3z36" id="4vyZ9NOFAv0" role="3uHU7w">
+                            <node concept="37vLTw" id="4vyZ9NOFAv1" role="3uHU7w">
+                              <ref role="3cqZAo" node="4vyZ9NOFAv3" resolve="it" />
+                            </node>
+                            <node concept="1YBJjd" id="4vyZ9NOFAv2" role="3uHU7B">
+                              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="4vyZ9NOFAv3" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="4vyZ9NOFAv4" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3GX2aA" id="4vyZ9NOFAv5" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4vyZ9NOFAv6" role="3clFbw">
+          <node concept="2OqwBi" id="4vyZ9NOFAv7" role="2Oq$k0">
+            <node concept="1YBJjd" id="4vyZ9NOFAv8" role="2Oq$k0">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+            </node>
+            <node concept="3TrcHB" id="4vyZ9NOHFr2" role="2OqNvi">
+              <ref role="3TsBF5" to="pgdh:2ojITFECoWd" resolve="id" />
+            </node>
+          </node>
+          <node concept="17RvpY" id="4vyZ9NOFAva" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4vyZ9NOFAvv" role="3cqZAp">
+        <node concept="3clFbS" id="4vyZ9NOFAvw" role="3clFbx">
+          <node concept="2MkqsV" id="4vyZ9NOFAvx" role="3cqZAp">
+            <node concept="Xl_RD" id="4vyZ9NOFAvy" role="2MkJ7o">
+              <property role="Xl_RC" value="aggregate transactionkind should have a name" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOFAvz" role="2OEOjV">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+            </node>
+            <node concept="2ODE4t" id="4vyZ9NOISdE" role="2OEWyd">
+              <ref role="2ODJFN" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4vyZ9NOFAv$" role="3clFbw">
+          <node concept="2OqwBi" id="4vyZ9NOFAv_" role="2Oq$k0">
+            <node concept="1YBJjd" id="4vyZ9NOFAvA" role="2Oq$k0">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+            </node>
+            <node concept="3TrcHB" id="4vyZ9NOFAvB" role="2OqNvi">
+              <ref role="3TsBF5" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
+          </node>
+          <node concept="17RlXB" id="4vyZ9NOFAvC" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4vyZ9NOFAvD" role="3cqZAp">
+        <node concept="3clFbS" id="4vyZ9NOFAvE" role="3clFbx">
+          <node concept="2MkqsV" id="4vyZ9NOFAvF" role="3cqZAp">
+            <node concept="Xl_RD" id="4vyZ9NOFAvG" role="2MkJ7o">
+              <property role="Xl_RC" value="aggregate transactionkind should have a unique id" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOFAvH" role="2OEOjV">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+            </node>
+            <node concept="2ODE4t" id="4vyZ9NOISsY" role="2OEWyd">
+              <ref role="2ODJFN" to="pgdh:2ojITFECoWd" resolve="id" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4vyZ9NOFAvI" role="3clFbw">
+          <node concept="2OqwBi" id="4vyZ9NOFAvJ" role="2Oq$k0">
+            <node concept="1YBJjd" id="4vyZ9NOFAvK" role="2Oq$k0">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
+            </node>
+            <node concept="3TrcHB" id="4vyZ9NOHFCy" role="2OqNvi">
+              <ref role="3TsBF5" to="pgdh:2ojITFECoWd" resolve="id" />
+            </node>
+          </node>
+          <node concept="17RlXB" id="4vyZ9NOFAvM" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4vyZ9NOFAvN" role="1YuTPh">
+      <property role="TrG5h" value="aggregateTransactionKind" />
+      <ref role="1YaFvo" to="pgdh:2ojITFECoWc" resolve="AggregateTransactionKind" />
     </node>
   </node>
 </model>

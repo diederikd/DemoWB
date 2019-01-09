@@ -90,9 +90,11 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
@@ -101,6 +103,7 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
@@ -1283,6 +1286,8 @@
           </node>
         </node>
         <node concept="3F0A7n" id="1VmqrBbwQjL" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <property role="1$x2rV" value="&lt;name of transactionkind&gt;" />
           <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
           <node concept="ljvvj" id="1VmqrBbwQjM" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -1394,6 +1399,7 @@
           </node>
           <node concept="3F0A7n" id="1VmqrBbwQkY" role="3EZMnx">
             <property role="1$x2rV" value="T&lt;number&gt;" />
+            <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="pgdh:2ojITFECoW6" resolve="id" />
             <node concept="ljvvj" id="1VmqrBbwQkZ" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -3250,7 +3256,7 @@
       </node>
       <node concept="3F0A7n" id="pMarvIEeOG" role="3EZMnx">
         <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
-        <ref role="1k5W1q" to="wtx7:pMarvIFrHl" resolve="Black" />
+        <ref role="1k5W1q" to="wtx7:pMarvIFrHl" resolve="Gray" />
       </node>
       <node concept="2iRfu4" id="pMarvIAQqO" role="2iSdaV" />
     </node>
@@ -4586,6 +4592,8 @@
           </node>
         </node>
         <node concept="3F0A7n" id="4vyZ9NNQPDQ" role="3EZMnx">
+          <property role="1$x2rV" value="&lt;name of aggregate transactionkind&gt;" />
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
           <node concept="ljvvj" id="4vyZ9NNQPDR" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -4602,6 +4610,7 @@
         </node>
         <node concept="3F0A7n" id="4vyZ9NNQPDV" role="3EZMnx">
           <property role="1$x2rV" value="AT&lt;number&gt;" />
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="pgdh:2ojITFECoWd" resolve="id" />
           <node concept="ljvvj" id="4vyZ9NNQPDW" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -4613,6 +4622,30 @@
           <property role="1413C4" value="body-brace" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4vyZ9NOyY8j">
+    <ref role="1XX52x" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
+    <node concept="3EZMnI" id="4vyZ9NOzYA9" role="2wV5jI">
+      <node concept="3F0ifn" id="4vyZ9NOzYAg" role="3EZMnx">
+        <property role="1cu_pB" value="0" />
+        <property role="ilYzB" value="&lt;select actorrole or composite actor role&gt;" />
+        <ref role="1k5W1q" to="wtx7:pMarvIFrHl" resolve="Gray" />
+        <node concept="pVoyu" id="4vyZ9NOD_vF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4vyZ9NOzYAc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4vyZ9NOE_Z6">
+    <ref role="1XX52x" to="pgdh:4vyZ9NNOunp" resolve="AbstractTransactionKind" />
+    <node concept="3EZMnI" id="4vyZ9NOE_Z8" role="2wV5jI">
+      <node concept="3F0ifn" id="4vyZ9NOE_Zf" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <property role="ilYzB" value="&lt;select transactionkind or aggregate transactionkind&gt;" />
+      </node>
+      <node concept="l2Vlx" id="4vyZ9NOE_Zb" role="2iSdaV" />
     </node>
   </node>
 </model>

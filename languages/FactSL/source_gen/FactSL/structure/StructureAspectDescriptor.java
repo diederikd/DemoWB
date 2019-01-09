@@ -257,8 +257,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)/2222079712865361131");
     b.version(2);
     b.prop("type", 0x1ed669b9cbf11cecL, "2222079712865361132");
-    b.associate("eventTypeA", 0x1ed669b9cbf11ceeL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(false).origin("2222079712865361134").done();
-    b.associate("eventTypeB", 0x1ed669b9cbf11cf0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(false).origin("2222079712865361136").done();
+    b.associate("eventTypeA", 0x1ed669b9cbf11ceeL).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).origin("2222079712865361134").done();
+    b.associate("eventTypeB", 0x1ed669b9cbf11cf0L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa7c0a5L).optional(true).origin("2222079712865361136").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEventType() {
