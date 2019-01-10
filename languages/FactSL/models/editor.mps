@@ -1210,6 +1210,7 @@
         </node>
         <node concept="3F0A7n" id="pMarvIeQpN" role="3EZMnx">
           <property role="1$x2rV" value="P&lt;number&gt;" />
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="ajas:2ojITFEDW2$" resolve="id" />
           <node concept="ljvvj" id="pMarvIeQpO" role="3F10Kt">
             <property role="VOm3f" value="true" />
@@ -1222,6 +1223,8 @@
           <property role="3F0ifm" value=":" />
         </node>
         <node concept="3F0A7n" id="pMarvIeQpR" role="3EZMnx">
+          <property role="1$x2rV" value="&lt;name of attributetype&gt;" />
+          <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="3F0ifn" id="pMarvIeS_G" role="3EZMnx">

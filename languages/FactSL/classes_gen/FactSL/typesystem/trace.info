@@ -13,15 +13,15 @@
       <unit at="6,0,38,0" name="FactSL.typesystem.StringUtils" />
     </file>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,28,0" name="FactSL.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,32,0" name="FactSL.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/2222079712863829251">
     <file name="TypesystemDescriptor.java">
-      <node id="2222079712863829251" at="22,5,23,91" concept="5" />
-      <node id="2222079712863829251" at="23,91,24,55" concept="2" />
-      <node id="2222079712863829251" at="21,5,25,5" concept="0" />
-      <scope id="2222079712863829251" at="22,5,24,55">
+      <node id="2222079712863829251" at="26,5,27,91" concept="5" />
+      <node id="2222079712863829251" at="27,91,28,55" concept="2" />
+      <node id="2222079712863829251" at="25,5,29,5" concept="0" />
+      <scope id="2222079712863829251" at="26,5,28,55">
         <var name="nonTypesystemRule" id="2222079712863829251" />
       </scope>
     </file>
@@ -99,10 +99,10 @@
   </root>
   <root nodeRef="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476217857">
     <file name="TypesystemDescriptor.java">
-      <node id="5179980272476217857" at="10,5,11,96" concept="5" />
-      <node id="5179980272476217857" at="11,96,12,55" concept="2" />
-      <node id="5179980272476217857" at="9,33,13,5" concept="0" />
-      <scope id="5179980272476217857" at="10,5,12,55">
+      <node id="5179980272476217857" at="14,5,15,96" concept="5" />
+      <node id="5179980272476217857" at="15,96,16,55" concept="2" />
+      <node id="5179980272476217857" at="13,5,17,5" concept="0" />
+      <scope id="5179980272476217857" at="14,5,16,55">
         <var name="nonTypesystemRule" id="5179980272476217857" />
       </scope>
     </file>
@@ -151,10 +151,10 @@
   </root>
   <root nodeRef="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476941168">
     <file name="TypesystemDescriptor.java">
-      <node id="5179980272476941168" at="14,5,15,91" concept="5" />
-      <node id="5179980272476941168" at="15,91,16,55" concept="2" />
-      <node id="5179980272476941168" at="13,5,17,5" concept="0" />
-      <scope id="5179980272476941168" at="14,5,16,55">
+      <node id="5179980272476941168" at="18,5,19,91" concept="5" />
+      <node id="5179980272476941168" at="19,91,20,55" concept="2" />
+      <node id="5179980272476941168" at="17,5,21,5" concept="0" />
+      <scope id="5179980272476941168" at="18,5,20,55">
         <var name="nonTypesystemRule" id="5179980272476941168" />
       </scope>
     </file>
@@ -204,12 +204,85 @@
       <unit id="5179980272476941168" at="19,0,46,0" name="FactSL.typesystem.check_EventLaw_NonTypesystemRule" />
     </file>
   </root>
+  <root nodeRef="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272481697621">
+    <file name="TypesystemDescriptor.java">
+      <node id="5179980272481697621" at="10,5,11,96" concept="5" />
+      <node id="5179980272481697621" at="11,96,12,55" concept="2" />
+      <node id="5179980272481697621" at="9,33,13,5" concept="0" />
+      <scope id="5179980272481697621" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="5179980272481697621" />
+      </scope>
+    </file>
+    <file name="check_AttributeType_NonTypesystemRule.java">
+      <node id="5179980272481931127" at="27,7,28,60" concept="5" />
+      <node id="5179980272481931127" at="28,60,29,56" concept="2" />
+      <node id="5179980272481931127" at="29,56,30,308" concept="5" />
+      <node id="5179980272481932140" at="34,7,35,60" concept="5" />
+      <node id="5179980272481932140" at="35,60,36,54" concept="2" />
+      <node id="5179980272481932140" at="36,54,37,313" concept="5" />
+      <node id="5179980272481703896" at="41,7,42,60" concept="5" />
+      <node id="5179980272481703896" at="42,60,43,59" concept="2" />
+      <node id="5179980272481703896" at="43,59,44,244" concept="5" />
+      <node id="5179980272481697621" at="48,50,49,138" concept="6" />
+      <node id="5179980272481697621" at="51,68,52,102" concept="6" />
+      <node id="5179980272481697621" at="54,30,55,17" concept="6" />
+      <node id="5179980272481931125" at="57,52,58,44" concept="6" />
+      <node id="5179980272481697621" at="23,0,25,0" concept="1" trace="check_AttributeType_NonTypesystemRule#()V" />
+      <node id="5179980272481697621" at="48,0,51,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5179980272481697621" at="51,0,54,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5179980272481697621" at="54,0,57,0" concept="4" trace="overrides#()Z" />
+      <node id="5179980272481931125" at="57,0,60,0" concept="7" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5179980272481931127" at="26,184,31,7" concept="0" />
+      <node id="5179980272481932140" at="33,192,38,7" concept="0" />
+      <node id="5179980272481703896" at="40,194,45,7" concept="0" />
+      <node id="5179980272481931120" at="25,126,32,5" concept="3" />
+      <node id="5179980272481932133" at="32,5,39,5" concept="3" />
+      <node id="5179980272481699918" at="39,5,46,5" concept="3" />
+      <node id="5179980272481697621" at="25,0,48,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5179980272481697621" at="23,50,23,50" />
+      <scope id="5179980272481697621" at="48,50,49,138" />
+      <scope id="5179980272481697621" at="51,68,52,102" />
+      <scope id="5179980272481697621" at="54,30,55,17" />
+      <scope id="5179980272481931125" at="57,52,58,44" />
+      <scope id="5179980272481697621" at="23,0,25,0" />
+      <scope id="5179980272481931127" at="27,7,30,308">
+        <var name="_reporter_2309309498" id="5179980272481931127" />
+        <var name="errorTarget" id="5179980272481931127" />
+      </scope>
+      <scope id="5179980272481932140" at="34,7,37,313">
+        <var name="_reporter_2309309498" id="5179980272481932140" />
+        <var name="errorTarget" id="5179980272481932140" />
+      </scope>
+      <scope id="5179980272481703896" at="41,7,44,244">
+        <var name="_reporter_2309309498" id="5179980272481703896" />
+        <var name="errorTarget" id="5179980272481703896" />
+      </scope>
+      <scope id="5179980272481697621" at="48,0,51,0" />
+      <scope id="5179980272481697621" at="51,0,54,0">
+        <var name="argument" id="5179980272481697621" />
+      </scope>
+      <scope id="5179980272481697621" at="54,0,57,0" />
+      <scope id="5179980272481931125" at="57,0,60,0">
+        <var name="str" id="5179980272481931125" />
+      </scope>
+      <scope id="5179980272481931126" at="26,184,31,7" />
+      <scope id="5179980272481932139" at="33,192,38,7" />
+      <scope id="5179980272481699920" at="40,194,45,7" />
+      <scope id="5179980272481697622" at="25,126,46,5" />
+      <scope id="5179980272481697621" at="25,0,48,0">
+        <var name="attributeType" id="5179980272481697621" />
+        <var name="status" id="5179980272481697621" />
+        <var name="typeCheckingContext" id="5179980272481697621" />
+      </scope>
+      <unit id="5179980272481697621" at="22,0,61,0" name="FactSL.typesystem.check_AttributeType_NonTypesystemRule" />
+    </file>
+  </root>
   <root nodeRef="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/837255710704077406">
     <file name="TypesystemDescriptor.java">
-      <node id="837255710704077406" at="18,5,19,92" concept="5" />
-      <node id="837255710704077406" at="19,92,20,55" concept="2" />
-      <node id="837255710704077406" at="17,5,21,5" concept="0" />
-      <scope id="837255710704077406" at="18,5,20,55">
+      <node id="837255710704077406" at="22,5,23,92" concept="5" />
+      <node id="837255710704077406" at="23,92,24,55" concept="2" />
+      <node id="837255710704077406" at="21,5,25,5" concept="0" />
+      <scope id="837255710704077406" at="22,5,24,55">
         <var name="nonTypesystemRule" id="837255710704077406" />
       </scope>
     </file>

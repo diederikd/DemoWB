@@ -188,7 +188,7 @@
       <property role="IQ2ns" value="3316760564121806798" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="arange" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2ojITFEDW2K" resolve="ValueType" />
     </node>
   </node>

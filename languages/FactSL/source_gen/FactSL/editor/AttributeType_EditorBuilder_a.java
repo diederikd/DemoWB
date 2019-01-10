@@ -152,7 +152,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL, 0x2613bb9aeaa7c0a4L, "id");
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
       editorCell.setDefaultText("P<number>");
       editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
@@ -194,8 +194,8 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
     try {
       final SProperty property = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no name>");
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
+      editorCell.setDefaultText("<name of attributetype>");
       editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.FORWARD));
       editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSPropertyOrNode(myNode, property, CellAction_DeleteNode.DeleteDirection.BACKWARD));
       editorCell.setCellId("property_name");
@@ -454,7 +454,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       @Override
       protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
         EditorCell cell = new AttributeType_EditorBuilder_a.Inline_Builder1(getEditorContext(), myNode, effectiveNode).createCell();
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_aggregation(cell);
         return cell;
       }
     };
@@ -708,7 +708,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       @Override
       protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
         EditorCell cell = new AttributeType_EditorBuilder_a.Inline_Builder3(getEditorContext(), myNode, effectiveNode).createCell();
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_aggregation(cell);
         return cell;
       }
     };
@@ -809,7 +809,7 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
       @Override
       protected EditorCell createRefCell(EditorContext context, SNode effectiveNode, SNode node) {
         EditorCell cell = new AttributeType_EditorBuilder_a.Inline_Builder4(getEditorContext(), myNode, effectiveNode).createCell();
-        installDeleteActions_notnull(cell);
+        installDeleteActions_nullable_aggregation(cell);
         return cell;
       }
     };

@@ -428,8 +428,8 @@
       <node id="2743742872034984110" at="191,105,192,71" concept="2" />
       <node id="2743742872034984110" at="194,76,195,93" concept="2" />
       <node id="2743742872034984110" at="195,93,196,17" concept="2" />
-      <node id="3316760564121806798" at="196,17,197,200" concept="2" />
-      <node id="2743742872034984110" at="197,200,198,22" concept="7" />
+      <node id="3316760564121806798" at="196,17,197,199" concept="2" />
+      <node id="2743742872034984110" at="197,199,198,22" concept="7" />
       <node id="2743742872034984110" at="188,0,200,0" concept="9" trace="createDescriptorForAttributeType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2743742872034984110" at="75,47,76,38" />
       <scope id="2743742872034984110" at="188,71,198,22">
