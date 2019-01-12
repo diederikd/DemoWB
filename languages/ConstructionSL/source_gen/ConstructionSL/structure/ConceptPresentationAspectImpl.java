@@ -14,6 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ActorRole;
   private ConceptPresentation props_ActorRoleReference;
   private ConceptPresentation props_AggregateTransactionKind;
+  private ConceptPresentation props_AggregateTransactionKindReference;
   private ConceptPresentation props_CompositeActorRole;
   private ConceptPresentation props_CompositeActorRoleReference;
   private ConceptPresentation props_Executor;
@@ -61,6 +62,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AggregateTransactionKind = cpb.create();
         }
         return props_AggregateTransactionKind;
+      case LanguageConceptSwitch.AggregateTransactionKindReference:
+        if (props_AggregateTransactionKindReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x47e2fc9cf4d4f1efL, 0x47e2fc9cf4d4f1f0L, "aggregateTransactionKind", "", "");
+          props_AggregateTransactionKindReference = cpb.create();
+        }
+        return props_AggregateTransactionKindReference;
       case LanguageConceptSwitch.CompositeActorRole:
         if (props_CompositeActorRole == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

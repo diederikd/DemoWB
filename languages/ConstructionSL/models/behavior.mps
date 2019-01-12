@@ -8,6 +8,7 @@
   <imports>
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -219,6 +220,21 @@
         </node>
       </node>
       <node concept="17QB3L" id="1S2F7pXAln7" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="281RgeXMQoj" role="13h7CS">
+      <property role="TrG5h" value="getName" />
+      <node concept="3Tm1VV" id="281RgeXMQok" role="1B3o_S" />
+      <node concept="17QB3L" id="281RgeXMQqZ" role="3clF45" />
+      <node concept="3clFbS" id="281RgeXMQom" role="3clF47">
+        <node concept="3cpWs6" id="281RgeXMQrq" role="3cqZAp">
+          <node concept="2OqwBi" id="281RgeXMQA5" role="3cqZAk">
+            <node concept="13iPFW" id="281RgeXMQrH" role="2Oq$k0" />
+            <node concept="3TrcHB" id="281RgeXMQK7" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1S2F7pXDBQk">

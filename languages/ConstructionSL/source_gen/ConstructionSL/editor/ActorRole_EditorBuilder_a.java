@@ -199,9 +199,9 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new ActorRole_EditorBuilder_a.isActorRoleInListHandler_gsa4a8_e0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new ActorRole_EditorBuilder_a.isActorRoleInCARListHandler_gsa4a8_e0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_isActorRoleIn");
+    editorCell.setCellId("refNodeList_isActorRoleInCAR");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
@@ -210,11 +210,11 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class isActorRoleInListHandler_gsa4a8_e0 extends RefNodeListHandler {
+  private static class isActorRoleInCARListHandler_gsa4a8_e0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public isActorRoleInListHandler_gsa4a8_e0(SNode ownerNode, EditorContext context) {
+    public isActorRoleInCARListHandler_gsa4a8_e0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -224,7 +224,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleIn");
+      return MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleInCAR");
     }
     public SAbstractConcept getChildSConcept() {
       return MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2e078028fd647073L, "ConstructionSL.structure.CompositeActorRoleReference");
@@ -239,7 +239,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(isActorRoleInListHandler_gsa4a8_e0.this.getNode(), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleIn")));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(isActorRoleInCARListHandler_gsa4a8_e0.this.getNode(), MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa032a9L, 0x2e078028fd61c14cL, "isActorRoleInCAR")));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

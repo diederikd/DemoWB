@@ -74,9 +74,22 @@
     <node concept="1TJgyj" id="2S7w2zXos5c" role="1TKVEi">
       <property role="IQ2ns" value="3316760564119748940" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="isActorRoleIn" />
+      <property role="20kJfa" value="isActorRoleInCAR" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="2S7w2zXp71N" resolve="CompositeActorRoleReference" />
+      <node concept="t5JxF" id="4vyZ9NOPhBN" role="lGtFl">
+        <property role="t5JxN" value="from Towards a complete metamodel for DEMO CM" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="4vyZ9NOPhBP" role="1TKVEi">
+      <property role="IQ2ns" value="5179980272482195957" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="0..n" />
+      <property role="20kJfa" value="hasAccessToBankof" />
+      <ref role="20lvS9" node="4vyZ9NNOunp" resolve="AbstractTransactionKind" />
+      <node concept="t5JxF" id="4vyZ9NOPhBT" role="lGtFl">
+        <property role="t5JxN" value="from Towards a complete metamodel for DEMO CM" />
+      </node>
     </node>
     <node concept="1TJgyi" id="2ojITFECeUR" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034537143" />
@@ -105,6 +118,16 @@
       <property role="20kJfa" value="executorConcept" />
       <ref role="20lvS9" node="6cLLlCqqgiX" resolve="Executor" />
     </node>
+    <node concept="1TJgyj" id="4vyZ9NOPf7Q" role="1TKVEi">
+      <property role="IQ2ns" value="5179980272482185718" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="containedInATK" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4vyZ9NOPf7J" resolve="AggregateTransactionKindReference" />
+      <node concept="t5JxF" id="4vyZ9NOPhBu" role="lGtFl">
+        <property role="t5JxN" value="from Towards a complete metamodel for DEMO CM" />
+      </node>
+    </node>
     <node concept="1TJgyi" id="2ojITFECoW6" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578182" />
       <property role="TrG5h" value="id" />
@@ -129,12 +152,6 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="hasProduct" />
       <ref role="20lvS9" to="ajas:2ojITFEDW2_" resolve="EventType" />
-    </node>
-    <node concept="1TJgyj" id="2ojITFEDDWj" role="1TKVEi">
-      <property role="IQ2ns" value="2743742872034909971" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="isPartOf" />
-      <ref role="20lvS9" node="2ojITFECoWc" resolve="AggregateTransactionKind" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFECoW8">
@@ -296,6 +313,17 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="4vyZ9NOPf7J">
+    <property role="EcuMT" value="5179980272482185711" />
+    <property role="TrG5h" value="AggregateTransactionKindReference" />
+    <node concept="1TJgyj" id="4vyZ9NOPf7K" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5179980272482185712" />
+      <property role="20kJfa" value="aggregateTransactionKind" />
+      <ref role="20lvS9" node="2ojITFECoWc" resolve="AggregateTransactionKind" />
+    </node>
   </node>
 </model>
 

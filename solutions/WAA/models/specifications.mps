@@ -39,7 +39,7 @@
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="id" index="3cGPkH" />
-        <child id="3316760564119748940" name="isActorRoleIn" index="3jp$5$" />
+        <child id="3316760564119748940" name="isActorRoleInCAR" index="3jp$5$" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />

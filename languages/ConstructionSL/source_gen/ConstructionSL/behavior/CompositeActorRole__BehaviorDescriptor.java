@@ -26,14 +26,18 @@ public final class CompositeActorRole__BehaviorDescriptor extends BaseBHDescript
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
   public static final SMethod<String> getID_id1S2F7pXAkU4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getID").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1S2F7pXAkU4").registry(REGISTRY).build();
+  public static final SMethod<String> getName_id281RgeXMQoj = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("281RgeXMQoj").registry(REGISTRY).build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getID_id1S2F7pXAkU4);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getID_id1S2F7pXAkU4, getName_id281RgeXMQoj);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static String getID_id1S2F7pXAkU4(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f08L, 0x2613bb9aeaa18f0aL, "id"));
+  }
+  /*package*/ static String getName_id281RgeXMQoj(@NotNull SNode __thisNode__) {
+    return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
 
   /*package*/ CompositeActorRole__BehaviorDescriptor() {
@@ -54,6 +58,8 @@ public final class CompositeActorRole__BehaviorDescriptor extends BaseBHDescript
     switch (methodIndex) {
       case 0:
         return (T) ((String) getID_id1S2F7pXAkU4(node));
+      case 1:
+        return (T) ((String) getName_id281RgeXMQoj(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
