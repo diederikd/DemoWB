@@ -3,8 +3,8 @@ jdk:
 - oraclejdk8
 before_install:
 - wget https://download-cf.jetbrains.com/mps/2018.2/MPS-2018.2.zip
-- wget https://guest:@build.mbeddr.com/repository/downloadAll/Mbeddr2_Mbeddr_Gradle_platform/138020:id/artifacts.zip
+- wget https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2018-2-0/platform-distribution_2018_2_0.zip
 install: 
 - unzip MPS-2018.2.zip
-- unzip artifacts.zip
+- unzip platform-distribution_2018_2_0.zip
 script: ant -Dmps_home=./MPS\ 2018.2 -Dmbeddr_home=./com.mbeddr.platform -Durl_home=.
