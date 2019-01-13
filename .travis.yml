@@ -1,6 +1,12 @@
 language: java
 jdk:
 - oraclejdk8
+
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
+
 before_install:
 - wget https://download-cf.jetbrains.com/mps/2018.2/MPS-2018.2.zip
 - wget https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2018-2-0/platform-distribution_2018_2_0.zip
