@@ -169,9 +169,7 @@
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
-      <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
-        <property id="4297162197620978188" name="strict" index="1wNuhc" />
-      </concept>
+      <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr" />
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
@@ -551,9 +549,7 @@
         <ref role="m$f5T" node="2AEzmscAXNT" resolve="DemoWB" />
       </node>
     </node>
-    <node concept="1wNqPr" id="2AEzmscRpGN" role="3989C9">
-      <property role="1wNuhc" value="true" />
-    </node>
+    <node concept="1wNqPr" id="2AEzmscRpGN" role="3989C9" />
     <node concept="2G$12M" id="2AEzmscAXNT" role="3989C9">
       <property role="TrG5h" value="DemoWB" />
       <node concept="1E1JtD" id="2AEzmscAXNk" role="2G$12L">
