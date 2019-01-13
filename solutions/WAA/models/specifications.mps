@@ -68,6 +68,7 @@
         <child id="5047305753771525327" name="assessPart" index="onuko" />
       </concept>
       <concept id="6832341507192571007" name="ActionSL.structure.TransactionReference" flags="ng" index="2mzTSp">
+        <property id="3002367575328147546" name="createNewObject" index="_fOkX" />
         <reference id="6832341507192571010" name="object" index="2mzTV$" />
         <reference id="6832341507192571008" name="transactionKind" index="2mzTVA" />
       </concept>
@@ -21790,6 +21791,7 @@
         <property role="ojPxs" value="rq" />
         <ref role="ojNJ5" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
         <node concept="2mzTSp" id="1S2F7pX07d9" role="2mzTUy">
+          <property role="_fOkX" value="true" />
           <ref role="2mzTVA" node="pMarvI_0gz" />
           <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
         </node>

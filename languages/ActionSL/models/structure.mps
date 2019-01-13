@@ -298,6 +298,11 @@
     <property role="EcuMT" value="6832341507192571007" />
     <property role="TrG5h" value="TransactionReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2AEzmsc_sxq" role="1TKVEl">
+      <property role="IQ2nx" value="3002367575328147546" />
+      <property role="TrG5h" value="createNewObject" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="5VhmAr8nGi0" role="1TKVEi">
       <property role="IQ2ns" value="6832341507192571008" />
       <property role="20lmBu" value="reference" />

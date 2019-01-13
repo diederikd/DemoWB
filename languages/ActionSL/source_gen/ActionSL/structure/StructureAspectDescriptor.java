@@ -168,6 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/6832341507192571007");
     b.version(2);
+    b.prop("createNewObject", 0x29aa8d670c95c85aL, "3002367575328147546");
     b.associate("transactionKind", 0x5ed15a66c85ec480L).target(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L).optional(false).origin("6832341507192571008").done();
     b.associate("object", 0x5ed15a66c85ec482L).target(0x6836a913df904e79L, 0x9a37cb334bb02ea5L, 0x2613bb9aeaa69f0fL).optional(false).origin("6832341507192571010").done();
     return b.create();
