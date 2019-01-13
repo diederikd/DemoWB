@@ -138,6 +138,18 @@
     </echoxml>
     <mkdir dir="${build.layout}/plugins/DemoWB/languages" />
     <mkdir dir="${build.layout}/plugins/DemoWB/languages/DemoWB" />
+    <mkdir dir="${build.tmp}/default/DemoSpecificationLanguage.jar" />
+    <mkdir dir="${build.tmp}/default/DemoSpecificationLanguage.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/DemoSpecificationLanguage.jar/META-INF/module.xml">
+      <module namespace="DemoSpecificationLanguage" type="devkit" uuid="2b99ba1d-c887-40de-a1eb-42c0e5a4b518">
+        <dependencies />
+        <sources jar="." descriptor="DemoSpecificationLanguage.devkit" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DemoWB/languages/DemoWB/DemoSpecificationLanguage.jar" duplicate="preserve">
+      <zipfileset file="${basedir}/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" prefix="module" />
+      <fileset dir="${build.tmp}/default/DemoSpecificationLanguage.jar" />
+    </jar>
     <mkdir dir="${build.tmp}/default/DemoSL.jar" />
     <mkdir dir="${build.tmp}/default/DemoSL.jar/META-INF" />
     <echoxml file="${build.tmp}/default/DemoSL.jar/META-INF/module.xml">
@@ -546,18 +558,6 @@
       <zipfileset file="${basedir}/languages/FactSL/FactSL.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-FactSL-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-FactSL-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/DemoSpecificationLanguage.jar" />
-    <mkdir dir="${build.tmp}/default/DemoSpecificationLanguage.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/DemoSpecificationLanguage.jar/META-INF/module.xml">
-      <module namespace="DemoSpecificationLanguage" type="devkit" uuid="2b99ba1d-c887-40de-a1eb-42c0e5a4b518">
-        <dependencies />
-        <sources jar="." descriptor="DemoSpecificationLanguage.devkit" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.layout}/plugins/DemoWB/languages/DemoWB/DemoSpecificationLanguage.jar" duplicate="preserve">
-      <zipfileset file="${basedir}/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" prefix="module" />
-      <fileset dir="${build.tmp}/default/DemoSpecificationLanguage.jar" />
     </jar>
     <mkdir dir="${build.tmp}/default/ActionSL.jar" />
     <mkdir dir="${build.tmp}/default/ActionSL.jar/META-INF" />

@@ -565,6 +565,40 @@
     </node>
     <node concept="2G$12M" id="2AEzmscAXNT" role="3989C9">
       <property role="TrG5h" value="DemoWB" />
+      <node concept="3LEwk6" id="2AEzmscAXNM" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="DemoSpecificationLanguage" />
+        <property role="3LESm3" value="2b99ba1d-c887-40de-a1eb-42c0e5a4b518" />
+        <node concept="55IIr" id="2AEzmscAXNH" role="3LF7KH">
+          <node concept="2Ry0Ak" id="2AEzmscAXNI" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="2AEzmscAXNJ" role="2Ry0An">
+              <property role="2Ry0Am" value="DemoSpecificationLanguage" />
+              <node concept="2Ry0Ak" id="2AEzmscAXNK" role="2Ry0An">
+                <property role="2Ry0Am" value="DemoSpecificationLanguage.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="2AEzmscAZ_D" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNS" resolve="ActionSL" />
+        </node>
+        <node concept="3LEDTy" id="2AEzmscAZ_E" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNk" resolve="DemoSL" />
+        </node>
+        <node concept="3LEDTy" id="2AEzmscAZ_F" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNA" resolve="ConstructionSL" />
+        </node>
+        <node concept="3LEDTy" id="2AEzmscAZ_G" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNG" resolve="FactSL" />
+        </node>
+        <node concept="3LEDTy" id="2AEzmscAZ_H" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNw" resolve="GeneralSL" />
+        </node>
+        <node concept="3LEDTy" id="2AEzmscAZ_I" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNq" resolve="ProcessSL" />
+        </node>
+      </node>
       <node concept="1E1JtD" id="2AEzmscAXNk" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="DemoSL" />
@@ -860,40 +894,6 @@
           <node concept="1Busua" id="2AEzmscAZ_v" role="1SiIV1">
             <ref role="1Busuk" node="2AEzmscAXNw" resolve="GeneralSL" />
           </node>
-        </node>
-      </node>
-      <node concept="3LEwk6" id="2AEzmscAXNM" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="DemoSpecificationLanguage" />
-        <property role="3LESm3" value="2b99ba1d-c887-40de-a1eb-42c0e5a4b518" />
-        <node concept="55IIr" id="2AEzmscAXNH" role="3LF7KH">
-          <node concept="2Ry0Ak" id="2AEzmscAXNI" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="2AEzmscAXNJ" role="2Ry0An">
-              <property role="2Ry0Am" value="DemoSpecificationLanguage" />
-              <node concept="2Ry0Ak" id="2AEzmscAXNK" role="2Ry0An">
-                <property role="2Ry0Am" value="DemoSpecificationLanguage.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_D" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNS" resolve="ActionSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_E" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNk" resolve="DemoSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_F" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNA" resolve="ConstructionSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_G" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNG" resolve="FactSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_H" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNw" resolve="GeneralSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_I" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNq" resolve="ProcessSL" />
         </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNS" role="2G$12L">
