@@ -551,6 +551,9 @@
       <node concept="m$_yC" id="2AEzmscCBP_" role="m$_yJ">
         <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
       </node>
+      <node concept="m$_yC" id="2AEzmscGILS" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
+      </node>
       <node concept="3_J27D" id="2AEzmscAXO1" role="m_cZH">
         <node concept="3Mxwew" id="2AEzmscAXO2" role="3MwsjC">
           <property role="3MwjfP" value="DemoWB" />
