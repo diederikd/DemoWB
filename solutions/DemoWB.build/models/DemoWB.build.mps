@@ -371,6 +371,12 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="2AEzmscCPlc" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:7pdFgzxlDme" resolve="mpsBuild" />
+      <node concept="398BVA" id="2AEzmscCPmg" role="2JcizS">
+        <ref role="398BVh" node="2AEzmscAXMB" resolve="mps_home" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="2AEzmscAZG4" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="2AEzmscAZH8" role="2JcizS">

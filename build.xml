@@ -13,6 +13,7 @@
   <property name="mbeddr_home" location="${mps_home}/plugins" />
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
+  <property name="artifacts.mpsBuild" location="${mps_home}" />
   <property name="artifacts.com.mbeddr.platform" location="${mbeddr_home}" />
   <property name="artifacts.com.mbeddr.platform.distribution" location="${mbeddr_home}" />
   <property name="artifacts.de.itemis.mps.extensions" location="${mbeddr_home}" />
@@ -672,6 +673,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
+      <plugin path="${artifacts.mpsBuild}/mps-build" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
