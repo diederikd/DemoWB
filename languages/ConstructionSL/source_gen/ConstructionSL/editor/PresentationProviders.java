@@ -95,4 +95,18 @@ public class PresentationProviders {
       return AbstractActorRole__BehaviorDescriptor.getID_id1S2F7pXAkU4.invoke(targetNode) + " " + SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
     }
   };
+  public static final IReferentPresentationProvider PRESENTATION_tq44ga_a0a0a = new IReferentPresentationProvider() {
+    @NotNull
+    @Override
+    public String getPresentation(@NotNull SNode sourceNode, @NotNull SNode targetNode) {
+      return SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f0cL, 0x2613bb9aeaa18f0dL, "id")) + " " + SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL, 0x2613bb9aeaa032acL, "name"));
+    }
+  };
+  public static final IReferentPresentationProvider PRESENTATION_tq44ga_a0a0a_0 = new IReferentPresentationProvider() {
+    @NotNull
+    @Override
+    public String getPresentation(@NotNull SNode sourceNode, @NotNull SNode targetNode) {
+      return SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f0cL, 0x2613bb9aeaa18f0dL, "id")) + " " + SPropertyOperations.getString(targetNode, MetaAdapterFactory.getProperty(0xaa59ea5e1883437fL, 0x95c04dc082aa848cL, 0x2613bb9aeaa032abL, 0x2613bb9aeaa032acL, "name"));
+    }
+  };
 }

@@ -18,40 +18,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/AggregateTransactionKindReference_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/AggregateTransactionKindReference_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/AggregateTransactionKindReference_SubstituteMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/PresentationProviders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/CheckActionRule_NonTypesystemRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/behavior/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/ActorRole_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/ActorRole_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/typesystem/TypesystemDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/typesystem/TypesystemDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/classes_gen/ActionSL/typesystem/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/models/editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/models/typesystem.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/models/typesystem.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/typesystem/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/typesystem/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/typesystem/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen.caches/ActionSL/typesystem/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/Addressee_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/Addressee_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/Performer_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/Performer_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/TypesystemDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/TypesystemDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/LanguageConceptSwitch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/StructureAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/classes_gen/ConstructionSL/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/models/behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/models/behavior.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/models/structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/behavior/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/behavior/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen.caches/ConstructionSL/structure/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/behavior/CompositeActorRole__BehaviorDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/behavior/CompositeActorRole__BehaviorDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/behavior/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/ActorRole_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/ActorRole_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/CompositeActorRole_OCD_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/CompositeActorRole_OCD_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/AggregateTransactionKindReference_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/AggregateTransactionKindReference_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/PresentationProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/PresentationProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/TransactionKind_CM_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/TransactionKind_CM_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/LanguageConceptSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/StructureAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ConstructionSL/source_gen/ConstructionSL/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications/generated" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +69,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="91e471b4-7dc0-493e-a52e-ca98bca264af/r:1d4846f0-8d93-4d38-a875-e69fcc6a2f3a(TempModule91e471b4-7dc0-493e-a52e-ca98bca264af/TempModel_14888905086484)">
+            <model ref="50d335c2-c2f0-4782-be13-fd2f61794774/r:556f127f-5b32-4004-a032-9c3de0364a41(TempModule50d335c2-c2f0-4782-be13-fd2f61794774/TempModel_34892257610501)">
               <persistence version="9" />
               <languages>
                 <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
@@ -199,102 +195,102 @@
                   </concept>
                 </language>
               </registry>
-              <node concept="aymSD" id="281RgeXJchf">
-                <node concept="3balQm" id="281RgeXJchg" role="aymYE">
-                  <node concept="2Clz$F" id="281RgeXJchh" role="18xWvz">
-                    <node concept="f80E0" id="281RgeXJchi" role="2Clzx4">
-                      <node concept="2OqwBi" id="281RgeXJchj" role="f80$r">
-                        <node concept="2OqwBi" id="281RgeXJchk" role="2Oq$k0">
-                          <node concept="qVDSY" id="281RgeXJchl" role="2Oq$k0">
-                            <node concept="chp4Y" id="281RgeXJchm" role="qVDSX">
+              <node concept="aymSD" id="2AEzmscuCnR">
+                <node concept="3balQm" id="2AEzmscuCnS" role="aymYE">
+                  <node concept="2Clz$F" id="2AEzmscuCnT" role="18xWvz">
+                    <node concept="f80E0" id="2AEzmscuCnU" role="2Clzx4">
+                      <node concept="2OqwBi" id="2AEzmscuCnV" role="f80$r">
+                        <node concept="2OqwBi" id="2AEzmscuCnW" role="2Oq$k0">
+                          <node concept="qVDSY" id="2AEzmscuCnX" role="2Oq$k0">
+                            <node concept="chp4Y" id="2AEzmscuCnY" role="qVDSX">
                               <ref role="cht4Q" to="tpck:gw2VY9q" resolve="BaseConcept" />
                             </node>
-                            <node concept="1dO9Bo" id="281RgeXJchn" role="1dOa5D">
-                              <node concept="psT0o" id="281RgeXJcho" role="1dp2q7">
-                                <node concept="p4YG9" id="281RgeXJchp" role="psT0v" />
+                            <node concept="1dO9Bo" id="2AEzmscuCnZ" role="1dOa5D">
+                              <node concept="psT0o" id="2AEzmscuCo0" role="1dp2q7">
+                                <node concept="p4YG9" id="2AEzmscuCo1" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="281RgeXJchq" role="2OqNvi">
-                            <node concept="1bVj0M" id="281RgeXJchr" role="23t8la">
+                          <node concept="3zZkjj" id="2AEzmscuCo2" role="2OqNvi">
+                            <node concept="1bVj0M" id="2AEzmscuCo3" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="281RgeXJchs" role="1bW5cS">
-                                <node concept="3SKdUt" id="281RgeXJcht" role="3cqZAp">
-                                  <node concept="3SKdUq" id="281RgeXJchu" role="3SKWNk">
+                              <node concept="3clFbS" id="2AEzmscuCo4" role="1bW5cS">
+                                <node concept="3SKdUt" id="2AEzmscuCo5" role="3cqZAp">
+                                  <node concept="3SKdUq" id="2AEzmscuCo6" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="281RgeXJchv" role="3cqZAp">
-                                  <node concept="2OqwBi" id="281RgeXJchw" role="3clFbG">
-                                    <node concept="37vLTw" id="281RgeXJchx" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJch$" resolve="node" />
+                                <node concept="3clFbF" id="2AEzmscuCo7" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2AEzmscuCo8" role="3clFbG">
+                                    <node concept="37vLTw" id="2AEzmscuCo9" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCoc" resolve="node" />
                                     </node>
-                                    <node concept="1mIQ4w" id="281RgeXJchy" role="2OqNvi">
-                                      <node concept="chp4Y" id="281RgeXJchz" role="cj9EA">
+                                    <node concept="1mIQ4w" id="2AEzmscuCoa" role="2OqNvi">
+                                      <node concept="chp4Y" id="2AEzmscuCob" role="cj9EA">
                                         <ref role="cht4Q" to="tpck:2ULFgo8_XDm" resolve="PropertyAttribute" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="281RgeXJch$" role="1bW2Oz">
+                              <node concept="Rh6nW" id="2AEzmscuCoc" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="281RgeXJch_" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2AEzmscuCod" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3R8V_t" id="281RgeXJchA" role="2OqNvi">
-                          <node concept="1bVj0M" id="281RgeXJchB" role="23t8la">
+                        <node concept="3R8V_t" id="2AEzmscuCoe" role="2OqNvi">
+                          <node concept="1bVj0M" id="2AEzmscuCof" role="23t8la">
                             <property role="3yWfEV" value="true" />
-                            <node concept="3clFbS" id="281RgeXJchC" role="1bW5cS">
-                              <node concept="3SKdUt" id="281RgeXJchD" role="3cqZAp">
-                                <node concept="3SKdUq" id="281RgeXJchE" role="3SKWNk">
+                            <node concept="3clFbS" id="2AEzmscuCog" role="1bW5cS">
+                              <node concept="3SKdUt" id="2AEzmscuCoh" role="3cqZAp">
+                                <node concept="3SKdUq" id="2AEzmscuCoi" role="3SKWNk">
                                   <property role="3SKdUp" value="TODO specify action" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="281RgeXJchF" role="1bW2Oz">
+                            <node concept="Rh6nW" id="2AEzmscuCoj" role="1bW2Oz">
                               <property role="TrG5h" value="node" />
-                              <node concept="2jxLKc" id="281RgeXJchG" role="1tU5fm" />
+                              <node concept="2jxLKc" id="2AEzmscuCok" role="1tU5fm" />
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2Clz$F" id="281RgeXJchH" role="18xWvz">
-                    <node concept="f80E0" id="281RgeXJchI" role="2Clzx4">
-                      <node concept="24aHrZ" id="281RgeXJchJ" role="f80$r">
-                        <node concept="2OqwBi" id="281RgeXJchK" role="iY1wd">
-                          <node concept="qVDSY" id="281RgeXJchL" role="2Oq$k0">
-                            <node concept="chp4Y" id="281RgeXJchM" role="qVDSX">
+                  <node concept="2Clz$F" id="2AEzmscuCol" role="18xWvz">
+                    <node concept="f80E0" id="2AEzmscuCom" role="2Clzx4">
+                      <node concept="24aHrZ" id="2AEzmscuCon" role="f80$r">
+                        <node concept="2OqwBi" id="2AEzmscuCoo" role="iY1wd">
+                          <node concept="qVDSY" id="2AEzmscuCop" role="2Oq$k0">
+                            <node concept="chp4Y" id="2AEzmscuCoq" role="qVDSX">
                               <ref role="cht4Q" to="ajas:2ojITFEDW2D" resolve="PropertyType" />
                             </node>
-                            <node concept="1dO9Bo" id="281RgeXJchN" role="1dOa5D">
-                              <node concept="psT0o" id="281RgeXJchO" role="1dp2q7">
-                                <node concept="p4YG9" id="281RgeXJchP" role="psT0v" />
+                            <node concept="1dO9Bo" id="2AEzmscuCor" role="1dOa5D">
+                              <node concept="psT0o" id="2AEzmscuCos" role="1dp2q7">
+                                <node concept="p4YG9" id="2AEzmscuCot" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="281RgeXJchQ" role="2OqNvi">
-                            <node concept="1bVj0M" id="281RgeXJchR" role="23t8la">
+                          <node concept="3zZkjj" id="2AEzmscuCou" role="2OqNvi">
+                            <node concept="1bVj0M" id="2AEzmscuCov" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="281RgeXJchS" role="1bW5cS">
-                                <node concept="3SKdUt" id="281RgeXJchT" role="3cqZAp">
-                                  <node concept="3SKdUq" id="281RgeXJchU" role="3SKWNk">
+                              <node concept="3clFbS" id="2AEzmscuCow" role="1bW5cS">
+                                <node concept="3SKdUt" id="2AEzmscuCox" role="3cqZAp">
+                                  <node concept="3SKdUq" id="2AEzmscuCoy" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="281RgeXJchV" role="3cqZAp">
-                                  <node concept="3clFbT" id="281RgeXJchW" role="3clFbG">
+                                <node concept="3clFbF" id="2AEzmscuCoz" role="3cqZAp">
+                                  <node concept="3clFbT" id="2AEzmscuCo$" role="3clFbG">
                                     <property role="3clFbU" value="true" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="281RgeXJchX" role="1bW2Oz">
+                              <node concept="Rh6nW" id="2AEzmscuCo_" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="281RgeXJchY" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2AEzmscuCoA" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
@@ -302,212 +298,212 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2Clz$F" id="281RgeXJchZ" role="18xWvz">
-                    <node concept="f80E0" id="281RgeXJci0" role="2Clzx4">
-                      <node concept="2OqwBi" id="281RgeXJci1" role="f80$r">
-                        <node concept="2OqwBi" id="281RgeXJci2" role="2Oq$k0">
-                          <node concept="qVDSY" id="281RgeXJci3" role="2Oq$k0">
-                            <node concept="chp4Y" id="281RgeXJci4" role="qVDSX">
+                  <node concept="2Clz$F" id="2AEzmscuCoB" role="18xWvz">
+                    <node concept="f80E0" id="2AEzmscuCoC" role="2Clzx4">
+                      <node concept="2OqwBi" id="2AEzmscuCoD" role="f80$r">
+                        <node concept="2OqwBi" id="2AEzmscuCoE" role="2Oq$k0">
+                          <node concept="qVDSY" id="2AEzmscuCoF" role="2Oq$k0">
+                            <node concept="chp4Y" id="2AEzmscuCoG" role="qVDSX">
                               <ref role="cht4Q" to="ajas:2ojITFEDW2D" resolve="PropertyType" />
                             </node>
-                            <node concept="1dO9Bo" id="281RgeXJci5" role="1dOa5D">
-                              <node concept="psT0o" id="281RgeXJci6" role="1dp2q7">
-                                <node concept="p4YG9" id="281RgeXJci7" role="psT0v" />
+                            <node concept="1dO9Bo" id="2AEzmscuCoH" role="1dOa5D">
+                              <node concept="psT0o" id="2AEzmscuCoI" role="1dp2q7">
+                                <node concept="p4YG9" id="2AEzmscuCoJ" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="281RgeXJci8" role="2OqNvi">
-                            <node concept="1bVj0M" id="281RgeXJci9" role="23t8la">
+                          <node concept="3zZkjj" id="2AEzmscuCoK" role="2OqNvi">
+                            <node concept="1bVj0M" id="2AEzmscuCoL" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="281RgeXJcia" role="1bW5cS">
-                                <node concept="3SKdUt" id="281RgeXJcib" role="3cqZAp">
-                                  <node concept="3SKdUq" id="281RgeXJcic" role="3SKWNk">
+                              <node concept="3clFbS" id="2AEzmscuCoM" role="1bW5cS">
+                                <node concept="3SKdUt" id="2AEzmscuCoN" role="3cqZAp">
+                                  <node concept="3SKdUq" id="2AEzmscuCoO" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="281RgeXJcid" role="3cqZAp">
-                                  <node concept="2OqwBi" id="281RgeXJcie" role="3clFbG">
-                                    <node concept="2OqwBi" id="281RgeXJcif" role="2Oq$k0">
-                                      <node concept="37vLTw" id="281RgeXJcig" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="281RgeXJcij" resolve="node" />
+                                <node concept="3clFbF" id="2AEzmscuCoP" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2AEzmscuCoQ" role="3clFbG">
+                                    <node concept="2OqwBi" id="2AEzmscuCoR" role="2Oq$k0">
+                                      <node concept="37vLTw" id="2AEzmscuCoS" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2AEzmscuCoV" resolve="node" />
                                       </node>
-                                      <node concept="3TrEf2" id="281RgeXJcih" role="2OqNvi">
+                                      <node concept="3TrEf2" id="2AEzmscuCoT" role="2OqNvi">
                                         <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
                                       </node>
                                     </node>
-                                    <node concept="3w_OXm" id="281RgeXJcii" role="2OqNvi" />
+                                    <node concept="3w_OXm" id="2AEzmscuCoU" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="281RgeXJcij" role="1bW2Oz">
+                              <node concept="Rh6nW" id="2AEzmscuCoV" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="281RgeXJcik" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2AEzmscuCoW" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3R8V_t" id="281RgeXJcil" role="2OqNvi">
-                          <node concept="1bVj0M" id="281RgeXJcim" role="23t8la">
+                        <node concept="3R8V_t" id="2AEzmscuCoX" role="2OqNvi">
+                          <node concept="1bVj0M" id="2AEzmscuCoY" role="23t8la">
                             <property role="3yWfEV" value="true" />
-                            <node concept="3clFbS" id="281RgeXJcin" role="1bW5cS">
-                              <node concept="3clFbF" id="281RgeXJcio" role="3cqZAp">
-                                <node concept="37vLTI" id="281RgeXJcip" role="3clFbG">
-                                  <node concept="2OqwBi" id="281RgeXJciq" role="37vLTx">
-                                    <node concept="37vLTw" id="281RgeXJcir" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJciy" resolve="node" />
+                            <node concept="3clFbS" id="2AEzmscuCoZ" role="1bW5cS">
+                              <node concept="3clFbF" id="2AEzmscuCp0" role="3cqZAp">
+                                <node concept="37vLTI" id="2AEzmscuCp1" role="3clFbG">
+                                  <node concept="2OqwBi" id="2AEzmscuCp2" role="37vLTx">
+                                    <node concept="37vLTw" id="2AEzmscuCp3" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCpa" resolve="node" />
                                     </node>
-                                    <node concept="3TrEf2" id="281RgeXJcis" role="2OqNvi">
+                                    <node concept="3TrEf2" id="2AEzmscuCp4" role="2OqNvi">
                                       <ref role="3Tt5mk" to="ajas:2ojITFEDW2E" resolve="domain" />
                                     </node>
                                   </node>
-                                  <node concept="2OqwBi" id="281RgeXJcit" role="37vLTJ">
-                                    <node concept="37vLTw" id="281RgeXJciu" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJciy" resolve="node" />
+                                  <node concept="2OqwBi" id="2AEzmscuCp5" role="37vLTJ">
+                                    <node concept="37vLTw" id="2AEzmscuCp6" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCpa" resolve="node" />
                                     </node>
-                                    <node concept="3TrEf2" id="281RgeXJciv" role="2OqNvi">
+                                    <node concept="3TrEf2" id="2AEzmscuCp7" role="2OqNvi">
                                       <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3SKdUt" id="281RgeXJciw" role="3cqZAp">
-                                <node concept="3SKdUq" id="281RgeXJcix" role="3SKWNk">
+                              <node concept="3SKdUt" id="2AEzmscuCp8" role="3cqZAp">
+                                <node concept="3SKdUq" id="2AEzmscuCp9" role="3SKWNk">
                                   <property role="3SKdUp" value="TODO specify action" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="281RgeXJciy" role="1bW2Oz">
+                            <node concept="Rh6nW" id="2AEzmscuCpa" role="1bW2Oz">
                               <property role="TrG5h" value="node" />
-                              <node concept="2jxLKc" id="281RgeXJciz" role="1tU5fm" />
+                              <node concept="2jxLKc" id="2AEzmscuCpb" role="1tU5fm" />
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2Clz$F" id="281RgeXJci$" role="18xWvz">
-                    <node concept="f80E0" id="281RgeXJci_" role="2Clzx4">
-                      <node concept="2OqwBi" id="281RgeXJciA" role="f80$r">
-                        <node concept="2OqwBi" id="281RgeXJciB" role="2Oq$k0">
-                          <node concept="qVDSY" id="281RgeXJciC" role="2Oq$k0">
-                            <node concept="chp4Y" id="281RgeXJciD" role="qVDSX">
+                  <node concept="2Clz$F" id="2AEzmscuCpc" role="18xWvz">
+                    <node concept="f80E0" id="2AEzmscuCpd" role="2Clzx4">
+                      <node concept="2OqwBi" id="2AEzmscuCpe" role="f80$r">
+                        <node concept="2OqwBi" id="2AEzmscuCpf" role="2Oq$k0">
+                          <node concept="qVDSY" id="2AEzmscuCpg" role="2Oq$k0">
+                            <node concept="chp4Y" id="2AEzmscuCph" role="qVDSX">
                               <ref role="cht4Q" to="ajas:2ojITFEDW2I" resolve="AttributeType" />
                             </node>
-                            <node concept="1dO9Bo" id="281RgeXJciE" role="1dOa5D">
-                              <node concept="psT0o" id="281RgeXJciF" role="1dp2q7">
-                                <node concept="p4YG9" id="281RgeXJciG" role="psT0v" />
+                            <node concept="1dO9Bo" id="2AEzmscuCpi" role="1dOa5D">
+                              <node concept="psT0o" id="2AEzmscuCpj" role="1dp2q7">
+                                <node concept="p4YG9" id="2AEzmscuCpk" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="281RgeXJciH" role="2OqNvi">
-                            <node concept="1bVj0M" id="281RgeXJciI" role="23t8la">
+                          <node concept="3zZkjj" id="2AEzmscuCpl" role="2OqNvi">
+                            <node concept="1bVj0M" id="2AEzmscuCpm" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="281RgeXJciJ" role="1bW5cS">
-                                <node concept="3SKdUt" id="281RgeXJciK" role="3cqZAp">
-                                  <node concept="3SKdUq" id="281RgeXJciL" role="3SKWNk">
+                              <node concept="3clFbS" id="2AEzmscuCpn" role="1bW5cS">
+                                <node concept="3SKdUt" id="2AEzmscuCpo" role="3cqZAp">
+                                  <node concept="3SKdUq" id="2AEzmscuCpp" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="281RgeXJciM" role="3cqZAp">
-                                  <node concept="2OqwBi" id="281RgeXJciN" role="3clFbG">
-                                    <node concept="2OqwBi" id="281RgeXJciO" role="2Oq$k0">
-                                      <node concept="37vLTw" id="281RgeXJciP" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="281RgeXJciS" resolve="node" />
+                                <node concept="3clFbF" id="2AEzmscuCpq" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2AEzmscuCpr" role="3clFbG">
+                                    <node concept="2OqwBi" id="2AEzmscuCps" role="2Oq$k0">
+                                      <node concept="37vLTw" id="2AEzmscuCpt" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2AEzmscuCpw" resolve="node" />
                                       </node>
-                                      <node concept="3TrEf2" id="281RgeXJciQ" role="2OqNvi">
+                                      <node concept="3TrEf2" id="2AEzmscuCpu" role="2OqNvi">
                                         <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
                                       </node>
                                     </node>
-                                    <node concept="3w_OXm" id="281RgeXJciR" role="2OqNvi" />
+                                    <node concept="3w_OXm" id="2AEzmscuCpv" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="281RgeXJciS" role="1bW2Oz">
+                              <node concept="Rh6nW" id="2AEzmscuCpw" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="281RgeXJciT" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2AEzmscuCpx" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3R8V_t" id="281RgeXJciU" role="2OqNvi">
-                          <node concept="1bVj0M" id="281RgeXJciV" role="23t8la">
+                        <node concept="3R8V_t" id="2AEzmscuCpy" role="2OqNvi">
+                          <node concept="1bVj0M" id="2AEzmscuCpz" role="23t8la">
                             <property role="3yWfEV" value="true" />
-                            <node concept="3clFbS" id="281RgeXJciW" role="1bW5cS">
-                              <node concept="3clFbF" id="281RgeXJciX" role="3cqZAp">
-                                <node concept="37vLTI" id="281RgeXJciY" role="3clFbG">
-                                  <node concept="2OqwBi" id="281RgeXJciZ" role="37vLTx">
-                                    <node concept="37vLTw" id="281RgeXJcj0" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJcj7" resolve="node" />
+                            <node concept="3clFbS" id="2AEzmscuCp$" role="1bW5cS">
+                              <node concept="3clFbF" id="2AEzmscuCp_" role="3cqZAp">
+                                <node concept="37vLTI" id="2AEzmscuCpA" role="3clFbG">
+                                  <node concept="2OqwBi" id="2AEzmscuCpB" role="37vLTx">
+                                    <node concept="37vLTw" id="2AEzmscuCpC" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCpJ" resolve="node" />
                                     </node>
-                                    <node concept="3TrEf2" id="281RgeXJcj1" role="2OqNvi">
+                                    <node concept="3TrEf2" id="2AEzmscuCpD" role="2OqNvi">
                                       <ref role="3Tt5mk" to="ajas:2ojITFEDW2E" resolve="domain" />
                                     </node>
                                   </node>
-                                  <node concept="2OqwBi" id="281RgeXJcj2" role="37vLTJ">
-                                    <node concept="37vLTw" id="281RgeXJcj3" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJcj7" resolve="node" />
+                                  <node concept="2OqwBi" id="2AEzmscuCpE" role="37vLTJ">
+                                    <node concept="37vLTw" id="2AEzmscuCpF" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCpJ" resolve="node" />
                                     </node>
-                                    <node concept="3TrEf2" id="281RgeXJcj4" role="2OqNvi">
+                                    <node concept="3TrEf2" id="2AEzmscuCpG" role="2OqNvi">
                                       <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3SKdUt" id="281RgeXJcj5" role="3cqZAp">
-                                <node concept="3SKdUq" id="281RgeXJcj6" role="3SKWNk">
+                              <node concept="3SKdUt" id="2AEzmscuCpH" role="3cqZAp">
+                                <node concept="3SKdUq" id="2AEzmscuCpI" role="3SKWNk">
                                   <property role="3SKdUp" value="TODO specify action" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="281RgeXJcj7" role="1bW2Oz">
+                            <node concept="Rh6nW" id="2AEzmscuCpJ" role="1bW2Oz">
                               <property role="TrG5h" value="node" />
-                              <node concept="2jxLKc" id="281RgeXJcj8" role="1tU5fm" />
+                              <node concept="2jxLKc" id="2AEzmscuCpK" role="1tU5fm" />
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2Clz$F" id="281RgeXJcj9" role="18xWvz">
-                    <node concept="f80E0" id="281RgeXJcja" role="2Clzx4">
-                      <node concept="24aHrZ" id="281RgeXJcjb" role="f80$r">
-                        <node concept="2OqwBi" id="281RgeXJcjc" role="iY1wd">
-                          <node concept="qVDSY" id="281RgeXJcjd" role="2Oq$k0">
-                            <node concept="chp4Y" id="281RgeXJcje" role="qVDSX">
+                  <node concept="2Clz$F" id="2AEzmscuCpL" role="18xWvz">
+                    <node concept="f80E0" id="2AEzmscuCpM" role="2Clzx4">
+                      <node concept="24aHrZ" id="2AEzmscuCpN" role="f80$r">
+                        <node concept="2OqwBi" id="2AEzmscuCpO" role="iY1wd">
+                          <node concept="qVDSY" id="2AEzmscuCpP" role="2Oq$k0">
+                            <node concept="chp4Y" id="2AEzmscuCpQ" role="qVDSX">
                               <ref role="cht4Q" to="it18:m5XqSfxGx1" resolve="Link" />
                             </node>
-                            <node concept="1dO9Bo" id="281RgeXJcjf" role="1dOa5D">
-                              <node concept="psT0o" id="281RgeXJcjg" role="1dp2q7">
-                                <node concept="p4YG9" id="281RgeXJcjh" role="psT0v" />
+                            <node concept="1dO9Bo" id="2AEzmscuCpR" role="1dOa5D">
+                              <node concept="psT0o" id="2AEzmscuCpS" role="1dp2q7">
+                                <node concept="p4YG9" id="2AEzmscuCpT" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="281RgeXJcji" role="2OqNvi">
-                            <node concept="1bVj0M" id="281RgeXJcjj" role="23t8la">
+                          <node concept="3zZkjj" id="2AEzmscuCpU" role="2OqNvi">
+                            <node concept="1bVj0M" id="2AEzmscuCpV" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="281RgeXJcjk" role="1bW5cS">
-                                <node concept="3clFbF" id="281RgeXJcjl" role="3cqZAp">
-                                  <node concept="2OqwBi" id="281RgeXJcjm" role="3clFbG">
-                                    <node concept="2OqwBi" id="281RgeXJcjn" role="2Oq$k0">
-                                      <node concept="37vLTw" id="281RgeXJcjo" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="281RgeXJcjt" resolve="node" />
+                              <node concept="3clFbS" id="2AEzmscuCpW" role="1bW5cS">
+                                <node concept="3clFbF" id="2AEzmscuCpX" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2AEzmscuCpY" role="3clFbG">
+                                    <node concept="2OqwBi" id="2AEzmscuCpZ" role="2Oq$k0">
+                                      <node concept="37vLTw" id="2AEzmscuCq0" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2AEzmscuCq5" resolve="node" />
                                       </node>
-                                      <node concept="3TrcHB" id="281RgeXJcjp" role="2OqNvi">
+                                      <node concept="3TrcHB" id="2AEzmscuCq1" role="2OqNvi">
                                         <ref role="3TsBF5" to="it18:2ojITFEE3GV" resolve="minCard" />
                                       </node>
                                     </node>
-                                    <node concept="17RlXB" id="281RgeXJcjq" role="2OqNvi" />
+                                    <node concept="17RlXB" id="2AEzmscuCq2" role="2OqNvi" />
                                   </node>
                                 </node>
-                                <node concept="3SKdUt" id="281RgeXJcjr" role="3cqZAp">
-                                  <node concept="3SKdUq" id="281RgeXJcjs" role="3SKWNk">
+                                <node concept="3SKdUt" id="2AEzmscuCq3" role="3cqZAp">
+                                  <node concept="3SKdUq" id="2AEzmscuCq4" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="281RgeXJcjt" role="1bW2Oz">
+                              <node concept="Rh6nW" id="2AEzmscuCq5" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="281RgeXJcju" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2AEzmscuCq6" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
@@ -515,93 +511,93 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2Clz$F" id="281RgeXJcjv" role="18xWvz">
-                    <node concept="f80E0" id="281RgeXJcjw" role="2Clzx4">
-                      <node concept="2OqwBi" id="281RgeXJcjx" role="f80$r">
-                        <node concept="2OqwBi" id="281RgeXJcjy" role="2Oq$k0">
-                          <node concept="qVDSY" id="281RgeXJcjz" role="2Oq$k0">
-                            <node concept="chp4Y" id="281RgeXJcj$" role="qVDSX">
+                  <node concept="2Clz$F" id="2AEzmscuCq7" role="18xWvz">
+                    <node concept="f80E0" id="2AEzmscuCq8" role="2Clzx4">
+                      <node concept="2OqwBi" id="2AEzmscuCq9" role="f80$r">
+                        <node concept="2OqwBi" id="2AEzmscuCqa" role="2Oq$k0">
+                          <node concept="qVDSY" id="2AEzmscuCqb" role="2Oq$k0">
+                            <node concept="chp4Y" id="2AEzmscuCqc" role="qVDSX">
                               <ref role="cht4Q" to="it18:m5XqSfxGx1" resolve="Link" />
                             </node>
-                            <node concept="1dO9Bo" id="281RgeXJcj_" role="1dOa5D">
-                              <node concept="psT0o" id="281RgeXJcjA" role="1dp2q7">
-                                <node concept="p4YG9" id="281RgeXJcjB" role="psT0v" />
+                            <node concept="1dO9Bo" id="2AEzmscuCqd" role="1dOa5D">
+                              <node concept="psT0o" id="2AEzmscuCqe" role="1dp2q7">
+                                <node concept="p4YG9" id="2AEzmscuCqf" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="281RgeXJcjC" role="2OqNvi">
-                            <node concept="1bVj0M" id="281RgeXJcjD" role="23t8la">
+                          <node concept="3zZkjj" id="2AEzmscuCqg" role="2OqNvi">
+                            <node concept="1bVj0M" id="2AEzmscuCqh" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="281RgeXJcjE" role="1bW5cS">
-                                <node concept="3SKdUt" id="281RgeXJcjF" role="3cqZAp">
-                                  <node concept="3SKdUq" id="281RgeXJcjG" role="3SKWNk">
+                              <node concept="3clFbS" id="2AEzmscuCqi" role="1bW5cS">
+                                <node concept="3SKdUt" id="2AEzmscuCqj" role="3cqZAp">
+                                  <node concept="3SKdUq" id="2AEzmscuCqk" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="281RgeXJcjH" role="3cqZAp">
-                                  <node concept="2OqwBi" id="281RgeXJcjI" role="3clFbG">
-                                    <node concept="2OqwBi" id="281RgeXJcjJ" role="2Oq$k0">
-                                      <node concept="37vLTw" id="281RgeXJcjK" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="281RgeXJcjN" resolve="node" />
+                                <node concept="3clFbF" id="2AEzmscuCql" role="3cqZAp">
+                                  <node concept="2OqwBi" id="2AEzmscuCqm" role="3clFbG">
+                                    <node concept="2OqwBi" id="2AEzmscuCqn" role="2Oq$k0">
+                                      <node concept="37vLTw" id="2AEzmscuCqo" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2AEzmscuCqr" resolve="node" />
                                       </node>
-                                      <node concept="3TrcHB" id="281RgeXJcjL" role="2OqNvi">
+                                      <node concept="3TrcHB" id="2AEzmscuCqp" role="2OqNvi">
                                         <ref role="3TsBF5" to="it18:2ojITFEE3GV" resolve="minCard" />
                                       </node>
                                     </node>
-                                    <node concept="17RlXB" id="281RgeXJcjM" role="2OqNvi" />
+                                    <node concept="17RlXB" id="2AEzmscuCqq" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="281RgeXJcjN" role="1bW2Oz">
+                              <node concept="Rh6nW" id="2AEzmscuCqr" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="281RgeXJcjO" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2AEzmscuCqs" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3R8V_t" id="281RgeXJcjP" role="2OqNvi">
-                          <node concept="1bVj0M" id="281RgeXJcjQ" role="23t8la">
+                        <node concept="3R8V_t" id="2AEzmscuCqt" role="2OqNvi">
+                          <node concept="1bVj0M" id="2AEzmscuCqu" role="23t8la">
                             <property role="3yWfEV" value="true" />
-                            <node concept="3clFbS" id="281RgeXJcjR" role="1bW5cS">
-                              <node concept="3clFbF" id="281RgeXJcjS" role="3cqZAp">
-                                <node concept="37vLTI" id="281RgeXJcjT" role="3clFbG">
-                                  <node concept="Xl_RD" id="281RgeXJcjU" role="37vLTx">
+                            <node concept="3clFbS" id="2AEzmscuCqv" role="1bW5cS">
+                              <node concept="3clFbF" id="2AEzmscuCqw" role="3cqZAp">
+                                <node concept="37vLTI" id="2AEzmscuCqx" role="3clFbG">
+                                  <node concept="Xl_RD" id="2AEzmscuCqy" role="37vLTx">
                                     <property role="Xl_RC" value="1" />
                                   </node>
-                                  <node concept="2OqwBi" id="281RgeXJcjV" role="37vLTJ">
-                                    <node concept="37vLTw" id="281RgeXJcjW" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJck6" resolve="node" />
+                                  <node concept="2OqwBi" id="2AEzmscuCqz" role="37vLTJ">
+                                    <node concept="37vLTw" id="2AEzmscuCq$" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCqI" resolve="node" />
                                     </node>
-                                    <node concept="3TrcHB" id="281RgeXJcjX" role="2OqNvi">
+                                    <node concept="3TrcHB" id="2AEzmscuCq_" role="2OqNvi">
                                       <ref role="3TsBF5" to="it18:2ojITFEE3GV" resolve="minCard" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3clFbF" id="281RgeXJcjY" role="3cqZAp">
-                                <node concept="37vLTI" id="281RgeXJcjZ" role="3clFbG">
-                                  <node concept="Xl_RD" id="281RgeXJck0" role="37vLTx">
+                              <node concept="3clFbF" id="2AEzmscuCqA" role="3cqZAp">
+                                <node concept="37vLTI" id="2AEzmscuCqB" role="3clFbG">
+                                  <node concept="Xl_RD" id="2AEzmscuCqC" role="37vLTx">
                                     <property role="Xl_RC" value="1" />
                                   </node>
-                                  <node concept="2OqwBi" id="281RgeXJck1" role="37vLTJ">
-                                    <node concept="37vLTw" id="281RgeXJck2" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="281RgeXJck6" resolve="node" />
+                                  <node concept="2OqwBi" id="2AEzmscuCqD" role="37vLTJ">
+                                    <node concept="37vLTw" id="2AEzmscuCqE" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2AEzmscuCqI" resolve="node" />
                                     </node>
-                                    <node concept="3TrcHB" id="281RgeXJck3" role="2OqNvi">
+                                    <node concept="3TrcHB" id="2AEzmscuCqF" role="2OqNvi">
                                       <ref role="3TsBF5" to="it18:2ojITFEE3GX" resolve="maxCard" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3SKdUt" id="281RgeXJck4" role="3cqZAp">
-                                <node concept="3SKdUq" id="281RgeXJck5" role="3SKWNk">
+                              <node concept="3SKdUt" id="2AEzmscuCqG" role="3cqZAp">
+                                <node concept="3SKdUq" id="2AEzmscuCqH" role="3SKWNk">
                                   <property role="3SKdUp" value="TODO specify action" />
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="281RgeXJck6" role="1bW2Oz">
+                            <node concept="Rh6nW" id="2AEzmscuCqI" role="1bW2Oz">
                               <property role="TrG5h" value="node" />
-                              <node concept="2jxLKc" id="281RgeXJck7" role="1tU5fm" />
+                              <node concept="2jxLKc" id="2AEzmscuCqJ" role="1tU5fm" />
                             </node>
                           </node>
                         </node>
@@ -609,9 +605,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2Clz$F" id="281RgeXJck8" role="aymYO" />
-                <node concept="2_V_lH" id="281RgeXJck9" role="1PhJh3">
-                  <ref role="2_V_lI" node="281RgeXJck8" resolve="CommandHolder" />
+                <node concept="2Clz$F" id="2AEzmscuCqK" role="aymYO" />
+                <node concept="2_V_lH" id="2AEzmscuCqL" role="1PhJh3">
+                  <ref role="2_V_lI" node="2AEzmscuCqK" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -637,14 +633,14 @@
     <session id="1153433957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="45" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.17" value="2" />
-          <entry key="project.open.time.18" value="4" />
+          <entry key="project.open.time.18" value="5" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.20" value="3" />
           <entry key="project.open.time.21" value="1" />
@@ -659,7 +655,7 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="47" />
+          <entry key="project.opened" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -675,7 +671,7 @@
           <entry key="&lt;no name&gt;[IntentionDeclaration]" value="3" />
           <entry key="&lt;no name&gt;[InterfaceConceptDeclaration]" value="1" />
           <entry key="&lt;no name&gt;[NodeFactories]" value="2" />
-          <entry key="&lt;no name&gt;[NonTypesystemRule]" value="2" />
+          <entry key="&lt;no name&gt;[NonTypesystemRule]" value="3" />
           <entry key="&lt;no name&gt;[ObjectFactDiagram]" value="5" />
           <entry key="&lt;no name&gt;[OrganisationConstructionDiagram]" value="16" />
           <entry key="&lt;no name&gt;[ProcesModel]" value="2" />
@@ -691,16 +687,16 @@
           <entry key="AbstractTransactionKind" value="3" />
           <entry key="Act" value="24" />
           <entry key="Action" value="1" />
-          <entry key="Action Rule Specification (ARS) WAA" value="9" />
+          <entry key="Action Rule Specification (ARS) WAA" value="10" />
           <entry key="ActionClause" value="6" />
           <entry key="ActionRule" value="10" />
           <entry key="ActionRuleSpecifications" value="2" />
           <entry key="Actor" value="9" />
           <entry key="ActorRole" value="18" />
-          <entry key="ActorRoleReference" value="3" />
-          <entry key="Addressee" value="1" />
+          <entry key="ActorRoleReference" value="5" />
+          <entry key="Addressee" value="2" />
           <entry key="AggregateTransactionKind" value="5" />
-          <entry key="AggregateTransactionKindReference" value="2" />
+          <entry key="AggregateTransactionKindReference" value="3" />
           <entry key="Aggregation" value="5" />
           <entry key="Amount" value="2" />
           <entry key="Area" value="3" />
@@ -725,7 +721,7 @@
           <entry key="Construction Model AWR" value="10" />
           <entry key="Construction Model Library" value="11" />
           <entry key="Construction Model test" value="11" />
-          <entry key="Construction model WAA" value="35" />
+          <entry key="Construction model WAA" value="37" />
           <entry key="Construction model WAA test" value="3" />
           <entry key="Construction model test" value="6" />
           <entry key="ConstructionModel" value="12" />
@@ -742,7 +738,7 @@
           <entry key="EventKind" value="1" />
           <entry key="EventLaw" value="4" />
           <entry key="EventType" value="14" />
-          <entry key="Executor" value="15" />
+          <entry key="Executor" value="16" />
           <entry key="Fact Model AWR" value="4" />
           <entry key="Fact Model Library" value="9" />
           <entry key="Fact model RAC" value="3" />
@@ -761,7 +757,7 @@
           <entry key="IShape" value="1" />
           <entry key="IStyleContainer" value="1" />
           <entry key="IUpperCaseNamedConcept" value="1" />
-          <entry key="Initiator" value="15" />
+          <entry key="Initiator" value="16" />
           <entry key="IsEqualTo" value="3" />
           <entry key="LayoutMap" value="1" />
           <entry key="Length" value="1" />
@@ -787,7 +783,7 @@
           <entry key="Object Fact Diagram RAC" value="1" />
           <entry key="ObjectFactDiagram" value="13" />
           <entry key="Operator" value="1" />
-          <entry key="Organisation Construction Diagram (OCD) WAA" value="17" />
+          <entry key="Organisation Construction Diagram (OCD) WAA" value="18" />
           <entry key="OrganisationConstructionDiagram" value="28" />
           <entry key="OrganisationConstructionDiagram_EditorBuilder_a" value="1" />
           <entry key="PSD Afwijzen van het verzoek" value="3" />
@@ -799,7 +795,7 @@
           <entry key="PSD next fee payments" value="2" />
           <entry key="PerformNo" value="3" />
           <entry key="PerformYes" value="5" />
-          <entry key="Performer" value="1" />
+          <entry key="Performer" value="2" />
           <entry key="PortAct" value="2" />
           <entry key="PortCircle" value="1" />
           <entry key="PortFact" value="2" />
@@ -832,7 +828,7 @@
           <entry key="Time" value="4" />
           <entry key="Transaction" value="5" />
           <entry key="Transaction Product Table WAA" value="1" />
-          <entry key="TransactionKind" value="77" />
+          <entry key="TransactionKind" value="79" />
           <entry key="TransactionKindPSD" value="1" />
           <entry key="TransactionKindReference" value="18" />
           <entry key="TransactionKindStepKind" value="9" />
@@ -852,7 +848,7 @@
           <entry key="cardinality" value="2" />
           <entry key="eventLawType" value="1" />
           <entry key="generalStepKind" value="7" />
-          <entry key="java" value="35" />
+          <entry key="java" value="36" />
           <entry key="linkType" value="2" />
           <entry key="main" value="1" />
           <entry key="mc_baseLanguage" value="1" />
@@ -865,8 +861,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="MPS_NODE" value="1307" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="MPS_NODE" value="1321" />
+          <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit" />
@@ -875,19 +871,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://WAA/WAA.specifications/Fact model WAA">
+      <file pinned="false" current-in-tab="true">
+        <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="2" viewPositionY="3964">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="821">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="607" />
+                    <property name="caretXRelative" value="208" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_koyvu4_d0">
-                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698730" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -896,7 +892,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -905,26 +901,25 @@
                 <enabledHints>
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
                 </enabledHints>
               </inspectorMemento>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="2359">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1242">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="167" />
+                    <property name="caretXRelative" value="104" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_bjfh2y_q0">
-                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531014196" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -933,7 +928,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -942,9 +937,134 @@
                 <enabledHints>
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
                 </enabledHints>
               </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://ActionSL/ActionSL.typesystem/CheckActionRule">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="231" />
+                    <property name="caretXRelative" value="88" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:4e099fd4-b350-4474-8796-ce3cf8c702e5(ActionSL.typesystem)/3002367575327081310" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://ActionSL/ActionSL.structure/Addressee">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="475" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                      <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378033" />
+                    </cellInfo>
+                  </stackElement>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-463" />
+                    <property name="sideSelectDirection" value="RIGHT" />
+                    <cellInfo cellId="Collection_lfsepz_a">
+                      <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378033" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378004" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://ActionSL/ActionSL.structure/Performer">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="475" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                      <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378070" />
+                    </cellInfo>
+                  </stackElement>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-463" />
+                    <property name="sideSelectDirection" value="RIGHT" />
+                    <cellInfo cellId="Collection_lfsepz_a">
+                      <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378070" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378064" />
             </state>
           </provider>
         </entry>
@@ -957,11 +1077,48 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="547" />
+                    <property name="caretXRelative" value="48" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394509711" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034578181" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://ConstructionSL/ConstructionSL.structure/Executor">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
                     <property name="caretX" value="67" />
-                    <property name="caretXRelative" value="16" />
+                    <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
-                      <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2450482680404229360" />
+                      <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2162480396009465683" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -970,7 +1127,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -979,169 +1136,9 @@
                 <enabledHints>
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
                   <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
                 </enabledHints>
               </inspectorMemento>
-              <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2222079712858170562" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://ConstructionSL/ConstructionSL.structure/ActorRole">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a">
-                      <node node_reference="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034489001" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034489001" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://FactSL/FactSL.structure/EntityTypeSet">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="63" />
-                    <property name="caretXRelative" value="16" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_eb7h0d_a0">
-                      <node node_reference="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476217859" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="role" value="statement" />
-                    <property name="modelId" value="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)" />
-                    <property name="firstNodeId" value="5179980272476217859" />
-                    <property name="parentNodeId" value="5179980272476217858" />
-                    <property name="lastNodeId" value="5179980272476217859" />
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476217857" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://FactSL/FactSL.structure/FactType">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="295" />
-                    <property name="caretXRelative" value="64" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/2222079712863829254" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/2222079712863829251" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://FactSL/FactSL.structure/EventLaw">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="295" />
-                    <property name="caretXRelative" value="64" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476941189" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                  <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476941168" />
+              <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/464479581540599039" />
             </state>
           </provider>
         </entry>
@@ -1435,6 +1432,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
@@ -1444,7 +1442,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" />
+              <option name="myItemId" value="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1454,27 +1452,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
+              <option name="myItemId" value="r:4e099fd4-b350-4474-8796-ce3cf8c702e5(ActionSL.typesystem) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/ActionSL/models/typesystem.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1502,11 +1484,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/ConstructionSL/models/editor.mps]" />
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1516,11 +1494,17 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" />
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/ConstructionSL/models/structure.mps]" />
+              <option name="myItemId" value="WAA" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1530,13 +1514,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" />
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WAA" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/WAA/models/specifications.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="464479581531013753" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="Favorites" />
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
@@ -1638,7 +1633,7 @@
     <frame x="24" y="23" width="1642" height="959" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32352942" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3279099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1655,7 +1650,7 @@
       <window_info anchor="bottom" id="Chart" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.52811897" side_tool="true" weight="0.4134727" />
       <window_info anchor="bottom" id="Classpath Explorer" order="14" />
-      <window_info anchor="bottom" id="Documentation" order="15" sideWeight="0.4989747" weight="0.41463414" />
+      <window_info anchor="bottom" id="Documentation" order="15" sideWeight="0.4989747" weight="0.41695702" />
       <window_info anchor="bottom" id="Usages" order="16" sideWeight="0.49123904" weight="0.32868758" />
       <window_info anchor="bottom" id="Node Explorer" order="17" sideWeight="0.4692954" weight="0.23112659" />
       <window_info anchor="bottom" id="Module Dependencies" order="18" weight="0.329849" />
@@ -1669,7 +1664,7 @@
       <window_info anchor="bottom" id="RefactoringView" order="26" sideWeight="0.49385908" weight="0.329849" />
       <window_info anchor="bottom" id="Trace Explorer" order="27" />
       <window_info anchor="bottom" id="mbeddr TODO" order="28" />
-      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.5206508" side_tool="true" visible="true" weight="0.38675958" />
+      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.5206508" side_tool="true" weight="0.38675958" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="30" weight="0.329849" />
       <window_info anchor="bottom" id="Activation Trace" order="31" weight="0.329849" />
       <window_info anchor="bottom" id="Visualiseer" order="32" />
@@ -5813,7 +5808,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Assess part" />
     <MESSAGE value="Transactionreference added in actionmodel" />
     <MESSAGE value="Readme" />
     <MESSAGE value="attribute kind formulation" />
@@ -5838,7 +5832,8 @@
     <MESSAGE value="UI Transactionkind" />
     <MESSAGE value="Serveral UI enhancements" />
     <MESSAGE value="UI attribute type" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI attribute type" />
+    <MESSAGE value="Transactionkind in CAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="Transactionkind in CAR" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://DemoSL/DemoSL.structure/ConstructionModel">
@@ -6185,40 +6180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="18" viewPositionY="2585">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="231" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5047305753770775587" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5047305753770775587" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://GeneralSL/GeneralSL.behavior/null" />
     <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
@@ -6401,110 +6362,6 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Organisation Construction Diagram (OCD) WAA">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="303" />
-                <property name="caretXRelative" value="40" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_internalCompositeActorRole">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531013824" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531013824" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/Executor">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="295" />
-                <property name="caretXRelative" value="24" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_sourceCardinality">
-                  <node node_reference="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506474" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506474" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506429" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/Initiator">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="295" />
-                <property name="caretXRelative" value="24" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_sourceCardinality">
-                  <node node_reference="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506357" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506357" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394506310" />
         </state>
       </provider>
     </entry>
@@ -6709,7 +6566,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5179980272477176816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -6718,7 +6575,6 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476217857" />
@@ -6745,7 +6601,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/2222079712863829254" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -6754,7 +6610,6 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/2222079712863829251" />
@@ -6781,7 +6636,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5179980272477176816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -6790,7 +6645,6 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:335844c6-bcab-4fc7-a986-220e8974832a(FactSL.typesystem)/5179980272476941168" />
@@ -6832,425 +6686,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://ConstructionSL@transient1/ConstructionSL.editor@7_9/TransactionKind_EditorBuilder_a">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="6649">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-360" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_kkjzaq_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521412" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="0xd87481a388534c7cL" modelText="0xd87481a388534c7cL" propertyCell="true" cellId="property_value">
-                <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520340" />
-              </errorMarker>
-              <errorMarker text="0x9cb5096d805e832cL" modelText="0x9cb5096d805e832cL" propertyCell="true" cellId="property_value">
-                <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520348" />
-              </errorMarker>
-              <errorMarker text="0x2613bb9aeaa18f05L" modelText="0x2613bb9aeaa18f05L" propertyCell="true" cellId="property_value">
-                <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520353" />
-              </errorMarker>
-              <errorMarker text="0x47e2fc9cf4d4f1f6L" modelText="0x47e2fc9cf4d4f1f6L" propertyCell="true" cellId="property_value">
-                <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520356" />
-              </errorMarker>
-              <errorMarker text="" propertyCell="false" cellId="empty_expression">
-                <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521388" />
-              </errorMarker>
-              <errorMarker text="BaseConcept" propertyCell="false" cellNumber="2">
-                <parent cellId="Collection_kkjzaq_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521401" />
-                </parent>
-              </errorMarker>
-              <errorMarker text="BaseConcept" propertyCell="false" cellNumber="2">
-                <parent cellId="Collection_kkjzaq_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521412" />
-                </parent>
-              </errorMarker>
-              <errorMarker text="BaseConcept" propertyCell="false" cellNumber="2">
-                <parent cellId="Collection_1ktdi3_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521490" />
-                </parent>
-              </errorMarker>
-              <errorMarker text="smodelAttribute" propertyCell="false" cellNumber="4">
-                <parent cellId="Collection_1ktdi3_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521490" />
-                </parent>
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519187" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519176" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519094" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_msf9u8_b0">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519091" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521527" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521461" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521436" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521402" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521396" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521383" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521375" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521375" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521318" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521312" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520509" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520449" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520411" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520382" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520370" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520298" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520283" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520283" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520257" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520250" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521785" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521709" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_uj0cpq_l0">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521302" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521060" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520926" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520667" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_uj0cpq_l0">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520249" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404520046" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519841" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519734" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519373" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404519067" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404518945" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404518842" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404518783" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404518451" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404518325" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404518235" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404517980" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404517886" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404517760" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404517343" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404517263" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404517166" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404516797" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404516035" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515912" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515737" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515643" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515188" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515137" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515101" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515101" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404515028" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404514998" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521402" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_uj0cpq_l0">
-                  <node node_reference="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521302" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="e2c483cd-f458-4314-9466-2e9fa8a076d1/i:10a07009(ConstructionSL@transient1/ConstructionSL.editor@7_9)/2450482680404521412" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellNumber="0" />
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/AggregateTransactionKindReference">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="372" />
-                <property name="caretXRelative" value="32" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/5179980272482185716" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2375225832424998626" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/5179980272482185713" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://ConstructionSL@transient1/ConstructionSL.editor@7_9/TransactionKind_EditorBuilder_a" />
     <entry file="mps://node://ConstructionSL/ConstructionSL.structure/CompositeActorRole">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
@@ -7371,7 +6807,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5179980272477176816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -7380,25 +6816,24 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034489001" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://WAA/WAA.specifications/Fact model WAA">
+    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/AggregateTransactionKindReference">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="2" viewPositionY="3964">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="235" />
+                <property name="caretXRelative" value="144" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_koyvu4_d0">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697698730" />
+                <cellInfo cellId="property_role">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/5179980272482185714" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -7407,7 +6842,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/5179980272482185718" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -7416,9 +6851,211 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
+          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/5179980272482185713" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://WAA/WAA.specifications/Fact model WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="4297">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="279" />
+                <property name="caretXRelative" value="48" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_type">
+                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5179980272477176816" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5179980272477176816" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/Initiator">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="107" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/464479581539882263" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/464479581539882263" saveSessionState="false" viewPositionX="0" viewPositionY="79">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2162480396006084594" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2162480396006077950" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/464479581539882254" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/ActorRoleReference">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="391" />
+                <property name="caretXRelative" value="144" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/3316760564118789712" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/3316760564118789712" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/3316760564118789712" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ActionSL/ActionSL.typesystem/&lt;no name&gt;[NonTypesystemRule]" />
+    <entry file="mps://node://ActionSL/ActionSL.structure/Addressee">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="475" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378033" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-463" />
+                <property name="sideSelectDirection" value="RIGHT" />
+                <cellInfo cellId="Collection_lfsepz_a">
+                  <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378033" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378004" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ActionSL/ActionSL.structure/Performer">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="475" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378070" />
+                </cellInfo>
+              </stackElement>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-463" />
+                <property name="sideSelectDirection" value="RIGHT" />
+                <cellInfo cellId="Collection_lfsepz_a">
+                  <node node_reference="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378070" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)/5368065712670378064" />
         </state>
       </provider>
     </entry>
@@ -7429,11 +7066,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="67" />
-                <property name="caretXRelative" value="16" />
+                <property name="caretX" value="547" />
+                <property name="caretXRelative" value="48" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2450482680404229360" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/7147711074394509711" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -7442,7 +7079,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -7451,25 +7088,134 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
             </enabledHints>
           </inspectorMemento>
-          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2222079712858170562" />
+          <node node_ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)/2743742872034578181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/Executor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="67" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/2162480396009465683" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/464479581540599039" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/ActionSL/source_gen/ActionSL/typesystem/CheckActionRule_NonTypesystemRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="42" column="1599" selection-start-line="42" selection-start-column="1599" selection-end-line="42" selection-end-column="1599" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://WAA/WAA.specifications/Organisation Construction Diagram (OCD) WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="303" />
+                <property name="caretXRelative" value="40" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_internalCompositeActorRole">
+                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531013824" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531013824" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ActionSL/ActionSL.typesystem/CheckActionRule">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="231" />
+                <property name="caretXRelative" value="88" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:4e099fd4-b350-4474-8796-ce3cf8c702e5(ActionSL.typesystem)/3002367575327081310" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
     <entry file="mps://node://WAA/WAA.specifications/Construction model WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2359">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1242">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="167" />
+                <property name="caretXRelative" value="104" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_bjfh2y_q0">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581531014196" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -7478,7 +7224,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/464479581537602129" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -7487,7 +7233,40 @@
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-              <enabledHintsElement enabledHintsAttribute="GeneralSL.editor.DemoHints.CM" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://WAA/WAA.specifications/Action Rule Specification (ARS) WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="821">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="607" />
+                <property name="caretXRelative" value="208" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/2162480395996010422" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
         </state>
