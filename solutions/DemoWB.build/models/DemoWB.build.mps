@@ -533,20 +533,8 @@
           <property role="3MwjfP" value="1.0" />
         </node>
       </node>
-      <node concept="m$_yC" id="2AEzmscAXO0" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-      </node>
-      <node concept="m$_yC" id="2AEzmscC0Ka" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
-      </node>
       <node concept="m$_yC" id="2AEzmscCBLv" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
-      </node>
-      <node concept="m$_yC" id="2AEzmscCBP_" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
-      </node>
-      <node concept="m$_yC" id="2AEzmscGILS" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
       </node>
       <node concept="3_J27D" id="2AEzmscAXO1" role="m_cZH">
         <node concept="3Mxwew" id="2AEzmscAXO2" role="3MwsjC">

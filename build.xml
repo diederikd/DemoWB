@@ -125,11 +125,7 @@
         <id>DemoWB</id>
         <name>DemoWB</name>
         <version>1.0</version>
-        <depends>jetbrains.mps.core</depends>
-        <depends>de.slisson.mps.all</depends>
         <depends>de.itemis.mps.editor.diagram</depends>
-        <depends>de.slisson.mps.tables</depends>
-        <depends>de.slisson.mps.conditionalEditor</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -658,11 +654,9 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.all" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
-      <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
