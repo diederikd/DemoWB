@@ -192,12 +192,6 @@
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
-      <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
-        <child id="322010710375832962" name="exports" index="3LEDUa" />
-      </concept>
-      <concept id="322010710375832938" name="jetbrains.mps.build.mps.structure.BuildMps_DevKitExportLanguage" flags="ng" index="3LEDTy">
-        <reference id="322010710375832947" name="language" index="3LEDTV" />
-      </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
@@ -565,40 +559,6 @@
     </node>
     <node concept="2G$12M" id="2AEzmscAXNT" role="3989C9">
       <property role="TrG5h" value="DemoWB" />
-      <node concept="3LEwk6" id="2AEzmscAXNM" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="DemoSpecificationLanguage" />
-        <property role="3LESm3" value="2b99ba1d-c887-40de-a1eb-42c0e5a4b518" />
-        <node concept="55IIr" id="2AEzmscAXNH" role="3LF7KH">
-          <node concept="2Ry0Ak" id="2AEzmscAXNI" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="2AEzmscAXNJ" role="2Ry0An">
-              <property role="2Ry0Am" value="DemoSpecificationLanguage" />
-              <node concept="2Ry0Ak" id="2AEzmscAXNK" role="2Ry0An">
-                <property role="2Ry0Am" value="DemoSpecificationLanguage.devkit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_D" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNS" resolve="ActionSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_E" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNk" resolve="DemoSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_F" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNA" resolve="ConstructionSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_G" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNG" resolve="FactSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_H" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNw" resolve="GeneralSL" />
-        </node>
-        <node concept="3LEDTy" id="2AEzmscAZ_I" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNq" resolve="ProcessSL" />
-        </node>
-      </node>
       <node concept="1E1JtD" id="2AEzmscAXNk" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="DemoSL" />
