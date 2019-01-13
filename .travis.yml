@@ -7,4 +7,4 @@ before_install:
 install: 
 - unzip MPS-2018.2.zip
 - unzip platform-distribution_2018_2_0.zip
-script: ant -Dmps_home=./MPS\ 2018.2 -Dmbeddr_home=./plugins -Durl_home=.
+script: ant -Dmps_home=./MPS\ 2018.2 -Dmbeddr_home=./plugins

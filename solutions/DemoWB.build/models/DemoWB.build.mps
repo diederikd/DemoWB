@@ -9,7 +9,7 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
-    <import index="fq0c" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#3ae9cfda-f938-4524-b4ca-fbcba3b0525b(jetbrains.mps.lang.project.modules/module.com.mbeddr.platform@project_stub)" />
+    <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -377,6 +377,18 @@
         <ref role="398BVh" node="2AEzmscAXNe" resolve="mbeddr_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="2AEzmscC0Mp" role="1l3spa">
+      <ref role="1l3spb" to="al5i:6ucYLjosbT2" resolve="com.mbeddr.platform.distribution" />
+      <node concept="398BVA" id="2AEzmscC0Nx" role="2JcizS">
+        <ref role="398BVh" node="2AEzmscAXNe" resolve="mbeddr_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="2AEzmscC0P_" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="de.itemis.mps.extensions" />
+      <node concept="398BVA" id="2AEzmscC0QL" role="2JcizS">
+        <ref role="398BVh" node="2AEzmscAXNe" resolve="mbeddr_home" />
+      </node>
+    </node>
     <node concept="1l3spV" id="2AEzmscAXO3" role="1l3spN">
       <node concept="3_I8Xc" id="2AEzmscAXOb" role="39821P">
         <ref role="3_I8Xa" to="ffeo:1diLdO26H79" resolve="languages" />
@@ -515,19 +527,25 @@
           <property role="3MwjfP" value="1.0" />
         </node>
       </node>
-      <node concept="m$f5U" id="2AEzmscAXNZ" role="m$_yh">
-        <ref role="m$f5T" node="2AEzmscAXNT" resolve="DemoWB" />
-      </node>
       <node concept="m$_yC" id="2AEzmscAXO0" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="2AEzmscBNUf" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
+      <node concept="m$_yC" id="2AEzmscC0Ka" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4hvHh3QW$Eh" resolve="de.slisson.mps.all" />
+      </node>
+      <node concept="m$_yC" id="2AEzmscCBLv" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
+      </node>
+      <node concept="m$_yC" id="2AEzmscCBP_" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:29so9Vb$6Tj" resolve="de.slisson.mps.tables" />
       </node>
       <node concept="3_J27D" id="2AEzmscAXO1" role="m_cZH">
         <node concept="3Mxwew" id="2AEzmscAXO2" role="3MwsjC">
           <property role="3MwjfP" value="DemoWB" />
         </node>
+      </node>
+      <node concept="m$f5U" id="2AEzmscCBGS" role="m$_yh">
+        <ref role="m$f5T" node="2AEzmscAXNT" resolve="DemoWB" />
       </node>
     </node>
     <node concept="2G$12M" id="2AEzmscAXNT" role="3989C9">

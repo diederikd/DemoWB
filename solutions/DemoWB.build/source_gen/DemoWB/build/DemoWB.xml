@@ -14,6 +14,8 @@
   <property name="artifacts.mpsStandalone" location="${mps_home}" />
   <property name="artifacts.mpsMakePlugin" location="${mps_home}/plugins" />
   <property name="artifacts.com.mbeddr.platform" location="${mbeddr_home}" />
+  <property name="artifacts.com.mbeddr.platform.distribution" location="${mbeddr_home}" />
+  <property name="artifacts.de.itemis.mps.extensions" location="${mbeddr_home}" />
   <property file="${artifacts.mpsStandalone}/build.properties" prefix="import.mpsStandalone" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
   <property name="mpsBootstrapCore.version" value="${import.mpsStandalone.mpsBootstrapCore.version}" />
@@ -122,7 +124,9 @@
         <name>DemoWB</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
-        <depends>com.mbeddr.platform</depends>
+        <depends>de.slisson.mps.all</depends>
+        <depends>de.itemis.mps.editor.diagram</depends>
+        <depends>de.slisson.mps.tables</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -658,22 +662,16 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.jung" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.suppresswarning" />
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips" />
+      <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.all" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
-      <plugin path="${artifacts.com.mbeddr.platform}/mbeddr.platform" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
-      <plugin path="${artifacts.com.mbeddr.platform}/mps-multiline" />
-      <plugin path="${artifacts.com.mbeddr.platform}/mps-richtext" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
       <plugin path="${artifacts.mpsStandalone}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
