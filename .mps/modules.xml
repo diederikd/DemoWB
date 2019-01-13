@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/FactSL/FactSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GeneralSL/GeneralSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/DemoWB.build/DemoWB.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/WAA/WAA.msd" folder="" />
     </projectModules>
   </component>
