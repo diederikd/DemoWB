@@ -19,19 +19,35 @@
   <component name="ChangeListManager">
     <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/DemoWB.build.msd" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/DemoWB.build.msd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/models/DemoWB.build.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/models/DemoWB.build.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen.caches/DemoWB/build/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen.caches/DemoWB/build/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen/DemoWB/build/DemoWB.xml" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen/DemoWB/build/DemoWB.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen/DemoWB/build/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen/DemoWB/build/trace.info" afterDir="false" />
     </list>
+    <ignored path="languages/GeneralSL/classes_gen/" />
+    <ignored path="languages/GeneralSL/source_gen.caches/" />
+    <ignored path="languages/GeneralSL/source_gen/" />
+    <ignored path="languages/ProcessSL/classes_gen/" />
+    <ignored path="languages/ProcessSL/source_gen.caches/" />
+    <ignored path="languages/ProcessSL/source_gen/" />
+    <ignored path="languages/ActionSL/classes_gen/" />
+    <ignored path="languages/ActionSL/source_gen.caches/" />
+    <ignored path="languages/ActionSL/source_gen/" />
+    <ignored path="languages/FactSL/classes_gen/" />
+    <ignored path="languages/FactSL/source_gen.caches/" />
+    <ignored path="languages/FactSL/source_gen/" />
+    <ignored path="languages/DemoSL/classes_gen/" />
+    <ignored path="languages/DemoSL/source_gen.caches/" />
+    <ignored path="languages/DemoSL/source_gen/" />
+    <ignored path="languages/ConstructionSL/classes_gen/" />
+    <ignored path="languages/ConstructionSL/source_gen.caches/" />
+    <ignored path="languages/ConstructionSL/source_gen/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ConceptEditorHintSettings">
     <option name="enabledHints">
@@ -611,7 +627,7 @@
     <session id="1153433957">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
+          <entry key="project.closed" value="47" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.13" value="1" />
@@ -1192,6 +1208,26 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DemoWB" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
               <option name="myItemType" value="" />
@@ -1215,7 +1251,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
+          <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -1228,20 +1264,12 @@
               <option name="myItemId" value="DemoWB" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
+              <option name="myItemId" value="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/DemoWB.build/models/DemoWB.build.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemId" value="3002367575328545950" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -1271,7 +1299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Build Script.DemoWBDistribution">
+  <component name="RunManager" selected="Build Script.DemoWB">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -1377,14 +1405,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="MPS.MPS" />
-      <item itemvalue="Build Script.DemoWB" />
       <item itemvalue="Build Script.DemoWBDistribution" />
+      <item itemvalue="Build Script.DemoWB" />
+      <item itemvalue="MPS.MPS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Build Script.DemoWBDistribution" />
         <item itemvalue="Build Script.DemoWB" />
+        <item itemvalue="Build Script.DemoWBDistribution" />
       </list>
     </recent_temporary>
   </component>
@@ -1398,7 +1426,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49436796" weight="0.329849" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49374217" weight="0.329849" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39953542" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1425,7 +1453,7 @@
       <window_info anchor="bottom" id="RefactoringView" order="26" sideWeight="0.49385908" weight="0.329849" />
       <window_info anchor="bottom" id="Trace Explorer" order="27" />
       <window_info anchor="bottom" id="mbeddr TODO" order="28" />
-      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.528786" side_tool="true" visible="true" weight="0.2891986" />
+      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.50625783" side_tool="true" weight="0.329849" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="30" weight="0.329849" />
       <window_info anchor="bottom" id="Activation Trace" order="31" weight="0.329849" />
       <window_info anchor="bottom" id="Visualiseer" order="32" />
@@ -5569,7 +5597,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Action rules in simulation" />
     <MESSAGE value="performed acts cannot be executed" />
     <MESSAGE value="Assess editor" />
     <MESSAGE value="First steps performer and addressee" />
@@ -5594,7 +5621,8 @@
     <MESSAGE value="Enabled travis" />
     <MESSAGE value="Added build script" />
     <MESSAGE value="travis.yml changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="travis.yml changed" />
+    <MESSAGE value="Updated build script" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated build script" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://DemoSL/DemoSL.structure/ConstructionModel">
