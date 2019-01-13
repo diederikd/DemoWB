@@ -26,11 +26,10 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import de.itemis.mps.editor.diagram.runtime.DiagramContext;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import de.itemis.mps.editor.diagram.runtime.model.AbstractEdgeAccessor;
@@ -145,8 +144,12 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
                     IDiagramAccessor accessor = new AbstractDiagramAccessor(node) {
                       public List<? extends IDiagramElementAccessor> getElements(IAccessorFactory accessorFactory) {
                         final List<IDiagramElementAccessor> elements = new ArrayList<IDiagramElementAccessor>();
-                        for (SNode e : ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions")))) {
-                          elements.addAll(accessorFactory.fromSNode(e));
+                        for (SNode e : Sequence.fromIterable(new Object() {
+                          public Iterable<SNode> query() {
+                            return SNodeOperations.ofConcept(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa69ec1L, 0x2613bb9aeaa032b2L, "transactions")), MetaAdapterFactory.getConcept(0xd87481a388534c7cL, 0x9cb5096d805e832cL, 0x2613bb9aeaa18f05L, "ConstructionSL.structure.TransactionKind"));
+                          }
+                        }.query())) {
+                          elements.addAll(accessorFactory.fromSNode(e, false));
                         }
                         for (SNode e : Sequence.fromIterable(new Object() {
                           public Iterable<SNode> query() {

@@ -234,9 +234,6 @@
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
         <child id="6910723851735171798" name="buttonConfig" index="3sAl1G" />
       </concept>
-      <concept id="3155126767689025629" name="de.itemis.mps.editor.diagram.structure.Content_Childs" flags="ng" index="aDKH9">
-        <reference id="3155126767689025691" name="linkDeclaration" index="aDKIf" />
-      </concept>
       <concept id="9064581101900867235" name="de.itemis.mps.editor.diagram.structure.IEdgeEditor" flags="ng" index="ljJFv">
         <child id="8587703283523592228" name="endpointFrom" index="1PN8q7" />
         <child id="8587703283523592242" name="endpointTo" index="1PN8qh" />
@@ -3097,8 +3094,24 @@
     <ref role="1XX52x" to="pgdh:2ojITFEDDV1" resolve="ScopeOfInterest" />
     <node concept="2ZK4vF" id="6cLLlCq64bK" role="2wV5jI">
       <node concept="27vDVx" id="6cLLlCq9F0j" role="1ytjkN">
-        <node concept="aDKH9" id="23QvOXyZ53d" role="aCds2">
-          <ref role="aDKIf" to="pgdh:2ojITFEC3aM" resolve="transactions" />
+        <node concept="2ZMM4L" id="2AEzmsc_YEc" role="aCds2">
+          <node concept="3clFbS" id="2AEzmsc_YEd" role="2VODD2">
+            <node concept="3clFbF" id="2AEzmsc_YEe" role="3cqZAp">
+              <node concept="2OqwBi" id="2AEzmsc_YEf" role="3clFbG">
+                <node concept="2OqwBi" id="2AEzmsc_YEg" role="2Oq$k0">
+                  <node concept="2ZN8Hh" id="2AEzmsc_YEh" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2AEzmsc_ZBs" role="2OqNvi">
+                    <ref role="3TtcxE" to="pgdh:2ojITFEC3aM" resolve="transactions" />
+                  </node>
+                </node>
+                <node concept="v3k3i" id="2AEzmsc_YEj" role="2OqNvi">
+                  <node concept="chp4Y" id="2AEzmsc_ZLG" role="v3oSu">
+                    <ref role="cht4Q" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2ZMM4L" id="LlDDn7e$mV" role="aCds2">
           <node concept="3clFbS" id="LlDDn7e$mX" role="2VODD2">
