@@ -744,6 +744,9 @@
             <ref role="3bR37D" node="2AEzmscAXNk" resolve="DemoSL" />
           </node>
         </node>
+        <node concept="3bR9La" id="2AEzmscGVxi" role="3bR37C">
+          <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />
+        </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNA" role="2G$12L">
         <property role="BnDLt" value="true" />
