@@ -680,12 +680,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2AEzmscAZIe" role="3bR37C">
-          <node concept="3bR9La" id="2AEzmscAZIf" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="90a9:29so9Vb$6Th" resolve="de.slisson.mps.tables" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNw" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -713,12 +707,6 @@
           <property role="TrG5h" value="GeneralSL#01" />
           <property role="3LESm3" value="8b31dca2-7983-4ec8-b902-1000bd54a4e9" />
           <property role="2GAjPV" value="false" />
-        </node>
-        <node concept="1SiIV0" id="2AEzmscAZ$W" role="3bR37C">
-          <node concept="3bR9La" id="2AEzmscAZ$X" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="2AEzmscAXNk" resolve="DemoSL" />
-          </node>
         </node>
         <node concept="3bR9La" id="2AEzmscGVxi" role="3bR37C">
           <ref role="3bR37D" to="90a9:7klUZA6XM5K" resolve="de.slisson.mps.conditionalEditor.runtime" />

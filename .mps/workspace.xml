@@ -19,18 +19,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/MPS16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/MPS32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/about.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/icons/splash.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/behavior.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/constraints.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/constraints.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/migration.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/migration.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/GeneralSL/GeneralSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/GeneralSL/GeneralSL.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/models/DemoWB.build.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/models/DemoWB.build.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen/DemoWB/build/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/DemoWB.build/source_gen/DemoWB/build/trace.info" afterDir="false" />
     </list>
     <ignored path="languages/GeneralSL/classes_gen/" />
     <ignored path="languages/GeneralSL/source_gen.caches/" />
@@ -739,7 +731,7 @@
           <entry key="DFR WAA" value="1" />
           <entry key="DemoHints" value="5" />
           <entry key="DemoStyles" value="8" />
-          <entry key="DemoWB" value="3" />
+          <entry key="DemoWB" value="5" />
           <entry key="DemoWBDistribution" value="2" />
           <entry key="DerivedFactSpecifications" value="1" />
           <entry key="Duration" value="1" />
@@ -794,7 +786,7 @@
           <entry key="OFD test generalisation" value="2" />
           <entry key="Object Fact Diagram Library" value="4" />
           <entry key="Object Fact Diagram RAC" value="1" />
-          <entry key="ObjectFactDiagram" value="13" />
+          <entry key="ObjectFactDiagram" value="14" />
           <entry key="Operator" value="1" />
           <entry key="Organisation Construction Diagram (OCD) WAA" value="19" />
           <entry key="OrganisationConstructionDiagram" value="29" />
@@ -877,7 +869,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Language" value="1" />
-          <entry key="MPS_NODE" value="1337" />
+          <entry key="MPS_NODE" value="1340" />
           <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
@@ -891,15 +883,15 @@
         <entry file="mps://node://DemoWB.build/DemoWB.build/DemoWB">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1481">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="1380">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="87" />
-                    <property name="caretXRelative" value="24" />
+                    <property name="caretX" value="63" />
+                    <property name="caretXRelative" value="16" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ucemm3_a3a">
-                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" />
+                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
+                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546010" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -920,19 +912,19 @@
                   </collapsedElement>
                 </restoreAlways>
               </memento>
-              <inspectorMemento currentlyEditedNode="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546010" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_leuqor_e0">
-                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546108" />
+                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546118" />
                     </cellIdElement>
                   </collapsedElement>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_ucemm3_3">
-                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" />
+                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546010" />
                     </cellIdElement>
                   </collapsedElement>
                 </foldable>
@@ -1308,45 +1300,13 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemoWB" />
+              <option name="myItemId" value="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/DemoSL/models/editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -1373,14 +1333,28 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DemoWB" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
+              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -5708,7 +5682,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test for ARS added" />
     <MESSAGE value="WAA updated" />
     <MESSAGE value="Transaction product table" />
     <MESSAGE value="Search actorroles, solves #3" />
@@ -5733,7 +5706,8 @@
     <MESSAGE value="de.slisson.mps.conditionalEditor.runtime" />
     <MESSAGE value="devkit in top of build" />
     <MESSAGE value="devkit not in build" />
-    <option name="LAST_COMMIT_MESSAGE" value="devkit not in build" />
+    <MESSAGE value="imports optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="imports optimized" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://DemoSL/DemoSL.structure/ConstructionModel">
@@ -7515,18 +7489,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://DemoWB.build/DemoWB.build/DemoWB">
+    <entry file="mps://node://DemoSL/DemoSL.structure/ObjectFactDiagram">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1481">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="64" viewPositionY="3407">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="87" />
-                <property name="caretXRelative" value="24" />
+                <property name="caretX" value="383" />
+                <property name="caretXRelative" value="136" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ucemm3_a3a">
-                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/888799663699834349" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/837255710708984796" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/837255710706328942" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/837255710706092961" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581520066587" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581527576896" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581530455052" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581529159924" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/837255710706225932" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/837255710706216209" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581527574479" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/837255710704468536" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581527267120" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/464479581518789988" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/888799663699834349" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/888799663699834349" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://DemoWB.build/DemoWB.build/DemoWB">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="1380">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
+                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546010" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -7547,19 +7622,19 @@
               </collapsedElement>
             </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546010" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
             <foldable>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_leuqor_e0">
-                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546108" />
+                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546118" />
                 </cellIdElement>
               </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_ucemm3_3">
-                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" />
+                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546010" />
                 </cellIdElement>
               </collapsedElement>
             </foldable>

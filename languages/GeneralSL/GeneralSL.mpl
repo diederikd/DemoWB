@@ -46,7 +46,6 @@
   </generators>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
@@ -76,7 +75,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-    <module reference="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" version="1" />
     <module reference="aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
