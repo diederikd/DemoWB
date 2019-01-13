@@ -125,6 +125,7 @@
         <id>DemoWB</id>
         <name>DemoWB</name>
         <version>1.0</version>
+        <depends>jetbrains.mps.core</depends>
         <depends>de.itemis.mps.editor.diagram</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -648,7 +649,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
+    <generate strictMode="true" parallelMode="false" useInplaceTransform="false" hideWarnings="false" createStaticRefs="false" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />

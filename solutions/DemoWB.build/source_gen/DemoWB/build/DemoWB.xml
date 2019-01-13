@@ -82,7 +82,7 @@
         <build number="${build.number}" date="${date}" />
         <logo url="/splash.png" textcolor="002387" />
         <about url="/about.png" />
-        <icon size32="/MPS32.png" size16="/MPS16.png" size32opaque="/MPS32.png" />
+        <icon size32="/DEMO32.png" size16="/DEMO16.png" size32opaque="/DEMO32.png" />
         <package code="code" />
         <names product="DemoWB" fullname="DemoWB" />
         
@@ -94,8 +94,8 @@
       </component>
     </echoxml>
     <jar destfile="${build.layout}/lib/branding.jar" duplicate="preserve">
-      <fileset file="${basedir}/icons/MPS16.png" />
-      <fileset file="${basedir}/icons/MPS32.png" />
+      <fileset file="${basedir}/icons/DEMO16.png" />
+      <fileset file="${basedir}/icons/DEMO32.png" />
       <fileset file="${basedir}/icons/logo.png" />
       <fileset file="${basedir}/icons/splash.png" />
       <fileset file="${basedir}/icons/about.png" />
@@ -126,10 +126,7 @@
         <name>DemoWB</name>
         <version>1.0</version>
         <depends>jetbrains.mps.core</depends>
-        <depends>de.slisson.mps.all</depends>
         <depends>de.itemis.mps.editor.diagram</depends>
-        <depends>de.slisson.mps.tables</depends>
-        <depends>de.slisson.mps.conditionalEditor</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -652,17 +649,15 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
+    <generate strictMode="true" parallelMode="false" useInplaceTransform="false" hideWarnings="false" createStaticRefs="false" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips" />
-      <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.all" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
       <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
-      <plugin path="${artifacts.com.mbeddr.platform}/mps-tables" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
@@ -764,16 +759,16 @@
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
-      <library file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.migration.util.jar" />
-      <chunk bootstrap="true">
+      <chunk>
+        <module file="${basedir}/languages/GeneralSL/GeneralSL.mpl" />
+      </chunk>
+      <chunk>
         <module file="${basedir}/languages/ActionSL/ActionSL.mpl" />
         <module file="${basedir}/languages/ConstructionSL/ConstructionSL.mpl" />
         <module file="${basedir}/languages/DemoSL/DemoSL.mpl" />
         <module file="${basedir}/languages/FactSL/FactSL.mpl" />
-        <module file="${basedir}/languages/GeneralSL/GeneralSL.mpl" />
-        <module file="${basedir}/languages/ProcessSL/ProcessSL.mpl" bootstrap="true" />
+        <module file="${basedir}/languages/ProcessSL/ProcessSL.mpl" />
       </chunk>
-      <chunk />
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -790,14 +785,13 @@
   
   <target name="makeDependents" />
   
-  <target name="java.compile.java.modules.cycle.1" depends="fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
     <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/DemoSL/source_gen" />
         <path location="${basedir}/languages/ProcessSL/source_gen" />
-        <path location="${basedir}/languages/GeneralSL/source_gen" />
         <path location="${basedir}/languages/ConstructionSL/source_gen" />
         <path location="${basedir}/languages/FactSL/source_gen" />
         <path location="${basedir}/languages/ActionSL/source_gen" />
@@ -826,7 +820,6 @@
         <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
@@ -837,33 +830,22 @@
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="jgraphx.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="klay-emf_2014-05.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="KIELER/org.adaptagrams-0.1.0-SNAPSHOT.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="KIELER/de.cau.cs.kieler.kiml.libavoid-0.1.0-SNAPSHOT.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="libavoid/adaptagrams.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.DemoSL" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.DemoSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/DemoSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/DemoSL" />
     <javac destdir="${build.tmp}/java/out/DemoSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -888,6 +870,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -895,7 +878,6 @@
         <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets/languages/de.itemis.mps.editor.widgets/de.itemis.mps.editor.collapsible.runtime.jar" />
@@ -906,20 +888,10 @@
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips/languages/de.itemis.mps.tooltips/de.itemis.mps.tooltips.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="jgraphx.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="klay-emf_2014-05.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="KIELER/org.adaptagrams-0.1.0-SNAPSHOT.jar" />
@@ -968,7 +940,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.ProcessSL" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.ProcessSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/ProcessSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ProcessSL" />
     <javac destdir="${build.tmp}/java/out/ProcessSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -993,6 +965,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -1003,21 +976,10 @@
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
@@ -1061,7 +1023,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.GeneralSL" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.GeneralSL" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/GeneralSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/GeneralSL" />
     <javac destdir="${build.tmp}/java/out/GeneralSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1109,7 +1071,6 @@
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="KIELER/org.adaptagrams-0.1.0-SNAPSHOT.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="KIELER/de.cau.cs.kieler.kiml.libavoid-0.1.0-SNAPSHOT.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="libavoid/adaptagrams.jar" />
-        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
@@ -1152,7 +1113,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.ConstructionSL" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.ConstructionSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/ConstructionSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ConstructionSL" />
     <javac destdir="${build.tmp}/java/out/ConstructionSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1177,6 +1138,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -1248,7 +1210,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.FactSL" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.FactSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/FactSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/FactSL" />
     <javac destdir="${build.tmp}/java/out/FactSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1273,6 +1235,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -1340,7 +1303,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.ActionSL" depends="java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.ActionSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/ActionSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ActionSL" />
     <javac destdir="${build.tmp}/java/out/ActionSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1365,6 +1328,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -1418,11 +1382,17 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/languages/ActionSL/generator/source_gen" />
-    <delete dir="${basedir}/languages/ConstructionSL/generator/source_gen" />
-    <delete dir="${basedir}/languages/DemoSL/generator/source_gen" />
-    <delete dir="${basedir}/languages/FactSL/generator/source_gen" />
+    <delete dir="${basedir}/languages/GeneralSL/source_gen" />
     <delete dir="${basedir}/languages/GeneralSL/generator/source_gen" />
+    <delete dir="${basedir}/languages/ActionSL/source_gen" />
+    <delete dir="${basedir}/languages/ActionSL/generator/source_gen" />
+    <delete dir="${basedir}/languages/ConstructionSL/source_gen" />
+    <delete dir="${basedir}/languages/ConstructionSL/generator/source_gen" />
+    <delete dir="${basedir}/languages/DemoSL/source_gen" />
+    <delete dir="${basedir}/languages/DemoSL/generator/source_gen" />
+    <delete dir="${basedir}/languages/FactSL/source_gen" />
+    <delete dir="${basedir}/languages/FactSL/generator/source_gen" />
+    <delete dir="${basedir}/languages/ProcessSL/source_gen" />
     <delete dir="${basedir}/languages/ProcessSL/generator/source_gen" />
   </target>
 </project>
