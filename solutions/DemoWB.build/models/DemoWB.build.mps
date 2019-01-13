@@ -356,6 +356,12 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="2AEzmscD2jm" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="2AEzmscD2kE" role="2JcizS">
+        <ref role="398BVh" node="2AEzmscAXMB" resolve="mps_home" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="2AEzmscAXMC" role="1l3spa">
       <ref role="1l3spb" to="ffeo:1diLdO26mQ6" resolve="mpsStandalone" />
       <node concept="398BVA" id="2AEzmscAXMD" role="2JcizS">
