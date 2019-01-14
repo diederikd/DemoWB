@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/DemoWB" />
   <property name="build.layout" location="${build.dir}/artifacts/DemoWB" />
   <tstamp>
-    <format property="date" pattern="yyyyMMdd" />
+    <format property="date" pattern="20190114" />
   </tstamp>
   <property name="build.number" value="DemoWB-182.SNAPSHOT" />
   <property name="mps_home" location="${basedir}/../../../../Applications/MPS 2018.2.app/Contents" />
