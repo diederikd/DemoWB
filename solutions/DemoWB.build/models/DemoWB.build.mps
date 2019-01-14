@@ -540,6 +540,9 @@
       <node concept="m$_yC" id="2AEzmscCBLv" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
       </node>
+      <node concept="m$_yC" id="7RAIGMRcmcq" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7klUZA6XM5S" resolve="de.slisson.mps.conditionalEditor" />
+      </node>
       <node concept="3_J27D" id="2AEzmscAXO1" role="m_cZH">
         <node concept="3Mxwew" id="2AEzmscAXO2" role="3MwsjC">
           <property role="3MwjfP" value="DemoWB" />
