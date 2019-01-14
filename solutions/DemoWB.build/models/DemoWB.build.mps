@@ -297,7 +297,7 @@
     <node concept="2kB4xC" id="2AEzmscAXMx" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="2AEzmscAXMy" role="aVJcv">
-        <property role="hHN3Y" value="yyyyMMdd" />
+        <property role="hHN3Y" value="20190114" />
       </node>
     </node>
     <node concept="2kB4xC" id="2AEzmscAXMz" role="1l3spd">
