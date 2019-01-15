@@ -31,9 +31,6 @@
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
         <property id="2743742872034578186" name="id" index="3cGzig" />
       </concept>
-      <concept id="2743742872034578188" name="ConstructionSL.structure.AggregateTransactionKind" flags="ng" index="3cGzim">
-        <property id="2743742872034578189" name="id" index="3cGzin" />
-      </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="id" index="3cGzis" />
         <reference id="2222079712856355772" name="hasProduct" index="3lGtC5" />
@@ -310,10 +307,6 @@
         <node concept="1Tmc7B" id="pMarvIY8Dj" role="1Tmdjl">
           <ref role="1Tmc6K" node="pMarvIY8DL" resolve="Verzoek controller" />
         </node>
-      </node>
-      <node concept="3cGzim" id="2AEzmsc_XuQ" role="3cGS$C">
-        <property role="3cGS$Q" value="name" />
-        <property role="3cGzin" value="AT3" />
       </node>
       <node concept="3cGzii" id="1S2F7pX5Dub" role="3cGxOm">
         <property role="TrG5h" value="Werkgever" />
