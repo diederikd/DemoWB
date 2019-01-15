@@ -487,6 +487,18 @@
         <node concept="3_I8Xc" id="2AEzmscAXOA" role="39821P">
           <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
         </node>
+        <node concept="3_I8Xc" id="4h5c_cX7U$j" role="39821P">
+          <ref role="3_I8Xa" to="90a9:4be$WTb1O3_" resolve="de.itemis.mps.editor.diagram" />
+        </node>
+        <node concept="3_I8Xc" id="4h5c_cX7UB5" role="39821P">
+          <ref role="3_I8Xa" to="90a9:7klUZA6XM65" resolve="de.slisson.mps.conditionalEditor" />
+        </node>
+        <node concept="3_I8Xc" id="4h5c_cX7UDT" role="39821P">
+          <ref role="3_I8Xa" to="90a9:3prCiG1Zenn" resolve="de.itemis.mps.tooltips" />
+        </node>
+        <node concept="3_I8Xc" id="4h5c_cX7UGJ" role="39821P">
+          <ref role="3_I8Xa" to="al5i:6hpTCZQe4Ro" resolve="com.mbeddr.mpsutil.editor.querylist" />
+        </node>
         <node concept="m$_wl" id="2AEzmscAXOB" role="39821P">
           <ref role="m_rDy" node="2AEzmscAXNU" resolve="DemoWB" />
         </node>

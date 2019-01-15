@@ -118,6 +118,22 @@
     <copy todir="${build.layout}/plugins/mps-core">
       <fileset dir="${artifacts.mps}/plugins/mps-core" />
     </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.editor.diagram" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.editor.diagram">
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.slisson.mps.conditionalEditor" />
+    <copy todir="${build.layout}/plugins/de.slisson.mps.conditionalEditor">
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/de.itemis.mps.tooltips" />
+    <copy todir="${build.layout}/plugins/de.itemis.mps.tooltips">
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips" />
+    </copy>
+    <mkdir dir="${build.layout}/plugins/com.mbeddr.mpsutil.editor.querylist" />
+    <copy todir="${build.layout}/plugins/com.mbeddr.mpsutil.editor.querylist">
+      <fileset dir="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" />
+    </copy>
     <mkdir dir="${build.layout}/plugins/DemoWB" />
     <mkdir dir="${build.layout}/plugins/DemoWB/META-INF" />
     <echoxml file="${build.layout}/plugins/DemoWB/META-INF/plugin.xml">
