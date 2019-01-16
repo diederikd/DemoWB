@@ -19,7 +19,7 @@ import jetbrains.mps.lang.test.behavior.INodesTestMethod__BehaviorDescriptor;
 @MPSLaunch
 public class ConstructionModelExecutor_Test extends BaseTransformationTest {
   @ClassRule
-  public static final TestParametersCache ourParamCache = new TestParametersCache(ConstructionModelExecutor_Test.class, "${DemoWB.home}", "r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)", false);
+  public static final TestParametersCache ourParamCache = new TestParametersCache(ConstructionModelExecutor_Test.class, "${mps.macro.DemoWB.home}", "r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)", false);
   @Rule
   public final RunWithCommand myWithCommandRule = new RunWithCommand(this);
 

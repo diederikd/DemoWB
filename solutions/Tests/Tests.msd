@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Tests" uuid="ce5195dc-1630-4f7a-8b9e-ea731dc7dc97" moduleVersion="0" compileInMPS="true">
+<solution name="DemoWBTests" uuid="ce5195dc-1630-4f7a-8b9e-ea731dc7dc97" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,6 +10,7 @@
     <dependency reexport="false">9f846aef-4e4a-4a84-828e-7e83fe2697f2(jetbrains.mps.build.mps.testManifest)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:e81fc117-1697-4e77-8b54-4a5aa8f4ea97:ActionSL" version="0" />
     <language slang="l:d87481a3-8853-4c7c-9cb5-096d805e832c:ConstructionSL" version="1" />
     <language slang="l:61f0ccba-8ded-47ee-b024-8f1c223c70ef:DemoSL" version="0" />
     <language slang="l:aa59ea5e-1883-437f-95c0-4dc082aa848c:GeneralSL" version="0" />

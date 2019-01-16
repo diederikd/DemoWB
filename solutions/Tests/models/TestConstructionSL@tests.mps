@@ -83,7 +83,7 @@
     </language>
   </registry>
   <node concept="2XOHcx" id="4h5c_cX8mrM">
-    <property role="2XOHcw" value="${DemoWB.home}" />
+    <property role="2XOHcw" value="${mps.macro.DemoWB.home}" />
   </node>
   <node concept="1lH9Xt" id="4h5c_cX8nPN">
     <property role="TrG5h" value="ConstructionModel" />

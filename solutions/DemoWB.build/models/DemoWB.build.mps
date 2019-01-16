@@ -4,14 +4,27 @@
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
+    <import index="n4zc" ref="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)" />
+    <import index="iaov" ref="r:73650c37-a732-4199-a4ab-5fa70980f196(Tests.TestActionSL@tests)" />
+    <import index="ev4z" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#ce5195dc-1630-4f7a-8b9e-ea731dc7dc97(jetbrains.mps.lang.project.modules/module.Tests@project_stub)" />
   </imports>
   <registry>
+    <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
+      <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules" flags="nn" index="22LTRH">
+        <child id="4560297596904469360" name="modules" index="22LTRK" />
+      </concept>
+      <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
+        <reference id="4560297596904469363" name="module" index="22LTRN" />
+      </concept>
+      <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
+    </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
       <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
@@ -190,6 +203,9 @@
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
         <reference id="4278635856200794928" name="language" index="1Busuk" />
       </concept>
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA">
+        <property id="269707337715731330" name="sourcesKind" index="aoJFB" />
+      </concept>
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
@@ -212,11 +228,18 @@
   <node concept="1l3spW" id="2AEzmscAXMu">
     <property role="TrG5h" value="DemoWB" />
     <property role="2DA0ip" value="../../" />
+    <node concept="22LTRH" id="4h5c_cXdn7b" role="1hWBAP">
+      <property role="TrG5h" value="test" />
+      <node concept="22LTRM" id="4h5c_cXdNke" role="22LTRK">
+        <ref role="22LTRN" node="4h5c_cXdMeb" resolve="DemoWBTests" />
+      </node>
+    </node>
     <node concept="2igEWh" id="2AEzmscB0G9" role="1hWBAP">
       <property role="2igJW4" value="true" />
     </node>
     <node concept="10PD9b" id="2AEzmscAXMv" role="10PD9s" />
     <node concept="3b7kt6" id="2AEzmscAXMw" role="10PD9s" />
+    <node concept="1gjT0q" id="4h5c_cX9Q0w" role="10PD9s" />
     <node concept="1zClus" id="2AEzmscAXMH" role="3989C9">
       <property role="2OjLBK" value="0" />
       <property role="TrG5h" value="MPS" />
@@ -923,6 +946,30 @@
           <node concept="3bR9La" id="2AEzmscAZ_S" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="2AEzmscAXNA" resolve="ConstructionSL" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="4h5c_cXdMeb" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="DemoWBTests" />
+        <property role="3LESm3" value="ce5195dc-1630-4f7a-8b9e-ea731dc7dc97" />
+        <property role="2GAjPV" value="false" />
+        <property role="aoJFB" value="tests" />
+        <node concept="55IIr" id="4h5c_cXdMee" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4h5c_cXdMhK" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4h5c_cXdMjx" role="2Ry0An">
+              <property role="2Ry0Am" value="Tests" />
+              <node concept="2Ry0Ak" id="4h5c_cXdMli" role="2Ry0An">
+                <property role="2Ry0Am" value="Tests.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4h5c_cXdMs4" role="3bR37C">
+          <node concept="3bR9La" id="4h5c_cXdMs5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:6DW_AMAziU3" resolve="jetbrains.mps.build.mps.testManifest" />
           </node>
         </node>
       </node>
