@@ -275,6 +275,37 @@
           <node concept="3w_OXm" id="4vyZ9NOpPB0" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbJ" id="4h5c_cX8psy" role="3cqZAp">
+        <node concept="3clFbS" id="4h5c_cX8psz" role="3clFbx">
+          <node concept="2MkqsV" id="4h5c_cX8ps$" role="3cqZAp">
+            <node concept="Xl_RD" id="4h5c_cX8ps_" role="2MkJ7o">
+              <property role="Xl_RC" value="transactionkind should have one executor" />
+            </node>
+            <node concept="1YBJjd" id="4h5c_cX8psA" role="2OEOjV">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+            </node>
+            <node concept="2OE7Q9" id="4h5c_cX8psB" role="2OEWyd">
+              <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4h5c_cX8psC" role="3clFbw">
+          <node concept="2OqwBi" id="4h5c_cX8pRf" role="2Oq$k0">
+            <node concept="2OqwBi" id="4h5c_cX8psD" role="2Oq$k0">
+              <node concept="1YBJjd" id="4h5c_cX8psE" role="2Oq$k0">
+                <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+              </node>
+              <node concept="3TrEf2" id="4h5c_cX8psF" role="2OqNvi">
+                <ref role="3Tt5mk" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
+              </node>
+            </node>
+            <node concept="3TrEf2" id="4h5c_cX8qb6" role="2OqNvi">
+              <ref role="3Tt5mk" to="pgdh:6cLLlCqqgjE" resolve="actorRole" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="4h5c_cX8qou" role="2OqNvi" />
+        </node>
+      </node>
       <node concept="3clFbJ" id="4vyZ9NOpTy_" role="3cqZAp">
         <node concept="3clFbS" id="4vyZ9NOpTyA" role="3clFbx">
           <node concept="2MkqsV" id="4vyZ9NOpTyB" role="3cqZAp">

@@ -5,13 +5,14 @@
       <modulePath path="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ActionSL/ActionSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/sandbox/DemowB.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/FactSL/FactSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/GeneralSL/GeneralSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/DemoWB.build/DemoWB.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Tests/Tests.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/WAA/WAA.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/sandbox/DemowB.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
