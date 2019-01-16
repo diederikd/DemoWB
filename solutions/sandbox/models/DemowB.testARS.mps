@@ -32,10 +32,18 @@
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="id" index="3cGzis" />
+        <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
+        <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
         <child id="2743742872034489010" name="transactions" index="3cGS$C" />
+      </concept>
+      <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
+        <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
+      </concept>
+      <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
+        <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
       </concept>
     </language>
     <language id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL">
@@ -148,6 +156,12 @@
       <node concept="3cGziv" id="1S2F7pX5D2E" role="3cGS$C">
         <property role="3cGS$Q" value="test transaction" />
         <property role="3cGzis" value="T01" />
+        <node concept="1Tmc4s" id="4h5c_cX8lvU" role="1TmdgA">
+          <ref role="1Tmc4J" node="1S2F7pX5oTS" resolve="TEST ROLE" />
+        </node>
+        <node concept="1Tmc7B" id="4h5c_cX8lvW" role="1Tmdjl">
+          <ref role="1Tmc6K" node="1S2F7pX5oTS" resolve="TEST ROLE" />
+        </node>
       </node>
       <node concept="3cGzii" id="1S2F7pX5oTS" role="3cGxOm">
         <property role="TrG5h" value="TEST ROLE" />
