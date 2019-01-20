@@ -23,8 +23,6 @@
       </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
         <property id="2743742872034984100" name="id" index="3cH7GY" />
-        <child id="2222079712862271067" name="startEvent" index="3l5TZy" />
-        <child id="2222079712862271069" name="endEvent" index="3l5TZ$" />
       </concept>
     </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
@@ -76,20 +74,20 @@
     <node concept="3cH7GX" id="IuxU86HzoO" role="3cH7GF">
       <property role="TrG5h" value="Object" />
       <property role="3cH7GY" value="P1" />
-      <node concept="3cH7GZ" id="IuxU86NQiD" role="3l5TZy">
-        <property role="TrG5h" value="event 2" />
-        <property role="3cH7GY" value="P3" />
-        <ref role="3la2Pp" node="IuxU86HzoO" resolve="Object" />
-      </node>
-      <node concept="3cH7GZ" id="IuxU86NQiH" role="3l5TZ$">
-        <property role="TrG5h" value="event 3" />
-        <property role="3cH7GY" value="P4" />
-        <ref role="3la2Pp" node="IuxU86HzoO" resolve="Object" />
-      </node>
     </node>
     <node concept="3cH7GZ" id="IuxU86HzoZ" role="3cH7GF">
       <property role="TrG5h" value="event 1" />
       <property role="3cH7GY" value="P2" />
+      <ref role="3la2Pp" node="IuxU86HzoO" resolve="Object" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fK" role="3cH7GF">
+      <property role="TrG5h" value="event 2" />
+      <property role="3cH7GY" value="P3" />
+      <ref role="3la2Pp" node="IuxU86HzoO" resolve="Object" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Do" role="3cH7GF">
+      <property role="TrG5h" value="event 3" />
+      <property role="3cH7GY" value="P4" />
       <ref role="3la2Pp" node="IuxU86HzoO" resolve="Object" />
     </node>
   </node>

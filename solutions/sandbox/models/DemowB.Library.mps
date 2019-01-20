@@ -78,13 +78,12 @@
       </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ">
+        <property id="5701383312388958981" name="typeOfEvent" index="olWFJ" />
         <reference id="2222079712866223328" name="concerns" index="3la2Pp" />
       </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
         <property id="397994270025613077" name="type" index="a0oEV" />
         <property id="2743742872034984100" name="id" index="3cH7GY" />
-        <child id="2222079712862271067" name="startEvent" index="3l5TZy" />
-        <child id="2222079712862271069" name="endEvent" index="3l5TZ$" />
       </concept>
       <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2x">
         <property id="2743742872035015483" name="minCardDomain" index="3cIS2y" />
@@ -168,52 +167,28 @@
     <property role="TrG5h" value="Fact Model Library" />
     <node concept="3l9Rli" id="1VmqrBbYGfH" role="3l9RgF">
       <property role="3l9Rll" value="precedes" />
-      <ref role="3l9Rln" node="1VmqrBbT30r" resolve="Person is born" />
-      <ref role="3l9Rl9" node="1VmqrBbT30t" resolve="Person is deceased" />
+      <ref role="3l9Rln" node="4WvouDni0fL" resolve="Person is born" />
+      <ref role="3l9Rl9" node="4WvouDni4Dp" resolve="Person is deceased" />
     </node>
     <node concept="3l9Rli" id="1VmqrBbZgOQ" role="3l9RgF">
       <property role="3l9Rll" value="precedes" />
-      <ref role="3l9Rln" node="1VmqrBbSqZv" resolve="loan is concluded" />
-      <ref role="3l9Rl9" node="1VmqrBbSqZx" resolve="return a Copy" />
+      <ref role="3l9Rl9" node="2S7w2zXwita" resolve="book of LOAN is returned" />
+      <ref role="3l9Rln" node="2S7w2zXwisr" resolve="book of LOAN is issued" />
     </node>
     <node concept="3l9Rli" id="1VmqrBbZgPD" role="3l9RgF">
       <property role="3l9Rll" value="precedes" />
-      <ref role="3l9Rln" node="1VmqrBbT30n" resolve="buy a new Copy" />
-      <ref role="3l9Rl9" node="1VmqrBbT30p" resolve="dispose a Copy" />
+      <ref role="3l9Rln" node="4WvouDni0fG" resolve="buy a new Copy" />
+      <ref role="3l9Rl9" node="4WvouDni4Dk" resolve="dispose a Copy" />
     </node>
     <node concept="3cH7GX" id="1VmqrBbkqs5" role="3cH7GF">
       <property role="3cH7GY" value="P1" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="LOAN" />
-      <node concept="3cH7GZ" id="1VmqrBbSqZv" role="3l5TZy">
-        <property role="TrG5h" value="loan is concluded" />
-        <property role="3cH7GY" value="P10" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
-      </node>
-      <node concept="3cH7GZ" id="1VmqrBbSqZx" role="3l5TZ$">
-        <property role="TrG5h" value="return a Copy" />
-        <property role="3cH7GY" value="P11" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
-      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbL$XC" role="3cH7GF">
       <property role="3cH7GY" value="P2" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="COPY" />
-      <node concept="3cH7GZ" id="1VmqrBbT30n" role="3l5TZy">
-        <property role="TrG5h" value="buy a new Copy" />
-        <property role="3cH7GY" value="P12" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbL$XC" resolve="COPY" />
-      </node>
-      <node concept="3cH7GZ" id="1VmqrBbT30p" role="3l5TZ$">
-        <property role="TrG5h" value="dispose a Copy" />
-        <property role="3cH7GY" value="P13" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbL$XC" resolve="COPY" />
-      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbkqsb" role="3cH7GF">
       <property role="3cH7GY" value="P3" />
@@ -224,52 +199,16 @@
       <property role="3cH7GY" value="P4" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="PERSON" />
-      <node concept="3cH7GZ" id="1VmqrBbT30r" role="3l5TZy">
-        <property role="TrG5h" value="Person is born" />
-        <property role="3cH7GY" value="P14" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBb_kPt" resolve="PERSON" />
-      </node>
-      <node concept="3cH7GZ" id="1VmqrBbT30t" role="3l5TZ$">
-        <property role="TrG5h" value="Person is deceased" />
-        <property role="3cH7GY" value="P15" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBb_kPt" resolve="PERSON" />
-      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbC534" role="3cH7GF">
       <property role="3cH7GY" value="P5" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="MEMBERSHIP" />
-      <node concept="3cH7GZ" id="1VmqrBbL6jb" role="3l5TZy">
-        <property role="TrG5h" value="membership is started" />
-        <property role="a0oEV" value="production" />
-        <property role="3cH7GY" value="P16" />
-        <ref role="3la2Pp" node="1VmqrBbC534" resolve="MEMBERSHIP" />
-      </node>
-      <node concept="3cH7GZ" id="1VmqrBbL$Xs" role="3l5TZ$">
-        <property role="TrG5h" value="membership is ended" />
-        <property role="3cH7GY" value="P17" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbC534" resolve="MEMBERSHIP" />
-      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbWhLf" role="3cH7GF">
       <property role="TrG5h" value="MEMBERSHIP FEE" />
       <property role="3cH7GY" value="P19" />
       <property role="a0oEV" value="production" />
-      <node concept="3cH7GZ" id="1VmqrBbWhLz" role="3l5TZ$">
-        <property role="TrG5h" value="membership fee is paid" />
-        <property role="3cH7GY" value="P18" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbWhLf" resolve="MEMBERSHIP FEE" />
-      </node>
-      <node concept="3cH7GZ" id="1VmqrBbWhL_" role="3l5TZy">
-        <property role="TrG5h" value="invoice is created" />
-        <property role="3cH7GY" value="P20" />
-        <property role="a0oEV" value="production" />
-        <ref role="3la2Pp" node="1VmqrBbWhLf" resolve="MEMBERSHIP FEE" />
-      </node>
     </node>
     <node concept="3cH7GN" id="1VmqrBbC52Q" role="3cH7GF">
       <property role="a0oEV" value="production" />
@@ -348,17 +287,89 @@
     <node concept="3cH7GZ" id="2S7w2zXv4BS" role="3cH7GF">
       <property role="TrG5h" value="is paid" />
       <property role="3cH7GY" value="P25" />
+      <property role="olWFJ" value="end" />
       <ref role="3la2Pp" node="1VmqrBbWhLf" resolve="MEMBERSHIP FEE" />
     </node>
     <node concept="3cH7GZ" id="2S7w2zXwisr" role="3cH7GF">
       <property role="TrG5h" value="book of LOAN is issued" />
       <property role="3cH7GY" value="P26" />
-      <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="1VmqrBbkqsb" resolve="BOOK" />
     </node>
     <node concept="3cH7GZ" id="2S7w2zXwita" role="3cH7GF">
       <property role="TrG5h" value="book of LOAN is returned" />
       <property role="3cH7GY" value="P27" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="1VmqrBbkqsb" resolve="BOOK" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fG" role="3cH7GF">
+      <property role="TrG5h" value="buy a new Copy" />
+      <property role="3cH7GY" value="P12" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="1VmqrBbL$XC" resolve="COPY" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fH" role="3cH7GF">
+      <property role="TrG5h" value="loan is concluded" />
+      <property role="3cH7GY" value="P10" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="start" />
       <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fJ" role="3cH7GF">
+      <property role="TrG5h" value="membership is started" />
+      <property role="a0oEV" value="production" />
+      <property role="3cH7GY" value="P16" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="1VmqrBbC534" resolve="MEMBERSHIP" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fL" role="3cH7GF">
+      <property role="TrG5h" value="Person is born" />
+      <property role="3cH7GY" value="P14" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="1VmqrBb_kPt" resolve="PERSON" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fN" role="3cH7GF">
+      <property role="TrG5h" value="invoice is created" />
+      <property role="3cH7GY" value="P20" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="1VmqrBbWhLf" resolve="MEMBERSHIP FEE" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dk" role="3cH7GF">
+      <property role="TrG5h" value="dispose a Copy" />
+      <property role="3cH7GY" value="P13" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="1VmqrBbL$XC" resolve="COPY" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dl" role="3cH7GF">
+      <property role="TrG5h" value="return a Copy" />
+      <property role="3cH7GY" value="P11" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="1VmqrBbkqs5" resolve="LOAN" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dn" role="3cH7GF">
+      <property role="TrG5h" value="membership is ended" />
+      <property role="3cH7GY" value="P17" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="1VmqrBbC534" resolve="MEMBERSHIP" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dp" role="3cH7GF">
+      <property role="TrG5h" value="Person is deceased" />
+      <property role="3cH7GY" value="P15" />
+      <property role="a0oEV" value="production" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="1VmqrBb_kPt" resolve="PERSON" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dr" role="3cH7GF">
+      <property role="TrG5h" value="membership fee is paid" />
+      <property role="3cH7GY" value="P18" />
+      <property role="a0oEV" value="production" />
+      <ref role="3la2Pp" node="1VmqrBbWhLf" resolve="MEMBERSHIP FEE" />
     </node>
   </node>
   <node concept="3llzxe" id="1VmqrBbwQiI">
@@ -380,7 +391,7 @@
       <node concept="3cGziv" id="1VmqrBbwQiO" role="3cGS$C">
         <property role="3cGS$Q" value="membership starting" />
         <property role="3cGzis" value="T1" />
-        <ref role="3lGtC5" node="1VmqrBbL6jb" resolve="membership is started" />
+        <ref role="3lGtC5" node="4WvouDni0fJ" resolve="membership is started" />
         <node concept="1Tmc4s" id="6cLLlCqx8oj" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJd1" resolve="(aspirant) member" />
         </node>
@@ -391,7 +402,7 @@
       <node concept="3cGziv" id="1VmqrBbwQiP" role="3cGS$C">
         <property role="3cGS$Q" value="fee paying" />
         <property role="3cGzis" value="T2" />
-        <ref role="3lGtC5" node="1VmqrBbWhLz" resolve="membership fee is paid" />
+        <ref role="3lGtC5" node="4WvouDni4Dr" resolve="membership fee is paid" />
         <node concept="1Tmc4s" id="6cLLlCqx8op" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJdh" resolve="membership starter" />
         </node>
@@ -402,7 +413,7 @@
       <node concept="3cGziv" id="1VmqrBbwQiQ" role="3cGS$C">
         <property role="3cGS$Q" value="ending membership" />
         <property role="3cGzis" value="T3" />
-        <ref role="3lGtC5" node="1VmqrBbL$Xs" resolve="membership is ended" />
+        <ref role="3lGtC5" node="4WvouDni4Dn" resolve="membership is ended" />
         <node concept="1Tmc4s" id="6cLLlCqx8ot" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJda" resolve="member" />
         </node>
@@ -413,7 +424,7 @@
       <node concept="3cGziv" id="1VmqrBbwQiR" role="3cGS$C">
         <property role="3cGS$Q" value="loan concluding" />
         <property role="3cGzis" value="T6" />
-        <ref role="3lGtC5" node="1VmqrBbSqZv" resolve="loan is concluded" />
+        <ref role="3lGtC5" node="4WvouDni0fH" resolve="loan is concluded" />
         <node concept="1Tmc4s" id="6cLLlCqx8ox" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJeB" resolve="borrower" />
         </node>

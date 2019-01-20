@@ -112,6 +112,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
     </node>
+    <node concept="1TJgyi" id="4WvouDniaG5" role="1TKVEl">
+      <property role="IQ2nx" value="5701383312388958981" />
+      <property role="TrG5h" value="typeOfEvent" />
+      <ref role="AX2Wp" node="4WvouDniaFW" resolve="TypeOfEvent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2A">
     <property role="EcuMT" value="2743742872034984102" />
@@ -531,6 +536,22 @@
       <property role="IQ2nx" value="6832341507193840784" />
       <property role="TrG5h" value="formulation" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="4WvouDniaFW">
+    <property role="TrG5h" value="TypeOfEvent" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="4WvouDniaFX" role="M5hS2">
+      <property role="1uS6qo" value="other" />
+      <property role="1uS6qv" value="other" />
+    </node>
+    <node concept="M4N5e" id="4WvouDniaFY" role="M5hS2">
+      <property role="1uS6qo" value="start" />
+      <property role="1uS6qv" value="start" />
+    </node>
+    <node concept="M4N5e" id="4WvouDniaG1" role="M5hS2">
+      <property role="1uS6qo" value="end" />
+      <property role="1uS6qv" value="end" />
     </node>
   </node>
 </model>

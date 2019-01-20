@@ -484,8 +484,21 @@
       <node concept="3clFbS" id="4WvouDmSXLq" role="3clF47">
         <node concept="3clFbF" id="4WvouDmSY08" role="3cqZAp">
           <node concept="3cpWs3" id="4WvouDmSY9J" role="3clFbG">
-            <node concept="Xl_RD" id="4WvouDmSY9K" role="3uHU7B">
-              <property role="Xl_RC" value="Event of " />
+            <node concept="3cpWs3" id="4WvouDnjuO7" role="3uHU7B">
+              <node concept="Xl_RD" id="4WvouDnjuSY" role="3uHU7w">
+                <property role="Xl_RC" value=" of " />
+              </node>
+              <node concept="3cpWs3" id="4WvouDnjvJ8" role="3uHU7B">
+                <node concept="2OqwBi" id="4WvouDnjw9N" role="3uHU7w">
+                  <node concept="13iPFW" id="4WvouDnjvO4" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4WvouDnjwoG" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="4WvouDmSY9K" role="3uHU7B">
+                  <property role="Xl_RC" value="Event " />
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="4WvouDmSY9L" role="3uHU7w">
               <node concept="2OqwBi" id="4WvouDmSY9M" role="2Oq$k0">

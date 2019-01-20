@@ -132,12 +132,11 @@
       </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ">
+        <property id="5701383312388958981" name="typeOfEvent" index="olWFJ" />
         <reference id="2222079712866223328" name="concerns" index="3la2Pp" />
       </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
         <property id="2743742872034984100" name="id" index="3cH7GY" />
-        <child id="2222079712862271067" name="startEvent" index="3l5TZy" />
-        <child id="2222079712862271069" name="endEvent" index="3l5TZ$" />
       </concept>
       <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2x">
         <property id="2743742872035015483" name="minCardDomain" index="3cIS2y" />
@@ -235,7 +234,7 @@
       <node concept="3cGziv" id="pMarvI_0aH" role="3cGS$C">
         <property role="3cGS$Q" value="verzoeken om aanpassing van de arbeidsduur" />
         <property role="3cGzis" value="T1" />
-        <ref role="3lGtC5" node="IuxU86fpw6" resolve="verzoek is ingediend" />
+        <ref role="3lGtC5" node="4WvouDni0fI" resolve="verzoek is ingediend" />
         <node concept="1Tmc4s" id="pMarvI_0aI" role="1TmdgA">
           <ref role="1Tmc4J" node="pMarvI_0aB" resolve="Werknemer" />
         </node>
@@ -2361,8 +2360,8 @@
     <property role="TrG5h" value="Fact model WAA" />
     <node concept="3l9Rli" id="4vyZ9NOy8fK" role="3l9RgF">
       <property role="3l9Rll" value="precludes" />
-      <ref role="3l9Rl9" node="IuxU86jreF" resolve="arbeidsduur beindigd" />
       <ref role="3l9Rln" node="IuxU86fqya" resolve="verzoek is ingewilligd" />
+      <ref role="3l9Rl9" node="4WvouDni0fI" resolve="verzoek is ingediend" />
     </node>
     <node concept="3cH7GX" id="IuxU86fryo" role="3cH7GF">
       <property role="TrG5h" value="Persoon" />
@@ -2461,16 +2460,6 @@
     <node concept="3cH7GX" id="IuxU86i89d" role="3cH7GF">
       <property role="TrG5h" value="Arbeidsduur van de arbeidsovereenkomst" />
       <property role="3cH7GY" value="P21" />
-      <node concept="3cH7GZ" id="IuxU86jreC" role="3l5TZy">
-        <property role="3cH7GY" value="P35" />
-        <property role="TrG5h" value="nieuwe arbeidsduur vastgesteld" />
-        <ref role="3la2Pp" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
-      </node>
-      <node concept="3cH7GZ" id="IuxU86jreF" role="3l5TZ$">
-        <property role="TrG5h" value="arbeidsduur beindigd" />
-        <property role="3cH7GY" value="P38" />
-        <ref role="3la2Pp" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
-      </node>
     </node>
     <node concept="3cH7GN" id="IuxU86i8Fk" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -2533,16 +2522,6 @@
     <node concept="3cH7GX" id="IuxU86fpvQ" role="3cH7GF">
       <property role="TrG5h" value="Verzoek aanpassing arbeidsduur" />
       <property role="3cH7GY" value="P7" />
-      <node concept="3cH7GZ" id="IuxU86fpw6" role="3l5TZy">
-        <property role="TrG5h" value="verzoek is ingediend" />
-        <property role="3cH7GY" value="P8" />
-        <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
-      </node>
-      <node concept="3cH7GZ" id="IuxU86fpw9" role="3l5TZ$">
-        <property role="TrG5h" value="verzoek is afgehandeld" />
-        <property role="3cH7GY" value="P9" />
-        <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
-      </node>
     </node>
     <node concept="3cH7GN" id="IuxU86jqBD" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -2602,22 +2581,50 @@
     <node concept="3cH7GZ" id="IuxU86fqya" role="3cH7GF">
       <property role="TrG5h" value="verzoek is ingewilligd" />
       <property role="3cH7GY" value="P11" />
+      <property role="olWFJ" value="other" />
       <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="3cH7GZ" id="IuxU86fqzL" role="3cH7GF">
       <property role="TrG5h" value="verzoek is afgewezen" />
       <property role="3cH7GY" value="P12" />
+      <property role="olWFJ" value="other" />
       <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
     </node>
     <node concept="3cH7GZ" id="IuxU86jrmE" role="3cH7GF">
       <property role="TrG5h" value="spreiding van het verzoek is gewijzigd" />
       <property role="3cH7GY" value="P37" />
+      <property role="olWFJ" value="other" />
       <ref role="3la2Pp" node="IuxU86i8AQ" resolve="Spreiding" />
     </node>
     <node concept="3cH7GZ" id="4WvouDn59DD" role="3cH7GF">
       <property role="TrG5h" value="spreiding is vastgesteld" />
       <property role="3cH7GY" value="P2" />
+      <property role="olWFJ" value="start" />
       <ref role="3la2Pp" node="IuxU86i8AQ" resolve="Spreiding" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fI" role="3cH7GF">
+      <property role="TrG5h" value="verzoek is ingediend" />
+      <property role="3cH7GY" value="P8" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni0fM" role="3cH7GF">
+      <property role="3cH7GY" value="P35" />
+      <property role="TrG5h" value="nieuwe arbeidsduur vastgesteld" />
+      <property role="olWFJ" value="start" />
+      <ref role="3la2Pp" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dm" role="3cH7GF">
+      <property role="TrG5h" value="verzoek is afgehandeld" />
+      <property role="3cH7GY" value="P9" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDni4Dq" role="3cH7GF">
+      <property role="TrG5h" value="arbeidsduur beindigd" />
+      <property role="3cH7GY" value="P38" />
+      <property role="olWFJ" value="end" />
+      <ref role="3la2Pp" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
     </node>
   </node>
   <node concept="3ltzyT" id="IuxU86gU83">
