@@ -445,6 +445,54 @@
     <node concept="3clFbS" id="IuxU86FKDv" role="18ibNy">
       <node concept="3clFbJ" id="4WvouDmYwkh" role="3cqZAp">
         <node concept="3clFbS" id="4WvouDmYwkj" role="3clFbx">
+          <node concept="3clFbJ" id="4WvouDngQTv" role="3cqZAp">
+            <node concept="2OqwBi" id="4WvouDngQTw" role="3clFbw">
+              <node concept="2OqwBi" id="4WvouDngQTx" role="2Oq$k0">
+                <node concept="1YBJjd" id="4WvouDngRqj" role="2Oq$k0">
+                  <ref role="1YBMHb" node="IuxU86FKEK" resolve="eventType" />
+                </node>
+                <node concept="3TrcHB" id="4WvouDngQTz" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="17RlXB" id="4WvouDngQT$" role="2OqNvi" />
+            </node>
+            <node concept="3clFbS" id="4WvouDngQT_" role="3clFbx">
+              <node concept="2MkqsV" id="4WvouDngQTA" role="3cqZAp">
+                <node concept="3cpWs3" id="4WvouDngQTB" role="2MkJ7o">
+                  <node concept="2OqwBi" id="4WvouDngQTC" role="3uHU7B">
+                    <node concept="2YIFZM" id="4WvouDngQTD" role="2Oq$k0">
+                      <ref role="1Pybhc" to="7ajr:4vyZ9NOwcXs" resolve="CamelCase" />
+                      <ref role="37wK5l" to="7ajr:4vyZ9NOwfg9" resolve="split" />
+                      <node concept="2OqwBi" id="4WvouDngQTE" role="37wK5m">
+                        <node concept="2OqwBi" id="4WvouDngQTF" role="2Oq$k0">
+                          <node concept="1YBJjd" id="4WvouDngRAN" role="2Oq$k0">
+                            <ref role="1YBMHb" node="IuxU86FKEK" resolve="eventType" />
+                          </node>
+                          <node concept="2yIwOk" id="4WvouDngQTH" role="2OqNvi" />
+                        </node>
+                        <node concept="liA8E" id="4WvouDngQTI" role="2OqNvi">
+                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4WvouDngQTJ" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="4WvouDngQTK" role="3uHU7w">
+                    <property role="Xl_RC" value=" should have a name" />
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="4WvouDngRN7" role="2OEOjV">
+                  <ref role="1YBMHb" node="IuxU86FKEK" resolve="eventType" />
+                </node>
+                <node concept="2ODE4t" id="4WvouDngVss" role="2OEWyd">
+                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="IuxU86FKDw" role="3cqZAp">
             <node concept="1Wc70l" id="IuxU86FKDx" role="3clFbw">
               <node concept="3fqX7Q" id="IuxU86FKDy" role="3uHU7w">
