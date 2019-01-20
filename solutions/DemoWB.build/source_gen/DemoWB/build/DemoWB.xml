@@ -1384,6 +1384,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="jgraphx.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="org.eclipse.emf.ecore-2.15.0.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="org.eclipse.emf.common-2.15.0.jar" />
@@ -1408,7 +1409,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.FactSL#01" depends="java.compile.FactSL, java.compile.GeneralSL, fetchDependencies">
+  <target name="java.compile.FactSL#01" depends="java.compile.FactSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/FactSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/FactSL#01" />
     <javac destdir="${build.tmp}/java/out/FactSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1434,7 +1435,6 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/FactSL" />
-        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -1525,7 +1525,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.DemoWBTests" depends="fetchDependencies">
+  <target name="java.compile.DemoWBTests" depends="java.compile.ConstructionSL, java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/DemoWBTests" />
     <javac destdir="${build.tmp}/java/out/DemoWBTests" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
@@ -1545,8 +1545,10 @@
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/ConstructionSL" />
+        <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
         <fileset file="${artifacts.mps}/lib/hamcrest-core-1.3.jar" />
@@ -1672,9 +1674,18 @@
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.libraries.path.string" refid="mps.libraries.path" />
     <path id="mps.plugins.path">
+      <pathelement location="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks" />
+      <pathelement location="${artifacts.com.mbeddr.platform}/mps-apache-commons" />
       <pathelement location="${artifacts.mps}/plugins/mps-build" />
       <pathelement location="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <pathelement location="${artifacts.mps}/plugins/mps-testing" />
+      <pathelement location="${build.layout}/plugins/DemoWB" />
     </path>
     <pathconvert pathsep="${path.separator}" property="mps.plugins.path.string" refid="mps.plugins.path" />
     <path location="${build.layout}/plugins/DemoWB/languages/DemoWB/DemoWBTests.jar" id="mps.tests.path" />
@@ -1685,6 +1696,30 @@
       <exclude name="**/*-src.jar" />
     </patternset>
     <path id="long.class.path">
+      <fileset dir="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.widgets">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.tooltips">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
       <fileset dir="${artifacts.mps}/plugins/mps-build">
         <patternset refid="plugin.deployed.jars" />
       </fileset>
@@ -1692,6 +1727,9 @@
         <patternset refid="plugin.deployed.jars" />
       </fileset>
       <fileset dir="${artifacts.mps}/plugins/mps-testing">
+        <patternset refid="plugin.deployed.jars" />
+      </fileset>
+      <fileset dir="${build.layout}/plugins/DemoWB">
         <patternset refid="plugin.deployed.jars" />
       </fileset>
       <fileset dir="${artifacts.mps}/lib">
