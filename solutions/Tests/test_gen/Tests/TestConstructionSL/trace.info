@@ -39,28 +39,28 @@
   <root nodeRef="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)/4919393501061416265">
     <file name="ConstructionModelInitiator_Test.java">
       <node id="4919393501061416265" at="26,44,27,25" concept="6" />
-      <node id="4919393501061767760" at="31,73,32,96" concept="1" />
+      <node id="4919393501064259149" at="31,94,32,117" concept="1" />
       <node id="4919393501061416265" at="37,52,38,19" concept="6" />
-      <node id="4919393501061767760" at="42,75,43,242" concept="4" />
-      <node id="4919393501061767760" at="43,242,44,123" concept="1" />
+      <node id="4919393501064259149" at="42,96,43,242" concept="4" />
+      <node id="4919393501064259149" at="43,242,44,123" concept="1" />
       <node id="4919393501061416265" at="21,0,23,0" concept="5" trace="ourParamCache" />
       <node id="4919393501061416265" at="23,0,25,0" concept="2" trace="myWithCommandRule" />
       <node id="4919393501061416265" at="26,0,29,0" concept="0" trace="ConstructionModelInitiator_Test#()V" />
       <node id="4919393501061416265" at="37,0,40,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
-      <node id="4919393501061767760" at="30,0,34,0" concept="3" trace="test_NodeErrorCheck4919393501061767760#()V" />
-      <node id="4919393501061767760" at="42,0,46,0" concept="3" trace="test_NodeErrorCheck4919393501061767760#()V" />
+      <node id="4919393501064259149" at="30,0,34,0" concept="3" trace="test_NodeInitiatorOfTransactionkindCheck4919393501064259149#()V" />
+      <node id="4919393501064259149" at="42,0,46,0" concept="3" trace="test_NodeInitiatorOfTransactionkindCheck4919393501064259149#()V" />
       <scope id="4919393501061416265" at="26,44,27,25" />
-      <scope id="4919393501061767760" at="31,73,32,96" />
+      <scope id="4919393501064259149" at="31,94,32,117" />
       <scope id="4919393501061416265" at="37,52,38,19" />
-      <scope id="4919393501061767760" at="42,75,44,123">
-        <var name="operation" id="4919393501061767760" />
+      <scope id="4919393501064259149" at="42,96,44,123">
+        <var name="operation" id="4919393501064259149" />
       </scope>
       <scope id="4919393501061416265" at="26,0,29,0" />
       <scope id="4919393501061416265" at="37,0,40,0">
         <var name="owner" id="4919393501061416265" />
       </scope>
-      <scope id="4919393501061767760" at="30,0,34,0" />
-      <scope id="4919393501061767760" at="42,0,46,0" />
+      <scope id="4919393501064259149" at="30,0,34,0" />
+      <scope id="4919393501064259149" at="42,0,46,0" />
       <unit id="4919393501061416265" at="35,0,48,0" name="Tests.TestConstructionSL.ConstructionModelInitiator_Test$TestBody" />
       <unit id="4919393501061416265" at="19,0,49,0" name="Tests.TestConstructionSL.ConstructionModelInitiator_Test" />
     </file>
@@ -68,30 +68,67 @@
   <root nodeRef="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)/4919393501061417332">
     <file name="ConstructionModelExecutor_Test.java">
       <node id="4919393501061417332" at="26,43,27,25" concept="6" />
-      <node id="4919393501061768827" at="31,73,32,95" concept="1" />
-      <node id="4919393501061417332" at="37,52,38,19" concept="6" />
-      <node id="4919393501061768827" at="42,75,43,242" concept="4" />
-      <node id="4919393501061768827" at="43,242,44,123" concept="1" />
+      <node id="4919393501064260734" at="31,91,32,113" concept="1" />
+      <node id="4919393501064260736" at="35,91,36,113" concept="1" />
+      <node id="4919393501061417332" at="41,52,42,19" concept="6" />
+      <node id="4919393501064260734" at="46,93,47,242" concept="4" />
+      <node id="4919393501064260734" at="47,242,48,123" concept="1" />
+      <node id="4919393501064260736" at="50,93,51,242" concept="4" />
+      <node id="4919393501064260736" at="51,242,52,123" concept="1" />
       <node id="4919393501061417332" at="21,0,23,0" concept="5" trace="ourParamCache" />
       <node id="4919393501061417332" at="23,0,25,0" concept="2" trace="myWithCommandRule" />
       <node id="4919393501061417332" at="26,0,29,0" concept="0" trace="ConstructionModelExecutor_Test#()V" />
-      <node id="4919393501061417332" at="37,0,40,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
-      <node id="4919393501061768827" at="30,0,34,0" concept="3" trace="test_NodeErrorCheck4919393501061768827#()V" />
-      <node id="4919393501061768827" at="42,0,46,0" concept="3" trace="test_NodeErrorCheck4919393501061768827#()V" />
+      <node id="4919393501061417332" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4919393501064260734" at="30,0,34,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260734#()V" />
+      <node id="4919393501064260736" at="34,0,38,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260736#()V" />
+      <node id="4919393501064260734" at="46,0,50,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260734#()V" />
+      <node id="4919393501064260736" at="50,0,54,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260736#()V" />
       <scope id="4919393501061417332" at="26,43,27,25" />
-      <scope id="4919393501061768827" at="31,73,32,95" />
-      <scope id="4919393501061417332" at="37,52,38,19" />
-      <scope id="4919393501061768827" at="42,75,44,123">
-        <var name="operation" id="4919393501061768827" />
+      <scope id="4919393501064260734" at="31,91,32,113" />
+      <scope id="4919393501064260736" at="35,91,36,113" />
+      <scope id="4919393501061417332" at="41,52,42,19" />
+      <scope id="4919393501064260734" at="46,93,48,123">
+        <var name="operation" id="4919393501064260734" />
+      </scope>
+      <scope id="4919393501064260736" at="50,93,52,123">
+        <var name="operation" id="4919393501064260736" />
       </scope>
       <scope id="4919393501061417332" at="26,0,29,0" />
-      <scope id="4919393501061417332" at="37,0,40,0">
+      <scope id="4919393501061417332" at="41,0,44,0">
         <var name="owner" id="4919393501061417332" />
       </scope>
-      <scope id="4919393501061768827" at="30,0,34,0" />
-      <scope id="4919393501061768827" at="42,0,46,0" />
-      <unit id="4919393501061417332" at="35,0,48,0" name="Tests.TestConstructionSL.ConstructionModelExecutor_Test$TestBody" />
-      <unit id="4919393501061417332" at="19,0,49,0" name="Tests.TestConstructionSL.ConstructionModelExecutor_Test" />
+      <scope id="4919393501064260734" at="30,0,34,0" />
+      <scope id="4919393501064260736" at="34,0,38,0" />
+      <scope id="4919393501064260734" at="46,0,50,0" />
+      <scope id="4919393501064260736" at="50,0,54,0" />
+      <unit id="4919393501061417332" at="39,0,56,0" name="Tests.TestConstructionSL.ConstructionModelExecutor_Test$TestBody" />
+      <unit id="4919393501061417332" at="19,0,57,0" name="Tests.TestConstructionSL.ConstructionModelExecutor_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)/4919393501064021123">
+    <file name="DefaultSoI_Test.java">
+      <node id="4919393501064021123" at="22,28,23,25" concept="6" />
+      <node id="4919393501064021138" at="27,49,28,56" concept="1" />
+      <node id="4919393501064021123" at="33,52,34,19" concept="6" />
+      <node id="4919393501064021124" at="37,51,38,41" concept="1" />
+      <node id="4919393501064021123" at="17,0,19,0" concept="5" trace="ourParamCache" />
+      <node id="4919393501064021123" at="19,0,21,0" concept="2" trace="myWithCommandRule" />
+      <node id="4919393501064021123" at="22,0,25,0" concept="0" trace="DefaultSoI_Test#()V" />
+      <node id="4919393501064021123" at="33,0,36,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4919393501064021138" at="37,0,40,0" concept="3" trace="test_NodeIsSoI#()V" />
+      <node id="4919393501064021138" at="26,0,30,0" concept="3" trace="test_NodeIsSoI#()V" />
+      <scope id="4919393501064021123" at="22,28,23,25" />
+      <scope id="4919393501064021138" at="27,49,28,56" />
+      <scope id="4919393501064021123" at="33,52,34,19" />
+      <scope id="4919393501064021138" at="37,51,38,41" />
+      <scope id="4919393501064021123" at="22,0,25,0" />
+      <scope id="4919393501064021123" at="33,0,36,0">
+        <var name="owner" id="4919393501064021123" />
+      </scope>
+      <scope id="4919393501064021138" at="37,0,40,0" />
+      <scope id="4919393501064021138" at="26,0,30,0" />
+      <unit id="4919393501064021123" at="31,0,43,0" name="Tests.TestConstructionSL.DefaultSoI_Test$TestBody" />
+      <unit id="4919393501064021123" at="15,0,44,0" name="Tests.TestConstructionSL.DefaultSoI_Test" />
     </file>
   </root>
 </debug-info>

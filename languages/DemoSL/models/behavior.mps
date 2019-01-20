@@ -137,6 +137,7 @@
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -3605,6 +3606,25 @@
                 <property role="3clFbU" value="false" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4h5c_cXh9gT">
+    <property role="3GE5qa" value="Construction Model" />
+    <ref role="13h7C2" to="ar0b:1VmqrBbw57R" resolve="ConstructionModel" />
+    <node concept="13hLZK" id="4h5c_cXh9gU" role="13h7CW">
+      <node concept="3clFbS" id="4h5c_cXh9gV" role="2VODD2">
+        <node concept="3clFbF" id="4h5c_cXh9h5" role="3cqZAp">
+          <node concept="2OqwBi" id="4h5c_cXh9Vn" role="3clFbG">
+            <node concept="2OqwBi" id="4h5c_cXh9oX" role="2Oq$k0">
+              <node concept="13iPFW" id="4h5c_cXh9h4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4h5c_cXh9Dw" role="2OqNvi">
+                <ref role="3Tt5mk" to="ar0b:1VmqrBbw582" resolve="scopeOfInterest" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="4h5c_cXhanc" role="2OqNvi" />
           </node>
         </node>
       </node>

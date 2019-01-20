@@ -28,8 +28,12 @@ public class ConstructionModelExecutor_Test extends BaseTransformationTest {
   }
 
   @Test
-  public void test_NodeErrorCheck4919393501061768827() throws Throwable {
-    new ConstructionModelExecutor_Test.TestBody(this).test_NodeErrorCheck4919393501061768827();
+  public void test_NodeExecutorTransactionkindCheck4919393501064260734() throws Throwable {
+    new ConstructionModelExecutor_Test.TestBody(this).test_NodeExecutorTransactionkindCheck4919393501064260734();
+  }
+  @Test
+  public void test_NodeExecutorTransactionkindCheck4919393501064260736() throws Throwable {
+    new ConstructionModelExecutor_Test.TestBody(this).test_NodeExecutorTransactionkindCheck4919393501064260736();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -39,8 +43,12 @@ public class ConstructionModelExecutor_Test extends BaseTransformationTest {
     }
 
 
-    public void test_NodeErrorCheck4919393501061768827() throws Exception {
-      SNode operation = SNodeOperations.cast(getRealNodeById("4919393501061768827"), MetaAdapterFactory.getInterfaceConcept(0x8585453e6bfb4d80L, 0x98deb16074f1d86cL, 0x1510445f8a2c272dL, "jetbrains.mps.lang.test.structure.INodesTestMethod"));
+    public void test_NodeExecutorTransactionkindCheck4919393501064260734() throws Exception {
+      SNode operation = SNodeOperations.cast(getRealNodeById("4919393501064260734"), MetaAdapterFactory.getInterfaceConcept(0x8585453e6bfb4d80L, 0x98deb16074f1d86cL, 0x1510445f8a2c272dL, "jetbrains.mps.lang.test.structure.INodesTestMethod"));
+      INodesTestMethod__BehaviorDescriptor.perform_id1kgh5YabdhC.invoke(operation, getRealNodeById("4919393501061417338"));
+    }
+    public void test_NodeExecutorTransactionkindCheck4919393501064260736() throws Exception {
+      SNode operation = SNodeOperations.cast(getRealNodeById("4919393501064260736"), MetaAdapterFactory.getInterfaceConcept(0x8585453e6bfb4d80L, 0x98deb16074f1d86cL, 0x1510445f8a2c272dL, "jetbrains.mps.lang.test.structure.INodesTestMethod"));
       INodesTestMethod__BehaviorDescriptor.perform_id1kgh5YabdhC.invoke(operation, getRealNodeById("4919393501061417338"));
     }
 

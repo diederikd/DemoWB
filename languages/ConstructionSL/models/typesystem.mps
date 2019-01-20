@@ -227,7 +227,7 @@
         <node concept="3clFbS" id="4vyZ9NOpE7l" role="3clFbx">
           <node concept="2MkqsV" id="4vyZ9NOpE7m" role="3cqZAp">
             <node concept="Xl_RD" id="4vyZ9NOpE7n" role="2MkJ7o">
-              <property role="Xl_RC" value="transactionkind should have at least one initiator" />
+              <property role="Xl_RC" value="initiator of transactionkind should have at least one value" />
             </node>
             <node concept="1YBJjd" id="4vyZ9NOpE7o" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
@@ -253,7 +253,7 @@
         <node concept="3clFbS" id="4vyZ9NOpPAS" role="3clFbx">
           <node concept="2MkqsV" id="4vyZ9NOpPAT" role="3cqZAp">
             <node concept="Xl_RD" id="4vyZ9NOpPAU" role="2MkJ7o">
-              <property role="Xl_RC" value="transactionkind should have one executor" />
+              <property role="Xl_RC" value="executor transactionkind should have one value" />
             </node>
             <node concept="1YBJjd" id="4vyZ9NOpPAV" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
@@ -278,14 +278,14 @@
       <node concept="3clFbJ" id="4h5c_cX8psy" role="3cqZAp">
         <node concept="3clFbS" id="4h5c_cX8psz" role="3clFbx">
           <node concept="2MkqsV" id="4h5c_cX8ps$" role="3cqZAp">
-            <node concept="Xl_RD" id="4h5c_cX8ps_" role="2MkJ7o">
-              <property role="Xl_RC" value="transactionkind should have one executor" />
-            </node>
             <node concept="1YBJjd" id="4h5c_cX8psA" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
             <node concept="2OE7Q9" id="4h5c_cX8psB" role="2OEWyd">
               <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
+            </node>
+            <node concept="Xl_RD" id="4h5c_cXileh" role="2MkJ7o">
+              <property role="Xl_RC" value="executor transactionkind should have one value" />
             </node>
           </node>
         </node>

@@ -9,22 +9,40 @@
     <use id="9f846aef-4e4a-4a84-828e-7e83fe2697f2" name="jetbrains.mps.build.mps.testManifest" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
   </languages>
-  <imports />
+  <imports>
+    <import index="ynh5" ref="r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
+        <child id="8489045168660938517" name="errorRef" index="3lydEf" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+        <reference id="8333855927540250453" name="declaration" index="39XzEq" />
+      </concept>
+      <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
+        <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
+      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
+        <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
     </language>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
@@ -117,8 +135,12 @@
             <node concept="1Tmc7B" id="4h5c_cX8o_q" role="1Tmdjl">
               <ref role="1Tmc6K" node="4h5c_cX8o_u" resolve="Actor 1" />
             </node>
-            <node concept="7CXmI" id="4h5c_cX9I9f" role="lGtFl">
-              <node concept="1TM$A" id="4h5c_cX9I9g" role="7EUXB" />
+            <node concept="7CXmI" id="4h5c_cXjepc" role="lGtFl">
+              <node concept="1TM$A" id="4h5c_cXjepd" role="7EUXB">
+                <node concept="2PYRI3" id="4h5c_cXjepe" role="3lydEf">
+                  <ref role="39XzEq" to="ynh5:4vyZ9NOpE7m" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -146,8 +168,17 @@
             <node concept="1Tmc4s" id="4h5c_cX8o_Y" role="1TmdgA">
               <ref role="1Tmc4J" node="4h5c_cX8o_u" resolve="Actor 1" />
             </node>
-            <node concept="7CXmI" id="4h5c_cX9IpU" role="lGtFl">
-              <node concept="1TM$A" id="4h5c_cX9IpV" role="7EUXB" />
+            <node concept="7CXmI" id="4h5c_cXjeLX" role="lGtFl">
+              <node concept="1TM$A" id="4h5c_cXjeLY" role="7EUXB">
+                <node concept="2PYRI3" id="4h5c_cXjeLZ" role="3lydEf">
+                  <ref role="39XzEq" to="ynh5:4vyZ9NOpPAT" />
+                </node>
+              </node>
+              <node concept="1TM$A" id="4h5c_cXjeM0" role="7EUXB">
+                <node concept="2PYRI3" id="4h5c_cXjeM1" role="3lydEf">
+                  <ref role="39XzEq" to="ynh5:4h5c_cX8ps$" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -167,6 +198,21 @@
     <property role="TrG5h" value="ProjectConfiguration" />
     <node concept="2Uj$md" id="4h5c_cX9IMa" role="2Uj_Yd">
       <ref role="2Uj$mc" node="4h5c_cX9ILX" resolve="Demo WB Testmodule" />
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="4h5c_cXiki3">
+    <property role="TrG5h" value="DefaultSoI" />
+    <node concept="1LZb2c" id="4h5c_cXikii" role="1SL9yI">
+      <property role="TrG5h" value="NodeIsSoI" />
+      <node concept="3cqZAl" id="4h5c_cXikij" role="3clF45" />
+      <node concept="3clFbS" id="4h5c_cXikin" role="3clF47" />
+    </node>
+    <node concept="1qefOq" id="4h5c_cXiki4" role="1SKRRt">
+      <node concept="3llzxe" id="4h5c_cXiki6" role="1qenE9">
+        <node concept="3cHilr" id="4h5c_cXiki7" role="3llzIV">
+          <node concept="7CXmI" id="4h5c_cXikia" role="lGtFl" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

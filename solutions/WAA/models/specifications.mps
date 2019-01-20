@@ -279,7 +279,6 @@
       <node concept="3cGziv" id="pMarvI_0hi" role="3cGS$C">
         <property role="3cGS$Q" value="vaststellen van de spreiding van de uren " />
         <property role="3cGzis" value="T5" />
-        <ref role="3lGtC5" node="6z7DEV3JeaV" resolve="spreiding is vastgesteld" />
         <node concept="1Tmc4s" id="pMarvI_0hj" role="1TmdgA">
           <ref role="1Tmc4J" node="pMarvI_0hR" resolve="Inwilliger van het verzoek" />
         </node>
@@ -2481,11 +2480,6 @@
       <property role="TrG5h" value="spreiding van de arbeidsduur" />
       <ref role="3cH7GL" node="IuxU86i8AQ" resolve="Spreiding" />
       <ref role="2Hnu9v" node="IuxU86i89d" resolve="Arbeidsduur van de arbeidsovereenkomst" />
-      <node concept="3cH7GZ" id="6z7DEV3JeaV" role="3l5TZy">
-        <property role="TrG5h" value="spreiding is vastgesteld" />
-        <property role="3cH7GY" value="P44" />
-        <ref role="3la2Pp" node="IuxU86i8Fk" resolve="spreiding van de arbeidsduur" />
-      </node>
     </node>
     <node concept="3cH7GO" id="IuxU86i8aQ" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -2617,7 +2611,12 @@
     <node concept="3cH7GZ" id="IuxU86jrmE" role="3cH7GF">
       <property role="TrG5h" value="spreiding van het verzoek is gewijzigd" />
       <property role="3cH7GY" value="P37" />
-      <ref role="3la2Pp" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+      <ref role="3la2Pp" node="IuxU86i8AQ" resolve="Spreiding" />
+    </node>
+    <node concept="3cH7GZ" id="4WvouDn59DD" role="3cH7GF">
+      <property role="TrG5h" value="spreiding is vastgesteld" />
+      <property role="3cH7GY" value="P39" />
+      <ref role="3la2Pp" node="IuxU86i8AQ" resolve="Spreiding" />
     </node>
   </node>
   <node concept="3ltzyT" id="IuxU86gU83">
