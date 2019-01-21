@@ -9,6 +9,7 @@
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
+    <import index="fujt" ref="r:d2c51d36-f7cf-4f9c-82a0-80381f5c10fb(ConstructionSL.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -17,6 +18,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -54,6 +58,9 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -73,13 +80,25 @@
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
         <child id="1227096836496" name="messageTarget" index="2OEWyd" />
       </concept>
+      <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
+        <child id="1216383424566" name="executeBlock" index="Q6x$H" />
+        <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
+      </concept>
+      <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
+      <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
+      <concept id="1216390987552" name="jetbrains.mps.lang.typesystem.structure.QuickFixDescriptionBlock" flags="in" index="QznSV" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
+        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
+        <reference id="1216388525179" name="quickFix" index="QpYPw" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -94,7 +113,19 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -137,6 +168,10 @@
           <node concept="3clFbJ" id="1VmqrBbT3am" role="3cqZAp">
             <node concept="3clFbS" id="1VmqrBbT3ao" role="3clFbx">
               <node concept="2MkqsV" id="1VmqrBbTp7P" role="3cqZAp">
+                <node concept="3Cnw8n" id="4WvouDnoS4x" role="2OEOjU">
+                  <property role="ARO6o" value="true" />
+                  <ref role="QpYPw" node="4WvouDnfqmZ" resolve="AddUniqueIDForTransactionKind" />
+                </node>
                 <node concept="Xl_RD" id="1VmqrBbTp7Q" role="2MkJ7o">
                   <property role="Xl_RC" value="id of transactionkind is not unique" />
                 </node>
@@ -343,6 +378,10 @@
             </node>
             <node concept="2ODE4t" id="4vyZ9NOJW_Q" role="2OEWyd">
               <ref role="2ODJFN" to="pgdh:2ojITFECoW6" resolve="id" />
+            </node>
+            <node concept="3Cnw8n" id="4WvouDnngqx" role="2OEOjU">
+              <property role="ARO6o" value="true" />
+              <ref role="QpYPw" node="4WvouDnfqmZ" resolve="AddUniqueIDForTransactionKind" />
             </node>
           </node>
         </node>
@@ -611,6 +650,54 @@
     <node concept="1YaCAy" id="4vyZ9NOFAvN" role="1YuTPh">
       <property role="TrG5h" value="aggregateTransactionKind" />
       <ref role="1YaFvo" to="pgdh:2ojITFECoWc" resolve="AggregateTransactionKind" />
+    </node>
+  </node>
+  <node concept="Q5z_Y" id="4WvouDnfqmZ">
+    <property role="TrG5h" value="AddUniqueIDForTransactionKind" />
+    <node concept="Q5ZZ6" id="4WvouDnfqn0" role="Q6x$H">
+      <node concept="3clFbS" id="4WvouDnfqn1" role="2VODD2">
+        <node concept="Jncv_" id="4WvouDnfqnk" role="3cqZAp">
+          <ref role="JncvD" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+          <node concept="Q6c8r" id="4WvouDnfqnS" role="JncvB" />
+          <node concept="3clFbS" id="4WvouDnfqnm" role="Jncv$">
+            <node concept="3clFbF" id="4WvouDnfqp7" role="3cqZAp">
+              <node concept="2OqwBi" id="4WvouDnfr5N" role="3clFbG">
+                <node concept="2OqwBi" id="4WvouDnfqx9" role="2Oq$k0">
+                  <node concept="Jnkvi" id="4WvouDnfqp6" role="2Oq$k0">
+                    <ref role="1M0zk5" node="4WvouDnfqnn" resolve="transactionKind" />
+                  </node>
+                  <node concept="3TrcHB" id="4WvouDnpFbl" role="2OqNvi">
+                    <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                  </node>
+                </node>
+                <node concept="tyxLq" id="4WvouDnfrnb" role="2OqNvi">
+                  <node concept="2OqwBi" id="4WvouDnfryT" role="tz02z">
+                    <node concept="Jnkvi" id="4WvouDnfrp1" role="2Oq$k0">
+                      <ref role="1M0zk5" node="4WvouDnfqnn" resolve="transactionKind" />
+                    </node>
+                    <node concept="2qgKlT" id="4WvouDnng4z" role="2OqNvi">
+                      <ref role="37wK5l" to="fujt:4WvouDndH_J" resolve="getNewTId" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="JncvC" id="4WvouDnfqnn" role="JncvA">
+            <property role="TrG5h" value="transactionKind" />
+            <node concept="2jxLKc" id="4WvouDnfqno" role="1tU5fm" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="QznSV" id="4WvouDnfshj" role="QzAvj">
+      <node concept="3clFbS" id="4WvouDnfshk" role="2VODD2">
+        <node concept="3clFbF" id="4WvouDnfspT" role="3cqZAp">
+          <node concept="Xl_RD" id="4WvouDnfspS" role="3clFbG">
+            <property role="Xl_RC" value="Add Unique Id" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

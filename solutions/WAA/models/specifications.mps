@@ -299,7 +299,7 @@
       </node>
       <node concept="3cGziv" id="pMarvIY8Dh" role="3cGS$C">
         <property role="3cGS$Q" value="automatisch aanpassing overeenkomstig het verzoek" />
-        <property role="3cGzis" value="T8" />
+        <property role="3cGzis" value="T7" />
         <node concept="1Tmc4s" id="pMarvIY8Di" role="1TmdgA">
           <ref role="1Tmc4J" node="pMarvIY8DL" resolve="Verzoek controller" />
         </node>
