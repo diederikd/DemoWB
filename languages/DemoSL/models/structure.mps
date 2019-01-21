@@ -103,7 +103,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="facts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
+      <ref role="20lvS9" to="ajas:4WvouDnsMJE" resolve="IFactType" />
     </node>
     <node concept="1TJgyj" id="pMarvIgXYk" role="1TKVEi">
       <property role="IQ2ns" value="464479581525761940" />

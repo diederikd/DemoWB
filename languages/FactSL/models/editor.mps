@@ -2800,5 +2800,14 @@
       <ref role="2$4xQ3" to="wtx7:pMarvIAP38" resolve="idAndName" />
     </node>
   </node>
+  <node concept="24kQdi" id="4WvouDnvnEs">
+    <ref role="1XX52x" to="ajas:4WvouDnsMJE" resolve="IFactType" />
+    <node concept="3EZMnI" id="4WvouDnvnEu" role="2wV5jI">
+      <node concept="3F0ifn" id="4WvouDnvnEv" role="3EZMnx">
+        <property role="ilYzB" value="&lt;choose facttype&gt;" />
+      </node>
+      <node concept="l2Vlx" id="4WvouDnvnEw" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
