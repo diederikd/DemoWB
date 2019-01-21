@@ -4,10 +4,12 @@
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <use id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -576,6 +578,31 @@
   <node concept="PlHQZ" id="4WvouDnsMJE">
     <property role="EcuMT" value="5701383312391744490" />
     <property role="TrG5h" value="IFactType" />
+  </node>
+  <node concept="1TIwiD" id="4WvouDn_y1V">
+    <property role="EcuMT" value="5701383312394035323" />
+    <property role="3GE5qa" value="Formulation" />
+    <property role="TrG5h" value="FormalFormulation" />
+    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <node concept="1TJgyj" id="4WvouDn_y1W" role="1TKVEi">
+      <property role="IQ2ns" value="5701383312394035324" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="formulation" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WvouDnAhBI">
+    <property role="EcuMT" value="5701383312394230254" />
+    <property role="TrG5h" value="AttributeTypeReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="4WvouDnAhBJ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5701383312394230255" />
+      <property role="20kJfa" value="attributeType" />
+      <ref role="20lvS9" node="2ojITFEDW2I" resolve="AttributeType" />
+    </node>
   </node>
 </model>
 

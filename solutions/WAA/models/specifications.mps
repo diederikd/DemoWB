@@ -196,8 +196,21 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
+      <concept id="7550186569849403341" name="DemoSL.structure.Case" flags="ng" index="2F2X5z">
+        <child id="7550186569857426782" name="runningtransactions" index="2GwkfK" />
+      </concept>
+      <concept id="7550186569850605510" name="DemoSL.structure.Act" flags="ng" index="2F6m_C">
+        <property id="7550186569867022185" name="initiation" index="2G7IB7" />
+        <reference id="7550186569850605515" name="TransactionKindStepKind" index="2F6m__" />
+      </concept>
+      <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
+        <reference id="7550186569850389327" name="state" index="2F72nx" />
+        <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
+        <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
+      </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
+        <child id="7550186569849403346" name="casesStarted" index="2F2X5W" />
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909955" name="DemoSL.structure.DerivedFactSpecifications" flags="ng" index="3cHiip">
@@ -19858,6 +19871,23 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
+    <node concept="2F2X5z" id="4WvouDn_aZa" role="2F2X5W">
+      <node concept="2GwkfO" id="4WvouDn_aZb" role="2GwkfK">
+        <ref role="2F72nx" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
+        <node concept="2F6m_C" id="4WvouDn_aZL" role="2GLOok">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="4WvouDn_aZM" role="2GLOok">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzuc1" resolve="niet accepteren van het verzoek verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="4WvouDn_aZc" role="2GSHpF">
+          <property role="2G7IB7" value="false" />
+          <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="3jKZr9" id="4obCttudk_o">
     <property role="TrG5h" value="PSD Afwijzen van het verzoek" />
@@ -21920,25 +21950,25 @@
       </node>
       <node concept="omW1N" id="5VhmAr8op0v" role="onuko">
         <node concept="2mCRVD" id="5VhmAr8t7Ua" role="oqW7u">
-          <property role="2mCRVQ" value="- de datum indiensttreding van arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling ligt ten minste de samentelling volgens werknemer van aanpassing van de arbeidsduur voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
+          <property role="2mCRVQ" value="de datum indiensttreding van arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling ligt ten minste de samentelling volgens werknemer van aanpassing van de arbeidsduur voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7Up" role="oqW7u">
-          <property role="2mCRVQ" value="- de datum indienen verzoek van aanpassing van de arbeidsduur ligt ten minste 4 maanden voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
+          <property role="2mCRVQ" value="de datum indienen verzoek van aanpassing van de arbeidsduur ligt ten minste 4 maanden voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7W5" role="oqW7u">
-          <property role="2mCRVQ" value="- de omvang van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
+          <property role="2mCRVQ" value="de omvang van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7Wm" role="oqW7u">
-          <property role="2mCRVQ" value="- de gewenste spreiding van aanpassing van de arbeidsduur is opgegeven" />
+          <property role="2mCRVQ" value="de gewenste spreiding van aanpassing van de arbeidsduur is opgegeven" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7WF" role="oqW7u">
-          <property role="2mCRVQ" value="- schriftelijk ingediend van aanpassing van de arbeidsduur is waar" />
+          <property role="2mCRVQ" value="schriftelijk ingediend van aanpassing van de arbeidsduur is waar" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7X4" role="oqW7u">
-          <property role="2mCRVQ" value="- de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
+          <property role="2mCRVQ" value="de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7Xx" role="oqW7u">
-          <property role="2mCRVQ" value="- de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van de aanpassing van aanpassing van de arbeidsduur" />
+          <property role="2mCRVQ" value="de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
         <node concept="1FbClr" id="1S2F7pX5DtQ" role="1FbCz9">
           <ref role="1FbCNZ" node="pMarvI_0aB" resolve="Werknemer" />

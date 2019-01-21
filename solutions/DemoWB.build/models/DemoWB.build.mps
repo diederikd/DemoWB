@@ -921,6 +921,17 @@
             <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4WvouDnIpOe" role="3bR37C">
+          <node concept="3bR9La" id="4WvouDnIpOf" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4WvouDnIpOg" role="3bR37C">
+          <node concept="1Busua" id="4WvouDnIpOh" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNS" role="2G$12L">
         <property role="BnDLt" value="true" />
