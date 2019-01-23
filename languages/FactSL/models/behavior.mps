@@ -362,14 +362,27 @@
       <node concept="3clFbS" id="4WvouDmT_Zu" role="3clF47">
         <node concept="3clFbF" id="4WvouDmT_Zv" role="3cqZAp">
           <node concept="3cpWs3" id="4WvouDmT_Zw" role="3clFbG">
-            <node concept="Xl_RD" id="4WvouDmT_Zx" role="3uHU7B">
-              <property role="Xl_RC" value="Attribute of " />
+            <node concept="3cpWs3" id="4WvouDnJvvR" role="3uHU7B">
+              <node concept="Xl_RD" id="4WvouDnJvDP" role="3uHU7w">
+                <property role="Xl_RC" value=" of " />
+              </node>
+              <node concept="3cpWs3" id="4WvouDnJtNW" role="3uHU7B">
+                <node concept="Xl_RD" id="4WvouDmT_Zx" role="3uHU7B">
+                  <property role="Xl_RC" value="Attribute " />
+                </node>
+                <node concept="2OqwBi" id="4WvouDnJuds" role="3uHU7w">
+                  <node concept="13iPFW" id="4WvouDnJtTq" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4WvouDnJuxn" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="4WvouDmT_Zy" role="3uHU7w">
               <node concept="2OqwBi" id="4WvouDmT_Zz" role="2Oq$k0">
                 <node concept="13iPFW" id="4WvouDmT_Z$" role="2Oq$k0" />
                 <node concept="3TrEf2" id="4WvouDmTCfd" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
+                  <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domain" />
                 </node>
               </node>
               <node concept="3TrcHB" id="4WvouDmT_ZA" role="2OqNvi">
@@ -579,17 +592,30 @@
       <node concept="3clFbS" id="4WvouDmSfPQ" role="3clF47">
         <node concept="3clFbF" id="4WvouDmSgic" role="3cqZAp">
           <node concept="3cpWs3" id="4WvouDmSgQr" role="3clFbG">
-            <node concept="Xl_RD" id="4WvouDmSgTx" role="3uHU7B">
-              <property role="Xl_RC" value="Property of " />
+            <node concept="3cpWs3" id="4WvouDnKkcR" role="3uHU7B">
+              <node concept="Xl_RD" id="4WvouDnKkmJ" role="3uHU7w">
+                <property role="Xl_RC" value=" of " />
+              </node>
+              <node concept="3cpWs3" id="4WvouDnKirA" role="3uHU7B">
+                <node concept="Xl_RD" id="4WvouDmSgTx" role="3uHU7B">
+                  <property role="Xl_RC" value="Property " />
+                </node>
+                <node concept="2OqwBi" id="4WvouDnKiVc" role="3uHU7w">
+                  <node concept="13iPFW" id="4WvouDnKiwY" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="4WvouDnKjeJ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="2OqwBi" id="4WvouDmSjgT" role="3uHU7w">
               <node concept="2OqwBi" id="4WvouDmSgue" role="2Oq$k0">
                 <node concept="13iPFW" id="4WvouDmSgib" role="2Oq$k0" />
-                <node concept="3TrEf2" id="4WvouDmSiOS" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ajas:2ojITFEDW2F" resolve="prange" />
+                <node concept="3TrEf2" id="4WvouDnZ$Ul" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domain" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="4WvouDmSjvD" role="2OqNvi">
+              <node concept="3TrcHB" id="4WvouDnZ_jJ" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>

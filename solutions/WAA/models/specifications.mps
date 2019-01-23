@@ -7,6 +7,18 @@
   </languages>
   <imports />
   <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+    </language>
     <language id="a2c2ae09-7c36-4fba-9b64-5e0450cb1363" name="ProcessSL">
       <concept id="397994270025762622" name="ProcessSL.structure.TransactionKindStepKind" flags="ng" index="a0Nag">
         <property id="397994270025762790" name="stepKind" index="a0N98" />
@@ -118,8 +130,17 @@
       <concept id="6832341507193840783" name="FactSL.structure.NotFormalFormulation" flags="ng" index="2mCRVD">
         <property id="6832341507193840784" name="formulation" index="2mCRVQ" />
       </concept>
-      <concept id="7550186569879667952" name="FactSL.structure.IPropertyType" flags="ng" index="2Hnu9u">
-        <reference id="7550186569879667953" name="domainOfProperty" index="2Hnu9v" />
+      <concept id="5701383312394230254" name="FactSL.structure.AttributeTypeReference" flags="ng" index="oxBw4">
+        <reference id="5701383312394230255" name="attributeType" index="oxBw5" />
+      </concept>
+      <concept id="5701383312394035323" name="FactSL.structure.FormalFormulation" flags="ng" index="oyk6h">
+        <child id="5701383312394035324" name="formulation" index="oyk6m" />
+      </concept>
+      <concept id="5701383312396658734" name="FactSL.structure.PropertyTypeReference" flags="ng" index="oCkB4">
+        <reference id="5701383312396658735" name="propertyType" index="oCkB5" />
+      </concept>
+      <concept id="7550186569879667952" name="FactSL.structure.IPropertyOrAttributeType" flags="ng" index="2Hnu9u">
+        <reference id="7550186569879667953" name="domain" index="2Hnu9v" />
       </concept>
       <concept id="2743742872034984104" name="FactSL.structure.ConstructedEntityType" flags="ng" index="3cH7GM">
         <child id="464479581527082720" name="specialisation" index="3CayXn" />
@@ -21955,17 +21976,39 @@
         <node concept="2mCRVD" id="5VhmAr8t7Up" role="oqW7u">
           <property role="2mCRVQ" value="de datum indienen verzoek van aanpassing van de arbeidsduur ligt ten minste 4 maanden voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
         </node>
-        <node concept="2mCRVD" id="5VhmAr8t7W5" role="oqW7u">
-          <property role="2mCRVQ" value="de omvang van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
+        <node concept="oyk6h" id="4WvouDo15ZK" role="oqW7u">
+          <node concept="3y3z36" id="4WvouDo160m" role="oyk6m">
+            <node concept="oxBw4" id="4WvouDo1603" role="3uHU7B">
+              <ref role="oxBw5" node="IuxU86jqWK" resolve="omvang van de aanpassing" />
+            </node>
+            <node concept="10Nm6u" id="4WvouDo1613" role="3uHU7w" />
+          </node>
         </node>
-        <node concept="2mCRVD" id="5VhmAr8t7Wm" role="oqW7u">
-          <property role="2mCRVQ" value="de gewenste spreiding van aanpassing van de arbeidsduur is opgegeven" />
+        <node concept="oyk6h" id="4WvouDnUg2n" role="oqW7u">
+          <node concept="3y3z36" id="4WvouDnYRuD" role="oyk6m">
+            <node concept="10Nm6u" id="4WvouDnYRuR" role="3uHU7w" />
+            <node concept="oCkB4" id="4WvouDnYRuu" role="3uHU7B">
+              <ref role="oCkB5" node="IuxU86jqZv" resolve="gewenste spreiding" />
+            </node>
+          </node>
         </node>
-        <node concept="2mCRVD" id="5VhmAr8t7WF" role="oqW7u">
-          <property role="2mCRVQ" value="schriftelijk ingediend van aanpassing van de arbeidsduur is waar" />
+        <node concept="oyk6h" id="4WvouDnJsxy" role="oqW7u">
+          <node concept="3clFbC" id="4WvouDnL3MX" role="oyk6m">
+            <node concept="3clFbT" id="4WvouDnL3Nd" role="3uHU7w">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="oxBw4" id="4WvouDnL3MM" role="3uHU7B">
+              <ref role="oxBw5" node="IuxU86jr2c" resolve="schriftelijk ingediend" />
+            </node>
+          </node>
         </node>
-        <node concept="2mCRVD" id="5VhmAr8t7X4" role="oqW7u">
-          <property role="2mCRVQ" value="de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur is opgegeven" />
+        <node concept="oyk6h" id="4WvouDo161K" role="oqW7u">
+          <node concept="3y3z36" id="4WvouDo162h" role="oyk6m">
+            <node concept="10Nm6u" id="4WvouDo162v" role="3uHU7w" />
+            <node concept="oxBw4" id="4WvouDo1626" role="3uHU7B">
+              <ref role="oxBw5" node="IuxU86jqU9" resolve="beoogde ingangsdatum van de aanpassing" />
+            </node>
+          </node>
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7Xx" role="oqW7u">
           <property role="2mCRVQ" value="de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van de aanpassing van aanpassing van de arbeidsduur" />

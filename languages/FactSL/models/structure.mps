@@ -189,7 +189,7 @@
       <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
     </node>
     <node concept="PrWs8" id="6z7DEV5A$jT" role="PzmwI">
-      <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyType" />
+      <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyOrAttributeType" />
     </node>
     <node concept="PrWs8" id="4WvouDnsObN" role="PzmwI">
       <ref role="PrY4T" node="4WvouDnsMJE" resolve="IFactType" />
@@ -206,7 +206,7 @@
       <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
     </node>
     <node concept="PrWs8" id="6z7DEV5A$kN" role="PzmwI">
-      <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyType" />
+      <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyOrAttributeType" />
     </node>
     <node concept="PrWs8" id="4WvouDnsObX" role="PzmwI">
       <ref role="PrY4T" node="4WvouDnsMJE" resolve="IFactType" />
@@ -450,11 +450,11 @@
   </node>
   <node concept="PlHQZ" id="6z7DEV5A$jK">
     <property role="EcuMT" value="7550186569879667952" />
-    <property role="TrG5h" value="IPropertyType" />
+    <property role="TrG5h" value="IPropertyOrAttributeType" />
     <node concept="1TJgyj" id="6z7DEV5A$jL" role="1TKVEi">
       <property role="IQ2ns" value="7550186569879667953" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="domainOfProperty" />
+      <property role="20kJfa" value="domain" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2A" resolve="EntityType" />
     </node>
@@ -602,6 +602,18 @@
       <property role="IQ2ns" value="5701383312394230255" />
       <property role="20kJfa" value="attributeType" />
       <ref role="20lvS9" node="2ojITFEDW2I" resolve="AttributeType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4WvouDnJywI">
+    <property role="EcuMT" value="5701383312396658734" />
+    <property role="TrG5h" value="PropertyTypeReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="4WvouDnJywJ" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5701383312396658735" />
+      <property role="20kJfa" value="propertyType" />
+      <ref role="20lvS9" node="2ojITFEDW2D" resolve="PropertyType" />
     </node>
   </node>
 </model>
