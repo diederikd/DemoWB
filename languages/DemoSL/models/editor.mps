@@ -2,7 +2,7 @@
 <model ref="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
@@ -504,7 +504,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -3047,7 +3047,7 @@
               <node concept="2OqwBi" id="pMarvHVfUW" role="23hSWE">
                 <node concept="37u81S" id="pMarvHVfKM" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6z7DEV5ImhD" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domainOfProperty" />
+                  <ref role="3Tt5mk" to="ajas:6z7DEV5A$jL" resolve="domain" />
                 </node>
               </node>
             </node>

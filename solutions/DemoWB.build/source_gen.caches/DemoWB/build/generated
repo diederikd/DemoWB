@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-6aiczydwk9ut86uy61qsgaagdinzn8h" />
+<product version="3" modelHash="-amy55pb4x5esrglo0q31j44irxd13km">
+  <files names="DemoWB.xml:DemoWBDistribution.xml" />
+</product>
 

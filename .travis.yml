@@ -2,14 +2,14 @@ language: java
 jdk:
 - openjdk8
 before_install:
-- wget https://download-cf.jetbrains.com/mps/2018.2/MPS-2018.2.zip
-- wget https://github.com/mbeddr/mbeddr.core/releases/download/mbeddr-2018-2-0/platform-distribution_2018_2_0.zip
+- wget https://download-cf.jetbrains.com/mps/2018.3/MPS-2018.3.zip
+- wget https://github.com/mbeddr/mbeddr.core/releases/download/nightly-619/platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip
 install:
-- unzip MPS-2018.2.zip
-- unzip platform-distribution_2018_2_0.zip
+- unzip MPS-2018.3.zip
+- unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip
 script:
-- ant -Dmps_home=./MPS\ 2018.2 -Dmbeddr_home=./plugins clean generate assemble
-- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2018.2
+- ant -Dmps_home=./MPS\ 2018.3 -Dmbeddr_home=./plugins clean generate assemble
+- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2018.3
 deploy:
   provider: releases
   name: Demo-Workbench-Build-$TRAVIS_TAG

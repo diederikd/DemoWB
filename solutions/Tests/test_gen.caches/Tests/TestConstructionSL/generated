@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-17ov2ec9d9g1v85r91h1j76kc90xojj" />
+<product version="3" modelHash="-6whdtg50i2l4gj5xvh7n303wmahmkhd">
+  <files names="ConstructionModelExecutor_Test.java:ConstructionModelInitiator_Test.java:ConstructionModel_Test.java:DefaultSoI_Test.java" />
+</product>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Tests.TestConstructionSL.ConstructionModelExecutor_Test" file="ConstructionModelExecutor_Test.java">
+  <dependency className="Tests.TestConstructionSL.ConstructionModelExecutor_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
@@ -17,7 +17,7 @@
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
-  <dependency className="Tests.TestConstructionSL.ConstructionModelInitiator_Test" file="ConstructionModelInitiator_Test.java">
+  <dependency className="Tests.TestConstructionSL.ConstructionModelInitiator_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
@@ -34,7 +34,7 @@
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
-  <dependency className="Tests.TestConstructionSL.ConstructionModel_Test" file="ConstructionModel_Test.java">
+  <dependency className="Tests.TestConstructionSL.ConstructionModel_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />
@@ -51,7 +51,7 @@
     <classNode dependClassName="org.junit.Test" />
     <classNode extendsClassName="jetbrains.mps.lang.test.runtime.BaseTransformationTest" />
   </dependency>
-  <dependency className="Tests.TestConstructionSL.DefaultSoI_Test" file="DefaultSoI_Test.java">
+  <dependency className="Tests.TestConstructionSL.DefaultSoI_Test">
     <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Throwable" />
     <classNode dependClassName="jetbrains.mps.MPSLaunch" />

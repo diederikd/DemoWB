@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/DemoWBDistribution" />
   <property name="build.layout" location="${build.dir}/artifacts/DemoWBDistribution" />
   <property name="mps_home" location="" />
-  <property name="version" value="2018.2" />
+  <property name="version" value="2018.3" />
   <property name="artifacts.DemoWB" location="${build.dir}/artifacts/DemoWB" />
   <property file="${artifacts.DemoWB}/build.properties" prefix="import.DemoWB" />
   <property name="DemoWB.date" value="${import.DemoWB.DemoWB.date}" />

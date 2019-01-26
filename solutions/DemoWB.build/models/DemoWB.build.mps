@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
-    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="0" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="1" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -19,10 +19,12 @@
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
       <concept id="4560297596904469357" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules" flags="nn" index="22LTRH">
         <child id="4560297596904469360" name="modules" index="22LTRK" />
+        <child id="6593674873639474544" name="options" index="24cAkG" />
       </concept>
       <concept id="4560297596904469362" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModule" flags="nn" index="22LTRM">
         <reference id="4560297596904469363" name="module" index="22LTRN" />
       </concept>
+      <concept id="6593674873639474400" name="jetbrains.mps.build.mps.tests.structure.BuildMpsLayout_TestModules_Options" flags="ng" index="24cAiW" />
       <concept id="4005526075820600484" name="jetbrains.mps.build.mps.tests.structure.BuildModuleTestsPlugin" flags="ng" index="1gjT0q" />
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -162,10 +164,12 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+        <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
+      <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
@@ -187,13 +191,13 @@
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
         <property id="3497141547781541444" name="major" index="2OjLBL" />
+        <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
         <child id="6108265972537182996" name="splashScreen" index="2EqU2t" />
         <child id="6108265972537229337" name="buildNumber" index="2EteIg" />
         <child id="6108265972537229339" name="icon16" index="2EteIi" />
         <child id="6108265972537229338" name="icon32" index="2EteIj" />
-        <child id="6108265972537229340" name="icon32opaque" index="2EteIl" />
-        <child id="6108265972537372847" name="shortName" index="2EtHGA" />
+        <child id="6108265972537372847" name="product" index="2EtHGA" />
         <child id="6108265972537372848" name="fullName" index="2EtHGT" />
         <child id="8795525031433238889" name="textColor" index="HFo83" />
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
@@ -233,6 +237,7 @@
       <node concept="22LTRM" id="4h5c_cXdNke" role="22LTRK">
         <ref role="22LTRN" node="4h5c_cXdMeb" resolve="DemoWBTests" />
       </node>
+      <node concept="24cAiW" id="4GSeSyHVRSS" role="24cAkG" />
     </node>
     <node concept="2igEWh" id="2AEzmscB0G9" role="1hWBAP">
       <property role="2igJW4" value="true" />
@@ -298,14 +303,6 @@
           <ref role="3Mxwex" node="2AEzmscAXMx" resolve="date" />
         </node>
       </node>
-      <node concept="55IIr" id="2AEzmscAXN3" role="2EteIl">
-        <node concept="2Ry0Ak" id="2AEzmscAXN4" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="2AEzmscNMEN" role="2Ry0An">
-            <property role="2Ry0Am" value="DEMO32.png" />
-          </node>
-        </node>
-      </node>
       <node concept="55IIr" id="2AEzmscAXN6" role="2EqU2t">
         <node concept="2Ry0Ak" id="2AEzmscAXN7" role="iGT6I">
           <property role="2Ry0Am" value="icons" />
@@ -322,11 +319,16 @@
           </node>
         </node>
       </node>
+      <node concept="3_J27D" id="4GSeSyHVRSO" role="2gvbiD">
+        <node concept="3Mxwew" id="4GSeSyHVRSP" role="3MwsjC">
+          <property role="3MwjfP" value="demowb" />
+        </node>
+      </node>
     </node>
     <node concept="2kB4xC" id="2AEzmscAXMx" role="1l3spd">
       <property role="TrG5h" value="date" />
       <node concept="hHN3E" id="2AEzmscAXMy" role="aVJcv">
-        <property role="hHN3Y" value="20190114" />
+        <property role="hHN3Y" value="20190125" />
       </node>
     </node>
     <node concept="2kB4xC" id="2AEzmscAXMz" role="1l3spd">
@@ -353,7 +355,7 @@
                 <node concept="2Ry0Ak" id="2AEzmscBdAP" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="2AEzmscBdCC" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 2018.2.app" />
+                    <property role="2Ry0Am" value="MPS 2018.3.app" />
                     <node concept="2Ry0Ak" id="2AEzmscBdEr" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
@@ -524,6 +526,7 @@
         </node>
         <node concept="m$_wl" id="2AEzmscAXOB" role="39821P">
           <ref role="m_rDy" node="2AEzmscAXNU" resolve="DemoWB" />
+          <node concept="pUk6x" id="4GSeSyHVRSM" role="pUk7w" />
         </node>
         <node concept="3_J27D" id="2AEzmscAXOC" role="Nbhlr">
           <node concept="3Mxwew" id="2AEzmscAXOD" role="3MwsjC">
@@ -1772,7 +1775,7 @@
       <node concept="aVJcg" id="2AEzmscAXQ5" role="aVJcv">
         <node concept="NbPM2" id="2AEzmscAXQ6" role="aVJcq">
           <node concept="3Mxwew" id="2AEzmscAXQ7" role="3MwsjC">
-            <property role="3MwjfP" value="2018.2" />
+            <property role="3MwjfP" value="2018.3" />
           </node>
         </node>
       </node>
