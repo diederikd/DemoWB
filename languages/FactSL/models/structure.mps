@@ -14,7 +14,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <reference id="1083241965437" name="defaultMember" index="Qgau1" />
@@ -58,7 +57,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -85,23 +83,6 @@
       <property role="IQ2nx" value="397994270025613077" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" to="d13l:m5XqSfwzTd" resolve="TypeOfWorld" />
-    </node>
-    <node concept="1TJgyj" id="1VmqrBbKvpr" role="1TKVEi">
-      <property role="IQ2ns" value="2222079712862271067" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="startEvent" />
-      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
-      <node concept="asaX9" id="4WvouDnnb5y" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="1VmqrBbKvpt" role="1TKVEi">
-      <property role="IQ2ns" value="2222079712862271069" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="endEvent" />
-      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
-      <node concept="asaX9" id="4WvouDnnbzd" role="lGtFl" />
-    </node>
-    <node concept="PrWs8" id="1VmqrBbN0CJ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="2ojITFEDW2_">
@@ -187,6 +168,9 @@
     </node>
     <node concept="PrWs8" id="2ojITFEE3Hc" role="PzmwI">
       <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
+    </node>
+    <node concept="PrWs8" id="6ocGhv0rlhP" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="6z7DEV5A$jT" role="PzmwI">
       <ref role="PrY4T" node="6z7DEV5A$jK" resolve="IPropertyOrAttributeType" />

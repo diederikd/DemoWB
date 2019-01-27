@@ -299,14 +299,6 @@
       <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2ojITFECvwm">
-    <property role="EcuMT" value="2743742872034605078" />
-    <property role="TrG5h" value="test" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2ojITFECvwn" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4vyZ9NNOunp">
     <property role="EcuMT" value="5179980272465208793" />
     <property role="TrG5h" value="AbstractTransactionKind" />

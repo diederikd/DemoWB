@@ -20,9 +20,6 @@
   <node concept="1M2fIO" id="1VmqrBb$mKM">
     <ref role="1M2myG" to="ajas:2ojITFEDW2A" resolve="EntityType" />
   </node>
-  <node concept="1M2fIO" id="1VmqrBbNfmB">
-    <ref role="1M2myG" to="ajas:2ojITFEDDWf" resolve="FactType" />
-  </node>
   <node concept="1M2fIO" id="1VmqrBbZ$jy">
     <ref role="1M2myG" to="ajas:2ojITFEDW2_" resolve="EventType" />
   </node>

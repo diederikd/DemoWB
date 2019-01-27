@@ -10,7 +10,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -18,17 +17,11 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
-        <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
-        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
@@ -54,14 +47,6 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
-        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
-        <child id="1883223317721008709" name="body" index="Jncv$" />
-        <child id="1883223317721008711" name="variable" index="JncvA" />
-        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
-      </concept>
-      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
-      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -151,41 +136,6 @@
                   <node concept="1r4N1M" id="pMarvIlj01" role="1m5AlR" />
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="37WguZ" id="6z7DEV3JKbC">
-    <property role="TrG5h" value="NewEventType" />
-    <node concept="37WvkG" id="6z7DEV3JKbD" role="37WGs$">
-      <ref role="37XkoT" to="ajas:2ojITFEDW2_" resolve="EventType" />
-      <node concept="37Y9Zx" id="6z7DEV3JKbE" role="37ZfLb">
-        <node concept="3clFbS" id="6z7DEV3JKbF" role="2VODD2">
-          <node concept="Jncv_" id="6z7DEV3JKei" role="3cqZAp">
-            <ref role="JncvD" to="ajas:2ojITFEDDWf" resolve="FactType" />
-            <node concept="1r4N1M" id="6z7DEV3JKeT" role="JncvB" />
-            <node concept="3clFbS" id="6z7DEV3JKek" role="Jncv$">
-              <node concept="3clFbF" id="6z7DEV3JKfS" role="3cqZAp">
-                <node concept="2OqwBi" id="6z7DEV3JKSK" role="3clFbG">
-                  <node concept="2OqwBi" id="6z7DEV3JKo$" role="2Oq$k0">
-                    <node concept="1r4Lsj" id="6z7DEV3JKfR" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="6z7DEV3JKz0" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ajas:1VmqrBbZ$jw" resolve="concerns" />
-                    </node>
-                  </node>
-                  <node concept="2oxUTD" id="6z7DEV3JLeZ" role="2OqNvi">
-                    <node concept="Jnkvi" id="6z7DEV3JLk8" role="2oxUTC">
-                      <ref role="1M0zk5" node="6z7DEV3JKel" resolve="factType" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="JncvC" id="6z7DEV3JKel" role="JncvA">
-              <property role="TrG5h" value="factType" />
-              <node concept="2jxLKc" id="6z7DEV3JKem" role="1tU5fm" />
             </node>
           </node>
         </node>
