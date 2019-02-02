@@ -315,7 +315,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="object" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ajas:2ojITFEDDWf" resolve="FactType" />
+      <ref role="20lvS9" to="ajas:2ojITFEDW2A" resolve="EntityType" />
     </node>
   </node>
   <node concept="1TIwiD" id="1dPpwTSmYdl">

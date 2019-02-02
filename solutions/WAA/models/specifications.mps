@@ -226,6 +226,7 @@
       <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
         <reference id="7550186569850389327" name="state" index="2F72nx" />
         <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
+        <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
       </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
@@ -5141,8 +5142,14 @@
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
     <node concept="2F2X5z" id="6ocGhuZWnB8" role="2F2X5W">
       <node concept="2GwkfO" id="6ocGhuZWnB9" role="2GwkfK">
-        <ref role="2F72nx" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="6ocGhuZWnBa" role="2GLOok">
+        <ref role="2F72nx" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
+        <node concept="2F6m_C" id="4NDjat5qhaD" role="2GLOok">
+          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="4NDjat5qhaE" role="2GLOok">
+          <ref role="2F6m__" node="2Ze6BQpzuc1" resolve="niet accepteren van het verzoek verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="2F6m_C" id="6ocGhuZWnBa" role="2GSHpF">
           <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
         </node>
       </node>

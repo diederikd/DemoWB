@@ -16,6 +16,7 @@
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="swi3" ref="r:5eabed4f-92f5-4459-b9b3-e2faa24f3467(de.itemis.mps.editor.diagram.styles.editor)" />
+    <import index="4oiq" ref="r:3b90793e-5817-4d27-8dd2-6af82473a5c3(ActionSL.behavior)" />
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
@@ -26,7 +27,6 @@
     <import index="dkn" ref="r:297ba07d-585d-425a-b80f-7b0c8d53e99c(DemoSL.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="qiqe" ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)" implicit="true" />
-    <import index="4oiq" ref="r:3b90793e-5817-4d27-8dd2-6af82473a5c3(ActionSL.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -5280,6 +5280,34 @@
           <node concept="3F0A7n" id="1dPpwTRKbF5" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4NDjat5qj0n" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="1HlG4h" id="4NDjat5qj0o" role="3EZMnx">
+        <node concept="1HfYo3" id="4NDjat5qj0p" role="1HlULh">
+          <node concept="3TQlhw" id="4NDjat5qj0q" role="1Hhtcw">
+            <node concept="3clFbS" id="4NDjat5qj0r" role="2VODD2">
+              <node concept="3clFbF" id="4NDjat5qj0s" role="3cqZAp">
+                <node concept="2YIFZM" id="4NDjat5rI35" role="3clFbG">
+                  <ref role="37wK5l" to="4oiq:4NDjat5rH7H" resolve="getPerfectTenseOfStepKind" />
+                  <ref role="1Pybhc" to="4oiq:4DZcPceF0Af" resolve="ActionHelper" />
+                  <node concept="2OqwBi" id="4NDjat5rI36" role="37wK5m">
+                    <node concept="2OqwBi" id="4NDjat5rI37" role="2Oq$k0">
+                      <node concept="pncrf" id="4NDjat5rI38" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="4NDjat5rI39" role="2OqNvi">
+                        <ref role="37wK5l" to="dkn:6z7DEV4JN86" resolve="getState" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="4NDjat5rI3a" role="2OqNvi">
+                      <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

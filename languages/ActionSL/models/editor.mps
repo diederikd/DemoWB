@@ -15,7 +15,6 @@
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" implicit="true" />
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="cbuy" ref="r:5188a2d6-1793-4c1f-ab4d-ef2646a67ee5(FactSL.behavior)" implicit="true" />
     <import index="fujt" ref="r:d2c51d36-f7cf-4f9c-82a0-80381f5c10fb(ConstructionSL.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -857,24 +856,12 @@
           </node>
         </node>
       </node>
-      <node concept="1HlG4h" id="3ONrM3jmT85" role="3EZMnx">
-        <node concept="1HfYo3" id="3ONrM3jmT87" role="1HlULh">
-          <node concept="3TQlhw" id="3ONrM3jmT89" role="1Hhtcw">
-            <node concept="3clFbS" id="3ONrM3jmT8b" role="2VODD2">
-              <node concept="3clFbF" id="3ONrM3jmTqq" role="3cqZAp">
-                <node concept="2OqwBi" id="3ONrM3jmUD8" role="3clFbG">
-                  <node concept="2OqwBi" id="3ONrM3jmTCa" role="2Oq$k0">
-                    <node concept="pncrf" id="3ONrM3jmTqp" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="3ONrM3jmU3L" role="2OqNvi">
-                      <ref role="3Tt5mk" to="qiqe:5VhmAr8nGi2" resolve="object" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="3ONrM3jmV4z" role="2OqNvi">
-                    <ref role="37wK5l" to="cbuy:1VmqrBbAdFp" resolve="getName" />
-                  </node>
-                </node>
-              </node>
-            </node>
+      <node concept="1iCGBv" id="4NDjat5okpn" role="3EZMnx">
+        <ref role="1NtTu8" to="qiqe:5VhmAr8nGi2" resolve="object" />
+        <node concept="1sVBvm" id="4NDjat5okpp" role="1sWHZn">
+          <node concept="3F0A7n" id="4NDjat5okKp" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>
         </node>
       </node>
