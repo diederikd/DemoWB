@@ -455,7 +455,7 @@
     <property role="EcuMT" value="5047305753772187649" />
     <property role="TrG5h" value="PropertyKindFormulation" />
     <property role="3GE5qa" value="Formulation" />
-    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <ref role="1TJDcQ" node="4NDjat5xmBx" resolve="AttributeOrPropertyFormulation" />
     <node concept="1TJgyj" id="4obCttuk63p" role="1TKVEi">
       <property role="IQ2ns" value="5047305753771139289" />
       <property role="20lmBu" value="reference" />
@@ -468,25 +468,13 @@
     <property role="EcuMT" value="5047305753772187650" />
     <property role="TrG5h" value="AttributeKindFormulation" />
     <property role="3GE5qa" value="Formulation" />
-    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+    <ref role="1TJDcQ" node="4NDjat5xmBx" resolve="AttributeOrPropertyFormulation" />
     <node concept="1TJgyj" id="5VhmAr8pqL3" role="1TKVEi">
       <property role="IQ2ns" value="6832341507193023555" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="attribute" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2ojITFEDW2I" resolve="AttributeType" />
-    </node>
-    <node concept="1TJgyi" id="5VhmAr8qJXO" role="1TKVEl">
-      <property role="IQ2nx" value="6832341507193372532" />
-      <property role="TrG5h" value="valueVariable" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="5VhmAr8qJYz" role="1TKVEi">
-      <property role="IQ2ns" value="6832341507193372579" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="operator" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5VhmAr8qJXK" resolve="Operator" />
     </node>
   </node>
   <node concept="1TIwiD" id="4obCttuo603">
@@ -598,6 +586,48 @@
       <property role="IQ2ns" value="5701383312396658735" />
       <property role="20kJfa" value="propertyType" />
       <ref role="20lvS9" node="2ojITFEDW2D" resolve="PropertyType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4NDjat5xmBx">
+    <property role="EcuMT" value="5542045097765726689" />
+    <property role="3GE5qa" value="Formulation" />
+    <property role="TrG5h" value="AttributeOrPropertyFormulation" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="4obCttuo600" resolve="FactKindFormulation" />
+  </node>
+  <node concept="PlHQZ" id="4NDjat5Wskc">
+    <property role="EcuMT" value="5542045097772827916" />
+    <property role="TrG5h" value="IOFDElement" />
+    <property role="3GE5qa" value="ForOFD" />
+  </node>
+  <node concept="1TIwiD" id="4NDjat67seG">
+    <property role="EcuMT" value="5542045097775711148" />
+    <property role="TrG5h" value="BaseEntityTypeReference" />
+    <property role="3GE5qa" value="ForOFD" />
+    <node concept="1TJgyj" id="4NDjat67seH" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5542045097775711149" />
+      <property role="20kJfa" value="baseEntityType" />
+      <ref role="20lvS9" node="2ojITFEDW2B" resolve="BaseEntityType" />
+    </node>
+    <node concept="PrWs8" id="4NDjat67sAH" role="PzmwI">
+      <ref role="PrY4T" node="4NDjat5Wskc" resolve="IOFDElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4NDjat6sEYO">
+    <property role="EcuMT" value="5542045097781276596" />
+    <property role="TrG5h" value="ConstructedEntityTypeReference" />
+    <property role="3GE5qa" value="ForOFD" />
+    <node concept="1TJgyj" id="4NDjat6sEYP" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5542045097781276597" />
+      <property role="20kJfa" value="constructedEntityType" />
+      <ref role="20lvS9" node="2ojITFEDW2C" resolve="ConstructedEntityType" />
+    </node>
+    <node concept="PrWs8" id="4NDjat6vYaf" role="PzmwI">
+      <ref role="PrY4T" node="4NDjat5Wskc" resolve="IOFDElement" />
     </node>
   </node>
 </model>

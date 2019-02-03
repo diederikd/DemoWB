@@ -395,5 +395,23 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4NDjat5Ws7p">
+    <property role="EcuMT" value="5542045097772827097" />
+    <property role="3GE5qa" value="Fact Model" />
+    <property role="TrG5h" value="OFD" />
+    <property role="34LRSv" value="Object Fact Diagram" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4NDjat5Wskm" role="1TKVEi">
+      <property role="IQ2ns" value="5542045097772827926" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="ajas:4NDjat5Wskc" resolve="IOFDElement" />
+    </node>
+    <node concept="PrWs8" id="4NDjat5Wsk8" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
