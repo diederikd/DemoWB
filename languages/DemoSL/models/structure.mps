@@ -59,8 +59,8 @@
     <property role="TrG5h" value="OrganisationConstructionDiagram" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="Organisation Construction Diagram" />
-    <property role="34LRSv" value="OCD" />
     <property role="3GE5qa" value="Construction Model" />
+    <property role="34LRSv" value="Organisation Construction Diagram" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ojITFECuH2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -76,7 +76,7 @@
     <property role="TrG5h" value="ActionRuleSpecifications" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="Action Rule Specifications" />
-    <property role="34LRSv" value="ARS" />
+    <property role="34LRSv" value="Action Rule Specification" />
     <property role="3GE5qa" value="Action Model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2ojITFEE2J3" role="PzmwI">
@@ -93,7 +93,7 @@
   <node concept="1TIwiD" id="2ojITFEDDVX">
     <property role="EcuMT" value="2743742872034909949" />
     <property role="TrG5h" value="FactModel" />
-    <property role="R4oN_" value="Object Fact Diagram" />
+    <property role="R4oN_" value="Fact model" />
     <property role="3GE5qa" value="Fact Model" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Fact model" />
@@ -127,7 +127,7 @@
     <property role="EcuMT" value="2743742872034909952" />
     <property role="TrG5h" value="WorkInstructionSpecifications" />
     <property role="R4oN_" value="Work Instruction Specifications" />
-    <property role="34LRSv" value="WIS" />
+    <property role="34LRSv" value="Work Instruction Specifications" />
     <property role="3GE5qa" value="Action Model" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -139,7 +139,7 @@
     <property role="EcuMT" value="2743742872034909953" />
     <property role="TrG5h" value="TransactionProductTable" />
     <property role="R4oN_" value="Transaction Product Table" />
-    <property role="34LRSv" value="TPT" />
+    <property role="34LRSv" value="Transaction Product Table" />
     <property role="3GE5qa" value="Construction Model" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -150,7 +150,7 @@
   <node concept="1TIwiD" id="2ojITFEDDW2">
     <property role="EcuMT" value="2743742872034909954" />
     <property role="TrG5h" value="BankContentsTable" />
-    <property role="34LRSv" value="BCT" />
+    <property role="34LRSv" value="Bank Contents Table" />
     <property role="R4oN_" value="Bank Contents Table" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="Construction Model" />
@@ -163,7 +163,7 @@
     <property role="EcuMT" value="2743742872034909955" />
     <property role="R4oN_" value="Derived Fact Specifications" />
     <property role="TrG5h" value="DerivedFactSpecifications" />
-    <property role="34LRSv" value="DFS" />
+    <property role="34LRSv" value="Derived Fact Specifications" />
     <property role="3GE5qa" value="Fact Model" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -209,6 +209,7 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="Proces Model" />
     <property role="34LRSv" value="Proces model" />
+    <property role="R4oN_" value="Proces model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2S7w2zXHkUW" role="1TKVEl">
       <property role="IQ2nx" value="3316760564125224636" />
@@ -264,7 +265,8 @@
     <property role="3GE5qa" value="Proces Model" />
     <property role="TrG5h" value="ProcesStructureDiagram" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="PSD" />
+    <property role="34LRSv" value="Proces Structure Diagram" />
+    <property role="R4oN_" value="Proces Structure Diagram" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2S7w2zXL7ry" role="1TKVEi">
       <property role="IQ2ns" value="3316760564126217954" />
@@ -390,6 +392,7 @@
     <property role="TrG5h" value="ObjectFactDiagram" />
     <property role="34LRSv" value="Object Fact Diagram" />
     <property role="19KtqR" value="true" />
+    <property role="R4oN_" value="Object Fact Diagram" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NDjat5Wskm" role="1TKVEi">
       <property role="IQ2ns" value="5542045097772827926" />
@@ -399,6 +402,25 @@
       <ref role="20lvS9" to="ajas:4NDjat5Wskc" resolve="IOFDElement" />
     </node>
     <node concept="PrWs8" id="4NDjat5Wsk8" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1jzGQlDBs2D">
+    <property role="EcuMT" value="1505243948616892585" />
+    <property role="3GE5qa" value="Construction Model" />
+    <property role="TrG5h" value="OCD" />
+    <property role="34LRSv" value="OCD" />
+    <property role="R4oN_" value="OCD" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1jzGQlDBs2F" role="1TKVEi">
+      <property role="IQ2ns" value="1505243948616892587" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="pgdh:1jzGQlDBs2E" resolve="IOCDElement" />
+    </node>
+    <node concept="PrWs8" id="1jzGQlDBDu8" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>

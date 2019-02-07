@@ -35,6 +35,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -56,6 +57,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -315,6 +317,93 @@
       <property role="IQ2ns" value="5179980272482185712" />
       <property role="20kJfa" value="aggregateTransactionKind" />
       <ref role="20lvS9" node="2ojITFECoWc" resolve="AggregateTransactionKind" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1jzGQlDBs2E">
+    <property role="EcuMT" value="1505243948616892586" />
+    <property role="TrG5h" value="IOCDElement" />
+    <property role="3GE5qa" value="ForOCD" />
+  </node>
+  <node concept="1TIwiD" id="1jzGQlDBS2l">
+    <property role="EcuMT" value="1505243948617007253" />
+    <property role="TrG5h" value="ActorRoleReferenceForOCD" />
+    <property role="3GE5qa" value="ForOCD" />
+    <node concept="1TJgyj" id="1jzGQlDBS2m" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1505243948617007254" />
+      <property role="20kJfa" value="actorRole" />
+      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+    </node>
+    <node concept="PrWs8" id="1jzGQlDBS2z" role="PzmwI">
+      <ref role="PrY4T" node="1jzGQlDBs2E" resolve="IOCDElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1jzGQlDBS2r">
+    <property role="EcuMT" value="1505243948617007259" />
+    <property role="TrG5h" value="CompositeActorRoleReferenceForOCD" />
+    <property role="3GE5qa" value="ForOCD" />
+    <node concept="1TJgyj" id="1jzGQlDBS2s" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1505243948617007260" />
+      <property role="20kJfa" value="compositeActorRole" />
+      <ref role="20lvS9" node="2ojITFECoW8" resolve="CompositeActorRole" />
+    </node>
+    <node concept="PrWs8" id="1jzGQlDBS2x" role="PzmwI">
+      <ref role="PrY4T" node="1jzGQlDBs2E" resolve="IOCDElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1jzGQlDBS2_">
+    <property role="EcuMT" value="1505243948617007269" />
+    <property role="TrG5h" value="TransactionKindReferenceForOCD" />
+    <property role="3GE5qa" value="ForOCD" />
+    <node concept="1TJgyj" id="1jzGQlDBS2A" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1505243948617007270" />
+      <property role="20kJfa" value="transactionKind" />
+      <ref role="20lvS9" node="2ojITFECoW5" resolve="TransactionKind" />
+    </node>
+    <node concept="PrWs8" id="1jzGQlDBS2F" role="PzmwI">
+      <ref role="PrY4T" node="1jzGQlDBs2E" resolve="IOCDElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1jzGQlDBS2H">
+    <property role="EcuMT" value="1505243948617007277" />
+    <property role="TrG5h" value="AggregateTransactionKindReferenceForOCD" />
+    <property role="3GE5qa" value="ForOCD" />
+    <node concept="1TJgyj" id="1jzGQlDBS2I" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1505243948617007278" />
+      <property role="20kJfa" value="aggregateTransactionKind" />
+      <ref role="20lvS9" node="2ojITFECoWc" resolve="AggregateTransactionKind" />
+    </node>
+    <node concept="PrWs8" id="1jzGQlDBS2N" role="PzmwI">
+      <ref role="PrY4T" node="1jzGQlDBs2E" resolve="IOCDElement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1jzGQlDH1Wc">
+    <property role="EcuMT" value="1505243948618358540" />
+    <property role="TrG5h" value="ScopeOfInterestReferenceForOCD" />
+    <property role="3GE5qa" value="ForOCD" />
+    <node concept="1TJgyj" id="1jzGQlDH1Wd" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="1505243948618358541" />
+      <property role="20kJfa" value="scopeOfInterest" />
+      <ref role="20lvS9" node="2ojITFEDDV1" resolve="ScopeOfInterest" />
+    </node>
+    <node concept="PrWs8" id="1jzGQlDIjyb" role="PzmwI">
+      <ref role="PrY4T" node="1jzGQlDBs2E" resolve="IOCDElement" />
+    </node>
+    <node concept="1TJgyj" id="1jzGQlDJx9A" role="1TKVEi">
+      <property role="IQ2ns" value="1505243948619010662" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1jzGQlDBs2E" resolve="IOCDElement" />
     </node>
   </node>
 </model>
