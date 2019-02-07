@@ -630,5 +630,20 @@
       <ref role="PrY4T" node="4NDjat5Wskc" resolve="IOFDElement" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4NDjat6xPPE">
+    <property role="EcuMT" value="5542045097782631786" />
+    <property role="TrG5h" value="EventTypeReference" />
+    <property role="3GE5qa" value="ForOFD" />
+    <node concept="1TJgyj" id="4NDjat6xPPF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="5542045097782631787" />
+      <property role="20kJfa" value="eventType" />
+      <ref role="20lvS9" node="2ojITFEDW2_" resolve="EventType" />
+    </node>
+    <node concept="PrWs8" id="4NDjat6xPQs" role="PzmwI">
+      <ref role="PrY4T" node="4NDjat5Wskc" resolve="IOFDElement" />
+    </node>
+  </node>
 </model>
 

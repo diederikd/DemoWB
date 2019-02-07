@@ -17,6 +17,9 @@
       </concept>
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
+      <concept id="5542045097781276596" name="FactSL.structure.ConstructedEntityTypeReference" flags="ng" index="aAYcj">
+        <reference id="5542045097781276597" name="constructedEntityType" index="aAYci" />
+      </concept>
       <concept id="2743742872034984104" name="FactSL.structure.ConstructedEntityType" flags="ng" index="3cH7GM">
         <child id="464479581526343034" name="aggregation" index="3CfDjd" />
       </concept>
@@ -62,6 +65,9 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
+      <concept id="5542045097772827097" name="DemoSL.structure.OFD" flags="ng" index="968PY">
+        <child id="5542045097772827926" name="elements" index="968AL" />
+      </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
         <child id="464479581525761940" name="sets" index="3Ccvoz" />
@@ -544,6 +550,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="968PY" id="6X_qrRNHpYN">
+    <property role="TrG5h" value="OFD2 Test aggregation" />
+    <node concept="aAYcj" id="6X_qrRNHpYO" role="968AL">
+      <ref role="aAYci" node="pMarvIxj8m" resolve="OFFER" />
     </node>
   </node>
 </model>

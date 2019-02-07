@@ -130,6 +130,9 @@
       </concept>
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
+      <concept id="5542045097782631786" name="FactSL.structure.EventTypeReference" flags="ng" index="arx7d">
+        <reference id="5542045097782631787" name="eventType" index="arx7c" />
+      </concept>
       <concept id="5542045097781276596" name="FactSL.structure.ConstructedEntityTypeReference" flags="ng" index="aAYcj">
         <reference id="5542045097781276597" name="constructedEntityType" index="aAYci" />
       </concept>
@@ -275,7 +278,7 @@
     </language>
   </registry>
   <node concept="3llzxe" id="pMarvI_09T">
-    <property role="TrG5h" value="Construction model WAA" />
+    <property role="TrG5h" value="CM Construction model WAA" />
     <node concept="3cHilr" id="pMarvI_09U" role="3llzIV">
       <property role="TrG5h" value="WAA" />
       <node concept="3cGziv" id="pMarvI_0aH" role="3cGS$C">
@@ -1599,7 +1602,7 @@
     </node>
   </node>
   <node concept="3cGS$F" id="pMarvI_0b0">
-    <property role="TrG5h" value="Organisation Construction Diagram (OCD) WAA" />
+    <property role="TrG5h" value="OCD Organisation Construction Diagram WAA" />
     <node concept="37mRI7" id="pMarvI_0b2" role="lGtFl">
       <node concept="37mRIm" id="pMarvI_0b3" role="37mRID">
         <property role="37mO49" value="464479581531013799" />
@@ -2400,7 +2403,7 @@
     </node>
   </node>
   <node concept="3cHilB" id="IuxU86foXL">
-    <property role="TrG5h" value="Fact model WAA" />
+    <property role="TrG5h" value="FM Fact model WAA" />
     <node concept="3l9Rli" id="4vyZ9NOy8fK" role="3l9RgF">
       <property role="3l9Rll" value="precludes" />
       <ref role="3l9Rln" node="IuxU86fqya" resolve="verzoek is ingewilligd" />
@@ -5686,15 +5689,21 @@
     </node>
   </node>
   <node concept="3cHilA" id="4obCttuiHgz">
-    <property role="TrG5h" value="Action Rule Specification (ARS) WAA" />
+    <property role="TrG5h" value="ARS Action Rule Specification WAA" />
     <node concept="a1WVU" id="5VhmAr8op0s" role="ojaNo">
       <node concept="ojNJ6" id="5VhmAr8op0t" role="ojhK1">
         <property role="okzg6" value="true" />
         <property role="ojPxs" value="rq" />
         <ref role="ojNJ5" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
         <node concept="2mzTSp" id="5VhmAr8op16" role="2mzTUy">
+          <property role="_fOkX" value="true" />
           <ref role="2mzTVA" node="pMarvI_0aH" />
-          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+          <ref role="2mzTV$" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+        </node>
+        <node concept="omW4f" id="4NDjat6LwKg" role="on7DP">
+          <node concept="oqW7m" id="4NDjat6LwKA" role="oqzUl">
+            <ref role="omW4e" node="IuxU86jqBD" resolve="op grond van arbeidsovereenkomst" />
+          </node>
         </node>
         <node concept="omW4f" id="4NDjat5DajD" role="on7DP">
           <node concept="oqW7l" id="4NDjat5DajL" role="oqzUl">
@@ -6043,7 +6052,7 @@
     </node>
   </node>
   <node concept="3cHiip" id="5VhmAr8t81u">
-    <property role="TrG5h" value="DFR WAA" />
+    <property role="TrG5h" value="DFS Derived Fact Specification WAA" />
     <node concept="2mCRVD" id="5VhmAr8udDS" role="2mDtDO">
       <property role="2mCRVQ" value="- " />
     </node>
@@ -8230,7 +8239,7 @@
     </node>
   </node>
   <node concept="968PY" id="4NDjat6r0iL">
-    <property role="TrG5h" value="OFD2 WAA" />
+    <property role="TrG5h" value="OFD Verzoek aanpassing arbeidsduur" />
     <node concept="aX8Wb" id="4NDjat6r0ju" role="968AL">
       <ref role="aX8Wa" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
     </node>
@@ -8639,6 +8648,145 @@
     </node>
     <node concept="aAYcj" id="4NDjat6xlJR" role="968AL">
       <ref role="aAYci" node="IuxU86fr$j" resolve="Werknemer" />
+    </node>
+  </node>
+  <node concept="968PY" id="4NDjat6zcnY">
+    <property role="TrG5h" value="OFD with events of Verzoek aanpassing arbeidsduur" />
+    <node concept="37mRI7" id="4NDjat6_sbL" role="lGtFl">
+      <node concept="37mRIm" id="4NDjat6_sbM" role="37mRID">
+        <property role="37mO49" value="837255710696642550" />
+        <node concept="gqqVs" id="4NDjat6_sbK" role="37mO4d">
+          <property role="gqqTZ" value="93.34939759036145" />
+          <property role="gqqTW" value="207.0240963855422" />
+          <property role="gqqTX" value="316.0" />
+          <property role="gqqTy" value="97.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6D8ou" role="37mRID">
+        <property role="37mO49" value="5701383312388916206" />
+        <node concept="gqqVs" id="4NDjat6D8ot" role="37mO4d">
+          <property role="gqqTZ" value="611.3493975903615" />
+          <property role="gqqTW" value="106.02409638554221" />
+          <property role="gqqTX" value="28.0" />
+          <property role="gqqTy" value="29.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6EMt9" role="37mRID">
+        <property role="37mO49" value="837255710696644642" />
+        <node concept="gqqVs" id="4NDjat6EMt8" role="37mO4d">
+          <property role="gqqTZ" value="752.3493975903615" />
+          <property role="gqqTW" value="171.0240963855422" />
+          <property role="gqqTX" value="20.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6Gbbh" role="37mRID">
+        <property role="37mO49" value="837255710697698730" />
+        <node concept="gqqVs" id="4NDjat6Gbbg" role="37mO4d">
+          <property role="gqqTZ" value="537.0" />
+          <property role="gqqTW" value="84.0" />
+          <property role="gqqTX" value="20.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6JxXk" role="37mRID">
+        <property role="37mO49" value="5701383312388916210" />
+        <node concept="gqqVs" id="4NDjat6JxXj" role="37mO4d">
+          <property role="gqqTZ" value="551.0" />
+          <property role="gqqTW" value="175.0" />
+          <property role="gqqTX" value="24.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6JxYC" role="37mRID">
+        <property role="37mO49" value="837255710696646794" />
+        <node concept="gqqVs" id="4NDjat6JxYB" role="37mO4d">
+          <property role="gqqTZ" value="746.8493975903616" />
+          <property role="gqqTW" value="274.0240963855421" />
+          <property role="gqqTX" value="31.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6JxZl" role="37mRID">
+        <property role="37mO49" value="837255710696646897" />
+        <node concept="gqqVs" id="4NDjat6JxZk" role="37mO4d">
+          <property role="gqqTZ" value="750.8493975903616" />
+          <property role="gqqTW" value="373.04819277108436" />
+          <property role="gqqTX" value="23.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6Jy0J" role="37mRID">
+        <property role="37mO49" value="5701383312388934230" />
+        <node concept="gqqVs" id="4NDjat6Jy0I" role="37mO4d">
+          <property role="gqqTZ" value="588.1445783132531" />
+          <property role="gqqTW" value="399.5903614457831" />
+          <property role="gqqTX" value="30.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6Jy0L" role="37mRID">
+        <property role="37mO49" value="startverzoek is ingediend" />
+        <node concept="2VclpC" id="4NDjat6Jy0K" role="37mO4d">
+          <node concept="3ul5H1" id="4NDjat6Jy0M" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4NDjat6Jy0N" role="3ul5Gz">
+              <node concept="2VclrF" id="4NDjat6Jy0O" role="3wpmZR">
+                <property role="2Vclpx" value="423.34939759036143" />
+                <property role="2Vclpz" value="189.0240963855422" />
+              </node>
+              <node concept="2VclrF" id="4NDjat6Jy0P" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4NDjat6Jy0R" role="37mRID">
+        <property role="37mO49" value="endverzoek is afgehandeld" />
+        <node concept="2VclpC" id="4NDjat6Jy0Q" role="37mO4d">
+          <node concept="3ul5H1" id="4NDjat6Jy0S" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4NDjat6Jy0T" role="3ul5Gz">
+              <node concept="2VclrF" id="4NDjat6Jy0U" role="3wpmZR">
+                <property role="2Vclpx" value="424.34939759036143" />
+                <property role="2Vclpz" value="318.0240963855422" />
+              </node>
+              <node concept="2VclrF" id="4NDjat6Jy0V" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="aX8Wb" id="4NDjat6JxX9" role="968AL">
+      <ref role="aX8Wa" node="IuxU86fpvQ" resolve="Verzoek aanpassing arbeidsduur" />
+    </node>
+    <node concept="arx7d" id="4NDjat6JxXP" role="968AL">
+      <ref role="arx7c" node="IuxU86fq0y" resolve="verzoek is besproken" />
+    </node>
+    <node concept="arx7d" id="4NDjat6JxYo" role="968AL">
+      <ref role="arx7c" node="IuxU86fqya" resolve="verzoek is ingewilligd" />
+    </node>
+    <node concept="arx7d" id="4NDjat6JxYD" role="968AL">
+      <ref role="arx7c" node="IuxU86fqzL" resolve="verzoek is afgewezen" />
+    </node>
+    <node concept="arx7d" id="4NDjat6Jy04" role="968AL">
+      <ref role="arx7c" node="4WvouDni0fI" resolve="verzoek is ingediend" />
+    </node>
+    <node concept="arx7d" id="4NDjat6Jy0n" role="968AL">
+      <ref role="arx7c" node="4WvouDni4Dm" resolve="verzoek is afgehandeld" />
     </node>
   </node>
 </model>
