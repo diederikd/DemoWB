@@ -8,6 +8,34 @@
   </languages>
   <imports />
   <registry>
+    <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
+        <property id="2743742872034489004" name="name" index="3cGS$Q" />
+      </concept>
+    </language>
+    <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
+      <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
+        <property id="2743742872034578186" name="id" index="3cGzig" />
+      </concept>
+      <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
+        <property id="2743742872034578182" name="id" index="3cGzis" />
+        <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
+        <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
+      </concept>
+      <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
+        <property id="2743742872034537143" name="id" index="3cGPkH" />
+      </concept>
+      <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
+        <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
+        <child id="2743742872034489010" name="transactions" index="3cGS$C" />
+      </concept>
+      <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
+        <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
+      </concept>
+      <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
+        <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -24,6 +52,13 @@
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
         <property id="4583510071007917016" name="transform" index="TgtnS" />
       </concept>
+      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
+        <child id="2319506556913311101" name="anchors" index="2Vcluh" />
+      </concept>
+      <concept id="2319506556913310727" name="de.itemis.mps.editor.diagram.layout.structure.Point" flags="ng" index="2VclrF">
+        <property id="2319506556913310861" name="x" index="2Vclpx" />
+        <property id="2319506556913310863" name="y" index="2Vclpz" />
+      </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
         <child id="8963411245960991904" name="entries" index="37mRID" />
       </concept>
@@ -34,6 +69,10 @@
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
+      <concept id="2222079712857969143" name="DemoSL.structure.ConstructionModel" flags="ng" index="3llzxe">
+        <child id="2222079712857969155" name="actorRoles" index="3llzIU" />
+        <child id="2222079712857969154" name="scopeOfInterest" index="3llzIV" />
+      </concept>
     </language>
   </registry>
   <node concept="3cGS$F" id="pMarvJ9$hr">
@@ -69,6 +108,102 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="37mRIm" id="6X_qrRNMVg9" role="37mRID">
+        <property role="37mO49" value="8026938175417725932" />
+        <node concept="gqqVs" id="6X_qrRNMVg8" role="37mO4d">
+          <property role="gqqTZ" value="12.000100000000003" />
+          <property role="gqqTW" value="12.0" />
+          <property role="gqqTX" value="124.0" />
+          <property role="gqqTy" value="79.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="6X_qrRNMVgb" role="37mRID">
+        <property role="37mO49" value="8026938175417725929" />
+        <node concept="gqqVs" id="6X_qrRNMVga" role="37mO4d">
+          <property role="gqqTZ" value="12.000100000000003" />
+          <property role="gqqTW" value="109.0" />
+          <property role="gqqTX" value="164.00039672851562" />
+          <property role="gqqTy" value="110.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3llzxe" id="6X_qrRNMVfC">
+    <property role="TrG5h" value="Construction Model Test OCD" />
+    <node concept="3cHilr" id="6X_qrRNMVfD" role="3llzIV">
+      <property role="TrG5h" value="SoI" />
+      <node concept="3cGziv" id="6X_qrRNMVfY" role="3cGS$C">
+        <property role="3cGzis" value="T1" />
+        <property role="3cGS$Q" value="transaction kind name" />
+        <node concept="1Tmc4s" id="6X_qrRNMVg1" role="1TmdgA">
+          <ref role="1Tmc4J" node="6X_qrRNMVfK" resolve="Actor 1" />
+        </node>
+        <node concept="1Tmc4s" id="6X_qrRNMVg3" role="1TmdgA">
+          <ref role="1Tmc4J" node="6X_qrRNMVfS" resolve="Actor 2" />
+        </node>
+        <node concept="1Tmc7B" id="6X_qrRNMVg6" role="1Tmdjl">
+          <ref role="1Tmc6K" node="6X_qrRNMVfG" resolve="External Actor" />
+        </node>
+      </node>
+      <node concept="3cGS$N" id="6X_qrRNMVfK" role="3cGxOm">
+        <property role="TrG5h" value="Actor 1" />
+        <property role="3cGPkH" value="A1" />
+      </node>
+      <node concept="3cGS$N" id="6X_qrRNMVfS" role="3cGxOm">
+        <property role="TrG5h" value="Actor 2" />
+        <property role="3cGPkH" value="A2" />
+      </node>
+      <node concept="37mRI7" id="6X_qrRNMVgd" role="lGtFl">
+        <node concept="37mRIm" id="6X_qrRNMVge" role="37mRID">
+          <property role="37mO49" value="8026938175417725950" />
+          <node concept="gqqVs" id="6X_qrRNMVgc" role="37mO4d">
+            <property role="gqqTZ" value="98.00029836425782" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="44.0" />
+            <property role="gqqTy" value="29.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+          </node>
+        </node>
+        <node concept="37mRIm" id="6X_qrRNMVgg" role="37mRID">
+          <property role="37mO49" value="8026938175417725936" />
+          <node concept="gqqVs" id="6X_qrRNMVgf" role="37mO4d">
+            <property role="gqqTZ" value="12.000100000000003" />
+            <property role="gqqTW" value="59.0" />
+            <property role="gqqTX" value="68.0" />
+            <property role="gqqTy" value="29.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+          </node>
+        </node>
+        <node concept="37mRIm" id="6X_qrRNMVgi" role="37mRID">
+          <property role="37mO49" value="8026938175417725944" />
+          <node concept="gqqVs" id="6X_qrRNMVgh" role="37mO4d">
+            <property role="gqqTZ" value="12.000100000000003" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="68.0" />
+            <property role="gqqTy" value="29.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+          </node>
+        </node>
+        <node concept="37mRIm" id="6X_qrRNMVgk" role="37mRID">
+          <property role="37mO49" value="8026938175417725953" />
+          <node concept="2VclpC" id="6X_qrRNMVgj" role="37mO4d">
+            <node concept="2VclrF" id="6X_qrRNMVgl" role="2Vcluh">
+              <property role="2Vclpx" value="88.00019836425781" />
+              <property role="2Vclpz" value="73.50005" />
+            </node>
+            <node concept="2VclrF" id="6X_qrRNMVgm" role="2Vcluh">
+              <property role="2Vclpx" value="88.00019836425781" />
+              <property role="2Vclpz" value="26.50005" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3cGzii" id="6X_qrRNMVfG" role="3llzIU">
+      <property role="TrG5h" value="External Actor" />
+      <property role="3cGzig" value="CA1" />
     </node>
   </node>
 </model>
