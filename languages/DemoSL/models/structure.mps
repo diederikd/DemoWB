@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -70,6 +71,7 @@
       <property role="TrG5h" value="internalCompositeActorRole" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="asaX9" id="2AQoUlC9zpi" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="2ojITFEDDVW">
     <property role="EcuMT" value="2743742872034909948" />
@@ -409,8 +411,8 @@
     <property role="EcuMT" value="1505243948616892585" />
     <property role="3GE5qa" value="Construction Model" />
     <property role="TrG5h" value="OCD" />
-    <property role="34LRSv" value="OCD" />
-    <property role="R4oN_" value="OCD" />
+    <property role="34LRSv" value="Organisation Construction Diagram" />
+    <property role="R4oN_" value="Organisation Construction Diagram" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1jzGQlDBs2F" role="1TKVEi">
