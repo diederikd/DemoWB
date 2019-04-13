@@ -34,6 +34,9 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
+      <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <reference id="1071489389519" name="extends" index="1TJDcQ" />
+      </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
@@ -80,6 +83,17 @@
     <node concept="M4N5e" id="m5XqSfwzTf" role="M5hS2">
       <property role="1uS6qo" value="production" />
       <property role="1uS6qv" value="production" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7czcu1fdOgl">
+    <property role="EcuMT" value="8296529778018042901" />
+    <property role="3GE5qa" value="General" />
+    <property role="TrG5h" value="SID" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7czcu1fdOyU" role="1TKVEl">
+      <property role="IQ2nx" value="8296529778018044090" />
+      <property role="TrG5h" value="uuid" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

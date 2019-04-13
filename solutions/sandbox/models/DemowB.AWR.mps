@@ -9,22 +9,28 @@
   <imports />
   <registry>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="8296529778018042901" name="GeneralSL.structure.SID" flags="ng" index="W57nP">
+        <property id="8296529778018044090" name="uuid" index="W57_q" />
+      </concept>
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
         <property id="2743742872034489004" name="name" index="3cGS$Q" />
       </concept>
     </language>
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
-        <property id="2743742872034578186" name="id" index="3cGzig" />
+        <property id="2743742872034578186" name="identification" index="3cGzig" />
+        <child id="6934522251529464189" name="id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
-        <property id="2743742872034578182" name="id" index="3cGzis" />
+        <property id="2743742872034578182" name="identification" index="3cGzis" />
+        <child id="8296529778018044551" name="id" index="W57HB" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
-        <property id="2743742872034537143" name="id" index="3cGPkH" />
-        <child id="3316760564119748940" name="isActorRoleIn" index="3jp$5$" />
+        <property id="2743742872034537143" name="identification" index="3cGPkH" />
+        <child id="6934522251522538168" name="id" index="xdEm7" />
+        <child id="3316760564119748940" name="isActorRoleInCAR" index="3jp$5$" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
@@ -35,9 +41,11 @@
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
         <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
+        <child id="6934522251536907037" name="id" index="xQAgy" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
+        <child id="6934522251536907042" name="id" index="xQAgt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -96,6 +104,9 @@
     <node concept="3cGzii" id="2S7w2zXsjcs" role="3llzIU">
       <property role="3cGzig" value="CA1" />
       <property role="TrG5h" value="belastingplichtige" />
+      <node concept="W57nP" id="60WnNX1ucVj" role="xifp2">
+        <property role="W57_q" value="e7c550c3-e626-4058-ad3b-9477f9d70bbf" />
+      </node>
     </node>
     <node concept="3cHilr" id="2S7w2zXkjxq" role="3llzIV">
       <property role="TrG5h" value="Belastingdienst" />
@@ -104,9 +115,18 @@
         <property role="3cGzis" value="T1" />
         <node concept="1Tmc4s" id="23QvOXyNEqd" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXsjcs" resolve="belastingplichtige" />
+          <node concept="W57nP" id="60WnNX1ULei" role="xQAgy">
+            <property role="W57_q" value="e3a3353a-d0f1-44e4-9e67-268eb00c3a2e" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="23QvOXyNEqg" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXtFdy" resolve="uitnodigingsverzoeker verwerker" />
+          <node concept="W57nP" id="60WnNX1UOvc" role="xQAgt">
+            <property role="W57_q" value="9702887c-8a86-4931-823e-e544227cb3b3" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uue" role="W57HB">
+          <property role="W57_q" value="b14b0e3d-6605-409e-83f4-e4e9fe7d87c3" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXkLSB" role="3cGS$C">
@@ -114,9 +134,18 @@
         <property role="3cGzis" value="T2" />
         <node concept="1Tmc4s" id="23QvOXyNEqj" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXsZ4H" resolve="uitnodiger" />
+          <node concept="W57nP" id="60WnNX1ULej" role="xQAgy">
+            <property role="W57_q" value="8d8842ed-2b55-444e-8c43-31b7cf8a0d7e" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="23QvOXyNEqm" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXsjcs" resolve="belastingplichtige" />
+          <node concept="W57nP" id="60WnNX1UOvd" role="xQAgt">
+            <property role="W57_q" value="7cab9a32-2062-4969-827d-df8bbbad0273" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uuf" role="W57HB">
+          <property role="W57_q" value="fd1e3649-4bf3-4d85-847d-1e12c3f4d1bd" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXkjxy" role="3cGS$C">
@@ -124,9 +153,18 @@
         <property role="3cGS$Q" value="aangifte doen" />
         <node concept="1Tmc4s" id="23QvOXyNEqp" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXsjcs" resolve="belastingplichtige" />
+          <node concept="W57nP" id="60WnNX1ULek" role="xQAgy">
+            <property role="W57_q" value="dee53c55-3b23-4658-9265-5cb545b3142d" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="23QvOXyNEqs" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXtFdf" resolve="aangifteverwerker" />
+          <node concept="W57nP" id="60WnNX1UOve" role="xQAgt">
+            <property role="W57_q" value="86ab09dd-b15a-4e0b-937a-5f7d85d75582" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uug" role="W57HB">
+          <property role="W57_q" value="e5a1075d-5e0d-4d04-b290-d635378cdad7" />
         </node>
       </node>
       <node concept="3cGzii" id="2S7w2zXsZ4M" role="3cGxOm">
@@ -164,12 +202,18 @@
             </node>
           </node>
         </node>
+        <node concept="W57nP" id="60WnNX1ucVk" role="xifp2">
+          <property role="W57_q" value="68bdf424-91d3-410e-8fea-660850190f3e" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXsZ4H" role="3cGxOm">
         <property role="TrG5h" value="uitnodiger" />
         <property role="3cGPkH" value="A1" />
         <node concept="3joZ1r" id="2S7w2zXsZ4Q" role="3jp$5$">
           <ref role="3joZ1s" node="2S7w2zXsZ4M" resolve="belastingdienst" />
+        </node>
+        <node concept="W57nP" id="60WnNX14RWW" role="xdEm7">
+          <property role="W57_q" value="27bdfa61-299b-4c34-b6c3-65680b4a2242" />
         </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXtFdf" role="3cGxOm">
@@ -178,12 +222,18 @@
         <node concept="3joZ1r" id="2S7w2zXtFdl" role="3jp$5$">
           <ref role="3joZ1s" node="2S7w2zXsZ4M" resolve="belastingdienst" />
         </node>
+        <node concept="W57nP" id="60WnNX14RWX" role="xdEm7">
+          <property role="W57_q" value="41d58c10-9d13-4113-bdee-b25bc135ea84" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXtFdy" role="3cGxOm">
         <property role="TrG5h" value="uitnodigingsverzoeker verwerker" />
         <property role="3cGPkH" value="A3" />
         <node concept="3joZ1r" id="2S7w2zXtFdE" role="3jp$5$">
           <ref role="3joZ1s" node="2S7w2zXsZ4M" resolve="belastingdienst" />
+        </node>
+        <node concept="W57nP" id="60WnNX14RWY" role="xdEm7">
+          <property role="W57_q" value="a7391d22-6ed9-47e9-829d-721b45a5c2d2" />
         </node>
       </node>
       <node concept="37mRI7" id="23QvOXyMoQ9" role="lGtFl">

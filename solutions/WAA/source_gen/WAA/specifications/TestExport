@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DEMO:DEMOmodel xmlns:ecf="http://www.ee-institute.org/DEMO38ECF" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DEMO="http://www.ee-institute.org/DEMO38">
+<DEMO:TransactionKinds>
+    <DEMO:TransactionKind Id="2f6952f6-a9dd-44e9-a2c8-74af4a8db900">
+      <DEMO:Identification>T1</DEMO:Identification>
+      <DEMO:Name>verzoekenomaanpassingvandearbeidsduur</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5">
+      <DEMO:Identification>T2</DEMO:Identification>
+      <DEMO:Name>verzoekaanpassingarbeidsduurtebespreken</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1">
+      <DEMO:Identification>T3</DEMO:Identification>
+      <DEMO:Name>inwilligenverzoekaanpassingarbeidsduur</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="9fdcd148-4c1d-4b19-aa29-e06463213e7f">
+      <DEMO:Identification>T4</DEMO:Identification>
+      <DEMO:Name>afwijzenvanhetverzoek</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="b95a2928-d510-4261-9279-9a9e4dad1325">
+      <DEMO:Identification>T5</DEMO:Identification>
+      <DEMO:Name>vaststellenvandespreidingvandeuren</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="444e904d-dc7b-4536-b95d-5cbf1111cd85">
+      <DEMO:Identification>T6</DEMO:Identification>
+      <DEMO:Name>wijzigenvandespreidingvandeuren</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="52c9c51e-adac-4fd6-a602-081efbce301d">
+      <DEMO:Identification>T7</DEMO:Identification>
+      <DEMO:Name>automatischaanpassingovereenkomstighetverzoek</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+</DEMO:TransactionKinds>
+<DEMO:ElementaryActorRoles>
+    <DEMO:ElementaryActorRole Id="3a818ca7-359c-47b3-b402-ed1a6977b262">
+      <DEMO:Identification>A1</DEMO:Identification>
+      <DEMO:Name>verzoekverwerker</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="e63ce274-4662-48c2-b7c2-72a06f697fbb">
+      <DEMO:Identification>A3</DEMO:Identification>
+      <DEMO:Name>inwilligervanhetverzoek</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="cfccf78a-8c47-4991-adfa-381bf08e9e11">
+      <DEMO:Identification>A4</DEMO:Identification>
+      <DEMO:Name>afwijzervanhetverzoek</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="98dd6f82-9929-4b7d-8c56-986f907b1acb">
+      <DEMO:Identification>A5</DEMO:Identification>
+      <DEMO:Name>vaststellervandespreiding</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e">
+      <DEMO:Identification>A6</DEMO:Identification>
+      <DEMO:Name>wijzigervandespreiding</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="17860a63-e11d-4ddf-ae7f-3cdd1c6a303a">
+      <DEMO:Identification>A7</DEMO:Identification>
+      <DEMO:Name>verzoekcontroller</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+</DEMO:ElementaryActorRoles>
+<DEMO:CompositeActorRoles>
+    <DEMO:CompositeActorRole Id="5c0b8e77-c7d0-439e-8849-66d07ac9138d">
+      <DEMO:Identification>CA01</DEMO:Identification>
+      <DEMO:Name>werkgever</DEMO:Name>
+    </DEMO:CompositeActorRole>
+    <DEMO:CompositeActorRole Id="8302ff28-ee19-4fe5-992f-004eab409aa3">
+      <DEMO:Identification>CA1</DEMO:Identification>
+      <DEMO:Name>werknemer</DEMO:Name>
+    </DEMO:CompositeActorRole>
+</DEMO:CompositeActorRoles>
+<DEMO:TransactionProcessStepKinds>
+    <DEMO:TransactionProcessStepKind Id="012b30de-f404-4fc0-9641-5ef60c1955b0">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Initial</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="bd3f0c3a-f0d6-49ac-8237-a65c0d866080">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="5c1b6590-f319-4652-8977-5a8ca183a795">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="61196f70-ca7a-4e2d-b430-1bd4dcfeb851">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0b72e6f0-4d2a-461b-8ebf-b92ce90305a9">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="76b42af2-afcb-4df9-a168-3b696e48869a">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="6a193c92-0a08-4f88-aa68-7718ffba2f20">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1bb8ec8e-07ec-4f67-9a6d-e83b68f1f307">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="474e7b21-082d-4d2e-8c48-949ec4858004">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="b2d5a132-1bfe-49a0-8a4f-69404152f813">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c5f23a3f-f212-4dc0-9bef-ea201276f109">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="d1d09025-5b7e-49d9-9072-5c9e7aaa3984">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="40ab52a9-79a2-4035-8271-17d6083c0890">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0681481f-db0b-4ff5-8da5-13c1546d85dd">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="2cbce3a8-304e-4b65-8b25-1021e1086106">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0c723c5e-91fd-4dc9-a084-80b2469ec4b8">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="e15c8367-b1a6-4f0c-b9c0-683586512f7f">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0fa901c7-a720-4a65-a0e4-4fd80710869f">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0345e73e-2657-4f59-a800-05ab0cd4860d">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="7c59f0d9-5a33-4eaa-8860-ac34fa412e11">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="5d6a1928-10de-4364-a456-46ea02b67e07">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="8da580f5-3890-43c4-9589-dec935ffe984">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="f818d2df-ab2d-487a-8c57-f6a2e9b1f7cb">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="73b69651-1a8b-435c-9594-2b8b427d4919">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c9c66a71-24f8-42bf-a340-1094677ade4e">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0a15ab73-23ef-4550-9868-3eeecec6b4a3">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="b444a5e5-0e22-4777-894e-97307a99496d">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="d968f8f0-1e43-4063-869f-eb15316aa1a5">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="2646ae23-2f5b-4550-9709-038271785ff1">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="4a97afee-cdc5-4943-b22f-5572774eed13">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="6e745ab4-3939-4fc1-842f-67e3221574cc">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="e4fb00fc-2a40-46ae-958a-177661abd9a2">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="00b174f4-60f9-4b20-9e98-1af764c386ee">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="16c43ffe-9673-4f0f-b65f-e6c38cb34b25">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="f6f333ec-c1b0-4dc6-acb4-e29645110136">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="56671e62-c49c-46e5-bbe9-e637dbe5fb56">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1920afc9-d3d5-4f9b-a828-db2811253a98">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="4e246534-6ec9-4519-bebd-56977d7fba2a">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="107243d6-0888-4e3d-b1da-a07f455e8701">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="4a810202-9a8a-4066-a037-0faa2b23aa20">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="8b2e8164-2330-4145-80bb-2ef720e17e43">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="a161768e-ee62-499b-997d-3b2219abc1ae">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c0ca9b85-6f95-4d27-b03a-55bb29d0679f">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0fbf17fb-9505-4241-bc8f-b343f16c089f">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="118675b5-dbee-400a-916c-581571032101">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1a3c83c0-7362-4e06-96e4-9fec6ca29ee2">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="84e511d7-060d-45b9-802a-0c36829cde7f">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="9f4c6e7d-1111-4807-afef-c52e12797555">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1123efa8-676e-42dc-a208-8446f62d0f19">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="de4aa063-1fff-416f-81fa-4e0d2c17ca95">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="757e0110-f10c-4721-b811-40b57ddf59a6">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="cfd84946-013e-43e3-9f26-04600cc379a0">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="31035295-6e52-424d-aef7-8be58742623f">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="cd36a1f8-f93b-45c8-8536-cd1eeeb01192">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="65e557fe-7b50-40a0-8092-34aee31e74f2">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="8ecc854d-ad5a-4c19-b0d8-ee42d360ef0e">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c666a95d-b55a-4cae-aaf6-6073821bd48a">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0ea6f23f-234c-4c24-8cdb-017e20aa6a88">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="7545ec1f-462e-4a9b-8f46-8a7e34a92653">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="112d84ee-72f9-4d9b-ab24-9a356a5e4be1">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="7c4ea01e-5836-4f26-ac86-1018a9b4f1ae">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1ca4bd89-ba97-4a7c-95cb-374b224115b6">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="cb77b255-1738-45f3-a300-dafb9ccb52e8">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="97b495cd-e0fd-4457-a529-16f299482031">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+</DEMO:TransactionProcessStepKinds>
+<DEMO:Connections>
+    <DEMO:Connection Id="4d27c196-d844-4b51-ae6d-4fb7df6e51d6" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="645ff7c7-918a-40d4-b5f2-514bfc66e178" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionKind>
+      <DEMO:ToCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:ToCompositeActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c9cbe7c8-4023-4cf8-923d-8f38389e81d2" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="38451c5e-d409-4566-8b40-0dc3f02f4924" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>cfccf78a-8c47-4991-adfa-381bf08e9e11</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="87cd6999-a34d-4858-ac9b-9fa48074a5dc" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>98dd6f82-9929-4b7d-8c56-986f907b1acb</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4db8b719-6a66-40b8-b4aa-c4590abb05a1" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bca3b4ed-32d4-4f56-83b1-1064923b89a2" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="cdd98678-6262-4f58-97ec-8fef2d09dd97" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:FromCompositeActorRole>
+      <DEMO:ToTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="9fcb6160-c1a9-4759-935d-91e174a0eced" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4c241b57-77d5-4349-ac9f-79f4183f334d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c54890c5-1233-4b54-b235-ce21d193061b" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="869c0b0e-eb60-4c14-9a5e-7553a46b0632" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="114e2073-47e8-4017-8b0d-7f00ea5da8c5" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="1ec7021e-b114-4b89-89c2-5173c087c026" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+</DEMO:Connections>
+</DEMO:DEMOmodel>

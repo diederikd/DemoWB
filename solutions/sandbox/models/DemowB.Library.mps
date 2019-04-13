@@ -15,6 +15,7 @@
       <concept id="397994270025762622" name="ProcessSL.structure.TransactionKindStepKind" flags="ng" index="a0Nag">
         <property id="397994270025762790" name="stepKind" index="a0N98" />
         <reference id="397994270025762623" name="transactionKind" index="a0Nah" />
+        <child id="6934522251522927681" name="id" index="xbbdY" />
       </concept>
       <concept id="397994270025762881" name="ProcessSL.structure.Link" flags="ng" index="a0NRJ">
         <property id="3316760564124570557" name="linkType" index="3jFdel" />
@@ -27,22 +28,28 @@
       </concept>
     </language>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="8296529778018042901" name="GeneralSL.structure.SID" flags="ng" index="W57nP">
+        <property id="8296529778018044090" name="uuid" index="W57_q" />
+      </concept>
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
         <property id="2743742872034489004" name="name" index="3cGS$Q" />
       </concept>
     </language>
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
-        <property id="2743742872034578186" name="id" index="3cGzig" />
+        <property id="2743742872034578186" name="identification" index="3cGzig" />
+        <child id="6934522251529464189" name="id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
-        <property id="2743742872034578182" name="id" index="3cGzis" />
+        <property id="2743742872034578182" name="identification" index="3cGzis" />
         <reference id="2222079712856355772" name="hasProduct" index="3lGtC5" />
+        <child id="8296529778018044551" name="id" index="W57HB" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
-        <property id="2743742872034537143" name="id" index="3cGPkH" />
+        <property id="2743742872034537143" name="identification" index="3cGPkH" />
+        <child id="6934522251522538168" name="id" index="xdEm7" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
@@ -53,9 +60,11 @@
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
         <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
+        <child id="6934522251536907037" name="id" index="xQAgy" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
+        <child id="6934522251536907042" name="id" index="xQAgt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -141,7 +150,7 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
-      <concept id="5542045097772827097" name="DemoSL.structure.OFD" flags="ng" index="968PY">
+      <concept id="5542045097772827097" name="DemoSL.structure.ObjectFactDiagram" flags="ng" index="968PY">
         <child id="5542045097772827926" name="elements" index="968AL" />
       </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
@@ -382,14 +391,23 @@
     <node concept="3cGzii" id="2S7w2zXuJd1" role="3llzIU">
       <property role="TrG5h" value="(aspirant) member" />
       <property role="3cGzig" value="CA1" />
+      <node concept="W57nP" id="60WnNX1ucVp" role="xifp2">
+        <property role="W57_q" value="3bdcaf61-c5f8-42c8-a115-5be9a384fc78" />
+      </node>
     </node>
     <node concept="3cGzii" id="2S7w2zXuJda" role="3llzIU">
       <property role="TrG5h" value="member" />
       <property role="3cGzig" value="CA2" />
+      <node concept="W57nP" id="60WnNX1ucVq" role="xifp2">
+        <property role="W57_q" value="324d904a-f983-4f4f-bae0-8cd2c411bd63" />
+      </node>
     </node>
     <node concept="3cGzii" id="2S7w2zXuJeB" role="3llzIU">
       <property role="TrG5h" value="borrower" />
       <property role="3cGzig" value="CA3" />
+      <node concept="W57nP" id="60WnNX1ucVr" role="xifp2">
+        <property role="W57_q" value="b4b6954d-38ae-44ca-b273-4fc5b8412b6b" />
+      </node>
     </node>
     <node concept="3cHilr" id="1VmqrBbwQiJ" role="3llzIV">
       <property role="TrG5h" value="Library SoI" />
@@ -399,9 +417,18 @@
         <ref role="3lGtC5" node="4WvouDni0fJ" resolve="membership is started" />
         <node concept="1Tmc4s" id="6cLLlCqx8oj" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJd1" resolve="(aspirant) member" />
+          <node concept="W57nP" id="60WnNX1ULev" role="xQAgy">
+            <property role="W57_q" value="0f6c092a-edd0-409f-bf51-89cdb6eadbc9" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8on" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJdh" resolve="membership starter" />
+          <node concept="W57nP" id="60WnNX1UOvo" role="xQAgt">
+            <property role="W57_q" value="60960030-9876-47f1-834b-2d65c49aae49" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uup" role="W57HB">
+          <property role="W57_q" value="d83b8b66-b76d-4ea6-a6dc-5467ec753010" />
         </node>
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiP" role="3cGS$C">
@@ -410,9 +437,18 @@
         <ref role="3lGtC5" node="4WvouDni4Dr" resolve="membership fee is paid" />
         <node concept="1Tmc4s" id="6cLLlCqx8op" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJdh" resolve="membership starter" />
+          <node concept="W57nP" id="60WnNX1ULew" role="xQAgy">
+            <property role="W57_q" value="8f04a7d4-4af4-4d02-995e-8253c5b8562f" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8or" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJd1" resolve="(aspirant) member" />
+          <node concept="W57nP" id="60WnNX1UOvp" role="xQAgt">
+            <property role="W57_q" value="68c500d7-f422-4aea-b64c-8601cb530316" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uuq" role="W57HB">
+          <property role="W57_q" value="8b8bc225-ec82-4454-97f5-4be5301c0164" />
         </node>
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiQ" role="3cGS$C">
@@ -421,9 +457,18 @@
         <ref role="3lGtC5" node="4WvouDni4Dn" resolve="membership is ended" />
         <node concept="1Tmc4s" id="6cLLlCqx8ot" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJda" resolve="member" />
+          <node concept="W57nP" id="60WnNX1ULex" role="xQAgy">
+            <property role="W57_q" value="d13b3288-2ebb-4903-88b5-0905dbf1bf51" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8ov" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJdD" resolve="membership ender" />
+          <node concept="W57nP" id="60WnNX1UOvq" role="xQAgt">
+            <property role="W57_q" value="056c6235-8eca-495d-bb57-76018eb6a7a3" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uur" role="W57HB">
+          <property role="W57_q" value="4d282f81-f3ed-4252-9948-c80b72234b11" />
         </node>
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiR" role="3cGS$C">
@@ -432,9 +477,18 @@
         <ref role="3lGtC5" node="4WvouDni0fH" resolve="loan is concluded" />
         <node concept="1Tmc4s" id="6cLLlCqx8ox" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJeB" resolve="borrower" />
+          <node concept="W57nP" id="60WnNX1ULey" role="xQAgy">
+            <property role="W57_q" value="92941377-f961-4e41-bd3c-8480fe4a7291" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oz" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJe1" resolve="loan concluder" />
+          <node concept="W57nP" id="60WnNX1UOvr" role="xQAgt">
+            <property role="W57_q" value="f53f4940-0b62-4f3d-b16d-111e813f95ba" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uus" role="W57HB">
+          <property role="W57_q" value="09e72bb9-bc8d-480e-84a9-af658f27c707" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXuJeG" role="3cGS$C">
@@ -443,9 +497,18 @@
         <ref role="3lGtC5" node="2S7w2zXwisr" resolve="book of LOAN is issued" />
         <node concept="1Tmc4s" id="6cLLlCqx8o_" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJeB" resolve="borrower" />
+          <node concept="W57nP" id="60WnNX1ULez" role="xQAgy">
+            <property role="W57_q" value="d5d3c78a-98d8-4af6-bb2f-6f5850207c08" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oB" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJef" resolve="book issuer" />
+          <node concept="W57nP" id="60WnNX1UOvs" role="xQAgt">
+            <property role="W57_q" value="f8eb8b18-ee1e-4287-acd6-2a633c80b274" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uut" role="W57HB">
+          <property role="W57_q" value="b1c188e7-39b4-49ba-a21c-27119cde4be7" />
         </node>
       </node>
       <node concept="3cGziv" id="1VmqrBbwQiS" role="3cGS$C">
@@ -454,9 +517,18 @@
         <ref role="3lGtC5" node="2S7w2zXwita" resolve="book of LOAN is returned" />
         <node concept="1Tmc4s" id="6cLLlCqx8oD" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJef" resolve="book issuer" />
+          <node concept="W57nP" id="60WnNX1ULe$" role="xQAgy">
+            <property role="W57_q" value="163e54ee-dea5-4da3-bb4d-074245d8c3f4" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oF" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJeB" resolve="borrower" />
+          <node concept="W57nP" id="60WnNX1UOvt" role="xQAgt">
+            <property role="W57_q" value="b126376a-125d-4c09-b81b-7483c5377d2d" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uuu" role="W57HB">
+          <property role="W57_q" value="9d79cb6b-fd05-43e3-a57f-79475735214c" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXuJeN" role="3cGS$C">
@@ -464,9 +536,18 @@
         <property role="3cGzis" value="T9" />
         <node concept="1Tmc4s" id="6cLLlCqx8oH" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJef" resolve="book issuer" />
+          <node concept="W57nP" id="60WnNX1ULe_" role="xQAgy">
+            <property role="W57_q" value="ea0696cc-41ad-4878-8b92-d1605756c099" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oJ" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJeB" resolve="borrower" />
+          <node concept="W57nP" id="60WnNX1UOvu" role="xQAgt">
+            <property role="W57_q" value="09504b59-1a0e-4313-8f6f-aefcf60b3284" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uuv" role="W57HB">
+          <property role="W57_q" value="60a4f2c2-9d84-49f9-879a-de3657f1edb9" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zXTlqB" role="3cGS$C">
@@ -474,9 +555,18 @@
         <property role="3cGzis" value="T10" />
         <node concept="1Tmc4s" id="6cLLlCqx8oL" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJdm" resolve="fee payimg controller" />
+          <node concept="W57nP" id="60WnNX1ULeA" role="xQAgy">
+            <property role="W57_q" value="8d2703bb-5f69-499c-b62a-518c8176df36" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oN" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJdm" resolve="fee payimg controller" />
+          <node concept="W57nP" id="60WnNX1UOvv" role="xQAgt">
+            <property role="W57_q" value="fcbe5a08-182f-45c3-9d16-2b4353616b75" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uuw" role="W57HB">
+          <property role="W57_q" value="90a51592-fb91-4502-8099-745d92c778a0" />
         </node>
       </node>
       <node concept="3cGziv" id="2S7w2zY02Tc" role="3cGS$C">
@@ -484,34 +574,61 @@
         <property role="3cGzis" value="T11" />
         <node concept="1Tmc4s" id="6cLLlCqx8oP" role="1TmdgA">
           <ref role="1Tmc4J" node="2S7w2zXuJdP" resolve="membership controller" />
+          <node concept="W57nP" id="60WnNX1ULeB" role="xQAgy">
+            <property role="W57_q" value="7e48eeb9-cfd4-4be7-8b89-8a0d3590c02f" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6cLLlCqx8oR" role="1Tmdjl">
           <ref role="1Tmc6K" node="2S7w2zXuJdP" resolve="membership controller" />
+          <node concept="W57nP" id="60WnNX1UOvw" role="xQAgt">
+            <property role="W57_q" value="e314e254-cf69-4744-8e1a-59de76b2b698" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uux" role="W57HB">
+          <property role="W57_q" value="1c4dc6af-566f-48ef-8efd-bf4b5bca914d" />
         </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXuJdh" role="3cGxOm">
         <property role="TrG5h" value="membership starter" />
         <property role="3cGPkH" value="A1" />
+        <node concept="W57nP" id="60WnNX14RX7" role="xdEm7">
+          <property role="W57_q" value="10af794f-4fe2-41d0-bf44-fa5d2b76f0ae" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXuJdm" role="3cGxOm">
         <property role="TrG5h" value="fee payimg controller" />
         <property role="3cGPkH" value="A2" />
+        <node concept="W57nP" id="60WnNX14RX8" role="xdEm7">
+          <property role="W57_q" value="83f24944-cd96-4852-8fed-52f45e826456" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXuJdD" role="3cGxOm">
         <property role="TrG5h" value="membership ender" />
         <property role="3cGPkH" value="A4" />
+        <node concept="W57nP" id="60WnNX14RX9" role="xdEm7">
+          <property role="W57_q" value="75128b2e-4a37-4c1e-b68c-37f14586d16f" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXuJdP" role="3cGxOm">
         <property role="TrG5h" value="membership controller" />
         <property role="3cGPkH" value="A5" />
+        <node concept="W57nP" id="60WnNX14RXa" role="xdEm7">
+          <property role="W57_q" value="fea3f2cf-5e6f-4427-93e2-000ca6cbf49a" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXuJe1" role="3cGxOm">
         <property role="TrG5h" value="loan concluder" />
         <property role="3cGPkH" value="A6" />
+        <node concept="W57nP" id="60WnNX14RXb" role="xdEm7">
+          <property role="W57_q" value="1a49b8ec-3f74-4f42-85d5-4c3ee9b90cea" />
+        </node>
       </node>
       <node concept="3cGS$N" id="2S7w2zXuJef" role="3cGxOm">
         <property role="TrG5h" value="book issuer" />
         <property role="3cGPkH" value="A7" />
+        <node concept="W57nP" id="60WnNX14RXc" role="xdEm7">
+          <property role="W57_q" value="bc36cb31-6538-4d58-aee0-1cefe0cccecf" />
+        </node>
       </node>
       <node concept="37mRI7" id="6cLLlCqasVC" role="lGtFl">
         <node concept="37mRIm" id="6cLLlCqasVD" role="37mRID">
@@ -1619,286 +1736,457 @@
       <property role="TrG5h" value="Initial" />
       <property role="a0N98" value="in" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVv" role="xbbdY">
+        <property role="W57_q" value="5fac09b7-22b1-4057-929d-4f845e6540e5" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zX$hdq" role="3jxjQ9">
       <property role="TrG5h" value="apply for membership" />
       <property role="a0N98" value="rq" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVw" role="xbbdY">
+        <property role="W57_q" value="f2fb2b0c-a96f-4fe0-bd42-d7f92941d99e" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXAHOD" role="3jxjQ9">
       <property role="TrG5h" value="promiss membership" />
       <property role="a0N98" value="pm" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVx" role="xbbdY">
+        <property role="W57_q" value="bc9f5ad9-ad8e-4472-a568-0d82fea78e0d" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXAHOG" role="3jxjQ9">
       <property role="TrG5h" value="process application" />
       <property role="a0N98" value="ex" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVy" role="xbbdY">
+        <property role="W57_q" value="9fb8e1a1-a1d9-48a3-97c6-eca13c1601ba" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXBXTA" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="confirm membership" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVz" role="xbbdY">
+        <property role="W57_q" value="1b575f92-f914-4d93-a439-eae9a510989f" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXBXTF" role="3jxjQ9">
       <property role="TrG5h" value="accept confirmation" />
       <property role="a0N98" value="ac" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WV$" role="xbbdY">
+        <property role="W57_q" value="45e65cac-890b-4458-b4f7-ef1ea0e65930" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXDuSt" role="3jxjQ9">
       <property role="TrG5h" value="reject confirmation" />
       <property role="a0N98" value="rj" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WV_" role="xbbdY">
+        <property role="W57_q" value="da132ca1-b40b-416c-a64d-a371ccc8b498" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXDuS$" role="3jxjQ9">
       <property role="TrG5h" value="stop application" />
       <property role="a0N98" value="sp" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVA" role="xbbdY">
+        <property role="W57_q" value="e780bf81-3f1b-4f9d-ac1a-31756b8cd806" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXDuSG" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline application" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVB" role="xbbdY">
+        <property role="W57_q" value="dd6b00e7-c346-4157-b075-2d79827a7552" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXDuSP" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit application" />
       <ref role="a0Nah" node="1VmqrBbwQiO" />
+      <node concept="W57nP" id="60WnNX14WVC" role="xbbdY">
+        <property role="W57_q" value="34ee41e0-ea43-4a2f-a9ff-2a9633ffb22b" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXHINF" role="3jxjQ9">
       <property role="TrG5h" value="request fee paying" />
       <property role="a0N98" value="rq" />
       <ref role="a0Nah" node="1VmqrBbwQiP" />
+      <node concept="W57nP" id="60WnNX14WVD" role="xbbdY">
+        <property role="W57_q" value="2bbec60e-4d8c-41ae-901f-daf0fb17b693" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXHINQ" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept fee paying" />
       <ref role="a0Nah" node="1VmqrBbwQiP" />
+      <node concept="W57nP" id="60WnNX14WVE" role="xbbdY">
+        <property role="W57_q" value="34ab9306-d7fb-4d9b-b91e-26e985642d8a" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeI$" role="3jxjQ9">
       <property role="a0N98" value="rq" />
       <property role="TrG5h" value="request book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVF" role="xbbdY">
+        <property role="W57_q" value="773f2ba0-fb0c-4249-9b28-37e9f05d89de" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeI_" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVG" role="xbbdY">
+        <property role="W57_q" value="84f50975-4a08-4958-beca-e5870fbb316a" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeIA" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVH" role="xbbdY">
+        <property role="W57_q" value="d9c77bb5-be21-4841-a943-928e7454af15" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeIB" role="3jxjQ9">
       <property role="a0N98" value="pm" />
       <property role="TrG5h" value="promiss book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVI" role="xbbdY">
+        <property role="W57_q" value="48f6902f-7929-4ba1-8b78-16a407bea331" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeIC" role="3jxjQ9">
       <property role="a0N98" value="ex" />
       <property role="TrG5h" value="execute book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVJ" role="xbbdY">
+        <property role="W57_q" value="a0a301d8-475b-4606-b32d-49ba69d6b81f" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeID" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="state book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVK" role="xbbdY">
+        <property role="W57_q" value="61a69e76-ae80-435f-94ad-96a8973510c6" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeIE" role="3jxjQ9">
       <property role="a0N98" value="sp" />
       <property role="TrG5h" value="stop book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVL" role="xbbdY">
+        <property role="W57_q" value="8855ed5d-1313-4fca-b843-0dadb4e3df07" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeIF" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVM" role="xbbdY">
+        <property role="W57_q" value="f9cca2e8-f338-436b-a237-14f30a61f876" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeIG" role="3jxjQ9">
       <property role="a0N98" value="rj" />
       <property role="TrG5h" value="reject book issuing" />
       <ref role="a0Nah" node="2S7w2zXuJeG" />
+      <node concept="W57nP" id="60WnNX14WVN" role="xbbdY">
+        <property role="W57_q" value="99fc670f-8baa-47a5-909c-57f0c5ef78c0" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ1" role="3jxjQ9">
       <property role="a0N98" value="rq" />
       <property role="TrG5h" value="request book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVO" role="xbbdY">
+        <property role="W57_q" value="34365489-4e2a-4633-9ac8-7cb4b8057205" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ2" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVP" role="xbbdY">
+        <property role="W57_q" value="d9204285-29b2-43d3-bb03-f69009a51af1" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ3" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVQ" role="xbbdY">
+        <property role="W57_q" value="803411d1-4b21-4218-90c5-f4254cafc042" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ4" role="3jxjQ9">
       <property role="a0N98" value="pm" />
       <property role="TrG5h" value="promiss book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVR" role="xbbdY">
+        <property role="W57_q" value="5afa288f-6b9c-4582-8e97-454cef28f1cc" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ5" role="3jxjQ9">
       <property role="a0N98" value="ex" />
       <property role="TrG5h" value="execute book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVS" role="xbbdY">
+        <property role="W57_q" value="bbce2be0-05ef-47a0-8811-6ca8d34e2571" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ6" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="state book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVT" role="xbbdY">
+        <property role="W57_q" value="b7072677-0e47-48e3-89cf-2b03871a7642" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ7" role="3jxjQ9">
       <property role="a0N98" value="sp" />
       <property role="TrG5h" value="stop book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVU" role="xbbdY">
+        <property role="W57_q" value="75971fbf-9623-49e0-abb8-dba22c86e8d6" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ8" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVV" role="xbbdY">
+        <property role="W57_q" value="2446244c-9ed6-42c0-8d77-66a5540859de" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKeJ9" role="3jxjQ9">
       <property role="a0N98" value="rj" />
       <property role="TrG5h" value="reject book returning" />
       <ref role="a0Nah" node="1VmqrBbwQiS" />
+      <node concept="W57nP" id="60WnNX14WVW" role="xbbdY">
+        <property role="W57_q" value="d2397c4e-d407-43a0-bccd-f8a5573364bd" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSo" role="3jxjQ9">
       <property role="a0N98" value="rq" />
       <property role="TrG5h" value="request ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WVX" role="xbbdY">
+        <property role="W57_q" value="4b55e6b5-1c96-4e8b-9c85-10df743842bd" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSp" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WVY" role="xbbdY">
+        <property role="W57_q" value="50903f74-e739-411c-8f0d-2820e1b47e0e" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSq" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WVZ" role="xbbdY">
+        <property role="W57_q" value="3327e66a-cd40-4678-b7fa-ccbafff16bd0" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSr" role="3jxjQ9">
       <property role="a0N98" value="pm" />
       <property role="TrG5h" value="promiss ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WW0" role="xbbdY">
+        <property role="W57_q" value="5a6aeffa-29eb-48ff-b8be-1165370a1153" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSs" role="3jxjQ9">
       <property role="a0N98" value="ex" />
       <property role="TrG5h" value="execute ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WW1" role="xbbdY">
+        <property role="W57_q" value="e0d0f4c5-e67a-4100-9d5e-23aae8a4efe3" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSt" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="state ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WW2" role="xbbdY">
+        <property role="W57_q" value="629412de-2d84-427f-9953-7717803a9358" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSu" role="3jxjQ9">
       <property role="a0N98" value="sp" />
       <property role="TrG5h" value="stop ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WW3" role="xbbdY">
+        <property role="W57_q" value="110cad21-126c-48bd-8056-38a1b13c7ac1" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSv" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WW4" role="xbbdY">
+        <property role="W57_q" value="0ddd9e0e-8537-495e-b09d-380bc6e8bf51" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXKUSw" role="3jxjQ9">
       <property role="a0N98" value="rj" />
       <property role="TrG5h" value="reject ending membership" />
       <ref role="a0Nah" node="1VmqrBbwQiQ" />
+      <node concept="W57nP" id="60WnNX14WW5" role="xbbdY">
+        <property role="W57_q" value="6d547a11-7449-4f90-8eca-c447abbf6c67" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlqW" role="3jxjQ9">
       <property role="a0N98" value="rq" />
       <property role="TrG5h" value="request fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WW6" role="xbbdY">
+        <property role="W57_q" value="fc7d4c3c-72ab-46b6-be7a-ee112ad7f8cb" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlqX" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WW7" role="xbbdY">
+        <property role="W57_q" value="ea6f667c-8467-4157-8875-f5cac767939a" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlqY" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WW8" role="xbbdY">
+        <property role="W57_q" value="0923e70e-6932-48d4-b973-a0b366bb7c86" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlqZ" role="3jxjQ9">
       <property role="a0N98" value="pm" />
       <property role="TrG5h" value="promiss fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WW9" role="xbbdY">
+        <property role="W57_q" value="f0b4bead-4af6-4551-bbe3-57917ed45921" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlr0" role="3jxjQ9">
       <property role="a0N98" value="ex" />
       <property role="TrG5h" value="execute fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WWa" role="xbbdY">
+        <property role="W57_q" value="08f0e4fa-0d21-4681-8e41-af04077f3a96" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlr1" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="state fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WWb" role="xbbdY">
+        <property role="W57_q" value="fddbe217-7878-45b4-9732-c522dde307d4" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlr2" role="3jxjQ9">
       <property role="a0N98" value="sp" />
       <property role="TrG5h" value="stop fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WWc" role="xbbdY">
+        <property role="W57_q" value="16ad7225-ce6f-4eb5-a726-eab240edf2cf" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlr3" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WWd" role="xbbdY">
+        <property role="W57_q" value="03b705f8-d1fe-44c8-a8c2-be12e7941d6c" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zXTlr4" role="3jxjQ9">
       <property role="a0N98" value="rj" />
       <property role="TrG5h" value="reject fee paying control" />
       <ref role="a0Nah" node="2S7w2zXTlqB" />
+      <node concept="W57nP" id="60WnNX14WWe" role="xbbdY">
+        <property role="W57_q" value="4406aa91-5031-4aeb-aec7-bce0fb80fdb6" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZR" role="3jxjQ9">
       <property role="a0N98" value="rq" />
       <property role="TrG5h" value="request membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWf" role="xbbdY">
+        <property role="W57_q" value="7cdcec17-31c4-42cd-ba52-b64aab73d962" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZS" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWg" role="xbbdY">
+        <property role="W57_q" value="fb55cdca-bf0f-41f5-9eb2-52dfe8fea2b9" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZT" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWh" role="xbbdY">
+        <property role="W57_q" value="59bae49b-2a8c-4012-a60a-112e2e083a37" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZU" role="3jxjQ9">
       <property role="a0N98" value="pm" />
       <property role="TrG5h" value="promiss membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWi" role="xbbdY">
+        <property role="W57_q" value="6e5fcdad-5b60-4177-88d8-8d66a69f4f3f" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZV" role="3jxjQ9">
       <property role="a0N98" value="ex" />
       <property role="TrG5h" value="execute membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWj" role="xbbdY">
+        <property role="W57_q" value="9caad92c-486f-43dd-8292-824a3dcd4e21" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZW" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="state membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWk" role="xbbdY">
+        <property role="W57_q" value="94c46833-c5bd-44b3-8085-73996c7e5c7d" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZX" role="3jxjQ9">
       <property role="a0N98" value="sp" />
       <property role="TrG5h" value="stop membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWl" role="xbbdY">
+        <property role="W57_q" value="8a8fbd7b-ffa0-438d-a891-8737963bb724" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZY" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWm" role="xbbdY">
+        <property role="W57_q" value="bed6b399-4473-40e0-81ab-8acce9f60f2e" />
+      </node>
     </node>
     <node concept="a0Nag" id="2S7w2zY02ZZ" role="3jxjQ9">
       <property role="a0N98" value="rj" />
       <property role="TrG5h" value="reject membership control" />
       <ref role="a0Nah" node="2S7w2zY02Tc" />
+      <node concept="W57nP" id="60WnNX14WWn" role="xbbdY">
+        <property role="W57_q" value="dfd2fd33-f24c-412d-a898-b6aae0be8e9d" />
+      </node>
     </node>
   </node>
   <node concept="3jKZr9" id="2S7w2zXNXWo">

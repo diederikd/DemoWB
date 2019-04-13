@@ -164,7 +164,7 @@
             <node concept="2OqwBi" id="6z7DEV5OnQf" role="2Oq$k0">
               <node concept="13iPFW" id="6z7DEV5OnQg" role="2Oq$k0" />
               <node concept="3TrcHB" id="6z7DEV5OnQh" role="2OqNvi">
-                <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
               </node>
             </node>
           </node>
@@ -186,7 +186,7 @@
             <node concept="2OqwBi" id="6z7DEV5OnSZ" role="2Oq$k0">
               <node concept="13iPFW" id="6z7DEV5OnT0" role="2Oq$k0" />
               <node concept="3TrcHB" id="6z7DEV5OnT1" role="2OqNvi">
-                <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
               </node>
             </node>
           </node>
@@ -208,7 +208,7 @@
             <node concept="2OqwBi" id="6z7DEV5OnVJ" role="2Oq$k0">
               <node concept="13iPFW" id="6z7DEV5OnVK" role="2Oq$k0" />
               <node concept="3TrcHB" id="6z7DEV5OnVL" role="2OqNvi">
-                <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
               </node>
             </node>
           </node>
@@ -286,7 +286,7 @@
                               <ref role="3cqZAo" node="1VmqrBbTbUl" resolve="it" />
                             </node>
                             <node concept="3TrcHB" id="4WvouDnquOk" role="2OqNvi">
-                              <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                              <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="identification" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1VmqrBbTdDB" role="2OqNvi">
@@ -351,7 +351,7 @@
             <node concept="2OqwBi" id="4WvouDnfxRY" role="2Oq$k0">
               <node concept="13iPFW" id="4WvouDnfxKd" role="2Oq$k0" />
               <node concept="3TrcHB" id="4WvouDnfy0u" role="2OqNvi">
-                <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="identification" />
               </node>
             </node>
             <node concept="tyxLq" id="4WvouDnfyH8" role="2OqNvi">
@@ -368,7 +368,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1S2F7pXAkTT">
-    <ref role="13h7C2" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
+    <ref role="13h7C2" to="pgdh:m5XqSfyT8Q" resolve="ActorRole" />
     <node concept="13i0hz" id="1S2F7pXAkU4" role="13h7CS">
       <property role="TrG5h" value="getID" />
       <property role="13i0it" value="true" />
@@ -382,7 +382,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1S2F7pXAkVh">
-    <ref role="13h7C2" to="pgdh:2ojITFEC3aD" resolve="ActorRole" />
+    <ref role="13h7C2" to="pgdh:2ojITFEC3aD" resolve="ElementaryActorRole" />
     <node concept="13hLZK" id="1S2F7pXAkVi" role="13h7CW">
       <node concept="3clFbS" id="1S2F7pXAkVj" role="2VODD2" />
     </node>
@@ -397,7 +397,7 @@
           <node concept="2OqwBi" id="1S2F7pXAl6f" role="3clFbG">
             <node concept="13iPFW" id="1S2F7pXAkVQ" role="2Oq$k0" />
             <node concept="3TrcHB" id="1S2F7pXAlgp" role="2OqNvi">
-              <ref role="3TsBF5" to="pgdh:2ojITFECeUR" resolve="id" />
+              <ref role="3TsBF5" to="pgdh:2ojITFECeUR" resolve="identification" />
             </node>
           </node>
         </node>
@@ -421,7 +421,7 @@
           <node concept="2OqwBi" id="1S2F7pXAlxP" role="3clFbG">
             <node concept="13iPFW" id="1S2F7pXAlns" role="2Oq$k0" />
             <node concept="3TrcHB" id="1S2F7pXAlFX" role="2OqNvi">
-              <ref role="3TsBF5" to="pgdh:2ojITFECoWa" resolve="id" />
+              <ref role="3TsBF5" to="pgdh:2ojITFECoWa" resolve="identification" />
             </node>
           </node>
         </node>

@@ -71,8 +71,15 @@
   </node>
   <node concept="1TIwiD" id="2ojITFEC3aD">
     <property role="EcuMT" value="2743742872034489001" />
-    <property role="TrG5h" value="ActorRole" />
-    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
+    <property role="TrG5h" value="ElementaryActorRole" />
+    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="ActorRole" />
+    <node concept="1TJgyj" id="60WnNX12JES" role="1TKVEi">
+      <property role="IQ2ns" value="6934522251522538168" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="2S7w2zXos5c" role="1TKVEi">
       <property role="IQ2ns" value="3316760564119748940" />
       <property role="20lmBu" value="aggregation" />
@@ -95,7 +102,7 @@
     </node>
     <node concept="1TJgyi" id="2ojITFECeUR" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034537143" />
-      <property role="TrG5h" value="id" />
+      <property role="TrG5h" value="identification" />
       <ref role="AX2Wp" node="2ojITFEC3aC" resolve="actorRoleId" />
     </node>
   </node>
@@ -107,6 +114,13 @@
     <property role="EcuMT" value="2743742872034578181" />
     <property role="TrG5h" value="TransactionKind" />
     <ref role="1TJDcQ" node="4vyZ9NNOunp" resolve="AbstractTransactionKind" />
+    <node concept="1TJgyj" id="7czcu1fdOE7" role="1TKVEi">
+      <property role="IQ2ns" value="8296529778018044551" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="6cLLlCqqh5W" role="1TKVEi">
       <property role="IQ2ns" value="7147711074394509692" />
       <property role="20lmBu" value="aggregation" />
@@ -132,12 +146,12 @@
     </node>
     <node concept="1TJgyi" id="2ojITFECoW6" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578182" />
-      <property role="TrG5h" value="id" />
+      <property role="TrG5h" value="identification" />
       <ref role="AX2Wp" node="2ojITFECoW4" resolve="transactionKindId" />
     </node>
     <node concept="1TJgyi" id="2ojITFEDlR1" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034827713" />
-      <property role="TrG5h" value="type" />
+      <property role="TrG5h" value="transactionsort" />
       <ref role="AX2Wp" node="2ojITFEDlQS" resolve="transactionKindType" />
     </node>
     <node concept="PrWs8" id="2ojITFECoWk" role="PzmwI">
@@ -147,7 +161,7 @@
       <property role="IQ2ns" value="2743742872034827700" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="usesFacts" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="ActorRole" />
     </node>
     <node concept="1TJgyj" id="1VmqrBbpVeW" role="1TKVEi">
       <property role="IQ2ns" value="2222079712856355772" />
@@ -159,10 +173,17 @@
   <node concept="1TIwiD" id="2ojITFECoW8">
     <property role="EcuMT" value="2743742872034578184" />
     <property role="TrG5h" value="CompositeActorRole" />
-    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
+    <ref role="1TJDcQ" node="m5XqSfyT8Q" resolve="ActorRole" />
+    <node concept="1TJgyj" id="60WnNX1ta_X" role="1TKVEi">
+      <property role="IQ2ns" value="6934522251529464189" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyi" id="2ojITFECoWa" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034578186" />
-      <property role="TrG5h" value="id" />
+      <property role="TrG5h" value="identification" />
       <ref role="AX2Wp" node="2ojITFECoW9" resolve="compositeActorRoleId" />
     </node>
   </node>
@@ -218,7 +239,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actorRoles" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="ActorRole" />
     </node>
     <node concept="1TJgyj" id="2ojITFEC3aM" role="1TKVEi">
       <property role="IQ2ns" value="2743742872034489010" />
@@ -233,7 +254,7 @@
   </node>
   <node concept="1TIwiD" id="m5XqSfyT8Q">
     <property role="EcuMT" value="397994270026076726" />
-    <property role="TrG5h" value="AbstractActorRole" />
+    <property role="TrG5h" value="ActorRole" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -252,7 +273,7 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="3316760564118789711" />
       <property role="20kJfa" value="actorRole" />
-      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ElementaryActorRole" />
     </node>
   </node>
   <node concept="1TIwiD" id="2S7w2zXkLTk">
@@ -281,24 +302,44 @@
     <property role="EcuMT" value="7147711074394506310" />
     <property role="TrG5h" value="Initiator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="60WnNX1TzGt" role="1TKVEi">
+      <property role="IQ2ns" value="6934522251536907037" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="6cLLlCqqghP" role="1TKVEi">
       <property role="IQ2ns" value="7147711074394506357" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="ActorRole" />
+    </node>
+    <node concept="PrWs8" id="60WnNX1VVXr" role="PzmwI">
+      <ref role="PrY4T" node="60WnNX1VVLo" resolve="iConnection" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cLLlCqqgiX">
     <property role="EcuMT" value="7147711074394506429" />
     <property role="TrG5h" value="Executor" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="60WnNX1TzGy" role="1TKVEi">
+      <property role="IQ2ns" value="6934522251536907042" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="6cLLlCqqgjE" role="1TKVEi">
       <property role="IQ2ns" value="7147711074394506474" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="AbstractActorRole" />
+      <ref role="20lvS9" node="m5XqSfyT8Q" resolve="ActorRole" />
+    </node>
+    <node concept="PrWs8" id="60WnNX1VVNY" role="PzmwI">
+      <ref role="PrY4T" node="60WnNX1VVLo" resolve="iConnection" />
     </node>
   </node>
   <node concept="1TIwiD" id="4vyZ9NNOunp">
@@ -333,7 +374,7 @@
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="1505243948617007254" />
       <property role="20kJfa" value="actorRole" />
-      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ActorRole" />
+      <ref role="20lvS9" node="2ojITFEC3aD" resolve="ElementaryActorRole" />
     </node>
     <node concept="PrWs8" id="1jzGQlDBS2z" role="PzmwI">
       <ref role="PrY4T" node="1jzGQlDBs2E" resolve="IOCDElement" />
@@ -405,6 +446,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1jzGQlDBs2E" resolve="IOCDElement" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="60WnNX1VVLo">
+    <property role="EcuMT" value="6934522251537529944" />
+    <property role="TrG5h" value="iConnection" />
   </node>
 </model>
 

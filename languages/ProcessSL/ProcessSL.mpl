@@ -47,6 +47,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)</dependency>
+    <dependency reexport="false">e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:aa59ea5e-1883-437f-95c0-4dc082aa848c:GeneralSL" version="0" />
@@ -74,10 +75,12 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="13" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="7" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
+    <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="1" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" version="0" />
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" version="4" />
     <module reference="aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)" version="0" />

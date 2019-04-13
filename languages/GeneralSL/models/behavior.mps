@@ -11,6 +11,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
   </imports>
   <registry>
@@ -118,6 +119,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
+        <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
@@ -666,6 +670,35 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4vyZ9NOwfgr" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7czcu1fdOgm">
+    <property role="3GE5qa" value="General" />
+    <ref role="13h7C2" to="d13l:7czcu1fdOgl" resolve="SID" />
+    <node concept="13hLZK" id="7czcu1fdOgn" role="13h7CW">
+      <node concept="3clFbS" id="7czcu1fdOgo" role="2VODD2">
+        <node concept="3clFbF" id="2AQoUlCOAFl" role="3cqZAp">
+          <node concept="2OqwBi" id="2AQoUlCOByy" role="3clFbG">
+            <node concept="2OqwBi" id="2AQoUlCOAMZ" role="2Oq$k0">
+              <node concept="13iPFW" id="2AQoUlCOAFk" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7czcu1fg1Nu" role="2OqNvi">
+                <ref role="3TsBF5" to="d13l:7czcu1fdOyU" resolve="uuid" />
+              </node>
+            </node>
+            <node concept="tyxLq" id="2AQoUlCOC4G" role="2OqNvi">
+              <node concept="2OqwBi" id="2AQoUlCOCzU" role="tz02z">
+                <node concept="2YIFZM" id="60WnNX2dao8" role="2Oq$k0">
+                  <ref role="37wK5l" to="33ny:~UUID.randomUUID():java.util.UUID" resolve="randomUUID" />
+                  <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+                </node>
+                <node concept="liA8E" id="2AQoUlCOCQY" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~UUID.toString():java.lang.String" resolve="toString" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

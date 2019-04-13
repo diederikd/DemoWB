@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="4oiq" ref="r:3b90793e-5817-4d27-8dd2-6af82473a5c3(ActionSL.behavior)" />
     <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" implicit="true" />
     <import index="fujt" ref="r:d2c51d36-f7cf-4f9c-82a0-80381f5c10fb(ConstructionSL.behavior)" implicit="true" />
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" implicit="true" />
@@ -37,6 +38,9 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
@@ -59,6 +63,7 @@
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -257,6 +262,25 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="60WnNX1GhQQ" role="13h7CS">
+      <property role="TrG5h" value="getStepKindPresentation" />
+      <node concept="3Tm1VV" id="60WnNX1GhQR" role="1B3o_S" />
+      <node concept="17QB3L" id="60WnNX1GhWj" role="3clF45" />
+      <node concept="3clFbS" id="60WnNX1GhQT" role="3clF47">
+        <node concept="3cpWs6" id="60WnNX1GGra" role="3cqZAp">
+          <node concept="2YIFZM" id="60WnNX1GFT$" role="3cqZAk">
+            <ref role="1Pybhc" to="4oiq:4DZcPceF0Af" resolve="ActionHelper" />
+            <ref role="37wK5l" to="4oiq:4DZcPceF6uk" resolve="getObjectOfStepKind" />
+            <node concept="2OqwBi" id="60WnNX1GG4A" role="37wK5m">
+              <node concept="13iPFW" id="60WnNX1GFU0" role="2Oq$k0" />
+              <node concept="3TrcHB" id="60WnNX1GGkc" role="2OqNvi">
+                <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="2Ze6BQpVVxR" role="13h7CW">
       <node concept="3clFbS" id="2Ze6BQpVVxS" role="2VODD2" />
     </node>
@@ -332,7 +356,7 @@
                 </node>
               </node>
               <node concept="3TrcHB" id="4obCttueWRL" role="2OqNvi">
-                <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="identification" />
               </node>
             </node>
           </node>
@@ -375,7 +399,7 @@
                 </node>
               </node>
               <node concept="3TrcHB" id="4obCttuf2ad" role="2OqNvi">
-                <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="id" />
+                <ref role="3TsBF5" to="pgdh:2ojITFECoW6" resolve="identification" />
               </node>
             </node>
           </node>

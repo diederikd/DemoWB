@@ -10,6 +10,7 @@
       <concept id="397994270025762622" name="ProcessSL.structure.TransactionKindStepKind" flags="ng" index="a0Nag">
         <property id="397994270025762790" name="stepKind" index="a0N98" />
         <reference id="397994270025762623" name="transactionKind" index="a0Nah" />
+        <child id="6934522251522927681" name="id" index="xbbdY" />
       </concept>
       <concept id="397994270025762881" name="ProcessSL.structure.Link" flags="ng" index="a0NRJ">
         <property id="3316760564124570557" name="linkType" index="3jFdel" />
@@ -22,16 +23,21 @@
       </concept>
     </language>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="8296529778018042901" name="GeneralSL.structure.SID" flags="ng" index="W57nP">
+        <property id="8296529778018044090" name="uuid" index="W57_q" />
+      </concept>
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
         <property id="2743742872034489004" name="name" index="3cGS$Q" />
       </concept>
     </language>
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
-        <property id="2743742872034578186" name="id" index="3cGzig" />
+        <property id="2743742872034578186" name="identification" index="3cGzig" />
+        <child id="6934522251529464189" name="id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
-        <property id="2743742872034578182" name="id" index="3cGzis" />
+        <property id="2743742872034578182" name="identification" index="3cGzis" />
+        <child id="8296529778018044551" name="id" index="W57HB" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
@@ -41,9 +47,11 @@
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
         <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
+        <child id="6934522251536907037" name="id" index="xQAgy" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
+        <child id="6934522251536907042" name="id" index="xQAgt" />
       </concept>
     </language>
     <language id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL">
@@ -158,14 +166,26 @@
         <property role="3cGzis" value="T01" />
         <node concept="1Tmc4s" id="4h5c_cX8lvU" role="1TmdgA">
           <ref role="1Tmc4J" node="1S2F7pX5oTS" resolve="TEST ROLE" />
+          <node concept="W57nP" id="60WnNX1ULel" role="xQAgy">
+            <property role="W57_q" value="a38bc66b-d295-4578-a763-74f95b5d4c7a" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="4h5c_cX8lvW" role="1Tmdjl">
           <ref role="1Tmc6K" node="1S2F7pX5oTS" resolve="TEST ROLE" />
+          <node concept="W57nP" id="60WnNX1UOvf" role="xQAgt">
+            <property role="W57_q" value="24208655-463c-4902-8840-84f75d06987f" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uud" role="W57HB">
+          <property role="W57_q" value="ffd482f0-2881-427d-ac6f-48520ff8e40e" />
         </node>
       </node>
       <node concept="3cGzii" id="1S2F7pX5oTS" role="3cGxOm">
         <property role="TrG5h" value="TEST ROLE" />
         <property role="3cGzig" value="CA01" />
+        <node concept="W57nP" id="60WnNX1ucVl" role="xifp2">
+          <property role="W57_q" value="f48b0786-7951-4217-802c-09ad3663d384" />
+        </node>
       </node>
     </node>
   </node>
@@ -178,51 +198,81 @@
       <property role="a0N98" value="in" />
       <property role="TrG5h" value="initial test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUl" role="xbbdY">
+        <property role="W57_q" value="236d22d5-6ac4-4f38-87bf-28a03d0f3545" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2J" role="3jxjQ9">
       <property role="a0N98" value="rq" />
       <property role="TrG5h" value="request test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUm" role="xbbdY">
+        <property role="W57_q" value="de2e55df-4332-491c-872b-de83ec5e3e4d" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2K" role="3jxjQ9">
       <property role="a0N98" value="ac" />
       <property role="TrG5h" value="accept test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUn" role="xbbdY">
+        <property role="W57_q" value="581dc012-ae7b-4fea-8093-5075e3d2afdd" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2L" role="3jxjQ9">
       <property role="a0N98" value="dc" />
       <property role="TrG5h" value="decline test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUo" role="xbbdY">
+        <property role="W57_q" value="3a94ee62-86a0-4272-93b4-6af04580a16e" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2M" role="3jxjQ9">
       <property role="a0N98" value="pm" />
       <property role="TrG5h" value="promiss test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUp" role="xbbdY">
+        <property role="W57_q" value="0c3581a8-8239-450a-8532-3a7c7732eab6" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2N" role="3jxjQ9">
       <property role="a0N98" value="ex" />
       <property role="TrG5h" value="execute test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUq" role="xbbdY">
+        <property role="W57_q" value="d5ea865a-17ce-4b72-9cca-f970a1aa8229" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2O" role="3jxjQ9">
       <property role="a0N98" value="st" />
       <property role="TrG5h" value="state test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUr" role="xbbdY">
+        <property role="W57_q" value="0df57ff5-6353-437a-879c-7e5edf6fd593" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2P" role="3jxjQ9">
       <property role="a0N98" value="sp" />
       <property role="TrG5h" value="stop test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUs" role="xbbdY">
+        <property role="W57_q" value="e71b5696-17e8-41b7-a3eb-fb47dbcd97b5" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2Q" role="3jxjQ9">
       <property role="a0N98" value="qt" />
       <property role="TrG5h" value="quit test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUt" role="xbbdY">
+        <property role="W57_q" value="e9c21429-6bd5-4dc2-9843-037d618b2a5b" />
+      </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2R" role="3jxjQ9">
       <property role="a0N98" value="rj" />
       <property role="TrG5h" value="reject test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
+      <node concept="W57nP" id="60WnNX14WUu" role="xbbdY">
+        <property role="W57_q" value="09b799c0-3cce-47f0-a161-e5840a7f47ec" />
+      </node>
     </node>
     <node concept="a0NRJ" id="1S2F7pX5D2S" role="3jxjQb">
       <property role="3cIS2x" value="1" />

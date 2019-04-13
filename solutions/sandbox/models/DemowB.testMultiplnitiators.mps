@@ -9,21 +9,27 @@
   <imports />
   <registry>
     <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="8296529778018042901" name="GeneralSL.structure.SID" flags="ng" index="W57nP">
+        <property id="8296529778018044090" name="uuid" index="W57_q" />
+      </concept>
       <concept id="2743742872034489003" name="GeneralSL.structure.ILowerCaseNamedConcept" flags="ng" index="3cGS$L">
         <property id="2743742872034489004" name="name" index="3cGS$Q" />
       </concept>
     </language>
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
-        <property id="2743742872034578186" name="id" index="3cGzig" />
+        <property id="2743742872034578186" name="identification" index="3cGzig" />
+        <child id="6934522251529464189" name="id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
-        <property id="2743742872034578182" name="id" index="3cGzis" />
+        <property id="2743742872034578182" name="identification" index="3cGzis" />
+        <child id="8296529778018044551" name="id" index="W57HB" />
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
-        <property id="2743742872034537143" name="id" index="3cGPkH" />
+        <property id="2743742872034537143" name="identification" index="3cGPkH" />
+        <child id="6934522251522538168" name="id" index="xdEm7" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
@@ -31,9 +37,11 @@
       </concept>
       <concept id="7147711074394506310" name="ConstructionSL.structure.Initiator" flags="ng" index="1Tmc4s">
         <reference id="7147711074394506357" name="actorRole" index="1Tmc4J" />
+        <child id="6934522251536907037" name="id" index="xQAgy" />
       </concept>
       <concept id="7147711074394506429" name="ConstructionSL.structure.Executor" flags="ng" index="1Tmc7B">
         <reference id="7147711074394506474" name="actorRole" index="1Tmc6K" />
+        <child id="6934522251536907042" name="id" index="xQAgt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -139,21 +147,39 @@
         <property role="3cGS$Q" value="transaction kind name" />
         <node concept="1Tmc4s" id="6X_qrRNMVg1" role="1TmdgA">
           <ref role="1Tmc4J" node="6X_qrRNMVfK" resolve="Actor 1" />
+          <node concept="W57nP" id="60WnNX1ULem" role="xQAgy">
+            <property role="W57_q" value="014b3246-be0f-4773-9f2e-e64988518697" />
+          </node>
         </node>
         <node concept="1Tmc4s" id="6X_qrRNMVg3" role="1TmdgA">
           <ref role="1Tmc4J" node="6X_qrRNMVfS" resolve="Actor 2" />
+          <node concept="W57nP" id="60WnNX1ULen" role="xQAgy">
+            <property role="W57_q" value="00c80f76-89b8-4de5-a708-10043980f0ea" />
+          </node>
         </node>
         <node concept="1Tmc7B" id="6X_qrRNMVg6" role="1Tmdjl">
           <ref role="1Tmc6K" node="6X_qrRNMVfG" resolve="External Actor" />
+          <node concept="W57nP" id="60WnNX1UOvg" role="xQAgt">
+            <property role="W57_q" value="9c8ad15d-2401-497f-aeda-b77c895c4aa5" />
+          </node>
+        </node>
+        <node concept="W57nP" id="60WnNX14Uuh" role="W57HB">
+          <property role="W57_q" value="558aee5c-42cb-4fcd-bba5-1d4bb81a6a81" />
         </node>
       </node>
       <node concept="3cGS$N" id="6X_qrRNMVfK" role="3cGxOm">
         <property role="TrG5h" value="Actor 1" />
         <property role="3cGPkH" value="A1" />
+        <node concept="W57nP" id="60WnNX14RWZ" role="xdEm7">
+          <property role="W57_q" value="8cefcb87-19bd-41a3-9493-5a002cec06fe" />
+        </node>
       </node>
       <node concept="3cGS$N" id="6X_qrRNMVfS" role="3cGxOm">
         <property role="TrG5h" value="Actor 2" />
         <property role="3cGPkH" value="A2" />
+        <node concept="W57nP" id="60WnNX14RX0" role="xdEm7">
+          <property role="W57_q" value="c95ce29e-1cc3-453b-9d6b-6eefb6f5724c" />
+        </node>
       </node>
       <node concept="37mRI7" id="6X_qrRNMVgd" role="lGtFl">
         <node concept="37mRIm" id="6X_qrRNMVge" role="37mRID">
@@ -204,6 +230,9 @@
     <node concept="3cGzii" id="6X_qrRNMVfG" role="3llzIU">
       <property role="TrG5h" value="External Actor" />
       <property role="3cGzig" value="CA1" />
+      <node concept="W57nP" id="60WnNX1ucVm" role="xifp2">
+        <property role="W57_q" value="f011bef1-dd97-464a-8bfe-1c9d4c184520" />
+      </node>
     </node>
   </node>
 </model>

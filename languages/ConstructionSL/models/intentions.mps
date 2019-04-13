@@ -89,7 +89,7 @@
   </registry>
   <node concept="2S6QgY" id="m5XqSfHfq8">
     <property role="TrG5h" value="MoveActor" />
-    <ref role="2ZfgGC" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
+    <ref role="2ZfgGC" to="pgdh:m5XqSfyT8Q" resolve="ActorRole" />
     <node concept="2S6ZIM" id="m5XqSfHfq9" role="2ZfVej">
       <node concept="3clFbS" id="m5XqSfHfqa" role="2VODD2">
         <node concept="Jncv_" id="m5XqSfHfOu" role="3cqZAp">

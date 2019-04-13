@@ -9,6 +9,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="pgdh" ref="r:5856ba20-a6c0-48c8-bbf3-7f39968e4bf4(ConstructionSL.structure)" />
+    <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -138,6 +139,13 @@
     <property role="EcuMT" value="397994270025762622" />
     <property role="TrG5h" value="TransactionKindStepKind" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="60WnNX14eL1" role="1TKVEi">
+      <property role="IQ2ns" value="6934522251522927681" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="m5XqSfxGsZ" role="1TKVEi">
       <property role="IQ2ns" value="397994270025762623" />
       <property role="20lmBu" value="reference" />

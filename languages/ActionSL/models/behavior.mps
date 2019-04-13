@@ -540,7 +540,7 @@
             <node concept="3clFbS" id="4DZcPceFxy9" role="3Kbo56">
               <node concept="3cpWs6" id="4DZcPceFxya" role="3cqZAp">
                 <node concept="Xl_RD" id="4DZcPceFxyb" role="3cqZAk">
-                  <property role="Xl_RC" value="execution" />
+                  <property role="Xl_RC" value="execute" />
                 </node>
               </node>
             </node>
@@ -667,7 +667,7 @@
             <node concept="3clFbS" id="4DZcPceF0MM" role="3Kbo56">
               <node concept="3cpWs6" id="4DZcPceF0MN" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW67v" role="3cqZAk">
-                  <property role="Xl_RC" value="acceptance" />
+                  <property role="Xl_RC" value="Accept" />
                 </node>
               </node>
             </node>
@@ -680,7 +680,7 @@
             <node concept="3clFbS" id="2Ze6BQpW1Ll" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW3jN" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW3k3" role="3cqZAk">
-                  <property role="Xl_RC" value="declinance" />
+                  <property role="Xl_RC" value="Decline" />
                 </node>
               </node>
             </node>
@@ -693,7 +693,7 @@
             <node concept="3clFbS" id="2Ze6BQpW6dl" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW6dm" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW6dn" role="3cqZAk">
-                  <property role="Xl_RC" value="execution" />
+                  <property role="Xl_RC" value="Execute" />
                 </node>
               </node>
             </node>
@@ -706,7 +706,7 @@
             <node concept="3clFbS" id="2Ze6BQpW6gZ" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW6h0" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW6h1" role="3cqZAk">
-                  <property role="Xl_RC" value="initialisation" />
+                  <property role="Xl_RC" value="Initial" />
                 </node>
               </node>
             </node>
@@ -719,7 +719,7 @@
             <node concept="3clFbS" id="2Ze6BQpW6i0" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW6i1" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW6i2" role="3cqZAk">
-                  <property role="Xl_RC" value="promise" />
+                  <property role="Xl_RC" value="Promise" />
                 </node>
               </node>
             </node>
@@ -732,7 +732,7 @@
             <node concept="3clFbS" id="2Ze6BQpW6m$" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW6m_" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW6mA" role="3cqZAk">
-                  <property role="Xl_RC" value="quit" />
+                  <property role="Xl_RC" value="Quit" />
                 </node>
               </node>
             </node>
@@ -745,7 +745,7 @@
             <node concept="3clFbS" id="2Ze6BQpW6r_" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW6rA" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW6rB" role="3cqZAk">
-                  <property role="Xl_RC" value="rejection" />
+                  <property role="Xl_RC" value="Reject" />
                 </node>
               </node>
             </node>
@@ -758,7 +758,7 @@
             <node concept="3clFbS" id="2Ze6BQpW7Hu" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW7Hv" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW7Hw" role="3cqZAk">
-                  <property role="Xl_RC" value="request" />
+                  <property role="Xl_RC" value="Request" />
                 </node>
               </node>
             </node>
@@ -771,7 +771,7 @@
             <node concept="3clFbS" id="2Ze6BQpW7Ye" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW7Yf" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW7Yg" role="3cqZAk">
-                  <property role="Xl_RC" value="statement" />
+                  <property role="Xl_RC" value="State" />
                 </node>
               </node>
             </node>
@@ -784,7 +784,7 @@
             <node concept="3clFbS" id="2Ze6BQpW84A" role="3Kbo56">
               <node concept="3cpWs6" id="2Ze6BQpW84B" role="3cqZAp">
                 <node concept="Xl_RD" id="2Ze6BQpW84C" role="3cqZAk">
-                  <property role="Xl_RC" value="stop" />
+                  <property role="Xl_RC" value="Stop" />
                 </node>
               </node>
             </node>
