@@ -35,6 +35,7 @@
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
       </concept>
+      <concept id="4357423944233036906" name="jetbrains.mps.lang.textGen.structure.IndentPart" flags="ng" index="2BGw6n" />
       <concept id="1233670071145" name="jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration" flags="ig" index="WtQ9Q">
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
         <child id="1233749296504" name="textGenBlock" index="11c4hB" />
@@ -74,6 +75,7 @@
         <node concept="3izx1p" id="60WnNX1xWE5" role="3cqZAp">
           <node concept="3clFbS" id="60WnNX1xWE7" role="3izTki">
             <node concept="lc7rE" id="60WnNX1s8P2" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g6Yn" role="lcghm" />
               <node concept="la8eA" id="60WnNX1s8TT" role="lcghm">
                 <property role="lacIc" value="&lt;DEMO:TransactionKinds&gt;" />
               </node>
@@ -99,6 +101,7 @@
               </node>
             </node>
             <node concept="lc7rE" id="60WnNX1s8Y0" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g6Za" role="lcghm" />
               <node concept="la8eA" id="60WnNX1s8Y2" role="lcghm">
                 <property role="lacIc" value="&lt;/DEMO:TransactionKinds&gt;" />
               </node>
@@ -106,6 +109,7 @@
             </node>
             <node concept="3clFbH" id="60WnNX1w_sw" role="3cqZAp" />
             <node concept="lc7rE" id="60WnNX1s996" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g6ZX" role="lcghm" />
               <node concept="la8eA" id="60WnNX1s9dx" role="lcghm">
                 <property role="lacIc" value="&lt;DEMO:ElementaryActorRoles&gt;" />
               </node>
@@ -131,6 +135,7 @@
               </node>
             </node>
             <node concept="lc7rE" id="60WnNX1s9lf" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g70K" role="lcghm" />
               <node concept="la8eA" id="60WnNX1s9lh" role="lcghm">
                 <property role="lacIc" value="&lt;/DEMO:ElementaryActorRoles&gt;" />
               </node>
@@ -138,6 +143,7 @@
             </node>
             <node concept="3clFbH" id="60WnNX1w_x8" role="3cqZAp" />
             <node concept="lc7rE" id="60WnNX1s9$L" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g71z" role="lcghm" />
               <node concept="la8eA" id="60WnNX1s9$N" role="lcghm">
                 <property role="lacIc" value="&lt;DEMO:CompositeActorRoles&gt;" />
               </node>
@@ -163,6 +169,7 @@
               </node>
             </node>
             <node concept="lc7rE" id="60WnNX1s9$X" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g72m" role="lcghm" />
               <node concept="la8eA" id="60WnNX1s9$Z" role="lcghm">
                 <property role="lacIc" value="&lt;/DEMO:CompositeActorRoles&gt;" />
               </node>
@@ -170,6 +177,7 @@
             </node>
             <node concept="3clFbH" id="60WnNX1Cge2" role="3cqZAp" />
             <node concept="lc7rE" id="60WnNX1CgsE" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g739" role="lcghm" />
               <node concept="la8eA" id="60WnNX1CgsF" role="lcghm">
                 <property role="lacIc" value="&lt;DEMO:TransactionProcessStepKinds&gt;" />
               </node>
@@ -195,6 +203,7 @@
               </node>
             </node>
             <node concept="lc7rE" id="60WnNX1CgmO" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g73W" role="lcghm" />
               <node concept="la8eA" id="60WnNX1Cgrm" role="lcghm">
                 <property role="lacIc" value="&lt;/DEMO:TransactionProcessStepKinds&gt;" />
               </node>
@@ -202,6 +211,7 @@
             </node>
             <node concept="3clFbH" id="60WnNX1WWcW" role="3cqZAp" />
             <node concept="lc7rE" id="60WnNX1WWke" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g74J" role="lcghm" />
               <node concept="la8eA" id="60WnNX1WWkf" role="lcghm">
                 <property role="lacIc" value="&lt;DEMO:Connections&gt;" />
               </node>
@@ -227,6 +237,7 @@
               </node>
             </node>
             <node concept="lc7rE" id="60WnNX1WWkr" role="3cqZAp">
+              <node concept="2BGw6n" id="60WnNX2g75y" role="lcghm" />
               <node concept="la8eA" id="60WnNX1WWks" role="lcghm">
                 <property role="lacIc" value="&lt;/DEMO:Connections&gt;" />
               </node>

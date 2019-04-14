@@ -179,6 +179,13 @@
     <property role="EcuMT" value="397994270025762881" />
     <property role="TrG5h" value="Link" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="60WnNX2g9b5" role="1TKVEi">
+      <property role="IQ2ns" value="6934522251542827717" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="m5XqSfxGx7" role="1TKVEi">
       <property role="IQ2ns" value="397994270025762887" />
       <property role="20lmBu" value="reference" />
@@ -200,6 +207,9 @@
     </node>
     <node concept="PrWs8" id="6z7DEV5LAwv" role="PzmwI">
       <ref role="PrY4T" node="2ojITFEE3GU" resolve="ICardinality" />
+    </node>
+    <node concept="PrWs8" id="60WnNX2g7hd" role="PzmwI">
+      <ref role="PrY4T" to="pgdh:60WnNX1VVLo" resolve="iConnection" />
     </node>
   </node>
   <node concept="AxPO7" id="m5XqSfxGxf">

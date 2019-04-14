@@ -21,6 +21,7 @@
         <property id="3316760564124570557" name="linkType" index="3jFdel" />
         <reference id="397994270025762887" name="transactionKindStepKindFrom" index="a0NRD" />
         <reference id="397994270025762882" name="transactionKindStepKindTo" index="a0NRG" />
+        <child id="6934522251542827717" name="id" index="yvcRU" />
       </concept>
       <concept id="2743742872035015482" name="ProcessSL.structure.ICardinality" flags="ng" index="3cIS2w">
         <property id="2743742872035015483" name="minCard" index="3cIS2x" />
@@ -47,7 +48,7 @@
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
-      <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
+      <concept id="2743742872034489001" name="ConstructionSL.structure.ElementaryActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="identification" index="3cGPkH" />
         <child id="6934522251522538168" name="id" index="xdEm7" />
       </concept>
@@ -1612,72 +1613,108 @@
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXAHOD" resolve="promiss membership" />
       <ref role="a0NRG" node="2S7w2zXHINF" resolve="request fee paying" />
+      <node concept="W57nP" id="60WnNX2miJZ" role="yvcRU">
+        <property role="W57_q" value="5bceaaf0-cf08-4211-8844-1968177435ff" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGLsQ" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zX$hdq" resolve="apply for membership" />
       <ref role="a0NRG" node="2S7w2zXDuSG" resolve="decline application" />
+      <node concept="W57nP" id="60WnNX2miK0" role="yvcRU">
+        <property role="W57_q" value="89634540-d127-4fcd-990b-48f51e3c49af" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT6B" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXDuSG" resolve="decline application" />
       <ref role="a0NRG" node="2S7w2zX$hdq" resolve="apply for membership" />
+      <node concept="W57nP" id="60WnNX2miK1" role="yvcRU">
+        <property role="W57_q" value="dcf8af3f-6a3f-4cbd-843a-2fac1d0487f8" />
+      </node>
     </node>
     <node concept="a0NRJ" id="6z7DEV4hIbL" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zX$hdq" resolve="apply for membership" />
       <ref role="a0NRG" node="2S7w2zXAHOD" resolve="promiss membership" />
+      <node concept="W57nP" id="60WnNX2miK2" role="yvcRU">
+        <property role="W57_q" value="24a0ab45-5182-4bcd-8ff6-2b121939af23" />
+      </node>
     </node>
     <node concept="a0NRJ" id="6z7DEV4hIes" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXAHOD" resolve="promiss membership" />
       <ref role="a0NRG" node="2S7w2zXAHOG" resolve="process application" />
+      <node concept="W57nP" id="60WnNX2miK3" role="yvcRU">
+        <property role="W57_q" value="100f6b64-e541-48e5-990a-f25e6e8fcfb7" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT6F" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXDuSG" resolve="decline application" />
       <ref role="a0NRG" node="2S7w2zXDuSP" resolve="quit application" />
+      <node concept="W57nP" id="60WnNX2miK4" role="yvcRU">
+        <property role="W57_q" value="1a779d39-a4a8-42af-bce1-d75ed3ec0b4a" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT6K" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
       <ref role="a0NRG" node="2S7w2zXAHOG" resolve="process application" />
+      <node concept="W57nP" id="60WnNX2miK5" role="yvcRU">
+        <property role="W57_q" value="4084d835-fd82-4890-a63d-bb1b8b995031" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT6Q" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXAHOG" resolve="process application" />
       <ref role="a0NRG" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <node concept="W57nP" id="60WnNX2miK6" role="yvcRU">
+        <property role="W57_q" value="d59aa43f-e567-416a-9d86-b23cdb85e6dd" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT6X" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
       <ref role="a0NRG" node="2S7w2zXBXTF" resolve="accept confirmation" />
+      <node concept="W57nP" id="60WnNX2miK7" role="yvcRU">
+        <property role="W57_q" value="51b34c07-eafa-459c-b4b4-108f9ffb7e0d" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT75" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXBXTA" resolve="confirm membership" />
       <ref role="a0NRG" node="2S7w2zXDuSt" resolve="reject confirmation" />
+      <node concept="W57nP" id="60WnNX2miK8" role="yvcRU">
+        <property role="W57_q" value="e9a1da11-6495-4939-9338-1a13e41e1f92" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT7e" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXDuSt" resolve="reject confirmation" />
       <ref role="a0NRG" node="2S7w2zXBXTA" resolve="confirm membership" />
+      <node concept="W57nP" id="60WnNX2miK9" role="yvcRU">
+        <property role="W57_q" value="677255ea-81c7-4d74-8097-4d2b4968814d" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXGT7o" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXDuSt" resolve="reject confirmation" />
       <ref role="a0NRG" node="2S7w2zXDuS$" resolve="stop application" />
+      <node concept="W57nP" id="60WnNX2miKa" role="yvcRU">
+        <property role="W57_q" value="6a04d5eb-26e1-4fd4-8d2a-eb2ef0361c6e" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXHIO2" role="3jxjQb">
       <property role="3jFdel" value="wait" />
@@ -1685,12 +1722,18 @@
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXHINQ" resolve="accept fee paying" />
       <ref role="a0NRG" node="2S7w2zXAHOG" resolve="process application" />
+      <node concept="W57nP" id="60WnNX2miKb" role="yvcRU">
+        <property role="W57_q" value="3660e2fe-1b7c-4ee9-9619-9140a22ea83f" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXTlse" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zXTlqW" resolve="request fee paying control" />
       <ref role="a0NRG" node="2S7w2zXTlqW" resolve="request fee paying control" />
+      <node concept="W57nP" id="60WnNX2miKc" role="yvcRU">
+        <property role="W57_q" value="a1e5b4d8-c47a-4cb7-8d10-0553368233a9" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXTlss" role="3jxjQb">
       <property role="3cIS2x" value="1" />
@@ -1698,6 +1741,9 @@
       <property role="3jFdel" value="initiation" />
       <ref role="a0NRD" node="2S7w2zXTlqZ" resolve="promiss fee paying control" />
       <ref role="a0NRG" node="2S7w2zXHINF" resolve="request fee paying" />
+      <node concept="W57nP" id="60WnNX2miKd" role="yvcRU">
+        <property role="W57_q" value="5c1450eb-5791-4b66-aeb6-af5c3f888f89" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zXTlsF" role="3jxjQb">
       <property role="3cIS2x" value="1" />
@@ -1705,12 +1751,18 @@
       <property role="3jFdel" value="initiation" />
       <ref role="a0NRD" node="2S7w2zXHINQ" resolve="accept fee paying" />
       <ref role="a0NRG" node="2S7w2zXTlr0" resolve="execute fee paying control" />
+      <node concept="W57nP" id="60WnNX2miKe" role="yvcRU">
+        <property role="W57_q" value="55f75364-1629-4ca8-9d23-712c320165aa" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zY030S" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="2S7w2zY02ZR" resolve="request membership control" />
       <ref role="a0NRG" node="2S7w2zY02ZR" resolve="request membership control" />
+      <node concept="W57nP" id="60WnNX2miKf" role="yvcRU">
+        <property role="W57_q" value="37654b0d-870d-4c91-9112-a87fdcf4c732" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zY0319" role="3jxjQb">
       <property role="3cIS2x" value="1" />
@@ -1718,6 +1770,9 @@
       <property role="3jFdel" value="initiation" />
       <ref role="a0NRD" node="2S7w2zY02ZU" resolve="promiss membership control" />
       <ref role="a0NRG" node="2S7w2zXKUSo" resolve="request ending membership" />
+      <node concept="W57nP" id="60WnNX2miKg" role="yvcRU">
+        <property role="W57_q" value="cb8ddecc-0e7c-45f8-9b70-806cc7b1fd87" />
+      </node>
     </node>
     <node concept="a0NRJ" id="2S7w2zY031r" role="3jxjQb">
       <property role="3cIS2x" value="1" />
@@ -1725,12 +1780,18 @@
       <property role="3jFdel" value="initiation" />
       <ref role="a0NRD" node="2S7w2zXKUSp" resolve="accept ending membership" />
       <ref role="a0NRG" node="2S7w2zY02ZV" resolve="execute membership control" />
+      <node concept="W57nP" id="60WnNX2miKh" role="yvcRU">
+        <property role="W57_q" value="aa7649e9-0b09-432b-b397-f273c9970c82" />
+      </node>
     </node>
     <node concept="a0NRJ" id="6z7DEV3FN5s" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
       <ref role="a0NRD" node="6z7DEV3FN15" resolve="Initial" />
       <ref role="a0NRG" node="2S7w2zX$hdq" resolve="apply for membership" />
+      <node concept="W57nP" id="60WnNX2miKi" role="yvcRU">
+        <property role="W57_q" value="92c411c3-6903-4226-8495-d4d8c7bc9c2f" />
+      </node>
     </node>
     <node concept="a0Nag" id="6z7DEV3FN15" role="3jxjQ9">
       <property role="TrG5h" value="Initial" />

@@ -87,6 +87,7 @@
       <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
         <reference id="1138676095763" name="enumMember" index="uo_Cq" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="6973815483243445083" name="jetbrains.mps.lang.smodel.structure.EnumMemberValueRefExpression" flags="nn" index="3f7Wdw">
         <reference id="6973815483243565416" name="member" index="3f7u_j" />
         <reference id="6973815483243564601" name="enum" index="3f7vo2" />
@@ -530,7 +531,19 @@
       </node>
     </node>
     <node concept="13hLZK" id="6z7DEV5Ovt_" role="13h7CW">
-      <node concept="3clFbS" id="6z7DEV5OvtA" role="2VODD2" />
+      <node concept="3clFbS" id="6z7DEV5OvtA" role="2VODD2">
+        <node concept="3clFbF" id="60WnNX2g9RB" role="3cqZAp">
+          <node concept="2OqwBi" id="60WnNX2gaRc" role="3clFbG">
+            <node concept="2OqwBi" id="60WnNX2gacm" role="2Oq$k0">
+              <node concept="13iPFW" id="60WnNX2g9RA" role="2Oq$k0" />
+              <node concept="3TrEf2" id="60WnNX2gapJ" role="2OqNvi">
+                <ref role="3Tt5mk" to="it18:60WnNX2g9b5" resolve="id" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="60WnNX2gbv6" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
