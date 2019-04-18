@@ -654,6 +654,36 @@
         <node concept="1yeLz9" id="2AEzmscAXOW" role="1TViLv">
           <property role="TrG5h" value="DemoSL#01" />
           <property role="3LESm3" value="4faad58e-19f0-41d9-9f13-ed9fd91a9203" />
+          <node concept="1SiIV0" id="5dW$Pa1vY7j" role="3bR37C">
+            <node concept="3bR9La" id="5dW$Pa1vY7k" role="1SiIV1">
+              <ref role="3bR37D" node="2AEzmscAXNq" resolve="ProcessSL" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dW$Pa1vY7l" role="3bR37C">
+            <node concept="3bR9La" id="5dW$Pa1vY7m" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:568PkTlOK5Q" resolve="jetbrains.mps.core.xml" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dW$Pa1vY7n" role="3bR37C">
+            <node concept="3bR9La" id="5dW$Pa1vY7o" role="1SiIV1">
+              <ref role="3bR37D" node="2AEzmscAXNG" resolve="FactSL" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dW$Pa1vY7p" role="3bR37C">
+            <node concept="3bR9La" id="5dW$Pa1vY7q" role="1SiIV1">
+              <ref role="3bR37D" node="2AEzmscAXNk" resolve="DemoSL" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dW$Pa1vY7r" role="3bR37C">
+            <node concept="3bR9La" id="5dW$Pa1vY7s" role="1SiIV1">
+              <ref role="3bR37D" node="2AEzmscAXNw" resolve="GeneralSL" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="5dW$Pa1vY7t" role="3bR37C">
+            <node concept="3bR9La" id="5dW$Pa1vY7u" role="1SiIV1">
+              <ref role="3bR37D" node="2AEzmscAXNA" resolve="ConstructionSL" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="2AEzmscAZ1p" role="3bR31x">
           <node concept="3LXTmp" id="2AEzmscAZ1q" role="3rtmxm">
@@ -748,6 +778,11 @@
             <node concept="3qWCbU" id="2AEzmscAZDG" role="3LXTna">
               <property role="3qWCbO" value="icons/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5dW$Pa1vY7v" role="3bR37C">
+          <node concept="3bR9La" id="5dW$Pa1vY7w" role="1SiIV1">
+            <ref role="3bR37D" node="2AEzmscAXNS" resolve="ActionSL" />
           </node>
         </node>
       </node>

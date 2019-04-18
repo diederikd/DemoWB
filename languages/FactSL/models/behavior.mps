@@ -130,6 +130,7 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -248,7 +249,7 @@
             <node concept="2OqwBi" id="6ocGhuZWu8$" role="2Oq$k0">
               <node concept="13iPFW" id="6ocGhuZWtW_" role="2Oq$k0" />
               <node concept="3TrcHB" id="6ocGhuZWu$Q" role="2OqNvi">
-                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="id" />
+                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="identification" />
               </node>
             </node>
             <node concept="tyxLq" id="6ocGhuZWvGa" role="2OqNvi">
@@ -278,7 +279,7 @@
             <node concept="2OqwBi" id="6ocGhuZWwEF" role="2Oq$k0">
               <node concept="13iPFW" id="6ocGhuZWwEG" role="2Oq$k0" />
               <node concept="3TrcHB" id="6ocGhuZWwEH" role="2OqNvi">
-                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="id" />
+                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="identification" />
               </node>
             </node>
             <node concept="tyxLq" id="6ocGhuZWwEI" role="2OqNvi">
@@ -310,7 +311,19 @@
       <node concept="17QB3L" id="1VmqrBbAe8q" role="3clF45" />
     </node>
     <node concept="13hLZK" id="1VmqrBbAe89" role="13h7CW">
-      <node concept="3clFbS" id="1VmqrBbAe8a" role="2VODD2" />
+      <node concept="3clFbS" id="1VmqrBbAe8a" role="2VODD2">
+        <node concept="3clFbF" id="5dW$Pa0Zxwy" role="3cqZAp">
+          <node concept="2OqwBi" id="5dW$Pa0ZyBZ" role="3clFbG">
+            <node concept="2OqwBi" id="5dW$Pa0ZxDU" role="2Oq$k0">
+              <node concept="13iPFW" id="5dW$Pa0Zxwx" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5dW$Pa0ZyaC" role="2OqNvi">
+                <ref role="3Tt5mk" to="ajas:5dW$Pa0ZwUL" resolve="id" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="5dW$Pa0ZzfN" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1VmqrBbAeb8">
@@ -377,7 +390,7 @@
             <node concept="2OqwBi" id="6ocGhuZWwnF" role="2Oq$k0">
               <node concept="13iPFW" id="6ocGhuZWwnG" role="2Oq$k0" />
               <node concept="3TrcHB" id="6ocGhuZWwnH" role="2OqNvi">
-                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="id" />
+                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="identification" />
               </node>
             </node>
             <node concept="tyxLq" id="6ocGhuZWwnI" role="2OqNvi">
@@ -516,7 +529,7 @@
             <node concept="2OqwBi" id="6ocGhuZWvZE" role="2Oq$k0">
               <node concept="13iPFW" id="6ocGhuZWvZF" role="2Oq$k0" />
               <node concept="3TrcHB" id="6ocGhuZWvZG" role="2OqNvi">
-                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="id" />
+                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="identification" />
               </node>
             </node>
             <node concept="tyxLq" id="6ocGhuZWvZH" role="2OqNvi">
@@ -714,7 +727,7 @@
                               <ref role="3cqZAo" node="1VmqrBbTbUl" resolve="it" />
                             </node>
                             <node concept="3TrcHB" id="6ocGhv0GDoJ" role="2OqNvi">
-                              <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="id" />
+                              <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="identification" />
                             </node>
                           </node>
                           <node concept="liA8E" id="1VmqrBbTdDB" role="2OqNvi">
@@ -779,7 +792,7 @@
             <node concept="2OqwBi" id="4WvouDnfxRY" role="2Oq$k0">
               <node concept="13iPFW" id="4WvouDnfxKd" role="2Oq$k0" />
               <node concept="3TrcHB" id="4WvouDnfy0u" role="2OqNvi">
-                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="id" />
+                <ref role="3TsBF5" to="ajas:2ojITFEDW2$" resolve="identification" />
               </node>
             </node>
             <node concept="tyxLq" id="4WvouDnfyH8" role="2OqNvi">

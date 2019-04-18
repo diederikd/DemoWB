@@ -5,9 +5,15 @@
     <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
     <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
+    <devkit ref="2b99ba1d-c887-40de-a1eb-42c0e5a4b518(DemoSpecificationLanguage)" />
   </languages>
   <imports />
   <registry>
+    <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="8296529778018042901" name="GeneralSL.structure.SID" flags="ng" index="W57nP">
+        <property id="8296529778018044090" name="uuid" index="W57_q" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -26,8 +32,11 @@
       <concept id="2743742872034984104" name="FactSL.structure.ConstructedEntityType" flags="ng" index="3cH7GM">
         <child id="464479581526343034" name="aggregation" index="3CfDjd" />
       </concept>
+      <concept id="2743742872034984102" name="FactSL.structure.EntityType" flags="ng" index="3cH7GW">
+        <child id="6015845184820874929" name="id" index="3jwDRz" />
+      </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
-        <property id="2743742872034984100" name="id" index="3cH7GY" />
+        <property id="2743742872034984100" name="identification" index="3cH7GY" />
       </concept>
       <concept id="464479581525761760" name="FactSL.structure.EntityTypeSet" flags="ng" index="3Ccvtn" />
       <concept id="464479581526339858" name="FactSL.structure.Aggregation" flags="ng" index="3CfDy_">
@@ -59,7 +68,7 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
-      <concept id="5542045097772827097" name="DemoSL.structure.OFD" flags="ng" index="968PY">
+      <concept id="5542045097772827097" name="DemoSL.structure.ObjectFactDiagram" flags="ng" index="968PY">
         <child id="5542045097772827926" name="elements" index="968AL" />
       </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
@@ -93,6 +102,9 @@
       <node concept="3CfDy_" id="pMarvIy5Sp" role="3CfDjd">
         <ref role="3CfDy$" node="pMarvIxj8m" resolve="OFFER" />
         <ref role="3CfDyz" node="pMarvIxj8v" resolve="SHOP" />
+      </node>
+      <node concept="W57nP" id="5dW$Pa0ZBXd" role="3jwDRz">
+        <property role="W57_q" value="3a2b4bdd-3a28-49fd-9eab-2008060ef9fb" />
       </node>
     </node>
   </node>

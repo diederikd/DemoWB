@@ -66,8 +66,8 @@
     </language>
   </registry>
   <node concept="Az7Fb" id="2ojITFEC3aC">
-    <property role="TrG5h" value="actorRoleId" />
-    <property role="FLfZY" value="A[0-9]+" />
+    <property role="TrG5h" value="actorRoleIdentification" />
+    <property role="FLfZY" value="A[0-9]+([-][0-9]+)?" />
   </node>
   <node concept="1TIwiD" id="2ojITFEC3aD">
     <property role="EcuMT" value="2743742872034489001" />
@@ -76,7 +76,7 @@
     <node concept="1TJgyj" id="60WnNX12JES" role="1TKVEi">
       <property role="IQ2ns" value="6934522251522538168" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="id" />
+      <property role="20kJfa" value="Id" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
     </node>
@@ -103,12 +103,12 @@
     <node concept="1TJgyi" id="2ojITFECeUR" role="1TKVEl">
       <property role="IQ2nx" value="2743742872034537143" />
       <property role="TrG5h" value="identification" />
-      <ref role="AX2Wp" node="2ojITFEC3aC" resolve="actorRoleId" />
+      <ref role="AX2Wp" node="2ojITFEC3aC" resolve="actorRoleIdentification" />
     </node>
   </node>
   <node concept="Az7Fb" id="2ojITFECoW4">
     <property role="TrG5h" value="transactionKindId" />
-    <property role="FLfZY" value="T[0-9]+" />
+    <property role="FLfZY" value="T[K]?[0-9]+([-][0-9]+)?" />
   </node>
   <node concept="1TIwiD" id="2ojITFECoW5">
     <property role="EcuMT" value="2743742872034578181" />
@@ -177,7 +177,7 @@
     <node concept="1TJgyj" id="60WnNX1ta_X" role="1TKVEi">
       <property role="IQ2ns" value="6934522251529464189" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="id" />
+      <property role="20kJfa" value="Id" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
     </node>
@@ -189,7 +189,7 @@
   </node>
   <node concept="Az7Fb" id="2ojITFECoW9">
     <property role="TrG5h" value="compositeActorRoleId" />
-    <property role="FLfZY" value="CA[0-9]+" />
+    <property role="FLfZY" value="CA[0-9]+([-][0-9]+)?" />
   </node>
   <node concept="1TIwiD" id="2ojITFECoWc">
     <property role="EcuMT" value="2743742872034578188" />
@@ -206,7 +206,7 @@
   </node>
   <node concept="Az7Fb" id="2ojITFECoWf">
     <property role="TrG5h" value="aggregateTransactionKindId" />
-    <property role="FLfZY" value="AT[0-9]+" />
+    <property role="FLfZY" value="AT[0-9]+([-][0-9]+)?" />
   </node>
   <node concept="AxPO7" id="2ojITFEDlQS">
     <property role="TrG5h" value="transactionKindType" />

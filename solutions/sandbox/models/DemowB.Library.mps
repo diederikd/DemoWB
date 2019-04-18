@@ -89,6 +89,9 @@
       <concept id="2743742872034984110" name="FactSL.structure.AttributeType" flags="ng" index="3cH7GO">
         <child id="3316760564121806798" name="arange" index="3jxEvA" />
       </concept>
+      <concept id="2743742872034984102" name="FactSL.structure.EntityType" flags="ng" index="3cH7GW">
+        <child id="6015845184820874929" name="id" index="3jwDRz" />
+      </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ">
         <property id="5701383312388958981" name="typeOfEvent" index="olWFJ" />
@@ -106,6 +109,9 @@
       </concept>
       <concept id="2743742872035015480" name="FactSL.structure.Number" flags="ng" index="3cIS2y" />
       <concept id="2743742872035015473" name="FactSL.structure.Amount" flags="ng" index="3cIS2F" />
+      <concept id="6015845184824686270" name="FactSL.structure.iAttributeType" flags="ng" index="3ihanG">
+        <child id="6015845184824686271" name="Id" index="3ihanH" />
+      </concept>
       <concept id="2222079712865361131" name="FactSL.structure.EventLaw" flags="ng" index="3l9Rli">
         <property id="2222079712865361132" name="type" index="3l9Rll" />
         <reference id="2222079712865361136" name="eventTypeB" index="3l9Rl9" />
@@ -199,31 +205,49 @@
       <property role="3cH7GY" value="P1" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="LOAN" />
+      <node concept="W57nP" id="5dW$Pa0ZBXo" role="3jwDRz">
+        <property role="W57_q" value="0a8071c1-f446-4e2f-b4cb-61a9c0294e4e" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbL$XC" role="3cH7GF">
       <property role="3cH7GY" value="P2" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="COPY" />
+      <node concept="W57nP" id="5dW$Pa0ZBXp" role="3jwDRz">
+        <property role="W57_q" value="01714ac1-85cd-4f23-8052-0bfd53afc677" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbkqsb" role="3cH7GF">
       <property role="3cH7GY" value="P3" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="BOOK" />
+      <node concept="W57nP" id="5dW$Pa0ZBXq" role="3jwDRz">
+        <property role="W57_q" value="80634f49-720d-49da-9497-e7f2061ebc13" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBb_kPt" role="3cH7GF">
       <property role="3cH7GY" value="P4" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="PERSON" />
+      <node concept="W57nP" id="5dW$Pa0ZBXr" role="3jwDRz">
+        <property role="W57_q" value="e0e9dca4-30f9-4660-bdeb-792fb18b7099" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbC534" role="3cH7GF">
       <property role="3cH7GY" value="P5" />
       <property role="a0oEV" value="production" />
       <property role="TrG5h" value="MEMBERSHIP" />
+      <node concept="W57nP" id="5dW$Pa0ZBXs" role="3jwDRz">
+        <property role="W57_q" value="b757c9d6-0fed-4fd6-998f-dd61027a5eb9" />
+      </node>
     </node>
     <node concept="3cH7GX" id="1VmqrBbWhLf" role="3cH7GF">
       <property role="TrG5h" value="MEMBERSHIP FEE" />
       <property role="3cH7GY" value="P19" />
       <property role="a0oEV" value="production" />
+      <node concept="W57nP" id="5dW$Pa0ZBXt" role="3jwDRz">
+        <property role="W57_q" value="a91a8a31-dac2-4a23-a48a-68a1b7d26013" />
+      </node>
     </node>
     <node concept="3cH7GN" id="1VmqrBbC52Q" role="3cH7GF">
       <property role="a0oEV" value="production" />
@@ -278,6 +302,9 @@
       <property role="3cH7GY" value="P28" />
       <ref role="2Hnu9v" node="1VmqrBbkqs5" resolve="LOAN" />
       <node concept="3cIS2F" id="2S7w2zXwCp_" role="3jxEvA" />
+      <node concept="W57nP" id="5dW$Pa1f3wd" role="3ihanH">
+        <property role="W57_q" value="6d606d67-de23-4705-b801-bb4df09555f1" />
+      </node>
     </node>
     <node concept="3cH7GO" id="pMarvI2$KN" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -288,6 +315,9 @@
       <property role="3cH7GY" value="P29" />
       <ref role="2Hnu9v" node="1VmqrBbkqsb" resolve="BOOK" />
       <node concept="3cIS2y" id="pMarvI2$LH" role="3jxEvA" />
+      <node concept="W57nP" id="5dW$Pa1f3we" role="3ihanH">
+        <property role="W57_q" value="3e77a41a-c199-4229-ad8f-fa0e5660c4dc" />
+      </node>
     </node>
     <node concept="3cH7GO" id="pMarvIg0Ci" role="3cH7GF">
       <property role="3cIS3q" value="1" />
@@ -298,6 +328,9 @@
       <property role="TrG5h" value="Name" />
       <ref role="2Hnu9v" node="1VmqrBb_kPt" resolve="PERSON" />
       <node concept="3CcyfB" id="pMarvIgy5M" role="3jxEvA" />
+      <node concept="W57nP" id="5dW$Pa1f3wf" role="3ihanH">
+        <property role="W57_q" value="2ca9bb0f-e364-447b-8527-3993d4548219" />
+      </node>
     </node>
     <node concept="3cH7GZ" id="2S7w2zXv4BS" role="3cH7GF">
       <property role="TrG5h" value="is paid" />

@@ -5,9 +5,15 @@
     <use id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL" version="0" />
     <use id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <devkit ref="2b99ba1d-c887-40de-a1eb-42c0e5a4b518(DemoSpecificationLanguage)" />
   </languages>
   <imports />
   <registry>
+    <language id="aa59ea5e-1883-437f-95c0-4dc082aa848c" name="GeneralSL">
+      <concept id="8296529778018042901" name="GeneralSL.structure.SID" flags="ng" index="W57nP">
+        <property id="8296529778018044090" name="uuid" index="W57_q" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -23,12 +29,15 @@
       <concept id="5542045097775711148" name="FactSL.structure.BaseEntityTypeReference" flags="ng" index="aX8Wb">
         <reference id="5542045097775711149" name="baseEntityType" index="aX8Wa" />
       </concept>
+      <concept id="2743742872034984102" name="FactSL.structure.EntityType" flags="ng" index="3cH7GW">
+        <child id="6015845184820874929" name="id" index="3jwDRz" />
+      </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034984101" name="FactSL.structure.EventType" flags="ng" index="3cH7GZ">
         <reference id="2222079712866223328" name="concerns" index="3la2Pp" />
       </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
-        <property id="2743742872034984100" name="id" index="3cH7GY" />
+        <property id="2743742872034984100" name="identification" index="3cH7GY" />
       </concept>
     </language>
     <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
@@ -48,7 +57,7 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
-      <concept id="5542045097772827097" name="DemoSL.structure.OFD" flags="ng" index="968PY">
+      <concept id="5542045097772827097" name="DemoSL.structure.ObjectFactDiagram" flags="ng" index="968PY">
         <child id="5542045097772827926" name="elements" index="968AL" />
       </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
@@ -61,6 +70,9 @@
     <node concept="3cH7GX" id="IuxU86HzoO" role="3cH7GF">
       <property role="TrG5h" value="Object" />
       <property role="3cH7GY" value="P1" />
+      <node concept="W57nP" id="5dW$Pa0ZBX9" role="3jwDRz">
+        <property role="W57_q" value="f48be40c-7130-49be-a043-68ea9a0c695a" />
+      </node>
     </node>
     <node concept="3cH7GZ" id="IuxU86HzoZ" role="3cH7GF">
       <property role="TrG5h" value="event 1" />

@@ -102,6 +102,9 @@
       </concept>
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
+      <concept id="2743742872034984102" name="FactSL.structure.EntityType" flags="ng" index="3cH7GW">
+        <child id="6015845184820874929" name="" index="3jwDRz" />
+      </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
         <property id="2743742872034984100" name="id" index="3cH7GY" />
@@ -411,6 +414,9 @@
     <node concept="3cH7GX" id="1S2F7pX5D3U" role="3cH7GF">
       <property role="TrG5h" value="TEST ENTITY" />
       <property role="3cH7GY" value="P01" />
+      <node concept="W57nP" id="5dW$Pa0ZBXn" role="3jwDRz">
+        <property role="W57_q" value="9f222d98-3948-4317-8e36-21f992972ef3" />
+      </node>
     </node>
   </node>
 </model>

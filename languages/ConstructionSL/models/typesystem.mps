@@ -49,6 +49,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -288,7 +291,7 @@
         <node concept="3clFbS" id="4vyZ9NOpPAS" role="3clFbx">
           <node concept="2MkqsV" id="4vyZ9NOpPAT" role="3cqZAp">
             <node concept="Xl_RD" id="4vyZ9NOpPAU" role="2MkJ7o">
-              <property role="Xl_RC" value="executor transactionkind should have one value" />
+              <property role="Xl_RC" value="executor of transactionkind should have one value" />
             </node>
             <node concept="1YBJjd" id="4vyZ9NOpPAV" role="2OEOjV">
               <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
@@ -320,7 +323,7 @@
               <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
             </node>
             <node concept="Xl_RD" id="4h5c_cXileh" role="2MkJ7o">
-              <property role="Xl_RC" value="executor transactionkind should have one value" />
+              <property role="Xl_RC" value="executor of transactionkind should have one value" />
             </node>
           </node>
         </node>
@@ -395,6 +398,49 @@
             </node>
           </node>
           <node concept="17RlXB" id="4vyZ9NOpQnS" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="5dW$Pa16Uod" role="3cqZAp">
+        <node concept="3clFbS" id="5dW$Pa16Uof" role="3clFbx">
+          <node concept="2MkqsV" id="5dW$Pa1708u" role="3cqZAp">
+            <node concept="Xl_RD" id="5dW$Pa1708K" role="2MkJ7o">
+              <property role="Xl_RC" value="Transactionkind Name should not have leading and trailing spaces" />
+            </node>
+            <node concept="1YBJjd" id="5dW$Pa170a9" role="2OEOjV">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+            </node>
+            <node concept="2ODE4t" id="5dW$Pa171s8" role="2OEWyd">
+              <ref role="2ODJFN" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3fqX7Q" id="5dW$Pa23YkM" role="3clFbw">
+          <node concept="2OqwBi" id="5dW$Pa23YkO" role="3fr31v">
+            <node concept="2OqwBi" id="5dW$Pa23YkP" role="2Oq$k0">
+              <node concept="1YBJjd" id="5dW$Pa23YkQ" role="2Oq$k0">
+                <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+              </node>
+              <node concept="3TrcHB" id="5dW$Pa23YkR" role="2OqNvi">
+                <ref role="3TsBF5" to="d13l:2ojITFEC3aG" resolve="name" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5dW$Pa23YkS" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <node concept="2OqwBi" id="5dW$Pa23YkT" role="37wK5m">
+                <node concept="2OqwBi" id="5dW$Pa23YkU" role="2Oq$k0">
+                  <node concept="1YBJjd" id="5dW$Pa23YkV" role="2Oq$k0">
+                    <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+                  </node>
+                  <node concept="3TrcHB" id="5dW$Pa23YkW" role="2OqNvi">
+                    <ref role="3TsBF5" to="d13l:2ojITFEC3aG" resolve="name" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5dW$Pa23YkX" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
