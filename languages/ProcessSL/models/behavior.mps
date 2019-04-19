@@ -269,12 +269,12 @@
       <node concept="17QB3L" id="60WnNX1GhWj" role="3clF45" />
       <node concept="3clFbS" id="60WnNX1GhQT" role="3clF47">
         <node concept="3cpWs6" id="60WnNX1GGra" role="3cqZAp">
-          <node concept="2YIFZM" id="60WnNX1GFT$" role="3cqZAk">
+          <node concept="2YIFZM" id="1jSdggKd8l2" role="3cqZAk">
+            <ref role="37wK5l" to="4oiq:1zDMseb678b" resolve="getObjectOfStepKind" />
             <ref role="1Pybhc" to="4oiq:4DZcPceF0Af" resolve="ActionHelper" />
-            <ref role="37wK5l" to="4oiq:4DZcPceF6uk" resolve="getObjectOfStepKind" />
-            <node concept="2OqwBi" id="60WnNX1GG4A" role="37wK5m">
-              <node concept="13iPFW" id="60WnNX1GFU0" role="2Oq$k0" />
-              <node concept="3TrcHB" id="60WnNX1GGkc" role="2OqNvi">
+            <node concept="2OqwBi" id="1jSdggKd8l3" role="37wK5m">
+              <node concept="13iPFW" id="1jSdggKd8l4" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1jSdggKd8l5" role="2OqNvi">
                 <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
               </node>
             </node>

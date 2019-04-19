@@ -18,6 +18,7 @@
       </concept>
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -25,6 +26,7 @@
         <property id="1083066089218" name="constraint" index="FLfZY" />
       </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1192116978809" name="javaIdentifier" index="2fHolG" />
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
       </concept>
@@ -65,46 +67,57 @@
   <node concept="AxPO7" id="m5XqSfxGpH">
     <property role="TrG5h" value="generalStepKind" />
     <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="custom" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="2Ze6BQptBPr" role="M5hS2">
-      <property role="1uS6qo" value="initial" />
+      <property role="1uS6qo" value="Initial" />
       <property role="1uS6qv" value="in" />
+      <property role="2fHolG" value="Initial" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGpI" role="M5hS2">
-      <property role="1uS6qo" value="request" />
+      <property role="1uS6qo" value="Request" />
       <property role="1uS6qv" value="rq" />
+      <property role="2fHolG" value="Request" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGpJ" role="M5hS2">
-      <property role="1uS6qo" value="promiss" />
+      <property role="1uS6qo" value="Promise" />
       <property role="1uS6qv" value="pm" />
+      <property role="2fHolG" value="Promise" />
     </node>
     <node concept="M4N5e" id="2S7w2zXAHOK" role="M5hS2">
       <property role="1uS6qv" value="ex" />
-      <property role="1uS6qo" value="execute" />
+      <property role="1uS6qo" value="Execute" />
+      <property role="2fHolG" value="Execute" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGpM" role="M5hS2">
-      <property role="1uS6qo" value="state" />
+      <property role="1uS6qo" value="State" />
       <property role="1uS6qv" value="st" />
+      <property role="2fHolG" value="State" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGpQ" role="M5hS2">
-      <property role="1uS6qo" value="accept" />
+      <property role="1uS6qo" value="Accept" />
       <property role="1uS6qv" value="ac" />
+      <property role="2fHolG" value="Accept" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGpV" role="M5hS2">
-      <property role="1uS6qo" value="decline" />
+      <property role="1uS6qo" value="Decline" />
       <property role="1uS6qv" value="dc" />
+      <property role="2fHolG" value="Decline" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGq1" role="M5hS2">
-      <property role="1uS6qo" value="quit" />
+      <property role="1uS6qo" value="Quit" />
       <property role="1uS6qv" value="qt" />
+      <property role="2fHolG" value="Quit" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGq8" role="M5hS2">
-      <property role="1uS6qo" value="reject" />
+      <property role="1uS6qo" value="Reject" />
       <property role="1uS6qv" value="rj" />
+      <property role="2fHolG" value="Reject" />
     </node>
     <node concept="M4N5e" id="m5XqSfxGqg" role="M5hS2">
-      <property role="1uS6qo" value="stop" />
+      <property role="1uS6qo" value="Stop" />
       <property role="1uS6qv" value="sp" />
+      <property role="2fHolG" value="Stop" />
     </node>
   </node>
   <node concept="AxPO7" id="m5XqSfxGqU">

@@ -459,7 +459,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="4obCttudDFN" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
                         </node>
                       </node>
                       <node concept="3t7uKx" id="4obCttudxHH" role="2OqNvi">
@@ -488,7 +488,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="4obCttudFis" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
                         </node>
                       </node>
                       <node concept="3t7uKx" id="4obCttudxHS" role="2OqNvi">
@@ -517,7 +517,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="4obCttudGTd" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
                         </node>
                       </node>
                       <node concept="3t7uKx" id="4obCttudxI3" role="2OqNvi">
@@ -583,7 +583,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="4obCttudHjX" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
                         </node>
                       </node>
                       <node concept="3t7uKx" id="4obCttudHjY" role="2OqNvi">
@@ -612,7 +612,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="4obCttudHka" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
                         </node>
                       </node>
                       <node concept="3t7uKx" id="4obCttudHkb" role="2OqNvi">
@@ -641,7 +641,7 @@
                           </node>
                         </node>
                         <node concept="3TrcHB" id="4obCttudHkn" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="type" />
+                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
                         </node>
                       </node>
                       <node concept="3t7uKx" id="4obCttudHko" role="2OqNvi">
@@ -747,6 +747,26 @@
       <node concept="3F0A7n" id="2Ze6BQpAB8g" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="ljvvj" id="2Ze6BQpAB8h" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1jSdggKR1JR" role="3EZMnx">
+        <property role="3F0ifm" value="transaction kind" />
+        <node concept="pVoyu" id="1jSdggKR1JS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1jSdggKR1JT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="1jSdggKR1JU" role="3EZMnx">
+        <ref role="1NtTu8" to="it18:m5XqSfxGsZ" resolve="transactionKind" />
+        <node concept="1sVBvm" id="1jSdggKR1JV" role="1sWHZn">
+          <node concept="3F0A7n" id="1jSdggKR1JW" role="2wV5jI">
+            <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
+          </node>
+        </node>
+        <node concept="ljvvj" id="1jSdggKR1JX" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
