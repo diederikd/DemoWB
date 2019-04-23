@@ -495,7 +495,7 @@
       </node>
       <node concept="3XFhqQ" id="4obCttulXI8" role="3EZMnx" />
       <node concept="1iCGBv" id="4obCttulXIg" role="3EZMnx">
-        <ref role="1NtTu8" to="qiqe:4obCttulXHH" resolve="transactionKind" />
+        <ref role="1NtTu8" to="qiqe:4obCttulXHH" resolve="transactionKindReference" />
         <node concept="1sVBvm" id="4obCttulXIi" role="1sWHZn">
           <node concept="3F0A7n" id="4obCttulXIr" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -546,7 +546,7 @@
                                     <node concept="2OqwBi" id="5VhmAr8oSm9" role="3uHU7w">
                                       <node concept="pncrf" id="5VhmAr8oS0I" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="5VhmAr8oUEv" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKind" />
+                                        <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKindReference" />
                                       </node>
                                     </node>
                                     <node concept="2OqwBi" id="5VhmAr8oPFk" role="3uHU7B">
@@ -613,7 +613,7 @@
                   <node concept="2OqwBi" id="5VhmAr8p3di" role="2Oq$k0">
                     <node concept="pncrf" id="5VhmAr8p2U9" role="2Oq$k0" />
                     <node concept="3TrEf2" id="5VhmAr8p3Iw" role="2OqNvi">
-                      <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKind" />
+                      <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKindReference" />
                     </node>
                   </node>
                   <node concept="3x8VRR" id="5VhmAr8p4UQ" role="2OqNvi" />

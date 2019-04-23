@@ -270,9 +270,15 @@
     <node concept="1TJgyj" id="4obCttulXHH" role="1TKVEi">
       <property role="IQ2ns" value="5047305753771629421" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="transactionKind" />
+      <property role="20kJfa" value="transactionKindReference" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+    </node>
+    <node concept="1TJgyj" id="18NwZVolVE_" role="1TKVEi">
+      <property role="IQ2ns" value="1311537047069506213" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="appliesToStepKind" />
+      <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
     </node>
     <node concept="PrWs8" id="4obCttulXI_" role="PzmwI">
       <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
@@ -328,7 +334,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="ActorRole" />
     </node>
   </node>
   <node concept="1TIwiD" id="1dPpwTSmYdm">
@@ -341,7 +347,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="actorRole" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="AbstractActorRole" />
+      <ref role="20lvS9" to="pgdh:m5XqSfyT8Q" resolve="ActorRole" />
     </node>
   </node>
   <node concept="1TIwiD" id="1S2F7pX3wub">

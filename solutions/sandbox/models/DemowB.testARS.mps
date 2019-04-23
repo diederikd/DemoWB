@@ -34,7 +34,7 @@
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
         <property id="2743742872034578186" name="identification" index="3cGzig" />
-        <child id="6934522251529464189" name="id" index="xifp2" />
+        <child id="6934522251529464189" name="Id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="identification" index="3cGzis" />
@@ -79,7 +79,8 @@
       </concept>
       <concept id="5047305753771629418" name="ActionSL.structure.ActionClause" flags="ng" index="on7EX">
         <property id="5047305753771629419" name="stepkind" index="on7EW" />
-        <reference id="5047305753771629421" name="transactionKind" index="on7EU" />
+        <reference id="5047305753771629421" name="transactionKindReference" index="on7EU" />
+        <reference id="1311537047069506213" name="appliesToStepKind" index="3ap3_r" />
       </concept>
       <concept id="5047305753771525530" name="ActionSL.structure.Respons" flags="ng" index="onuhd">
         <child id="5047305753771525533" name="then" index="onuha" />
@@ -103,11 +104,11 @@
     </language>
     <language id="6836a913-df90-4e79-9a37-cb334bb02ea5" name="FactSL">
       <concept id="2743742872034984102" name="FactSL.structure.EntityType" flags="ng" index="3cH7GW">
-        <child id="6015845184820874929" name="" index="3jwDRz" />
+        <child id="6015845184820874929" name="id" index="3jwDRz" />
       </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
-        <property id="2743742872034984100" name="id" index="3cH7GY" />
+        <property id="2743742872034984100" name="identification" index="3cH7GY" />
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
@@ -156,6 +157,7 @@
             <property role="okzg6" value="false" />
             <property role="on7EW" value="pm" />
             <ref role="on7EU" node="1S2F7pX5D2E" />
+            <ref role="3ap3_r" node="1S2F7pX5D2M" resolve="promiss test transaction" />
           </node>
         </node>
       </node>
