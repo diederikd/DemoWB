@@ -3,74 +3,74 @@
   <DEMO:TransactionKinds>
     <DEMO:TransactionKind Id="2f6952f6-a9dd-44e9-a2c8-74af4a8db900">
       <DEMO:Identification>T1</DEMO:Identification>
-      <DEMO:Name>VERZOEKEN OM AANPASSING VAN DE ARBEIDSDUUR</DEMO:Name>
+      <DEMO:Name>verzoeken om aanpassing van de arbeidsduur</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
     <DEMO:TransactionKind Id="1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5">
       <DEMO:Identification>T2</DEMO:Identification>
-      <DEMO:Name>VERZOEK AANPASSING ARBEIDSDUUR TE BESPREKEN</DEMO:Name>
+      <DEMO:Name>verzoek aanpassing arbeidsduur te bespreken</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
     <DEMO:TransactionKind Id="5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1">
       <DEMO:Identification>T3</DEMO:Identification>
-      <DEMO:Name>INWILLIGEN VERZOEK AANPASSING ARBEIDSDUUR</DEMO:Name>
+      <DEMO:Name>inwilligen verzoek aanpassing arbeidsduur</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
     <DEMO:TransactionKind Id="9fdcd148-4c1d-4b19-aa29-e06463213e7f">
       <DEMO:Identification>T4</DEMO:Identification>
-      <DEMO:Name>AFWIJZEN VAN HET VERZOEK</DEMO:Name>
+      <DEMO:Name>afwijzen van het verzoek</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
     <DEMO:TransactionKind Id="b95a2928-d510-4261-9279-9a9e4dad1325">
       <DEMO:Identification>T5</DEMO:Identification>
-      <DEMO:Name>VASTSTELLEN VAN DE SPREIDING VAN DE UREN</DEMO:Name>
+      <DEMO:Name>vaststellen van de spreiding van de uren</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
     <DEMO:TransactionKind Id="444e904d-dc7b-4536-b95d-5cbf1111cd85">
       <DEMO:Identification>T6</DEMO:Identification>
-      <DEMO:Name>WIJZIGEN VAN DE SPREIDING VAN DE UREN</DEMO:Name>
+      <DEMO:Name>wijzigen van de spreiding van de uren</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
     <DEMO:TransactionKind Id="52c9c51e-adac-4fd6-a602-081efbce301d">
       <DEMO:Identification>T7</DEMO:Identification>
-      <DEMO:Name>AUTOMATISCH AANPASSING OVEREENKOMSTIG HET VERZOEK</DEMO:Name>
+      <DEMO:Name>automatisch aanpassing overeenkomstig het verzoek</DEMO:Name>
       <DEMO:TransactionSort>original</DEMO:TransactionSort>
     </DEMO:TransactionKind>
   </DEMO:TransactionKinds>
   <DEMO:ElementaryActorRoles>
     <DEMO:ElementaryActorRole Id="3a818ca7-359c-47b3-b402-ed1a6977b262">
       <DEMO:Identification>A1</DEMO:Identification>
-      <DEMO:Name>VERZOEK VERWERKER</DEMO:Name>
+      <DEMO:Name>verzoek verwerker</DEMO:Name>
     </DEMO:ElementaryActorRole>
     <DEMO:ElementaryActorRole Id="e63ce274-4662-48c2-b7c2-72a06f697fbb">
       <DEMO:Identification>A3</DEMO:Identification>
-      <DEMO:Name>INWILLIGER VAN HET VERZOEK</DEMO:Name>
+      <DEMO:Name>inwilliger van het verzoek</DEMO:Name>
     </DEMO:ElementaryActorRole>
     <DEMO:ElementaryActorRole Id="cfccf78a-8c47-4991-adfa-381bf08e9e11">
       <DEMO:Identification>A4</DEMO:Identification>
-      <DEMO:Name>AFWIJZER VAN HET VERZOEK</DEMO:Name>
+      <DEMO:Name>afwijzer van het verzoek</DEMO:Name>
     </DEMO:ElementaryActorRole>
     <DEMO:ElementaryActorRole Id="98dd6f82-9929-4b7d-8c56-986f907b1acb">
       <DEMO:Identification>A5</DEMO:Identification>
-      <DEMO:Name>VASTSTELLER VAN DE SPREIDING</DEMO:Name>
+      <DEMO:Name>vaststeller van de spreiding</DEMO:Name>
     </DEMO:ElementaryActorRole>
     <DEMO:ElementaryActorRole Id="8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e">
       <DEMO:Identification>A6</DEMO:Identification>
-      <DEMO:Name>WIJZIGER VAN DE SPREIDING</DEMO:Name>
+      <DEMO:Name>wijziger van de spreiding</DEMO:Name>
     </DEMO:ElementaryActorRole>
     <DEMO:ElementaryActorRole Id="17860a63-e11d-4ddf-ae7f-3cdd1c6a303a">
       <DEMO:Identification>A7</DEMO:Identification>
-      <DEMO:Name>VERZOEK CONTROLLER</DEMO:Name>
+      <DEMO:Name>verzoek controller</DEMO:Name>
     </DEMO:ElementaryActorRole>
   </DEMO:ElementaryActorRoles>
   <DEMO:CompositeActorRoles>
     <DEMO:CompositeActorRole Id="5c0b8e77-c7d0-439e-8849-66d07ac9138d">
       <DEMO:Identification>CA01</DEMO:Identification>
-      <DEMO:Name>WERKGEVER</DEMO:Name>
+      <DEMO:Name>werkgever</DEMO:Name>
     </DEMO:CompositeActorRole>
     <DEMO:CompositeActorRole Id="8302ff28-ee19-4fe5-992f-004eab409aa3">
       <DEMO:Identification>CA1</DEMO:Identification>
-      <DEMO:Name>WERKNEMER</DEMO:Name>
+      <DEMO:Name>werknemer</DEMO:Name>
     </DEMO:CompositeActorRole>
   </DEMO:CompositeActorRoles>
   <DEMO:TransactionProcessStepKinds>
@@ -356,52 +356,52 @@
   </DEMO:EntityTypes>
   <DEMO:AttributeTypes>
     <DEMO:AttributeType Id="1942e8fd-2cf4-474e-9ac2-9611cdb51a91">
-      <DEMO:Name>Naam</DEMO:Name>
+      <DEMO:Name>naam</DEMO:Name>
       <DEMO:TypeName>TEXT</DEMO:TypeName>
       <DEMO:EntityType>6d935c67-7759-4c3d-aacb-1bf73cb5b95e</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="b45a9514-d95e-4826-aaaa-dd0703ba2f01">
-      <DEMO:Name>Naam</DEMO:Name>
+      <DEMO:Name>naam</DEMO:Name>
       <DEMO:TypeName>TEXT</DEMO:TypeName>
       <DEMO:EntityType>Cc5ccce4-c8e6-4833-ad15-0c97b7e838a3</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="e73d46cf-6a9f-472a-aed6-34239082f1ef">
-      <DEMO:Name>Datum Indiensttreding</DEMO:Name>
+      <DEMO:Name>datum indiensttreding</DEMO:Name>
       <DEMO:TypeName>DATE</DEMO:TypeName>
       <DEMO:EntityType>3522f4af-8578-4771-9a1e-529069bdc998</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="1851cf0d-bc67-4c6a-b908-d8d9822ad11c">
-      <DEMO:Name>Getekend Op</DEMO:Name>
+      <DEMO:Name>getekend op</DEMO:Name>
       <DEMO:TypeName>DATE</DEMO:TypeName>
       <DEMO:EntityType>3522f4af-8578-4771-9a1e-529069bdc998</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="40ddc26a-2efe-43b5-8a1a-39b6cdf92c87">
-      <DEMO:Name>Arbeidsduur</DEMO:Name>
+      <DEMO:Name>arbeidsduur</DEMO:Name>
       <DEMO:TypeName>DURATION</DEMO:TypeName>
       <DEMO:EntityType>Acd6b668-499b-440b-bb6e-2c65a265042f</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="fb8bbc88-3a1a-49ef-a0d6-0ce42295a747">
-      <DEMO:Name>Aanvangstijd Periode</DEMO:Name>
+      <DEMO:Name>aanvangstijd periode</DEMO:Name>
       <DEMO:TypeName>TIME</DEMO:TypeName>
       <DEMO:EntityType>Fbd4302d-19ba-4aad-b19f-5aa5debb15fa</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="e77b4db1-f4bb-435d-9785-69dc00b95e40">
-      <DEMO:Name>Eindtijd Periode</DEMO:Name>
+      <DEMO:Name>eindtijd periode</DEMO:Name>
       <DEMO:TypeName>TIME</DEMO:TypeName>
       <DEMO:EntityType>Fbd4302d-19ba-4aad-b19f-5aa5debb15fa</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="d830d00c-fc21-42a4-a8ec-e4bdc63bb8c3">
-      <DEMO:Name>Beoogde Ingangsdatum Van De Aanpassing</DEMO:Name>
+      <DEMO:Name>beoogde ingangsdatum van de aanpassing</DEMO:Name>
       <DEMO:TypeName>DATE</DEMO:TypeName>
       <DEMO:EntityType>38494b3f-6b1b-46f2-8aff-ed7be9cc4140</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="2605e9df-26e8-41ab-a961-e5604f5fdd50">
-      <DEMO:Name>Omvang Van De Aanpassing</DEMO:Name>
+      <DEMO:Name>omvang van de aanpassing</DEMO:Name>
       <DEMO:TypeName>DURATION</DEMO:TypeName>
       <DEMO:EntityType>38494b3f-6b1b-46f2-8aff-ed7be9cc4140</DEMO:EntityType>
     </DEMO:AttributeType>
     <DEMO:AttributeType Id="8bcb23c6-a14b-47cf-aa2d-c8c28eee60cc">
-      <DEMO:Name>Schriftelijk Ingediend</DEMO:Name>
+      <DEMO:Name>schriftelijk ingediend</DEMO:Name>
       <DEMO:TypeName>TRUTHVALUE</DEMO:TypeName>
       <DEMO:EntityType>38494b3f-6b1b-46f2-8aff-ed7be9cc4140</DEMO:EntityType>
     </DEMO:AttributeType>
@@ -894,4 +894,273 @@
       </DEMO:InitiationTPSK>
     </DEMO:Connection>
   </DEMO:Connections>
+  <DEMO:ActionRuleTypes>
+    <DEMO:ActionRuleType Id="3423d5e0-1d91-4b02-bfea-8e029fee772a">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>bd3f0c3a-f0d6-49ac-8237-a65c0d866080</DEMO:TransactionProcessStepKind>
+        
+        <DEMO:With>
+          <DEMO:Entity>38494b3f-6b1b-46f2-8aff-ed7be9cc4140</DEMO:Entity>
+          <DEMO:Attribute>d830d00c-fc21-42a4-a8ec-e4bdc63bb8c3</DEMO:Attribute>
+        </DEMO:With>
+        <DEMO:With>
+          <DEMO:Entity>38494b3f-6b1b-46f2-8aff-ed7be9cc4140</DEMO:Entity>
+          <DEMO:Attribute>8bcb23c6-a14b-47cf-aa2d-c8c28eee60cc</DEMO:Attribute>
+        </DEMO:With>
+        <DEMO:With>
+          <DEMO:Entity>38494b3f-6b1b-46f2-8aff-ed7be9cc4140</DEMO:Entity>
+          <DEMO:Attribute>2605e9df-26e8-41ab-a961-e5604f5fdd50</DEMO:Attribute>
+        </DEMO:With>
+        
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>pm</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="da33869b-fb31-4381-b7bb-09a0e684052b">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>0b72e6f0-4d2a-461b-8ebf-b92ce90305a9</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>rq</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="0e9ad428-d5cb-4989-84ea-35d47c817e0a">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>f818d2df-ab2d-487a-8c57-f6a2e9b1f7cb</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>rq</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="3f1834ff-e868-4b4e-ba89-d9072e049344">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>c5f23a3f-f212-4dc0-9bef-ea201276f109</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>pm</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="03cbfe64-af63-45d2-97be-7b7e321dfe23">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>7c59f0d9-5a33-4eaa-8860-ac34fa412e11</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>pm</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="09d3ca51-ae78-44a3-b2be-a7b7610cbde0">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>0681481f-db0b-4ff5-8da5-13c1546d85dd</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>ex</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="e88e364d-4312-46c8-ba4d-a1ee537403ec">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>2cbce3a8-304e-4b65-8b25-1021e1086106</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>st</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="f21711bb-7e90-4aec-a0f3-457eef7f7b7b">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>0c723c5e-91fd-4dc9-a084-80b2469ec4b8</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>ac</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="4a331ccc-52a6-4434-89bf-ee80e9e23e06">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>2646ae23-2f5b-4550-9709-038271785ff1</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>pm</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="831b7d8b-5d2e-458d-825f-dd08f77a8cdd">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>16c43ffe-9673-4f0f-b65f-e6c38cb34b25</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>ac</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="966a92c3-99d9-44b5-b8b4-0d323ea1855b">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>6a193c92-0a08-4f88-aa68-7718ffba2f20</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>ac</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+  </DEMO:ActionRuleTypes>
 </DEMO:DEMOmodel>

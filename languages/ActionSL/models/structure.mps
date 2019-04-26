@@ -2,7 +2,7 @@
 <model ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -63,6 +63,13 @@
     <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1jSdggL8T$G" role="1TKVEi">
+      <property role="IQ2ns" value="1511015967103359276" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="d13l:7czcu1fdOgl" resolve="SID" />
+    </node>
     <node concept="1TJgyj" id="4obCttuhFRm" role="1TKVEi">
       <property role="IQ2ns" value="5047305753770507734" />
       <property role="20lmBu" value="aggregation" />
@@ -83,6 +90,9 @@
       <property role="20kJfa" value="responsPart" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4obCttul$mq" resolve="Respons" />
+    </node>
+    <node concept="PrWs8" id="1jSdggLboxB" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4obCttuh9Ch">
@@ -270,18 +280,18 @@
     <node concept="1TJgyj" id="4obCttulXHH" role="1TKVEi">
       <property role="IQ2ns" value="5047305753771629421" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="transactionKindReference" />
+      <property role="20kJfa" value="transactionKind" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+    </node>
+    <node concept="PrWs8" id="4obCttulXI_" role="PzmwI">
+      <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
     </node>
     <node concept="1TJgyj" id="18NwZVolVE_" role="1TKVEi">
       <property role="IQ2ns" value="1311537047069506213" />
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="appliesToStepKind" />
       <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
-    </node>
-    <node concept="PrWs8" id="4obCttulXI_" role="PzmwI">
-      <ref role="PrY4T" node="4obCttulXIx" resolve="WithClause" />
     </node>
   </node>
   <node concept="PlHQZ" id="4obCttulXIx">

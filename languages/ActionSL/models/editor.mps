@@ -2,7 +2,7 @@
 <model ref="r:3c8095d6-b5f1-463e-829b-cd16f5a90b46(ActionSL.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -67,7 +67,9 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -327,11 +329,11 @@
       <node concept="3F0ifn" id="4obCttujJ7N" role="3EZMnx">
         <property role="3F0ifm" value="action rule" />
       </node>
-      <node concept="3F0ifn" id="4obCttujJ7O" role="3EZMnx">
-        <node concept="3mYdg7" id="4obCttujJ7P" role="3F10Kt">
-          <property role="1413C4" value="body-brace" />
-        </node>
-        <node concept="ljvvj" id="4obCttujJ7Q" role="3F10Kt">
+      <node concept="3F0A7n" id="1jSdggLboKR" role="3EZMnx">
+        <property role="1$x2rV" value="Enter name of action rule" />
+        <property role="1O74Pk" value="true" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="ljvvj" id="1jSdggLboMm" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
