@@ -2,7 +2,7 @@
 <model ref="r:3b90793e-5817-4d27-8dd2-6af82473a5c3(ActionSL.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -518,9 +518,6 @@
         </node>
       </node>
     </node>
-    <node concept="13hLZK" id="1dPpwTRUgyF" role="13h7CW">
-      <node concept="3clFbS" id="1dPpwTRUgyG" role="2VODD2" />
-    </node>
     <node concept="13i0hz" id="18NwZVolYlY" role="13h7CS">
       <property role="TrG5h" value="getGeneralStepKind" />
       <node concept="3Tm1VV" id="18NwZVolYlZ" role="1B3o_S" />
@@ -680,6 +677,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13hLZK" id="1dPpwTRUgyF" role="13h7CW">
+      <node concept="3clFbS" id="1dPpwTRUgyG" role="2VODD2" />
     </node>
   </node>
   <node concept="312cEu" id="4DZcPceF0Af">
