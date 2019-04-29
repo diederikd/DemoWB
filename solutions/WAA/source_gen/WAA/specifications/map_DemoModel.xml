@@ -1162,5 +1162,28 @@
         </DEMO:Then>
       </DEMO:Response>
     </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="bd276e15-f08f-4a39-8ca9-21dd880445ad">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>8ecc854d-ad5a-4c19-b0d8-ee42d360ef0e</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>pm</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
   </DEMO:ActionRuleTypes>
 </DEMO:DEMOmodel>

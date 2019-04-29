@@ -67,6 +67,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
         <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
@@ -499,10 +500,14 @@
     <ref role="1XX52x" to="qiqe:4obCttulXHE" resolve="ActionClause" />
     <node concept="3EZMnI" id="4obCttulXHV" role="2wV5jI">
       <node concept="3F0A7n" id="4obCttulXI2" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="Enter stepkind" />
         <ref role="1NtTu8" to="qiqe:4obCttulXHF" resolve="stepkind" />
       </node>
       <node concept="3XFhqQ" id="4obCttulXI8" role="3EZMnx" />
       <node concept="1iCGBv" id="4obCttulXIg" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <property role="1$x2rV" value="Enter transactionkind" />
         <ref role="1NtTu8" to="qiqe:4obCttulXHH" resolve="transactionKind" />
         <node concept="1sVBvm" id="4obCttulXIi" role="1sWHZn">
           <node concept="3F0A7n" id="4obCttulXIr" role="2wV5jI">

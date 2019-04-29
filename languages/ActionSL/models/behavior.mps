@@ -110,6 +110,7 @@
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt" />
       <concept id="1240170042401" name="jetbrains.mps.lang.smodel.structure.SEnumMemberType" flags="in" index="2ZThk1" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
@@ -133,6 +134,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -471,7 +475,7 @@
                         <node concept="3clFbC" id="5VhmAr8oRsR" role="3uHU7w">
                           <node concept="2OqwBi" id="5VhmAr8oSm9" role="3uHU7w">
                             <node concept="3TrEf2" id="1dPpwTRUkrw" role="2OqNvi">
-                              <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKindReference" />
+                              <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKind" />
                             </node>
                             <node concept="13iPFW" id="1dPpwTRUk47" role="2Oq$k0" />
                           </node>
@@ -1344,6 +1348,24 @@
                 <property role="3clFbU" value="false" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6ihpGwUpI2q">
+    <ref role="13h7C2" to="qiqe:4obCttul$mo" resolve="Then" />
+    <node concept="13hLZK" id="6ihpGwUpI2r" role="13h7CW">
+      <node concept="3clFbS" id="6ihpGwUpI2s" role="2VODD2">
+        <node concept="3clFbF" id="6ihpGwUpI2A" role="3cqZAp">
+          <node concept="2OqwBi" id="6ihpGwUpKdB" role="3clFbG">
+            <node concept="2OqwBi" id="6ihpGwUpIag" role="2Oq$k0">
+              <node concept="13iPFW" id="6ihpGwUpI2_" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6ihpGwUpIyd" role="2OqNvi">
+                <ref role="3TtcxE" to="qiqe:4obCttumg$w" resolve="actions" />
+              </node>
+            </node>
+            <node concept="WFELt" id="6ihpGwUpQnl" role="2OqNvi" />
           </node>
         </node>
       </node>

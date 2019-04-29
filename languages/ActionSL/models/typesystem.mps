@@ -28,6 +28,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -72,6 +73,9 @@
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
@@ -129,6 +133,7 @@
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -568,38 +573,38 @@
   <node concept="18kY7G" id="6ihpGwUg5Wr">
     <property role="TrG5h" value="CheckActionClauseWithLink" />
     <node concept="3clFbS" id="6ihpGwUg5Ws" role="18ibNy">
-      <node concept="3clFbJ" id="6ihpGwUgSD4" role="3cqZAp">
-        <node concept="3clFbS" id="6ihpGwUgSD6" role="3clFbx">
-          <node concept="3cpWs8" id="6ihpGwUgmGe" role="3cqZAp">
-            <node concept="3cpWsn" id="6ihpGwUgmGf" role="3cpWs9">
-              <property role="TrG5h" value="EventpartAppliesToStepKind" />
-              <node concept="3Tqbb2" id="6ihpGwUgmG5" role="1tU5fm">
-                <ref role="ehGHo" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+      <node concept="3cpWs8" id="6ihpGwUgmGe" role="3cqZAp">
+        <node concept="3cpWsn" id="6ihpGwUgmGf" role="3cpWs9">
+          <property role="TrG5h" value="EventpartAppliesToStepKind" />
+          <node concept="3Tqbb2" id="6ihpGwUgmG5" role="1tU5fm">
+            <ref role="ehGHo" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
+          </node>
+          <node concept="2OqwBi" id="6ihpGwUgmGg" role="33vP2m">
+            <node concept="2OqwBi" id="6ihpGwUgmGh" role="2Oq$k0">
+              <node concept="2OqwBi" id="6ihpGwUgmGi" role="2Oq$k0">
+                <node concept="1YBJjd" id="6ihpGwUgmGj" role="2Oq$k0">
+                  <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
+                </node>
+                <node concept="2Xjw5R" id="6ihpGwUgmGk" role="2OqNvi">
+                  <node concept="1xMEDy" id="6ihpGwUgmGl" role="1xVPHs">
+                    <node concept="chp4Y" id="6ihpGwUgmGm" role="ri$Ld">
+                      <ref role="cht4Q" to="qiqe:m5XqSfwzHk" resolve="ActionRule" />
+                    </node>
+                  </node>
+                </node>
               </node>
-              <node concept="2OqwBi" id="6ihpGwUgmGg" role="33vP2m">
-                <node concept="2OqwBi" id="6ihpGwUgmGh" role="2Oq$k0">
-                  <node concept="2OqwBi" id="6ihpGwUgmGi" role="2Oq$k0">
-                    <node concept="1YBJjd" id="6ihpGwUgmGj" role="2Oq$k0">
-                      <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
-                    </node>
-                    <node concept="2Xjw5R" id="6ihpGwUgmGk" role="2OqNvi">
-                      <node concept="1xMEDy" id="6ihpGwUgmGl" role="1xVPHs">
-                        <node concept="chp4Y" id="6ihpGwUgmGm" role="ri$Ld">
-                          <ref role="cht4Q" to="qiqe:m5XqSfwzHk" resolve="ActionRule" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="6ihpGwUgmGn" role="2OqNvi">
-                    <ref role="3Tt5mk" to="qiqe:4obCttuhFRm" resolve="eventPart" />
-                  </node>
-                </node>
-                <node concept="3TrEf2" id="6ihpGwUgmGo" role="2OqNvi">
-                  <ref role="3Tt5mk" to="qiqe:4obCttuh9Ci" resolve="appliesToStepKind" />
-                </node>
+              <node concept="3TrEf2" id="6ihpGwUgmGn" role="2OqNvi">
+                <ref role="3Tt5mk" to="qiqe:4obCttuhFRm" resolve="eventPart" />
               </node>
             </node>
+            <node concept="3TrEf2" id="6ihpGwUgmGo" role="2OqNvi">
+              <ref role="3Tt5mk" to="qiqe:4obCttuh9Ci" resolve="appliesToStepKind" />
+            </node>
           </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6ihpGwUgSD4" role="3cqZAp">
+        <node concept="3clFbS" id="6ihpGwUgSD6" role="3clFbx">
           <node concept="1X3_iC" id="6ihpGwUhJSU" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -726,16 +731,76 @@
             </node>
           </node>
         </node>
-        <node concept="2OqwBi" id="6ihpGwUgTMi" role="3clFbw">
-          <node concept="2OqwBi" id="6ihpGwUgSOB" role="2Oq$k0">
-            <node concept="1YBJjd" id="6ihpGwUgSEd" role="2Oq$k0">
+        <node concept="1Wc70l" id="6ihpGwUvpAl" role="3clFbw">
+          <node concept="2OqwBi" id="6ihpGwUvq6s" role="3uHU7w">
+            <node concept="37vLTw" id="6ihpGwUvpTC" role="2Oq$k0">
+              <ref role="3cqZAo" node="6ihpGwUgmGf" resolve="EventpartAppliesToStepKind" />
+            </node>
+            <node concept="3x8VRR" id="6ihpGwUvrQf" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="6ihpGwUgTMi" role="3uHU7B">
+            <node concept="2OqwBi" id="6ihpGwUgSOB" role="2Oq$k0">
+              <node concept="1YBJjd" id="6ihpGwUgSEd" role="2Oq$k0">
+                <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
+              </node>
+              <node concept="3TrEf2" id="6ihpGwUgTgf" role="2OqNvi">
+                <ref role="3Tt5mk" to="qiqe:18NwZVolVE_" resolve="appliesToStepKind" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6ihpGwUgUKV" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6ihpGwUvvgs" role="3cqZAp">
+        <node concept="3clFbS" id="6ihpGwUvvgt" role="3clFbx">
+          <node concept="2MkqsV" id="6ihpGwUvvgu" role="3cqZAp">
+            <node concept="Xl_RD" id="6ihpGwUvvgv" role="2MkJ7o">
+              <property role="Xl_RC" value="No stepkind defined for actionclause, enter stepkind and transationkind to select TransactionKindStepKind" />
+            </node>
+            <node concept="1YBJjd" id="6ihpGwUvvgw" role="2OEOjV">
               <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
             </node>
-            <node concept="3TrEf2" id="6ihpGwUgTgf" role="2OqNvi">
-              <ref role="3Tt5mk" to="qiqe:18NwZVolVE_" resolve="appliesToStepKind" />
+            <node concept="2ODE4t" id="6ihpGwUvvgx" role="2OEWyd">
+              <ref role="2ODJFN" to="qiqe:4obCttulXHF" resolve="stepkind" />
             </node>
           </node>
-          <node concept="3x8VRR" id="6ihpGwUgUKV" role="2OqNvi" />
+        </node>
+        <node concept="2OqwBi" id="6ihpGwUvvgy" role="3clFbw">
+          <node concept="2OqwBi" id="6ihpGwUvvgz" role="2Oq$k0">
+            <node concept="1YBJjd" id="6ihpGwUvvg$" role="2Oq$k0">
+              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
+            </node>
+            <node concept="3TrcHB" id="6ihpGwUvvg_" role="2OqNvi">
+              <ref role="3TsBF5" to="qiqe:4obCttulXHF" resolve="stepkind" />
+            </node>
+          </node>
+          <node concept="17RlXB" id="6ihpGwUvvgA" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6ihpGwUvrU6" role="3cqZAp">
+        <node concept="3clFbS" id="6ihpGwUvrU8" role="3clFbx">
+          <node concept="2MkqsV" id="6ihpGwUvtNF" role="3cqZAp">
+            <node concept="Xl_RD" id="6ihpGwUvtNV" role="2MkJ7o">
+              <property role="Xl_RC" value="No transactionkind defined for actionclause, enter stepkind and transationkind to select TransactionKindStepKind" />
+            </node>
+            <node concept="1YBJjd" id="6ihpGwUvtPr" role="2OEOjV">
+              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
+            </node>
+            <node concept="2OE7Q9" id="6ihpGwUvx0w" role="2OEWyd">
+              <ref role="2OEe5H" to="qiqe:4obCttulXHH" resolve="transactionKind" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="6ihpGwUvthf" role="3clFbw">
+          <node concept="2OqwBi" id="6ihpGwUvs61" role="2Oq$k0">
+            <node concept="1YBJjd" id="6ihpGwUvrVB" role="2Oq$k0">
+              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
+            </node>
+            <node concept="3TrEf2" id="6ihpGwUvvPA" role="2OqNvi">
+              <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKind" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="6ihpGwUvwaQ" role="2OqNvi" />
         </node>
       </node>
     </node>
