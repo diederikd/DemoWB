@@ -1081,9 +1081,6 @@
       <node concept="3F0A7n" id="18NwZVoF8$B" role="3EZMnx">
         <ref role="1NtTu8" to="it18:m5XqSfxGvA" resolve="stepKind" />
       </node>
-      <node concept="3F0ifn" id="3d1xBjLBMD5" role="3EZMnx">
-        <property role="3F0ifm" value=" " />
-      </node>
     </node>
     <node concept="2aJ2om" id="18NwZVoF7VC" role="CpUAK">
       <ref role="2$4xQ3" to="wtx7:1VmqrBbpUal" resolve="TPD" />
@@ -1168,10 +1165,10 @@
         <node concept="2xQOud" id="6z7DEV3EYFi" role="1PNbKK">
           <ref role="2xQOue" to="wtx7:7z30MUmeewT" resolve="ArrowHead" />
           <node concept="3b6qkQ" id="6z7DEV3EYFj" role="1xbcaF">
-            <property role="$nhwW" value="0.4" />
+            <property role="$nhwW" value="0.5" />
           </node>
           <node concept="3b6qkQ" id="6z7DEV3EYFk" role="1xbcaF">
-            <property role="$nhwW" value="0.4" />
+            <property role="$nhwW" value="0.5" />
           </node>
           <node concept="3clFbT" id="6z7DEV3EYFl" role="1xbcaF">
             <property role="3clFbU" value="true" />
