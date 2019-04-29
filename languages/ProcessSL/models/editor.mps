@@ -59,7 +59,9 @@
         <reference id="9122903797312247166" name="style" index="1wgcnl" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -254,6 +256,8 @@
         <ref role="1NtTu8" to="it18:m5XqSfxGsZ" resolve="transactionKind" />
         <node concept="1sVBvm" id="2S7w2zXwCpU" role="1sWHZn">
           <node concept="3F0A7n" id="2S7w2zXwCpW" role="2wV5jI">
+            <property role="1$x2rV" value="Enter name here" />
+            <property role="1O74Pk" value="true" />
             <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
           </node>
         </node>
@@ -840,6 +844,8 @@
         <ref role="1NtTu8" to="it18:m5XqSfxGsZ" resolve="transactionKind" />
         <node concept="1sVBvm" id="1jSdggKR1JV" role="1sWHZn">
           <node concept="3F0A7n" id="1jSdggKR1JW" role="2wV5jI">
+            <property role="1O74Pk" value="true" />
+            <property role="1$x2rV" value="Enter name here" />
             <ref role="1NtTu8" to="d13l:2ojITFEC3aG" resolve="name" />
           </node>
         </node>

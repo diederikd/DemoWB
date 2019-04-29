@@ -21,6 +21,7 @@
         <dependency reexport="false">aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)</dependency>
         <dependency reexport="false">61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)</dependency>
         <dependency reexport="false">6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)</dependency>
+        <dependency reexport="false">e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -44,6 +45,7 @@
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
       <dependencyVersions>
+        <module reference="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" version="0" />
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" version="4" />
         <module reference="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" version="1" />

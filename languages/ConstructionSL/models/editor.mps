@@ -862,6 +862,8 @@
         <property role="3F0ifm" value="scope of interest" />
       </node>
       <node concept="3F0A7n" id="m5XqSfCXPH" role="3EZMnx">
+        <property role="1$x2rV" value="Enter name of Scope of Interest" />
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="m5XqSfCXPI" role="3EZMnx">
