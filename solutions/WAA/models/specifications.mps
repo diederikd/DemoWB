@@ -13309,7 +13309,7 @@
     <property role="TrG5h" value="Test_GenerateToXML" />
   </node>
   <node concept="3apL29" id="18NwZVoqBFi">
-    <property role="TrG5h" value="Transations process diagram WAA" />
+    <property role="TrG5h" value="Transations Process Diagram WAA" />
     <node concept="37mRI7" id="18NwZVoqBFk" role="lGtFl">
       <node concept="37mRIm" id="18NwZVoqBFl" role="37mRID">
         <property role="37mO49" value="3444719891734455039" />

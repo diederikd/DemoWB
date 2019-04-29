@@ -17,12 +17,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
+    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="TPD merged">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ProcessSL/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ProcessSL/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" afterDir="false" />
     </list>
     <ignored path="languages/GeneralSL/classes_gen/" />
     <ignored path="languages/GeneralSL/source_gen.caches/" />
@@ -71,17 +68,17 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="1bb1099b-a588-443e-9952-50f8e5f6ad79/r:93fb72bb-b684-4688-b7da-eeadf450effa(TempModule1bb1099b-a588-443e-9952-50f8e5f6ad79/TempModel_387834566127552)">
+            <model ref="4d1a1172-6e93-4756-8832-2aa83df0a600/r:d299108f-8c26-4f4d-8e40-ce7d3fe47258(TempModule4d1a1172-6e93-4756-8832-2aa83df0a600/TempModel_902511151186661)">
               <persistence version="9" />
               <languages>
                 <use id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query" version="3" />
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
               </languages>
               <imports>
-                <import index="qiqe" ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)" />
                 <import index="it18" ref="r:5ab429eb-39f0-410d-aa8d-fa3ed3e71aa4(ProcessSL.structure)" />
-                <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" />
                 <import index="4oiq" ref="r:3b90793e-5817-4d27-8dd2-6af82473a5c3(ActionSL.behavior)" />
+                <import index="qiqe" ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)" />
+                <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" />
                 <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
               </imports>
               <registry>
@@ -214,130 +211,130 @@
                   </concept>
                 </language>
               </registry>
-              <node concept="aymSD" id="18NwZVofgZ$">
-                <node concept="3balQm" id="18NwZVofgZ_" role="aymYE">
-                  <node concept="2Clz$F" id="18NwZVot1xg" role="18xWvz">
-                    <node concept="f80E0" id="18NwZVot1xh" role="2Clzx4">
-                      <node concept="2OqwBi" id="18NwZVot1xi" role="f80$r">
-                        <node concept="2OqwBi" id="18NwZVot1xj" role="2Oq$k0">
-                          <node concept="qVDSY" id="18NwZVot1xk" role="2Oq$k0">
-                            <node concept="chp4Y" id="18NwZVot1xl" role="qVDSX">
+              <node concept="aymSD" id="3d1xBjLBL3Z">
+                <node concept="3balQm" id="3d1xBjLBL40" role="aymYE">
+                  <node concept="2Clz$F" id="3d1xBjLBL41" role="18xWvz">
+                    <node concept="f80E0" id="3d1xBjLBL42" role="2Clzx4">
+                      <node concept="2OqwBi" id="3d1xBjLBL43" role="f80$r">
+                        <node concept="2OqwBi" id="3d1xBjLBL44" role="2Oq$k0">
+                          <node concept="qVDSY" id="3d1xBjLBL45" role="2Oq$k0">
+                            <node concept="chp4Y" id="3d1xBjLBL46" role="qVDSX">
                               <ref role="cht4Q" to="qiqe:4obCttulXHE" resolve="ActionClause" />
                             </node>
-                            <node concept="1dO9Bo" id="18NwZVot1xm" role="1dOa5D">
-                              <node concept="psT0o" id="18NwZVot1xn" role="1dp2q7">
-                                <node concept="p4YG9" id="18NwZVot1xo" role="psT0v" />
+                            <node concept="1dO9Bo" id="3d1xBjLBL47" role="1dOa5D">
+                              <node concept="psT0o" id="3d1xBjLBL48" role="1dp2q7">
+                                <node concept="p4YG9" id="3d1xBjLBL49" role="psT0v" />
                               </node>
                             </node>
                           </node>
-                          <node concept="3zZkjj" id="18NwZVot1xp" role="2OqNvi">
-                            <node concept="1bVj0M" id="18NwZVot1xq" role="23t8la">
+                          <node concept="3zZkjj" id="3d1xBjLBL4a" role="2OqNvi">
+                            <node concept="1bVj0M" id="3d1xBjLBL4b" role="23t8la">
                               <property role="3yWfEV" value="true" />
-                              <node concept="3clFbS" id="18NwZVot1xr" role="1bW5cS">
-                                <node concept="3SKdUt" id="18NwZVot1xs" role="3cqZAp">
-                                  <node concept="3SKdUq" id="18NwZVot1xt" role="3SKWNk">
+                              <node concept="3clFbS" id="3d1xBjLBL4c" role="1bW5cS">
+                                <node concept="3SKdUt" id="3d1xBjLBL4d" role="3cqZAp">
+                                  <node concept="3SKdUq" id="3d1xBjLBL4e" role="3SKWNk">
                                     <property role="3SKdUp" value="TODO specify condition" />
                                   </node>
                                 </node>
-                                <node concept="3clFbF" id="18NwZVot1xu" role="3cqZAp">
-                                  <node concept="2OqwBi" id="18NwZVot1xv" role="3clFbG">
-                                    <node concept="2OqwBi" id="18NwZVot1xw" role="2Oq$k0">
-                                      <node concept="37vLTw" id="18NwZVot1xx" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="18NwZVot1x$" resolve="node" />
+                                <node concept="3clFbF" id="3d1xBjLBL4f" role="3cqZAp">
+                                  <node concept="2OqwBi" id="3d1xBjLBL4g" role="3clFbG">
+                                    <node concept="2OqwBi" id="3d1xBjLBL4h" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3d1xBjLBL4i" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3d1xBjLBL4l" resolve="node" />
                                       </node>
-                                      <node concept="3TrEf2" id="18NwZVot1xy" role="2OqNvi">
+                                      <node concept="3TrEf2" id="3d1xBjLBL4j" role="2OqNvi">
                                         <ref role="3Tt5mk" to="qiqe:18NwZVolVE_" resolve="appliesToStepKind" />
                                       </node>
                                     </node>
-                                    <node concept="3w_OXm" id="18NwZVot1xz" role="2OqNvi" />
+                                    <node concept="3w_OXm" id="3d1xBjLBL4k" role="2OqNvi" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="18NwZVot1x$" role="1bW2Oz">
+                              <node concept="Rh6nW" id="3d1xBjLBL4l" role="1bW2Oz">
                                 <property role="TrG5h" value="node" />
-                                <node concept="2jxLKc" id="18NwZVot1x_" role="1tU5fm" />
+                                <node concept="2jxLKc" id="3d1xBjLBL4m" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3R8V_t" id="18NwZVot1xA" role="2OqNvi">
-                          <node concept="1bVj0M" id="18NwZVot1xB" role="23t8la">
+                        <node concept="3R8V_t" id="3d1xBjLBL4n" role="2OqNvi">
+                          <node concept="1bVj0M" id="3d1xBjLBL4o" role="23t8la">
                             <property role="3yWfEV" value="true" />
-                            <node concept="3clFbS" id="18NwZVot1xC" role="1bW5cS">
-                              <node concept="3SKdUt" id="18NwZVot1xD" role="3cqZAp">
-                                <node concept="3SKdUq" id="18NwZVot1xE" role="3SKWNk">
+                            <node concept="3clFbS" id="3d1xBjLBL4p" role="1bW5cS">
+                              <node concept="3SKdUt" id="3d1xBjLBL4q" role="3cqZAp">
+                                <node concept="3SKdUq" id="3d1xBjLBL4r" role="3SKWNk">
                                   <property role="3SKdUp" value="TODO specify action" />
                                 </node>
                               </node>
-                              <node concept="3cpWs8" id="18NwZVot1xF" role="3cqZAp">
-                                <node concept="3cpWsn" id="18NwZVot1xG" role="3cpWs9">
+                              <node concept="3cpWs8" id="3d1xBjLBL4s" role="3cqZAp">
+                                <node concept="3cpWsn" id="3d1xBjLBL4t" role="3cpWs9">
                                   <property role="TrG5h" value="transactionKindStepKind" />
-                                  <node concept="3Tqbb2" id="18NwZVot1xH" role="1tU5fm">
+                                  <node concept="3Tqbb2" id="3d1xBjLBL4u" role="1tU5fm">
                                     <ref role="ehGHo" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3clFbF" id="18NwZVot1xI" role="3cqZAp">
-                                <node concept="37vLTI" id="18NwZVot1xJ" role="3clFbG">
-                                  <node concept="2OqwBi" id="18NwZVot1xK" role="37vLTx">
-                                    <node concept="2OqwBi" id="18NwZVot1xL" role="2Oq$k0">
-                                      <node concept="2OqwBi" id="18NwZVot1xM" role="2Oq$k0">
-                                        <node concept="2OqwBi" id="18NwZVot1xN" role="2Oq$k0">
-                                          <node concept="2OqwBi" id="18NwZVot1xO" role="2Oq$k0">
-                                            <node concept="37vLTw" id="18NwZVot1xP" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="18NwZVot1yp" resolve="node" />
+                              <node concept="3clFbF" id="3d1xBjLBL4v" role="3cqZAp">
+                                <node concept="37vLTI" id="3d1xBjLBL4w" role="3clFbG">
+                                  <node concept="2OqwBi" id="3d1xBjLBL4x" role="37vLTx">
+                                    <node concept="2OqwBi" id="3d1xBjLBL4y" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="3d1xBjLBL4z" role="2Oq$k0">
+                                        <node concept="2OqwBi" id="3d1xBjLBL4$" role="2Oq$k0">
+                                          <node concept="2OqwBi" id="3d1xBjLBL4_" role="2Oq$k0">
+                                            <node concept="37vLTw" id="3d1xBjLBL4A" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="3d1xBjLBL5a" resolve="node" />
                                             </node>
-                                            <node concept="I4A8Y" id="18NwZVot1xQ" role="2OqNvi" />
+                                            <node concept="I4A8Y" id="3d1xBjLBL4B" role="2OqNvi" />
                                           </node>
-                                          <node concept="2SmgA7" id="18NwZVot1xR" role="2OqNvi">
-                                            <node concept="chp4Y" id="18NwZVot1xS" role="1dBWTz">
+                                          <node concept="2SmgA7" id="3d1xBjLBL4C" role="2OqNvi">
+                                            <node concept="chp4Y" id="3d1xBjLBL4D" role="1dBWTz">
                                               <ref role="cht4Q" to="ar0b:2S7w2zXwFQw" resolve="ProcesModel" />
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="13MTOL" id="18NwZVot1xT" role="2OqNvi">
+                                        <node concept="13MTOL" id="3d1xBjLBL4E" role="2OqNvi">
                                           <ref role="13MTZf" to="ar0b:2S7w2zXwFQx" resolve="tranactionKindStepKind" />
                                         </node>
                                       </node>
-                                      <node concept="3zZkjj" id="18NwZVot1xU" role="2OqNvi">
-                                        <node concept="1bVj0M" id="18NwZVot1xV" role="23t8la">
-                                          <node concept="3clFbS" id="18NwZVot1xW" role="1bW5cS">
-                                            <node concept="3clFbF" id="18NwZVot1xX" role="3cqZAp">
-                                              <node concept="1Wc70l" id="18NwZVot1xY" role="3clFbG">
-                                                <node concept="3clFbC" id="18NwZVot1xZ" role="3uHU7w">
-                                                  <node concept="2OqwBi" id="18NwZVot1y0" role="3uHU7w">
-                                                    <node concept="37vLTw" id="18NwZVot1y1" role="2Oq$k0">
-                                                      <ref role="3cqZAo" node="18NwZVot1yp" resolve="node" />
+                                      <node concept="3zZkjj" id="3d1xBjLBL4F" role="2OqNvi">
+                                        <node concept="1bVj0M" id="3d1xBjLBL4G" role="23t8la">
+                                          <node concept="3clFbS" id="3d1xBjLBL4H" role="1bW5cS">
+                                            <node concept="3clFbF" id="3d1xBjLBL4I" role="3cqZAp">
+                                              <node concept="1Wc70l" id="3d1xBjLBL4J" role="3clFbG">
+                                                <node concept="3clFbC" id="3d1xBjLBL4K" role="3uHU7w">
+                                                  <node concept="2OqwBi" id="3d1xBjLBL4L" role="3uHU7w">
+                                                    <node concept="37vLTw" id="3d1xBjLBL4M" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="3d1xBjLBL5a" resolve="node" />
                                                     </node>
-                                                    <node concept="3TrEf2" id="18NwZVot1y2" role="2OqNvi">
+                                                    <node concept="3TrEf2" id="3d1xBjLBL4N" role="2OqNvi">
                                                       <ref role="3Tt5mk" to="qiqe:4obCttulXHH" resolve="transactionKindReference" />
                                                     </node>
                                                   </node>
-                                                  <node concept="2OqwBi" id="18NwZVot1y3" role="3uHU7B">
-                                                    <node concept="37vLTw" id="18NwZVot1y4" role="2Oq$k0">
-                                                      <ref role="3cqZAo" node="18NwZVot1ye" resolve="it" />
+                                                  <node concept="2OqwBi" id="3d1xBjLBL4O" role="3uHU7B">
+                                                    <node concept="37vLTw" id="3d1xBjLBL4P" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="3d1xBjLBL4Z" resolve="it" />
                                                     </node>
-                                                    <node concept="3TrEf2" id="18NwZVot1y5" role="2OqNvi">
+                                                    <node concept="3TrEf2" id="3d1xBjLBL4Q" role="2OqNvi">
                                                       <ref role="3Tt5mk" to="it18:m5XqSfxGsZ" resolve="transactionKind" />
                                                     </node>
                                                   </node>
                                                 </node>
-                                                <node concept="2OqwBi" id="18NwZVot1y6" role="3uHU7B">
-                                                  <node concept="2OqwBi" id="18NwZVot1y7" role="2Oq$k0">
-                                                    <node concept="37vLTw" id="18NwZVot1y8" role="2Oq$k0">
-                                                      <ref role="3cqZAo" node="18NwZVot1ye" resolve="it" />
+                                                <node concept="2OqwBi" id="3d1xBjLBL4R" role="3uHU7B">
+                                                  <node concept="2OqwBi" id="3d1xBjLBL4S" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="3d1xBjLBL4T" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="3d1xBjLBL4Z" resolve="it" />
                                                     </node>
-                                                    <node concept="3TrcHB" id="18NwZVot1y9" role="2OqNvi">
+                                                    <node concept="3TrcHB" id="3d1xBjLBL4U" role="2OqNvi">
                                                       <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
                                                     </node>
                                                   </node>
-                                                  <node concept="liA8E" id="18NwZVot1ya" role="2OqNvi">
+                                                  <node concept="liA8E" id="3d1xBjLBL4V" role="2OqNvi">
                                                     <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                                    <node concept="2OqwBi" id="18NwZVot1yb" role="37wK5m">
-                                                      <node concept="37vLTw" id="18NwZVot1yc" role="2Oq$k0">
-                                                        <ref role="3cqZAo" node="18NwZVot1yp" resolve="node" />
+                                                    <node concept="2OqwBi" id="3d1xBjLBL4W" role="37wK5m">
+                                                      <node concept="37vLTw" id="3d1xBjLBL4X" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="3d1xBjLBL5a" resolve="node" />
                                                       </node>
-                                                      <node concept="2qgKlT" id="18NwZVot1yd" role="2OqNvi">
+                                                      <node concept="2qgKlT" id="3d1xBjLBL4Y" role="2OqNvi">
                                                         <ref role="37wK5l" to="4oiq:18NwZVolYlY" resolve="getGeneralStepKind" />
                                                       </node>
                                                     </node>
@@ -346,41 +343,41 @@
                                               </node>
                                             </node>
                                           </node>
-                                          <node concept="Rh6nW" id="18NwZVot1ye" role="1bW2Oz">
+                                          <node concept="Rh6nW" id="3d1xBjLBL4Z" role="1bW2Oz">
                                             <property role="TrG5h" value="it" />
-                                            <node concept="2jxLKc" id="18NwZVot1yf" role="1tU5fm" />
+                                            <node concept="2jxLKc" id="3d1xBjLBL50" role="1tU5fm" />
                                           </node>
                                         </node>
                                       </node>
                                     </node>
-                                    <node concept="1uHKPH" id="18NwZVot1yg" role="2OqNvi" />
+                                    <node concept="1uHKPH" id="3d1xBjLBL51" role="2OqNvi" />
                                   </node>
-                                  <node concept="37vLTw" id="18NwZVot1yh" role="37vLTJ">
-                                    <ref role="3cqZAo" node="18NwZVot1xG" resolve="transactionKindStepKind" />
+                                  <node concept="37vLTw" id="3d1xBjLBL52" role="37vLTJ">
+                                    <ref role="3cqZAo" node="3d1xBjLBL4t" resolve="transactionKindStepKind" />
                                   </node>
                                 </node>
                               </node>
-                              <node concept="3clFbF" id="18NwZVot1yi" role="3cqZAp">
-                                <node concept="2OqwBi" id="18NwZVot1yj" role="3clFbG">
-                                  <node concept="2OqwBi" id="18NwZVot1yk" role="2Oq$k0">
-                                    <node concept="37vLTw" id="18NwZVot1yl" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="18NwZVot1yp" resolve="node" />
+                              <node concept="3clFbF" id="3d1xBjLBL53" role="3cqZAp">
+                                <node concept="2OqwBi" id="3d1xBjLBL54" role="3clFbG">
+                                  <node concept="2OqwBi" id="3d1xBjLBL55" role="2Oq$k0">
+                                    <node concept="37vLTw" id="3d1xBjLBL56" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="3d1xBjLBL5a" resolve="node" />
                                     </node>
-                                    <node concept="3TrEf2" id="18NwZVot1ym" role="2OqNvi">
+                                    <node concept="3TrEf2" id="3d1xBjLBL57" role="2OqNvi">
                                       <ref role="3Tt5mk" to="qiqe:18NwZVolVE_" resolve="appliesToStepKind" />
                                     </node>
                                   </node>
-                                  <node concept="2oxUTD" id="18NwZVot1yn" role="2OqNvi">
-                                    <node concept="37vLTw" id="18NwZVot1yo" role="2oxUTC">
-                                      <ref role="3cqZAo" node="18NwZVot1xG" resolve="transactionKindStepKind" />
+                                  <node concept="2oxUTD" id="3d1xBjLBL58" role="2OqNvi">
+                                    <node concept="37vLTw" id="3d1xBjLBL59" role="2oxUTC">
+                                      <ref role="3cqZAo" node="3d1xBjLBL4t" resolve="transactionKindStepKind" />
                                     </node>
                                   </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="Rh6nW" id="18NwZVot1yp" role="1bW2Oz">
+                            <node concept="Rh6nW" id="3d1xBjLBL5a" role="1bW2Oz">
                               <property role="TrG5h" value="node" />
-                              <node concept="2jxLKc" id="18NwZVot1yq" role="1tU5fm" />
+                              <node concept="2jxLKc" id="3d1xBjLBL5b" role="1tU5fm" />
                             </node>
                           </node>
                         </node>
@@ -388,10 +385,10 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2_V_lH" id="18NwZVofgZB" role="1PhJh3">
-                  <ref role="2_V_lI" node="18NwZVosZe4" resolve="CommandHolder" />
+                <node concept="2Clz$F" id="3d1xBjLBL5c" role="aymYO" />
+                <node concept="2_V_lH" id="3d1xBjLBL5d" role="1PhJh3">
+                  <ref role="2_V_lI" node="3d1xBjLBL5c" resolve="CommandHolder" />
                 </node>
-                <node concept="2Clz$F" id="18NwZVosZe4" role="aymYO" />
               </node>
             </model>
           </tab>
@@ -413,79 +410,7 @@
     </search_options>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://WAA/WAA.specifications/ARS Action Rule Specification WAA">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="755">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="312" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5047305753770775587" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/1311537047070735058" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="mps://node://WAA/WAA.specifications/Transations process diagram WAA">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="37" viewPositionY="371">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-37" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Diagram_l8bq6t_a3a">
-                      <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/1311537047070735058" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/1311537047070735058" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -533,7 +458,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1577" />
     <option name="height" value="959" />
@@ -550,10 +475,10 @@
                   <option name="first" value="DclareMPSPlugin.plugin.DclarePreferences_PreferencesComponent" />
                   <params>
                     <option name="on" value="false" />
-                    <option name="maxNrOfChanges" value="0" />
-                    <option name="maxTotalNrOfChanges" value="0" />
-                    <option name="maxNrOfObserd" value="0" />
-                    <option name="maxNrOfObservers" value="0" />
+                    <option name="maxNrOfChanges" value="8" />
+                    <option name="maxTotalNrOfChanges" value="10000" />
+                    <option name="maxNrOfObserd" value="16" />
+                    <option name="maxNrOfObservers" value="64" />
                   </params>
                 </ComponentState>
               </list>
@@ -739,6 +664,11 @@
           <PluginState />
         </value>
       </option>
+      <option name="de.q60.mps.shadowmodels.modelcheck.runtime.plugin.Runtime_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
       <option name="de.q60.mps.shadowmodels.runtime.plugin.Runtime_ProjectPlugin">
         <value>
           <PluginState />
@@ -820,54 +750,15 @@
     </option>
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="1" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystem">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-            <path>
-              <item name="" type="" />
-              <item name="" type="" />
-              <item name="" type="" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -892,7 +783,117 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor) in IdeaFile[file://C:/Users/dulfd00/MPSProjects/demowb/languages/DemoSL/models/editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WAA" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WAA" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4bccd520-d06a-4a5d-b0c1-9cffb6501752(WAA.specifications_test) in IdeaFile[file://C:/Users/dulfd00/MPSProjects/demowb/solutions/WAA/models/specifications_test]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor) in IdeaFile[file://C:/Users/dulfd00/MPSProjects/demowb/languages/ProcessSL/models/editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor) in IdeaFile[file://C:/Users/dulfd00/MPSProjects/demowb/languages/ConstructionSL/models/editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -921,6 +922,25 @@
         </subPane>
       </pane>
       <pane id="Favorites" />
+      <pane id="FileSystem">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+            <path>
+              <item name="" type="" />
+              <item name="" type="" />
+              <item name="" type="" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="CustomProjectView_com.mbeddr.mpsutil.favourites.plugin.plugin.FavouritesProjectView">
         <subPane />
       </pane>
@@ -1204,14 +1224,14 @@
       <item itemvalue="JUnit Tests.ConstructionModelInitiator_Test" />
       <item itemvalue="JUnit Tests.ConstructionModel_Test" />
       <item itemvalue="JUnit Tests.DefaultSoI_Test" />
-      <item itemvalue="JUnit Tests.Tests in 'Tests.TestConstructionSL@tests'" />
       <item itemvalue="JUnit Tests.Tests in 'DemoSL'" />
+      <item itemvalue="JUnit Tests.Tests in 'Tests.TestConstructionSL@tests'" />
       <item itemvalue="MPS.MPS" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit Tests.Tests in 'DemoSL'" />
         <item itemvalue="JUnit Tests.Tests in 'Tests.TestConstructionSL@tests'" />
+        <item itemvalue="JUnit Tests.Tests in 'DemoSL'" />
         <item itemvalue="JUnit Tests.DefaultSoI_Test" />
         <item itemvalue="JUnit Tests.ConstructionModel_Test" />
         <item itemvalue="JUnit Tests.ConstructionModelInitiator_Test" />
@@ -1219,13 +1239,12 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration>C:\Users\dulfd00\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21596244" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.342723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -1242,11 +1261,11 @@
       <window_info anchor="bottom" id="Chart" order="12" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.44944555" side_tool="true" weight="0.329849" />
       <window_info anchor="bottom" id="Classpath Explorer" order="14" />
-      <window_info anchor="bottom" id="Documentation" order="15" sideWeight="0.48372966" weight="0.28803718" />
+      <window_info anchor="bottom" id="Documentation" order="15" sideWeight="0.45472836" weight="0.3067047" />
       <window_info anchor="bottom" id="Usages" order="16" sideWeight="0.45070422" weight="0.4051355" />
       <window_info anchor="bottom" id="Node Explorer" order="17" sideWeight="0.45994994" weight="0.26364693" />
       <window_info anchor="bottom" id="Module Dependencies" order="18" weight="0.329849" />
-      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.47121403" weight="0.36233953" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.47121403" visible="true" weight="0.3566334" />
       <window_info anchor="bottom" id="Generation Tracer" order="20" />
       <window_info anchor="bottom" id="Cell Explorer" order="21" sideWeight="0.4962453" weight="0.329849" />
       <window_info anchor="bottom" id="Messages" order="22" sideWeight="0.42119384" weight="0.19258203" />
@@ -1256,7 +1275,7 @@
       <window_info anchor="bottom" id="RefactoringView" order="26" sideWeight="0.49119374" weight="0.32952926" />
       <window_info anchor="bottom" id="Trace Explorer" order="27" />
       <window_info anchor="bottom" id="mbeddr TODO" order="28" />
-      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.57880616" side_tool="true" weight="0.19258203" />
+      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.54527164" side_tool="true" weight="0.30527818" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="30" weight="0.329849" />
       <window_info anchor="bottom" id="Activation Trace" order="31" weight="0.329849" />
       <window_info anchor="bottom" id="Visualiseer" order="32" />
@@ -1264,6 +1283,7 @@
       <window_info anchor="bottom" id="Shadow Models Traceback" order="34" />
       <window_info anchor="bottom" id="Comment Tags" order="35" />
       <window_info anchor="bottom" id="DClare Messages" order="36" weight="0.329849" />
+      <window_info anchor="bottom" id="Shadow Models" order="37" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24843554" />
@@ -1969,6 +1989,626 @@
         </usage_view>
       </tab>
       <tab>
+        <usage_view>
+          <tree_wrapper>
+            <node_representator />
+            <view_options>
+              <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+            </view_options>
+            <contents>
+              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.MainNodeData" caption="" info="" excluded="false" expanded="true" isresult="false" results_section="false">
+                <role name="main root" />
+              </data>
+              <children>
+                <child>
+                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.SearchedNodesNodeData" caption="Searched nodes" info="" excluded="false" expanded="true" isresult="false" results_section="false">
+                    <role name="searched nodes" />
+                  </data>
+                  <children />
+                </child>
+                <child>
+                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ResultsNodeData" caption="results" info="" excluded="false" expanded="true" isresult="false" results_section="false">
+                    <role name="results" />
+                  </data>
+                  <children>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="COPY" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712862556008">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LOAN" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910725">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="WAA" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="9cab3cf8-d573-4910-8065-fc6a317d2eb4(WAA)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="WAA.specifications" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact model WAA" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710696640369" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Verzoek aanpassing arbeidsduur" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact model WAA&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710696642550">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="MEMBERSHIP" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712860065988">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.testEventType" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Test EventType" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)/837255710704547379" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Object" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Test EventType&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)/837255710704547380">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="PERSON" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712859344221">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="WAA" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="9cab3cf8-d573-4910-8065-fc6a317d2eb4(WAA)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="WAA.specifications" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact model WAA" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710696640369" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Arbeidsduur van de arbeidsovereenkomst" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact model WAA&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697357901">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="MEMBERSHIP FEE" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712865360975">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                  </children>
+                </child>
+              </children>
+            </contents>
+          </tree_wrapper>
+        </usage_view>
+      </tab>
+      <tab>
+        <usage_view>
+          <tree_wrapper>
+            <node_representator />
+            <view_options>
+              <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+            </view_options>
+            <contents>
+              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.MainNodeData" caption="" info="" excluded="false" expanded="true" isresult="false" results_section="false">
+                <role name="main root" />
+              </data>
+              <children>
+                <child>
+                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.SearchedNodesNodeData" caption="Searched nodes" info="" excluded="false" expanded="true" isresult="false" results_section="false">
+                    <role name="searched nodes" />
+                  </data>
+                  <children />
+                </child>
+                <child>
+                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ResultsNodeData" caption="results" info="" excluded="false" expanded="true" isresult="false" results_section="false">
+                    <role name="results" />
+                  </data>
+                  <children>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="COPY" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712862556008">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LOAN" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910725">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="WAA" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="9cab3cf8-d573-4910-8065-fc6a317d2eb4(WAA)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="WAA.specifications" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact model WAA" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710696640369" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Verzoek aanpassing arbeidsduur" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact model WAA&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710696642550">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="MEMBERSHIP" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712860065988">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.testEventType" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Test EventType" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)/837255710704547379" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Object" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Test EventType&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:55e6422f-07d5-43d5-8931-67b19c1f1c5b(DemowB.testEventType)/837255710704547380">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="PERSON" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712859344221">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="WAA" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="9cab3cf8-d573-4910-8065-fc6a317d2eb4(WAA)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="WAA.specifications" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact model WAA" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710696640369" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Arbeidsduur van de arbeidsovereenkomst" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact model WAA&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/837255710697357901">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;usage&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="usage" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemowB.sandbox" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemowB.Library" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="Fact Model Library" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712854910722" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="MEMBERSHIP FEE" info="role: &lt;i&gt;facts&lt;/i&gt;; in: &lt;i&gt;Fact Model Library&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library)/2222079712865360975">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                  </children>
+                </child>
+              </children>
+            </contents>
+          </tree_wrapper>
+        </usage_view>
+      </tab>
+      <tab>
         <result_provider class_name="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.UnionNode">
           <children>
             <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
@@ -1984,7 +2624,7 @@
         <query>
           <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
           <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
-            <node ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/8701802403633621049" title="ArrowHead" />
+            <node ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712856351381" title="TPD" />
           </holder>
         </query>
         <usage_view>
@@ -2020,10 +2660,17 @@
                               </data>
                               <children>
                                 <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="" excluded="false" expanded="false" isresult="true" results_section="false" nodePtr="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/8701802403633621049" isRoot="true">
-                                    <role name="target" />
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="DemoHints" info="" excluded="false" expanded="true" isresult="false" results_section="false" nodePtr="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712856351380" isRoot="true">
+                                    <role name="root" />
                                   </data>
-                                  <children />
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;hints&lt;/i&gt;; in: &lt;i&gt;DemoHints&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="false" nodePtr="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712856351381">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
                                 </child>
                               </children>
                             </child>
@@ -2060,7 +2707,7 @@
                                   </data>
                                   <children>
                                     <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047077675369">
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;contextHints&lt;/i&gt;; in: &lt;i&gt;Link_TPD_Editor&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076396579">
                                         <role name="target" />
                                       </data>
                                       <children />
@@ -2095,7 +2742,147 @@
                                   </data>
                                   <children>
                                     <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047077675369">
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;contextHints&lt;/i&gt;; in: &lt;i&gt;Link_TPD_Editor&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076396579">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="ProcessSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="ProcessSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TransactionKindStepKind_TPD_Editor" info="" excluded="false" expanded="true" isresult="false" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047075060801" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;contextHints&lt;/i&gt;; in: &lt;i&gt;TransactionKindStepKind_TPD_Editor&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047075061480">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="ProcessSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="ProcessSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TransactionKindStepKind_TPD_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047075060801" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;contextHints&lt;/i&gt;; in: &lt;i&gt;TransactionKindStepKind_TPD_Editor&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047075061480">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="ConstructionSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="ConstructionSL.editor" info="" excluded="false" expanded="true" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TransactionKind_TPD_Editor" info="" excluded="false" expanded="true" isresult="false" results_section="true" nodePtr="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592096" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;contextHints&lt;/i&gt;; in: &lt;i&gt;TransactionKind_TPD_Editor&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073593586">
+                                        <role name="target" />
+                                      </data>
+                                      <children />
+                                    </child>
+                                  </children>
+                                </child>
+                              </children>
+                            </child>
+                          </children>
+                        </child>
+                      </children>
+                    </child>
+                    <child>
+                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
+                        <role name="category:Category" />
+                      </data>
+                      <children>
+                        <child>
+                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="ConstructionSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)">
+                            <role name="module" />
+                          </data>
+                          <children>
+                            <child>
+                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="ConstructionSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
+                                <role name="model" />
+                                <model uid="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)" />
+                              </data>
+                              <children>
+                                <child>
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TransactionKind_TPD_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592096" isRoot="true">
+                                    <role name="root" />
+                                  </data>
+                                  <children>
+                                    <child>
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;contextHints&lt;/i&gt;; in: &lt;i&gt;TransactionKind_TPD_Editor&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073593586">
                                         <role name="target" />
                                       </data>
                                       <children />
@@ -2125,12 +2912,12 @@
                               </data>
                               <children>
                                 <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ObjectFactDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097772835613" isRoot="true">
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TransactionProcessDiagram_Editor" info="" excluded="false" expanded="true" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/1311537047069299584" isRoot="true">
                                     <role name="root" />
                                   </data>
                                   <children>
                                     <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097776405403">
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;hints&lt;/i&gt;; in: &lt;i&gt;ExplicitHintsSpecification&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/1311537047073679521">
                                         <role name="target" />
                                       </data>
                                       <children />
@@ -2160,222 +2947,12 @@
                               </data>
                               <children>
                                 <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ObjectFactDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097772835613" isRoot="true">
+                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TransactionProcessDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/1311537047069299584" isRoot="true">
                                     <role name="root" />
                                   </data>
                                   <children>
                                     <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097776405403">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemoSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemoSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ObjectFactDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097772835613" isRoot="true">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097776405455">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemoSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemoSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ObjectFactDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097772835613" isRoot="true">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/5542045097776405455">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemoSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemoSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ProcesStructureDiagram_Editor" info="" excluded="false" expanded="true" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3316760564126844136" isRoot="true">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3444719891740623787">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemoSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemoSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ProcesStructureDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3316760564126844136" isRoot="true">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3444719891740623787">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemoSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemoSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ProcesStructureDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3316760564126844136" isRoot="true">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/7550186569847270098">
-                                        <role name="target" />
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="DemoSL" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="DemoSL.editor" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ProcesStructureDiagram_Editor" info="" excluded="false" expanded="false" isresult="false" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3316760564126844136" isRoot="true">
-                                    <role name="root" />
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ArrowHead" info="role: &lt;i&gt;shape&lt;/i&gt;; in: &lt;i&gt;ConnectionEndpoint&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/7550186569847270098">
+                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="TPD" info="role: &lt;i&gt;hints&lt;/i&gt;; in: &lt;i&gt;ExplicitHintsSpecification&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true" nodePtr="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/1311537047073679521">
                                         <role name="target" />
                                       </data>
                                       <children />
@@ -2709,48 +3286,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </inspectorMemento>
-          <node />
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://DemoSL/DemoSL.structure/&lt;no name&gt;[ConceptDeclaration]" />
     <entry file="mps://node://DemoSL/DemoSL.structure/OCD">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -2929,40 +3465,6 @@
             </enabledHints>
           </inspectorMemento>
           <node node_ref="r:f3f9f666-f463-4dc0-bd8d-a9e7e33b8917(ActionSL.structure)/5047305753771525530" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/OFD Verzoek aanpassing arbeidsduur">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="25" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="255" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5542045097780839601" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5542045097780839601" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -3254,59 +3756,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://GeneralSL/GeneralSL.editor/DemoHints">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-59" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_zcofbb_a">
-                  <node node_reference="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712857966566" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712857966566" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-15" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_zcofbb_0">
-                  <node node_reference="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712857966566" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://WAA/WAA.specifications/Simulation WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="597">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="15" />
+                <property name="caretX" value="147" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_e23mmq_d0">
+                <cellInfo cellId="property_name">
                   <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/3444719891741115729" />
                 </cellInfo>
               </stackElement>
@@ -3316,7 +3776,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/3444719891741115729" saveSessionState="false" viewPositionX="0" viewPositionY="-15">
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/1311537047070735058" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -3327,62 +3787,6 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/TransactionKind">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="163" viewPositionY="16">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionStart" value="0" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="427" />
-                <property name="selectionEnd" value="7" />
-                <property name="caretXRelative" value="77" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073597826" />
-                </cellInfo>
-              </stackElement>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-350" />
-                <property name="sideSelectDirection" value="RIGHT" />
-                <cellInfo cellId="Collection_7br2q0_a">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073597826" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047076253917" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073599201" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073597826" saveSessionState="false" viewPositionX="0" viewPositionY="-15">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592096" />
         </state>
       </provider>
     </entry>
@@ -3547,47 +3951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://ProcessSL/ProcessSL.structure/Link">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="102">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="92" />
-                <property name="caretXRelative" value="33" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
-                  <node node_reference="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076401177" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076401177" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/7550186569877493213" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076394565" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://DemoSL/DemoSL.structure/ProcesStructureDiagram">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -3650,6 +4013,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://WAA/WAA.specifications/ARS Action Rule Specification WAA">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5542045097780839601" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://WAA/WAA.specifications/&lt;no name&gt;[TransactionProcessDiagram]" />
+    <entry file="mps://node://WAA/WAA.specifications/OFD Verzoek aanpassing arbeidsduur">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="257" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5542045097780839601" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5542045097780839601" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://DemoSL/DemoSL.structure/TransactionProcessDiagram">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -3657,15 +4079,25 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="97" />
-                <property name="caretXRelative" value="11" />
+                <property name="caretX" value="389" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
-                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/1311537047069326463" />
+                <cellInfo cellId="property_text">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3693381006248585232" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorMarkers />
+            <errorMarkers>
+              <errorMarker text="" modelText="T" propertyCell="true" cellId="property_text">
+                <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3693381006248578602" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_text">
+                <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3693381006248584109" />
+              </errorMarker>
+              <errorMarker text="" propertyCell="true" cellId="property_text">
+                <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3693381006248585232" />
+              </errorMarker>
+            </errorMarkers>
             <transactionalProperties />
             <foldable>
               <collapsedElement isCollapsed="false">
@@ -3684,19 +4116,19 @@
                 </cellIdElement>
               </collapsedElement>
             </foldable>
-            <restoreAlways />
+            <restoreAlways>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/1311537047073639078" />
+                </cellIdElement>
+              </collapsedElement>
+            </restoreAlways>
           </memento>
-          <inspectorMemento currentlyEditedNode="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076401177" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:2dbda8d7-7b80-491f-977b-e691099a6b2c(DemoSL.editor)/3693381006248585232" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_trik0f_b0">
-                  <node node_reference="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/7550186569877493213" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
+            <foldable />
             <restoreAlways />
             <enabledHints>
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
@@ -3709,16 +4141,16 @@
     </entry>
     <entry file="mps://node://ProcessSL/ProcessSL.structure/TransactionKindStepKind">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="229" />
+                <property name="caretX" value="251" />
                 <property name="caretXRelative" value="11" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a">
-                  <node node_reference="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047075064103" />
+                <cellInfo cellId="property_text">
+                  <node node_reference="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/3693381006248585797" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -3727,7 +4159,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047075064103" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/3693381006248585797" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -3742,50 +4174,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://WAA/WAA.specifications/ARS Action Rule Specification WAA">
+    <entry file="mps://node://WAA/WAA.specifications/Transations process diagram WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="755">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="312" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="554" />
+                <property name="caretXRelative" value="231" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name">
-                  <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5047305753770775587" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/1311537047070735058" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://WAA/WAA.specifications/&lt;no name&gt;[TransactionProcessDiagram]">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="37" viewPositionY="371">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-37" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Diagram_l8bq6t_a3a">
                   <node node_reference="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/1311537047070735058" />
                 </cellInfo>
               </stackElement>
@@ -3806,6 +4205,124 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ProcessSL/ProcessSL.structure/Link">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="64">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="796" />
+                <property name="caretXRelative" value="33" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_value">
+                  <node node_reference="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/7550186569847270100" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/7550186569847270100" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:eedf980d-9493-4c0f-a26e-4fc8b8c41841(ProcessSL.editor)/1311537047076394565" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://GeneralSL/GeneralSL.editor/DemoHints">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="114" />
+                <property name="caretXRelative" value="11" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)/2222079712856351381" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592098" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://ConstructionSL/ConstructionSL.structure/TransactionKind">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-59" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_5xszyv_a">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592098" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers>
+              <errorMarker text="" propertyCell="true" cellId="property_text">
+                <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/3693381006248590801" />
+              </errorMarker>
+            </errorMarkers>
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047076253917" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_trik0f_b0">
+                  <node node_reference="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073599201" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592098" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:45cec435-45c6-44f5-9554-e23b85b184e4(ConstructionSL.editor)/1311537047073592096" />
         </state>
       </provider>
     </entry>
