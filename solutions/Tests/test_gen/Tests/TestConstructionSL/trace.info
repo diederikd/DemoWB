@@ -68,29 +68,29 @@
   <root nodeRef="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)/4919393501061417332">
     <file name="ConstructionModelExecutor_Test.java">
       <node id="4919393501061417332" at="26,43,27,25" concept="6" />
-      <node id="4919393501064260734" at="31,91,32,113" concept="1" />
-      <node id="4919393501064260736" at="35,91,36,113" concept="1" />
+      <node id="4919393501064260734" at="31,93,32,115" concept="1" />
+      <node id="4919393501064260736" at="35,93,36,115" concept="1" />
       <node id="4919393501061417332" at="41,52,42,19" concept="6" />
-      <node id="4919393501064260734" at="46,93,47,242" concept="4" />
+      <node id="4919393501064260734" at="46,95,47,242" concept="4" />
       <node id="4919393501064260734" at="47,242,48,123" concept="1" />
-      <node id="4919393501064260736" at="50,93,51,242" concept="4" />
+      <node id="4919393501064260736" at="50,95,51,242" concept="4" />
       <node id="4919393501064260736" at="51,242,52,123" concept="1" />
       <node id="4919393501061417332" at="21,0,23,0" concept="5" trace="ourParamCache" />
       <node id="4919393501061417332" at="23,0,25,0" concept="2" trace="myWithCommandRule" />
       <node id="4919393501061417332" at="26,0,29,0" concept="0" trace="ConstructionModelExecutor_Test#()V" />
       <node id="4919393501061417332" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
-      <node id="4919393501064260734" at="30,0,34,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260734#()V" />
-      <node id="4919393501064260736" at="34,0,38,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260736#()V" />
-      <node id="4919393501064260734" at="46,0,50,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260734#()V" />
-      <node id="4919393501064260736" at="50,0,54,0" concept="3" trace="test_NodeExecutorTransactionkindCheck4919393501064260736#()V" />
+      <node id="4919393501064260734" at="30,0,34,0" concept="3" trace="test_NodeExecutorOfTransactionkindCheck4919393501064260734#()V" />
+      <node id="4919393501064260736" at="34,0,38,0" concept="3" trace="test_NodeExecutorOfTransactionkindCheck4919393501064260736#()V" />
+      <node id="4919393501064260734" at="46,0,50,0" concept="3" trace="test_NodeExecutorOfTransactionkindCheck4919393501064260734#()V" />
+      <node id="4919393501064260736" at="50,0,54,0" concept="3" trace="test_NodeExecutorOfTransactionkindCheck4919393501064260736#()V" />
       <scope id="4919393501061417332" at="26,43,27,25" />
-      <scope id="4919393501064260734" at="31,91,32,113" />
-      <scope id="4919393501064260736" at="35,91,36,113" />
+      <scope id="4919393501064260734" at="31,93,32,115" />
+      <scope id="4919393501064260736" at="35,93,36,115" />
       <scope id="4919393501061417332" at="41,52,42,19" />
-      <scope id="4919393501064260734" at="46,93,48,123">
+      <scope id="4919393501064260734" at="46,95,48,123">
         <var name="operation" id="4919393501064260734" />
       </scope>
-      <scope id="4919393501064260736" at="50,93,52,123">
+      <scope id="4919393501064260736" at="50,95,52,123">
         <var name="operation" id="4919393501064260736" />
       </scope>
       <scope id="4919393501061417332" at="26,0,29,0" />

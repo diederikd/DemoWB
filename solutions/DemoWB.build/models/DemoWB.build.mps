@@ -684,6 +684,11 @@
               <ref role="3bR37D" node="2AEzmscAXNA" resolve="ConstructionSL" />
             </node>
           </node>
+          <node concept="1SiIV0" id="6ihpGwUpnWt" role="3bR37C">
+            <node concept="3bR9La" id="6ihpGwUpnWu" role="1SiIV1">
+              <ref role="3bR37D" node="2AEzmscAXNS" resolve="ActionSL" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="2AEzmscAZ1p" role="3bR31x">
           <node concept="3LXTmp" id="2AEzmscAZ1q" role="3rtmxm">
@@ -783,6 +788,16 @@
         <node concept="1SiIV0" id="5dW$Pa1vY7v" role="3bR37C">
           <node concept="3bR9La" id="5dW$Pa1vY7w" role="1SiIV1">
             <ref role="3bR37D" node="2AEzmscAXNS" resolve="ActionSL" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6ihpGwUpnWv" role="3bR37C">
+          <node concept="3bR9La" id="6ihpGwUpnWw" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4frYVBf39$o" resolve="de.itemis.mps.editor.diagram.styles" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6ihpGwUpnWx" role="3bR37C">
+          <node concept="3bR9La" id="6ihpGwUpnWy" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
       </node>
@@ -981,6 +996,11 @@
         <node concept="1SiIV0" id="2AEzmscAZ_R" role="3bR37C">
           <node concept="3bR9La" id="2AEzmscAZ_S" role="1SiIV1">
             <ref role="3bR37D" node="2AEzmscAXNA" resolve="ConstructionSL" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6ihpGwUpnWz" role="3bR37C">
+          <node concept="3bR9La" id="6ihpGwUpnW$" role="1SiIV1">
+            <ref role="3bR37D" node="2AEzmscAXNS" resolve="ActionSL" />
           </node>
         </node>
       </node>
