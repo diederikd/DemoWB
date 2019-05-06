@@ -12,12 +12,13 @@
   <imports>
     <import index="wtx7" ref="r:cb95139f-02a8-4c9d-8f9d-c70be40f0272(GeneralSL.editor)" />
     <import index="ar0b" ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="ajas" ref="r:f1a25cd6-a3b6-4f11-9ab9-8603c9aa5ff0(FactSL.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="cbuy" ref="r:5188a2d6-1793-4c1f-ab4d-ef2646a67ee5(FactSL.behavior)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="d13l" ref="r:71b47696-1717-4fd1-946c-6af626862260(GeneralSL.structure)" implicit="true" />
   </imports>
   <registry>
@@ -51,6 +52,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
+      <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
+        <reference id="6718020819487620874" name="menu" index="A1WHt" />
+      </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1638911550608571617" name="jetbrains.mps.lang.editor.structure.TransformationMenu_Default" flags="ng" index="IW6AY" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
@@ -60,6 +64,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
@@ -98,7 +103,9 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -3154,6 +3161,7 @@
         <property role="1QpmdY" value="true" />
         <node concept="3F0ifn" id="4WvouDnNe0B" role="1QoS34">
           <property role="3F0ifm" value="waar" />
+          <ref role="1ERwB7" to="tpen:4C5gHMoLv7$" resolve="DeleteBooleanConstantWithUnmatchedParen" />
         </node>
         <node concept="pkWqt" id="4WvouDnNdTg" role="3e4ffs">
           <node concept="3clFbS" id="4WvouDnNdTi" role="2VODD2">
@@ -3169,6 +3177,7 @@
         </node>
         <node concept="3F0ifn" id="4WvouDnNe0G" role="1QoVPY">
           <property role="3F0ifm" value="onwaar" />
+          <ref role="1ERwB7" to="tpen:4C5gHMoLv7$" resolve="DeleteBooleanConstantWithUnmatchedParen" />
         </node>
       </node>
       <node concept="l2Vlx" id="4WvouDnQ3Lt" role="2iSdaV" />
@@ -3177,38 +3186,57 @@
   <node concept="24kQdi" id="4WvouDnSOHM">
     <property role="3GE5qa" value="DemoExpression" />
     <ref role="1XX52x" to="tpee:fzclF8g" resolve="EqualsExpression" />
-    <node concept="3EZMnI" id="4WvouDnSOHO" role="2wV5jI">
-      <node concept="3F1sOY" id="4WvouDnSOHV" role="3EZMnx">
-        <ref role="1NtTu8" to="tpee:fJuHU4s" resolve="leftExpression" />
-        <node concept="2w$q5c" id="4WvouDnSOIe" role="3xwHhi">
-          <node concept="2aJ2om" id="4WvouDnSOIf" role="2w$qW5">
-            <ref role="2$4xQ3" to="wtx7:4WvouDnL3Ny" resolve="DemoExpression" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="4WvouDnY9$N" role="3EZMnx">
-        <property role="3F0ifm" value="is" />
-      </node>
-      <node concept="3F1sOY" id="4WvouDnY9$O" role="3EZMnx">
-        <ref role="1NtTu8" to="tpee:fJuHU4r" resolve="rightExpression" />
-      </node>
-      <node concept="l2Vlx" id="4WvouDnSOHR" role="2iSdaV" />
-    </node>
     <node concept="2aJ2om" id="4WvouDnSOIi" role="CpUAK">
       <ref role="2$4xQ3" to="wtx7:4WvouDnL3Ny" resolve="DemoExpression" />
+    </node>
+    <node concept="3EZMnI" id="4LOVS_qHlnH" role="2wV5jI">
+      <node concept="3F1sOY" id="4LOVS_qHlnI" role="3EZMnx">
+        <ref role="1ERwB7" to="tpen:gAp41ZG" resolve="BinaryOperation_LeftArgument_Actions" />
+        <ref role="1NtTu8" to="tpee:fJuHU4s" resolve="leftExpression" />
+      </node>
+      <node concept="3F0ifn" id="4LOVS_qHlnJ" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+        <ref role="1ERwB7" to="tpen:gAom6wT" resolve="BinaryOperation_Symbol_Actions" />
+        <node concept="VPM3Z" id="4LOVS_qHlnK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="4LOVS_qHlnL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="A1WHu" id="4LOVS_qHlnM" role="3vIgyS">
+          <ref role="A1WHt" to="tpen:7s9946uJSpU" resolve="BinaryOperation_Alias_TransformationMenu" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="4LOVS_qHlnN" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4r" resolve="rightExpression" />
+        <ref role="1ERwB7" to="tpen:gAp5u0y" resolve="BinaryOperation_RightArgument_Actions" />
+      </node>
+      <node concept="l2Vlx" id="4LOVS_qHlnO" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="4WvouDnWFwo">
     <property role="3GE5qa" value="DemoExpression" />
     <ref role="1XX52x" to="tpee:fBy3z0Z" resolve="NotEqualsExpression" />
     <node concept="3EZMnI" id="4WvouDnWFwq" role="2wV5jI">
-      <node concept="3F1sOY" id="4WvouDnXs7b" role="3EZMnx">
+      <node concept="3F1sOY" id="gXYOYXH" role="3EZMnx">
+        <ref role="1ERwB7" to="tpen:gAp41ZG" resolve="BinaryOperation_LeftArgument_Actions" />
         <ref role="1NtTu8" to="tpee:fJuHU4s" resolve="leftExpression" />
       </node>
-      <node concept="3F0ifn" id="4WvouDnYRBe" role="3EZMnx">
+      <node concept="3F0ifn" id="4LOVS_qF5LA" role="3EZMnx">
         <property role="3F0ifm" value="is niet" />
+        <ref role="1ERwB7" to="tpen:gAom6wT" resolve="BinaryOperation_Symbol_Actions" />
+        <node concept="VPM3Z" id="4LOVS_qF5LS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VPxyj" id="4LOVS_qF5LT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="A1WHu" id="4LOVS_qF5LQ" role="3vIgyS">
+          <ref role="A1WHt" to="tpen:7s9946uJSpU" resolve="BinaryOperation_Alias_TransformationMenu" />
+        </node>
       </node>
-      <node concept="3F1sOY" id="4WvouDnYRBm" role="3EZMnx">
+      <node concept="3F1sOY" id="gXYOYXL" role="3EZMnx">
+        <ref role="1ERwB7" to="tpen:gAp5u0y" resolve="BinaryOperation_RightArgument_Actions" />
         <ref role="1NtTu8" to="tpee:fJuHU4r" resolve="rightExpression" />
       </node>
       <node concept="l2Vlx" id="4WvouDnWFwt" role="2iSdaV" />
@@ -3220,11 +3248,14 @@
   <node concept="24kQdi" id="4WvouDnYRv2">
     <property role="3GE5qa" value="DemoExpression" />
     <ref role="1XX52x" to="tpee:f_0Nm5B" resolve="NullLiteral" />
-    <node concept="3EZMnI" id="4WvouDnYRv4" role="2wV5jI">
-      <node concept="3F0ifn" id="4WvouDnYRvb" role="3EZMnx">
-        <property role="3F0ifm" value="leeg" />
+    <node concept="3F0ifn" id="4WvouDnYRvb" role="2wV5jI">
+      <property role="3F0ifm" value="leeg" />
+      <node concept="VPM3Z" id="hEU$Pek" role="3F10Kt">
+        <property role="VOm3f" value="true" />
       </node>
-      <node concept="l2Vlx" id="4WvouDnYRv7" role="2iSdaV" />
+      <node concept="VPxyj" id="hEZKQ$o" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
     <node concept="2aJ2om" id="4WvouDnYRve" role="CpUAK">
       <ref role="2$4xQ3" to="wtx7:4WvouDnL3Ny" resolve="DemoExpression" />

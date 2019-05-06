@@ -56,6 +56,8 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)</dependency>
     <dependency reexport="false">aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:aa59ea5e-1883-437f-95c0-4dc082aa848c:GeneralSL" version="0" />

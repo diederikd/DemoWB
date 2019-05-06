@@ -10471,10 +10471,10 @@
       </node>
       <node concept="omW1N" id="5VhmAr8op0v" role="onuko">
         <node concept="2mCRVD" id="5VhmAr8t7Ua" role="oqW7u">
-          <property role="2mCRVQ" value="de datum indiensttreding van arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling ligt ten minste de samentelling volgens werknemer van aanpassing van de arbeidsduur voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
+          <property role="2mCRVQ" value="de datum indiensttreding van arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling ligt ten minste de samentelling volgens werknemer van aanpassing van de arbeidsduur voor de beoogde ingangsdatum van aanpassing van de arbeidsduur" />
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7Up" role="oqW7u">
-          <property role="2mCRVQ" value="de datum indienen verzoek van aanpassing van de arbeidsduur ligt ten minste 4 maanden voor de beoogde ingangsdatum van de aanpassing van aanpassing van de arbeidsduur" />
+          <property role="2mCRVQ" value="de datum indienen verzoek van aanpassing van de arbeidsduur ligt ten minste 4 maanden voor de beoogde ingangsdatum van aanpassing van de arbeidsduur" />
         </node>
         <node concept="oyk6h" id="4WvouDo15ZK" role="oqW7u">
           <node concept="3y3z36" id="4WvouDo160m" role="oyk6m">
@@ -10485,11 +10485,11 @@
           </node>
         </node>
         <node concept="oyk6h" id="4WvouDnUg2n" role="oqW7u">
-          <node concept="3y3z36" id="4WvouDnYRuD" role="oyk6m">
-            <node concept="10Nm6u" id="4WvouDnYRuR" role="3uHU7w" />
+          <node concept="3y3z36" id="4LOVS_qL$GU" role="oyk6m">
             <node concept="oCkB4" id="4WvouDnYRuu" role="3uHU7B">
               <ref role="oCkB5" node="IuxU86jqZv" resolve="gewenste spreiding" />
             </node>
+            <node concept="10Nm6u" id="4WvouDnYRuR" role="3uHU7w" />
           </node>
         </node>
         <node concept="oyk6h" id="4WvouDnJsxy" role="oqW7u">
@@ -10511,7 +10511,7 @@
           </node>
         </node>
         <node concept="2mCRVD" id="5VhmAr8t7Xx" role="oqW7u">
-          <property role="2mCRVQ" value="de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van de aanpassing van aanpassing van de arbeidsduur" />
+          <property role="2mCRVQ" value="de som van ( het verschil tussen de aanvangstijd periode van werkperiode en de eindtijd periode van werkperiode ) van alle perioden van spreidingperioden van de gewenste spreiding van aanpassing van de arbeidsduur is gelijk aan de omvang van aanpassing van de arbeidsduur" />
         </node>
         <node concept="1FbClr" id="1S2F7pX5DtQ" role="1FbCz9">
           <ref role="1FbCNZ" node="pMarvI_0aB" resolve="Werknemer" />
