@@ -3,6 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/AWSStateMachine/AWSStateMachine.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/AWSStateMachine.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ActionSL/ActionSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" folder="" />
