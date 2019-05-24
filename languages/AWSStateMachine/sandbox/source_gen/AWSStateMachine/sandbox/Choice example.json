@@ -1,0 +1,33 @@
+{
+  "Comment":"",
+  "StartAt":"Choice example",
+  "States":{
+    "Choice example":{
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$.truthvalue",
+          "BooleanEquals":false,
+          "Next":"truthState"
+        },
+        {
+          "Variable":"$.truthvalue",
+          "StringEquals":10,
+          "Next":"falseState"
+        }
+      ]
+    },
+    "truthState":{
+      "Type":"Pass",
+      "Next":"End State"
+    },
+    "falseState":{
+      "Type":"Pass",
+      "Next":"End State"
+    },
+    "End State":{
+      "Type":"Pass",
+      "End":true
+    }
+  }
+}
