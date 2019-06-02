@@ -955,6 +955,75 @@
         </DEMO:Then>
       </DEMO:Response>
     </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="b95e6c5d-d616-49d0-9589-7a6122d7217f">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>61196f70-ca7a-4e2d-b430-1bd4dcfeb851</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>rq</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="4ca01391-90e5-4ddf-bc88-fe61e57a3103">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>6a193c92-0a08-4f88-aa68-7718ffba2f20</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>ac</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
+    <DEMO:ActionRuleType Id="a385c308-bc1b-4dfa-adaa-4d51e9582f8a">
+      <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
+      <DEMO:When>
+        <DEMO:TransactionProcessStepKind>b2d5a132-1bfe-49a0-8a4f-69404152f813</DEMO:TransactionProcessStepKind>
+      </DEMO:When>
+      <DEMO:Assess></DEMO:Assess>
+      <DEMO:Response>
+        <DEMO:Condition>
+          <DEMO:Left>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Left>
+          <DEMO:Compare>&gt;</DEMO:Compare>
+          <DEMO:Right>
+            <DEMO:Value>10</DEMO:Value>
+          </DEMO:Right>
+        </DEMO:Condition>
+        <DEMO:Then>
+          <DEMO:Action>
+            <DEMO:Text>st</DEMO:Text>
+          </DEMO:Action>
+        </DEMO:Then>
+      </DEMO:Response>
+    </DEMO:ActionRuleType>
     <DEMO:ActionRuleType Id="0e9ad428-d5cb-4989-84ea-35d47c817e0a">
       <DEMO:Name>&lt;actionrule&gt;</DEMO:Name>
       <DEMO:When>
