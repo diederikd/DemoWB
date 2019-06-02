@@ -18,41 +18,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/AWSStateMachine.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/AWSStateMachine.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/ChoiceRule_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/ChoiceRule_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/ChoiceRule_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/ChoiceRule_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/generator/source_gen.caches/AWSStateMachine/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/generator/source_gen.caches/AWSStateMachine/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/models/editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/models/AWSStateMachine.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/models/AWSStateMachine.sandbox.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/source_gen.caches/AWSStateMachine/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/source_gen.caches/AWSStateMachine/sandbox/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/source_gen/AWSStateMachine/sandbox/Choice example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/source_gen/AWSStateMachine/sandbox/Parallel state example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/source_gen/AWSStateMachine/sandbox/Pass states.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/source_gen/AWSStateMachine/sandbox/Simple state machine.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen.caches/AWSStateMachine/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen.caches/AWSStateMachine/editor/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen.caches/AWSStateMachine/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen.caches/AWSStateMachine/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen/AWSStateMachine/editor/ChoiceRule_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen/AWSStateMachine/editor/ChoiceRule_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen/AWSStateMachine/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen/AWSStateMachine/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/models/behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/models/behavior.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ActionSL/models/typesystem.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ActionSL/models/typesystem.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/classes_gen/DemoSL/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/classes_gen/DemoSL/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/classes_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/classes_gen/main/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen.caches/DemoSL/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen.caches/DemoSL/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen.caches/main/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen.caches/main/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen.caches/main/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen.caches/main/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/DemoSL/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/DemoSL/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/DemoSL/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/DemoSL/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/main/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/main/QueriesGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/main/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/source_gen/main/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/generator/template/main@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/generator/template/main@generator.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/DemoSL/models/structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/DemoSL/models/structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/ProcessSL/models/behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ProcessSL/models/behavior.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/models/specifications.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications/generated" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen.caches/WAA/specifications/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/State_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/classes_gen/AWSStateMachine/editor/State_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen/AWSStateMachine/editor/State_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/AWSStateMachine/source_gen/AWSStateMachine/editor/State_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/ProcessSL/models/typesystem.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/ProcessSL/models/typesystem.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/WAA/classes_gen/WAA/specifications/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/classes_gen/WAA/specifications/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen/WAA/specifications/Test_ExportToXML" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen/WAA/specifications/Test_ExportToXML" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen/WAA/specifications/map_DemoModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen/WAA/specifications/map_DemoModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solutions/WAA/source_gen/WAA/specifications/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/solutions/WAA/source_gen/WAA/specifications/trace.info" afterDir="false" />
     </list>
     <ignored path="languages/GeneralSL/classes_gen/" />
     <ignored path="languages/GeneralSL/source_gen.caches/" />
@@ -2604,89 +2576,7 @@
     </search_options>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://DemoSL/DemoSL.structure/GenerateToAws">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="256" />
-                    <property name="caretXRelative" value="128" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ReadOnlyModelAccessor_nnob7w_b0">
-                      <node node_reference="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707284917246" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="previewWAA.specifications@16_15/WAA.specifications.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1377" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://DemoSL/DemoSL.structure/ProcesModel">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="303" />
-                    <property name="caretXRelative" value="72" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/3316760564121910689" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints>
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-                </enabledHints>
-              </inspectorMemento>
-              <node node_ref="r:653333d6-8f0c-4abd-b1f1-16ec465e41bc(DemoSL.structure)/3316760564121910688" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -3041,7 +2931,11 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3051,7 +2945,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
+              <option name="myItemId" value="0b35f122-f607-4cdd-ad6c-56cb3f6ffc03" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AWSStateMachine" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3079,25 +2977,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DEMO" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:aebf2864-9c2c-484e-9abf-dfc94bfe3b27(DEMO.plugin) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/DEMO/models/plugin.mps]" />
+              <option name="myItemId" value="0b35f122-f607-4cdd-ad6c-56cb3f6ffc03" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3108,6 +2988,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WAA" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3135,31 +3029,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="0b35f122-f607-4cdd-ad6c-56cb3f6ffc03" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AWSStateMachine" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:71a14598-8ccc-45ba-8c4d-ae83bfb547d6(AWSStateMachine.HellloWorld) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/AWSStateMachine/sandbox/models/AWSStateMachine.HellloWorld.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0b35f122-f607-4cdd-ad6c-56cb3f6ffc03" />
+              <option name="myItemId" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3183,11 +3053,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="9cab3cf8-d573-4910-8065-fc6a317d2eb4" />
+              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WAA" />
+              <option name="myItemId" value="DEMO" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3204,6 +3074,10 @@
               <option name="myItemId" value="DEMO" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:aebf2864-9c2c-484e-9abf-dfc94bfe3b27(DEMO.plugin) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/DEMO/models/plugin.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3216,6 +3090,22 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AWSStateMachine" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:71a14598-8ccc-45ba-8c4d-ae83bfb547d6(AWSStateMachine.HellloWorld) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/AWSStateMachine/sandbox/models/AWSStateMachine.HellloWorld.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3571,9 +3461,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3202934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3202934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -3594,17 +3483,17 @@
       <window_info anchor="bottom" id="Usages" order="16" sideWeight="0.45009786" weight="0.40418118" />
       <window_info anchor="bottom" id="Node Explorer" order="17" sideWeight="0.45994994" weight="0.26364693" />
       <window_info anchor="bottom" id="Module Dependencies" order="18" weight="0.329849" />
-      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.45721272" weight="0.35191637" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.45660147" visible="true" weight="0.35191637" />
       <window_info anchor="bottom" id="Generation Tracer" order="20" />
       <window_info anchor="bottom" id="Cell Explorer" order="21" sideWeight="0.4962453" weight="0.329849" />
-      <window_info anchor="bottom" id="Messages" order="22" sideWeight="0.49266502" visible="true" weight="0.31126598" />
+      <window_info anchor="bottom" id="Messages" order="22" sideWeight="0.49266502" weight="0.31126598" />
       <window_info anchor="bottom" id="Typechecker State" order="23" />
       <window_info anchor="bottom" id="Wetten.nl" order="24" />
       <window_info anchor="bottom" id="Console" order="25" sideWeight="0.47879973" weight="0.32752612" />
       <window_info anchor="bottom" id="RefactoringView" order="26" sideWeight="0.49119374" weight="0.32952926" />
       <window_info anchor="bottom" id="Trace Explorer" order="27" />
       <window_info anchor="bottom" id="mbeddr TODO" order="28" />
-      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.50733495" side_tool="true" visible="true" weight="0.31126598" />
+      <window_info anchor="bottom" id="Inspector" order="29" sideWeight="0.54339856" side_tool="true" visible="true" weight="0.35191637" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="30" weight="0.329849" />
       <window_info anchor="bottom" id="Activation Trace" order="31" weight="0.329849" />
       <window_info anchor="bottom" id="Visualiseer" order="32" />
@@ -9324,7 +9213,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refactored start and end event" />
     <MESSAGE value="Autonumbering transactionkinds" />
     <MESSAGE value="Refactoring start and end event in diagram" />
     <MESSAGE value="Added first start for formal expressions in action rules." />
@@ -9349,7 +9237,8 @@
     <MESSAGE value="Expressions extended" />
     <MESSAGE value="Update AWS language" />
     <MESSAGE value="Generator sesttings adjusted" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generator sesttings adjusted" />
+    <MESSAGE value="TransactionKind -&gt; Statemachine finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="TransactionKind -&gt; Statemachine finished" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/languages/DemoSL/generator/source_gen/main/QueriesGenerated.java">
@@ -10450,41 +10339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://DemoSL/DemoSL.structure/GenerateToAws">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="256" />
-                <property name="caretXRelative" value="128" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_nnob7w_b0">
-                  <node node_reference="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints>
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
-              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
-            </enabledHints>
-          </inspectorMemento>
-          <node node_ref="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707284917246" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://WAA/WAA.specifications/Proces model WAA">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
@@ -10563,6 +10417,41 @@
               <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
             </enabledHints>
           </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://DemoSL/DemoSL.structure/GenerateToAws">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="256" />
+                <property name="caretXRelative" value="128" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_nnob7w_b0">
+                  <node node_reference="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707286481328" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:8870d790-e943-4fee-9870-934ab0293151(main@generator)/2236843707284917246" />
         </state>
       </provider>
     </entry>
