@@ -8,8 +8,8 @@
   <imports />
   <registry>
     <language id="ad34076b-b44b-4b8e-9aa6-566fa22fe764" name="AWSStateMachine">
-      <concept id="40305210172459971" name="AWSStateMachine.structure.IntegerValue" flags="ng" index="6oBEz">
-        <property id="40305210172459972" name="value" index="6oBE$" />
+      <concept id="40305210172459959" name="AWSStateMachine.structure.StringValue" flags="ng" index="6oBFn">
+        <property id="40305210172459960" name="value" index="6oBFo" />
       </concept>
       <concept id="40305210172459965" name="AWSStateMachine.structure.BooleanValue" flags="ng" index="6oBFt" />
       <concept id="5509291617394397051" name="AWSStateMachine.structure.Variable" flags="ng" index="mC63M" />
@@ -49,7 +49,7 @@
   </registry>
   <node concept="mG$Em" id="4LOVS_qO$qL">
     <property role="mG$ED" value="state machine comment" />
-    <property role="TrG5h" value="Pass states" />
+    <property role="TrG5h" value="PassStates" />
     <ref role="mJbgN" node="4LOVS_qO$qM" resolve="State1" />
     <node concept="mG$EG" id="4LOVS_qO$qM" role="mG$EZ">
       <property role="TrG5h" value="State1" />
@@ -68,7 +68,7 @@
     </node>
   </node>
   <node concept="mG$Em" id="4LOVS_qPCCe">
-    <property role="TrG5h" value="Choice example" />
+    <property role="TrG5h" value="ChoiceExample" />
     <ref role="mJbgN" node="4LOVS_qPCCf" resolve="Choice example" />
     <node concept="mG$EG" id="4LOVS_qPCCf" role="mG$EZ">
       <property role="TrG5h" value="Choice example" />
@@ -86,8 +86,8 @@
         <ref role="mCZmw" node="4LOVS_qQB4b" resolve="falseState" />
         <node concept="mC63S" id="4LOVS_qQB46" role="mCgm$">
           <ref role="mF7Qg" node="4LOVS_qQ98j" resolve="$.truthvalue" />
-          <node concept="6oBEz" id="2fcm070zir" role="6osfD">
-            <property role="6oBE$" value="10" />
+          <node concept="6oBFn" id="ZMabRdEr8P" role="6osfD">
+            <property role="6oBFo" value="true" />
           </node>
         </node>
       </node>
@@ -117,7 +117,7 @@
   </node>
   <node concept="mG$Em" id="4LOVS_qZCdW">
     <property role="mG$ED" value="Parallel Example" />
-    <property role="TrG5h" value="Parallel state example" />
+    <property role="TrG5h" value="ParallelStateExample" />
     <ref role="mJbgN" node="4LOVS_qZCdX" resolve="LookupCustomerInfo" />
     <node concept="mG$EG" id="4LOVS_qZCdX" role="mG$EZ">
       <property role="TrG5h" value="LookupCustomerInfo" />
@@ -145,7 +145,7 @@
   </node>
   <node concept="mG$Em" id="5Gjmga$HpWL">
     <property role="mG$ED" value="Simple State Machine" />
-    <property role="TrG5h" value="Simple state machine" />
+    <property role="TrG5h" value="SimpleStateMachine" />
     <ref role="mJbgN" node="5Gjmga$HqxC" resolve="Simple" />
     <node concept="mG$EG" id="5Gjmga$HqxC" role="mG$EZ">
       <property role="TrG5h" value="Simple" />
