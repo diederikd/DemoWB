@@ -168,7 +168,7 @@ import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteEasily;
     return SPropertyOperations.hasEnumValue(myNode, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a525L, 0x4c74ef895ac6a55cL, "Type"), "Parallel");
   }
   private boolean nodeCondition_sjqidp_a11d0() {
-    return SPropertyOperations.hasValue(myNode, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a525L, 0x4c74ef895ac6a55eL, "End"), false);
+    return SPropertyOperations.hasValue(myNode, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a525L, 0x4c74ef895ac6a55eL, "End"), false) && !(SPropertyOperations.hasEnumValue(myNode, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a525L, 0x4c74ef895ac6a55cL, "Type"), "Choice"));
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "type");
