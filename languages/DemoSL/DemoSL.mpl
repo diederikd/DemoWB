@@ -22,8 +22,10 @@
         <dependency reexport="false">61f0ccba-8ded-47ee-b024-8f1c223c70ef(DemoSL)</dependency>
         <dependency reexport="false">6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)</dependency>
         <dependency reexport="false">e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)</dependency>
+        <dependency reexport="false">ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:ad34076b-b44b-4b8e-9aa6-566fa22fe764:AWSStateMachine" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -45,6 +47,7 @@
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
       <dependencyVersions>
+        <module reference="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" version="0" />
         <module reference="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" version="0" />
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" version="4" />
@@ -77,6 +80,7 @@
     <dependency reexport="false">56c81845-acaf-48a7-bcd8-e29b36c98dd7(de.itemis.mps.editor.diagram.styles)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
+    <dependency reexport="false" scope="generate-into">ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:120e1c9d-4e27-4478-b2af-b2c3bd3850b0:com.mbeddr.mpsutil.editor.querylist" version="0" />
@@ -119,6 +123,7 @@
     <language slang="l:696c1165-4a59-463b-bc5d-902caab85dd0:jetbrains.mps.make.facet" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" version="0" />
     <module reference="e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)" version="0" />
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)" version="4" />

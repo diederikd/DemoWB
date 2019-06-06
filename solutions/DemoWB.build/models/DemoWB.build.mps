@@ -689,6 +689,11 @@
               <ref role="3bR37D" node="2AEzmscAXNS" resolve="ActionSL" />
             </node>
           </node>
+          <node concept="1SiIV0" id="1WaRo0vlJqq" role="3bR37C">
+            <node concept="3bR9La" id="1WaRo0vlJqr" role="1SiIV1">
+              <ref role="3bR37D" node="1WaRo0vlJny" resolve="AWSStateMachine" />
+            </node>
+          </node>
         </node>
         <node concept="3rtmxn" id="2AEzmscAZ1p" role="3bR31x">
           <node concept="3LXTmp" id="2AEzmscAZ1q" role="3rtmxm">
@@ -798,6 +803,11 @@
         <node concept="1SiIV0" id="6ihpGwUpnWx" role="3bR37C">
           <node concept="3bR9La" id="6ihpGwUpnWy" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1WaRo0vlJkp" role="3bR37C">
+          <node concept="3bR9La" id="1WaRo0vlJkq" role="1SiIV1">
+            <ref role="3bR37D" node="2AEzmscAXNk" resolve="DemoSL" />
           </node>
         </node>
       </node>
@@ -953,6 +963,16 @@
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1WaRo0vlJkr" role="3bR37C">
+          <node concept="3bR9La" id="1WaRo0vlJks" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1WaRo0vlJkt" role="3bR37C">
+          <node concept="3bR9La" id="1WaRo0vlJku" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1002,6 +1022,26 @@
           <node concept="3bR9La" id="6ihpGwUpnW$" role="1SiIV1">
             <ref role="3bR37D" node="2AEzmscAXNS" resolve="ActionSL" />
           </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="1WaRo0vlJny" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="AWSStateMachine" />
+        <property role="3LESm3" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764" />
+        <node concept="55IIr" id="1WaRo0vlJn_" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1WaRo0vlJqe" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1WaRo0vlJqj" role="2Ry0An">
+              <property role="2Ry0Am" value="AWSStateMachine" />
+              <node concept="2Ry0Ak" id="1WaRo0vlJqo" role="2Ry0An">
+                <property role="2Ry0Am" value="AWSStateMachine.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="1WaRo0vlJqs" role="1TViLv">
+          <property role="TrG5h" value="AWSStateMachine#01" />
+          <property role="3LESm3" value="6e089e9e-ba0a-471f-9873-153f8bfe1bb7" />
         </node>
       </node>
       <node concept="1E1JtA" id="4h5c_cXdMeb" role="2G$12L">

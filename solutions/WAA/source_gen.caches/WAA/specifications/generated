@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="au9snngr78b869w2tql62dq1khegjba">
+<product version="3" modelHash="ev8c7y2rsezmrvy8k1q449gszv7i482">
   <files names="Test_ExportToXML:map_DemoModel.xml" />
+  <files dir="WAA/specifications" names="WAA.specifications.json" />
 </product>
 

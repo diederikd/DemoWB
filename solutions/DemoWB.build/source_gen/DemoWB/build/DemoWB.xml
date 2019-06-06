@@ -670,6 +670,85 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ActionSL-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-ActionSL-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/AWSStateMachine.jar" />
+    <mkdir dir="${build.tmp}/default/AWSStateMachine.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/AWSStateMachine.jar/META-INF/module.xml">
+      <module namespace="AWSStateMachine" type="language" uuid="ad34076b-b44b-4b8e-9aa6-566fa22fe764">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="AWSStateMachine-src.jar" descriptor="AWSStateMachine.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DemoWB/languages/DemoWB/AWSStateMachine.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/AWSStateMachine" />
+      <fileset dir="${basedir}/languages/AWSStateMachine/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/AWSStateMachine.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/AWSStateMachine-generator.jar" />
+    <mkdir dir="${build.tmp}/default/AWSStateMachine-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/AWSStateMachine-generator.jar/META-INF/module.xml">
+      <module namespace="AWSStateMachine#01" type="generator" uuid="6e089e9e-ba0a-471f-9873-153f8bfe1bb7">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="AWSStateMachine-src.jar" descriptor="AWSStateMachine.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/plugins/DemoWB/languages/DemoWB/AWSStateMachine-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/AWSStateMachine#01" />
+      <fileset dir="${build.tmp}/default/AWSStateMachine-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-AWSStateMachine-generator-template">
+      <fileset dir="${basedir}/languages/AWSStateMachine/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-AWSStateMachine-models">
+      <fileset dir="${basedir}/languages/AWSStateMachine/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/plugins/DemoWB/languages/DemoWB/AWSStateMachine-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/languages/AWSStateMachine/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/languages/AWSStateMachine/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/languages/AWSStateMachine/AWSStateMachine.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-AWSStateMachine-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-AWSStateMachine-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/DemoWBTests.jar" />
     <mkdir dir="${build.tmp}/default/DemoWBTests.jar/META-INF" />
     <echoxml file="${build.tmp}/default/DemoWBTests.jar/META-INF/module.xml">
@@ -720,7 +799,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.DemoSL, java.compile.DemoSL#01, java.compile.ProcessSL, java.compile.ProcessSL#01, java.compile.GeneralSL, java.compile.GeneralSL#01, java.compile.ConstructionSL, java.compile.ConstructionSL#01, java.compile.FactSL, java.compile.FactSL#01, java.compile.ActionSL, java.compile.ActionSL#01, java.compile.DemoWBTests" />
+  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.DemoSL, java.compile.DemoSL#01, java.compile.ProcessSL, java.compile.ProcessSL#01, java.compile.GeneralSL, java.compile.GeneralSL#01, java.compile.ConstructionSL, java.compile.ConstructionSL#01, java.compile.FactSL, java.compile.FactSL#01, java.compile.ActionSL, java.compile.ActionSL#01, java.compile.AWSStateMachine, java.compile.AWSStateMachine#01, java.compile.DemoWBTests" />
   
   <target name="processResources" />
   
@@ -734,6 +813,7 @@
     <echo message="generating" />
     <generate strictMode="false" parallelMode="false" useInplaceTransform="false" hideWarnings="false" createStaticRefs="false" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}">
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.json" />
       <plugin path="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram" />
@@ -748,6 +828,7 @@
       <plugin path="${artifacts.mps}/plugins/mps-testing" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
+      <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.json/languages/group.json/com.mbeddr.mpsutil.json.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.jar" />
       <library file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
@@ -854,6 +935,7 @@
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       <chunk>
+        <module file="${basedir}/languages/AWSStateMachine/AWSStateMachine.mpl" />
         <module file="${basedir}/languages/GeneralSL/GeneralSL.mpl" />
       </chunk>
       <chunk>
@@ -885,7 +967,7 @@
   
   <target name="module-tests" depends="assemble, test.test" />
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.GeneralSL, fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="java.compile.AWSStateMachine, java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
     <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
@@ -959,12 +1041,13 @@
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="org.eclipse.elk.graph.text.ide-0.4.0.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="org.eclipse.elk.alg.common.compaction-0.3.0.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-core/languages/languageDesign/jetbrains.mps.lang.editor.table.runtime.jar" />
+        <pathelement path="${build.tmp}/java/out/AWSStateMachine" />
         <pathelement path="${build.tmp}/java/out/GeneralSL" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.DemoSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.DemoSL" depends="java.compile.AWSStateMachine, java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/DemoSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/DemoSL" />
     <javac destdir="${build.tmp}/java/out/DemoSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -990,6 +1073,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/AWSStateMachine" />
         <pathelement path="${build.tmp}/java/out/GeneralSL" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -1040,7 +1124,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.DemoSL#01" depends="java.compile.ActionSL, java.compile.ConstructionSL, java.compile.DemoSL, java.compile.FactSL, java.compile.GeneralSL, java.compile.ProcessSL, fetchDependencies">
+  <target name="java.compile.DemoSL#01" depends="java.compile.AWSStateMachine, java.compile.ActionSL, java.compile.ConstructionSL, java.compile.DemoSL, java.compile.FactSL, java.compile.GeneralSL, java.compile.ProcessSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/DemoSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/DemoSL#01" />
     <javac destdir="${build.tmp}/java/out/DemoSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1066,6 +1150,7 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/AWSStateMachine" />
         <pathelement path="${build.tmp}/java/out/ActionSL" />
         <pathelement path="${build.tmp}/java/out/ConstructionSL" />
         <pathelement path="${build.tmp}/java/out/DemoSL" />
@@ -1617,6 +1702,84 @@
     </javac>
   </target>
   
+  <target name="java.compile.AWSStateMachine" depends="fetchDependencies">
+    <mkdir dir="${basedir}/languages/AWSStateMachine/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/AWSStateMachine" />
+    <javac destdir="${build.tmp}/java/out/AWSStateMachine" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/AWSStateMachine/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.AWSStateMachine#01" depends="java.compile.AWSStateMachine, fetchDependencies">
+    <mkdir dir="${basedir}/languages/AWSStateMachine/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/AWSStateMachine#01" />
+    <javac destdir="${build.tmp}/java/out/AWSStateMachine#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/languages/AWSStateMachine/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/AWSStateMachine" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="java.compile.DemoWBTests" depends="java.compile.ConstructionSL, java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/DemoWBTests" />
     <javac destdir="${build.tmp}/java/out/DemoWBTests" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -1761,6 +1924,7 @@
       <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
       <pathelement location="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+      <pathelement location="${build.layout}/plugins/DemoWB/languages/DemoWB/AWSStateMachine.jar" />
       <pathelement location="${build.layout}/plugins/DemoWB/languages/DemoWB/ActionSL.jar" />
       <pathelement location="${build.layout}/plugins/DemoWB/languages/DemoWB/ConstructionSL.jar" />
       <pathelement location="${build.layout}/plugins/DemoWB/languages/DemoWB/DemoSL.jar" />
@@ -1880,6 +2044,8 @@
   </target>
   
   <target name="cleanSources">
+    <delete dir="${basedir}/languages/AWSStateMachine/source_gen" />
+    <delete dir="${basedir}/languages/AWSStateMachine/generator/source_gen" />
     <delete dir="${basedir}/languages/GeneralSL/source_gen" />
     <delete dir="${basedir}/languages/GeneralSL/generator/source_gen" />
     <delete dir="${basedir}/languages/ActionSL/source_gen" />

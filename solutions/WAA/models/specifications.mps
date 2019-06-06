@@ -280,6 +280,7 @@
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
         <child id="7550186569849403346" name="casesStarted" index="2F2X5W" />
       </concept>
+      <concept id="1149025650597881387" name="DemoSL.structure.GenerateToAws" flags="ng" index="32gcUm" />
       <concept id="1311537047069299575" name="DemoSL.structure.TransactionProcessDiagram" flags="ng" index="3apL29" />
       <concept id="2743742872034909955" name="DemoSL.structure.DerivedFactSpecifications" flags="ng" index="3cHiip">
         <child id="6832341507193995282" name="rules" index="2mDtDO" />
@@ -10593,6 +10594,99 @@
         <property role="W57_q" value="da33869b-fb31-4381-b7bb-09a0e684052b" />
       </node>
     </node>
+    <node concept="a1WVU" id="1WaRo0uQ0do" role="ojaNo">
+      <node concept="W57nP" id="1WaRo0uQ0dp" role="_QUKC">
+        <property role="W57_q" value="b95e6c5d-d616-49d0-9589-7a6122d7217f" />
+      </node>
+      <node concept="ojNJ6" id="1WaRo0uQ0dq" role="ojhK1">
+        <property role="ojPxs" value="dc" />
+        <ref role="ojNJ5" node="2Ze6BQpzuc1" resolve="niet accepteren van het verzoek verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="1WaRo0uQ0dr" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0aH" />
+          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1WaRo0uQ0ds" role="onuko" />
+      <node concept="onuhd" id="1WaRo0uQ0dt" role="onuk5">
+        <node concept="onuk1" id="1WaRo0uQ0du" role="onuhc" />
+        <node concept="onuhf" id="1WaRo0uQ0dv" role="onuha">
+          <node concept="on7EX" id="1WaRo0uQ0dw" role="okEzR">
+            <property role="on7EW" value="rq" />
+            <ref role="on7EU" node="pMarvI_0aH" />
+            <ref role="3ap3_r" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
+          </node>
+        </node>
+        <node concept="onuhe" id="1WaRo0uQ0gk" role="onuhR">
+          <node concept="on7EX" id="1WaRo0uQ0gl" role="okEzL">
+            <property role="on7EW" value="qt" />
+            <ref role="on7EU" node="pMarvI_0aH" />
+            <ref role="3ap3_r" node="2Ze6BQpzuc6" resolve="breek het indienen van het verzoek aanpassing arbeidsduur af" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1WaRo0v46u8" role="ojaNo">
+      <node concept="W57nP" id="1WaRo0v46u9" role="_QUKC">
+        <property role="W57_q" value="4ca01391-90e5-4ddf-bc88-fe61e57a3103" />
+      </node>
+      <node concept="ojNJ6" id="1WaRo0v46ua" role="ojhK1">
+        <property role="ojPxs" value="st" />
+        <ref role="ojNJ5" node="2Ze6BQpzuc4" resolve="mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="1WaRo0v46ub" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0aH" />
+          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1WaRo0v46uc" role="onuko" />
+      <node concept="onuhd" id="1WaRo0v46ud" role="onuk5">
+        <node concept="onuk1" id="1WaRo0v46ue" role="onuhc" />
+        <node concept="onuhf" id="1WaRo0v46uf" role="onuha">
+          <node concept="on7EX" id="1WaRo0v46ug" role="okEzR">
+            <property role="on7EW" value="ac" />
+            <ref role="on7EU" node="pMarvI_0aH" />
+            <ref role="3ap3_r" node="2Ze6BQpzuc0" resolve="accepteren van de beslissing op het verzoek aanpassing arbeidsduur" />
+          </node>
+        </node>
+        <node concept="onuhe" id="1WaRo0v4nwH" role="onuhR">
+          <node concept="on7EX" id="1WaRo0v4nwI" role="okEzL">
+            <property role="on7EW" value="rj" />
+            <ref role="on7EU" node="pMarvI_0aH" />
+            <ref role="3ap3_r" node="2Ze6BQpzuc7" resolve="niet accepteren van de beslissing op verzoek aanpassing arbeidsduur" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="1WaRo0v4nwL" role="ojaNo">
+      <node concept="W57nP" id="1WaRo0v4nwM" role="_QUKC">
+        <property role="W57_q" value="a385c308-bc1b-4dfa-adaa-4d51e9582f8a" />
+      </node>
+      <node concept="ojNJ6" id="1WaRo0v4nwN" role="ojhK1">
+        <property role="ojPxs" value="rj" />
+        <ref role="ojNJ5" node="2Ze6BQpzuc7" resolve="niet accepteren van de beslissing op verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="1WaRo0v4nwO" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0aH" />
+          <ref role="2mzTV$" node="IuxU86gpxl" resolve="Arbeidsovereenkomst naar burgerlijk recht of publieksrechtelijke aanstelling" />
+        </node>
+      </node>
+      <node concept="omW1N" id="1WaRo0v4nwP" role="onuko" />
+      <node concept="onuhd" id="1WaRo0v4nwQ" role="onuk5">
+        <node concept="onuk1" id="1WaRo0v4nwR" role="onuhc" />
+        <node concept="onuhf" id="1WaRo0v4nwS" role="onuha">
+          <node concept="on7EX" id="1WaRo0v4nwT" role="okEzR">
+            <property role="on7EW" value="st" />
+            <ref role="on7EU" node="pMarvI_0aH" />
+            <ref role="3ap3_r" node="2Ze6BQpzuc4" resolve="mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur" />
+          </node>
+        </node>
+        <node concept="onuhe" id="1WaRo0v4n$3" role="onuhR">
+          <node concept="on7EX" id="1WaRo0v4n$4" role="okEzL">
+            <property role="on7EW" value="sp" />
+            <ref role="on7EU" node="pMarvI_0aH" />
+            <ref role="3ap3_r" node="2Ze6BQpzuc5" resolve="stop met het doen van een verzoek aanpassing arbeidsduur" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="a1WVU" id="5VhmAr8t7YR" role="ojaNo">
       <node concept="ojNJ6" id="5VhmAr8t7YS" role="ojhK1">
         <property role="okzg6" value="false" />
@@ -16145,6 +16239,9 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="32gcUm" id="ZMabRdMJJB">
+    <property role="TrG5h" value="Test_GenerateToAWS" />
   </node>
 </model>
 
