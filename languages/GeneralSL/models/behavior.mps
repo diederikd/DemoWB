@@ -102,9 +102,6 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -665,9 +662,7 @@
       <node concept="17QB3L" id="4vyZ9NOwfgo" role="3clF45" />
       <node concept="37vLTG" id="4vyZ9NOwfgp" role="3clF46">
         <property role="TrG5h" value="s" />
-        <node concept="3uibUv" id="4vyZ9NOwfgq" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="6EtEmij2E1c" role="1tU5fm" />
       </node>
       <node concept="3Tm1VV" id="4vyZ9NOwfgr" role="1B3o_S" />
     </node>

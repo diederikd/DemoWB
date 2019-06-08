@@ -1,0 +1,151 @@
+{
+  "Comment":"Model of transactionkindinwilligen verzoek aanpassing arbeidsduur",
+  "StartAt":"initial indienen verzoek aanpassing arbeidsduur",
+  "States":{
+    "TrueChoiceFor request inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"rq inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":"promiss inwilligen verzoek aanpassing arbeidsduur"
+    },
+    "TrueChoiceFor decline inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"dc inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":""
+    },
+    "TrueChoiceFor promiss inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"pm inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":"request wijzigen van de spreiding van de uren"
+    },
+    "TrueChoiceFor state inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"st inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":""
+    },
+    "TrueChoiceFor reject inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"rj inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor request inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"rq inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":"decline inwilligen verzoek aanpassing arbeidsduur"
+    },
+    "FalseChoiceFor decline inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"dc inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor promiss inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"pm inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":"request vaststellen van de spreiding van de uren "
+    },
+    "FalseChoiceFor state inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"st inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor reject inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"rj inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":""
+    },
+    "request inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"rq inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor request inwilligen verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor request inwilligen verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "decline inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"dc inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor decline inwilligen verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor decline inwilligen verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "promiss inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"pm inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor promiss inwilligen verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor promiss inwilligen verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "state inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"st inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor state inwilligen verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor state inwilligen verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "reject inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"rj inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor reject inwilligen verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor reject inwilligen verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "accept inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"ac inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":"beslissen op het verzoek aanpassing arbeidsduur"
+    },
+    "execute inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"ex inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "Next":"state inwilligen verzoek aanpassing arbeidsduur"
+    },
+    "accept inwilligen verzoek aanpassing arbeidsduur":{
+      "Comment":"ac inwilligen verzoek aanpassing arbeidsduur",
+      "Type":"Pass",
+      "End":true
+    }
+  }
+}

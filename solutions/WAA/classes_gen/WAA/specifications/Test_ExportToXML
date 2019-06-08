@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DEMO:DEMOmodel xmlns:ecf="http://www.ee-institute.org/DEMO38ECF" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DEMO="http://www.ee-institute.org/DEMO38">
+  <DEMO:TransactionKinds>
+    <DEMO:TransactionKind Id="2f6952f6-a9dd-44e9-a2c8-74af4a8db900">
+      <DEMO:Identification>T1</DEMO:Identification>
+      <DEMO:Name>VERZOEKEN OM AANPASSING VAN DE ARBEIDSDUUR</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5">
+      <DEMO:Identification>T2</DEMO:Identification>
+      <DEMO:Name>VERZOEK AANPASSING ARBEIDSDUUR TE BESPREKEN</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1">
+      <DEMO:Identification>T3</DEMO:Identification>
+      <DEMO:Name>INWILLIGEN VERZOEK AANPASSING ARBEIDSDUUR</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="9fdcd148-4c1d-4b19-aa29-e06463213e7f">
+      <DEMO:Identification>T4</DEMO:Identification>
+      <DEMO:Name>AFWIJZEN VAN HET VERZOEK</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="b95a2928-d510-4261-9279-9a9e4dad1325">
+      <DEMO:Identification>T5</DEMO:Identification>
+      <DEMO:Name>VASTSTELLEN VAN DE SPREIDING VAN DE UREN</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="444e904d-dc7b-4536-b95d-5cbf1111cd85">
+      <DEMO:Identification>T6</DEMO:Identification>
+      <DEMO:Name>WIJZIGEN VAN DE SPREIDING VAN DE UREN</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+    <DEMO:TransactionKind Id="52c9c51e-adac-4fd6-a602-081efbce301d">
+      <DEMO:Identification>T7</DEMO:Identification>
+      <DEMO:Name>AUTOMATISCH AANPASSING OVEREENKOMSTIG HET VERZOEK</DEMO:Name>
+      <DEMO:TransactionSort>original</DEMO:TransactionSort>
+    </DEMO:TransactionKind>
+  </DEMO:TransactionKinds>
+  <DEMO:ElementaryActorRoles>
+    <DEMO:ElementaryActorRole Id="3a818ca7-359c-47b3-b402-ed1a6977b262">
+      <DEMO:Identification>A1</DEMO:Identification>
+      <DEMO:Name>VERZOEK VERWERKER</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="e63ce274-4662-48c2-b7c2-72a06f697fbb">
+      <DEMO:Identification>A3</DEMO:Identification>
+      <DEMO:Name>INWILLIGER VAN HET VERZOEK</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="cfccf78a-8c47-4991-adfa-381bf08e9e11">
+      <DEMO:Identification>A4</DEMO:Identification>
+      <DEMO:Name>AFWIJZER VAN HET VERZOEK</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="98dd6f82-9929-4b7d-8c56-986f907b1acb">
+      <DEMO:Identification>A5</DEMO:Identification>
+      <DEMO:Name>VASTSTELLER VAN DE SPREIDING</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e">
+      <DEMO:Identification>A6</DEMO:Identification>
+      <DEMO:Name>WIJZIGER VAN DE SPREIDING</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+    <DEMO:ElementaryActorRole Id="17860a63-e11d-4ddf-ae7f-3cdd1c6a303a">
+      <DEMO:Identification>A7</DEMO:Identification>
+      <DEMO:Name>VERZOEK CONTROLLER</DEMO:Name>
+    </DEMO:ElementaryActorRole>
+  </DEMO:ElementaryActorRoles>
+  <DEMO:CompositeActorRoles>
+    <DEMO:CompositeActorRole Id="5c0b8e77-c7d0-439e-8849-66d07ac9138d">
+      <DEMO:Identification>CA01</DEMO:Identification>
+      <DEMO:Name>WERKGEVER</DEMO:Name>
+    </DEMO:CompositeActorRole>
+    <DEMO:CompositeActorRole Id="8302ff28-ee19-4fe5-992f-004eab409aa3">
+      <DEMO:Identification>CA1</DEMO:Identification>
+      <DEMO:Name>WERKNEMER</DEMO:Name>
+    </DEMO:CompositeActorRole>
+  </DEMO:CompositeActorRoles>
+  <DEMO:TransactionProcessStepKinds>
+    <DEMO:TransactionProcessStepKind Id="012b30de-f404-4fc0-9641-5ef60c1955b0">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Initial</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="bd3f0c3a-f0d6-49ac-8237-a65c0d866080">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="5c1b6590-f319-4652-8977-5a8ca183a795">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="61196f70-ca7a-4e2d-b430-1bd4dcfeb851">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0b72e6f0-4d2a-461b-8ebf-b92ce90305a9">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="76b42af2-afcb-4df9-a168-3b696e48869a">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="6a193c92-0a08-4f88-aa68-7718ffba2f20">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1bb8ec8e-07ec-4f67-9a6d-e83b68f1f307">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="474e7b21-082d-4d2e-8c48-949ec4858004">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="b2d5a132-1bfe-49a0-8a4f-69404152f813">
+      <DEMO:TransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c5f23a3f-f212-4dc0-9bef-ea201276f109">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="d1d09025-5b7e-49d9-9072-5c9e7aaa3984">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="40ab52a9-79a2-4035-8271-17d6083c0890">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0681481f-db0b-4ff5-8da5-13c1546d85dd">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="2cbce3a8-304e-4b65-8b25-1021e1086106">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0c723c5e-91fd-4dc9-a084-80b2469ec4b8">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="e15c8367-b1a6-4f0c-b9c0-683586512f7f">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0fa901c7-a720-4a65-a0e4-4fd80710869f">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0345e73e-2657-4f59-a800-05ab0cd4860d">
+      <DEMO:TransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="7c59f0d9-5a33-4eaa-8860-ac34fa412e11">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="5d6a1928-10de-4364-a456-46ea02b67e07">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="8da580f5-3890-43c4-9589-dec935ffe984">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="f818d2df-ab2d-487a-8c57-f6a2e9b1f7cb">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="73b69651-1a8b-435c-9594-2b8b427d4919">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c9c66a71-24f8-42bf-a340-1094677ade4e">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0a15ab73-23ef-4550-9868-3eeecec6b4a3">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="b444a5e5-0e22-4777-894e-97307a99496d">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="d968f8f0-1e43-4063-869f-eb15316aa1a5">
+      <DEMO:TransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="2646ae23-2f5b-4550-9709-038271785ff1">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="4a97afee-cdc5-4943-b22f-5572774eed13">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="6e745ab4-3939-4fc1-842f-67e3221574cc">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="e4fb00fc-2a40-46ae-958a-177661abd9a2">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="00b174f4-60f9-4b20-9e98-1af764c386ee">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="16c43ffe-9673-4f0f-b65f-e6c38cb34b25">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="f6f333ec-c1b0-4dc6-acb4-e29645110136">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="56671e62-c49c-46e5-bbe9-e637dbe5fb56">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1920afc9-d3d5-4f9b-a828-db2811253a98">
+      <DEMO:TransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="4e246534-6ec9-4519-bebd-56977d7fba2a">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="107243d6-0888-4e3d-b1da-a07f455e8701">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="4a810202-9a8a-4066-a037-0faa2b23aa20">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="8b2e8164-2330-4145-80bb-2ef720e17e43">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="a161768e-ee62-499b-997d-3b2219abc1ae">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c0ca9b85-6f95-4d27-b03a-55bb29d0679f">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0fbf17fb-9505-4241-bc8f-b343f16c089f">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="118675b5-dbee-400a-916c-581571032101">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1a3c83c0-7362-4e06-96e4-9fec6ca29ee2">
+      <DEMO:TransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="84e511d7-060d-45b9-802a-0c36829cde7f">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="9f4c6e7d-1111-4807-afef-c52e12797555">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1123efa8-676e-42dc-a208-8446f62d0f19">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="de4aa063-1fff-416f-81fa-4e0d2c17ca95">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="757e0110-f10c-4721-b811-40b57ddf59a6">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="cfd84946-013e-43e3-9f26-04600cc379a0">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="31035295-6e52-424d-aef7-8be58742623f">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="cd36a1f8-f93b-45c8-8536-cd1eeeb01192">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="65e557fe-7b50-40a0-8092-34aee31e74f2">
+      <DEMO:TransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="8ecc854d-ad5a-4c19-b0d8-ee42d360ef0e">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Request</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="c666a95d-b55a-4cae-aaf6-6073821bd48a">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Accept</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="0ea6f23f-234c-4c24-8cdb-017e20aa6a88">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Decline</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="7545ec1f-462e-4a9b-8f46-8a7e34a92653">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Promise</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="112d84ee-72f9-4d9b-ab24-9a356a5e4be1">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Execute</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="7c4ea01e-5836-4f26-ac86-1018a9b4f1ae">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>State</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="1ca4bd89-ba97-4a7c-95cb-374b224115b6">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Stop</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="cb77b255-1738-45f3-a300-dafb9ccb52e8">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Quit</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+    <DEMO:TransactionProcessStepKind Id="97b495cd-e0fd-4457-a529-16f299482031">
+      <DEMO:TransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:TransactionKind>
+      <DEMO:StepKind>Reject</DEMO:StepKind>
+    </DEMO:TransactionProcessStepKind>
+  </DEMO:TransactionProcessStepKinds>
+  <DEMO:Connections>
+    <DEMO:Connection Id="b6e031d1-4d97-4b9b-a51c-d9925d0a363c" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="07cdb089-442f-43cf-b274-ea7c652b57ca" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="0f82f890-3d65-4bda-b581-8bf26007cfe7" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="01db3c3f-07a2-4249-aa54-12ffe6eb335d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="24d04211-0ce7-4a0c-9c2f-1cadff3ac34b" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="12328730-f66d-46bf-ba24-50ce60b7819a" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="08f66131-c132-4cff-9060-e901da46fb30" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="55af9e05-4ec8-486e-9968-852e3c9e956c" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="19598b2c-736b-4af1-b6cc-7db7435977b4" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="ccfad1d8-7148-4188-8884-457d8c40f473" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="a2d470e2-67f8-434a-b981-070d87168d5c" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="0d6b0885-7243-4f8d-8ba7-d4711727fb78" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="b2ad265f-9de7-433f-a145-6b315066b560" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="d0e056b6-a478-4a87-80b7-ae0b71b348d2" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c52a7e9c-2e08-4c0c-b143-c6a574373a5a" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="2ef39816-d493-46ef-aebd-fa345cadd654" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="0985d583-a8dc-4249-9fd3-66bc63cfd1e3" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="831023a4-55fc-4a05-8a60-a38ba2874b9e" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="575577ed-4144-447c-844c-bed7bef2e981" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="adc5ed9e-bf16-4fef-a87d-fa0d68469088" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="83fad3ae-9886-4f4d-bdda-dd1e0897386d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bdc81136-1ce9-48c3-b18b-038e8c881e0a" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="8c2ad3e7-cd45-494d-a013-41cf4a679320" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c1119bc7-d920-466f-801f-95b4dbd790fa" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="8ba6e59c-3849-46bc-910b-db0699f444d7" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="30fdcf9f-765b-49ae-acb7-cb11e5b3856e" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="058b6420-a537-4a6d-ab08-6fbfee4c4110" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="3458bb4a-c895-427c-8b23-00630a5b6211" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="f1c6fa0f-5112-4f2f-b9e2-b23a6737ba5f" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="03bfce86-b6fb-4e71-9dfc-6fd98d4a6357" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="7432d7b6-0e70-4413-b438-b88f1d9d73d0" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="76d7aae6-c45f-482b-960c-d2e6239b0a7f" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="1790822f-29b1-4964-8e20-cafe80982591" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="3d0bcec3-7b82-4c76-bf44-e96ecbe55f44" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c24df7e4-f806-440d-b3d3-cb31fe13ccdb" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="24137876-de85-475e-9d7f-222f2fa8d99e" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="27f9035b-7408-42b2-a78e-db94c21bae6d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="9ba000e8-cc89-42e4-a4f9-8fa31ec0f7f6" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="e88de01b-4340-4857-a5c2-33de6c5d37b7" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="17fa57d8-7d72-474c-93a3-e6348e837e35" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="0474d4b3-92ad-49b1-b2e2-a59bcc326815" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="5ac59ff0-b98a-4bf5-8301-610719aa8103" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="52c4b7d7-6ce8-4481-8585-08c0a20f8a1e" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4f2fdeda-571b-4d9f-b108-baf268fa3c02" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="2e24b197-2198-421c-a4fc-f391825a4a0c" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="863d3ebb-28b8-4488-b037-9a976690bf90" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="391c3c21-2063-4a0e-b717-13e74b08f5fc" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="06b1e15c-1094-4558-8ebc-b6a96a38922f" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="8e3fe982-d502-48d4-8c6d-eeb00bfc9a31" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="e4d96261-e0cd-4264-ae16-bcfc124d8701" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="99abc433-fe23-4339-b013-08b101e896da" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="2c5b670d-bd71-49e0-a880-4ecbe5649724" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bd98cb7e-7a0f-4c8b-acb9-47c0c0e6744a" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="af222a32-9b7c-4097-9b84-02ab301fb6f7" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="16451910-2ac8-4852-954c-36c48d5bf6a0" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="1b0d1be6-6524-45fd-ae29-ce5e56c0ada0" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="b48ab776-fa2a-476b-9958-8905a7f315f3" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="52f7bf9f-8cfb-4e23-915a-ae181bf753e2" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="ff913959-01cb-471f-9019-b44e9ce92e8d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="7845694a-821a-4997-ab13-1b04082d1a85" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="31c2299e-9102-4350-8ffb-780b438c8aff" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="7fa6f6f5-b711-4e7f-8dfa-e9cc7b9d8988" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c5e4e787-e7b4-4e64-bf89-97f85f4d3948" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bf5ed719-f753-4c09-b618-435bd5c72eaa" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="26cf64f5-368d-4c49-bfdd-1243660fa822" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="3af2e99e-b4d9-4785-83c4-e1bc9e6bb582" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c39370d4-4fc0-4f1d-b9d0-73c21639478d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="5e822924-17b5-4437-9c2b-b4cf501bfbf5" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="2a55f538-f980-465b-9275-18b8f6d1fa76" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="9af65d8f-9240-4cf7-bceb-c73151f8bd96" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="be89988e-6055-4dc8-b858-4cbe2aeac0f4" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="409d9c87-55b4-4fbf-a411-d1c5274a7c89" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="1e1a58b9-f690-4237-af6a-448875ea7e04" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="f12c37fe-009f-4690-b3c2-d9054f56a6aa" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="aa7c1f0a-8937-4ced-819f-da7c510e0c2f" FromCardinality="1" ToCardinality="1">
+    <DEMO:WaitConditionTPSK>
+      <DEMO:FromTransactionProcessStepKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:WaitConditionTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="aa230dc7-a317-4b67-91fd-5d038f1b5e06" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="7dc2cd0f-442c-4409-9916-872cf133fbc4" FromCardinality="1" ToCardinality="1">
+    <DEMO:WaitConditionTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionProcessStepKind>
+    </DEMO:WaitConditionTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="ddda0c23-50f2-454a-8102-e93949be02c1" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="f81cfa9c-adec-456c-9137-c7f57028853f" FromCardinality="1" ToCardinality="1">
+    <DEMO:WaitConditionTPSK>
+      <DEMO:FromTransactionProcessStepKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionProcessStepKind>
+    </DEMO:WaitConditionTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4c407e67-f4eb-4696-ac78-ced2179a781e" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bec5a59c-6db8-4975-ad40-6d89d571dd09" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiationTPSK>
+      <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
+      <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
+    </DEMO:InitiationTPSK>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4d27c196-d844-4b51-ae6d-4fb7df6e51d6" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="645ff7c7-918a-40d4-b5f2-514bfc66e178" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorCAR>
+      <DEMO:FromTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionKind>
+      <DEMO:ToCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:ToCompositeActorRole>
+    </DEMO:ExecutorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c9cbe7c8-4023-4cf8-923d-8f38389e81d2" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="38451c5e-d409-4566-8b40-0dc3f02f4924" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>cfccf78a-8c47-4991-adfa-381bf08e9e11</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="87cd6999-a34d-4858-ac9b-9fa48074a5dc" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>98dd6f82-9929-4b7d-8c56-986f907b1acb</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4db8b719-6a66-40b8-b4aa-c4590abb05a1" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bca3b4ed-32d4-4f56-83b1-1064923b89a2" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="cdd98678-6262-4f58-97ec-8fef2d09dd97" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:FromCompositeActorRole>
+      <DEMO:ToTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="9fcb6160-c1a9-4759-935d-91e174a0eced" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4c241b57-77d5-4349-ac9f-79f4183f334d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c54890c5-1233-4b54-b235-ce21d193061b" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="869c0b0e-eb60-4c14-9a5e-7553a46b0632" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="114e2073-47e8-4017-8b0d-7f00ea5da8c5" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="1ec7021e-b114-4b89-89c2-5173c087c026" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+  </DEMO:Connections>
+</DEMO:DEMOmodel>

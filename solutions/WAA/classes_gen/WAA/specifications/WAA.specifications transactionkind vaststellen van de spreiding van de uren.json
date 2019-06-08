@@ -1,0 +1,130 @@
+{
+  "Comment":"Model of transactionkindvaststellen van de spreiding van de uren",
+  "StartAt":"initial indienen verzoek aanpassing arbeidsduur",
+  "States":{
+    "TrueChoiceFor request vaststellen van de spreiding van de uren ":{
+      "Comment":"rq vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "TrueChoiceFor decline vaststellen van de spreiding van de uren ":{
+      "Comment":"dc vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "TrueChoiceFor state vaststellen van de spreiding van de uren ":{
+      "Comment":"st vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "TrueChoiceFor reject vaststellen van de spreiding van de uren ":{
+      "Comment":"rj vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor request vaststellen van de spreiding van de uren ":{
+      "Comment":"rq vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor decline vaststellen van de spreiding van de uren ":{
+      "Comment":"dc vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor state vaststellen van de spreiding van de uren ":{
+      "Comment":"st vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "FalseChoiceFor reject vaststellen van de spreiding van de uren ":{
+      "Comment":"rj vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":""
+    },
+    "request vaststellen van de spreiding van de uren ":{
+      "Comment":"rq vaststellen van de spreiding van de uren",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor request vaststellen van de spreiding van de uren "
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor request vaststellen van de spreiding van de uren "
+        }
+      ]
+    },
+    "decline vaststellen van de spreiding van de uren ":{
+      "Comment":"dc vaststellen van de spreiding van de uren",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor decline vaststellen van de spreiding van de uren "
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor decline vaststellen van de spreiding van de uren "
+        }
+      ]
+    },
+    "state vaststellen van de spreiding van de uren ":{
+      "Comment":"st vaststellen van de spreiding van de uren",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor state vaststellen van de spreiding van de uren "
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor state vaststellen van de spreiding van de uren "
+        }
+      ]
+    },
+    "reject vaststellen van de spreiding van de uren ":{
+      "Comment":"rj vaststellen van de spreiding van de uren",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor reject vaststellen van de spreiding van de uren "
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor reject vaststellen van de spreiding van de uren "
+        }
+      ]
+    },
+    "accept vaststellen van de spreiding van de uren ":{
+      "Comment":"ac vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":"state inwilligen verzoek aanpassing arbeidsduur"
+    },
+    "promiss vaststellen van de spreiding van de uren ":{
+      "Comment":"pm vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":"execute vaststellen van de spreiding van de uren "
+    },
+    "execute vaststellen van de spreiding van de uren ":{
+      "Comment":"ex vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "Next":"state vaststellen van de spreiding van de uren "
+    },
+    "accept vaststellen van de spreiding van de uren ":{
+      "Comment":"ac vaststellen van de spreiding van de uren",
+      "Type":"Pass",
+      "End":true
+    }
+  }
+}

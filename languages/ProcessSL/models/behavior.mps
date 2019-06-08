@@ -168,9 +168,6 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
-      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -756,13 +753,6 @@
             <node concept="3Tqbb2" id="ZMabRhCWAv" role="1tU5fm">
               <ref role="ehGHo" to="qiqe:m5XqSfwzHk" resolve="ActionRule" />
             </node>
-            <node concept="2ShNRf" id="ZMabRhCWAw" role="33vP2m">
-              <node concept="3zrR0B" id="ZMabRhCWAx" role="2ShVmc">
-                <node concept="3Tqbb2" id="ZMabRhCWAy" role="3zrR0E">
-                  <ref role="ehGHo" to="qiqe:m5XqSfwzHk" resolve="ActionRule" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="ZMabRhCWAz" role="3cqZAp">
@@ -913,13 +903,6 @@
             <property role="TrG5h" value="actionRule" />
             <node concept="3Tqbb2" id="ZMabRhCykW" role="1tU5fm">
               <ref role="ehGHo" to="qiqe:m5XqSfwzHk" resolve="ActionRule" />
-            </node>
-            <node concept="2ShNRf" id="ZMabRhCy$Y" role="33vP2m">
-              <node concept="3zrR0B" id="ZMabRhCy$W" role="2ShVmc">
-                <node concept="3Tqbb2" id="ZMabRhCy$X" role="3zrR0E">
-                  <ref role="ehGHo" to="qiqe:m5XqSfwzHk" resolve="ActionRule" />
-                </node>
-              </node>
             </node>
           </node>
         </node>

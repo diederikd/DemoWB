@@ -1,0 +1,161 @@
+{
+  "Comment":"Model of transactionkindverzoeken om aanpassing van de arbeidsduur",
+  "StartAt":"initial indienen verzoek aanpassing arbeidsduur",
+  "States":{
+    "initial indienen verzoek aanpassing arbeidsduur":{
+      "Comment":"in verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"indienen van het verzoek aanpassing arbeidsduur"
+    },
+    "TrueChoiceFor indienen van het verzoek aanpassing arbeidsduur":{
+      "Comment":"rq verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"accepteren van het verzoek aanpassing arbeidsduur"
+    },
+    "TrueChoiceFor niet accepteren van het verzoek verzoek aanpassing arbeidsduur":{
+      "Comment":"dc verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"indienen van het verzoek aanpassing arbeidsduur"
+    },
+    "TrueChoiceFor accepteren van het verzoek aanpassing arbeidsduur":{
+      "Comment":"pm verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"request afwijzen van het verzoek"
+    },
+    "TrueChoiceFor mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur":{
+      "Comment":"st verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"accepteren van de beslissing op het verzoek aanpassing arbeidsduur"
+    },
+    "TrueChoiceFor niet accepteren van de beslissing op verzoek aanpassing arbeidsduur":{
+      "Comment":"rj verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur"
+    },
+    "FalseChoiceFor indienen van het verzoek aanpassing arbeidsduur":{
+      "Comment":"rq verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"niet accepteren van het verzoek verzoek aanpassing arbeidsduur"
+    },
+    "FalseChoiceFor niet accepteren van het verzoek verzoek aanpassing arbeidsduur":{
+      "Comment":"dc verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"breek het indienen van het verzoek aanpassing arbeidsduur af"
+    },
+    "FalseChoiceFor accepteren van het verzoek aanpassing arbeidsduur":{
+      "Comment":"pm verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"request verzoek aanpassing arbeidsduur te bespreken"
+    },
+    "FalseChoiceFor mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur":{
+      "Comment":"st verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"niet accepteren van de beslissing op verzoek aanpassing arbeidsduur"
+    },
+    "FalseChoiceFor niet accepteren van de beslissing op verzoek aanpassing arbeidsduur":{
+      "Comment":"rj verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"stop met het doen van een verzoek aanpassing arbeidsduur"
+    },
+    "indienen van het verzoek aanpassing arbeidsduur":{
+      "Comment":"rq verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor indienen van het verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor indienen van het verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "niet accepteren van het verzoek verzoek aanpassing arbeidsduur":{
+      "Comment":"dc verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor niet accepteren van het verzoek verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor niet accepteren van het verzoek verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "accepteren van het verzoek aanpassing arbeidsduur":{
+      "Comment":"pm verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor accepteren van het verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor accepteren van het verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur":{
+      "Comment":"st verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "niet accepteren van de beslissing op verzoek aanpassing arbeidsduur":{
+      "Comment":"rj verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Choice",
+      "Choices":[
+        {
+          "Variable":"$truthvalue",
+          "BooleanEquals":false,
+          "Next":"TrueChoiceFor niet accepteren van de beslissing op verzoek aanpassing arbeidsduur"
+        },
+        {
+          "Variable":"$truthvalue",
+          "StringEquals":true,
+          "Next":"FalseChoiceFor niet accepteren van de beslissing op verzoek aanpassing arbeidsduur"
+        }
+      ]
+    },
+    "beslissen op het verzoek aanpassing arbeidsduur":{
+      "Comment":"ex verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"mededelen van de beslissing op het verzoek verzoek aanpassing arbeidsduur"
+    },
+    "stop met het doen van een verzoek aanpassing arbeidsduur":{
+      "Comment":"sp verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"initial indienen verzoek aanpassing arbeidsduur"
+    },
+    "breek het indienen van het verzoek aanpassing arbeidsduur af":{
+      "Comment":"qt verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "Next":"indienen van het verzoek aanpassing arbeidsduur"
+    },
+    "accepteren van de beslissing op het verzoek aanpassing arbeidsduur":{
+      "Comment":"ac verzoeken om aanpassing van de arbeidsduur",
+      "Type":"Pass",
+      "End":true
+    }
+  }
+}
