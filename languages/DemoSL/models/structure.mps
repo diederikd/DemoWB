@@ -336,7 +336,7 @@
     <node concept="1TJgyj" id="6z7DEV3RGZb" role="1TKVEi">
       <property role="IQ2ns" value="7550186569850605515" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="TransactionKindStepKind" />
+      <property role="20kJfa" value="transactionKindStepKind" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="it18:m5XqSfxGsY" resolve="TransactionKindStepKind" />
     </node>
@@ -378,6 +378,11 @@
       <property role="IQ2nx" value="7550186569861026777" />
       <property role="TrG5h" value="completed" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="22lWZKEbVCC" role="1TKVEl">
+      <property role="IQ2nx" value="2348051045108660776" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="1S2F7pXtNec">

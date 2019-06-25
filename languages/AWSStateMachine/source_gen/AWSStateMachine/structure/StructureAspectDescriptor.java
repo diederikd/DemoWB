@@ -134,6 +134,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("StateInput", 0x4c74ef895ad7d437L).target(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad7d402L).optional(true).ordered(true).multiple(false).origin("5509291617394611255").done();
     b.aggregate("Choices", 0x4c74ef895ad5ea29L).target(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL).optional(true).ordered(true).multiple(true).origin("5509291617394485801").done();
     b.aggregate("Branches", 0x4c74ef895af67b52L).target(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a51fL).optional(true).ordered(true).multiple(true).origin("5509291617396620114").done();
+    b.aggregate("Parameters", 0x51bd09cd96a80d41L).target(0xb5c0bb04c5834b2aL, 0xa66e1eab92d33c68L, 0x3c445779c2b0d576L).optional(true).ordered(true).multiple(false).origin("5889874666271018305").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStateInput() {

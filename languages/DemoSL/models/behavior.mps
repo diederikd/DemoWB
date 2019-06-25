@@ -328,6 +328,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -2206,6 +2207,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="22lWZKEIYKP" role="3cqZAp">
+          <node concept="2OqwBi" id="22lWZKEJ0Mz" role="3clFbG">
+            <node concept="2OqwBi" id="22lWZKEIZ5S" role="2Oq$k0">
+              <node concept="37vLTw" id="22lWZKEIYKN" role="2Oq$k0">
+                <ref role="3cqZAo" node="2S7w2zXJcZR" resolve="transactionKindStepKind" />
+              </node>
+              <node concept="3TrEf2" id="22lWZKEJ0ee" role="2OqNvi">
+                <ref role="3Tt5mk" to="it18:60WnNX14eL1" resolve="id" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="22lWZKEJ0X3" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3clFbF" id="2S7w2zXJd03" role="3cqZAp">
           <node concept="2OqwBi" id="2S7w2zXJd04" role="3clFbG">
             <node concept="2OqwBi" id="2S7w2zXJd05" role="2Oq$k0">
@@ -2498,7 +2512,7 @@
                       </node>
                     </node>
                     <node concept="13MTOL" id="6z7DEV4CEwy" role="2OqNvi">
-                      <ref role="13MTZf" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                      <ref role="13MTZf" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                     </node>
                   </node>
                   <node concept="3JPx81" id="6z7DEV4CEwz" role="2OqNvi">
@@ -2561,7 +2575,7 @@
                         <node concept="2OqwBi" id="6z7DEV4Cxs1" role="3uHU7w">
                           <node concept="13iPFW" id="6z7DEV4Cxs2" role="2Oq$k0" />
                           <node concept="3TrEf2" id="6z7DEV4Cxs3" role="2OqNvi">
-                            <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                            <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                           </node>
                         </node>
                       </node>
@@ -2642,7 +2656,7 @@
                       </node>
                     </node>
                     <node concept="13MTOL" id="6z7DEV4CZxm" role="2OqNvi">
-                      <ref role="13MTZf" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                      <ref role="13MTZf" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                     </node>
                   </node>
                   <node concept="3JPx81" id="6z7DEV4CZxn" role="2OqNvi">
@@ -2720,7 +2734,7 @@
                         <node concept="2OqwBi" id="6z7DEV4CZxI" role="3uHU7w">
                           <node concept="13iPFW" id="6z7DEV4CZxJ" role="2Oq$k0" />
                           <node concept="3TrEf2" id="6z7DEV4CZxK" role="2OqNvi">
-                            <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                            <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                           </node>
                         </node>
                       </node>
@@ -2936,7 +2950,7 @@
                         <ref role="3cqZAo" node="6z7DEV52qiu" resolve="possibleact" />
                       </node>
                       <node concept="3TrEf2" id="6z7DEV52qiI" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                        <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                       </node>
                     </node>
                     <node concept="2oxUTD" id="6z7DEV52qiJ" role="2OqNvi">
@@ -3194,7 +3208,40 @@
                       <ref role="3cqZAo" node="6z7DEV5Q91S" resolve="act" />
                     </node>
                     <node concept="3TrEf2" id="4obCtttud2x" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                      <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="22lWZKEbVCJ" role="3cqZAp">
+              <node concept="2OqwBi" id="22lWZKEc2bM" role="3clFbG">
+                <node concept="2OqwBi" id="22lWZKEc0TP" role="2Oq$k0">
+                  <node concept="37vLTw" id="22lWZKEiZ5o" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6z7DEV5Q$eL" resolve="newRunningTransaction" />
+                  </node>
+                  <node concept="3TrcHB" id="22lWZKEc199" role="2OqNvi">
+                    <ref role="3TsBF5" to="ar0b:22lWZKEbVCC" resolve="id" />
+                  </node>
+                </node>
+                <node concept="tyxLq" id="22lWZKEc2Sb" role="2OqNvi">
+                  <node concept="3cpWs3" id="22lWZKEcbtE" role="tz02z">
+                    <node concept="3cmrfG" id="22lWZKEcbtZ" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="2OqwBi" id="22lWZKEc3QU" role="3uHU7B">
+                      <node concept="2OqwBi" id="22lWZKEc3GX" role="2Oq$k0">
+                        <node concept="2OqwBi" id="22lWZKEc33t" role="2Oq$k0">
+                          <node concept="13iPFW" id="22lWZKEc2TT" role="2Oq$k0" />
+                          <node concept="I4A8Y" id="22lWZKEc3ki" role="2OqNvi" />
+                        </node>
+                        <node concept="2SmgA7" id="22lWZKEc3Nh" role="2OqNvi">
+                          <node concept="chp4Y" id="22lWZKEc3Qm" role="1dBWTz">
+                            <ref role="cht4Q" to="ar0b:6z7DEV4hIlq" resolve="RunningTransaction" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="22lWZKEc7yH" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
@@ -3286,7 +3333,7 @@
                         <ref role="3cqZAo" node="6z7DEV5Qz2y" resolve="newPossibleAct" />
                       </node>
                       <node concept="3TrEf2" id="6z7DEV5Qz2U" role="2OqNvi">
-                        <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                        <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                       </node>
                     </node>
                     <node concept="2oxUTD" id="6z7DEV5Qz2V" role="2OqNvi">
@@ -3371,7 +3418,7 @@
                               <ref role="3cqZAo" node="6z7DEV5Q91S" resolve="act" />
                             </node>
                             <node concept="3TrEf2" id="6z7DEV5Qz3p" role="2OqNvi">
-                              <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                              <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                             </node>
                           </node>
                         </node>
@@ -3461,7 +3508,7 @@
                           </node>
                         </node>
                         <node concept="13MTOL" id="6z7DEV5PRGe" role="2OqNvi">
-                          <ref role="13MTZf" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                          <ref role="13MTZf" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                         </node>
                       </node>
                       <node concept="3JPx81" id="6z7DEV5PRGf" role="2OqNvi">
@@ -3535,7 +3582,7 @@
                             <ref role="3cqZAo" node="6z7DEV5QeSp" resolve="newPossibleAct" />
                           </node>
                           <node concept="3TrEf2" id="6z7DEV5Qgsn" role="2OqNvi">
-                            <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                            <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                           </node>
                         </node>
                         <node concept="2oxUTD" id="6z7DEV5Qh46" role="2OqNvi">
@@ -3621,7 +3668,7 @@
                                 <ref role="3cqZAo" node="6z7DEV5Q91S" resolve="act" />
                               </node>
                               <node concept="3TrEf2" id="6z7DEV5PRGK" role="2OqNvi">
-                                <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                                <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                               </node>
                             </node>
                           </node>
@@ -3665,7 +3712,7 @@
                       <ref role="3cqZAo" node="6z7DEV5Q91S" resolve="act" />
                     </node>
                     <node concept="3TrEf2" id="5VhmAr8x_Es" role="2OqNvi">
-                      <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="TransactionKindStepKind" />
+                      <ref role="3Tt5mk" to="ar0b:6z7DEV3RGZb" resolve="transactionKindStepKind" />
                     </node>
                   </node>
                 </node>

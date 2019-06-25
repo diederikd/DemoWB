@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -161,6 +162,12 @@
       <property role="20kJfa" value="Branches" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4LOVS_qLEkv" resolve="StateMachine" />
+    </node>
+    <node concept="1TJgyj" id="56X2sQmE0P1" role="1TKVEi">
+      <property role="IQ2ns" value="5889874666271018305" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Parameters" />
+      <ref role="20lvS9" to="21pk:3L4lRB2GdlQ" resolve="JSONObject" />
     </node>
   </node>
   <node concept="AxPO7" id="4LOVS_qLEkT">
