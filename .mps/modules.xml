@@ -13,6 +13,7 @@
       <modulePath path="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/solutions/DEMO/DEMO.msd" folder="Technical" />
       <modulePath path="$PROJECT_DIR$/solutions/DemoWB.build/DemoWB.build.msd" folder="Technical" />
+      <modulePath path="$PROJECT_DIR$/solutions/IVAA-2.0 Akten/IVAA-2.0 Akten.msd" folder="Specifications" />
       <modulePath path="$PROJECT_DIR$/solutions/Tests/Tests.msd" folder="Tests" />
       <modulePath path="$PROJECT_DIR$/solutions/WAA/WAA.msd" folder="Specifications" />
       <modulePath path="$PROJECT_DIR$/solutions/sandbox/DemowB.sandbox.msd" folder="Tests" />
