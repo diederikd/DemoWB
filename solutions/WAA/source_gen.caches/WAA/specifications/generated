@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-25yoxghcbmyjkbbyowxnr81gg0zpjdy">
-  <files names="Test_ExportToXML:map_DemoModel.xml" />
-  <files dir="WAA/specifications" names="WAA.specifications transactionkind afwijzen van het verzoek.json:WAA.specifications transactionkind automatisch aanpassing overeenkomstig het verzoek.json:WAA.specifications transactionkind inwilligen verzoek aanpassing arbeidsduur.json:WAA.specifications transactionkind vaststellen van de spreiding van de uren.json:WAA.specifications transactionkind verzoek aanpassing arbeidsduur te bespreken.json:WAA.specifications transactionkind verzoeken om aanpassing van de arbeidsduur.json:WAA.specifications transactionkind wijzigen van de spreiding van de uren.json" />
+<product version="3" modelHash="eo0gvmfarbo754io8wufpj3zakwvzzi">
+  <files names="Test_ExportToXML:map_DemoModel.xml:testawsgen.sh" />
+  <files dir="WAA/specifications" names="WAA.specifications_transactionkind_T1.json:WAA.specifications_transactionkind_T2.json:WAA.specifications_transactionkind_T3.json:WAA.specifications_transactionkind_T4.json:WAA.specifications_transactionkind_T5.json:WAA.specifications_transactionkind_T6.json:WAA.specifications_transactionkind_T7.json" />
 </product>
 
