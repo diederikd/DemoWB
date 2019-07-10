@@ -81,6 +81,24 @@
     <property role="34LRSv" value="Action Rule Specification" />
     <property role="3GE5qa" value="Action Model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5WHqtXsH_eU" role="1TKVEi">
+      <property role="IQ2ns" value="6858254215609209786" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="transactionKind" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="pgdh:2ojITFECoW5" resolve="TransactionKind" />
+      <node concept="t5JxF" id="5WHqtXsH_eV" role="lGtFl">
+        <property role="t5JxN" value="for presentation purposes only" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="5WHqtXsHxwj" role="1TKVEl">
+      <property role="IQ2nx" value="6858254215609194515" />
+      <property role="TrG5h" value="filterTransactionKind" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <node concept="t5JxF" id="5WHqtXsHxwk" role="lGtFl">
+        <property role="t5JxN" value="for presentation purposes only" />
+      </node>
+    </node>
     <node concept="PrWs8" id="2ojITFEE2J3" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

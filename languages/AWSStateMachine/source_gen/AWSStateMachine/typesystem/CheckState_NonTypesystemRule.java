@@ -13,6 +13,7 @@ import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.messageTargets.PropertyMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class CheckState_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
@@ -25,6 +26,20 @@ public class CheckState_NonTypesystemRule extends AbstractNonTypesystemRule_Runt
           MessageTarget errorTarget = new NodeMessageTarget();
           errorTarget = new PropertyMessageTarget("Resource");
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(state, "State of type 'Task' requires a resource", "r:25d172e9-ec66-4482-a540-dd02daa6ecfb(AWSStateMachine.typesystem)", "5509291617397504494", null, errorTarget);
+        }
+      }
+      if (SPropertyOperations.getString(state, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).length() > 80) {
+        {
+          MessageTarget errorTarget = new NodeMessageTarget();
+          errorTarget = new PropertyMessageTarget("name");
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(state, "State name exceeds the 80-character limit", "r:25d172e9-ec66-4482-a540-dd02daa6ecfb(AWSStateMachine.typesystem)", "2348051045150397349", null, errorTarget);
+        }
+      }
+      if (!(SPropertyOperations.getBoolean(state, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a525L, 0x4c74ef895ac6a55eL, "End"))) && (SLinkOperations.getTarget(state, MetaAdapterFactory.getReferenceLink(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a525L, 0x4c74ef895ad09b96L, "Next")) == null)) {
+        {
+          MessageTarget errorTarget = new NodeMessageTarget();
+          errorTarget = new PropertyMessageTarget("name");
+          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(state, "Next field cannot be empty in a non-end state", "r:25d172e9-ec66-4482-a540-dd02daa6ecfb(AWSStateMachine.typesystem)", "6858254215594391073", null, errorTarget);
         }
       }
     }
