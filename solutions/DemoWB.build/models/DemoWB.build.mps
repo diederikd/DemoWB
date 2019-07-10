@@ -14,6 +14,7 @@
     <import index="n4zc" ref="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)" />
     <import index="iaov" ref="r:73650c37-a732-4199-a4ab-5fa70980f196(Tests.TestActionSL@tests)" />
     <import index="ev4z" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#ce5195dc-1630-4f7a-8b9e-ea731dc7dc97(jetbrains.mps.lang.project.modules/module.DemoWBTests@project_stub)" />
+    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -210,6 +211,9 @@
       </concept>
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD">
         <child id="9200313594498201639" name="generator" index="1TViLv" />
+      </concept>
+      <concept id="3189788309731922642" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyUseLanguage" flags="ng" index="1E1Vl3">
+        <reference id="3189788309731922643" name="language" index="1E1Vl2" />
       </concept>
       <concept id="322010710375794190" name="jetbrains.mps.build.mps.structure.BuildMps_DevKit" flags="ng" index="3LEwk6">
         <child id="322010710375832962" name="exports" index="3LEDUa" />
@@ -632,7 +636,6 @@
         </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNk" role="2G$12L">
-        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="DemoSL" />
         <property role="3LESm3" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef" />
         <node concept="55IIr" id="2AEzmscAXNf" role="3LF7KH">
@@ -749,6 +752,12 @@
           <node concept="3bR9La" id="2AQoUlCivxx" role="1SiIV1">
             <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
           </node>
+        </node>
+        <node concept="1E1Vl3" id="5U_JRAjRkeL" role="3bR37C">
+          <ref role="1E1Vl2" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
+        </node>
+        <node concept="1E1Vl3" id="5U_JRAjRkfr" role="3bR37C">
+          <ref role="1E1Vl2" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
         </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNq" role="2G$12L">

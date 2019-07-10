@@ -15,7 +15,6 @@
       </models>
       <external-templates />
       <dependencies>
-        <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
         <dependency reexport="false">d87481a3-8853-4c7c-9cb5-096d805e832c(ConstructionSL)</dependency>
         <dependency reexport="false">a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)</dependency>
         <dependency reexport="false">aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)</dependency>
@@ -23,6 +22,7 @@
         <dependency reexport="false">6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)</dependency>
         <dependency reexport="false">e81fc117-1697-4e77-8b54-4a5aa8f4ea97(ActionSL)</dependency>
         <dependency reexport="false">ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)</dependency>
+        <dependency reexport="false">479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:ad34076b-b44b-4b8e-9aa6-566fa22fe764:AWSStateMachine" version="0" />
