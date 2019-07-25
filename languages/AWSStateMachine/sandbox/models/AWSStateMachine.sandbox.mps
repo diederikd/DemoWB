@@ -4,8 +4,17 @@
   <languages>
     <use id="ad34076b-b44b-4b8e-9aa6-566fa22fe764" name="AWSStateMachine" version="0" />
     <use id="b5c0bb04-c583-4b2a-a66e-1eab92d33c68" name="com.mbeddr.mpsutil.json" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="e33ff641-cba8-4703-98f4-59e63936d940" name="com.mbeddr.mpsutil.margincell.editor" version="0" />
+    <use id="92f195b6-a209-4804-ad65-f5248ecd5873" name="com.mbeddr.mpsutil.margincell" version="0" />
+    <use id="c788b046-2019-4656-8b60-8bb9bbb177b5" name="com.mbeddr.mpsutil.review" version="0" />
+    <use id="7a060fae-09e0-4372-be36-6696d6554c0e" name="com.mbeddr.mpsutil.review.annotation" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="eu7c" ref="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)" />
+  </imports>
   <registry>
     <language id="ad34076b-b44b-4b8e-9aa6-566fa22fe764" name="AWSStateMachine">
       <concept id="40305210172459959" name="AWSStateMachine.structure.StringValue" flags="ng" index="6oBFn">
@@ -149,6 +158,54 @@
     <ref role="mJbgN" node="5Gjmga$HqxC" resolve="Simple" />
     <node concept="mG$EG" id="5Gjmga$HqxC" role="mG$EZ">
       <property role="TrG5h" value="Simple" />
+      <property role="mG$Fn" value="true" />
+    </node>
+  </node>
+  <node concept="mG$Em" id="5aH6O_7aewk">
+    <property role="TrG5h" value="Mbeddr Examples" />
+    <ref role="mJbgN" node="5aH6O_7aewl" resolve="Choice example" />
+    <node concept="mG$EG" id="5aH6O_7aewl" role="mG$EZ">
+      <property role="TrG5h" value="Choice example" />
+      <property role="mG$Fl" value="Choice" />
+      <ref role="mD7gv" node="5aH6O_7aewv" resolve="truthState" />
+      <node concept="mCa33" id="5aH6O_7aewm" role="mCgmw">
+        <ref role="mCZmw" node="5aH6O_7aewv" resolve="truthState" />
+        <node concept="mC63S" id="5aH6O_7aewn" role="mCgm$">
+          <property role="mC63X" value="BooleanEquals" />
+          <ref role="mF7Qg" node="5aH6O_7aewt" resolve="$.truthvalue" />
+          <node concept="6oBFt" id="5aH6O_7aewo" role="6osfD" />
+        </node>
+      </node>
+      <node concept="mCa33" id="5aH6O_7aewp" role="mCgmw">
+        <ref role="mCZmw" node="5aH6O_7aeww" resolve="falseState" />
+        <node concept="mC63S" id="5aH6O_7aewq" role="mCgm$">
+          <ref role="mF7Qg" node="5aH6O_7aewt" resolve="$.truthvalue" />
+          <node concept="6oBFn" id="5aH6O_7aewr" role="6osfD">
+            <property role="6oBFo" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="mCNIb" id="5aH6O_7aews" role="mCNIY">
+        <node concept="mC63M" id="5aH6O_7aewt" role="mCNIa">
+          <property role="TrG5h" value="$.truthvalue" />
+        </node>
+        <node concept="mC63M" id="5aH6O_7aewu" role="mCNIa">
+          <property role="TrG5h" value="$.testvar" />
+        </node>
+      </node>
+    </node>
+    <node concept="mG$EG" id="5aH6O_7aewv" role="mG$EZ">
+      <property role="TrG5h" value="truthState" />
+      <property role="mG$Fl" value="Pass" />
+      <ref role="mD7gv" node="5aH6O_7aewx" resolve="End State" />
+    </node>
+    <node concept="mG$EG" id="5aH6O_7aeww" role="mG$EZ">
+      <property role="TrG5h" value="falseState" />
+      <property role="mG$Fl" value="Pass" />
+      <ref role="mD7gv" node="5aH6O_7aewx" resolve="End State" />
+    </node>
+    <node concept="mG$EG" id="5aH6O_7aewx" role="mG$EZ">
+      <property role="TrG5h" value="End State" />
       <property role="mG$Fn" value="true" />
     </node>
   </node>
