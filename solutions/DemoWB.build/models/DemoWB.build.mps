@@ -151,11 +151,16 @@
       <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
         <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
       </concept>
+      <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
+        <property id="7832771629084799702" name="name" index="2iUeEt" />
+        <property id="7832771629084799701" name="url" index="2iUeEu" />
+      </concept>
       <concept id="6592112598314586625" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup" flags="ng" index="m$f5U">
         <reference id="6592112598314586626" name="group" index="m$f5T" />
       </concept>
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
+        <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
@@ -184,7 +189,11 @@
       <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
         <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
-      <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr" />
+      <concept id="4297162197620964123" name="jetbrains.mps.build.mps.structure.BuildMps_GeneratorOptions" flags="ng" index="1wNqPr">
+        <property id="4297162197620978188" name="strict" index="1wNuhc" />
+        <property id="4297162197620978190" name="parallel" index="1wNuhe" />
+        <property id="4297162197620978193" name="parallelThreads" index="1wNuhh" />
+      </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="7753544965996377997" name="jetbrains.mps.build.mps.structure.BuildMps_Branding" flags="ng" index="1zClus">
         <property id="3497141547781541445" name="minor" index="2OjLBK" />
@@ -356,7 +365,7 @@
                 <node concept="2Ry0Ak" id="2AEzmscBdAP" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="2AEzmscBdCC" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 2018.3.app" />
+                    <property role="2Ry0Am" value="MPS 2019.1.app" />
                     <node concept="2Ry0Ak" id="2AEzmscBdEr" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
@@ -602,47 +611,42 @@
       <node concept="m$f5U" id="2AEzmscCBGS" role="m$_yh">
         <ref role="m$f5T" node="2AEzmscAXNT" resolve="DemoWB" />
       </node>
+      <node concept="2iUeEo" id="2uvT7Bi6EzK" role="2iVFfd">
+        <property role="2iUeEt" value="dulfer" />
+        <property role="2iUeEu" value="www.dulfer.info" />
+      </node>
     </node>
-    <node concept="1wNqPr" id="2AEzmscRpGN" role="3989C9" />
+    <node concept="1wNqPr" id="2AEzmscRpGN" role="3989C9">
+      <property role="1wNuhc" value="true" />
+      <property role="1wNuhe" value="true" />
+      <property role="1wNuhh" value="2" />
+    </node>
     <node concept="2G$12M" id="2AEzmscAXNT" role="3989C9">
       <property role="TrG5h" value="DemoWB" />
-      <node concept="3LEwk6" id="4Ph_sG3zK8r" role="2G$12L">
+      <node concept="1E1JtD" id="1WaRo0vlJny" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="DemoSpecificationLanguage" />
-        <property role="3LESm3" value="2b99ba1d-c887-40de-a1eb-42c0e5a4b518" />
-        <node concept="55IIr" id="4Ph_sG3zK8u" role="3LF7KH">
-          <node concept="2Ry0Ak" id="4Ph_sG3zKbP" role="iGT6I">
-            <property role="2Ry0Am" value="devkits" />
-            <node concept="2Ry0Ak" id="4Ph_sG3zKdA" role="2Ry0An">
-              <property role="2Ry0Am" value="DemoSpecificationLanguage" />
-              <node concept="2Ry0Ak" id="4Ph_sG3zKfn" role="2Ry0An">
-                <property role="2Ry0Am" value="DemoSpecificationLanguage.devkit" />
+        <property role="TrG5h" value="AWSStateMachine" />
+        <property role="3LESm3" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764" />
+        <node concept="55IIr" id="1WaRo0vlJn_" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1WaRo0vlJqe" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="1WaRo0vlJqj" role="2Ry0An">
+              <property role="2Ry0Am" value="AWSStateMachine" />
+              <node concept="2Ry0Ak" id="1WaRo0vlJqo" role="2Ry0An">
+                <property role="2Ry0Am" value="AWSStateMachine.mpl" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3LEDTy" id="4Ph_sG3zKjE" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNS" resolve="ActionSL" />
-        </node>
-        <node concept="3LEDTy" id="4Ph_sG3zKjF" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNk" resolve="DemoSL" />
-        </node>
-        <node concept="3LEDTy" id="4Ph_sG3zKjG" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNA" resolve="ConstructionSL" />
-        </node>
-        <node concept="3LEDTy" id="4Ph_sG3zKjH" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNG" resolve="FactSL" />
-        </node>
-        <node concept="3LEDTy" id="4Ph_sG3zKjI" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNw" resolve="GeneralSL" />
-        </node>
-        <node concept="3LEDTy" id="4Ph_sG3zKjJ" role="3LEDUa">
-          <ref role="3LEDTV" node="2AEzmscAXNq" resolve="ProcessSL" />
+        <node concept="1yeLz9" id="1WaRo0vlJqs" role="1TViLv">
+          <property role="TrG5h" value="AWSStateMachine#01" />
+          <property role="3LESm3" value="6e089e9e-ba0a-471f-9873-153f8bfe1bb7" />
         </node>
       </node>
       <node concept="1E1JtD" id="2AEzmscAXNk" role="2G$12L">
         <property role="TrG5h" value="DemoSL" />
         <property role="3LESm3" value="61f0ccba-8ded-47ee-b024-8f1c223c70ef" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="2AEzmscAXNf" role="3LF7KH">
           <node concept="2Ry0Ak" id="2AEzmscAXNg" role="iGT6I">
             <property role="2Ry0Am" value="languages" />
@@ -1048,26 +1052,6 @@
           </node>
         </node>
       </node>
-      <node concept="1E1JtD" id="1WaRo0vlJny" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="AWSStateMachine" />
-        <property role="3LESm3" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764" />
-        <node concept="55IIr" id="1WaRo0vlJn_" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1WaRo0vlJqe" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="1WaRo0vlJqj" role="2Ry0An">
-              <property role="2Ry0Am" value="AWSStateMachine" />
-              <node concept="2Ry0Ak" id="1WaRo0vlJqo" role="2Ry0An">
-                <property role="2Ry0Am" value="AWSStateMachine.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="1WaRo0vlJqs" role="1TViLv">
-          <property role="TrG5h" value="AWSStateMachine#01" />
-          <property role="3LESm3" value="6e089e9e-ba0a-471f-9873-153f8bfe1bb7" />
-        </node>
-      </node>
       <node concept="1E1JtA" id="4h5c_cXdMeb" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="DemoWBTests" />
@@ -1093,6 +1077,40 @@
           <node concept="3bR9La" id="4h5c_cXjf8H" role="1SiIV1">
             <ref role="3bR37D" node="2AEzmscAXNA" resolve="ConstructionSL" />
           </node>
+        </node>
+      </node>
+      <node concept="3LEwk6" id="4Ph_sG3zK8r" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="DemoSpecificationLanguage" />
+        <property role="3LESm3" value="2b99ba1d-c887-40de-a1eb-42c0e5a4b518" />
+        <node concept="55IIr" id="4Ph_sG3zK8u" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4Ph_sG3zKbP" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4Ph_sG3zKdA" role="2Ry0An">
+              <property role="2Ry0Am" value="DemoSpecificationLanguage" />
+              <node concept="2Ry0Ak" id="4Ph_sG3zKfn" role="2Ry0An">
+                <property role="2Ry0Am" value="DemoSpecificationLanguage.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4Ph_sG3zKjE" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNS" resolve="ActionSL" />
+        </node>
+        <node concept="3LEDTy" id="4Ph_sG3zKjF" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNk" resolve="DemoSL" />
+        </node>
+        <node concept="3LEDTy" id="4Ph_sG3zKjG" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNA" resolve="ConstructionSL" />
+        </node>
+        <node concept="3LEDTy" id="4Ph_sG3zKjH" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNG" resolve="FactSL" />
+        </node>
+        <node concept="3LEDTy" id="4Ph_sG3zKjI" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNw" resolve="GeneralSL" />
+        </node>
+        <node concept="3LEDTy" id="4Ph_sG3zKjJ" role="3LEDUa">
+          <ref role="3LEDTV" node="2AEzmscAXNq" resolve="ProcessSL" />
         </node>
       </node>
     </node>

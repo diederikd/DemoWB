@@ -17,10 +17,7 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-    </list>
+    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="" />
     <ignored path="languages/GeneralSL/classes_gen/" />
     <ignored path="languages/GeneralSL/source_gen.caches/" />
     <ignored path="languages/GeneralSL/source_gen/" />
@@ -2589,26 +2586,21 @@
         <entry file="mps://node://DemoWB.build/DemoWB.build/DemoWB">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="2495">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="2250">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="271" />
-                    <property name="caretXRelative" value="168" />
+                    <property name="caretX" value="159" />
+                    <property name="caretXRelative" value="48" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ReferencePresentation_4dmy40_a0b0">
-                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546085" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546041" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers />
                 <transactionalProperties />
                 <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_ucemm3_e0">
-                      <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" />
-                    </cellIdElement>
-                  </collapsedElement>
                   <collapsedElement isCollapsed="false">
                     <cellIdElement cellId="Collection_1x254q_db1a">
                       <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328545965" />
@@ -2652,7 +2644,7 @@
                 </foldable>
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546085" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -2667,11 +2659,183 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/StringValue">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="239" />
+                    <property name="caretXRelative" value="88" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200348" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200359" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6lfqqa_b0">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200349" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200348" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/BooleanValue">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="247" />
+                    <property name="caretXRelative" value="96" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174211991" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174212002" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6lfqqa_b0">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174211992" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174211991" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/IntegerValue">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="247" />
+                    <property name="caretXRelative" value="96" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202348" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_fao2ea_a">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202359" />
+                    </cellIdElement>
+                  </collapsedElement>
+                  <collapsedElement isCollapsed="false">
+                    <cellIdElement cellId="Collection_6lfqqa_b0">
+                      <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202349" />
+                    </cellIdElement>
+                  </collapsedElement>
+                </foldable>
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202348" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/Comparison">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="111" />
+                    <property name="caretXRelative" value="16" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints>
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+                  <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+                </enabledHints>
+              </inspectorMemento>
+              <node node_ref="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394397041" />
             </state>
           </provider>
         </entry>
@@ -3043,7 +3207,7 @@
     <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="FileSystem" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -3065,19 +3229,185 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Technical" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEMO" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/AWSStateMachine/models/structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technical" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DEMO" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:aebf2864-9c2c-484e-9abf-dfc94bfe3b27(DEMO.plugin) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/DEMO/models/plugin.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technical" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DemoWB" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/AWSStateMachine/models/structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Values" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technical" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DemowB" />
+              <option name="myItemId" value="Technical" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:fa3c95cc-d88f-44d6-ab2f-d43212fc7fe7(DemowB.Library) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/sandbox/models/DemowB.Library.mps]" />
+              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DemoWB" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/DemoWB.build/models/DemoWB.build.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technical" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cf368af2-a0d8-4832-bf11-d65809e4fbc5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Technical" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5dc27448-a8a0-4ca6-8741-a0a4c9e61d43" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3091,83 +3421,29 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemowB" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/sandbox/models/DemowB.testARS.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DemowB" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
+              <option name="myItemId" value="Languages" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/languages/AWSStateMachine/models/structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Values" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="40305210172459955" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -3185,7 +3461,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.mbeddr.mpsutil.multilingual.concept.runtime.plugin.MultilingualConceptProjectPlugin_ProjectPluginPart.showTranslations" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="mps.compiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -3199,7 +3475,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Build Script.DemoWBDistribution">
+  <component name="RunManager" selected="Build Script.DemoWB">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -3445,10 +3721,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Build Script.DemoWB" />
         <item itemvalue="JUnit Tests.Tests in 'Tests.TestConstructionSL@tests'" />
         <item itemvalue="JUnit Tests.Tests in 'DemoSL'" />
         <item itemvalue="JUnit Tests.DefaultSoI_Test" />
-        <item itemvalue="Build Script.DemoWB" />
         <item itemvalue="Build Script.DemoWBDistribution" />
       </list>
     </recent_temporary>
@@ -3459,7 +3735,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3202934" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3202934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -3480,10 +3756,10 @@
       <window_info anchor="bottom" id="Usages" order="16" sideWeight="0.45110023" weight="0.40418118" />
       <window_info anchor="bottom" id="Node Explorer" order="17" sideWeight="0.45904645" weight="0.26364693" />
       <window_info anchor="bottom" id="Module Dependencies" order="18" weight="0.329849" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.45048898" visible="true" weight="0.2659698" />
+      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.45048898" weight="0.2659698" />
       <window_info anchor="bottom" id="Generation Tracer" order="20" sideWeight="0.49816626" weight="0.329849" />
       <window_info anchor="bottom" id="Cell Explorer" order="21" sideWeight="0.4962453" weight="0.329849" />
-      <window_info anchor="bottom" id="Messages" order="22" sideWeight="0.45537898" weight="0.31126598" />
+      <window_info anchor="bottom" id="Messages" order="22" sideWeight="0.45537898" visible="true" weight="0.31126598" />
       <window_info anchor="bottom" id="Typechecker State" order="23" />
       <window_info anchor="bottom" id="Wetten.nl" order="24" />
       <window_info anchor="bottom" id="Console" order="25" sideWeight="0.47879973" weight="0.32752612" />
@@ -19754,7 +20030,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First steps in Export to XML" />
     <MESSAGE value="First Export to XML ready" />
     <MESSAGE value="First steps in import xml" />
     <MESSAGE value="First steps in TPD" />
@@ -19779,7 +20054,8 @@
     <MESSAGE value="Upgrade 2019.1.5" />
     <MESSAGE value="Added username to mbedrr download" />
     <MESSAGE value="Added 2019.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2019.1" />
+    <MESSAGE value="Removed artifacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed artifacts" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://WAA@transient107/WAA.specifications@13_10/WAA.specifications_transactionkind_T1" />
@@ -20775,29 +21051,36 @@
     </entry>
     <entry file="mps://node://DemowB.sandbox/DemowB.Library/ARS Library" />
     <entry file="mps://node://DemowB.sandbox/DemowB.testARS/Test ARS" />
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="mps://node://DemoWB.build/DemoWB.build/DemoWB">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2495">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="2250">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="271" />
-                <property name="caretXRelative" value="168" />
+                <property name="caretX" value="159" />
+                <property name="caretXRelative" value="48" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReferencePresentation_4dmy40_a0b0">
-                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546085" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546041" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers />
             <transactionalProperties />
             <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_ucemm3_e0">
-                  <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546004" />
-                </cellIdElement>
-              </collapsedElement>
               <collapsedElement isCollapsed="false">
                 <cellIdElement cellId="Collection_1x254q_db1a">
                   <node node_reference="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328545965" />
@@ -20841,7 +21124,7 @@
             </foldable>
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:83d1a381-d09d-45c8-baa7-b63c0fb13ae9(DemoWB.build)/3002367575328546085" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -20855,10 +21138,257 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+    <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/IntegerValue">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="96" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202348" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202359" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6lfqqa_b0">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202349" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174202348" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/BooleanValue">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="247" />
+                <property name="caretXRelative" value="96" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174211991" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174212002" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6lfqqa_b0">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174211992" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174211991" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/StringValue">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="239" />
+                <property name="caretXRelative" value="88" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200348" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200359" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6lfqqa_b0">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200349" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200348" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/ChoiceRule">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380618" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200305" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380618" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/Value">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="151" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ALIAS_EDITOR_COMPONENT">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200305" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_fao2ea_a">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200289" />
+                </cellIdElement>
+              </collapsedElement>
+              <collapsedElement isCollapsed="false">
+                <cellIdElement cellId="Collection_6lfqqa_b0">
+                  <node node_reference="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200279" />
+                </cellIdElement>
+              </collapsedElement>
+            </foldable>
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200305" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:bb30a962-b527-422a-a1b7-643313e5f304(AWSStateMachine.behavior)/40305210174200278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://AWSStateMachine/AWSStateMachine.structure/Comparison">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="111" />
+                <property name="caretXRelative" value="16" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172568201" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints>
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor_doNotUseThisHint" />
+              <enabledHintsElement enabledHintsAttribute="de.slisson.mps.conditionalEditor.hints.editor.conditionalEditorHints.conditionalEditor" />
+            </enabledHints>
+          </inspectorMemento>
+          <node node_ref="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394397041" />
         </state>
       </provider>
     </entry>

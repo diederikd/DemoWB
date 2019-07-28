@@ -24,13 +24,16 @@ public final class Value__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bb3L, "AWSStateMachine.structure.Value");
   private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<String> toString_id2fcm071XBx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(SModifiersImpl.create(12, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2fcm071XBx").registry(REGISTRY).build();
+  public static final SMethod<String> toString_id2fcm071XBx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2fcm071XBx").registry(REGISTRY).build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toString_id2fcm071XBx);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static String toString_id2fcm071XBx(@NotNull SNode __thisNode__) {
+    return "";
+  }
 
   /*package*/ Value__BehaviorDescriptor() {
     super(REGISTRY);
@@ -48,6 +51,8 @@ public final class Value__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 0:
+        return (T) ((String) toString_id2fcm071XBx(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
