@@ -11,7 +11,6 @@
   </dependencies>
   <languageVersions>
     <language slang="l:ad34076b-b44b-4b8e-9aa6-566fa22fe764:AWSStateMachine" version="0" />
-    <language slang="l:7d323e61-8358-4656-a071-a2bb68438615:com.mbeddr.core.codereview" version="0" />
     <language slang="l:b5c0bb04-c583-4b2a-a66e-1eab92d33c68:com.mbeddr.mpsutil.json" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />

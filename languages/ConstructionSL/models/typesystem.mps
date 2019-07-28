@@ -216,7 +216,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1VmqrBbTdDB" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1VmqrBbTe9Y" role="37wK5m">
                                 <node concept="1YBJjd" id="1VmqrBbUpD1" role="2Oq$k0">
                                   <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
@@ -425,7 +425,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5dW$Pa23YkS" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="2OqwBi" id="5dW$Pa23YkT" role="37wK5m">
                 <node concept="2OqwBi" id="5dW$Pa23YkU" role="2Oq$k0">
                   <node concept="1YBJjd" id="5dW$Pa23YkV" role="2Oq$k0">
@@ -436,7 +436,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa23YkX" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                  <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                 </node>
               </node>
             </node>
@@ -595,7 +595,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="4vyZ9NOFAuW" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="4vyZ9NOFAuX" role="37wK5m">
                                 <node concept="1YBJjd" id="4vyZ9NOFAuY" role="2Oq$k0">
                                   <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />

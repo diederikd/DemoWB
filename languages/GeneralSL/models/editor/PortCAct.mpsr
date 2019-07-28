@@ -57,25 +57,25 @@
               <node concept="2OqwBi" id="IuxU86zsS9" role="37wK5m">
                 <node concept="2xDkLB" id="IuxU86zsSa" role="2Oq$k0" />
                 <node concept="liA8E" id="IuxU86zsSb" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX():double" resolve="getX" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX()" resolve="getX" />
                 </node>
               </node>
               <node concept="2OqwBi" id="IuxU86zsSc" role="37wK5m">
                 <node concept="2xDkLB" id="IuxU86zsSd" role="2Oq$k0" />
                 <node concept="liA8E" id="IuxU86zsSe" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY():double" resolve="getY" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY()" resolve="getY" />
                 </node>
               </node>
               <node concept="2OqwBi" id="IuxU86zsSf" role="37wK5m">
                 <node concept="2xDkLB" id="IuxU86zsSg" role="2Oq$k0" />
                 <node concept="liA8E" id="IuxU86zsSh" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth():double" resolve="getWidth" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
                 </node>
               </node>
               <node concept="2OqwBi" id="IuxU86zsSi" role="37wK5m">
                 <node concept="2xDkLB" id="IuxU86zsSj" role="2Oq$k0" />
                 <node concept="liA8E" id="IuxU86zsSk" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight():double" resolve="getHeight" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
                 </node>
               </node>
             </node>

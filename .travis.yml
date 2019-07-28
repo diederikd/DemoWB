@@ -2,16 +2,16 @@ language: java
 jdk:
 - openjdk8
 before_install:
-- wget https://download-cf.jetbrains.com/mps/2018.3/MPS-2018.3.zip
-- wget https://github.com/JetBrains/MPS-extensions/releases/download/nightly-2018.3.934.4e4b4f5/de.itemis.mps.extensions-2018.3.934.4e4b4f5.zip
-- wget https://github.com/mbeddr/mbeddr.core/releases/download/nightly-619/platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip
+- wget https://download-cf.jetbrains.com/mps/2019.1/MPS-2019.1.zip
+- wget https://github.com/JetBrains/MPS-extensions/releases/download/nightly-2019.1.1037.4955bbc/de.itemis.mps.extensions-2019.1.1037.4955bbc.zip
+- wget https://build.mbeddr.com/repository/downloadAll/Mbeddr2_Mbeddr_Gradle_platform/256369:id/artifacts.zip
 install:
 - unzip MPS-2018.3.zip
-- unzip de.itemis.mps.extensions-2018.3.934.4e4b4f5.zip -d plugins
-- unzip platform-distribution-1.2.21172.355f4af-MPS-2018.3.2.zip -d plugins
+- unzip de.itemis.mps.extensions-2019.1.1037.4955bbc.zip
+- unzip artifacts.zip
 script:
-- ant -Dmps_home=./MPS\ 2018.3 -Dmbeddr_home=./plugins clean generate assemble
-- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2018.3
+- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./artifacts/com.mbeddr.platform -Dmps_extensions=./de.itemis.mps.extensions clean generate assemble
+- ant -f buildDistribution.xml -Dmps_home=./MPS\ 2019.1
 deploy:
   provider: releases
   name: Demo-Workbench-Build-$TRAVIS_TAG

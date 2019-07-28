@@ -70,9 +70,9 @@
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
-      <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
+      <concept id="2743742872034489001" name="ConstructionSL.structure.ElementaryActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="identification" index="3cGPkH" />
-        <child id="6934522251522538168" name="id" index="xdEm7" />
+        <child id="6934522251522538168" name="Id" index="xdEm7" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />

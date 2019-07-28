@@ -2,7 +2,6 @@
 <dependenciesRoot>
   <dependency className="AWSStateMachine.Language">
     <classNode dependClassName="AWSStateMachine.behavior.BehaviorAspectDescriptor" />
-    <classNode dependClassName="AWSStateMachine.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="AWSStateMachine.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="AWSStateMachine.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="AWSStateMachine.structure.StructureAspectDescriptor" />
@@ -16,7 +15,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />

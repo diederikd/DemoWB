@@ -332,6 +332,90 @@
     </DEMO:TransactionProcessStepKind>
   </DEMO:TransactionProcessStepKinds>
   <DEMO:Connections>
+    <DEMO:Connection Id="4d27c196-d844-4b51-ae6d-4fb7df6e51d6" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="645ff7c7-918a-40d4-b5f2-514bfc66e178" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorCAR>
+      <DEMO:FromTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionKind>
+      <DEMO:ToCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:ToCompositeActorRole>
+    </DEMO:ExecutorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c9cbe7c8-4023-4cf8-923d-8f38389e81d2" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="38451c5e-d409-4566-8b40-0dc3f02f4924" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>cfccf78a-8c47-4991-adfa-381bf08e9e11</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="87cd6999-a34d-4858-ac9b-9fa48074a5dc" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>98dd6f82-9929-4b7d-8c56-986f907b1acb</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4db8b719-6a66-40b8-b4aa-c4590abb05a1" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="bca3b4ed-32d4-4f56-83b1-1064923b89a2" FromCardinality="1" ToCardinality="1">
+    <DEMO:ExecutorEAR>
+      <DEMO:FromTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionKind>
+      <DEMO:ToElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:ToElementaryActorRole>
+    </DEMO:ExecutorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="cdd98678-6262-4f58-97ec-8fef2d09dd97" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorCAR>
+      <DEMO:FromCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:FromCompositeActorRole>
+      <DEMO:ToTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionKind>
+    </DEMO:InitiatorCAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="9fcb6160-c1a9-4759-935d-91e174a0eced" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="4c241b57-77d5-4349-ac9f-79f4183f334d" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="c54890c5-1233-4b54-b235-ce21d193061b" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="869c0b0e-eb60-4c14-9a5e-7553a46b0632" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="114e2073-47e8-4017-8b0d-7f00ea5da8c5" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
+    <DEMO:Connection Id="1ec7021e-b114-4b89-89c2-5173c087c026" FromCardinality="1" ToCardinality="1">
+    <DEMO:InitiatorEAR>
+      <DEMO:FromElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:FromElementaryActorRole>
+      <DEMO:ToTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionKind>
+    </DEMO:InitiatorEAR>
+    </DEMO:Connection>
     <DEMO:Connection Id="b6e031d1-4d97-4b9b-a51c-d9925d0a363c" FromCardinality="1" ToCardinality="1">
     <DEMO:InitiationTPSK>
       <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
@@ -817,90 +901,6 @@
       <DEMO:FromTransactionProcessStepKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionProcessStepKind>
       <DEMO:ToTransactionProcessStepKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionProcessStepKind>
     </DEMO:InitiationTPSK>
-    </DEMO:Connection>
-    <DEMO:Connection Id="4d27c196-d844-4b51-ae6d-4fb7df6e51d6" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorEAR>
-      <DEMO:FromTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:FromTransactionKind>
-      <DEMO:ToElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:ToElementaryActorRole>
-    </DEMO:ExecutorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="645ff7c7-918a-40d4-b5f2-514bfc66e178" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorCAR>
-      <DEMO:FromTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:FromTransactionKind>
-      <DEMO:ToCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:ToCompositeActorRole>
-    </DEMO:ExecutorCAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="c9cbe7c8-4023-4cf8-923d-8f38389e81d2" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorEAR>
-      <DEMO:FromTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:FromTransactionKind>
-      <DEMO:ToElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:ToElementaryActorRole>
-    </DEMO:ExecutorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="38451c5e-d409-4566-8b40-0dc3f02f4924" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorEAR>
-      <DEMO:FromTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:FromTransactionKind>
-      <DEMO:ToElementaryActorRole>cfccf78a-8c47-4991-adfa-381bf08e9e11</DEMO:ToElementaryActorRole>
-    </DEMO:ExecutorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="87cd6999-a34d-4858-ac9b-9fa48074a5dc" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorEAR>
-      <DEMO:FromTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:FromTransactionKind>
-      <DEMO:ToElementaryActorRole>98dd6f82-9929-4b7d-8c56-986f907b1acb</DEMO:ToElementaryActorRole>
-    </DEMO:ExecutorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="4db8b719-6a66-40b8-b4aa-c4590abb05a1" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorEAR>
-      <DEMO:FromTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:FromTransactionKind>
-      <DEMO:ToElementaryActorRole>8ac80ca8-78c0-4f7b-bd1c-bf25adcfeb6e</DEMO:ToElementaryActorRole>
-    </DEMO:ExecutorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="bca3b4ed-32d4-4f56-83b1-1064923b89a2" FromCardinality="1" ToCardinality="1">
-    <DEMO:ExecutorEAR>
-      <DEMO:FromTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:FromTransactionKind>
-      <DEMO:ToElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:ToElementaryActorRole>
-    </DEMO:ExecutorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="cdd98678-6262-4f58-97ec-8fef2d09dd97" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorCAR>
-      <DEMO:FromCompositeActorRole>8302ff28-ee19-4fe5-992f-004eab409aa3</DEMO:FromCompositeActorRole>
-      <DEMO:ToTransactionKind>2f6952f6-a9dd-44e9-a2c8-74af4a8db900</DEMO:ToTransactionKind>
-    </DEMO:InitiatorCAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="9fcb6160-c1a9-4759-935d-91e174a0eced" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorEAR>
-      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
-      <DEMO:ToTransactionKind>1ca6982d-4f0c-4de2-ab09-b4ef29b3e9f5</DEMO:ToTransactionKind>
-    </DEMO:InitiatorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="4c241b57-77d5-4349-ac9f-79f4183f334d" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorEAR>
-      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
-      <DEMO:ToTransactionKind>5e2712ff-2c7f-4588-b9e8-01fe4c3b62c1</DEMO:ToTransactionKind>
-    </DEMO:InitiatorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="c54890c5-1233-4b54-b235-ce21d193061b" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorEAR>
-      <DEMO:FromElementaryActorRole>3a818ca7-359c-47b3-b402-ed1a6977b262</DEMO:FromElementaryActorRole>
-      <DEMO:ToTransactionKind>9fdcd148-4c1d-4b19-aa29-e06463213e7f</DEMO:ToTransactionKind>
-    </DEMO:InitiatorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="869c0b0e-eb60-4c14-9a5e-7553a46b0632" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorEAR>
-      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
-      <DEMO:ToTransactionKind>b95a2928-d510-4261-9279-9a9e4dad1325</DEMO:ToTransactionKind>
-    </DEMO:InitiatorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="114e2073-47e8-4017-8b0d-7f00ea5da8c5" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorEAR>
-      <DEMO:FromElementaryActorRole>e63ce274-4662-48c2-b7c2-72a06f697fbb</DEMO:FromElementaryActorRole>
-      <DEMO:ToTransactionKind>444e904d-dc7b-4536-b95d-5cbf1111cd85</DEMO:ToTransactionKind>
-    </DEMO:InitiatorEAR>
-    </DEMO:Connection>
-    <DEMO:Connection Id="1ec7021e-b114-4b89-89c2-5173c087c026" FromCardinality="1" ToCardinality="1">
-    <DEMO:InitiatorEAR>
-      <DEMO:FromElementaryActorRole>17860a63-e11d-4ddf-ae7f-3cdd1c6a303a</DEMO:FromElementaryActorRole>
-      <DEMO:ToTransactionKind>52c9c51e-adac-4fd6-a602-081efbce301d</DEMO:ToTransactionKind>
-    </DEMO:InitiatorEAR>
     </DEMO:Connection>
   </DEMO:Connections>
 </DEMO:DEMOmodel>

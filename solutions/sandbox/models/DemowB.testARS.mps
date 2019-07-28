@@ -55,49 +55,6 @@
         <child id="6934522251536907042" name="id" index="xQAgt" />
       </concept>
     </language>
-    <language id="e81fc117-1697-4e77-8b54-4a5aa8f4ea97" name="ActionSL">
-      <concept id="397994270025464660" name="ActionSL.structure.ActionRule" flags="ng" index="a1WVU">
-        <child id="5047305753770507734" name="eventPart" index="ojhK1" />
-        <child id="5047305753771525330" name="responsPart" index="onuk5" />
-        <child id="5047305753771525327" name="assessPart" index="onuko" />
-        <child id="1511015967103359276" name="id" index="_QUKC" />
-      </concept>
-      <concept id="6832341507192571007" name="ActionSL.structure.TransactionReference" flags="ng" index="2mzTSp">
-        <reference id="6832341507192571010" name="object" index="2mzTV$" />
-        <reference id="6832341507192571008" name="transactionKind" index="2mzTVA" />
-      </concept>
-      <concept id="5047305753770367505" name="ActionSL.structure.When" flags="ng" index="ojNJ6">
-        <property id="5047305753770391947" name="stepKind" index="ojPxs" />
-        <reference id="5047305753770367506" name="appliesToStepKind" index="ojNJ5" />
-        <child id="6832341507192571076" name="transactionReference" index="2mzTUy" />
-      </concept>
-      <concept id="5047305753771139492" name="ActionSL.structure.Assess" flags="ng" index="omW1N">
-        <child id="5047305753772187652" name="Addressee" index="oqW7j" />
-        <child id="1402139071330643655" name="Performer" index="1FbCz9" />
-      </concept>
-      <concept id="5047305753771629473" name="ActionSL.structure.WithClause" flags="ng" index="on7DQ">
-        <property id="5047305753771742673" name="showWith" index="okzg6" />
-      </concept>
-      <concept id="5047305753771629418" name="ActionSL.structure.ActionClause" flags="ng" index="on7EX">
-        <property id="5047305753771629419" name="stepkind" index="on7EW" />
-        <reference id="5047305753771629421" name="transactionKindReference" index="on7EU" />
-        <reference id="1311537047069506213" name="appliesToStepKind" index="3ap3_r" />
-      </concept>
-      <concept id="5047305753771525530" name="ActionSL.structure.Respons" flags="ng" index="onuhd">
-        <child id="5047305753771525533" name="then" index="onuha" />
-        <child id="5047305753771525531" name="if" index="onuhc" />
-      </concept>
-      <concept id="5047305753771525528" name="ActionSL.structure.Then" flags="ng" index="onuhf">
-        <child id="5047305753771706656" name="actions" index="okEzR" />
-      </concept>
-      <concept id="5047305753771525334" name="ActionSL.structure.If" flags="ng" index="onuk1" />
-      <concept id="1402139071330640726" name="ActionSL.structure.Addressee" flags="ng" index="1FbClo">
-        <reference id="1402139071330642670" name="actorRole" index="1FbCNw" />
-      </concept>
-      <concept id="1402139071330640725" name="ActionSL.structure.Performer" flags="ng" index="1FbClr">
-        <reference id="1402139071330642673" name="actorRole" index="1FbCNZ" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -113,9 +70,6 @@
       </concept>
     </language>
     <language id="61f0ccba-8ded-47ee-b024-8f1c223c70ef" name="DemoSL">
-      <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA">
-        <child id="5047305753770528015" name="rules" index="ojaNo" />
-      </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
       </concept>
@@ -131,42 +85,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="3cHilA" id="1S2F7pX42JM">
-    <property role="TrG5h" value="Test ARS" />
-    <node concept="a1WVU" id="1S2F7pX5oTW" role="ojaNo">
-      <node concept="ojNJ6" id="1S2F7pX5oTX" role="ojhK1">
-        <property role="okzg6" value="false" />
-        <property role="ojPxs" value="rq" />
-        <ref role="ojNJ5" node="1S2F7pX5D2J" resolve="request test transaction" />
-        <node concept="2mzTSp" id="1S2F7pX5oTY" role="2mzTUy">
-          <ref role="2mzTVA" node="1S2F7pX5D2E" />
-          <ref role="2mzTV$" node="1S2F7pX5D3U" resolve="TEST ENTITY" />
-        </node>
-      </node>
-      <node concept="omW1N" id="1S2F7pX5oTZ" role="onuko">
-        <node concept="1FbClr" id="1S2F7pX5oUh" role="1FbCz9">
-          <ref role="1FbCNZ" node="1S2F7pX5oTS" resolve="TEST ROLE" />
-        </node>
-        <node concept="1FbClo" id="1S2F7pX5D3N" role="oqW7j">
-          <ref role="1FbCNw" node="1S2F7pX5oTS" resolve="TEST ROLE" />
-        </node>
-      </node>
-      <node concept="onuhd" id="1S2F7pX5oU0" role="onuk5">
-        <node concept="onuk1" id="1S2F7pX5oU1" role="onuhc" />
-        <node concept="onuhf" id="1S2F7pX5oU2" role="onuha">
-          <node concept="on7EX" id="1S2F7pX5D3Y" role="okEzR">
-            <property role="okzg6" value="false" />
-            <property role="on7EW" value="pm" />
-            <ref role="on7EU" node="1S2F7pX5D2E" />
-            <ref role="3ap3_r" node="1S2F7pX5D2M" resolve="promiss test transaction" />
-          </node>
-        </node>
-      </node>
-      <node concept="W57nP" id="1jSdggL9gUB" role="_QUKC">
-        <property role="W57_q" value="4fc51db5-dbd4-46b0-9f60-534b534e4f4c" />
-      </node>
-    </node>
-  </node>
   <node concept="3llzxe" id="1S2F7pX5oTK">
     <property role="TrG5h" value="OCD ARS Test" />
     <node concept="3cHilr" id="1S2F7pX5oTL" role="3llzIV">

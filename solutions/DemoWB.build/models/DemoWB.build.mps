@@ -13,7 +13,6 @@
     <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
     <import index="n4zc" ref="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)" />
     <import index="iaov" ref="r:73650c37-a732-4199-a4ab-5fa70980f196(Tests.TestActionSL@tests)" />
-    <import index="ev4z" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#ce5195dc-1630-4f7a-8b9e-ea731dc7dc97(jetbrains.mps.lang.project.modules/module.DemoWBTests@project_stub)" />
     <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
   </imports>
   <registry>
@@ -511,17 +510,11 @@
         </node>
       </node>
       <node concept="398223" id="2AEzmscAXOy" role="39821P">
-        <node concept="3_I8Xc" id="2AEzmscAXOz" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H7T" resolve="cvsIntegration" />
-        </node>
         <node concept="3_I8Xc" id="2AEzmscAXO$" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
         </node>
         <node concept="3_I8Xc" id="2AEzmscAXO_" role="39821P">
           <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
-        </node>
-        <node concept="3_I8Xc" id="2AEzmscAXOA" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
         </node>
         <node concept="3_I8Xc" id="4h5c_cX7U$j" role="39821P">
           <ref role="3_I8Xa" to="90a9:4be$WTb1O3_" resolve="de.itemis.mps.editor.diagram" />

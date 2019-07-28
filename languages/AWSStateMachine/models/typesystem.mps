@@ -164,7 +164,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="22lWZKGF7ro" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length():int" resolve="length" />
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
                 </node>
               </node>
             </node>

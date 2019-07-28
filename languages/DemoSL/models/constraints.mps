@@ -93,7 +93,7 @@
               </node>
               <node concept="2YIFZM" id="6z7DEV3PVRb" role="3uHU7w">
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
                 <node concept="1eOMI4" id="6z7DEV3PRSW" role="37wK5m">
                   <node concept="3cpWs3" id="6z7DEV3P2xw" role="1eOMHV">
                     <node concept="3cmrfG" id="6z7DEV3P2Jp" role="3uHU7w">

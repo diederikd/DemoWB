@@ -123,7 +123,7 @@
             <node concept="2OqwBi" id="23QvOXyPMsl" role="33vP2m">
               <node concept="2xDkLB" id="23QvOXyPMsm" role="2Oq$k0" />
               <node concept="liA8E" id="23QvOXyPMsn" role="2OqNvi">
-                <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth():double" resolve="getWidth" />
+                <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
               </node>
             </node>
           </node>
@@ -135,7 +135,7 @@
             <node concept="2OqwBi" id="23QvOXyPMsr" role="33vP2m">
               <node concept="2xDkLB" id="23QvOXyPMss" role="2Oq$k0" />
               <node concept="liA8E" id="23QvOXyPMst" role="2OqNvi">
-                <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight():double" resolve="getHeight" />
+                <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
               </node>
             </node>
           </node>
@@ -148,7 +148,7 @@
               <node concept="2OqwBi" id="23QvOXyPMsy" role="3uHU7B">
                 <node concept="2xDkLB" id="23QvOXyPMsz" role="2Oq$k0" />
                 <node concept="liA8E" id="23QvOXyPMs$" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX():double" resolve="getX" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getX()" resolve="getX" />
                 </node>
               </node>
               <node concept="FJ1c_" id="23QvOXyPMs_" role="3uHU7w">
@@ -178,7 +178,7 @@
               <node concept="2OqwBi" id="23QvOXyPMsJ" role="3uHU7B">
                 <node concept="2xDkLB" id="23QvOXyPMsK" role="2Oq$k0" />
                 <node concept="liA8E" id="23QvOXyPMsL" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY():double" resolve="getY" />
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getY()" resolve="getY" />
                 </node>
               </node>
             </node>
@@ -246,7 +246,7 @@
               <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
             </node>
             <node concept="liA8E" id="23QvOXyPMt7" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Path2D$Float.moveTo(double,double):void" resolve="moveTo" />
+              <ref role="37wK5l" to="fbzs:~Path2D$Float.moveTo(double,double)" resolve="moveTo" />
               <node concept="3cpWsd" id="23QvOXyPMt8" role="37wK5m">
                 <node concept="37vLTw" id="23QvOXyPMt9" role="3uHU7w">
                   <ref role="3cqZAo" node="23QvOXyPMsN" resolve="r" />
@@ -267,7 +267,7 @@
               <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
             </node>
             <node concept="liA8E" id="23QvOXyPMtf" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Path2D$Float.lineTo(double,double):void" resolve="lineTo" />
+              <ref role="37wK5l" to="fbzs:~Path2D$Float.lineTo(double,double)" resolve="lineTo" />
               <node concept="37vLTw" id="23QvOXyPMtg" role="37wK5m">
                 <ref role="3cqZAo" node="23QvOXyPMsv" resolve="x" />
               </node>
@@ -288,7 +288,7 @@
               <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
             </node>
             <node concept="liA8E" id="23QvOXyPMtn" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Path2D$Float.lineTo(double,double):void" resolve="lineTo" />
+              <ref role="37wK5l" to="fbzs:~Path2D$Float.lineTo(double,double)" resolve="lineTo" />
               <node concept="3cpWs3" id="23QvOXyPMto" role="37wK5m">
                 <node concept="37vLTw" id="23QvOXyPMtp" role="3uHU7w">
                   <ref role="3cqZAo" node="23QvOXyPMsN" resolve="r" />
@@ -309,7 +309,7 @@
               <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
             </node>
             <node concept="liA8E" id="23QvOXyPMtv" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Path2D$Float.lineTo(double,double):void" resolve="lineTo" />
+              <ref role="37wK5l" to="fbzs:~Path2D$Float.lineTo(double,double)" resolve="lineTo" />
               <node concept="37vLTw" id="23QvOXyPMtw" role="37wK5m">
                 <ref role="3cqZAo" node="23QvOXyPMsv" resolve="x" />
               </node>
@@ -330,7 +330,7 @@
               <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
             </node>
             <node concept="liA8E" id="23QvOXyPMtB" role="2OqNvi">
-              <ref role="37wK5l" to="fbzs:~Path2D.closePath():void" resolve="closePath" />
+              <ref role="37wK5l" to="fbzs:~Path2D.closePath()" resolve="closePath" />
             </node>
           </node>
         </node>
@@ -338,7 +338,7 @@
           <node concept="2OqwBi" id="23QvOXyPRUQ" role="3clFbG">
             <node concept="2xDIQ0" id="23QvOXyPRiV" role="2Oq$k0" />
             <node concept="liA8E" id="23QvOXyPSnf" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color):void" resolve="setColor" />
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
               <node concept="10M0yZ" id="23QvOXyPSqd" role="37wK5m">
                 <ref role="3cqZAo" to="z60i:~Color.RED" resolve="RED" />
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
@@ -350,7 +350,7 @@
           <node concept="2OqwBi" id="23QvOXyPQha" role="3clFbG">
             <node concept="2xDIQ0" id="23QvOXyPQhb" role="2Oq$k0" />
             <node concept="liA8E" id="23QvOXyPQhc" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics2D.fill(java.awt.Shape):void" resolve="fill" />
+              <ref role="37wK5l" to="z60i:~Graphics2D.fill(java.awt.Shape)" resolve="fill" />
               <node concept="37vLTw" id="23QvOXyPQhd" role="37wK5m">
                 <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
               </node>
@@ -361,7 +361,7 @@
           <node concept="2OqwBi" id="23QvOXyPQhf" role="3clFbG">
             <node concept="2xDIQ0" id="23QvOXyPQhg" role="2Oq$k0" />
             <node concept="liA8E" id="23QvOXyPQhh" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics2D.draw(java.awt.Shape):void" resolve="draw" />
+              <ref role="37wK5l" to="z60i:~Graphics2D.draw(java.awt.Shape)" resolve="draw" />
               <node concept="37vLTw" id="23QvOXyPQhi" role="37wK5m">
                 <ref role="3cqZAo" node="23QvOXyPMse" resolve="shape" />
               </node>

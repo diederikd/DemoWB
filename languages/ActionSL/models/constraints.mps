@@ -173,7 +173,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="4obCttuhDMs" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="4obCttuhDMt" role="37wK5m">
                                     <node concept="EsrRn" id="4obCttuhEzb" role="2Oq$k0" />
                                     <node concept="2qgKlT" id="4obCttuhETV" role="2OqNvi">
@@ -270,7 +270,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="6ihpGwUjmmk" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="6ihpGwUjmml" role="37wK5m">
                                     <node concept="3kakTB" id="6ihpGwUjnP4" role="2Oq$k0" />
                                     <node concept="2qgKlT" id="6ihpGwUjohr" role="2OqNvi">
@@ -367,7 +367,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="18NwZVolWwH" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                   <node concept="2OqwBi" id="18NwZVolWwI" role="37wK5m">
                                     <node concept="EsrRn" id="18NwZVolWwJ" role="2Oq$k0" />
                                     <node concept="2qgKlT" id="18NwZVolZM9" role="2OqNvi">

@@ -782,7 +782,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="5VhmAr8oMwZ" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                       <node concept="2OqwBi" id="5VhmAr8oN79" role="37wK5m">
                                         <node concept="pncrf" id="5VhmAr8oMPr" role="2Oq$k0" />
                                         <node concept="3TrcHB" id="5VhmAr8oNUj" role="2OqNvi">

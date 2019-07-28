@@ -296,7 +296,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="1WaRo0v9GdK" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="2OqwBi" id="1WaRo0v9GHe" role="37wK5m">
                             <node concept="1YBJjd" id="1WaRo0v9GkN" role="2Oq$k0">
                               <ref role="1YBMHb" node="1WaRo0v9wuS" resolve="transactionKindStepKind" />

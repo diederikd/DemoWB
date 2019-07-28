@@ -6082,7 +6082,7 @@
                 <node concept="2EnYce" id="1jzGQlDFbP6" role="33vP2m">
                   <node concept="1yATlc" id="1jzGQlDFbP7" role="2Oq$k0" />
                   <node concept="liA8E" id="1jzGQlDFbP8" role="2OqNvi">
-                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
                   </node>
                 </node>
               </node>
@@ -6105,7 +6105,7 @@
                   <ref role="3cqZAo" node="1jzGQlDFbP4" resolve="folder" />
                 </node>
                 <node concept="liA8E" id="1jzGQlDFbPh" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jzGQlDFbPi" role="37wK5m">
                     <property role="Xl_RC" value="ActorRoleReferenceForOCD" />
                   </node>
@@ -6130,7 +6130,7 @@
                   <ref role="3cqZAo" node="1jzGQlDFbP4" resolve="folder" />
                 </node>
                 <node concept="liA8E" id="1jzGQlDFbPr" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jzGQlDFbPs" role="37wK5m">
                     <property role="Xl_RC" value="CompositeActorRoleReferenceForOCD" />
                   </node>
@@ -6155,7 +6155,7 @@
                   <ref role="3cqZAo" node="1jzGQlDFbP4" resolve="folder" />
                 </node>
                 <node concept="liA8E" id="1jzGQlDFbP_" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jzGQlDFbPA" role="37wK5m">
                     <property role="Xl_RC" value="TransactionKindReferenceForOCD" />
                   </node>
@@ -6180,7 +6180,7 @@
                   <ref role="3cqZAo" node="1jzGQlDFbP4" resolve="folder" />
                 </node>
                 <node concept="liA8E" id="1jzGQlDFbPJ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jzGQlDFbPK" role="37wK5m">
                     <property role="Xl_RC" value="AggregateTransactionKindReferenceForOCD" />
                   </node>

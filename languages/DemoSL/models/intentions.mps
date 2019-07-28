@@ -172,7 +172,7 @@
             <node concept="3clFbF" id="2S7w2zXKG5X" role="3cqZAp">
               <node concept="2YIFZM" id="2S7w2zXKIah" role="3clFbG">
                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
                 <node concept="10Nm6u" id="2S7w2zXKIbX" role="37wK5m" />
                 <node concept="Xl_RD" id="2S7w2zXKIgU" role="37wK5m">
                   <property role="Xl_RC" value="Transactionkind has already stepkinds" />
@@ -333,7 +333,7 @@
               <node concept="3clFbS" id="2Ze6BQpxcHL" role="3clFbx">
                 <node concept="3clFbF" id="2Ze6BQpxcHM" role="3cqZAp">
                   <node concept="2YIFZM" id="2Ze6BQpxcHN" role="3clFbG">
-                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
                     <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                     <node concept="10Nm6u" id="2Ze6BQpxcHO" role="37wK5m" />
                     <node concept="3cpWs3" id="2Ze6BQpxgtF" role="37wK5m">

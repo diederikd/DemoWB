@@ -295,7 +295,7 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
-        <property id="2423417345669755629" name="whichError" index="1eyWvh" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -429,7 +429,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpuIZI" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpuIZJ" role="37wK5m">
@@ -452,7 +452,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqprs" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqprt" role="37wK5m">
@@ -475,7 +475,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqpr$" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqpr_" role="37wK5m">
@@ -498,7 +498,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqprG" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqprH" role="37wK5m">
@@ -521,7 +521,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqprO" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqprP" role="37wK5m">
@@ -544,7 +544,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqprW" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqprX" role="37wK5m">
@@ -567,7 +567,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqps4" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqps5" role="37wK5m">
@@ -590,7 +590,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqpsc" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqpsd" role="37wK5m">
@@ -613,7 +613,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqpsk" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqpsl" role="37wK5m">
@@ -636,7 +636,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="2Ze6BQpqpss" role="2OqNvi">
-                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation():java.lang.String" resolve="getPresentation" />
+                <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
             <node concept="3f7Wdw" id="2Ze6BQpqpst" role="37wK5m">
@@ -3054,7 +3054,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="6z7DEV53AKN" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.remove(java.lang.Object):boolean" resolve="remove" />
+                  <ref role="37wK5l" to="33ny:~List.remove(java.lang.Object)" resolve="remove" />
                   <node concept="2GrUjf" id="6z7DEV53AKO" role="37wK5m">
                     <ref role="2Gs0qQ" node="6z7DEV53AKu" resolve="act" />
                   </node>
@@ -3445,7 +3445,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="4obCtttpCqG" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~List.removeAll(java.util.Collection):boolean" resolve="removeAll" />
+                  <ref role="37wK5l" to="33ny:~List.removeAll(java.util.Collection)" resolve="removeAll" />
                   <node concept="2OqwBi" id="4obCtttpCqH" role="37wK5m">
                     <node concept="2OqwBi" id="4obCtttpCqI" role="2Oq$k0">
                       <node concept="2OqwBi" id="4obCtttpCqJ" role="2Oq$k0">
@@ -3812,7 +3812,7 @@
                   <ref role="3cqZAo" node="5dW$Pa1qKu8" resolve="returnValue" />
                 </node>
                 <node concept="liA8E" id="5dW$Pa1qKuh" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                   <node concept="Xl_RD" id="5dW$Pa1qKui" role="37wK5m">
                     <property role="Xl_RC" value=" " />
                   </node>
@@ -3832,7 +3832,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1qKu8" resolve="returnValue" />
               </node>
               <node concept="liA8E" id="5dW$Pa1qKup" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                 <node concept="Xl_RD" id="5dW$Pa1qKuq" role="37wK5m">
                   <property role="Xl_RC" value="." />
                 </node>
@@ -3852,11 +3852,11 @@
                   <ref role="3cqZAo" node="5dW$Pa1qKu8" resolve="returnValue" />
                 </node>
                 <node concept="liA8E" id="5dW$Pa1qKuy" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.toLowerCase():java.lang.String" resolve="toLowerCase" />
+                  <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
                 </node>
               </node>
               <node concept="liA8E" id="5dW$Pa1qKuz" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
               </node>
             </node>
           </node>
@@ -3899,7 +3899,7 @@
                   <ref role="3cqZAo" node="60WnNX1MOVa" resolve="returnValue" />
                 </node>
                 <node concept="liA8E" id="5dW$Pa1lhrL" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String):java.lang.String" resolve="replaceAll" />
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
                   <node concept="Xl_RD" id="5dW$Pa1lhrM" role="37wK5m">
                     <property role="Xl_RC" value=" " />
                   </node>
@@ -3919,7 +3919,7 @@
                 <ref role="3cqZAo" node="60WnNX1MOVa" resolve="returnValue" />
               </node>
               <node concept="liA8E" id="60WnNX1MPu6" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence):java.lang.String" resolve="replace" />
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
                 <node concept="Xl_RD" id="60WnNX1MPu7" role="37wK5m">
                   <property role="Xl_RC" value="." />
                 </node>
@@ -3939,11 +3939,11 @@
                   <ref role="3cqZAo" node="60WnNX1MOVa" resolve="returnValue" />
                 </node>
                 <node concept="liA8E" id="60WnNX1MQfZ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.toUpperCase():java.lang.String" resolve="toUpperCase" />
+                  <ref role="37wK5l" to="wyt6:~String.toUpperCase()" resolve="toUpperCase" />
                 </node>
               </node>
               <node concept="liA8E" id="5dW$Pa15_1w" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
               </node>
             </node>
           </node>
@@ -3979,7 +3979,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1aL5U" resolve="givenString" />
               </node>
               <node concept="liA8E" id="5dW$Pa1aUy_" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String):java.lang.String[]" resolve="split" />
+                <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
                 <node concept="Xl_RD" id="5dW$Pa1aUyA" role="37wK5m">
                   <property role="Xl_RC" value=" " />
                 </node>
@@ -4033,10 +4033,10 @@
                       <ref role="3cqZAo" node="5dW$Pa1aL63" resolve="sb" />
                     </node>
                     <node concept="liA8E" id="5dW$Pa1aLV_" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~StringBuffer.append(char):java.lang.StringBuffer" resolve="append" />
+                      <ref role="37wK5l" to="wyt6:~StringBuffer.append(char)" resolve="append" />
                       <node concept="2YIFZM" id="5dW$Pa1aLVA" role="37wK5m">
                         <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
-                        <ref role="37wK5l" to="wyt6:~Character.toUpperCase(char):char" resolve="toUpperCase" />
+                        <ref role="37wK5l" to="wyt6:~Character.toUpperCase(char)" resolve="toUpperCase" />
                         <node concept="2OqwBi" id="5dW$Pa1aLVB" role="37wK5m">
                           <node concept="AH0OO" id="5dW$Pa1aLVC" role="2Oq$k0">
                             <node concept="37vLTw" id="5dW$Pa1aLVD" role="AHHXb">
@@ -4047,7 +4047,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="5dW$Pa1aLVF" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.charAt(int):char" resolve="charAt" />
+                            <ref role="37wK5l" to="wyt6:~String.charAt(int)" resolve="charAt" />
                             <node concept="3cmrfG" id="5dW$Pa1aLVG" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
@@ -4057,7 +4057,7 @@
                     </node>
                   </node>
                   <node concept="liA8E" id="5dW$Pa1aL6v" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                    <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                     <node concept="2OqwBi" id="5dW$Pa1aL6w" role="37wK5m">
                       <node concept="AH0OO" id="5dW$Pa1aL6x" role="2Oq$k0">
                         <node concept="37vLTw" id="5dW$Pa1aL6y" role="AHHXb">
@@ -4068,7 +4068,7 @@
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa1aL6$" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~String.substring(int):java.lang.String" resolve="substring" />
+                        <ref role="37wK5l" to="wyt6:~String.substring(int)" resolve="substring" />
                         <node concept="3cmrfG" id="5dW$Pa1aL6_" role="37wK5m">
                           <property role="3cmrfH" value="1" />
                         </node>
@@ -4077,7 +4077,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa1aL6A" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String):java.lang.StringBuffer" resolve="append" />
+                  <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
                   <node concept="Xl_RD" id="5dW$Pa1aL6B" role="37wK5m">
                     <property role="Xl_RC" value=" " />
                   </node>
@@ -4093,11 +4093,11 @@
                 <ref role="3cqZAo" node="5dW$Pa1aL63" resolve="sb" />
               </node>
               <node concept="liA8E" id="5dW$Pa1aLu$" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~StringBuffer.toString():java.lang.String" resolve="toString" />
+                <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
               </node>
             </node>
             <node concept="liA8E" id="5dW$Pa1aL6F" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+              <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
             </node>
           </node>
         </node>
@@ -4169,7 +4169,7 @@
             </node>
             <node concept="2YIFZM" id="5dW$Pa1DAzh" role="33vP2m">
               <ref role="1Pybhc" to="vpqd:~DocumentBuilderFactory" resolve="DocumentBuilderFactory" />
-              <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance():javax.xml.parsers.DocumentBuilderFactory" resolve="newInstance" />
+              <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newInstance()" resolve="newInstance" />
             </node>
           </node>
         </node>
@@ -4203,7 +4203,7 @@
                     <ref role="3cqZAo" node="5dW$Pa1DAsQ" resolve="dbFactory" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1DLI$" role="2OqNvi">
-                    <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newDocumentBuilder():javax.xml.parsers.DocumentBuilder" resolve="newDocumentBuilder" />
+                    <ref role="37wK5l" to="vpqd:~DocumentBuilderFactory.newDocumentBuilder()" resolve="newDocumentBuilder" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5dW$Pa1DKYD" role="37vLTJ">
@@ -4218,7 +4218,7 @@
                     <ref role="3cqZAo" node="5dW$Pa1DI7B" resolve="documentBuilder" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1DMVp" role="2OqNvi">
-                    <ref role="37wK5l" to="vpqd:~DocumentBuilder.parse(java.lang.String):org.w3c.dom.Document" resolve="parse" />
+                    <ref role="37wK5l" to="vpqd:~DocumentBuilder.parse(java.lang.String)" resolve="parse" />
                     <node concept="37vLTw" id="5dW$Pa1DN2N" role="37wK5m">
                       <ref role="3cqZAo" node="5dW$Pa1Cj3g" resolve="dirfileName" />
                     </node>
@@ -4257,11 +4257,11 @@
                 <ref role="3cqZAo" node="5dW$Pa1DKzg" resolve="document" />
               </node>
               <node concept="liA8E" id="5dW$Pa1DO94" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Document.getDocumentElement():org.w3c.dom.Element" resolve="getDocumentElement" />
+                <ref role="37wK5l" to="lhjl:~Document.getDocumentElement()" resolve="getDocumentElement" />
               </node>
             </node>
             <node concept="liA8E" id="5dW$Pa1DP5W" role="2OqNvi">
-              <ref role="37wK5l" to="lhjl:~Node.normalize():void" resolve="normalize" />
+              <ref role="37wK5l" to="lhjl:~Node.normalize()" resolve="normalize" />
             </node>
           </node>
         </node>
@@ -4274,11 +4274,11 @@
                   <ref role="3cqZAo" node="5dW$Pa1DKzg" resolve="document" />
                 </node>
                 <node concept="liA8E" id="5dW$Pa1DTbZ" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~Document.getDocumentElement():org.w3c.dom.Element" resolve="getDocumentElement" />
+                  <ref role="37wK5l" to="lhjl:~Document.getDocumentElement()" resolve="getDocumentElement" />
                 </node>
               </node>
               <node concept="liA8E" id="5dW$Pa1DUdA" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
               </node>
             </node>
             <node concept="Xl_RD" id="5dW$Pa1DRyB" role="3uHU7B">
@@ -4297,7 +4297,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1DKzg" resolve="document" />
               </node>
               <node concept="liA8E" id="5dW$Pa1X3PD" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Document.getDocumentElement():org.w3c.dom.Element" resolve="getDocumentElement" />
+                <ref role="37wK5l" to="lhjl:~Document.getDocumentElement()" resolve="getDocumentElement" />
               </node>
             </node>
           </node>
@@ -4311,7 +4311,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1X3nh" resolve="root" />
               </node>
               <node concept="liA8E" id="5dW$Pa1X4R$" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                 <node concept="Xl_RD" id="5dW$Pa1X4R_" role="37wK5m">
                   <property role="Xl_RC" value="Name" />
                 </node>
@@ -4357,11 +4357,11 @@
                   <ref role="3cqZAo" node="5dW$Pa1DKzg" resolve="document" />
                 </node>
                 <node concept="liA8E" id="5dW$Pa1SZol" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~Document.getDocumentElement():org.w3c.dom.Element" resolve="getDocumentElement" />
+                  <ref role="37wK5l" to="lhjl:~Document.getDocumentElement()" resolve="getDocumentElement" />
                 </node>
               </node>
               <node concept="liA8E" id="5dW$Pa1T00t" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -4379,7 +4379,7 @@
                     <ref role="3cqZAo" node="5dW$Pa1SYnD" resolve="AllRootChilds" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1E3IP" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="5dW$Pa1E3P1" role="37wK5m">
                       <ref role="3cqZAo" node="5dW$Pa1DWLk" resolve="i" />
                     </node>
@@ -4395,7 +4395,7 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1E4RX" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="5dW$Pa1E3Xa" role="3uHU7B">
@@ -4421,11 +4421,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa24cjy" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa24cjz" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa24cj$" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:ElementaryActorRoles" />
                   </node>
@@ -4450,11 +4450,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa28TbY" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa28TbZ" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa28Tc0" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:CompositeActorRoles" />
                   </node>
@@ -4479,11 +4479,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa2iCZO" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa2iCZP" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa2iCZQ" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:TransactionKinds" />
                   </node>
@@ -4508,11 +4508,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1TyEg" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa1TAxV" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa1TACq" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:TransactionProcessStepKinds" />
                   </node>
@@ -4537,11 +4537,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKSX8n" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKSX8o" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jSdggKSX8p" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:Connections" />
                   </node>
@@ -4566,11 +4566,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKUXrU" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKUXrV" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jSdggKUXrW" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:EntityTypes" />
                   </node>
@@ -4595,11 +4595,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1E2gT" resolve="RootchildNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKoeZe" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKoeZf" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jSdggKoeZg" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:AttributeTypes" />
                   </node>
@@ -4620,7 +4620,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1SYnD" resolve="AllRootChilds" />
               </node>
               <node concept="liA8E" id="5dW$Pa1E0UD" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="5dW$Pa1DXm9" role="3uHU7B">
@@ -4647,7 +4647,7 @@
                 <property role="TrG5h" value="response" />
                 <node concept="10Oyi0" id="1zDMseb2kEV" role="1tU5fm" />
                 <node concept="2YIFZM" id="1zDMseb2nV7" role="33vP2m">
-                  <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int):int" resolve="showConfirmDialog" />
+                  <ref role="37wK5l" to="dxuu:~JOptionPane.showConfirmDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showConfirmDialog" />
                   <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                   <node concept="10Nm6u" id="1zDMseb2nV8" role="37wK5m" />
                   <node concept="Xl_RD" id="1zDMseb2nV9" role="37wK5m">
@@ -5117,7 +5117,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1U2Jb" resolve="ElementaryActorRolesNode" />
               </node>
               <node concept="liA8E" id="5dW$Pa1U3hd" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -5135,7 +5135,7 @@
                     <ref role="3cqZAo" node="5dW$Pa1U2pj" resolve="AllElementaryActorRoles" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1U3jE" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="5dW$Pa1U3jF" role="37wK5m">
                       <ref role="3cqZAo" node="5dW$Pa1U3jX" resolve="i" />
                     </node>
@@ -5151,7 +5151,7 @@
                     <ref role="3cqZAo" node="5dW$Pa1U3jA" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1U3jK" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="5dW$Pa1U3jL" role="3uHU7B">
@@ -5185,7 +5185,7 @@
                         <ref role="3cqZAo" node="5dW$Pa1UwPl" resolve="element" />
                       </node>
                       <node concept="liA8E" id="5dW$Pa1UxMt" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="5dW$Pa1UxMu" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -5206,21 +5206,21 @@
                             <ref role="3cqZAo" node="5dW$Pa1UwPl" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa1WBat" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa1WBau" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Identification" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa1WBav" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa1WBaw" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa1WBax" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa1WBay" role="3uHU7B">
@@ -5238,21 +5238,21 @@
                             <ref role="3cqZAo" node="5dW$Pa1UwPl" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa1UxiS" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa1Uxt9" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Name" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa1WcdA" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa1WcoO" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa1WcIQ" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa1U4$8" role="3uHU7B">
@@ -5309,7 +5309,7 @@
                           <ref role="3cqZAo" node="5dW$Pa1UwPl" resolve="element" />
                         </node>
                         <node concept="liA8E" id="5dW$Pa22aKj" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                           <node concept="Xl_RD" id="5dW$Pa22aKk" role="37wK5m">
                             <property role="Xl_RC" value="Id" />
                           </node>
@@ -5336,21 +5336,21 @@
                               <ref role="3cqZAo" node="5dW$Pa1UwPl" resolve="element" />
                             </node>
                             <node concept="liA8E" id="5dW$Pa22iBM" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="5dW$Pa22iBN" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Identification" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="5dW$Pa22iBO" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="5dW$Pa22iBP" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa22iBQ" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -5374,21 +5374,21 @@
                               <ref role="3cqZAo" node="5dW$Pa1UwPl" resolve="element" />
                             </node>
                             <node concept="liA8E" id="5dW$Pa22ijq" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="5dW$Pa22ijr" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Name" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="5dW$Pa22ijs" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="5dW$Pa22ijt" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa22iju" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -5423,11 +5423,11 @@
                     <ref role="3cqZAo" node="5dW$Pa1U3jA" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa1U3jU" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa1U3jV" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa1U3jW" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:ElementaryActorRole" />
                   </node>
@@ -5448,7 +5448,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1U2pj" resolve="AllElementaryActorRoles" />
               </node>
               <node concept="liA8E" id="5dW$Pa1U3k3" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="5dW$Pa1U3k4" role="3uHU7B">
@@ -5491,7 +5491,7 @@
                 <ref role="3cqZAo" node="5dW$Pa245aG" resolve="CompositeActorRolesNode" />
               </node>
               <node concept="liA8E" id="5dW$Pa2458$" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -5509,7 +5509,7 @@
                     <ref role="3cqZAo" node="5dW$Pa2458w" resolve="AllCompositeActorRoles" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa2458G" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="5dW$Pa2458H" role="37wK5m">
                       <ref role="3cqZAo" node="5dW$Pa245aw" resolve="i" />
                     </node>
@@ -5525,7 +5525,7 @@
                     <ref role="3cqZAo" node="5dW$Pa2458C" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa2458M" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="5dW$Pa2458N" role="3uHU7B">
@@ -5559,7 +5559,7 @@
                         <ref role="3cqZAo" node="5dW$Pa2458R" resolve="element" />
                       </node>
                       <node concept="liA8E" id="5dW$Pa24590" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="5dW$Pa24591" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -5580,21 +5580,21 @@
                             <ref role="3cqZAo" node="5dW$Pa2458R" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa24599" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa2459a" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Identification" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa2459b" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa2459c" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa2459d" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa2459e" role="3uHU7B">
@@ -5612,21 +5612,21 @@
                             <ref role="3cqZAo" node="5dW$Pa2458R" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa2459l" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa2459m" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Name" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa2459n" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa2459o" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa2459p" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa2459q" role="3uHU7B">
@@ -5683,7 +5683,7 @@
                           <ref role="3cqZAo" node="5dW$Pa2458R" resolve="element" />
                         </node>
                         <node concept="liA8E" id="5dW$Pa2459L" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                           <node concept="Xl_RD" id="5dW$Pa2459M" role="37wK5m">
                             <property role="Xl_RC" value="Id" />
                           </node>
@@ -5710,21 +5710,21 @@
                               <ref role="3cqZAo" node="5dW$Pa2458R" resolve="element" />
                             </node>
                             <node concept="liA8E" id="5dW$Pa2459X" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="5dW$Pa2459Y" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Identification" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="5dW$Pa2459Z" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="5dW$Pa245a0" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa245a1" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -5748,21 +5748,21 @@
                               <ref role="3cqZAo" node="5dW$Pa2458R" resolve="element" />
                             </node>
                             <node concept="liA8E" id="5dW$Pa245ac" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="5dW$Pa245ad" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Name" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="5dW$Pa245ae" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="5dW$Pa245af" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa245ag" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -5797,11 +5797,11 @@
                     <ref role="3cqZAo" node="5dW$Pa2458C" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa245at" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa245au" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa245av" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:CompositeActorRole" />
                   </node>
@@ -5822,7 +5822,7 @@
                 <ref role="3cqZAo" node="5dW$Pa2458w" resolve="AllCompositeActorRoles" />
               </node>
               <node concept="liA8E" id="5dW$Pa245aA" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="5dW$Pa245aB" role="3uHU7B">
@@ -5865,7 +5865,7 @@
                 <ref role="3cqZAo" node="1jSdggKS_Wb" resolve="TransactionKindsNode" />
               </node>
               <node concept="liA8E" id="1jSdggKS_TO" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -5883,7 +5883,7 @@
                     <ref role="3cqZAo" node="1jSdggKS_TK" resolve="AllTransactionKinds" />
                   </node>
                   <node concept="liA8E" id="1jSdggKS_TW" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="1jSdggKS_TX" role="37wK5m">
                       <ref role="3cqZAo" node="1jSdggKS_VZ" resolve="i" />
                     </node>
@@ -5899,7 +5899,7 @@
                     <ref role="3cqZAo" node="1jSdggKS_TS" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKS_U2" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="1jSdggKS_U3" role="3uHU7B">
@@ -5933,7 +5933,7 @@
                         <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                       </node>
                       <node concept="liA8E" id="1jSdggKS_Ug" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="1jSdggKS_Uh" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -5954,21 +5954,21 @@
                             <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                           </node>
                           <node concept="liA8E" id="1jSdggKS_Up" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="1jSdggKS_Uq" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Identification" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKS_Ur" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="1jSdggKS_Us" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="1jSdggKS_Ut" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1jSdggKS_Uu" role="3uHU7B">
@@ -5986,21 +5986,21 @@
                             <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                           </node>
                           <node concept="liA8E" id="1jSdggKS_U_" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="1jSdggKS_UA" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Name" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKS_UB" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="1jSdggKS_UC" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="1jSdggKS_UD" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1jSdggKS_UE" role="3uHU7B">
@@ -6057,7 +6057,7 @@
                           <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                         </node>
                         <node concept="liA8E" id="1jSdggKS_V1" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                           <node concept="Xl_RD" id="1jSdggKS_V2" role="37wK5m">
                             <property role="Xl_RC" value="Id" />
                           </node>
@@ -6084,21 +6084,21 @@
                               <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                             </node>
                             <node concept="liA8E" id="1jSdggKS_Vd" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="1jSdggKS_Ve" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Identification" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="1jSdggKS_Vf" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="1jSdggKS_Vg" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKS_Vh" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -6122,21 +6122,21 @@
                               <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                             </node>
                             <node concept="liA8E" id="1jSdggKS_Vs" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="1jSdggKS_Vt" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Name" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="1jSdggKS_Vu" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="1jSdggKS_Vv" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKS_Vw" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -6160,21 +6160,21 @@
                               <ref role="3cqZAo" node="1jSdggKS_U7" resolve="element" />
                             </node>
                             <node concept="liA8E" id="1jSdggKS_VF" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="1jSdggKS_VG" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:TransactionSort" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="1jSdggKS_VH" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="1jSdggKS_VI" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKS_VJ" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -6209,11 +6209,11 @@
                     <ref role="3cqZAo" node="1jSdggKS_TS" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKS_VW" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKS_VX" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jSdggKS_VY" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:TransactionKind" />
                   </node>
@@ -6234,7 +6234,7 @@
                 <ref role="3cqZAo" node="1jSdggKS_TK" resolve="AllTransactionKinds" />
               </node>
               <node concept="liA8E" id="1jSdggKS_W5" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="1jSdggKS_W6" role="3uHU7B">
@@ -6277,7 +6277,7 @@
                 <ref role="3cqZAo" node="5dW$Pa2flZ$" resolve="EntityTypesNode" />
               </node>
               <node concept="liA8E" id="5dW$Pa2flXd" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -6295,7 +6295,7 @@
                     <ref role="3cqZAo" node="5dW$Pa2flX9" resolve="AllEntityTypes" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa2flXl" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="5dW$Pa2flXm" role="37wK5m">
                       <ref role="3cqZAo" node="5dW$Pa2flZo" resolve="i" />
                     </node>
@@ -6311,7 +6311,7 @@
                     <ref role="3cqZAo" node="5dW$Pa2flXh" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa2flXr" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="5dW$Pa2flXs" role="3uHU7B">
@@ -6345,7 +6345,7 @@
                         <ref role="3cqZAo" node="5dW$Pa2flXw" resolve="element" />
                       </node>
                       <node concept="liA8E" id="5dW$Pa2flXD" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="5dW$Pa2flXE" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -6366,21 +6366,21 @@
                             <ref role="3cqZAo" node="5dW$Pa2flXw" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa2flXY" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa2flXZ" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Name" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa2flY0" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa2flY1" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa2flY2" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa2flY3" role="3uHU7B">
@@ -6437,7 +6437,7 @@
                           <ref role="3cqZAo" node="5dW$Pa2flXw" resolve="element" />
                         </node>
                         <node concept="liA8E" id="5dW$Pa2flYq" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                           <node concept="Xl_RD" id="5dW$Pa2flYr" role="37wK5m">
                             <property role="Xl_RC" value="Id" />
                           </node>
@@ -6464,21 +6464,21 @@
                               <ref role="3cqZAo" node="5dW$Pa2flXw" resolve="element" />
                             </node>
                             <node concept="liA8E" id="5dW$Pa2flYP" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="5dW$Pa2flYQ" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Name" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="5dW$Pa2flYR" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="5dW$Pa2flYS" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa2flYT" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -6508,11 +6508,11 @@
                     <ref role="3cqZAo" node="5dW$Pa2flXh" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa2flZl" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa2flZm" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa2flZn" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:EntityType" />
                   </node>
@@ -6533,7 +6533,7 @@
                 <ref role="3cqZAo" node="5dW$Pa2flX9" resolve="AllEntityTypes" />
               </node>
               <node concept="liA8E" id="5dW$Pa2flZu" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="5dW$Pa2flZv" role="3uHU7B">
@@ -6576,7 +6576,7 @@
                 <ref role="3cqZAo" node="1jSdggKUxb8" resolve="AttributeTypesNode" />
               </node>
               <node concept="liA8E" id="1jSdggKUx9t" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -6594,7 +6594,7 @@
                     <ref role="3cqZAo" node="1jSdggKUx9p" resolve="AllAttributeTypes" />
                   </node>
                   <node concept="liA8E" id="1jSdggKUx9_" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="1jSdggKUx9A" role="37wK5m">
                       <ref role="3cqZAo" node="1jSdggKUxaW" resolve="i" />
                     </node>
@@ -6610,7 +6610,7 @@
                     <ref role="3cqZAo" node="1jSdggKUx9x" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKUx9F" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="1jSdggKUx9G" role="3uHU7B">
@@ -6644,7 +6644,7 @@
                         <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                       </node>
                       <node concept="liA8E" id="1jSdggKUx9T" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="1jSdggKUx9U" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -6665,21 +6665,21 @@
                             <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                           </node>
                           <node concept="liA8E" id="1jSdggKUxa2" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="1jSdggKUxa3" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:Name" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKUxa4" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="1jSdggKUxa5" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="1jSdggKUxa6" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1jSdggKUxa7" role="3uHU7B">
@@ -6736,7 +6736,7 @@
                           <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                         </node>
                         <node concept="liA8E" id="1jSdggKUxau" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                           <node concept="Xl_RD" id="1jSdggKUxav" role="37wK5m">
                             <property role="Xl_RC" value="Id" />
                           </node>
@@ -6763,21 +6763,21 @@
                               <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                             </node>
                             <node concept="liA8E" id="1jSdggKUxaE" role="2OqNvi">
-                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                               <node concept="Xl_RD" id="1jSdggKUxaF" role="37wK5m">
                                 <property role="Xl_RC" value="DEMO:Name" />
                               </node>
                             </node>
                           </node>
                           <node concept="liA8E" id="1jSdggKUxaG" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="3cmrfG" id="1jSdggKUxaH" role="37wK5m">
                               <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKUxaI" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                         </node>
                       </node>
                     </node>
@@ -6794,21 +6794,21 @@
                             <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                           </node>
                           <node concept="liA8E" id="1jSdggKUI2M" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="1jSdggKUI2N" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:TypeName" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKUI2O" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="1jSdggKUI2P" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="1jSdggKUI2Q" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                   </node>
@@ -6853,7 +6853,7 @@
                       <ref role="3cqZAo" node="1jSdggKUHC1" resolve="dataType" />
                     </node>
                     <node concept="liA8E" id="1jSdggKUWbo" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="Xl_RD" id="1jSdggKUWbp" role="37wK5m">
                         <property role="Xl_RC" value="TEKST" />
                       </node>
@@ -6900,7 +6900,7 @@
                       <ref role="3cqZAo" node="1jSdggKUHC1" resolve="dataType" />
                     </node>
                     <node concept="liA8E" id="1jSdggKUPyq" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                       <node concept="Xl_RD" id="1jSdggKUPJ7" role="37wK5m">
                         <property role="Xl_RC" value="EURO" />
                       </node>
@@ -6920,21 +6920,21 @@
                             <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                           </node>
                           <node concept="liA8E" id="1jSdggL5$ME" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="1jSdggL5$MF" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:EntityType" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggL5$MG" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="1jSdggL5$MH" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="1jSdggL5$MI" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                   </node>
@@ -6978,7 +6978,7 @@
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggL2t3L" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                     <node concept="2OqwBi" id="1jSdggL2t3M" role="37wK5m">
                                       <node concept="2OqwBi" id="1jSdggL2t3N" role="2Oq$k0">
                                         <node concept="2OqwBi" id="1jSdggL2t3O" role="2Oq$k0">
@@ -6986,21 +6986,21 @@
                                             <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                                           </node>
                                           <node concept="liA8E" id="1jSdggL2t3Q" role="2OqNvi">
-                                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                             <node concept="Xl_RD" id="1jSdggL2t3R" role="37wK5m">
                                               <property role="Xl_RC" value="DEMO:EntityType" />
                                             </node>
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="1jSdggL2t3S" role="2OqNvi">
-                                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                           <node concept="3cmrfG" id="1jSdggL2t3T" role="37wK5m">
                                             <property role="3cmrfH" value="0" />
                                           </node>
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="1jSdggL2t3U" role="2OqNvi">
-                                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                       </node>
                                     </node>
                                   </node>
@@ -7062,7 +7062,7 @@
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="1jSdggKWAWL" role="2OqNvi">
-                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                      <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                       <node concept="2OqwBi" id="1jSdggKWAWM" role="37wK5m">
                                         <node concept="2OqwBi" id="1jSdggKWAWN" role="2Oq$k0">
                                           <node concept="2OqwBi" id="1jSdggKWAWO" role="2Oq$k0">
@@ -7070,21 +7070,21 @@
                                               <ref role="3cqZAo" node="1jSdggKUx9K" resolve="element" />
                                             </node>
                                             <node concept="liA8E" id="1jSdggKWAWQ" role="2OqNvi">
-                                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                              <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                               <node concept="Xl_RD" id="1jSdggKWAWR" role="37wK5m">
                                                 <property role="Xl_RC" value="DEMO:EntityType" />
                                               </node>
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="1jSdggKWAWS" role="2OqNvi">
-                                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                             <node concept="3cmrfG" id="1jSdggKWAWT" role="37wK5m">
                                               <property role="3cmrfH" value="0" />
                                             </node>
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="1jSdggKWAWU" role="2OqNvi">
-                                          <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                          <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                         </node>
                                       </node>
                                     </node>
@@ -7127,11 +7127,11 @@
                     <ref role="3cqZAo" node="1jSdggKUx9x" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKUxaT" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKUxaU" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jSdggKUxaV" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:AttributeType" />
                   </node>
@@ -7152,7 +7152,7 @@
                 <ref role="3cqZAo" node="1jSdggKUx9p" resolve="AllAttributeTypes" />
               </node>
               <node concept="liA8E" id="1jSdggKUxb2" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="1jSdggKUxb3" role="3uHU7B">
@@ -7195,7 +7195,7 @@
                 <ref role="3cqZAo" node="5dW$Pa28Mcn" resolve="TransactionProcessStepKindsNode" />
               </node>
               <node concept="liA8E" id="5dW$Pa28Maf" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -7213,7 +7213,7 @@
                     <ref role="3cqZAo" node="5dW$Pa28Mab" resolve="AllTransactionProcessStepKinds" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa28Man" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="5dW$Pa28Mao" role="37wK5m">
                       <ref role="3cqZAo" node="5dW$Pa28Mcb" resolve="i" />
                     </node>
@@ -7229,7 +7229,7 @@
                     <ref role="3cqZAo" node="5dW$Pa28Maj" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa28Mat" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="5dW$Pa28Mau" role="3uHU7B">
@@ -7263,7 +7263,7 @@
                         <ref role="3cqZAo" node="5dW$Pa28May" resolve="element" />
                       </node>
                       <node concept="liA8E" id="5dW$Pa28MaF" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="5dW$Pa28MaG" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -7284,21 +7284,21 @@
                             <ref role="3cqZAo" node="5dW$Pa28May" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa28MaO" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa28MaP" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:TransactionKind" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa28MaQ" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa28MaR" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa28MaS" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa28MaT" role="3uHU7B">
@@ -7316,21 +7316,21 @@
                             <ref role="3cqZAo" node="5dW$Pa28May" resolve="element" />
                           </node>
                           <node concept="liA8E" id="5dW$Pa28Mb0" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                            <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                             <node concept="Xl_RD" id="5dW$Pa28Mb1" role="37wK5m">
                               <property role="Xl_RC" value="DEMO:StepKind" />
                             </node>
                           </node>
                         </node>
                         <node concept="liA8E" id="5dW$Pa28Mb2" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                          <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                           <node concept="3cmrfG" id="5dW$Pa28Mb3" role="37wK5m">
                             <property role="3cmrfH" value="0" />
                           </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="5dW$Pa28Mb4" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                        <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="5dW$Pa28Mb5" role="3uHU7B">
@@ -7387,7 +7387,7 @@
                           <ref role="3cqZAo" node="5dW$Pa28May" resolve="element" />
                         </node>
                         <node concept="liA8E" id="5dW$Pa28Mbs" role="2OqNvi">
-                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                          <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                           <node concept="Xl_RD" id="5dW$Pa28Mbt" role="37wK5m">
                             <property role="Xl_RC" value="Id" />
                           </node>
@@ -7451,7 +7451,7 @@
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="5dW$Pa2gc9H" role="2OqNvi">
-                                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                                           <node concept="2OqwBi" id="5dW$Pa2gcus" role="37wK5m">
                                             <node concept="2OqwBi" id="5dW$Pa2gcut" role="2Oq$k0">
                                               <node concept="2OqwBi" id="5dW$Pa2gcuu" role="2Oq$k0">
@@ -7459,21 +7459,21 @@
                                                   <ref role="3cqZAo" node="5dW$Pa28May" resolve="element" />
                                                 </node>
                                                 <node concept="liA8E" id="5dW$Pa2gcuw" role="2OqNvi">
-                                                  <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                                  <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                                   <node concept="Xl_RD" id="5dW$Pa2gcux" role="37wK5m">
                                                     <property role="Xl_RC" value="DEMO:TransactionKind" />
                                                   </node>
                                                 </node>
                                               </node>
                                               <node concept="liA8E" id="5dW$Pa2gcuy" role="2OqNvi">
-                                                <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                                <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                                 <node concept="3cmrfG" id="5dW$Pa2gcuz" role="37wK5m">
                                                   <property role="3cmrfH" value="0" />
                                                 </node>
                                               </node>
                                             </node>
                                             <node concept="liA8E" id="5dW$Pa2gcu$" role="2OqNvi">
-                                              <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                              <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                             </node>
                                           </node>
                                         </node>
@@ -7535,11 +7535,11 @@
                     <ref role="3cqZAo" node="5dW$Pa28Maj" resolve="singleNode" />
                   </node>
                   <node concept="liA8E" id="5dW$Pa28Mc8" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa28Mc9" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="5dW$Pa28Mca" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:TransactionProcessStepKind" />
                   </node>
@@ -7560,7 +7560,7 @@
                 <ref role="3cqZAo" node="5dW$Pa28Mab" resolve="AllTransactionProcessStepKinds" />
               </node>
               <node concept="liA8E" id="5dW$Pa28Mch" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="5dW$Pa28Mci" role="3uHU7B">
@@ -7615,21 +7615,21 @@
                     <ref role="3cqZAo" node="1jSdggKgx1k" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKjzb7" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKjzb8" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:StepKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKjzb9" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKjzba" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKjzbb" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
           </node>
@@ -7941,21 +7941,21 @@
                   <ref role="3cqZAo" node="1jSdggKgx1k" resolve="element" />
                 </node>
                 <node concept="liA8E" id="1jSdggKgx1d" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                  <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                   <node concept="Xl_RD" id="1jSdggKgx1e" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:StepKind" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKgx1f" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                 <node concept="3cmrfG" id="1jSdggKgx1g" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
             </node>
             <node concept="liA8E" id="1jSdggKgx1h" role="2OqNvi">
-              <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+              <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
             </node>
           </node>
         </node>
@@ -8002,7 +8002,7 @@
                 <ref role="3cqZAo" node="1jSdggKnWqv" resolve="ConnectionsNode" />
               </node>
               <node concept="liA8E" id="1jSdggKnWon" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
               </node>
             </node>
           </node>
@@ -8015,7 +8015,7 @@
                 <ref role="3cqZAo" node="1jSdggKnWoj" resolve="allConnections" />
               </node>
               <node concept="liA8E" id="1jSdggKDXP0" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKDVOY" role="3uHU7B">
@@ -8036,7 +8036,7 @@
                     <ref role="3cqZAo" node="1jSdggKnWoj" resolve="allConnections" />
                   </node>
                   <node concept="liA8E" id="1jSdggKnWov" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                     <node concept="37vLTw" id="1jSdggKnWow" role="37wK5m">
                       <ref role="3cqZAo" node="1jSdggKnWqj" resolve="i" />
                     </node>
@@ -8052,7 +8052,7 @@
                     <ref role="3cqZAo" node="1jSdggKnWor" resolve="connectionNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKnWo_" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="Xl_RD" id="1jSdggKnWoA" role="3uHU7B">
@@ -8087,7 +8087,7 @@
                         <ref role="3cqZAo" node="1jSdggKnWoE" resolve="element" />
                       </node>
                       <node concept="liA8E" id="1jSdggKo7fU" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String):java.lang.String" resolve="getAttribute" />
+                        <ref role="37wK5l" to="lhjl:~Element.getAttribute(java.lang.String)" resolve="getAttribute" />
                         <node concept="Xl_RD" id="1jSdggKo7fV" role="37wK5m">
                           <property role="Xl_RC" value="Id" />
                         </node>
@@ -8117,7 +8117,7 @@
                         <ref role="3cqZAo" node="1jSdggKnWor" resolve="connectionNode" />
                       </node>
                       <node concept="liA8E" id="1jSdggKtLZ0" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~Node.getChildNodes():org.w3c.dom.NodeList" resolve="getChildNodes" />
+                        <ref role="37wK5l" to="lhjl:~Node.getChildNodes()" resolve="getChildNodes" />
                       </node>
                     </node>
                   </node>
@@ -8135,7 +8135,7 @@
                             <ref role="3cqZAo" node="1jSdggKtKlU" resolve="allConnectionParts" />
                           </node>
                           <node concept="liA8E" id="1jSdggKtUT3" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                            <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                             <node concept="37vLTw" id="1jSdggKtV2n" role="37wK5m">
                               <ref role="3cqZAo" node="1jSdggKtP2l" resolve="ii" />
                             </node>
@@ -8179,11 +8179,11 @@
                             <ref role="3cqZAo" node="1jSdggKtRQh" resolve="connectionPart" />
                           </node>
                           <node concept="liA8E" id="1jSdggKAEUf" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                            <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKAEUg" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1jSdggKAEUh" role="37wK5m">
                             <property role="Xl_RC" value="DEMO:InitiatorCAR" />
                           </node>
@@ -8226,11 +8226,11 @@
                             <ref role="3cqZAo" node="1jSdggKtRQh" resolve="connectionPart" />
                           </node>
                           <node concept="liA8E" id="1jSdggKAEUx" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                            <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKAEUy" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1jSdggKAEUz" role="37wK5m">
                             <property role="Xl_RC" value="DEMO:InitiatorEAR" />
                           </node>
@@ -8273,11 +8273,11 @@
                             <ref role="3cqZAo" node="1jSdggKtRQh" resolve="connectionPart" />
                           </node>
                           <node concept="liA8E" id="1jSdggKAjJU" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                            <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKAjJV" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1jSdggKAjJW" role="37wK5m">
                             <property role="Xl_RC" value="DEMO:ExecutorCAR" />
                           </node>
@@ -8320,11 +8320,11 @@
                             <ref role="3cqZAo" node="1jSdggKtRQh" resolve="connectionPart" />
                           </node>
                           <node concept="liA8E" id="1jSdggKLKKm" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                            <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKLKKn" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1jSdggKLKKo" role="37wK5m">
                             <property role="Xl_RC" value="DEMO:ExecutorEAR" />
                           </node>
@@ -8367,11 +8367,11 @@
                             <ref role="3cqZAo" node="1jSdggKtRQh" resolve="connectionPart" />
                           </node>
                           <node concept="liA8E" id="1jSdggKtZDC" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                            <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKu4lI" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1jSdggKu4u6" role="37wK5m">
                             <property role="Xl_RC" value="DEMO:InitiationTPSK" />
                           </node>
@@ -8414,11 +8414,11 @@
                             <ref role="3cqZAo" node="1jSdggKtRQh" resolve="connectionPart" />
                           </node>
                           <node concept="liA8E" id="1jSdggKLLrg" role="2OqNvi">
-                            <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                            <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                           </node>
                         </node>
                         <node concept="liA8E" id="1jSdggKLLrh" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                          <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                           <node concept="Xl_RD" id="1jSdggKLLri" role="37wK5m">
                             <property role="Xl_RC" value="DEMO:WaitConditionTPSK" />
                           </node>
@@ -8439,7 +8439,7 @@
                         <ref role="3cqZAo" node="1jSdggKtKlU" resolve="allConnectionParts" />
                       </node>
                       <node concept="liA8E" id="1jSdggKtPWB" role="2OqNvi">
-                        <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                        <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="1jSdggKtQbs" role="3uHU7B">
@@ -8459,11 +8459,11 @@
                     <ref role="3cqZAo" node="1jSdggKnWor" resolve="connectionNode" />
                   </node>
                   <node concept="liA8E" id="1jSdggKnWqg" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Node.getNodeName():java.lang.String" resolve="getNodeName" />
+                    <ref role="37wK5l" to="lhjl:~Node.getNodeName()" resolve="getNodeName" />
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKnWqh" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                   <node concept="Xl_RD" id="1jSdggKnWqi" role="37wK5m">
                     <property role="Xl_RC" value="DEMO:Connection" />
                   </node>
@@ -8484,7 +8484,7 @@
                 <ref role="3cqZAo" node="1jSdggKnWoj" resolve="allConnections" />
               </node>
               <node concept="liA8E" id="1jSdggKnWqp" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~NodeList.getLength():int" resolve="getLength" />
+                <ref role="37wK5l" to="lhjl:~NodeList.getLength()" resolve="getLength" />
               </node>
             </node>
             <node concept="37vLTw" id="1jSdggKnWqq" role="3uHU7B">
@@ -8520,21 +8520,21 @@
                     <ref role="3cqZAo" node="1jSdggKu5XX" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKvukG" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKvukH" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:FromCompositeActorRole" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKvukI" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKvukJ" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKvukK" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKvukL" role="3uHU7B">
@@ -8552,21 +8552,21 @@
                     <ref role="3cqZAo" node="1jSdggKu5XX" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKu55z" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKu55$" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:ToTransactionKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKu55_" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKu55A" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKu55B" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKu55C" role="3uHU7B">
@@ -8668,7 +8668,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKwif$" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKwif_" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKwifA" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKwifB" role="2Oq$k0">
@@ -8676,21 +8676,21 @@
                                       <ref role="3cqZAo" node="1jSdggKu5XX" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKwifD" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKwifE" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:FromCompositeActorRole" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKwifF" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKwifG" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKwifH" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -8745,7 +8745,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKvXTK" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKvY6n" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKvY6o" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKvY6p" role="2Oq$k0">
@@ -8753,21 +8753,21 @@
                                       <ref role="3cqZAo" node="1jSdggKu5XX" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKvY6r" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKvY6s" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:ToTransactionKind" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKvY6t" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKvY6u" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKvY6v" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -8821,21 +8821,21 @@
                     <ref role="3cqZAo" node="1jSdggKAf5G" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKAf3T" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKAf3U" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:FromElementaryActorRole" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKAf3V" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKAf3W" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKAf3X" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKAf3Y" role="3uHU7B">
@@ -8853,21 +8853,21 @@
                     <ref role="3cqZAo" node="1jSdggKAf5G" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKAf45" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKAf46" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:ToTransactionKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKAf47" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKAf48" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKAf49" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKAf4a" role="3uHU7B">
@@ -8969,7 +8969,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKAf4R" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKAf4S" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKAf4T" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKAf4U" role="2Oq$k0">
@@ -8977,21 +8977,21 @@
                                       <ref role="3cqZAo" node="1jSdggKAf5G" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKAf4W" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKAf4X" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:FromElementaryActorRole" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKAf4Y" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKAf4Z" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKAf50" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -9046,7 +9046,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKAf5o" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKAf5p" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKAf5q" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKAf5r" role="2Oq$k0">
@@ -9054,21 +9054,21 @@
                                       <ref role="3cqZAo" node="1jSdggKAf5G" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKAf5t" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKAf5u" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:ToTransactionKind" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKAf5v" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKAf5w" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKAf5x" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -9122,21 +9122,21 @@
                     <ref role="3cqZAo" node="1jSdggKAkFI" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKAkE7" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKAkE8" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:FromTransactionKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKAkE9" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKAkEa" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKAkEb" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKAkEc" role="3uHU7B">
@@ -9154,21 +9154,21 @@
                     <ref role="3cqZAo" node="1jSdggKAkFI" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKAkDV" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKAkDW" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:ToCompositeActorRole" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKAkDX" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKAkDY" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKAkDZ" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKAkE0" role="3uHU7B">
@@ -9270,7 +9270,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKAkET" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKAkEU" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKAkEV" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKAkEW" role="2Oq$k0">
@@ -9278,21 +9278,21 @@
                                       <ref role="3cqZAo" node="1jSdggKAkFI" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKAkEY" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKAkEZ" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:ToCompositeActorRole" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKAkF0" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKAkF1" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKAkF2" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -9347,7 +9347,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKAkFq" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKAkFr" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKAkFs" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKAkFt" role="2Oq$k0">
@@ -9355,21 +9355,21 @@
                                       <ref role="3cqZAo" node="1jSdggKAkFI" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKAkFv" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKAkFw" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:FromTransactionKind" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKAkFx" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKAkFy" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKAkFz" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -9423,21 +9423,21 @@
                     <ref role="3cqZAo" node="1jSdggKL7BN" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKL7A0" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKL7A1" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:FromTransactionKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKL7A2" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKL7A3" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKL7A4" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKL7A5" role="3uHU7B">
@@ -9455,21 +9455,21 @@
                     <ref role="3cqZAo" node="1jSdggKL7BN" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKL7Ac" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKL7Ad" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:ToElementaryActorRole" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKL7Ae" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKL7Af" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKL7Ag" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKL7Ah" role="3uHU7B">
@@ -9571,7 +9571,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKL7AY" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKL7AZ" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKL7B0" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKL7B1" role="2Oq$k0">
@@ -9579,21 +9579,21 @@
                                       <ref role="3cqZAo" node="1jSdggKL7BN" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKL7B3" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKL7B4" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:ToElementaryActorRole" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKL7B5" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKL7B6" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKL7B7" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -9648,7 +9648,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKL7Bv" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKL7Bw" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKL7Bx" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKL7By" role="2Oq$k0">
@@ -9656,21 +9656,21 @@
                                       <ref role="3cqZAo" node="1jSdggKL7BN" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKL7B$" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKL7B_" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:FromTransactionKind" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKL7BA" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKL7BB" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKL7BC" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -9724,21 +9724,21 @@
                     <ref role="3cqZAo" node="1jSdggKLzQJ" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKLzOP" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKLzOQ" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:FromTransactionProcessStepKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKLzOR" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKLzOS" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKLzOT" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKLzOU" role="3uHU7B">
@@ -9756,21 +9756,21 @@
                     <ref role="3cqZAo" node="1jSdggKLzQJ" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKLzP1" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKLzP2" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:ToTransactionProcessStepKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKLzP3" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKLzP4" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKLzP5" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKLzP6" role="3uHU7B">
@@ -9867,7 +9867,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="1jSdggKLzPN" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="1jSdggKLzPO" role="37wK5m">
                               <node concept="2OqwBi" id="1jSdggKLzPP" role="2Oq$k0">
                                 <node concept="2OqwBi" id="1jSdggKLzPQ" role="2Oq$k0">
@@ -9875,21 +9875,21 @@
                                     <ref role="3cqZAo" node="1jSdggKLzQJ" resolve="element" />
                                   </node>
                                   <node concept="liA8E" id="1jSdggKLzPS" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                     <node concept="Xl_RD" id="1jSdggKLzPT" role="37wK5m">
                                       <property role="Xl_RC" value="DEMO:FromTransactionProcessStepKind" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKLzPU" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                   <node concept="3cmrfG" id="1jSdggKLzPV" role="37wK5m">
                                     <property role="3cmrfH" value="0" />
                                   </node>
                                 </node>
                               </node>
                               <node concept="liA8E" id="1jSdggKLzPW" role="2OqNvi">
-                                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                               </node>
                             </node>
                           </node>
@@ -9946,7 +9946,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="1jSdggKLzQn" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                            <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                             <node concept="2OqwBi" id="1jSdggKLzQo" role="37wK5m">
                               <node concept="2OqwBi" id="1jSdggKLzQp" role="2Oq$k0">
                                 <node concept="2OqwBi" id="1jSdggKLzQq" role="2Oq$k0">
@@ -9954,21 +9954,21 @@
                                     <ref role="3cqZAo" node="1jSdggKLzQJ" resolve="element" />
                                   </node>
                                   <node concept="liA8E" id="1jSdggKLzQs" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                     <node concept="Xl_RD" id="1jSdggKLzQt" role="37wK5m">
                                       <property role="Xl_RC" value="DEMO:ToTransactionProcessStepKind" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKLzQu" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                   <node concept="3cmrfG" id="1jSdggKLzQv" role="37wK5m">
                                     <property role="3cmrfH" value="0" />
                                   </node>
                                 </node>
                               </node>
                               <node concept="liA8E" id="1jSdggKLzQw" role="2OqNvi">
-                                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                               </node>
                             </node>
                           </node>
@@ -10124,21 +10124,21 @@
                     <ref role="3cqZAo" node="1jSdggKAkHF" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKAkG4" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKAkG5" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:FromTransactionProcessStepKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKAkG6" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKAkG7" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKAkG8" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKAkG9" role="3uHU7B">
@@ -10156,21 +10156,21 @@
                     <ref role="3cqZAo" node="1jSdggKAkHF" resolve="element" />
                   </node>
                   <node concept="liA8E" id="1jSdggKAkFS" role="2OqNvi">
-                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                    <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                     <node concept="Xl_RD" id="1jSdggKAkFT" role="37wK5m">
                       <property role="Xl_RC" value="DEMO:ToTransactionProcessStepKind" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="1jSdggKAkFU" role="2OqNvi">
-                  <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                  <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                   <node concept="3cmrfG" id="1jSdggKAkFV" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1jSdggKAkFW" role="2OqNvi">
-                <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
               </node>
             </node>
             <node concept="Xl_RD" id="1jSdggKAkFX" role="3uHU7B">
@@ -10289,7 +10289,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKLlf0" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKLlf1" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKLlf2" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKLlf3" role="2Oq$k0">
@@ -10297,21 +10297,21 @@
                                       <ref role="3cqZAo" node="1jSdggKAkHF" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKLlf5" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKLlf6" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:FromTransactionProcessStepKind" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKLlf7" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKLlf8" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKLlf9" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -10374,7 +10374,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1jSdggKLjQJ" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1jSdggKLjQK" role="37wK5m">
                                 <node concept="2OqwBi" id="1jSdggKLjQL" role="2Oq$k0">
                                   <node concept="2OqwBi" id="1jSdggKLjQM" role="2Oq$k0">
@@ -10382,21 +10382,21 @@
                                       <ref role="3cqZAo" node="1jSdggKAkHF" resolve="element" />
                                     </node>
                                     <node concept="liA8E" id="1jSdggKLjQO" role="2OqNvi">
-                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String):org.w3c.dom.NodeList" resolve="getElementsByTagName" />
+                                      <ref role="37wK5l" to="lhjl:~Element.getElementsByTagName(java.lang.String)" resolve="getElementsByTagName" />
                                       <node concept="Xl_RD" id="1jSdggKLjQP" role="37wK5m">
                                         <property role="Xl_RC" value="DEMO:ToTransactionProcessStepKind" />
                                       </node>
                                     </node>
                                   </node>
                                   <node concept="liA8E" id="1jSdggKLjQQ" role="2OqNvi">
-                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int):org.w3c.dom.Node" resolve="item" />
+                                    <ref role="37wK5l" to="lhjl:~NodeList.item(int)" resolve="item" />
                                     <node concept="3cmrfG" id="1jSdggKLjQR" role="37wK5m">
                                       <property role="3cmrfH" value="0" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="1jSdggKLjQS" role="2OqNvi">
-                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent():java.lang.String" resolve="getTextContent" />
+                                  <ref role="37wK5l" to="lhjl:~Node.getTextContent()" resolve="getTextContent" />
                                 </node>
                               </node>
                             </node>
@@ -10480,7 +10480,7 @@
               <ref role="3cqZAo" node="5dW$Pa1ChHF" resolve="fileDialog" />
             </node>
             <node concept="liA8E" id="5dW$Pa1ChHQ" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~FileDialog.setMode(int):void" resolve="setMode" />
+              <ref role="37wK5l" to="z60i:~FileDialog.setMode(int)" resolve="setMode" />
               <node concept="10M0yZ" id="5dW$Pa1ChHR" role="37wK5m">
                 <ref role="3cqZAo" to="z60i:~FileDialog.LOAD" resolve="LOAD" />
                 <ref role="1PxDUh" to="z60i:~FileDialog" resolve="FileDialog" />
@@ -10494,7 +10494,7 @@
               <ref role="3cqZAo" node="5dW$Pa1ChHF" resolve="fileDialog" />
             </node>
             <node concept="liA8E" id="5dW$Pa1ChHV" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Dialog.setVisible(boolean):void" resolve="setVisible" />
+              <ref role="37wK5l" to="z60i:~Dialog.setVisible(boolean)" resolve="setVisible" />
               <node concept="3clFbT" id="5dW$Pa1ChHW" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
@@ -10510,7 +10510,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1ChHF" resolve="fileDialog" />
               </node>
               <node concept="liA8E" id="5dW$Pa1N3em" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~FileDialog.getFile():java.lang.String" resolve="getFile" />
+                <ref role="37wK5l" to="z60i:~FileDialog.getFile()" resolve="getFile" />
               </node>
             </node>
           </node>
@@ -10524,7 +10524,7 @@
                 <ref role="3cqZAo" node="5dW$Pa1ChHF" resolve="fileDialog" />
               </node>
               <node concept="liA8E" id="5dW$Pa1ChI2" role="2OqNvi">
-                <ref role="37wK5l" to="z60i:~FileDialog.getDirectory():java.lang.String" resolve="getDirectory" />
+                <ref role="37wK5l" to="z60i:~FileDialog.getDirectory()" resolve="getDirectory" />
               </node>
             </node>
           </node>

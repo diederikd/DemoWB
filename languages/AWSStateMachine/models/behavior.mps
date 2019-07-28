@@ -129,7 +129,7 @@
         <node concept="3cpWs6" id="2fcm071Y7U" role="3cqZAp">
           <node concept="2YIFZM" id="2fcm071ZSI" role="3cqZAk">
             <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-            <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+            <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
             <node concept="2OqwBi" id="2fcm07208x" role="37wK5m">
               <node concept="13iPFW" id="2fcm071ZTQ" role="2Oq$k0" />
               <node concept="3TrcHB" id="2fcm0720r4" role="2OqNvi">

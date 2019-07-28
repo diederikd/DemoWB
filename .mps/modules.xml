@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
       <modulePath path="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/AWSStateMachine/AWSStateMachine.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/AWSStateMachine.sandbox.msd" folder="Tests" />

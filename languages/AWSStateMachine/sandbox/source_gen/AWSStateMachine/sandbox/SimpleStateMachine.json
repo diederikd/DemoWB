@@ -1,10 +1,10 @@
 {
-  "Comment":"Simple State Machine",
-  "StartAt":"Simple",
-  "States":{
-    "Simple":{
-      "Type":"Pass",
-      "End":true
+  "Comment": "Simple State Machine",
+  "StartAt": "Simple",
+  "States": {
+    "Simple": {
+      "Type": "Pass",
+      "End": true
     }
   }
 }

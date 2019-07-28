@@ -1,21 +1,21 @@
 {
-  "Comment":"state machine comment",
-  "StartAt":"State1",
-  "States":{
-    "State1":{
-      "Comment":"state1 comment",
-      "Type":"Pass",
-      "Next":"State2"
+  "Comment": "state machine comment",
+  "StartAt": "State1",
+  "States": {
+    "State1": {
+      "Comment": "state1 comment",
+      "Type": "Pass",
+      "Next": "State2"
     },
-    "State2":{
-      "Comment":"state2 comment",
-      "Type":"Pass",
-      "Next":"State3"
+    "State2": {
+      "Comment": "state2 comment",
+      "Type": "Pass",
+      "Next": "State3"
     },
-    "State3":{
-      "Comment":"state3 comment",
-      "Type":"Pass",
-      "End":true
+    "State3": {
+      "Comment": "state3 comment",
+      "Type": "Pass",
+      "End": true
     }
   }
 }

@@ -39,7 +39,7 @@
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
         <property id="2743742872034578186" name="identification" index="3cGzig" />
-        <child id="6934522251529464189" name="id" index="xifp2" />
+        <child id="6934522251529464189" name="Id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="identification" index="3cGzis" />
@@ -50,7 +50,7 @@
       </concept>
       <concept id="2743742872034489001" name="ConstructionSL.structure.ElementaryActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="identification" index="3cGPkH" />
-        <child id="6934522251522538168" name="id" index="xdEm7" />
+        <child id="6934522251522538168" name="Id" index="xdEm7" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
         <child id="2743742872034584204" name="actorRoles" index="3cGxOm" />
@@ -99,7 +99,7 @@
       </concept>
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
         <property id="397994270025613077" name="type" index="a0oEV" />
-        <property id="2743742872034984100" name="id" index="3cH7GY" />
+        <property id="2743742872034984100" name="identification" index="3cH7GY" />
       </concept>
       <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2x">
         <property id="2743742872035015483" name="minCardDomain" index="3cIS2y" />
@@ -165,7 +165,6 @@
       </concept>
       <concept id="2743742872034489009" name="DemoSL.structure.OrganisationConstructionDiagram" flags="ng" index="3cGS$F" />
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
-      <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA" />
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
         <child id="2743742872034984113" name="facts" index="3cH7GF" />
         <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
@@ -4127,9 +4126,6 @@
   <node concept="2QfGCx" id="6z7DEV4hI96">
     <property role="TrG5h" value="Library Simulation" />
     <ref role="2QfGCw" node="6z7DEV3FN15" resolve="Initial" />
-  </node>
-  <node concept="3cHilA" id="4obCttupDUQ">
-    <property role="TrG5h" value="ARS Library" />
   </node>
   <node concept="968PY" id="6X_qrRNMVh0">
     <property role="TrG5h" value="OFD Library" />
