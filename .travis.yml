@@ -10,7 +10,7 @@ install:
 - unzip de.itemis.mps.extensions-2019.1.1037.4955bbc.zip
 - unzip artifacts.zip
 script:
-- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./artifacts/com.mbeddr.platform -Dmps_extensions=./de.itemis.mps.extensions clean generate assemble
+- ant -Dmps_home=./MPS\ 2019.1 -Dmbeddr_home=./com.mbeddr.platform -Dmps_extensions=./de.itemis.mps.extensions clean generate assemble
 - ant -f buildDistribution.xml -Dmps_home=./MPS\ 2019.1
 deploy:
   provider: releases
