@@ -17,7 +17,9 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="" />
+    <list default="true" id="bacb0e99-d62b-4cf3-92d1-fb52f5e7a724" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="languages/GeneralSL/classes_gen/" />
     <ignored path="languages/GeneralSL/source_gen.caches/" />
     <ignored path="languages/GeneralSL/source_gen/" />
@@ -2667,8 +2669,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -2747,9 +2749,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="959" />
+    <option name="x" value="143" />
+    <option name="y" value="82" />
+    <option name="width" value="1421" />
+    <option name="height" value="854" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectPluginManager">
@@ -3061,36 +3064,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Languages" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -3154,6 +3127,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:180b0a4a-db70-411b-924d-c6fa41380be0(DemowB.testARS) in IdeaFile[file:///Users/diederikdulfer/MPSProjects/Demo/solutions/sandbox/models/DemowB.testARS.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tests" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -3456,7 +3459,7 @@
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3202934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3202934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -3477,7 +3480,7 @@
       <window_info anchor="bottom" id="Usages" order="16" sideWeight="0.45110023" weight="0.40418118" />
       <window_info anchor="bottom" id="Node Explorer" order="17" sideWeight="0.45904645" weight="0.26364693" />
       <window_info anchor="bottom" id="Module Dependencies" order="18" weight="0.329849" />
-      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.45048898" visible="true" weight="0.2659698" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.45048898" visible="true" weight="0.2659698" />
       <window_info anchor="bottom" id="Generation Tracer" order="20" sideWeight="0.49816626" weight="0.329849" />
       <window_info anchor="bottom" id="Cell Explorer" order="21" sideWeight="0.4962453" weight="0.329849" />
       <window_info anchor="bottom" id="Messages" order="22" sideWeight="0.45537898" weight="0.31126598" />
@@ -19751,7 +19754,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Next step in OCD Implementation" />
     <MESSAGE value="Old OCD Deprecated" />
     <MESSAGE value="First steps in Export to XML" />
     <MESSAGE value="First Export to XML ready" />
@@ -19776,7 +19778,8 @@
     <MESSAGE value="Cleaning" />
     <MESSAGE value="Updated build" />
     <MESSAGE value="Upgrade 2019.1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade 2019.1.5" />
+    <MESSAGE value="Added username to mbedrr download" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added username to mbedrr download" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://WAA@transient107/WAA.specifications@13_10/WAA.specifications_transactionkind_T1" />
@@ -20854,8 +20857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
