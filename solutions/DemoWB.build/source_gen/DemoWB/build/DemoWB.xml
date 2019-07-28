@@ -967,7 +967,7 @@
       </chunk>
       <jvmargs>
         <arg value="-ea" />
-        <arg value="-Xmx512m" />
+        <arg value="-Xmx4096m" />
       </jvmargs>
       <macro name="mps_home" path="${mps_home}" />
       <macro name="imagespath" path="${imagespath}" />
@@ -988,7 +988,7 @@
   <target name="java.compile.AWSStateMachine" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/AWSStateMachine/source_gen" />
     <mkdir dir="${build.tmp}/java/out/AWSStateMachine" />
-    <javac destdir="${build.tmp}/java/out/AWSStateMachine" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/AWSStateMachine" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/AWSStateMachine/source_gen" />
@@ -1023,12 +1023,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/AWSStateMachine">
+      <fileset dir="${basedir}/languages/AWSStateMachine/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.AWSStateMachine#01" depends="java.compile.AWSStateMachine, fetchDependencies">
     <mkdir dir="${basedir}/languages/AWSStateMachine/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/AWSStateMachine#01" />
-    <javac destdir="${build.tmp}/java/out/AWSStateMachine#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/AWSStateMachine#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/AWSStateMachine/generator/source_gen" />
@@ -1063,6 +1066,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/AWSStateMachine#01">
+      <fileset dir="${basedir}/languages/AWSStateMachine/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.java.modules.cycle.1" depends="java.compile.AWSStateMachine, java.compile.GeneralSL, fetchDependencies">
@@ -1152,7 +1158,7 @@
   <target name="java.compile.DemoSL" depends="java.compile.AWSStateMachine, java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/DemoSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/DemoSL" />
-    <javac destdir="${build.tmp}/java/out/DemoSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/DemoSL" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/DemoSL/source_gen" />
@@ -1225,12 +1231,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/DemoSL">
+      <fileset dir="${basedir}/languages/DemoSL/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.DemoSL#01" depends="java.compile.AWSStateMachine, java.compile.ActionSL, java.compile.ConstructionSL, java.compile.DemoSL, java.compile.FactSL, java.compile.GeneralSL, java.compile.ProcessSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/DemoSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/DemoSL#01" />
-    <javac destdir="${build.tmp}/java/out/DemoSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/DemoSL#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/DemoSL/generator/source_gen" />
@@ -1275,12 +1284,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/DemoSL#01">
+      <fileset dir="${basedir}/languages/DemoSL/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ProcessSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/ProcessSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ProcessSL" />
-    <javac destdir="${build.tmp}/java/out/ProcessSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/ProcessSL" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ProcessSL/source_gen" />
@@ -1346,12 +1358,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ProcessSL">
+      <fileset dir="${basedir}/languages/ProcessSL/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ProcessSL#01" depends="java.compile.ConstructionSL, java.compile.GeneralSL, java.compile.ProcessSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/ProcessSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ProcessSL#01" />
-    <javac destdir="${build.tmp}/java/out/ProcessSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/ProcessSL#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ProcessSL/generator/source_gen" />
@@ -1388,12 +1403,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ProcessSL#01">
+      <fileset dir="${basedir}/languages/ProcessSL/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.GeneralSL" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/GeneralSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/GeneralSL" />
-    <javac destdir="${build.tmp}/java/out/GeneralSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/GeneralSL" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/GeneralSL/source_gen" />
@@ -1456,12 +1474,15 @@
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.editor.diagram/lib" includes="org.eclipse.elk.alg.common.compaction-0.3.0.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/GeneralSL">
+      <fileset dir="${basedir}/languages/GeneralSL/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.GeneralSL#01" depends="java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/GeneralSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/GeneralSL#01" />
-    <javac destdir="${build.tmp}/java/out/GeneralSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/GeneralSL#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/GeneralSL/generator/source_gen" />
@@ -1496,12 +1517,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/GeneralSL#01">
+      <fileset dir="${basedir}/languages/GeneralSL/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ConstructionSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/ConstructionSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ConstructionSL" />
-    <javac destdir="${build.tmp}/java/out/ConstructionSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/ConstructionSL" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ConstructionSL/source_gen" />
@@ -1573,12 +1597,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ConstructionSL">
+      <fileset dir="${basedir}/languages/ConstructionSL/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ConstructionSL#01" depends="java.compile.ConstructionSL, java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/ConstructionSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ConstructionSL#01" />
-    <javac destdir="${build.tmp}/java/out/ConstructionSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/ConstructionSL#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ConstructionSL/generator/source_gen" />
@@ -1614,12 +1641,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ConstructionSL#01">
+      <fileset dir="${basedir}/languages/ConstructionSL/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.FactSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/FactSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/FactSL" />
-    <javac destdir="${build.tmp}/java/out/FactSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/FactSL" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/FactSL/source_gen" />
@@ -1688,12 +1718,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/FactSL">
+      <fileset dir="${basedir}/languages/FactSL/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.FactSL#01" depends="java.compile.FactSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/FactSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/FactSL#01" />
-    <javac destdir="${build.tmp}/java/out/FactSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/FactSL#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/FactSL/generator/source_gen" />
@@ -1731,12 +1764,15 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/FactSL#01">
+      <fileset dir="${basedir}/languages/FactSL/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ActionSL" depends="java.compile.GeneralSL, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/languages/ActionSL/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ActionSL" />
-    <javac destdir="${build.tmp}/java/out/ActionSL" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/ActionSL" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ActionSL/source_gen" />
@@ -1780,12 +1816,15 @@
         <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ActionSL">
+      <fileset dir="${basedir}/languages/ActionSL/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.ActionSL#01" depends="java.compile.ActionSL, fetchDependencies">
     <mkdir dir="${basedir}/languages/ActionSL/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/ActionSL#01" />
-    <javac destdir="${build.tmp}/java/out/ActionSL#01" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/ActionSL#01" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/ActionSL/generator/source_gen" />
@@ -1820,11 +1859,14 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/ActionSL#01">
+      <fileset dir="${basedir}/languages/ActionSL/generator/source_gen" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="java.compile.DemoWBTests" depends="java.compile.ConstructionSL, java.compile.GeneralSL, fetchDependencies">
     <mkdir dir="${build.tmp}/java/out/DemoWBTests" />
-    <javac destdir="${build.tmp}/java/out/DemoWBTests" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+    <javac destdir="${build.tmp}/java/out/DemoWBTests" fork="false" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src path="${basedir}/solutions/Tests/test_gen/" />
       <classpath>
@@ -1871,6 +1913,9 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       </classpath>
     </javac>
+    <copy todir="${build.tmp}/java/out/DemoWBTests">
+      <fileset dir="${basedir}/solutions/Tests/test_gen/" excludes="**/*.java" />
+    </copy>
   </target>
   
   <target name="test.test" depends="assemble">

@@ -269,14 +269,12 @@
         <child id="7550186569857426782" name="runningtransactions" index="2GwkfK" />
       </concept>
       <concept id="7550186569850605510" name="DemoSL.structure.Act" flags="ng" index="2F6m_C">
-        <property id="7550186569867022185" name="initiation" index="2G7IB7" />
         <reference id="7550186569850605515" name="transactionKindStepKind" index="2F6m__" />
       </concept>
       <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
         <property id="2348051045108660776" name="id" index="aI$Bk" />
         <reference id="7550186569850389327" name="state" index="2F72nx" />
         <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
-        <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
       </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
@@ -8373,30 +8371,12 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F2X5z" id="5WHqtXrVlMV" role="2F2X5W">
-      <node concept="2GwkfO" id="5WHqtXrVlMW" role="2GwkfK">
+    <node concept="2F2X5z" id="2uvT7BikHaV" role="2F2X5W">
+      <node concept="2GwkfO" id="2uvT7BikHaW" role="2GwkfK">
         <property role="aI$Bk" value="1" />
-        <ref role="2F72nx" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="5WHqtXrVlMX" role="2GSHpF">
+        <ref role="2F72nx" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
+        <node concept="2F6m_C" id="2uvT7BikHaX" role="2GLOok">
           <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="5WHqtXrVlN7" role="2GLOok">
-          <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="5WHqtXrVlN8" role="2GLOok">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="5WHqtXrVlN9" role="2GLOok">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="5WHqtXrVlNa" role="2GLOok">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzud4" resolve="request afwijzen van het verzoek" />
-        </node>
-        <node concept="2F6m_C" id="5WHqtXrVlN2" role="2GSHpF">
-          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
         </node>
       </node>
     </node>

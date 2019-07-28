@@ -53,6 +53,9 @@
       <concept id="7801138212747054656" name="jetbrains.mps.build.structure.BuildLayout_Filemode" flags="ng" index="yKbIv">
         <property id="7801138212747054660" name="filemode" index="yKbIr" />
       </concept>
+      <concept id="927724900262033858" name="jetbrains.mps.build.structure.BuildSource_JavaOptions" flags="ng" index="2_Ic$z">
+        <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
+      </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
         <child id="2750015747481074432" name="path" index="2HvfZ0" />
         <child id="2750015747481074433" name="parameters" index="2HvfZ1" />
@@ -150,6 +153,7 @@
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
       <concept id="6503355885715333289" name="jetbrains.mps.build.mps.structure.BuildMpsAspect" flags="ng" index="2igEWh">
         <property id="6503355885715353788" name="bootstrap" index="2igJW4" />
+        <property id="7981469545489178349" name="generationMaxHeapSizeInMb" index="3UIfUI" />
       </concept>
       <concept id="7832771629084799699" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginVendor" flags="ng" index="2iUeEo">
         <property id="7832771629084799702" name="name" index="2iUeEt" />
@@ -251,6 +255,7 @@
     </node>
     <node concept="2igEWh" id="2AEzmscB0G9" role="1hWBAP">
       <property role="2igJW4" value="true" />
+      <property role="3UIfUI" value="4096" />
     </node>
     <node concept="10PD9b" id="2AEzmscAXMv" role="10PD9s" />
     <node concept="3b7kt6" id="2AEzmscAXMw" role="10PD9s" />
@@ -620,6 +625,9 @@
       <property role="1wNuhc" value="true" />
       <property role="1wNuhe" value="true" />
       <property role="1wNuhh" value="2" />
+    </node>
+    <node concept="2_Ic$z" id="2uvT7Bi6XNo" role="3989C9">
+      <property role="2_Ic$$" value="true" />
     </node>
     <node concept="2G$12M" id="2AEzmscAXNT" role="3989C9">
       <property role="TrG5h" value="DemoWB" />
