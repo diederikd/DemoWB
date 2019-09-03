@@ -156,53 +156,5 @@
       <property role="mG$Fn" value="true" />
     </node>
   </node>
-  <node concept="mG$Em" id="5aH6O_7aewk">
-    <property role="TrG5h" value="Mbeddr Examples" />
-    <ref role="mJbgN" node="5aH6O_7aewl" resolve="Choice example" />
-    <node concept="mG$EG" id="5aH6O_7aewl" role="mG$EZ">
-      <property role="TrG5h" value="Choice example" />
-      <property role="mG$Fl" value="Choice" />
-      <ref role="mD7gv" node="5aH6O_7aewv" resolve="truthState" />
-      <node concept="mCa33" id="5aH6O_7aewm" role="mCgmw">
-        <ref role="mCZmw" node="5aH6O_7aewv" resolve="truthState" />
-        <node concept="mC63S" id="5aH6O_7aewn" role="mCgm$">
-          <property role="mC63X" value="BooleanEquals" />
-          <ref role="mF7Qg" node="5aH6O_7aewt" resolve="$.truthvalue" />
-          <node concept="6oBFt" id="5aH6O_7aewo" role="6osfD" />
-        </node>
-      </node>
-      <node concept="mCa33" id="5aH6O_7aewp" role="mCgmw">
-        <ref role="mCZmw" node="5aH6O_7aeww" resolve="falseState" />
-        <node concept="mC63S" id="5aH6O_7aewq" role="mCgm$">
-          <ref role="mF7Qg" node="5aH6O_7aewt" resolve="$.truthvalue" />
-          <node concept="6oBFn" id="5aH6O_7aewr" role="6osfD">
-            <property role="6oBFo" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="mCNIb" id="5aH6O_7aews" role="mCNIY">
-        <node concept="mC63M" id="5aH6O_7aewt" role="mCNIa">
-          <property role="TrG5h" value="$.truthvalue" />
-        </node>
-        <node concept="mC63M" id="5aH6O_7aewu" role="mCNIa">
-          <property role="TrG5h" value="$.testvar" />
-        </node>
-      </node>
-    </node>
-    <node concept="mG$EG" id="5aH6O_7aewv" role="mG$EZ">
-      <property role="TrG5h" value="truthState" />
-      <property role="mG$Fl" value="Pass" />
-      <ref role="mD7gv" node="5aH6O_7aewx" resolve="End State" />
-    </node>
-    <node concept="mG$EG" id="5aH6O_7aeww" role="mG$EZ">
-      <property role="TrG5h" value="falseState" />
-      <property role="mG$Fl" value="Pass" />
-      <ref role="mD7gv" node="5aH6O_7aewx" resolve="End State" />
-    </node>
-    <node concept="mG$EG" id="5aH6O_7aewx" role="mG$EZ">
-      <property role="TrG5h" value="End State" />
-      <property role="mG$Fn" value="true" />
-    </node>
-  </node>
 </model>
 

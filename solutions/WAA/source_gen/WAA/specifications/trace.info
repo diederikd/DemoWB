@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root nodeRef="r:997339d8-463d-4f74-86a0-af9c20781b1b(WAA.specifications)/5257791244322754703">
-    <file name="map_DemoModel.xml">
-      <unit id="5257791244322754703" at="1,0,1696,17" name="WAA.specifications.map_DemoModel" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="56,0,71,0" name="main.QueriesGenerated$SNsQ" />
+      <unit at="86,0,104,0" name="main.QueriesGenerated$PVQ" />
+      <unit at="28,0,105,0" name="main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:aabbd2c8-15c8-4432-98c3-7ba052880a63(main@generator)/2348051045144495132">
+    <file name="QueriesGenerated.java">
+      <node id="2348051045145944460" at="33,88,34,465" concept="1" />
+      <node id="2348051045147414844" at="36,88,37,373" concept="1" />
+      <node id="2348051045145878889" at="39,104,40,547" concept="1" />
+      <node id="2348051045145874575" at="44,14,45,75" concept="0" />
+      <node id="2348051045145874575" at="64,15,65,87" concept="1" />
+      <node id="2348051045145926539" at="73,14,74,195" concept="0" />
+      <node id="2348051045147414291" at="74,195,75,199" concept="0" />
+      <node id="2348051045145926539" at="95,15,96,66" concept="1" />
+      <node id="2348051045147414291" at="97,15,98,66" concept="1" />
+      <node id="2348051045145926540" at="33,0,36,0" concept="2" trace="propertyMacro_GetValue_1_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="2348051045147414292" at="36,0,39,0" concept="2" trace="propertyMacro_GetValue_1_1#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="2348051045145874575" at="39,0,42,0" concept="2" trace="sourceNodesQuery_1_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodesContext;)Ljava/lang/Iterable;" />
+      <scope id="2348051045145926541" at="33,88,34,465" />
+      <scope id="2348051045147414293" at="36,88,37,373" />
+      <scope id="2348051045145874576" at="39,104,40,547" />
+      <scope id="2348051045145874575" at="64,15,65,87" />
+      <scope id="2348051045145926539" at="95,15,96,66" />
+      <scope id="2348051045147414291" at="97,15,98,66" />
+      <scope id="2348051045145926540" at="33,0,36,0">
+        <var name="_context" id="2348051045145926540" />
+      </scope>
+      <scope id="2348051045147414292" at="36,0,39,0">
+        <var name="_context" id="2348051045147414292" />
+      </scope>
+      <scope id="2348051045145874575" at="39,0,42,0">
+        <var name="_context" id="2348051045145874575" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+

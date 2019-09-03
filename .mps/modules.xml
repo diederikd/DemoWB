@@ -2,19 +2,20 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/_spreferences/CodeReviewPreferences/module.msd" folder="_spreferences" />
+      <modulePath path="$PROJECT_DIR$/../AWSSM/AWSStateMachine/AWSStateMachine.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" folder="Languages" />
-      <modulePath path="$PROJECT_DIR$/languages/AWSStateMachine/AWSStateMachine.mpl" folder="Languages" />
-      <modulePath path="$PROJECT_DIR$/languages/AWSStateMachine/sandbox/AWSStateMachine.sandbox.msd" folder="Tests" />
       <modulePath path="$PROJECT_DIR$/languages/ActionSL/ActionSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/DemoSL/DemoSL.mpl" folder="Languages" />
+      <modulePath path="$PROJECT_DIR$/languages/DemoSLToAWS/DemoSLToAWS.mpl" folder="Generators" />
+      <modulePath path="$PROJECT_DIR$/languages/DemoSLToAWSForTest/DemoSLToAWSForTest.mpl" folder="Generators" />
+      <modulePath path="$PROJECT_DIR$/languages/DemoSLToXML/DemoSLToXML.mpl" folder="Generators" />
       <modulePath path="$PROJECT_DIR$/languages/FactSL/FactSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/GeneralSL/GeneralSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/ProcessSL/ProcessSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/solutions/DEMO/DEMO.msd" folder="Technical" />
+      <modulePath path="$PROJECT_DIR$/solutions/DEMOGenPlan/DEMOGenPlan.msd" folder="Technical" />
       <modulePath path="$PROJECT_DIR$/solutions/DemoWB.build/DemoWB.build.msd" folder="Technical" />
-      <modulePath path="$PROJECT_DIR$/solutions/IVAA-2.0 Akten/IVAA-2.0 Akten.msd" folder="Specifications" />
       <modulePath path="$PROJECT_DIR$/solutions/Tests/Tests.msd" folder="Tests" />
       <modulePath path="$PROJECT_DIR$/solutions/WAA/WAA.msd" folder="Specifications" />
       <modulePath path="$PROJECT_DIR$/solutions/sandbox/DemowB.sandbox.msd" folder="Tests" />

@@ -7,9 +7,11 @@
   </models>
   <sourcePath />
   <languageVersions>
+    <language slang="l:ad34076b-b44b-4b8e-9aa6-566fa22fe764:AWSStateMachine" version="0" />
     <language slang="l:e81fc117-1697-4e77-8b54-4a5aa8f4ea97:ActionSL" version="0" />
     <language slang="l:d87481a3-8853-4c7c-9cb5-096d805e832c:ConstructionSL" version="1" />
     <language slang="l:61f0ccba-8ded-47ee-b024-8f1c223c70ef:DemoSL" version="0" />
+    <language slang="l:e46abdd0-0cea-40e3-a51e-cdf216935e9e:DemoSLToAWS" version="0" />
     <language slang="l:6836a913-df90-4e79-9a37-cb334bb02ea5:FactSL" version="0" />
     <language slang="l:aa59ea5e-1883-437f-95c0-4dc082aa848c:GeneralSL" version="0" />
     <language slang="l:a2c2ae09-7c36-4fba-9b64-5e0450cb1363:ProcessSL" version="0" />
@@ -27,6 +29,7 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="eb35f70f-f2a9-472c-8836-f09146d2069c(DEMOGenPlan)" version="0" />
     <module reference="ea769d7d-31b2-4b96-8a0a-9defb87cb4c5(DemowB.sandbox)" version="0" />
   </dependencyVersions>
 </solution>

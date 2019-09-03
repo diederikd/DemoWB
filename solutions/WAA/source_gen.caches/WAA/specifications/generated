@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-65pav2iw4rxi1f7733f9algb3grm8pn">
+<product version="3" modelHash="-czfv0tpt13vnhng06v1cqrlrjrqlff9">
   <files names="Test_ExportToXML:map_DemoModel.xml:testawsgen.sh" />
   <files dir="WAA/specifications" names="WAA.specifications_transactionkind_T1.json:WAA.specifications_transactionkind_T2.json:WAA.specifications_transactionkind_T3.json:WAA.specifications_transactionkind_T4.json:WAA.specifications_transactionkind_T5.json:WAA.specifications_transactionkind_T6.json:WAA.specifications_transactionkind_T7.json" />
 </product>

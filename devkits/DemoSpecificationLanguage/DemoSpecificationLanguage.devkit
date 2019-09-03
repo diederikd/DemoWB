@@ -6,5 +6,11 @@
   <exported-language name="6836a913-df90-4e79-9a37-cb334bb02ea5(FactSL)" />
   <exported-language name="aa59ea5e-1883-437f-95c0-4dc082aa848c(GeneralSL)" />
   <exported-language name="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)" />
+  <exported-language name="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
+  <exported-language name="e46abdd0-0cea-40e3-a51e-cdf216935e9e(DemoSLToAWS)" />
+  <exported-solutions>
+    <exported-solution>eb35f70f-f2a9-472c-8836-f09146d2069c(DEMOGenPlan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:d48e2244-1c7b-4566-adbb-590e524c31f7(DEMOGenPlan.genplan)" />
 </dev-kit>
 
