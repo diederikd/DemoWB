@@ -5,7 +5,7 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
-        <child id="1186402402630" name="styleClass" index="V601i" />
+        <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -135,25 +135,25 @@
     <node concept="14StLt" id="pMarvI3Von" role="V601i">
       <property role="TrG5h" value="Bold" />
       <node concept="Vb9p2" id="pMarvI3Voo" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
     <node concept="14StLt" id="4vyZ9NOzYAu" role="V601i">
       <property role="TrG5h" value="Black" />
       <node concept="VechU" id="4vyZ9NOzYAv" role="3F10Kt">
-        <property role="Vb096" value="black" />
+        <property role="Vb096" value="6cZGtrcKCoS/black" />
       </node>
     </node>
     <node concept="14StLt" id="pMarvIFrHl" role="V601i">
       <property role="TrG5h" value="Gray" />
       <node concept="VechU" id="pMarvIFyzG" role="3F10Kt">
-        <property role="Vb096" value="gray" />
+        <property role="Vb096" value="fLJRk5_/gray" />
       </node>
     </node>
     <node concept="14StLt" id="4obCttul$l2" role="V601i">
       <property role="TrG5h" value="Italic" />
       <node concept="Vb9p2" id="4obCttul$lU" role="3F10Kt">
-        <property role="Vbekb" value="ITALIC" />
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
     </node>
     <node concept="14StLt" id="pMarvI3WvW" role="V601i">
@@ -172,37 +172,37 @@
         </node>
       </node>
       <node concept="Vb9p2" id="pMarvI3WyK" role="3F10Kt">
-        <property role="Vbekb" value="BOLD" />
+        <property role="Vbekb" value="g1_k_vY/BOLD" />
       </node>
     </node>
     <node concept="14StLt" id="4obCtttw6Px" role="V601i">
       <property role="TrG5h" value="Wait" />
       <node concept="30gYXW" id="4obCtttw8RW" role="3F10Kt">
-        <property role="Vb096" value="orange" />
+        <property role="Vb096" value="fLwANPp/orange" />
       </node>
     </node>
     <node concept="14StLt" id="1dPpwTRTaTY" role="V601i">
       <property role="TrG5h" value="Run" />
       <node concept="30gYXW" id="1dPpwTRTaTZ" role="3F10Kt">
-        <property role="Vb096" value="green" />
+        <property role="Vb096" value="fLwANPr/green" />
       </node>
     </node>
     <node concept="14StLt" id="4obCtttw8SR" role="V601i">
       <property role="TrG5h" value="Yes" />
       <node concept="30gYXW" id="4obCtttw8TH" role="3F10Kt">
-        <property role="Vb096" value="DARK_GREEN" />
+        <property role="Vb096" value="g1_qRwE/darkGreen" />
       </node>
       <node concept="VechU" id="1dPpwTRTbtS" role="3F10Kt">
-        <property role="Vb096" value="WHITE" />
+        <property role="Vb096" value="hEZAO13/white" />
       </node>
     </node>
     <node concept="14StLt" id="1dPpwTRTb99" role="V601i">
       <property role="TrG5h" value="No" />
       <node concept="30gYXW" id="1dPpwTRTb9a" role="3F10Kt">
-        <property role="Vb096" value="red" />
+        <property role="Vb096" value="fLwANPn/red" />
       </node>
       <node concept="VechU" id="1dPpwTRTbtH" role="3F10Kt">
-        <property role="Vb096" value="WHITE" />
+        <property role="Vb096" value="hEZAO13/white" />
       </node>
     </node>
   </node>

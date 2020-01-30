@@ -80,7 +80,7 @@
       </concept>
       <concept id="5047305753771629418" name="ActionSL.structure.ActionClause" flags="ng" index="on7EX">
         <property id="5047305753771629419" name="stepkind" index="on7EW" />
-        <reference id="5047305753771629421" name="transactionKindReference" index="on7EU" />
+        <reference id="5047305753771629421" name="transactionKind" index="on7EU" />
         <reference id="1311537047069506213" name="appliesToStepKind" index="3ap3_r" />
       </concept>
       <concept id="5047305753771525530" name="ActionSL.structure.Respons" flags="ng" index="onuhd">
@@ -136,7 +136,7 @@
     <node concept="a1WVU" id="1S2F7pX5oTW" role="ojaNo">
       <node concept="ojNJ6" id="1S2F7pX5oTX" role="ojhK1">
         <property role="okzg6" value="false" />
-        <property role="ojPxs" value="rq" />
+        <property role="ojPxs" value="m5XqSfxGpI/rq" />
         <ref role="ojNJ5" node="1S2F7pX5D2J" resolve="request test transaction" />
         <node concept="2mzTSp" id="1S2F7pX5oTY" role="2mzTUy">
           <ref role="2mzTVA" node="1S2F7pX5D2E" />
@@ -156,7 +156,7 @@
         <node concept="onuhf" id="1S2F7pX5oU2" role="onuha">
           <node concept="on7EX" id="1S2F7pX5D3Y" role="okEzR">
             <property role="okzg6" value="false" />
-            <property role="on7EW" value="pm" />
+            <property role="on7EW" value="m5XqSfxGpJ/pm" />
             <ref role="on7EU" node="1S2F7pX5D2E" />
             <ref role="3ap3_r" node="1S2F7pX5D2M" resolve="promiss test transaction" />
           </node>
@@ -205,7 +205,7 @@
     <property role="TrG5h" value="Proces model" />
     <ref role="3jA7_1" node="1S2F7pX5D2E" />
     <node concept="a0Nag" id="1S2F7pX5D2I" role="3jxjQ9">
-      <property role="a0N98" value="in" />
+      <property role="a0N98" value="2Ze6BQptBPr/in" />
       <property role="TrG5h" value="initial test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUl" role="xbbdY">
@@ -213,7 +213,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2J" role="3jxjQ9">
-      <property role="a0N98" value="rq" />
+      <property role="a0N98" value="m5XqSfxGpI/rq" />
       <property role="TrG5h" value="request test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUm" role="xbbdY">
@@ -221,7 +221,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2K" role="3jxjQ9">
-      <property role="a0N98" value="ac" />
+      <property role="a0N98" value="m5XqSfxGpQ/ac" />
       <property role="TrG5h" value="accept test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUn" role="xbbdY">
@@ -229,7 +229,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2L" role="3jxjQ9">
-      <property role="a0N98" value="dc" />
+      <property role="a0N98" value="m5XqSfxGpV/dc" />
       <property role="TrG5h" value="decline test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUo" role="xbbdY">
@@ -237,7 +237,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2M" role="3jxjQ9">
-      <property role="a0N98" value="pm" />
+      <property role="a0N98" value="m5XqSfxGpJ/pm" />
       <property role="TrG5h" value="promiss test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUp" role="xbbdY">
@@ -245,7 +245,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2N" role="3jxjQ9">
-      <property role="a0N98" value="ex" />
+      <property role="a0N98" value="2S7w2zXAHOK/ex" />
       <property role="TrG5h" value="execute test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUq" role="xbbdY">
@@ -253,7 +253,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2O" role="3jxjQ9">
-      <property role="a0N98" value="st" />
+      <property role="a0N98" value="m5XqSfxGpM/st" />
       <property role="TrG5h" value="state test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUr" role="xbbdY">
@@ -261,7 +261,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2P" role="3jxjQ9">
-      <property role="a0N98" value="sp" />
+      <property role="a0N98" value="m5XqSfxGqg/sp" />
       <property role="TrG5h" value="stop test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUs" role="xbbdY">
@@ -269,7 +269,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2Q" role="3jxjQ9">
-      <property role="a0N98" value="qt" />
+      <property role="a0N98" value="m5XqSfxGq1/qt" />
       <property role="TrG5h" value="quit test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUt" role="xbbdY">
@@ -277,7 +277,7 @@
       </node>
     </node>
     <node concept="a0Nag" id="1S2F7pX5D2R" role="3jxjQ9">
-      <property role="a0N98" value="rj" />
+      <property role="a0N98" value="m5XqSfxGq8/rj" />
       <property role="TrG5h" value="reject test transaction" />
       <ref role="a0Nah" node="1S2F7pX5D2E" />
       <node concept="W57nP" id="60WnNX14WUu" role="xbbdY">
@@ -287,7 +287,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2S" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2I" resolve="initial test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2J" resolve="request test transaction" />
       <node concept="W57nP" id="60WnNX2miIx" role="yvcRU">
@@ -297,7 +296,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2T" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2J" resolve="request test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2M" resolve="promiss test transaction" />
       <node concept="W57nP" id="60WnNX2miIy" role="yvcRU">
@@ -307,7 +305,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2U" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2J" resolve="request test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2L" resolve="decline test transaction" />
       <node concept="W57nP" id="60WnNX2miIz" role="yvcRU">
@@ -317,7 +314,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2V" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2L" resolve="decline test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2J" resolve="request test transaction" />
       <node concept="W57nP" id="60WnNX2miI$" role="yvcRU">
@@ -327,7 +323,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2W" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2L" resolve="decline test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2Q" resolve="quit test transaction" />
       <node concept="W57nP" id="60WnNX2miI_" role="yvcRU">
@@ -337,7 +332,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2X" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2M" resolve="promiss test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2N" resolve="execute test transaction" />
       <node concept="W57nP" id="60WnNX2miIA" role="yvcRU">
@@ -347,7 +341,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2Y" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2N" resolve="execute test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2O" resolve="state test transaction" />
       <node concept="W57nP" id="60WnNX2miIB" role="yvcRU">
@@ -357,7 +350,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D2Z" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2O" resolve="state test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2K" resolve="accept test transaction" />
       <node concept="W57nP" id="60WnNX2miIC" role="yvcRU">
@@ -367,7 +359,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D30" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2O" resolve="state test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2R" resolve="reject test transaction" />
       <node concept="W57nP" id="60WnNX2miID" role="yvcRU">
@@ -377,7 +368,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D31" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2R" resolve="reject test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2O" resolve="state test transaction" />
       <node concept="W57nP" id="60WnNX2miIE" role="yvcRU">
@@ -387,7 +377,6 @@
     <node concept="a0NRJ" id="1S2F7pX5D32" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="response" />
       <ref role="a0NRD" node="1S2F7pX5D2R" resolve="reject test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2P" resolve="stop test transaction" />
       <node concept="W57nP" id="60WnNX2miIF" role="yvcRU">
@@ -397,7 +386,7 @@
     <node concept="a0NRJ" id="1S2F7pX5D33" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="reversion" />
+      <property role="3jFdel" value="2Ze6BQpx5lr/reversion" />
       <ref role="a0NRD" node="1S2F7pX5D2P" resolve="stop test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2I" resolve="initial test transaction" />
       <node concept="W57nP" id="60WnNX2miIG" role="yvcRU">
@@ -407,7 +396,7 @@
     <node concept="a0NRJ" id="1S2F7pX5D34" role="3jxjQb">
       <property role="3cIS2x" value="1" />
       <property role="3cIS2B" value="1" />
-      <property role="3jFdel" value="reversion" />
+      <property role="3jFdel" value="2Ze6BQpx5lr/reversion" />
       <ref role="a0NRD" node="1S2F7pX5D2Q" resolve="quit test transaction" />
       <ref role="a0NRG" node="1S2F7pX5D2I" resolve="initial test transaction" />
       <node concept="W57nP" id="60WnNX2miIH" role="yvcRU">

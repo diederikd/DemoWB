@@ -72,12 +72,12 @@
     <ref role="mJbgN" node="4LOVS_qPCCf" resolve="Choice example" />
     <node concept="mG$EG" id="4LOVS_qPCCf" role="mG$EZ">
       <property role="TrG5h" value="Choice example" />
-      <property role="mG$Fl" value="Choice" />
+      <property role="mG$Fl" value="4LOVS_qLEkY/Choice" />
       <ref role="mD7gv" node="4LOVS_qQB4m" resolve="truthState" />
       <node concept="mCa33" id="4LOVS_qPXfP" role="mCgmw">
         <ref role="mCZmw" node="4LOVS_qQB4m" resolve="truthState" />
         <node concept="mC63S" id="4LOVS_qPXfQ" role="mCgm$">
-          <property role="mC63X" value="BooleanEquals" />
+          <property role="mC63X" value="4LOVS_qP4Oc/BooleanEquals" />
           <ref role="mF7Qg" node="4LOVS_qQ98j" resolve="$.truthvalue" />
           <node concept="6oBFt" id="2fcm070zic" role="6osfD" />
         </node>
@@ -102,12 +102,10 @@
     </node>
     <node concept="mG$EG" id="4LOVS_qQB4m" role="mG$EZ">
       <property role="TrG5h" value="truthState" />
-      <property role="mG$Fl" value="Pass" />
       <ref role="mD7gv" node="4LOVS_qPXfT" resolve="End State" />
     </node>
     <node concept="mG$EG" id="4LOVS_qQB4b" role="mG$EZ">
       <property role="TrG5h" value="falseState" />
-      <property role="mG$Fl" value="Pass" />
       <ref role="mD7gv" node="4LOVS_qPXfT" resolve="End State" />
     </node>
     <node concept="mG$EG" id="4LOVS_qPXfT" role="mG$EZ">
@@ -121,13 +119,13 @@
     <ref role="mJbgN" node="4LOVS_qZCdX" resolve="LookupCustomerInfo" />
     <node concept="mG$EG" id="4LOVS_qZCdX" role="mG$EZ">
       <property role="TrG5h" value="LookupCustomerInfo" />
-      <property role="mG$Fl" value="Parallel" />
+      <property role="mG$Fl" value="4LOVS_qLElk/Parallel" />
       <property role="mG$Fn" value="true" />
       <node concept="mG$Em" id="4LOVS_qZCgx" role="mwDjr">
         <ref role="mJbgN" node="4LOVS_qZCgz" resolve="LookUpAddress" />
         <node concept="mG$EG" id="4LOVS_qZCgz" role="mG$EZ">
           <property role="TrG5h" value="LookUpAddress" />
-          <property role="mG$Fl" value="Task" />
+          <property role="mG$Fl" value="4LOVS_qLEkV/Task" />
           <property role="mG$Fn" value="true" />
           <property role="ntFo2" value="arn:aws:lambda:us-east-1:123456789012:function:AddressFinder" />
         </node>
@@ -136,7 +134,7 @@
         <ref role="mJbgN" node="4LOVS_qZCgL" resolve="LookUpPhone" />
         <node concept="mG$EG" id="4LOVS_qZCgL" role="mG$EZ">
           <property role="TrG5h" value="LookUpPhone" />
-          <property role="mG$Fl" value="Task" />
+          <property role="mG$Fl" value="4LOVS_qLEkV/Task" />
           <property role="mG$Fn" value="true" />
           <property role="ntFo2" value="arn:aws:lambda:us-east-1:123456789012:function:PhoneFinder" />
         </node>

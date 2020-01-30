@@ -1,33 +1,33 @@
 {
-  "Comment":"",
-  "StartAt":"Choice example",
-  "States":{
-    "Choice example":{
-      "Type":"Choice",
-      "Choices":[
+  "Comment": "",
+  "StartAt": "Choice example",
+  "States": {
+    "Choice example": {
+      "Type": "Choice",
+      "Choices": [
         {
-          "Variable":"$.truthvalue",
-          "BooleanEquals":false,
-          "Next":"truthState"
+          "Variable": "$.truthvalue",
+          "BooleanEquals": false,
+          "Next": "truthState"
         },
         {
-          "Variable":"$.truthvalue",
-          "StringEquals":"true",
-          "Next":"falseState"
+          "Variable": "$.truthvalue",
+          "StringEquals": "true",
+          "Next": "falseState"
         }
       ]
     },
-    "truthState":{
-      "Type":"Pass",
-      "Next":"End State"
+    "truthState": {
+      "Type": "Pass",
+      "Next": "End State"
     },
-    "falseState":{
-      "Type":"Pass",
-      "Next":"End State"
+    "falseState": {
+      "Type": "Pass",
+      "Next": "End State"
     },
-    "End State":{
-      "Type":"Pass",
-      "End":true
+    "End State": {
+      "Type": "Pass",
+      "End": true
     }
   }
 }

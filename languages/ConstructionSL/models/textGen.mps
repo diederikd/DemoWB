@@ -59,6 +59,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -149,10 +150,13 @@
                 <property role="lacIc" value="&lt;DEMO:TransactionSort&gt;" />
               </node>
               <node concept="l9hG8" id="60WnNX1ntvf" role="lcghm">
-                <node concept="2OqwBi" id="60WnNX1ntFB" role="lb14g">
-                  <node concept="117lpO" id="60WnNX1ntwb" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="60WnNX1nvt0" role="2OqNvi">
-                    <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
+                <node concept="2OqwBi" id="UhpoBJ7Qca" role="lb14g">
+                  <node concept="24Tkf9" id="UhpoBJ7Qcc" role="2OqNvi" />
+                  <node concept="2OqwBi" id="60WnNX1ntFB" role="2Oq$k0">
+                    <node concept="117lpO" id="60WnNX1ntwb" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="60WnNX1nvt0" role="2OqNvi">
+                      <ref role="3TsBF5" to="pgdh:UhpoBJ7Olk" resolve="transactionsort" />
+                    </node>
                   </node>
                 </node>
               </node>

@@ -2,7 +2,7 @@
 <model ref="r:b6e47bc3-6995-4c31-aee4-73136b96cf76(DemoSL.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -84,7 +84,7 @@
       </concept>
       <concept id="1240322627579" name="jetbrains.mps.lang.intentions.structure.IntentionParameter" flags="nn" index="38Zlrr" />
       <concept id="1240395258925" name="jetbrains.mps.lang.intentions.structure.ParameterizedIntentionDeclaration" flags="ig" index="3dkpOd">
-        <child id="1240395532443" name="queryBlock" index="3dlsAV" />
+        <child id="1240395532443" name="queryFunction" index="3dlsAV" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -172,7 +172,7 @@
             <node concept="3clFbF" id="2S7w2zXKG5X" role="3cqZAp">
               <node concept="2YIFZM" id="2S7w2zXKIah" role="3clFbG">
                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
                 <node concept="10Nm6u" id="2S7w2zXKIbX" role="37wK5m" />
                 <node concept="Xl_RD" id="2S7w2zXKIgU" role="37wK5m">
                   <property role="Xl_RC" value="Transactionkind has already stepkinds" />
@@ -333,7 +333,7 @@
               <node concept="3clFbS" id="2Ze6BQpxcHL" role="3clFbx">
                 <node concept="3clFbF" id="2Ze6BQpxcHM" role="3cqZAp">
                   <node concept="2YIFZM" id="2Ze6BQpxcHN" role="3clFbG">
-                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int):void" resolve="showMessageDialog" />
+                    <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
                     <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                     <node concept="10Nm6u" id="2Ze6BQpxcHO" role="37wK5m" />
                     <node concept="3cpWs3" id="2Ze6BQpxgtF" role="37wK5m">

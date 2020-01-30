@@ -13,7 +13,6 @@
     <import index="2o4v" ref="r:2a70cba0-4dc5-4697-986d-5cba44622d22(de.itemis.mps.editor.diagram.runtime)" />
     <import index="n4zc" ref="r:241ca50b-85e3-48fe-b819-53b8bef6e1b5(Tests.TestConstructionSL@tests)" />
     <import index="iaov" ref="r:73650c37-a732-4199-a4ab-5fa70980f196(Tests.TestActionSL@tests)" />
-    <import index="ev4z" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#ce5195dc-1630-4f7a-8b9e-ea731dc7dc97(jetbrains.mps.lang.project.modules/module.DemoWBTests@project_stub)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -351,11 +350,17 @@
               <node concept="2Ry0Ak" id="2AEzmscBd$c" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
                 <node concept="2Ry0Ak" id="2AEzmscBdAP" role="2Ry0An">
-                  <property role="2Ry0Am" value="Applications" />
+                  <property role="2Ry0Am" value="MDSE" />
                   <node concept="2Ry0Ak" id="2AEzmscBdCC" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 2018.3.app" />
-                    <node concept="2Ry0Ak" id="2AEzmscBdEr" role="2Ry0An">
-                      <property role="2Ry0Am" value="Contents" />
+                    <property role="2Ry0Am" value="apps" />
+                    <node concept="2Ry0Ak" id="3$pRWKgKZKU" role="2Ry0An">
+                      <property role="2Ry0Am" value="JetBrains" />
+                      <node concept="2Ry0Ak" id="3$pRWKgL2Wt" role="2Ry0An">
+                        <property role="2Ry0Am" value="MPSmbeddr-2019.1.4" />
+                        <node concept="2Ry0Ak" id="3$pRWKgLcuS" role="2Ry0An">
+                          <property role="2Ry0Am" value="MPSmbeddr-2019.1.4" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -498,17 +503,11 @@
         </node>
       </node>
       <node concept="398223" id="2AEzmscAXOy" role="39821P">
-        <node concept="3_I8Xc" id="2AEzmscAXOz" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1diLdO26H7T" resolve="cvsIntegration" />
-        </node>
         <node concept="3_I8Xc" id="2AEzmscAXO$" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3nGzrDEfcNJ" resolve="svn4idea" />
         </node>
         <node concept="3_I8Xc" id="2AEzmscAXO_" role="39821P">
           <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
-        </node>
-        <node concept="3_I8Xc" id="2AEzmscAXOA" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:ymnOULBdbM" resolve="mps-core" />
         </node>
         <node concept="3_I8Xc" id="4h5c_cX7U$j" role="39821P">
           <ref role="3_I8Xa" to="90a9:4be$WTb1O3_" resolve="de.itemis.mps.editor.diagram" />
@@ -1048,7 +1047,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="DemoWBTests" />
         <property role="3LESm3" value="ce5195dc-1630-4f7a-8b9e-ea731dc7dc97" />
-        <property role="aoJFB" value="tests" />
+        <property role="aoJFB" value="eYcmk9QOls/tests" />
         <node concept="55IIr" id="4h5c_cXdMee" role="3LF7KH">
           <node concept="2Ry0Ak" id="4h5c_cXdMhK" role="iGT6I">
             <property role="2Ry0Am" value="solutions" />
@@ -1082,7 +1081,7 @@
     </node>
     <node concept="1l3spV" id="2AEzmscAXQ2" role="1l3spN">
       <node concept="1tmT9g" id="2AEzmscAXQK" role="39821P">
-        <property role="AB_bT" value="gzip" />
+        <property role="AB_bT" value="1HQQX4XU8$A/gzip" />
         <node concept="398223" id="2AEzmscAXQL" role="39821P">
           <node concept="3ygNvl" id="2AEzmscAXQM" role="39821P">
             <ref role="3ygNvj" node="2AEzmscAXO3" />
@@ -1120,7 +1119,7 @@
             </node>
             <node concept="28jJK3" id="2AEzmscAXQQ" role="39821P">
               <node concept="3co7Ac" id="2AEzmscAXQR" role="28jJR8">
-                <property role="3co7Am" value="lf" />
+                <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                 <property role="3cpA_W" value="true" />
               </node>
               <node concept="398BVA" id="2AEzmscAXQt" role="28jJRO">
@@ -1135,7 +1134,7 @@
             </node>
             <node concept="28jJK3" id="2AEzmscAXQS" role="39821P">
               <node concept="3co7Ac" id="2AEzmscAXQT" role="28jJR8">
-                <property role="3co7Am" value="lf" />
+                <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                 <property role="3cpA_W" value="true" />
               </node>
               <node concept="398BVA" id="2AEzmscAXQz" role="28jJRO">
@@ -1174,7 +1173,7 @@
           <node concept="28jJK3" id="2AEzmscAXQZ" role="39821P">
             <property role="28jJZ5" value="755" />
             <node concept="3co7Ac" id="2AEzmscAXR0" role="28jJR8">
-              <property role="3co7Am" value="lf" />
+              <property role="3co7Am" value="3D3G23Q8WAL/lf" />
               <property role="3cpA_W" value="true" />
             </node>
             <node concept="398BVA" id="2AEzmscAXQI" role="28jJRO">
@@ -1744,7 +1743,7 @@
               </node>
               <node concept="28jJK3" id="2AEzmscAXWx" role="39821P">
                 <node concept="3co7Ac" id="2AEzmscAXWy" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="398BVA" id="2AEzmscAXVM" role="28jJRO">
@@ -1759,7 +1758,7 @@
               </node>
               <node concept="28jJK3" id="2AEzmscAXWz" role="39821P">
                 <node concept="3co7Ac" id="2AEzmscAXW$" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="398BVA" id="2AEzmscAXVS" role="28jJRO">
@@ -1775,7 +1774,7 @@
               <node concept="28jJK3" id="2AEzmscAXW_" role="39821P">
                 <property role="28jJZ5" value="755" />
                 <node concept="3co7Ac" id="2AEzmscAXWA" role="28jJR8">
-                  <property role="3co7Am" value="lf" />
+                  <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                   <property role="3cpA_W" value="true" />
                 </node>
                 <node concept="398BVA" id="2AEzmscAXVZ" role="28jJRO">
@@ -1795,7 +1794,7 @@
             <node concept="28jJK3" id="2AEzmscAXWB" role="39821P">
               <property role="28jJZ5" value="755" />
               <node concept="3co7Ac" id="2AEzmscAXWC" role="28jJR8">
-                <property role="3co7Am" value="lf" />
+                <property role="3co7Am" value="3D3G23Q8WAL/lf" />
                 <property role="3cpA_W" value="true" />
               </node>
               <node concept="398BVA" id="2AEzmscAXW5" role="28jJRO">

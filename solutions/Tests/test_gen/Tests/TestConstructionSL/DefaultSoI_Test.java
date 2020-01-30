@@ -25,7 +25,7 @@ public class DefaultSoI_Test extends BaseTransformationTest {
 
   @Test
   public void test_NodeIsSoI() throws Throwable {
-    new DefaultSoI_Test.TestBody(this).test_NodeIsSoI();
+    new TestBody(this).test_NodeIsSoI();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {

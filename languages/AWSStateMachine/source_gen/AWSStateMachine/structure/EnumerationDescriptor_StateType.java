@@ -5,59 +5,72 @@ package AWSStateMachine.structure;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptorBase;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
+import jetbrains.mps.lang.smodel.EnumerationLiteralsIndex;
+import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
-import java.util.Collection;
-import java.util.Arrays;
 
 public class EnumerationDescriptor_StateType extends EnumerationDescriptorBase {
 
   public EnumerationDescriptor_StateType() {
-    super(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a539L, "StateType", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485113", PrimitiveTypeId.STRING);
+    super(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a539L, "StateType", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764956", PrimitiveTypeId.STRING);
   }
 
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Pass_0 = new EnumerationDescriptor.MemberDescriptor("Pass", "Pass", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485114", "Pass");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Task_0 = new EnumerationDescriptor.MemberDescriptor("Task", "Task", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485115", "Task");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Choice_0 = new EnumerationDescriptor.MemberDescriptor("Choice", "Choice", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485118", "Choice");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Wait_0 = new EnumerationDescriptor.MemberDescriptor("Wait", "Wait", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485122", "Wait");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Succeed_0 = new EnumerationDescriptor.MemberDescriptor("Succeed", "Succeed", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485127", "Succeed");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Fail_0 = new EnumerationDescriptor.MemberDescriptor("Fail", "Fail", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485133", "Fail");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_Parallel_0 = new EnumerationDescriptor.MemberDescriptor("Parallel", "Parallel", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485140", "Parallel");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Pass_0 = new EnumerationDescriptor.MemberDescriptor("Pass", "Pass", 0x4c74ef895ac6a53aL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764958", "Pass", "Pass");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Task_0 = new EnumerationDescriptor.MemberDescriptor("Task", "Task", 0x4c74ef895ac6a53bL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764959", "Task", "Task");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Choice_0 = new EnumerationDescriptor.MemberDescriptor("Choice", "Choice", 0x4c74ef895ac6a53eL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764960", "Choice", "Choice");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Wait_0 = new EnumerationDescriptor.MemberDescriptor("Wait", "Wait", 0x4c74ef895ac6a542L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764961", "Wait", "Wait");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Succeed_0 = new EnumerationDescriptor.MemberDescriptor("Succeed", "Succeed", 0x4c74ef895ac6a547L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764962", "Succeed", "Succeed");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Fail_0 = new EnumerationDescriptor.MemberDescriptor("Fail", "Fail", 0x4c74ef895ac6a54dL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764963", "Fail", "Fail");
+  private final EnumerationDescriptor.MemberDescriptor myMember_Parallel_0 = new EnumerationDescriptor.MemberDescriptor("Parallel", "Parallel", 0x4c74ef895ac6a554L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764964", "Parallel", "Parallel");
+
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ac6a539L, 0x4c74ef895ac6a53aL, 0x4c74ef895ac6a53bL, 0x4c74ef895ac6a53eL, 0x4c74ef895ac6a542L, 0x4c74ef895ac6a547L, 0x4c74ef895ac6a54dL, 0x4c74ef895ac6a554L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_Pass_0, myMember_Task_0, myMember_Choice_0, myMember_Wait_0, myMember_Succeed_0, myMember_Fail_0, myMember_Parallel_0);
 
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return VALUE_Pass_0;
+    return myMember_Pass_0;
   }
 
   @NotNull
   @Override
-  public Collection<EnumerationDescriptor.MemberDescriptor> getMembers() {
-    return Arrays.asList(VALUE_Pass_0, VALUE_Task_0, VALUE_Choice_0, VALUE_Wait_0, VALUE_Succeed_0, VALUE_Fail_0, VALUE_Parallel_0);
+  public List<EnumerationDescriptor.MemberDescriptor> getMembers() {
+    return myMembers;
   }
 
   @Nullable
   @Override
-  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String string) {
-    if (string == null) {
+  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String memberName) {
+    if (memberName == null) {
       return null;
     }
-    switch (string) {
+    switch (memberName) {
       case "Pass":
-        return VALUE_Pass_0;
+        return myMember_Pass_0;
       case "Task":
-        return VALUE_Task_0;
+        return myMember_Task_0;
       case "Choice":
-        return VALUE_Choice_0;
+        return myMember_Choice_0;
       case "Wait":
-        return VALUE_Wait_0;
+        return myMember_Wait_0;
       case "Succeed":
-        return VALUE_Succeed_0;
+        return myMember_Succeed_0;
       case "Fail":
-        return VALUE_Fail_0;
+        return myMember_Fail_0;
       case "Parallel":
-        return VALUE_Parallel_0;
+        return myMember_Parallel_0;
     }
     return null;
+  }
+
+  @Nullable
+  @Override
+  public EnumerationDescriptor.MemberDescriptor getMember(long idValue) {
+    int index = myIndex.index(idValue);
+    if (index == -1) {
+      return null;
+    }
+    return myMembers.get(index);
   }
 }

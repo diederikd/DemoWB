@@ -2,7 +2,7 @@
 <model ref="r:25d172e9-ec66-4482-a540-dd02daa6ecfb(AWSStateMachine.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -33,14 +33,14 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -52,11 +52,11 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
       </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -78,12 +78,12 @@
               <ref role="1YBMHb" node="4LOVS_r0WLV" resolve="state" />
             </node>
             <node concept="3TrcHB" id="4LOVS_r0Xtd" role="2OqNvi">
-              <ref role="3TsBF5" to="eu7c:4LOVS_qLEls" resolve="Type" />
+              <ref role="3TsBF5" to="eu7c:UhpoBJ7Ola" resolve="Type" />
             </node>
           </node>
-          <node concept="3t7uKx" id="4LOVS_r0Ynr" role="2OqNvi">
-            <node concept="uoxfO" id="4LOVS_r0Ynt" role="3t7uKA">
-              <ref role="uo_Cq" to="eu7c:4LOVS_qLEkV" />
+          <node concept="21noJN" id="UhpoBJ7OnM" role="2OqNvi">
+            <node concept="21nZrQ" id="UhpoBJ7OnN" role="21noJM">
+              <ref role="21nZrZ" to="eu7c:UhpoBJ7Oiv" resolve="Task" />
             </node>
           </node>
         </node>
@@ -105,11 +105,11 @@
                 <node concept="Xl_RD" id="4LOVS_r0ZBO" role="2MkJ7o">
                   <property role="Xl_RC" value="State of type 'Task' requires a resource" />
                 </node>
-                <node concept="1YBJjd" id="4LOVS_r0ZBQ" role="2OEOjV">
-                  <ref role="1YBMHb" node="4LOVS_r0WLV" resolve="state" />
-                </node>
-                <node concept="2ODE4t" id="4LOVS_r0ZD5" role="2OEWyd">
+                <node concept="2ODE4t" id="4LOVS_r0ZD5" role="1urrC5">
                   <ref role="2ODJFN" to="eu7c:4LOVS_r0_Ab" resolve="Resource" />
+                </node>
+                <node concept="1YBJjd" id="4LOVS_r0ZBQ" role="1urrMF">
+                  <ref role="1YBMHb" node="4LOVS_r0WLV" resolve="state" />
                 </node>
               </node>
             </node>

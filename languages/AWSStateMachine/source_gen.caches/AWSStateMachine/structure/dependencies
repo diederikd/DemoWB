@@ -14,8 +14,8 @@
   <dependency className="AWSStateMachine.structure.EnumerationDescriptor_ComparisonOperators">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -25,8 +25,8 @@
   <dependency className="AWSStateMachine.structure.EnumerationDescriptor_StateType">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -52,6 +52,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.DataTypeDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2" />
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />

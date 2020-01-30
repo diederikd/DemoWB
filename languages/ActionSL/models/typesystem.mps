@@ -2,7 +2,7 @@
 <model ref="r:4e099fd4-b350-4474-8796-ce3cf8c702e5(ActionSL.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -33,7 +33,6 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -91,14 +90,14 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -116,6 +115,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -123,9 +128,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -141,9 +143,6 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
-      </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
@@ -222,11 +221,11 @@
                     <node concept="Xl_RD" id="281RgeXZZjY" role="2MkJ7o">
                       <property role="Xl_RC" value="Performer should be initiator of the transactionkind" />
                     </node>
-                    <node concept="1YBJjd" id="281RgeXZZlm" role="2OEOjV">
-                      <ref role="1YBMHb" node="281RgeXZOlh" resolve="actionRule" />
-                    </node>
-                    <node concept="2OE7Q9" id="281RgeXZZsW" role="2OEWyd">
+                    <node concept="2OE7Q9" id="281RgeXZZsW" role="1urrC5">
                       <ref role="2OEe5H" to="qiqe:4obCttul$jf" resolve="assessPart" />
+                    </node>
+                    <node concept="1YBJjd" id="281RgeXZZlm" role="1urrMF">
+                      <ref role="1YBMHb" node="281RgeXZOlh" resolve="actionRule" />
                     </node>
                   </node>
                 </node>
@@ -287,12 +286,12 @@
                               </node>
                             </node>
                             <node concept="3TrcHB" id="2AEzmscw4WR" role="2OqNvi">
-                              <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                              <ref role="3TsBF5" to="it18:UhpoBJ7Ols" resolve="stepKind" />
                             </node>
                           </node>
-                          <node concept="3t7uKx" id="2AEzmscw6qj" role="2OqNvi">
-                            <node concept="uoxfO" id="2AEzmscw6ql" role="3t7uKA">
-                              <ref role="uo_Cq" to="it18:m5XqSfxGpI" />
+                          <node concept="21noJN" id="UhpoBJ7O$b" role="2OqNvi">
+                            <node concept="21nZrQ" id="UhpoBJ7O$c" role="21noJM">
+                              <ref role="21nZrZ" to="it18:UhpoBJ7Ojo" resolve="rq" />
                             </node>
                           </node>
                         </node>
@@ -313,12 +312,12 @@
                                 </node>
                               </node>
                               <node concept="3TrcHB" id="2AEzmscwpqS" role="2OqNvi">
-                                <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                                <ref role="3TsBF5" to="it18:UhpoBJ7Ols" resolve="stepKind" />
                               </node>
                             </node>
-                            <node concept="3t7uKx" id="2AEzmscwpqT" role="2OqNvi">
-                              <node concept="uoxfO" id="2AEzmscwpqU" role="3t7uKA">
-                                <ref role="uo_Cq" to="it18:m5XqSfxGpQ" />
+                            <node concept="21noJN" id="UhpoBJ7O$d" role="2OqNvi">
+                              <node concept="21nZrQ" id="UhpoBJ7O$e" role="21noJM">
+                                <ref role="21nZrZ" to="it18:UhpoBJ7Ojs" resolve="ac" />
                               </node>
                             </node>
                           </node>
@@ -341,12 +340,12 @@
                               </node>
                             </node>
                             <node concept="3TrcHB" id="2AEzmscwKke" role="2OqNvi">
-                              <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                              <ref role="3TsBF5" to="it18:UhpoBJ7Ols" resolve="stepKind" />
                             </node>
                           </node>
-                          <node concept="3t7uKx" id="2AEzmscwKkf" role="2OqNvi">
-                            <node concept="uoxfO" id="2AEzmscwKkg" role="3t7uKA">
-                              <ref role="uo_Cq" to="it18:m5XqSfxGq8" />
+                          <node concept="21noJN" id="UhpoBJ7O$f" role="2OqNvi">
+                            <node concept="21nZrQ" id="UhpoBJ7O$g" role="21noJM">
+                              <ref role="21nZrZ" to="it18:UhpoBJ7Ojv" resolve="rj" />
                             </node>
                           </node>
                         </node>
@@ -421,11 +420,11 @@
                             <node concept="Xl_RD" id="2AEzmscwIee" role="2MkJ7o">
                               <property role="Xl_RC" value="Addressee should be executor of the transactionkind" />
                             </node>
-                            <node concept="1YBJjd" id="2AEzmscwIef" role="2OEOjV">
-                              <ref role="1YBMHb" node="281RgeXZOlh" resolve="actionRule" />
-                            </node>
-                            <node concept="2OE7Q9" id="2AEzmscwIeg" role="2OEWyd">
+                            <node concept="2OE7Q9" id="2AEzmscwIeg" role="1urrC5">
                               <ref role="2OEe5H" to="qiqe:4obCttul$jf" resolve="assessPart" />
+                            </node>
+                            <node concept="1YBJjd" id="2AEzmscwIef" role="1urrMF">
+                              <ref role="1YBMHb" node="281RgeXZOlh" resolve="actionRule" />
                             </node>
                           </node>
                         </node>
@@ -484,12 +483,12 @@
                             </node>
                           </node>
                           <node concept="3TrcHB" id="2AEzmscwIeE" role="2OqNvi">
-                            <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                            <ref role="3TsBF5" to="it18:UhpoBJ7Ols" resolve="stepKind" />
                           </node>
                         </node>
-                        <node concept="3t7uKx" id="2AEzmscwIeF" role="2OqNvi">
-                          <node concept="uoxfO" id="2AEzmscwIeG" role="3t7uKA">
-                            <ref role="uo_Cq" to="it18:m5XqSfxGpJ" />
+                        <node concept="21noJN" id="UhpoBJ7O$h" role="2OqNvi">
+                          <node concept="21nZrQ" id="UhpoBJ7O$i" role="21noJM">
+                            <ref role="21nZrZ" to="it18:UhpoBJ7Ojp" resolve="pm" />
                           </node>
                         </node>
                       </node>
@@ -510,12 +509,12 @@
                               </node>
                             </node>
                             <node concept="3TrcHB" id="2AEzmscwLGj" role="2OqNvi">
-                              <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                              <ref role="3TsBF5" to="it18:UhpoBJ7Ols" resolve="stepKind" />
                             </node>
                           </node>
-                          <node concept="3t7uKx" id="2AEzmscwLGk" role="2OqNvi">
-                            <node concept="uoxfO" id="2AEzmscwLGl" role="3t7uKA">
-                              <ref role="uo_Cq" to="it18:m5XqSfxGpV" />
+                          <node concept="21noJN" id="UhpoBJ7O$j" role="2OqNvi">
+                            <node concept="21nZrQ" id="UhpoBJ7O$k" role="21noJM">
+                              <ref role="21nZrZ" to="it18:UhpoBJ7Ojt" resolve="dc" />
                             </node>
                           </node>
                         </node>
@@ -538,12 +537,12 @@
                             </node>
                           </node>
                           <node concept="3TrcHB" id="2AEzmscwIeP" role="2OqNvi">
-                            <ref role="3TsBF5" to="it18:m5XqSfxGvA" resolve="stepKind" />
+                            <ref role="3TsBF5" to="it18:UhpoBJ7Ols" resolve="stepKind" />
                           </node>
                         </node>
-                        <node concept="3t7uKx" id="2AEzmscwIeQ" role="2OqNvi">
-                          <node concept="uoxfO" id="2AEzmscwIeR" role="3t7uKA">
-                            <ref role="uo_Cq" to="it18:m5XqSfxGpM" />
+                        <node concept="21noJN" id="UhpoBJ7O$l" role="2OqNvi">
+                          <node concept="21nZrQ" id="UhpoBJ7O$m" role="21noJM">
+                            <ref role="21nZrZ" to="it18:UhpoBJ7Ojr" resolve="st" />
                           </node>
                         </node>
                       </node>
@@ -622,7 +621,7 @@
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="2xdQw9" id="6ihpGwUgZ49" role="8Wnug">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="3cpWs3" id="6ihpGwUgZCa" role="9lYJi">
                 <node concept="37vLTw" id="6ihpGwUgZCx" role="3uHU7w">
                   <ref role="3cqZAo" node="6ihpGwUgmGf" resolve="EventpartAppliesToStepKind" />
@@ -637,7 +636,7 @@
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
             <node concept="2xdQw9" id="6ihpGwUgZHp" role="8Wnug">
-              <property role="2xdLsb" value="info" />
+              <property role="2xdLsb" value="h1akgim/info" />
               <node concept="3cpWs3" id="6ihpGwUgZHq" role="9lYJi">
                 <node concept="2OqwBi" id="6ihpGwUh04c" role="3uHU7w">
                   <node concept="1YBJjd" id="6ihpGwUgZR3" role="2Oq$k0">
@@ -659,7 +658,7 @@
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                 <node concept="2xdQw9" id="6ihpGwUhobw" role="8Wnug">
-                  <property role="2xdLsb" value="info" />
+                  <property role="2xdLsb" value="h1akgim/info" />
                   <node concept="Xl_RD" id="6ihpGwUhoby" role="9lYJi">
                     <property role="Xl_RC" value="error " />
                   </node>
@@ -669,7 +668,7 @@
                 <node concept="Xl_RD" id="6ihpGwUgu46" role="2MkJ7o">
                   <property role="Xl_RC" value="No link found for this stepkind" />
                 </node>
-                <node concept="1YBJjd" id="6ihpGwUgwFc" role="2OEOjV">
+                <node concept="1YBJjd" id="6ihpGwUgwFc" role="1urrMF">
                   <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
                 </node>
               </node>
@@ -770,11 +769,11 @@
             <node concept="Xl_RD" id="6ihpGwUvvgv" role="2MkJ7o">
               <property role="Xl_RC" value="No stepkind defined for actionclause, enter stepkind and transationkind to select TransactionKindStepKind" />
             </node>
-            <node concept="1YBJjd" id="6ihpGwUvvgw" role="2OEOjV">
-              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
+            <node concept="2ODE4t" id="6ihpGwUvvgx" role="1urrC5">
+              <ref role="2ODJFN" to="qiqe:UhpoBJ7Olg" resolve="stepkind" />
             </node>
-            <node concept="2ODE4t" id="6ihpGwUvvgx" role="2OEWyd">
-              <ref role="2ODJFN" to="qiqe:4obCttulXHF" resolve="stepkind" />
+            <node concept="1YBJjd" id="6ihpGwUvvgw" role="1urrMF">
+              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
             </node>
           </node>
         </node>
@@ -784,10 +783,10 @@
               <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
             </node>
             <node concept="3TrcHB" id="6ihpGwUvvg_" role="2OqNvi">
-              <ref role="3TsBF5" to="qiqe:4obCttulXHF" resolve="stepkind" />
+              <ref role="3TsBF5" to="qiqe:UhpoBJ7Olg" resolve="stepkind" />
             </node>
           </node>
-          <node concept="17RlXB" id="6ihpGwUvvgA" role="2OqNvi" />
+          <node concept="3w_OXm" id="UhpoBJ7OUL" role="2OqNvi" />
         </node>
       </node>
       <node concept="3clFbJ" id="6ihpGwUvrU6" role="3cqZAp">
@@ -796,11 +795,11 @@
             <node concept="Xl_RD" id="6ihpGwUvtNV" role="2MkJ7o">
               <property role="Xl_RC" value="No transactionkind defined for actionclause, enter stepkind and transationkind to select TransactionKindStepKind" />
             </node>
-            <node concept="1YBJjd" id="6ihpGwUvtPr" role="2OEOjV">
-              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
-            </node>
-            <node concept="2OE7Q9" id="6ihpGwUvx0w" role="2OEWyd">
+            <node concept="2OE7Q9" id="6ihpGwUvx0w" role="1urrC5">
               <ref role="2OEe5H" to="qiqe:4obCttulXHH" resolve="transactionKind" />
+            </node>
+            <node concept="1YBJjd" id="6ihpGwUvtPr" role="1urrMF">
+              <ref role="1YBMHb" node="6ihpGwUg5Wu" resolve="actionClause" />
             </node>
           </node>
         </node>
@@ -911,7 +910,7 @@
                                   <property role="Xl_RC" value="No rule defined for transactionstepkind " />
                                 </node>
                               </node>
-                              <node concept="1YBJjd" id="1WaRo0v3GYc" role="2OEOjV">
+                              <node concept="1YBJjd" id="1WaRo0v3GYc" role="1urrMF">
                                 <ref role="1YBMHb" node="1WaRo0v2XtP" resolve="actionRuleSpecifications" />
                               </node>
                             </node>

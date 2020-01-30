@@ -2,7 +2,7 @@
 <model ref="r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -82,11 +82,6 @@
       <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
         <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802791" name="helginsIntention" index="2OEOjU" />
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216391046856" name="descriptionBlock" index="QzAvj" />
@@ -98,6 +93,11 @@
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
         <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
@@ -171,18 +171,18 @@
           <node concept="3clFbJ" id="1VmqrBbT3am" role="3cqZAp">
             <node concept="3clFbS" id="1VmqrBbT3ao" role="3clFbx">
               <node concept="2MkqsV" id="1VmqrBbTp7P" role="3cqZAp">
-                <node concept="3Cnw8n" id="4WvouDnoS4x" role="2OEOjU">
-                  <property role="ARO6o" value="true" />
-                  <ref role="QpYPw" node="4WvouDnfqmZ" resolve="AddUniqueIDForTransactionKind" />
-                </node>
                 <node concept="Xl_RD" id="1VmqrBbTp7Q" role="2MkJ7o">
                   <property role="Xl_RC" value="id of transactionkind is not unique" />
                 </node>
-                <node concept="1YBJjd" id="1VmqrBbUpYO" role="2OEOjV">
+                <node concept="2ODE4t" id="4vyZ9NOJYeO" role="1urrC5">
+                  <ref role="2ODJFN" to="pgdh:2ojITFECoW6" resolve="identification" />
+                </node>
+                <node concept="1YBJjd" id="1VmqrBbUpYO" role="1urrMF">
                   <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
                 </node>
-                <node concept="2ODE4t" id="4vyZ9NOJYeO" role="2OEWyd">
-                  <ref role="2ODJFN" to="pgdh:2ojITFECoW6" resolve="identification" />
+                <node concept="3Cnw8n" id="4WvouDnoS4x" role="1urrFz">
+                  <property role="ARO6o" value="true" />
+                  <ref role="QpYPw" node="4WvouDnfqmZ" resolve="AddUniqueIDForTransactionKind" />
                 </node>
               </node>
             </node>
@@ -216,7 +216,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="1VmqrBbTdDB" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="1VmqrBbTe9Y" role="37wK5m">
                                 <node concept="1YBJjd" id="1VmqrBbUpD1" role="2Oq$k0">
                                   <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
@@ -267,11 +267,11 @@
             <node concept="Xl_RD" id="4vyZ9NOpE7n" role="2MkJ7o">
               <property role="Xl_RC" value="initiator of transactionkind should have at least one value" />
             </node>
-            <node concept="1YBJjd" id="4vyZ9NOpE7o" role="2OEOjV">
-              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
-            </node>
-            <node concept="2OE7Q9" id="4vyZ9NOJXTO" role="2OEWyd">
+            <node concept="2OE7Q9" id="4vyZ9NOJXTO" role="1urrC5">
               <ref role="2OEe5H" to="pgdh:6cLLlCqqh5W" resolve="initiatorConcept" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOpE7o" role="1urrMF">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
           </node>
         </node>
@@ -293,11 +293,11 @@
             <node concept="Xl_RD" id="4vyZ9NOpPAU" role="2MkJ7o">
               <property role="Xl_RC" value="executor of transactionkind should have one value" />
             </node>
-            <node concept="1YBJjd" id="4vyZ9NOpPAV" role="2OEOjV">
-              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
-            </node>
-            <node concept="2OE7Q9" id="4vyZ9NOJX$O" role="2OEWyd">
+            <node concept="2OE7Q9" id="4vyZ9NOJX$O" role="1urrC5">
               <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOpPAV" role="1urrMF">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
           </node>
         </node>
@@ -316,14 +316,14 @@
       <node concept="3clFbJ" id="4h5c_cX8psy" role="3cqZAp">
         <node concept="3clFbS" id="4h5c_cX8psz" role="3clFbx">
           <node concept="2MkqsV" id="4h5c_cX8ps$" role="3cqZAp">
-            <node concept="1YBJjd" id="4h5c_cX8psA" role="2OEOjV">
-              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
-            </node>
-            <node concept="2OE7Q9" id="4h5c_cX8psB" role="2OEWyd">
-              <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
-            </node>
             <node concept="Xl_RD" id="4h5c_cXileh" role="2MkJ7o">
               <property role="Xl_RC" value="executor of transactionkind should have one value" />
+            </node>
+            <node concept="2OE7Q9" id="4h5c_cX8psB" role="1urrC5">
+              <ref role="2OEe5H" to="pgdh:6cLLlCqqh6f" resolve="executorConcept" />
+            </node>
+            <node concept="1YBJjd" id="4h5c_cX8psA" role="1urrMF">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
           </node>
         </node>
@@ -350,11 +350,11 @@
             <node concept="Xl_RD" id="4vyZ9NOpTyC" role="2MkJ7o">
               <property role="Xl_RC" value="transactionkind should have a name" />
             </node>
-            <node concept="1YBJjd" id="4vyZ9NOpTyD" role="2OEOjV">
-              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
-            </node>
-            <node concept="2ODE4t" id="4vyZ9NOJXfO" role="2OEWyd">
+            <node concept="2ODE4t" id="4vyZ9NOJXfO" role="1urrC5">
               <ref role="2ODJFN" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOpTyD" role="1urrMF">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
           </node>
         </node>
@@ -376,13 +376,13 @@
             <node concept="Xl_RD" id="4vyZ9NOpE0W" role="2MkJ7o">
               <property role="Xl_RC" value="transactionkind should have a unique id" />
             </node>
-            <node concept="1YBJjd" id="4vyZ9NOpE0X" role="2OEOjV">
-              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
-            </node>
-            <node concept="2ODE4t" id="4vyZ9NOJW_Q" role="2OEWyd">
+            <node concept="2ODE4t" id="4vyZ9NOJW_Q" role="1urrC5">
               <ref role="2ODJFN" to="pgdh:2ojITFECoW6" resolve="identification" />
             </node>
-            <node concept="3Cnw8n" id="4WvouDnngqx" role="2OEOjU">
+            <node concept="1YBJjd" id="4vyZ9NOpE0X" role="1urrMF">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
+            </node>
+            <node concept="3Cnw8n" id="4WvouDnngqx" role="1urrFz">
               <property role="ARO6o" value="true" />
               <ref role="QpYPw" node="4WvouDnfqmZ" resolve="AddUniqueIDForTransactionKind" />
             </node>
@@ -406,11 +406,11 @@
             <node concept="Xl_RD" id="5dW$Pa1708K" role="2MkJ7o">
               <property role="Xl_RC" value="Transactionkind Name should not have leading and trailing spaces" />
             </node>
-            <node concept="1YBJjd" id="5dW$Pa170a9" role="2OEOjV">
-              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
-            </node>
-            <node concept="2ODE4t" id="5dW$Pa171s8" role="2OEWyd">
+            <node concept="2ODE4t" id="5dW$Pa171s8" role="1urrC5">
               <ref role="2ODJFN" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="5dW$Pa170a9" role="1urrMF">
+              <ref role="1YBMHb" node="1VmqrBbUp4m" resolve="transactionKind" />
             </node>
           </node>
         </node>
@@ -425,7 +425,7 @@
               </node>
             </node>
             <node concept="liA8E" id="5dW$Pa23YkS" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="2OqwBi" id="5dW$Pa23YkT" role="37wK5m">
                 <node concept="2OqwBi" id="5dW$Pa23YkU" role="2Oq$k0">
                   <node concept="1YBJjd" id="5dW$Pa23YkV" role="2Oq$k0">
@@ -436,7 +436,7 @@
                   </node>
                 </node>
                 <node concept="liA8E" id="5dW$Pa23YkX" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.trim():java.lang.String" resolve="trim" />
+                  <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
                 </node>
               </node>
             </node>
@@ -458,7 +458,7 @@
             <node concept="Xl_RD" id="pMarvIYjxQ" role="2MkJ7o">
               <property role="Xl_RC" value="executor is already in use for other transactionkind" />
             </node>
-            <node concept="2OqwBi" id="pMarvIZnB9" role="2OEOjV">
+            <node concept="2OqwBi" id="pMarvIZnB9" role="1urrMF">
               <node concept="1YBJjd" id="pMarvIZniJ" role="2Oq$k0">
                 <ref role="1YBMHb" node="pMarvIY8JG" resolve="executor" />
               </node>
@@ -560,7 +560,7 @@
                 <node concept="Xl_RD" id="4vyZ9NOFAuD" role="2MkJ7o">
                   <property role="Xl_RC" value="id of aggregate transactionkind is not unique" />
                 </node>
-                <node concept="1YBJjd" id="4vyZ9NOFAuE" role="2OEOjV">
+                <node concept="1YBJjd" id="4vyZ9NOFAuE" role="1urrMF">
                   <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
                 </node>
               </node>
@@ -595,7 +595,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="4vyZ9NOFAuW" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                               <node concept="2OqwBi" id="4vyZ9NOFAuX" role="37wK5m">
                                 <node concept="1YBJjd" id="4vyZ9NOFAuY" role="2Oq$k0">
                                   <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
@@ -646,11 +646,11 @@
             <node concept="Xl_RD" id="4vyZ9NOFAvy" role="2MkJ7o">
               <property role="Xl_RC" value="aggregate transactionkind should have a name" />
             </node>
-            <node concept="1YBJjd" id="4vyZ9NOFAvz" role="2OEOjV">
-              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
-            </node>
-            <node concept="2ODE4t" id="4vyZ9NOISdE" role="2OEWyd">
+            <node concept="2ODE4t" id="4vyZ9NOISdE" role="1urrC5">
               <ref role="2ODJFN" to="d13l:2ojITFEC3aG" resolve="name" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOFAvz" role="1urrMF">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
             </node>
           </node>
         </node>
@@ -672,11 +672,11 @@
             <node concept="Xl_RD" id="4vyZ9NOFAvG" role="2MkJ7o">
               <property role="Xl_RC" value="aggregate transactionkind should have a unique id" />
             </node>
-            <node concept="1YBJjd" id="4vyZ9NOFAvH" role="2OEOjV">
-              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
-            </node>
-            <node concept="2ODE4t" id="4vyZ9NOISsY" role="2OEWyd">
+            <node concept="2ODE4t" id="4vyZ9NOISsY" role="1urrC5">
               <ref role="2ODJFN" to="pgdh:2ojITFECoWd" resolve="id" />
+            </node>
+            <node concept="1YBJjd" id="4vyZ9NOFAvH" role="1urrMF">
+              <ref role="1YBMHb" node="4vyZ9NOFAvN" resolve="aggregateTransactionKind" />
             </node>
           </node>
         </node>

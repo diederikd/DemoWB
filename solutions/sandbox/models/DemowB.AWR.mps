@@ -19,7 +19,7 @@
     <language id="d87481a3-8853-4c7c-9cb5-096d805e832c" name="ConstructionSL">
       <concept id="2743742872034578184" name="ConstructionSL.structure.CompositeActorRole" flags="ng" index="3cGzii">
         <property id="2743742872034578186" name="identification" index="3cGzig" />
-        <child id="6934522251529464189" name="id" index="xifp2" />
+        <child id="6934522251529464189" name="Id" index="xifp2" />
       </concept>
       <concept id="2743742872034578181" name="ConstructionSL.structure.TransactionKind" flags="ng" index="3cGziv">
         <property id="2743742872034578182" name="identification" index="3cGzis" />
@@ -27,9 +27,9 @@
         <child id="7147711074394509692" name="initiatorConcept" index="1TmdgA" />
         <child id="7147711074394509711" name="executorConcept" index="1Tmdjl" />
       </concept>
-      <concept id="2743742872034489001" name="ConstructionSL.structure.ActorRole" flags="ng" index="3cGS$N">
+      <concept id="2743742872034489001" name="ConstructionSL.structure.ElementaryActorRole" flags="ng" index="3cGS$N">
         <property id="2743742872034537143" name="identification" index="3cGPkH" />
-        <child id="6934522251522538168" name="id" index="xdEm7" />
+        <child id="6934522251522538168" name="Id" index="xdEm7" />
         <child id="3316760564119748940" name="isActorRoleInCAR" index="3jp$5$" />
       </concept>
       <concept id="2743742872034909889" name="ConstructionSL.structure.ScopeOfInterest" flags="ng" index="3cHilr">
