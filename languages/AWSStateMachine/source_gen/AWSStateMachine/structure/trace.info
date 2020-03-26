@@ -22,6 +22,163 @@
       <unit at="18,0,201,0" name="AWSStateMachine.structure.StructureAspectDescriptor" />
     </file>
   </root>
+  <root nodeRef="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764956">
+    <file name="EnumerationDescriptor_StateType.java">
+      <node id="1049731831250764956" at="15,44,16,199" concept="9" />
+      <node id="1049731831250764958" at="19,0,20,0" concept="2" trace="myMember_Pass_0" />
+      <node id="1049731831250764959" at="20,0,21,0" concept="2" trace="myMember_Task_0" />
+      <node id="1049731831250764960" at="21,0,22,0" concept="2" trace="myMember_Choice_0" />
+      <node id="1049731831250764961" at="22,0,23,0" concept="2" trace="myMember_Wait_0" />
+      <node id="1049731831250764962" at="23,0,24,0" concept="2" trace="myMember_Succeed_0" />
+      <node id="1049731831250764963" at="24,0,25,0" concept="2" trace="myMember_Fail_0" />
+      <node id="1049731831250764964" at="25,0,26,0" concept="2" trace="myMember_Parallel_0" />
+      <node id="1049731831250764956" at="27,0,28,0" concept="2" trace="myIndex" />
+      <node id="1049731831250764956" at="28,0,29,0" concept="2" trace="myMembers" />
+      <node id="1049731831250764956" at="32,62,33,27" concept="6" />
+      <node id="1049731831250764956" at="38,68,39,21" concept="6" />
+      <node id="1049731831250764956" at="45,29,46,18" concept="6" />
+      <node id="1049731831250764958" at="49,18,50,31" concept="6" />
+      <node id="1049731831250764959" at="51,18,52,31" concept="6" />
+      <node id="1049731831250764960" at="53,20,54,33" concept="6" />
+      <node id="1049731831250764961" at="55,18,56,31" concept="6" />
+      <node id="1049731831250764962" at="57,21,58,34" concept="6" />
+      <node id="1049731831250764963" at="59,18,60,31" concept="6" />
+      <node id="1049731831250764964" at="61,22,62,35" concept="6" />
+      <node id="1049731831250764956" at="63,5,64,16" concept="6" />
+      <node id="1049731831250764956" at="69,73,70,39" concept="5" />
+      <node id="1049731831250764956" at="71,22,72,18" concept="6" />
+      <node id="1049731831250764956" at="73,5,74,32" concept="6" />
+      <node id="1049731831250764956" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_StateType#()V" />
+      <node id="1049731831250764956" at="44,88,47,5" concept="3" />
+      <node id="1049731831250764956" at="70,39,73,5" concept="3" />
+      <node id="1049731831250764956" at="30,0,35,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1049731831250764956" at="36,0,41,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="1049731831250764956" at="67,0,76,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1049731831250764956" at="47,5,63,5" concept="10" />
+      <node id="1049731831250764956" at="42,0,66,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="1049731831250764956" at="15,44,16,199" />
+      <scope id="1049731831250764956" at="32,62,33,27" />
+      <scope id="1049731831250764956" at="38,68,39,21" />
+      <scope id="1049731831250764956" at="45,29,46,18" />
+      <scope id="1049731831250764958" at="49,18,50,31" />
+      <scope id="1049731831250764959" at="51,18,52,31" />
+      <scope id="1049731831250764960" at="53,20,54,33" />
+      <scope id="1049731831250764961" at="55,18,56,31" />
+      <scope id="1049731831250764962" at="57,21,58,34" />
+      <scope id="1049731831250764963" at="59,18,60,31" />
+      <scope id="1049731831250764964" at="61,22,62,35" />
+      <scope id="1049731831250764956" at="71,22,72,18" />
+      <scope id="1049731831250764956" at="15,0,18,0" />
+      <scope id="1049731831250764956" at="30,0,35,0" />
+      <scope id="1049731831250764956" at="36,0,41,0" />
+      <scope id="1049731831250764956" at="69,73,74,32">
+        <var name="index" id="1049731831250764956" />
+      </scope>
+      <scope id="1049731831250764956" at="67,0,76,0">
+        <var name="idValue" id="1049731831250764956" />
+      </scope>
+      <scope id="1049731831250764956" at="44,88,64,16" />
+      <scope id="1049731831250764956" at="42,0,66,0">
+        <var name="memberName" id="1049731831250764956" />
+      </scope>
+      <unit id="1049731831250764956" at="13,0,77,0" name="AWSStateMachine.structure.EnumerationDescriptor_StateType" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1049731831250764956" at="31,0,32,0" concept="2" trace="myEnumerationStateType" />
+    </file>
+  </root>
+  <root nodeRef="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764965">
+    <file name="EnumerationDescriptor_ComparisonOperators.java">
+      <node id="1049731831250764965" at="15,54,16,209" concept="9" />
+      <node id="1049731831250764967" at="19,0,20,0" concept="2" trace="myMember_BooleanEquals_0" />
+      <node id="1049731831250764968" at="20,0,21,0" concept="2" trace="myMember_NumericEquals_0" />
+      <node id="1049731831250764969" at="21,0,22,0" concept="2" trace="myMember_NumericGreaterThan_0" />
+      <node id="1049731831250764970" at="22,0,23,0" concept="2" trace="myMember_NumericGreaterThanEquals_0" />
+      <node id="1049731831250764971" at="23,0,24,0" concept="2" trace="myMember_NumericLessThan_0" />
+      <node id="1049731831250764972" at="24,0,25,0" concept="2" trace="myMember_NumericLessThanEquals_0" />
+      <node id="1049731831250764973" at="25,0,26,0" concept="2" trace="myMember_StringEquals_0" />
+      <node id="1049731831250764974" at="26,0,27,0" concept="2" trace="myMember_StringGreaterThan_0" />
+      <node id="1049731831250764975" at="27,0,28,0" concept="2" trace="myMember_StringGreaterThanEquals_0" />
+      <node id="1049731831250764976" at="28,0,29,0" concept="2" trace="myMember_StringLessThan_0" />
+      <node id="1049731831250764977" at="29,0,30,0" concept="2" trace="myMember_StringLessThanEquals_0" />
+      <node id="1049731831250764978" at="30,0,31,0" concept="2" trace="myMember_TimestampEquals_0" />
+      <node id="1049731831250764979" at="31,0,32,0" concept="2" trace="myMember_TimestampGreaterThan_0" />
+      <node id="1049731831250764980" at="32,0,33,0" concept="2" trace="myMember_TimestampGreaterThanEquals_0" />
+      <node id="1049731831250764981" at="33,0,34,0" concept="2" trace="myMember_TimestampLessThan_0" />
+      <node id="1049731831250764982" at="34,0,35,0" concept="2" trace="myMember_TimestampLessThanEquals_0" />
+      <node id="1049731831250764965" at="36,0,37,0" concept="2" trace="myIndex" />
+      <node id="1049731831250764965" at="37,0,38,0" concept="2" trace="myMembers" />
+      <node id="1049731831250764965" at="41,62,42,35" concept="6" />
+      <node id="1049731831250764965" at="47,68,48,21" concept="6" />
+      <node id="1049731831250764965" at="54,29,55,18" concept="6" />
+      <node id="1049731831250764967" at="58,27,59,40" concept="6" />
+      <node id="1049731831250764968" at="60,27,61,40" concept="6" />
+      <node id="1049731831250764969" at="62,32,63,45" concept="6" />
+      <node id="1049731831250764970" at="64,38,65,51" concept="6" />
+      <node id="1049731831250764971" at="66,29,67,42" concept="6" />
+      <node id="1049731831250764972" at="68,35,69,48" concept="6" />
+      <node id="1049731831250764973" at="70,26,71,39" concept="6" />
+      <node id="1049731831250764974" at="72,31,73,44" concept="6" />
+      <node id="1049731831250764975" at="74,37,75,50" concept="6" />
+      <node id="1049731831250764976" at="76,28,77,41" concept="6" />
+      <node id="1049731831250764977" at="78,34,79,47" concept="6" />
+      <node id="1049731831250764978" at="80,29,81,42" concept="6" />
+      <node id="1049731831250764979" at="82,34,83,47" concept="6" />
+      <node id="1049731831250764980" at="84,40,85,53" concept="6" />
+      <node id="1049731831250764981" at="86,31,87,44" concept="6" />
+      <node id="1049731831250764982" at="88,37,89,50" concept="6" />
+      <node id="1049731831250764965" at="90,5,91,16" concept="6" />
+      <node id="1049731831250764965" at="96,73,97,39" concept="5" />
+      <node id="1049731831250764965" at="98,22,99,18" concept="6" />
+      <node id="1049731831250764965" at="100,5,101,32" concept="6" />
+      <node id="1049731831250764965" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_ComparisonOperators#()V" />
+      <node id="1049731831250764965" at="53,88,56,5" concept="3" />
+      <node id="1049731831250764965" at="97,39,100,5" concept="3" />
+      <node id="1049731831250764965" at="39,0,44,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1049731831250764965" at="45,0,50,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="1049731831250764965" at="94,0,103,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="1049731831250764965" at="56,5,90,5" concept="10" />
+      <node id="1049731831250764965" at="51,0,93,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="1049731831250764965" at="15,54,16,209" />
+      <scope id="1049731831250764965" at="41,62,42,35" />
+      <scope id="1049731831250764965" at="47,68,48,21" />
+      <scope id="1049731831250764965" at="54,29,55,18" />
+      <scope id="1049731831250764967" at="58,27,59,40" />
+      <scope id="1049731831250764968" at="60,27,61,40" />
+      <scope id="1049731831250764969" at="62,32,63,45" />
+      <scope id="1049731831250764970" at="64,38,65,51" />
+      <scope id="1049731831250764971" at="66,29,67,42" />
+      <scope id="1049731831250764972" at="68,35,69,48" />
+      <scope id="1049731831250764973" at="70,26,71,39" />
+      <scope id="1049731831250764974" at="72,31,73,44" />
+      <scope id="1049731831250764975" at="74,37,75,50" />
+      <scope id="1049731831250764976" at="76,28,77,41" />
+      <scope id="1049731831250764977" at="78,34,79,47" />
+      <scope id="1049731831250764978" at="80,29,81,42" />
+      <scope id="1049731831250764979" at="82,34,83,47" />
+      <scope id="1049731831250764980" at="84,40,85,53" />
+      <scope id="1049731831250764981" at="86,31,87,44" />
+      <scope id="1049731831250764982" at="88,37,89,50" />
+      <scope id="1049731831250764965" at="98,22,99,18" />
+      <scope id="1049731831250764965" at="15,0,18,0" />
+      <scope id="1049731831250764965" at="39,0,44,0" />
+      <scope id="1049731831250764965" at="45,0,50,0" />
+      <scope id="1049731831250764965" at="96,73,101,32">
+        <var name="index" id="1049731831250764965" />
+      </scope>
+      <scope id="1049731831250764965" at="94,0,103,0">
+        <var name="idValue" id="1049731831250764965" />
+      </scope>
+      <scope id="1049731831250764965" at="53,88,91,16" />
+      <scope id="1049731831250764965" at="51,0,93,0">
+        <var name="memberName" id="1049731831250764965" />
+      </scope>
+      <unit id="1049731831250764965" at="13,0,104,0" name="AWSStateMachine.structure.EnumerationDescriptor_ComparisonOperators" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1049731831250764965" at="30,0,31,0" concept="2" trace="myEnumerationComparisonOperators" />
+    </file>
+  </root>
   <root nodeRef="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/40305210172459955">
     <file name="ConceptPresentationAspectImpl.java">
       <node id="40305210172459955" at="20,0,21,0" concept="2" trace="props_Value" />
@@ -223,7 +380,7 @@
       <node id="5509291617393485093" at="129,34,130,71" concept="1" />
       <node id="5509291617393485093" at="130,71,131,102" concept="1" />
       <node id="5509291617393485093" at="131,102,132,17" concept="1" />
-      <node id="5509291617393485148" at="132,17,133,175" concept="1" />
+      <node id="1049731831250765130" at="132,17,133,175" concept="1" />
       <node id="5509291617393485150" at="133,175,134,110" concept="1" />
       <node id="5509291617393485155" at="134,110,135,113" concept="1" />
       <node id="5509291617397397899" at="135,113,136,114" concept="1" />
@@ -242,135 +399,6 @@
         <var name="b" id="5509291617393485093" />
       </scope>
       <scope id="5509291617393485093" at="127,0,147,0" />
-    </file>
-  </root>
-  <root nodeRef="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617393485113">
-    <file name="EnumerationDescriptor_StateType.java">
-      <node id="5509291617393485113" at="15,44,16,199" concept="9" />
-      <node id="5509291617393485114" at="19,0,20,0" concept="2" trace="VALUE_Pass_0" />
-      <node id="5509291617393485115" at="20,0,21,0" concept="2" trace="VALUE_Task_0" />
-      <node id="5509291617393485118" at="21,0,22,0" concept="2" trace="VALUE_Choice_0" />
-      <node id="5509291617393485122" at="22,0,23,0" concept="2" trace="VALUE_Wait_0" />
-      <node id="5509291617393485127" at="23,0,24,0" concept="2" trace="VALUE_Succeed_0" />
-      <node id="5509291617393485133" at="24,0,25,0" concept="2" trace="VALUE_Fail_0" />
-      <node id="5509291617393485140" at="25,0,26,0" concept="2" trace="VALUE_Parallel_0" />
-      <node id="5509291617393485113" at="29,62,30,24" concept="6" />
-      <node id="5509291617393485113" at="35,74,36,132" concept="6" />
-      <node id="5509291617393485113" at="42,25,43,18" concept="6" />
-      <node id="5509291617393485114" at="46,18,47,28" concept="6" />
-      <node id="5509291617393485115" at="48,18,49,28" concept="6" />
-      <node id="5509291617393485118" at="50,20,51,30" concept="6" />
-      <node id="5509291617393485122" at="52,18,53,28" concept="6" />
-      <node id="5509291617393485127" at="54,21,55,31" concept="6" />
-      <node id="5509291617393485133" at="56,18,57,28" concept="6" />
-      <node id="5509291617393485140" at="58,22,59,32" concept="6" />
-      <node id="5509291617393485113" at="60,5,61,16" concept="6" />
-      <node id="5509291617393485113" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_StateType#()V" />
-      <node id="5509291617393485113" at="41,84,44,5" concept="3" />
-      <node id="5509291617393485113" at="27,0,32,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <node id="5509291617393485113" at="33,0,38,0" concept="4" trace="getMembers#()Ljava/util/Collection;" />
-      <node id="5509291617393485113" at="44,5,60,5" concept="10" />
-      <node id="5509291617393485113" at="39,0,63,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <scope id="5509291617393485113" at="15,44,16,199" />
-      <scope id="5509291617393485113" at="29,62,30,24" />
-      <scope id="5509291617393485113" at="35,74,36,132" />
-      <scope id="5509291617393485113" at="42,25,43,18" />
-      <scope id="5509291617393485114" at="46,18,47,28" />
-      <scope id="5509291617393485115" at="48,18,49,28" />
-      <scope id="5509291617393485118" at="50,20,51,30" />
-      <scope id="5509291617393485122" at="52,18,53,28" />
-      <scope id="5509291617393485127" at="54,21,55,31" />
-      <scope id="5509291617393485133" at="56,18,57,28" />
-      <scope id="5509291617393485140" at="58,22,59,32" />
-      <scope id="5509291617393485113" at="15,0,18,0" />
-      <scope id="5509291617393485113" at="27,0,32,0" />
-      <scope id="5509291617393485113" at="33,0,38,0" />
-      <scope id="5509291617393485113" at="41,84,61,16" />
-      <scope id="5509291617393485113" at="39,0,63,0">
-        <var name="string" id="5509291617393485113" />
-      </scope>
-      <unit id="5509291617393485113" at="13,0,64,0" name="AWSStateMachine.structure.EnumerationDescriptor_StateType" />
-    </file>
-    <file name="StructureAspectDescriptor.java">
-      <node id="5509291617393485113" at="31,0,32,0" concept="2" trace="myEnumerationStateType" />
-    </file>
-  </root>
-  <root nodeRef="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380042">
-    <file name="EnumerationDescriptor_ComparisonOperators.java">
-      <node id="5509291617394380042" at="15,54,16,209" concept="9" />
-      <node id="5509291617394380044" at="19,0,20,0" concept="2" trace="VALUE_BooleanEquals_0" />
-      <node id="5509291617394380051" at="20,0,21,0" concept="2" trace="VALUE_NumericEquals_0" />
-      <node id="5509291617394380056" at="21,0,22,0" concept="2" trace="VALUE_NumericGreaterThan_0" />
-      <node id="5509291617394380062" at="22,0,23,0" concept="2" trace="VALUE_NumericGreaterThanEquals_0" />
-      <node id="5509291617394380069" at="23,0,24,0" concept="2" trace="VALUE_NumericLessThan_0" />
-      <node id="5509291617394380077" at="24,0,25,0" concept="2" trace="VALUE_NumericLessThanEquals_0" />
-      <node id="5509291617394380096" at="25,0,26,0" concept="2" trace="VALUE_StringEquals_0" />
-      <node id="5509291617394380107" at="26,0,27,0" concept="2" trace="VALUE_StringGreaterThan_0" />
-      <node id="5509291617394380119" at="27,0,28,0" concept="2" trace="VALUE_StringGreaterThanEquals_0" />
-      <node id="5509291617394380132" at="28,0,29,0" concept="2" trace="VALUE_StringLessThan_0" />
-      <node id="5509291617394380146" at="29,0,30,0" concept="2" trace="VALUE_StringLessThanEquals_0" />
-      <node id="5509291617394380161" at="30,0,31,0" concept="2" trace="VALUE_TimestampEquals_0" />
-      <node id="5509291617394380177" at="31,0,32,0" concept="2" trace="VALUE_TimestampGreaterThan_0" />
-      <node id="5509291617394380194" at="32,0,33,0" concept="2" trace="VALUE_TimestampGreaterThanEquals_0" />
-      <node id="5509291617394380212" at="33,0,34,0" concept="2" trace="VALUE_TimestampLessThan_0" />
-      <node id="5509291617394380231" at="34,0,35,0" concept="2" trace="VALUE_TimestampLessThanEquals_0" />
-      <node id="5509291617394380042" at="38,62,39,32" concept="6" />
-      <node id="5509291617394380042" at="44,74,45,476" concept="6" />
-      <node id="5509291617394380042" at="51,25,52,18" concept="6" />
-      <node id="5509291617394380044" at="55,27,56,37" concept="6" />
-      <node id="5509291617394380051" at="57,27,58,37" concept="6" />
-      <node id="5509291617394380056" at="59,32,60,42" concept="6" />
-      <node id="5509291617394380062" at="61,38,62,48" concept="6" />
-      <node id="5509291617394380069" at="63,29,64,39" concept="6" />
-      <node id="5509291617394380077" at="65,35,66,45" concept="6" />
-      <node id="5509291617394380096" at="67,26,68,36" concept="6" />
-      <node id="5509291617394380107" at="69,31,70,41" concept="6" />
-      <node id="5509291617394380119" at="71,37,72,47" concept="6" />
-      <node id="5509291617394380132" at="73,28,74,38" concept="6" />
-      <node id="5509291617394380146" at="75,34,76,44" concept="6" />
-      <node id="5509291617394380161" at="77,29,78,39" concept="6" />
-      <node id="5509291617394380177" at="79,34,80,44" concept="6" />
-      <node id="5509291617394380194" at="81,40,82,50" concept="6" />
-      <node id="5509291617394380212" at="83,31,84,41" concept="6" />
-      <node id="5509291617394380231" at="85,37,86,47" concept="6" />
-      <node id="5509291617394380042" at="87,5,88,16" concept="6" />
-      <node id="5509291617394380042" at="15,0,18,0" concept="0" trace="EnumerationDescriptor_ComparisonOperators#()V" />
-      <node id="5509291617394380042" at="50,84,53,5" concept="3" />
-      <node id="5509291617394380042" at="36,0,41,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <node id="5509291617394380042" at="42,0,47,0" concept="4" trace="getMembers#()Ljava/util/Collection;" />
-      <node id="5509291617394380042" at="53,5,87,5" concept="10" />
-      <node id="5509291617394380042" at="48,0,90,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
-      <scope id="5509291617394380042" at="15,54,16,209" />
-      <scope id="5509291617394380042" at="38,62,39,32" />
-      <scope id="5509291617394380042" at="44,74,45,476" />
-      <scope id="5509291617394380042" at="51,25,52,18" />
-      <scope id="5509291617394380044" at="55,27,56,37" />
-      <scope id="5509291617394380051" at="57,27,58,37" />
-      <scope id="5509291617394380056" at="59,32,60,42" />
-      <scope id="5509291617394380062" at="61,38,62,48" />
-      <scope id="5509291617394380069" at="63,29,64,39" />
-      <scope id="5509291617394380077" at="65,35,66,45" />
-      <scope id="5509291617394380096" at="67,26,68,36" />
-      <scope id="5509291617394380107" at="69,31,70,41" />
-      <scope id="5509291617394380119" at="71,37,72,47" />
-      <scope id="5509291617394380132" at="73,28,74,38" />
-      <scope id="5509291617394380146" at="75,34,76,44" />
-      <scope id="5509291617394380161" at="77,29,78,39" />
-      <scope id="5509291617394380177" at="79,34,80,44" />
-      <scope id="5509291617394380194" at="81,40,82,50" />
-      <scope id="5509291617394380212" at="83,31,84,41" />
-      <scope id="5509291617394380231" at="85,37,86,47" />
-      <scope id="5509291617394380042" at="15,0,18,0" />
-      <scope id="5509291617394380042" at="36,0,41,0" />
-      <scope id="5509291617394380042" at="42,0,47,0" />
-      <scope id="5509291617394380042" at="50,84,88,16" />
-      <scope id="5509291617394380042" at="48,0,90,0">
-        <var name="string" id="5509291617394380042" />
-      </scope>
-      <unit id="5509291617394380042" at="13,0,91,0" name="AWSStateMachine.structure.EnumerationDescriptor_ComparisonOperators" />
-    </file>
-    <file name="StructureAspectDescriptor.java">
-      <node id="5509291617394380042" at="30,0,31,0" concept="2" trace="myEnumerationComparisonOperators" />
     </file>
   </root>
   <root nodeRef="r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380618">
@@ -432,7 +460,7 @@
       <node id="5509291617394397041" at="109,160,110,34" concept="1" />
       <node id="5509291617394397041" at="110,34,111,102" concept="1" />
       <node id="5509291617394397041" at="111,102,112,17" concept="1" />
-      <node id="5509291617394397044" at="112,17,113,179" concept="1" />
+      <node id="1049731831250765132" at="112,17,113,179" concept="1" />
       <node id="5509291617394659865" at="113,179,114,172" concept="1" />
       <node id="40305210172568201" at="114,172,115,193" concept="1" />
       <node id="5509291617394397041" at="115,193,116,22" concept="6" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-4n8gokzxh7xq0k4vsasmi48ofcneq5o">
-  <files dir="AWSStateMachine/sandbox" names="ChoiceExample.json:ParallelStateExample.json:PassStates.json:SimpleStateMachine.json" />
+<product version="3" modelHash="-cuepkalhzverg7jz10dv6zx90gr03qe">
+  <files dir="AWSStateMachine/sandbox" names="ChoiceExample.json:ParallelStateExample.json:PassStates.json:SimpleStateMachine.json:null.json" />
 </product>
 

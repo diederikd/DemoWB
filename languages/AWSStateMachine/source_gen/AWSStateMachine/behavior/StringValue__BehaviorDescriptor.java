@@ -5,8 +5,6 @@ package AWSStateMachine.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
-import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
@@ -20,12 +18,12 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class StringValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bb7L, "AWSStateMachine.structure.StringValue");
-  private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<String> toString_id2fcm071XBx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2fcm071XBx").registry(REGISTRY).build();
+  public static final SMethod<String> toString_id2fcm071XBx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2fcm071XBx").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toString_id2fcm071XBx);
 
@@ -33,11 +31,10 @@ public final class StringValue__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String toString_id2fcm071XBx(@NotNull SNode __thisNode__) {
-    return SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bb7L, 0x8f316006ed4bb8L, "value"));
+    return SPropertyOperations.getString(__thisNode__, PROPS.value$YH7F);
   }
 
   /*package*/ StringValue__BehaviorDescriptor() {
-    super(REGISTRY);
   }
 
   @Override
@@ -81,5 +78,9 @@ public final class StringValue__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty value$YH7F = MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bb7L, 0x8f316006ed4bb8L, "value");
   }
 }

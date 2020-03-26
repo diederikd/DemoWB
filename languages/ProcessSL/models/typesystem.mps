@@ -2,7 +2,7 @@
 <model ref="r:a1caa921-c9ff-45b1-8728-1f865d605911(ProcessSL.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="1" />
+    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -64,14 +64,14 @@
       <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
         <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
-      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
-        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
-        <child id="1227096836496" name="messageTarget" index="2OEWyd" />
-      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
+        <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
+      </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
         <reference id="1174642800329" name="concept" index="1YaFvo" />
       </concept>
@@ -83,6 +83,12 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
+        <child id="4705942098322609813" name="member" index="21noJM" />
+      </concept>
+      <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
+        <reference id="4705942098322467736" name="decl" index="21nZrZ" />
+      </concept>
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
@@ -90,13 +96,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
-      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -131,12 +131,12 @@
               <ref role="1YBMHb" node="4obCttufm7$" resolve="link" />
             </node>
             <node concept="3TrcHB" id="4obCttufm$S" role="2OqNvi">
-              <ref role="3TsBF5" to="it18:2S7w2zXEPeX" resolve="linkType" />
+              <ref role="3TsBF5" to="it18:UhpoBJ7Olw" resolve="linkType" />
             </node>
           </node>
-          <node concept="3t7uKx" id="4obCttufnzH" role="2OqNvi">
-            <node concept="uoxfO" id="4obCttufnzJ" role="3t7uKA">
-              <ref role="uo_Cq" to="it18:m5XqSfxGxg" />
+          <node concept="21noJN" id="UhpoBJ7QSR" role="2OqNvi">
+            <node concept="21nZrQ" id="UhpoBJ7QSS" role="21noJM">
+              <ref role="21nZrZ" to="it18:UhpoBJ7Ol6" resolve="response" />
             </node>
           </node>
         </node>
@@ -165,7 +165,7 @@
                 <node concept="Xl_RD" id="1VmqrBbSbEO" role="2MkJ7o">
                   <property role="Xl_RC" value="Response links should be internal in a transaction" />
                 </node>
-                <node concept="1YBJjd" id="4obCttufoJR" role="2OEOjV">
+                <node concept="1YBJjd" id="4obCttufoJR" role="1urrMF">
                   <ref role="1YBMHb" node="4obCttufm7$" resolve="link" />
                 </node>
               </node>
@@ -189,12 +189,12 @@
               <ref role="1YBMHb" node="4obCttufoR2" resolve="link" />
             </node>
             <node concept="3TrcHB" id="4obCttufoQM" role="2OqNvi">
-              <ref role="3TsBF5" to="it18:2S7w2zXEPeX" resolve="linkType" />
+              <ref role="3TsBF5" to="it18:UhpoBJ7Olw" resolve="linkType" />
             </node>
           </node>
-          <node concept="3t7uKx" id="4obCttufoQN" role="2OqNvi">
-            <node concept="uoxfO" id="4obCttufoQO" role="3t7uKA">
-              <ref role="uo_Cq" to="it18:6z7DEV4QymE" />
+          <node concept="21noJN" id="UhpoBJ7QST" role="2OqNvi">
+            <node concept="21nZrQ" id="UhpoBJ7QSU" role="21noJM">
+              <ref role="21nZrZ" to="it18:UhpoBJ7Ol9" resolve="initiation" />
             </node>
           </node>
         </node>
@@ -223,7 +223,7 @@
                 <node concept="Xl_RD" id="4obCttufoR0" role="2MkJ7o">
                   <property role="Xl_RC" value="Initiation should be a link to another transaction" />
                 </node>
-                <node concept="1YBJjd" id="4obCttufoR1" role="2OEOjV">
+                <node concept="1YBJjd" id="4obCttufoR1" role="1urrMF">
                   <ref role="1YBMHb" node="4obCttufoR2" resolve="link" />
                 </node>
               </node>
@@ -246,10 +246,10 @@
             <node concept="Xl_RD" id="1WaRo0v9IY4" role="2MkJ7o">
               <property role="Xl_RC" value="Name of transactionstepkind should be unique" />
             </node>
-            <node concept="1YBJjd" id="1WaRo0v9J06" role="2OEOjV">
+            <node concept="1YBJjd" id="1WaRo0v9J06" role="1urrMF">
               <ref role="1YBMHb" node="1WaRo0v9wuS" resolve="transactionKindStepKind" />
             </node>
-            <node concept="2ODE4t" id="1WaRo0v9J65" role="2OEWyd">
+            <node concept="2ODE4t" id="1WaRo0v9J65" role="1urrC5">
               <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>

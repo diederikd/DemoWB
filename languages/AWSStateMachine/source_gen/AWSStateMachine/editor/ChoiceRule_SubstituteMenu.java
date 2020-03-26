@@ -10,7 +10,6 @@ import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext;
 import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
@@ -20,14 +19,17 @@ import java.util.Collection;
 import jetbrains.mps.smodel.ConceptDescendantsCache;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
 import jetbrains.mps.smodel.language.LanguageRegistry;
+import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class ChoiceRule_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new ChoiceRule_SubstituteMenu.SMP_ReferenceScope_9w3165_a(), MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL, "AWSStateMachine.structure.ChoiceRule")));
-    result.add(new ChoiceRule_SubstituteMenu.SMP_Subconcepts_9w3165_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_9w3165_a(), CONCEPTS.ChoiceRule$Gs));
+    result.add(new SMP_Subconcepts_9w3165_b());
     return result;
   }
 
@@ -48,7 +50,7 @@ public class ChoiceRule_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_9w3165_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL, "AWSStateMachine.structure.ChoiceRule"), MetaAdapterFactory.getReferenceLink(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL, 0x4c74ef895ad71a29L, "Next"));
+      super((SAbstractConcept) CONCEPTS.ChoiceRule$Gs, LINKS.Next$INIc);
     }
     @NotNull
     @Override
@@ -65,7 +67,7 @@ public class ChoiceRule_SubstituteMenu extends SubstituteMenuBase {
   }
   public class SMP_Subconcepts_9w3165_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL, "AWSStateMachine.structure.ChoiceRule"));
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.ChoiceRule$Gs);
     }
     @NotNull
     @Override
@@ -83,5 +85,13 @@ public class ChoiceRule_SubstituteMenu extends SubstituteMenuBase {
     protected Collection<SubstituteMenuItem> createItemsForConcept(SubstituteMenuContext context, SAbstractConcept concept) {
       return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
     }
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept ChoiceRule$Gs = MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL, "AWSStateMachine.structure.ChoiceRule");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SReferenceLink Next$INIc = MetaAdapterFactory.getReferenceLink(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44f4aL, 0x4c74ef895ad71a29L, "Next");
   }
 }

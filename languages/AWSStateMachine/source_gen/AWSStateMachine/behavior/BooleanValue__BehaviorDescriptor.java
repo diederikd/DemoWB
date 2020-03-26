@@ -5,8 +5,6 @@ package AWSStateMachine.behavior;
 import jetbrains.mps.core.aspects.behaviour.BaseBHDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.core.aspects.behaviour.api.BehaviorRegistry;
-import jetbrains.mps.smodel.language.ConceptRegistry;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
@@ -20,12 +18,12 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class BooleanValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bbdL, "AWSStateMachine.structure.BooleanValue");
-  private static final BehaviorRegistry REGISTRY = ConceptRegistry.getInstance().getBehaviorRegistry();
 
-  public static final SMethod<String> toString_id2fcm071XBx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2fcm071XBx").registry(REGISTRY).build();
+  public static final SMethod<String> toString_id2fcm071XBx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toString").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("2fcm071XBx").build();
 
   private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toString_id2fcm071XBx);
 
@@ -33,7 +31,7 @@ public final class BooleanValue__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String toString_id2fcm071XBx(@NotNull SNode __thisNode__) {
-    if (SPropertyOperations.getBoolean(__thisNode__, MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bbdL, 0x8f316006ed4bbeL, "value"))) {
+    if (SPropertyOperations.getBoolean(__thisNode__, PROPS.value$YHb0)) {
       return "true";
     } else {
       return "false";
@@ -41,7 +39,6 @@ public final class BooleanValue__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ BooleanValue__BehaviorDescriptor() {
-    super(REGISTRY);
   }
 
   @Override
@@ -85,5 +82,9 @@ public final class BooleanValue__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty value$YHb0 = MetaAdapterFactory.getProperty(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x8f316006ed4bbdL, 0x8f316006ed4bbeL, "value");
   }
 }

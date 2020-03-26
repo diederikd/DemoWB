@@ -1,0 +1,130 @@
+{
+  "Comment": "Model of transactionkindverzoek aanpassing arbeidsduur te bespreken",
+  "StartAt": "initial indienen verzoek aanpassing arbeidsduur",
+  "States": {
+    "TrueChoiceFor request verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "rq verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "TrueChoiceFor decline verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "dc verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "TrueChoiceFor state verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "st verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "TrueChoiceFor reject verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "rj verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "FalseChoiceFor request verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "rq verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "FalseChoiceFor decline verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "dc verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "FalseChoiceFor state verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "st verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "FalseChoiceFor reject verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "rj verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "request verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "rq verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$truthvalue",
+          "BooleanEquals": false,
+          "Next": ""
+        },
+        {
+          "Variable": "$truthvalue",
+          "StringEquals": true,
+          "Next": ""
+        }
+      ]
+    },
+    "decline verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "dc verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$truthvalue",
+          "BooleanEquals": false,
+          "Next": ""
+        },
+        {
+          "Variable": "$truthvalue",
+          "StringEquals": true,
+          "Next": ""
+        }
+      ]
+    },
+    "state verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "st verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$truthvalue",
+          "BooleanEquals": false,
+          "Next": ""
+        },
+        {
+          "Variable": "$truthvalue",
+          "StringEquals": true,
+          "Next": ""
+        }
+      ]
+    },
+    "reject verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "rj verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$truthvalue",
+          "BooleanEquals": false,
+          "Next": ""
+        },
+        {
+          "Variable": "$truthvalue",
+          "StringEquals": true,
+          "Next": ""
+        }
+      ]
+    },
+    "accept verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "ac verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "promiss verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "pm verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "execute verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "ex verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Pass",
+      "Next": ""
+    },
+    "accept verzoek aanpassing arbeidsduur te bespreken": {
+      "Comment": "ac verzoek aanpassing arbeidsduur te bespreken",
+      "Type": "Succeed",
+      "End": true
+    }
+  }
+}

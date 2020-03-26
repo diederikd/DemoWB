@@ -4,6 +4,7 @@ package DEMO.plugin;
 
 import jetbrains.mps.workbench.action.BaseAction;
 import javax.swing.Icon;
+import jetbrains.mps.workbench.action.ActionAccess;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -17,7 +18,7 @@ public class ImportDemoModel_Action extends BaseAction {
   public ImportDemoModel_Action() {
     super("Import Demo Model", "", ICON);
     this.setIsAlwaysVisible(false);
-    this.setExecuteOutsideCommand(false);
+    this.setActionAccess(ActionAccess.UNDO_PROJECT);
     this.addPlace(null);
   }
   @Override

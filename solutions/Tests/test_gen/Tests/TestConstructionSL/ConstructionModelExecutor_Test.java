@@ -12,9 +12,10 @@ import org.junit.Test;
 import jetbrains.mps.lang.test.runtime.BaseTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.test.behavior.INodesTestMethod__BehaviorDescriptor;
+import jetbrains.mps.lang.test.runtime.CheckExpectedMessageRunnable;
+import jetbrains.mps.errors.MessageStatus;
+import jetbrains.mps.smodel.SNodePointer;
+import jetbrains.mps.project.ProjectBase;
 
 @MPSLaunch
 public class ConstructionModelExecutor_Test extends BaseTransformationTest {
@@ -29,11 +30,11 @@ public class ConstructionModelExecutor_Test extends BaseTransformationTest {
 
   @Test
   public void test_NodeExecutorOfTransactionkindCheck4919393501064260734() throws Throwable {
-    new ConstructionModelExecutor_Test.TestBody(this).test_NodeExecutorOfTransactionkindCheck4919393501064260734();
+    new TestBody(this).test_NodeExecutorOfTransactionkindCheck4919393501064260734();
   }
   @Test
   public void test_NodeExecutorOfTransactionkindCheck4919393501064260736() throws Throwable {
-    new ConstructionModelExecutor_Test.TestBody(this).test_NodeExecutorOfTransactionkindCheck4919393501064260736();
+    new TestBody(this).test_NodeExecutorOfTransactionkindCheck4919393501064260736();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -44,12 +45,14 @@ public class ConstructionModelExecutor_Test extends BaseTransformationTest {
 
 
     public void test_NodeExecutorOfTransactionkindCheck4919393501064260734() throws Exception {
-      SNode operation = SNodeOperations.cast(getRealNodeById("4919393501064260734"), MetaAdapterFactory.getInterfaceConcept(0x8585453e6bfb4d80L, 0x98deb16074f1d86cL, 0x1510445f8a2c272dL, "jetbrains.mps.lang.test.structure.INodesTestMethod"));
-      INodesTestMethod__BehaviorDescriptor.perform_id1kgh5YabdhC.invoke(operation, getRealNodeById("4919393501061417338"));
+      SNode nodeToCheck = getRealNodeById("4919393501061417338");
+      SNode operation = getRealNodeById("4919393501064260734");
+      new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "5179980272475003321"), "", myProject.getRepository(), ((ProjectBase) myProject).getPlatform()).run();
     }
     public void test_NodeExecutorOfTransactionkindCheck4919393501064260736() throws Exception {
-      SNode operation = SNodeOperations.cast(getRealNodeById("4919393501064260736"), MetaAdapterFactory.getInterfaceConcept(0x8585453e6bfb4d80L, 0x98deb16074f1d86cL, 0x1510445f8a2c272dL, "jetbrains.mps.lang.test.structure.INodesTestMethod"));
-      INodesTestMethod__BehaviorDescriptor.perform_id1kgh5YabdhC.invoke(operation, getRealNodeById("4919393501061417338"));
+      SNode nodeToCheck = getRealNodeById("4919393501061417338");
+      SNode operation = getRealNodeById("4919393501064260736");
+      new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:193653c7-3212-43f4-a914-3e7a9fb7bf10(ConstructionSL.typesystem)", "4919393501061420836"), "", myProject.getRepository(), ((ProjectBase) myProject).getPlatform()).run();
     }
 
   }

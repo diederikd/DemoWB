@@ -30,7 +30,6 @@
       </concept>
       <concept id="2743742872034984103" name="FactSL.structure.BaseEntityType" flags="ng" index="3cH7GX" />
       <concept id="2743742872034909967" name="FactSL.structure.FactType" flags="ng" index="3cHiil">
-        <property id="397994270025613077" name="type" index="a0oEV" />
         <property id="2743742872034984100" name="identification" index="3cH7GY" />
       </concept>
       <concept id="2743742872035015482" name="FactSL.structure.ICardinality" flags="ng" index="3cIS2w">
@@ -50,7 +49,6 @@
     <property role="TrG5h" value="Fact model RAC" />
     <node concept="3cH7GX" id="2ojITFEFmbd" role="3cH7GF">
       <property role="3cH7GY" value="P1" />
-      <property role="a0oEV" value="production" />
       <property role="TrG5h" value="PERSON" />
       <node concept="W57nP" id="5dW$Pa0ZBXa" role="3jwDRz">
         <property role="W57_q" value="499b53bc-90a9-42f2-b2bd-48b9be74898d" />
@@ -58,7 +56,6 @@
     </node>
     <node concept="3cH7GX" id="2ojITFEFmbn" role="3cH7GF">
       <property role="3cH7GY" value="P2" />
-      <property role="a0oEV" value="production" />
       <property role="TrG5h" value="RENTAL" />
       <node concept="W57nP" id="5dW$Pa0ZBXb" role="3jwDRz">
         <property role="W57_q" value="0bf5b9a8-79d9-4ecf-97ea-fa62998019d7" />

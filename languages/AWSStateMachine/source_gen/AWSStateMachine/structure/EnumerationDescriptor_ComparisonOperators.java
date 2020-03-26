@@ -5,86 +5,99 @@ package AWSStateMachine.structure;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptorBase;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
+import jetbrains.mps.lang.smodel.EnumerationLiteralsIndex;
+import java.util.List;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
-import java.util.Collection;
-import java.util.Arrays;
 
 public class EnumerationDescriptor_ComparisonOperators extends EnumerationDescriptorBase {
 
   public EnumerationDescriptor_ComparisonOperators() {
-    super(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44d0aL, "ComparisonOperators", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380042", PrimitiveTypeId.STRING);
+    super(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44d0aL, "ComparisonOperators", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764965", PrimitiveTypeId.STRING);
   }
 
-  private final EnumerationDescriptor.MemberDescriptor VALUE_BooleanEquals_0 = new EnumerationDescriptor.MemberDescriptor("BooleanEquals", "BooleanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380044", "BooleanEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_NumericEquals_0 = new EnumerationDescriptor.MemberDescriptor("NumericEquals", "NumericEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380051", "NumericEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_NumericGreaterThan_0 = new EnumerationDescriptor.MemberDescriptor("NumericGreaterThan", "NumericGreaterThan", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380056", "NumericGreaterThan");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_NumericGreaterThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("NumericGreaterThanEquals", "NumericGreaterThanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380062", "NumericGreaterThanEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_NumericLessThan_0 = new EnumerationDescriptor.MemberDescriptor("NumericLessThan", "NumericLessThan", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380069", "NumericLessThan");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_NumericLessThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("NumericLessThanEquals", "NumericLessThanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380077", "NumericLessThanEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_StringEquals_0 = new EnumerationDescriptor.MemberDescriptor("StringEquals", "StringEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380096", "StringEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_StringGreaterThan_0 = new EnumerationDescriptor.MemberDescriptor("StringGreaterThan", "StringGreaterThan", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380107", "StringGreaterThan");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_StringGreaterThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("StringGreaterThanEquals", "StringGreaterThanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380119", "StringGreaterThanEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_StringLessThan_0 = new EnumerationDescriptor.MemberDescriptor("StringLessThan", "StringLessThan", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380132", "StringLessThan");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_StringLessThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("StringLessThanEquals", "StringLessThanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380146", "StringLessThanEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_TimestampEquals_0 = new EnumerationDescriptor.MemberDescriptor("TimestampEquals", "TimestampEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380161", "TimestampEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_TimestampGreaterThan_0 = new EnumerationDescriptor.MemberDescriptor("TimestampGreaterThan", "TimestampGreaterThan", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380177", "TimestampGreaterThan");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_TimestampGreaterThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("TimestampGreaterThanEquals", "TimestampGreaterThanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380194", "TimestampGreaterThanEquals");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_TimestampLessThan_0 = new EnumerationDescriptor.MemberDescriptor("TimestampLessThan", "TimestampLessThan", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380212", "TimestampLessThan");
-  private final EnumerationDescriptor.MemberDescriptor VALUE_TimestampLessThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("TimestampLessThanEquals", "TimestampLessThanEquals", "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/5509291617394380231", "TimestampLessThanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_BooleanEquals_0 = new EnumerationDescriptor.MemberDescriptor("BooleanEquals", "BooleanEquals", 0x4c74ef895ad44d0cL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764967", "BooleanEquals", "BooleanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_NumericEquals_0 = new EnumerationDescriptor.MemberDescriptor("NumericEquals", "NumericEquals", 0x4c74ef895ad44d13L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764968", "NumericEquals", "NumericEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_NumericGreaterThan_0 = new EnumerationDescriptor.MemberDescriptor("NumericGreaterThan", "NumericGreaterThan", 0x4c74ef895ad44d18L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764969", "NumericGreaterThan", "NumericGreaterThan");
+  private final EnumerationDescriptor.MemberDescriptor myMember_NumericGreaterThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("NumericGreaterThanEquals", "NumericGreaterThanEquals", 0x4c74ef895ad44d1eL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764970", "NumericGreaterThanEquals", "NumericGreaterThanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_NumericLessThan_0 = new EnumerationDescriptor.MemberDescriptor("NumericLessThan", "NumericLessThan", 0x4c74ef895ad44d25L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764971", "NumericLessThan", "NumericLessThan");
+  private final EnumerationDescriptor.MemberDescriptor myMember_NumericLessThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("NumericLessThanEquals", "NumericLessThanEquals", 0x4c74ef895ad44d2dL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764972", "NumericLessThanEquals", "NumericLessThanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_StringEquals_0 = new EnumerationDescriptor.MemberDescriptor("StringEquals", "StringEquals", 0x4c74ef895ad44d40L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764973", "StringEquals", "StringEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_StringGreaterThan_0 = new EnumerationDescriptor.MemberDescriptor("StringGreaterThan", "StringGreaterThan", 0x4c74ef895ad44d4bL, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764974", "StringGreaterThan", "StringGreaterThan");
+  private final EnumerationDescriptor.MemberDescriptor myMember_StringGreaterThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("StringGreaterThanEquals", "StringGreaterThanEquals", 0x4c74ef895ad44d57L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764975", "StringGreaterThanEquals", "StringGreaterThanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_StringLessThan_0 = new EnumerationDescriptor.MemberDescriptor("StringLessThan", "StringLessThan", 0x4c74ef895ad44d64L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764976", "StringLessThan", "StringLessThan");
+  private final EnumerationDescriptor.MemberDescriptor myMember_StringLessThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("StringLessThanEquals", "StringLessThanEquals", 0x4c74ef895ad44d72L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764977", "StringLessThanEquals", "StringLessThanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_TimestampEquals_0 = new EnumerationDescriptor.MemberDescriptor("TimestampEquals", "TimestampEquals", 0x4c74ef895ad44d81L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764978", "TimestampEquals", "TimestampEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_TimestampGreaterThan_0 = new EnumerationDescriptor.MemberDescriptor("TimestampGreaterThan", "TimestampGreaterThan", 0x4c74ef895ad44d91L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764979", "TimestampGreaterThan", "TimestampGreaterThan");
+  private final EnumerationDescriptor.MemberDescriptor myMember_TimestampGreaterThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("TimestampGreaterThanEquals", "TimestampGreaterThanEquals", 0x4c74ef895ad44da2L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764980", "TimestampGreaterThanEquals", "TimestampGreaterThanEquals");
+  private final EnumerationDescriptor.MemberDescriptor myMember_TimestampLessThan_0 = new EnumerationDescriptor.MemberDescriptor("TimestampLessThan", "TimestampLessThan", 0x4c74ef895ad44db4L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764981", "TimestampLessThan", "TimestampLessThan");
+  private final EnumerationDescriptor.MemberDescriptor myMember_TimestampLessThanEquals_0 = new EnumerationDescriptor.MemberDescriptor("TimestampLessThanEquals", "TimestampLessThanEquals", 0x4c74ef895ad44dc7L, "r:393117f7-cc47-4543-83a6-7f3b110b90e7(AWSStateMachine.structure)/1049731831250764982", "TimestampLessThanEquals", "TimestampLessThanEquals");
+
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xad34076bb44b4b8eL, 0x9aa6566fa22fe764L, 0x4c74ef895ad44d0aL, 0x4c74ef895ad44d0cL, 0x4c74ef895ad44d13L, 0x4c74ef895ad44d18L, 0x4c74ef895ad44d1eL, 0x4c74ef895ad44d25L, 0x4c74ef895ad44d2dL, 0x4c74ef895ad44d40L, 0x4c74ef895ad44d4bL, 0x4c74ef895ad44d57L, 0x4c74ef895ad44d64L, 0x4c74ef895ad44d72L, 0x4c74ef895ad44d81L, 0x4c74ef895ad44d91L, 0x4c74ef895ad44da2L, 0x4c74ef895ad44db4L, 0x4c74ef895ad44dc7L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_BooleanEquals_0, myMember_NumericEquals_0, myMember_NumericGreaterThan_0, myMember_NumericGreaterThanEquals_0, myMember_NumericLessThan_0, myMember_NumericLessThanEquals_0, myMember_StringEquals_0, myMember_StringGreaterThan_0, myMember_StringGreaterThanEquals_0, myMember_StringLessThan_0, myMember_StringLessThanEquals_0, myMember_TimestampEquals_0, myMember_TimestampGreaterThan_0, myMember_TimestampGreaterThanEquals_0, myMember_TimestampLessThan_0, myMember_TimestampLessThanEquals_0);
 
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return VALUE_StringEquals_0;
+    return myMember_StringEquals_0;
   }
 
   @NotNull
   @Override
-  public Collection<EnumerationDescriptor.MemberDescriptor> getMembers() {
-    return Arrays.asList(VALUE_BooleanEquals_0, VALUE_NumericEquals_0, VALUE_NumericGreaterThan_0, VALUE_NumericGreaterThanEquals_0, VALUE_NumericLessThan_0, VALUE_NumericLessThanEquals_0, VALUE_StringEquals_0, VALUE_StringGreaterThan_0, VALUE_StringGreaterThanEquals_0, VALUE_StringLessThan_0, VALUE_StringLessThanEquals_0, VALUE_TimestampEquals_0, VALUE_TimestampGreaterThan_0, VALUE_TimestampGreaterThanEquals_0, VALUE_TimestampLessThan_0, VALUE_TimestampLessThanEquals_0);
+  public List<EnumerationDescriptor.MemberDescriptor> getMembers() {
+    return myMembers;
   }
 
   @Nullable
   @Override
-  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String string) {
-    if (string == null) {
+  public EnumerationDescriptor.MemberDescriptor getMember(@Nullable String memberName) {
+    if (memberName == null) {
       return null;
     }
-    switch (string) {
+    switch (memberName) {
       case "BooleanEquals":
-        return VALUE_BooleanEquals_0;
+        return myMember_BooleanEquals_0;
       case "NumericEquals":
-        return VALUE_NumericEquals_0;
+        return myMember_NumericEquals_0;
       case "NumericGreaterThan":
-        return VALUE_NumericGreaterThan_0;
+        return myMember_NumericGreaterThan_0;
       case "NumericGreaterThanEquals":
-        return VALUE_NumericGreaterThanEquals_0;
+        return myMember_NumericGreaterThanEquals_0;
       case "NumericLessThan":
-        return VALUE_NumericLessThan_0;
+        return myMember_NumericLessThan_0;
       case "NumericLessThanEquals":
-        return VALUE_NumericLessThanEquals_0;
+        return myMember_NumericLessThanEquals_0;
       case "StringEquals":
-        return VALUE_StringEquals_0;
+        return myMember_StringEquals_0;
       case "StringGreaterThan":
-        return VALUE_StringGreaterThan_0;
+        return myMember_StringGreaterThan_0;
       case "StringGreaterThanEquals":
-        return VALUE_StringGreaterThanEquals_0;
+        return myMember_StringGreaterThanEquals_0;
       case "StringLessThan":
-        return VALUE_StringLessThan_0;
+        return myMember_StringLessThan_0;
       case "StringLessThanEquals":
-        return VALUE_StringLessThanEquals_0;
+        return myMember_StringLessThanEquals_0;
       case "TimestampEquals":
-        return VALUE_TimestampEquals_0;
+        return myMember_TimestampEquals_0;
       case "TimestampGreaterThan":
-        return VALUE_TimestampGreaterThan_0;
+        return myMember_TimestampGreaterThan_0;
       case "TimestampGreaterThanEquals":
-        return VALUE_TimestampGreaterThanEquals_0;
+        return myMember_TimestampGreaterThanEquals_0;
       case "TimestampLessThan":
-        return VALUE_TimestampLessThan_0;
+        return myMember_TimestampLessThan_0;
       case "TimestampLessThanEquals":
-        return VALUE_TimestampLessThanEquals_0;
+        return myMember_TimestampLessThanEquals_0;
     }
     return null;
+  }
+
+  @Nullable
+  @Override
+  public EnumerationDescriptor.MemberDescriptor getMember(long idValue) {
+    int index = myIndex.index(idValue);
+    if (index == -1) {
+      return null;
+    }
+    return myMembers.get(index);
   }
 }
