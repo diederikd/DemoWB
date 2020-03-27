@@ -8,7 +8,8 @@ Please read DEMO-specificaties op basis van wet- en regelgeving https://www.link
 
 # Using the Demo Workbench 
 
-The workbench is developed using [Jetbrains MPS version 2018.2](http://jetbrains.com/mps/download). The diagrams in the workbench use mbeddr plugins. Visit https://github.com/mbeddr/mbeddr.core/releases for downloading the relevant version.
+The workbench is developed using [Jetbrains MPS version 2019.3](http://jetbrains.com/mps/download). The diagrams in the workbench use mbeddr plugins.
+Visit https://github.com/mbeddr/mbeddr.core/releases or https://build.mbeddr.com/ for downloading the relevant version.
 
 # DEMO
 
