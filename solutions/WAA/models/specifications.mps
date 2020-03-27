@@ -265,22 +265,8 @@
         <child id="5542045097772827926" name="elements" index="968AL" />
       </concept>
       <concept id="6934522251523116956" name="DemoSL.structure.ExportToXML" flags="ng" index="xbT2z" />
-      <concept id="7550186569849403341" name="DemoSL.structure.Case" flags="ng" index="2F2X5z">
-        <child id="7550186569857426782" name="runningtransactions" index="2GwkfK" />
-      </concept>
-      <concept id="7550186569850605510" name="DemoSL.structure.Act" flags="ng" index="2F6m_C">
-        <property id="7550186569867022185" name="initiation" index="2G7IB7" />
-        <reference id="7550186569850605515" name="transactionKindStepKind" index="2F6m__" />
-      </concept>
-      <concept id="7550186569857426778" name="DemoSL.structure.RunningTransaction" flags="ng" index="2GwkfO">
-        <property id="2348051045108660776" name="id" index="aI$Bk" />
-        <reference id="7550186569850389327" name="state" index="2F72nx" />
-        <child id="7550186569852838074" name="possibleActs" index="2GLOok" />
-        <child id="7550186569855234245" name="performedActs" index="2GSHpF" />
-      </concept>
       <concept id="3444719891740938332" name="DemoSL.structure.Simulation" flags="ng" index="2QfGCx">
         <reference id="3444719891740938333" name="startState" index="2QfGCw" />
-        <child id="7550186569849403346" name="casesStarted" index="2F2X5W" />
       </concept>
       <concept id="1149025650597881387" name="DemoSL.structure.GenerateToAws" flags="ng" index="32gcUm" />
       <concept id="1311537047069299575" name="DemoSL.structure.TransactionProcessDiagram" flags="ng" index="3apL29" />
@@ -289,6 +275,7 @@
       </concept>
       <concept id="2743742872034909953" name="DemoSL.structure.TransactionProductTable" flags="ng" index="3cHiir" />
       <concept id="2743742872034909948" name="DemoSL.structure.ActionRuleSpecifications" flags="ng" index="3cHilA">
+        <reference id="6858254215609209786" name="transactionKind" index="3AND_" />
         <child id="5047305753770528015" name="rules" index="ojaNo" />
       </concept>
       <concept id="2743742872034909949" name="DemoSL.structure.FactModel" flags="ng" index="3cHilB">
@@ -296,6 +283,7 @@
         <child id="2222079712865361298" name="eventLaws" index="3l9RgF" />
       </concept>
       <concept id="3316760564121910688" name="DemoSL.structure.ProcesModel" flags="ng" index="3jxjQ8">
+        <property id="3316760564125224636" name="filterTransactionKind" index="3jGGUk" />
         <reference id="3316760564123826537" name="transactionKind" index="3jA7_1" />
         <child id="3316760564121910689" name="tranactionKindStepKind" index="3jxjQ9" />
         <child id="3316760564121910691" name="links" index="3jxjQb" />
@@ -7040,7 +7028,8 @@
   </node>
   <node concept="3jxjQ8" id="2Ze6BQpp0d1">
     <property role="TrG5h" value="Proces model WAA" />
-    <ref role="3jA7_1" node="pMarvI_0aH" />
+    <property role="3jGGUk" value="true" />
+    <ref role="3jA7_1" node="pMarvI_0gM" />
     <node concept="a0Nag" id="2Ze6BQpzubY" role="3jxjQ9">
       <property role="a0N98" value="2Ze6BQptBPr/in" />
       <property role="TrG5h" value="initial indienen verzoek aanpassing arbeidsduur" />
@@ -8296,49 +8285,6 @@
   <node concept="2QfGCx" id="2Ze6BQpWSlh">
     <property role="TrG5h" value="Simulation WAA" />
     <ref role="2QfGCw" node="2Ze6BQpzubY" resolve="initial indienen verzoek aanpassing arbeidsduur" />
-    <node concept="2F2X5z" id="UhpoBJHRPe" role="2F2X5W">
-      <node concept="2GwkfO" id="UhpoBJHRPf" role="2GwkfK">
-        <property role="aI$Bk" value="1" />
-        <ref role="2F72nx" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="UhpoBJHRPg" role="2GSHpF">
-          <ref role="2F6m__" node="2Ze6BQpzubZ" resolve="indienen van het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="UhpoBJJ1qP" role="2GLOok">
-          <ref role="2F6m__" node="2Ze6BQpzuc3" resolve="beslissen op het verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="UhpoBJIW$K" role="2GSHpF">
-          <ref role="2F6m__" node="2Ze6BQpzuc2" resolve="accepteren van het verzoek aanpassing arbeidsduur" />
-        </node>
-      </node>
-      <node concept="2GwkfO" id="UhpoBJJhav" role="2GwkfK">
-        <property role="aI$Bk" value="2" />
-        <ref role="2F72nx" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
-        <node concept="2F6m_C" id="UhpoBJJhaw" role="2GLOok">
-          <ref role="2F6m__" node="2Ze6BQpzucp" resolve="promiss verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="UhpoBJJhax" role="2GLOok">
-          <ref role="2F6m__" node="2Ze6BQpzuco" resolve="decline verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-        <node concept="2F6m_C" id="UhpoBJJ1qQ" role="2GSHpF">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucm" resolve="request verzoek aanpassing arbeidsduur te bespreken" />
-        </node>
-      </node>
-      <node concept="2GwkfO" id="UhpoBJJhay" role="2GwkfK">
-        <property role="aI$Bk" value="3" />
-        <ref role="2F72nx" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        <node concept="2F6m_C" id="UhpoBJJhaz" role="2GLOok">
-          <ref role="2F6m__" node="2Ze6BQpzucK" resolve="promiss inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="UhpoBJJha$" role="2GLOok">
-          <ref role="2F6m__" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-        <node concept="2F6m_C" id="UhpoBJJ1qR" role="2GSHpF">
-          <property role="2G7IB7" value="true" />
-          <ref role="2F6m__" node="2Ze6BQpzucH" resolve="request inwilligen verzoek aanpassing arbeidsduur" />
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="3jKZr9" id="4obCttudk_o">
     <property role="TrG5h" value="PSD Afwijzen van het verzoek" />
@@ -10389,6 +10335,7 @@
   </node>
   <node concept="3cHilA" id="4obCttuiHgz">
     <property role="TrG5h" value="ARS Action Rule Specification WAA" />
+    <ref role="3AND_" node="pMarvI_0aH" />
     <node concept="a1WVU" id="5VhmAr8op0s" role="ojaNo">
       <node concept="ojNJ6" id="5VhmAr8op0t" role="ojhK1">
         <property role="okzg6" value="true" />
@@ -10975,6 +10922,35 @@
             <property role="on7EW" value="m5XqSfxGpV/dc" />
             <ref role="on7EU" node="pMarvIY8Dh" />
             <ref role="3ap3_r" node="2Ze6BQpzuey" resolve="decline automatisch aanpassing overeenkomstig het verzoek" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="a1WVU" id="6KGCowsaKY8" role="ojaNo">
+      <node concept="W57nP" id="6KGCowsaKY9" role="_QUKC">
+        <property role="W57_q" value="865c64a6-b17e-48bd-bcc3-7e1e3a03f35d" />
+      </node>
+      <node concept="ojNJ6" id="6KGCowsaKYa" role="ojhK1">
+        <property role="ojPxs" value="m5XqSfxGpV/dc" />
+        <ref role="ojNJ5" node="2Ze6BQpzucJ" resolve="decline inwilligen verzoek aanpassing arbeidsduur" />
+        <node concept="2mzTSp" id="6KGCowsaKYb" role="2mzTUy">
+          <ref role="2mzTVA" node="pMarvI_0gM" />
+          <ref role="2mzTV$" node="IuxU86i8i2" resolve="Werkperiode" />
+        </node>
+      </node>
+      <node concept="omW1N" id="6KGCowsaKYc" role="onuko" />
+      <node concept="onuhd" id="6KGCowsaKYd" role="onuk5">
+        <node concept="onuk1" id="6KGCowsaKYe" role="onuhc" />
+        <node concept="onuhf" id="6KGCowsaKYf" role="onuha">
+          <node concept="on7EX" id="6KGCowsaKYg" role="okEzR">
+            <property role="on7EW" value="m5XqSfxGpI/rq" />
+            <ref role="on7EU" node="pMarvI_0gM" />
+          </node>
+        </node>
+        <node concept="onuhe" id="6KGCowsbzS_" role="onuhR">
+          <node concept="on7EX" id="6KGCowsbzSA" role="okEzL">
+            <property role="on7EW" value="m5XqSfxGq1/qt" />
+            <ref role="on7EU" node="pMarvI_0gM" />
           </node>
         </node>
       </node>
@@ -16195,8 +16171,8 @@
       </node>
     </node>
   </node>
-  <node concept="32gcUm" id="ZMabRdMJJB">
-    <property role="TrG5h" value="Test_GenerateToAWS" />
+  <node concept="32gcUm" id="5ovd9dNUfa7">
+    <property role="TrG5h" value="Generate to AWS" />
   </node>
 </model>
 

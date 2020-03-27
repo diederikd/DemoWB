@@ -140,7 +140,7 @@
       <node concept="3clFbS" id="4obCttupIgk" role="2VODD2">
         <node concept="3clFbF" id="4obCttupIgl" role="3cqZAp">
           <node concept="Xl_RD" id="4obCttupIgm" role="3clFbG">
-            <property role="Xl_RC" value="Add with for when" />
+            <property role="Xl_RC" value="Add with for When" />
           </node>
         </node>
       </node>
@@ -191,7 +191,7 @@
       <node concept="3clFbS" id="1S2F7pX3KM8" role="2VODD2">
         <node concept="3clFbF" id="1S2F7pX3KM9" role="3cqZAp">
           <node concept="Xl_RD" id="1S2F7pX3KMa" role="3clFbG">
-            <property role="Xl_RC" value="Add while" />
+            <property role="Xl_RC" value="Add While" />
           </node>
         </node>
       </node>
@@ -243,7 +243,7 @@
       <node concept="3clFbS" id="1S2F7pX4x5f" role="2VODD2">
         <node concept="3clFbF" id="1S2F7pX4x5g" role="3cqZAp">
           <node concept="Xl_RD" id="1S2F7pX4x5h" role="3clFbG">
-            <property role="Xl_RC" value="Add with for while" />
+            <property role="Xl_RC" value="Add with for While" />
           </node>
         </node>
       </node>

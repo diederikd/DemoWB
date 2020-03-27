@@ -477,9 +477,6 @@
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
-      <concept id="1138676077309" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference_Old" flags="nn" index="uoxfO">
-        <reference id="1138676095763" name="enumMember" index="uo_Cq" />
-      </concept>
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -506,9 +503,6 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
-      </concept>
-      <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
-        <child id="1146171026732" name="value" index="3t7uKA" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -4548,13 +4542,13 @@
                             <ref role="3Tt5mk" to="ar0b:5WHqtXsH_eU" resolve="transactionKind" />
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="5WHqtXsHzNE" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
+                        <node concept="3TrcHB" id="6KGCowrYs$g" role="2OqNvi">
+                          <ref role="3TsBF5" to="pgdh:UhpoBJ7Olk" resolve="transactionsort" />
                         </node>
                       </node>
-                      <node concept="3t7uKx" id="5WHqtXsHzNF" role="2OqNvi">
-                        <node concept="uoxfO" id="5WHqtXsHzNG" role="3t7uKA">
-                          <ref role="uo_Cq" to="pgdh:2ojITFEDlQT" />
+                      <node concept="21noJN" id="6KGCowrY$Qp" role="2OqNvi">
+                        <node concept="21nZrQ" id="6KGCowrYA5L" role="21noJM">
+                          <ref role="21nZrZ" to="pgdh:UhpoBJ7Oj5" resolve="original" />
                         </node>
                       </node>
                     </node>
@@ -4575,13 +4569,13 @@
                             <ref role="3Tt5mk" to="ar0b:5WHqtXsH_eU" resolve="transactionKind" />
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="5WHqtXsHzNQ" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
+                        <node concept="3TrcHB" id="6KGCowrYtWw" role="2OqNvi">
+                          <ref role="3TsBF5" to="pgdh:UhpoBJ7Olk" resolve="transactionsort" />
                         </node>
                       </node>
-                      <node concept="3t7uKx" id="5WHqtXsHzNR" role="2OqNvi">
-                        <node concept="uoxfO" id="5WHqtXsHzNS" role="3t7uKA">
-                          <ref role="uo_Cq" to="pgdh:2ojITFEDlQU" />
+                      <node concept="21noJN" id="6KGCowrYFhm" role="2OqNvi">
+                        <node concept="21nZrQ" id="6KGCowrYGwI" role="21noJM">
+                          <ref role="21nZrZ" to="pgdh:UhpoBJ7Oj6" resolve="informational" />
                         </node>
                       </node>
                     </node>
@@ -4602,13 +4596,13 @@
                             <ref role="3Tt5mk" to="ar0b:5WHqtXsH_eU" resolve="transactionKind" />
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="5WHqtXsHzO2" role="2OqNvi">
-                          <ref role="3TsBF5" to="pgdh:2ojITFEDlR1" resolve="transactionsort" />
+                        <node concept="3TrcHB" id="6KGCowrYwSk" role="2OqNvi">
+                          <ref role="3TsBF5" to="pgdh:UhpoBJ7Olk" resolve="transactionsort" />
                         </node>
                       </node>
-                      <node concept="3t7uKx" id="5WHqtXsHzO3" role="2OqNvi">
-                        <node concept="uoxfO" id="5WHqtXsHzO4" role="3t7uKA">
-                          <ref role="uo_Cq" to="pgdh:2ojITFEDlQX" />
+                      <node concept="21noJN" id="6KGCowrYI3N" role="2OqNvi">
+                        <node concept="21nZrQ" id="6KGCowrYJjb" role="21noJM">
+                          <ref role="21nZrZ" to="pgdh:UhpoBJ7Oj7" resolve="documental" />
                         </node>
                       </node>
                     </node>

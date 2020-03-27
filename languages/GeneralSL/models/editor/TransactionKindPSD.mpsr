@@ -103,12 +103,9 @@
       <concept id="7464726264122071752" name="de.itemis.mps.editor.diagram.structure.Function_GetShape" flags="ig" index="2x7_8O" />
       <concept id="7464726264117247548" name="de.itemis.mps.editor.diagram.structure.ShapeDefinition" flags="ng" index="2xDbr0">
         <child id="7464726264122072737" name="getShape" index="2x7_pt" />
-        <child id="7464726264118062179" name="draw" index="2xOiiv" />
         <child id="7592386925311538038" name="defaultSize" index="3pRy3o" />
       </concept>
       <concept id="7464726264117281947" name="de.itemis.mps.editor.diagram.structure.Parameter_Bounds" flags="ng" index="2xDkLB" />
-      <concept id="7464726264117345981" name="de.itemis.mps.editor.diagram.structure.Function_DrawShape" flags="ig" index="2xDzp1" />
-      <concept id="7464726264117388668" name="de.itemis.mps.editor.diagram.structure.Parameter_Graphics2D" flags="ng" index="2xDIQ0" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1000,98 +997,6 @@
         <node concept="3cpWs6" id="IuxU86l2HV" role="3cqZAp">
           <node concept="37vLTw" id="IuxU86l2HW" role="3cqZAk">
             <ref role="3cqZAo" node="IuxU86l2D_" resolve="shape" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2xDzp1" id="IuxU86l2HX" role="2xOiiv">
-      <node concept="3clFbS" id="IuxU86l2HY" role="2VODD2">
-        <node concept="3SKdUt" id="IuxU86l2HZ" role="3cqZAp">
-          <node concept="1PaTwC" id="UhpoBJ7OfU" role="3ndbpf">
-            <node concept="3oM_SD" id="UhpoBJ7OfV" role="1PaTwD">
-              <property role="3oM_SC" value="TODO" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7OfW" role="1PaTwD">
-              <property role="3oM_SC" value="how" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7OfX" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7OfY" role="1PaTwD">
-              <property role="3oM_SC" value="print" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7OfZ" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7Og0" role="1PaTwD">
-              <property role="3oM_SC" value="name" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7Og1" role="1PaTwD">
-              <property role="3oM_SC" value="of" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7Og2" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="UhpoBJ7Og3" role="1PaTwD">
-              <property role="3oM_SC" value="transaction" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="IuxU86l2I1" role="3cqZAp">
-          <node concept="3cpWsn" id="IuxU86l2I2" role="3cpWs9">
-            <property role="TrG5h" value="width" />
-            <node concept="10OMs4" id="IuxU86l2I3" role="1tU5fm" />
-            <node concept="10QFUN" id="IuxU86l2I4" role="33vP2m">
-              <node concept="10OMs4" id="IuxU86l2I5" role="10QFUM" />
-              <node concept="2OqwBi" id="IuxU86l2I6" role="10QFUP">
-                <node concept="2xDkLB" id="IuxU86l2I7" role="2Oq$k0" />
-                <node concept="liA8E" id="IuxU86l2I8" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="IuxU86l2I9" role="3cqZAp">
-          <node concept="3cpWsn" id="IuxU86l2Ia" role="3cpWs9">
-            <property role="TrG5h" value="height" />
-            <node concept="10OMs4" id="IuxU86l2Ib" role="1tU5fm" />
-            <node concept="10QFUN" id="IuxU86l2Ic" role="33vP2m">
-              <node concept="10OMs4" id="IuxU86l2Id" role="10QFUM" />
-              <node concept="2OqwBi" id="IuxU86l2Ie" role="10QFUP">
-                <node concept="2xDkLB" id="IuxU86l2If" role="2Oq$k0" />
-                <node concept="liA8E" id="IuxU86l2Ig" role="2OqNvi">
-                  <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="IuxU86l2Ih" role="3cqZAp">
-          <node concept="2OqwBi" id="IuxU86l2Ii" role="3clFbG">
-            <node concept="2xDIQ0" id="IuxU86l2Ij" role="2Oq$k0" />
-            <node concept="liA8E" id="IuxU86l2Ik" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Graphics2D.drawString(java.lang.String,float,float)" resolve="drawString" />
-              <node concept="Xl_RD" id="IuxU86l2Il" role="37wK5m">
-                <property role="Xl_RC" value="TEXT" />
-              </node>
-              <node concept="3cpWsd" id="IuxU86l2Im" role="37wK5m">
-                <node concept="3cmrfG" id="IuxU86l2In" role="3uHU7w">
-                  <property role="3cmrfH" value="10" />
-                </node>
-                <node concept="37vLTw" id="IuxU86l2Io" role="3uHU7B">
-                  <ref role="3cqZAo" node="IuxU86l2I2" resolve="width" />
-                </node>
-              </node>
-              <node concept="3cpWsd" id="IuxU86l2Ip" role="37wK5m">
-                <node concept="3cmrfG" id="IuxU86l2Iq" role="3uHU7w">
-                  <property role="3cmrfH" value="10" />
-                </node>
-                <node concept="37vLTw" id="IuxU86l2Ir" role="3uHU7B">
-                  <ref role="3cqZAo" node="IuxU86l2Ia" resolve="height" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>

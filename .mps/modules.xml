@@ -2,7 +2,6 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/../AWSSM/AWSStateMachine/AWSStateMachine.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/DemoSpecificationLanguage/DemoSpecificationLanguage.devkit" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/ActionSL/ActionSL.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/ConstructionSL/ConstructionSL.mpl" folder="Languages" />
@@ -19,6 +18,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/Tests/Tests.msd" folder="Tests" />
       <modulePath path="$PROJECT_DIR$/solutions/WAA/WAA.msd" folder="Specifications" />
       <modulePath path="$PROJECT_DIR$/solutions/sandbox/DemowB.sandbox.msd" folder="Tests" />
+      <modulePath path="$PROJECT_DIR$/../ProjectAWS/AWSStateMachine/AWSStateMachine.mpl" folder="" />
     </projectModules>
   </component>
 </project>
