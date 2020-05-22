@@ -8,6 +8,8 @@
   <exported-language name="a2c2ae09-7c36-4fba-9b64-5e0450cb1363(ProcessSL)" />
   <exported-language name="ad34076b-b44b-4b8e-9aa6-566fa22fe764(AWSStateMachine)" />
   <exported-language name="e46abdd0-0cea-40e3-a51e-cdf216935e9e(DemoSLToAWS)" />
+  <exported-language name="d93e59fd-32ce-45d2-91af-b21d328cf4aa(DemoSLToXML)" />
+  <exported-language name="94d40c28-1f64-4e9e-b250-fea228b96297(DemoSLToAWSForTest)" />
   <exported-solutions>
     <exported-solution>eb35f70f-f2a9-472c-8836-f09146d2069c(DEMOGenPlan)</exported-solution>
   </exported-solutions>
